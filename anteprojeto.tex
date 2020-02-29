@@ -1,9 +1,23 @@
 \documentclass{article}
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage[brazil]{babel}   
 \usepackage[utf8]{inputenc}
 
 \title{Anteprojeto}
 \author{Érico de Souza Loewe}
-\date{February 2020}
+
+\address{
+    Instituto de Ciências Exatas e Tecnológicas – Universidade FEEVALE – 
+    \\93.525-075 – Novo Hamburgo – RS – Brasil
+    \email{
+        ericoloewe@gmail.com
+    }
+}
+
+\date{Today}
 
 \begin{document}
 
@@ -13,21 +27,32 @@
 
 \section{Motivação}
 
+Sistemas de recomendação (RecSys) são implementações de softwares e técnicas, que apresentam sugestões de itens que seriam de uso de um usuário. As sugestões são de acordo com vários processos de decisão, como, que item comprar, que musica escutar ou que noticia ler. \cite{ricci2011introduction}
+
+Atualmente, os Spotify não consegue captar um sentimento tão bem, devido a não levar em consideração as ações que os usuários estão tomando naquele momento. 
+
+A ideia desse projeto é que com ele, possamos evoluir a recomendação musical para algo mais voltado ao sentimento que o usuário esta sentindo no momento em que esta ouvindo a musica.
+
 \section{Objetivo geral}
 
-Analisar o sistema de recomendação musical utilizado pelo Spotify, e realizar uma comparação com um sistema de recomendação instantâneo, desenvolvendo um \textit{plugin} que ira contemplar esse novo sistema.
+Analisar o sistema de recomendação musical utilizado pelo Spotify, e realizar uma comparação com um sistema de recomendação em tempo real, desenvolvendo um \textit{plugin} que ira contemplar esse novo sistema.
 
 \section{Objetivo específicos}
 
 \begin{itemize}
 \item Estudar os conceitos básicos de Deep Learning
 \item Estudar os sistemas de recomendação (RecSys)
+\item Estudar os sistemas de recomendação em tempo real
 \item Estudar os sistemas de recomendação do Spotify
 \item Desenvolver plugin para criar playlists no Spotify
+\item Analisar os resultados obtidos
 \end{itemize}
 
 \section{Metodologia}
 
 \section{Cronograma}
+
+\bibliographystyle{sbc}
+\bibliography{references}
 
 \end{document}
