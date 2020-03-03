@@ -1,29 +1,36 @@
 \documentclass{article}
-\usepackage{sbc-template}
 \usepackage{graphicx,url}
 \usepackage{amsmath}
 \usepackage{listings}
 \usepackage[brazil]{babel}   
 \usepackage[utf8]{inputenc}
 
-\title{Anteprojeto}
-\author{Érico de Souza Loewe}
-
-\address{
-    Instituto de Ciências Exatas e Tecnológicas – Universidade FEEVALE – 
-    \\93.525-075 – Novo Hamburgo – RS – Brasil
-    \email{
-        ericoloewe@gmail.com
-    }
-}
+\title{ANTEPROJETO}
+\author{ÉRICO DE SOUZA LOEWE}
 
 \date{Today}
 
 \begin{document}
 
-\maketitle
+\makeatletter
+\begin{titlepage}
+   \vspace*{\stretch{1.0}}
+   \begin{center}
+      \large\textbf{
+      UNIVERSIDADE FEEVALE\\
+      \@title\\
+      \@author
+      }
+   \end{center}
+   \vspace*{\stretch{2.0}}
+\end{titlepage}
+\makeatother
+
+\section{Folha de rosto}
+\newpage
 
 \section{Resumo}
+\newpage
 
 \section{Motivação}
 
@@ -33,11 +40,15 @@ Atualmente, os Spotify não consegue captar um sentimento tão bem, devido a nã
 
 A ideia desse projeto é que com ele, possamos evoluir a recomendação musical para algo mais voltado ao sentimento que o usuário esta sentindo no momento em que esta ouvindo a musica.
 
-\section{Objetivo geral}
+\newpage
+
+\section{Objetivos}
+
+\subsection{Objetivo geral}
 
 Analisar o sistema de recomendação musical utilizado pelo Spotify, e realizar uma comparação com um sistema de recomendação em tempo real, desenvolvendo um \textit{plugin} que ira contemplar esse novo sistema.
 
-\section{Objetivo específicos}
+\subsection{Objetivo específicos}
 
 \begin{itemize}
 \item Estudar os conceitos básicos de Deep Learning
@@ -48,11 +59,18 @@ Analisar o sistema de recomendação musical utilizado pelo Spotify, e realizar 
 \item Analisar os resultados obtidos
 \end{itemize}
 
+\newpage
+
 \section{Metodologia}
+
+\newpage
 
 \section{Cronograma}
 
-\bibliographystyle{sbc}
+\newpage
+
+% \bibliographystyle{sbc}
+\bibliographystyle{acm}
 \bibliography{references}
 
 \end{document}
