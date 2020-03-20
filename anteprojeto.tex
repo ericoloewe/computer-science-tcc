@@ -4,8 +4,10 @@
 \usepackage{listings}
 \usepackage[brazil]{babel}   
 \usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{soul}
 
-\title{SISTEMAS DE RECOMENDAÇÃO MUSICAL BASEADO EM CONTEXTO COMPORTAMENTAL E DE AMBIENTE}
+\title{SISTEMA DE RECOMENDAÇÃO MUSICAL BASEADO EM CONTEXTO COMPORTAMENTAL E DE AMBIENTE}
 \author{ÉRICO DE SOUZA LOEWE}
 
 \date{Today}
@@ -38,30 +40,37 @@
 \section{Motivação}
 
 % -- Conceito
-A tecnologia avançou muito nos últimos anos, principalmente quando estamos falando de internet e armazenamento. \cite{muraro2009avanccos} 
-O custo de armazenar um arquivo vem cada vez ficando mais barato e tudo isso, tem feito com que as pessoas tenham mais espaço de armazenando, dando a possibilidade de gerarem cada vez mais informações. \cite{ufc2020amagnetorresistencia} 
-A quantidade de aplicações disponíveis na internet tem aumentado cada vez mais gerando cada vez mais dados e opções para os usuários. % citar  
+A tecnologia avançou muito nos últimos anos, 
+{\color{red} principalmente quando estamos falando de internet e armazenamento.} \cite{muraro2009avanccos} 
+O custo de armazenar um arquivo vem cada vez ficando mais barato e tudo isso, tem feito com que as pessoas tenham mais espaço de \st{armazenando}, dando a possibilidade de gerarem cada vez mais informações. {\color{red} \cite{ufc2020amagnetorresistencia}}
+A quantidade de aplicações disponíveis na internet t{\color{red}ê}m aumentado cada vez mais gerando cada vez mais dados e opções para os usuários.% citar  
 
-Diversas vezes o individuo possui dificuldades em realizar escolhas entre as diversas alternativas que lhe é apresentado, e acaba geralmente cofiando nas escolhas que lhe são apresentadas através de outras pessoas. \cite{resnick1997recommender} A partir do aumento da quantidade de informações disponíveis e do conhecimento da habilidade do individuo de realizar escolhas a partir de sua experiencia pessoal surgem os sistemas de recomendação que buscam filtrar a grande massa de dados disponíveis, para auxiliar o individuo na escolha das opções disponíveis.
+Diversas vezes o individuo possui dificuldades em realizar escolhas entre as diversas alternativas {\color{red} daquilo} que lhe é apresentado, e acaba geralmente cofiando nas escolhas que lhe são apresentadas através de outras pessoas. \cite{resnick1997recommender} A partir do aumento da quantidade de informações disponíveis e do conhecimento da habilidade do individuo de realizar escolhas a partir de sua experiencia pessoal, surgem os sistemas de recomendação. {\color{red} Esses sistemas } buscam filtrar a grande massa de dados disponível, para auxiliar o indivíduo na escolha das opções disponíveis.
 
-Sistemas de recomendação (RecSys) são implementações de softwares e técnicas, que apresentam sugestões de itens que seriam de uso de um usuário. As sugestões são de acordo com vários processos de decisão, como, que item comprar, que musica escutar ou que noticia ler. No geral, sistemas de recomendação servem para dois propósitos diferentes. Eles podem ser utilizados para estimular os usuários a fazer alguma coisa como, comprar livros ou assistir algum filme. Em contrapartida, os sistemas de recomendação podem ser utilizados para lidar com a sobrecarga de informações, selecionado os melhores items de uma base maior. \cite{jannach2010recommender}
+Sistemas de recomendação (RecSys{\color{red} - \textit{Recommender Systems}}) são implementações de softwares e técnicas, que apresentam sugestões de itens que seriam de uso de um usuário. As sugestões são de acordo com vários processos de decisão, como, que item comprar, que música escutar ou que notícia ler. No geral, sistemas de recomendação servem para dois propósitos diferentes. Eles podem ser utilizados para estimular os usuários a fazer alguma coisa como, comprar livros ou assistir algum filme. Em contrapartida, os sistemas de recomendação podem ser utilizados para lidar com a sobrecarga de informações, selecionando os melhores itens de uma base maior. \cite{jannach2010recommender}
 
-O auxilio que um sistemas de recomendação prove pode ser bem especifico ou genérico. Isso vai depender do tipo de filtragem escolhida para realizar a recomendação. Quando um sistema busca uma filtragem que leva em consideração a preferencias do usuário, elas podem ser obtidas implicitamente através de um monitoramento de comportamento. Mas também, um sistema de recomendação pode obter explicitamente sua preferencia através de perguntas sobre suas preferencias.
+O auxílio que um sistema de recomendação prove pode ser bem específico ou genérico. Isso vai depender do tipo de filtragem escolhida para realizar a recomendação. Quando um sistema busca uma filtragem que leva em consideração as preferências do usuário, elas podem ser obtidas implicitamente por meio de um monitoramento de comportamento. {\color{red} No entanto, um sistema de recomendação pode também obter explicitamente sua preferência através de perguntas sobre suas preferencias.}
 \cite{jannach2010recommender}
 
 As recomendações personalizadas necessitam que o sistema conheça algo sobre cada usuário da base.
-Todo sistema de recomendação deve desenvolver e manter um \textit{user model} ou \textit{user profile}, que por exemplo, contem as preferencias do mesmo.
+Todo sistema de recomendação deve desenvolver e manter um \textit{user model} ou \textit{user profile}, que por exemplo, contem as preferências do mesmo.
 A existência de um \textit{user model} é essencial para qualquer sistema de recomendação. \cite{jannach2010recommender}
 
-Os sistemas de recomendação iniciaram com a "Usenet" da Duke University na década de 70, um sistema com uma distribuição global que buscava divulgar novas noticias postadas e classificadas pelos seus usuários. Em 1985, iniciou-se as recomendações baseadas em conteúdo, a partir de uma arquitetura para sistemas de informação de larga escala. Xerox teve sua grande participação em 1992, desenvolvendo o primeiro sistema (Tapestry) designado a realizar a filtragem colaborativa. Em 1997, foi desenvolvido o primeiro sistemas de recomendação de filmes chamado Movielens. Até que em 2000, Pandora iniciou o projeto genoma musical, onde a recomendação passou a ser utilizada para facilitar as escolhas de um usuário entre as diversas musicas existentes na época. \cite{bhatnagar2016collaborative}
+Os sistemas de recomendação iniciaram com a "Usenet" da Duke University na década de 70, um sistema com uma distribuição global que buscava divulgar novas notícias postadas e classificadas pelos seus usuários. Em 1985, iniciaram-se as recomendações baseadas em conteúdo, a partir de uma arquitetura para sistemas de informação de larga escala. A Xerox teve sua grande participação em 1992, desenvolvendo o primeiro sistema (Tapestry) designado a realizar a filtragem colaborativa. Em 1997, foi desenvolvido o primeiro sistema de recomendação de filmes chamado Movielens. Até que em 2000, a Pandora iniciou o projeto genoma musical, onde a recomendação passou a ser utilizada para facilitar as escolhas de um usuário entre as diversas músicas existentes na época. \cite{bhatnagar2016collaborative}
 
-\cite{jannach2010recommender} traz em sua obra os 4 tipo de sistemas de recomendação, sendo eles, recomendação colaborativa, recomendação baseada em conteúdo, recomendação baseada em conhecimento, e sistemas de recomendação híbridos.
+% para responder "como RecSys revolucionou o mercado?" falar sobre Recommender Systems Function do \cite{ricci2011introduction}
+
+\cite{jannach2010recommender} traz em sua obra os 4 tipos de sistemas de recomendação, sendo eles: recomendação colaborativa, recomendação baseada em conteúdo, recomendação baseada em conhecimento, e sistemas de recomendação híbridos.
+
+{\color{red} ACHO QUE DEVERIAS FAZER UM PARÁGRAFO SOMENTE PARA OS 4 TIPOS. NO TEU TC1 TU ABORDAS CADA UM COM MAIS DETALHE.}
 
 A recomendação colaborativa parte da ideia de que se os usuário compartilharam dos mesmo interesses no passado, eles irão continuar tendo os mesmos interesses no futuro. Por exemplo, os usuários A e B tem um histórico de compras bem semelhante e o usuário A comprou um novo livro que o usuário B nem chegou a ver, nesse tipo de recomendação, a ideia é que o sistema sugira este livro para o usuário B. \cite{jannach2010recommender}
 
 Na recomendação baseada em conteúdo, o sistema aprende a recomendar itens que são similares ao que o usuário gostou no passado, essa similaridade é calculada baseada na relação das características dos itens a serem comparados. Por exemplo, no caso de usuário avaliar positivamente um filme do gênero comedia, então, o sistema pode registrar essa ação e futuramente recomendar outros filmes desse mesmo gênero. \cite{ricci2011introduction}
 
-Diferente da recomendação colaborativa ou baseada em conteúdo, a recomendação baseada em aprendizado não consegue depender somente do histórico de compra de um usuário, é necessário um conteúdo mais estruturado e detalhado para ser gerado uma recomendação, geralmente nesse tipo, é utilizado um conteúdo adicional fornecido manualmente (conteúdo refente ao produto e usuário). Um exemplo disso, acontece na venda de câmeras, onde esse tipo de consumidor busca por um novo modelo todos os anos, neste caso, não podemos depender somente do histórico de compra, pois
+Diferente da recomendação colaborativa ou baseada em conteúdo, a recomendação baseada em aprendizado não consegue depender somente do histórico de compra de um usuário, é necessário um conteúdo mais estruturado e detalhado para ser gerado uma recomendação, geralmente nesse tipo, é utilizado um conteúdo adicional fornecido manualmente (conteúdo refente ao produto e usuário). \cite{jannach2010recommender}
+
+E por ultimo, e não menos importante, \cite{jannach2010recommender} traz em sua obra o modelo hibrido de recomendação, onde a ideia é combinar os diferentes tecnicas, buscando gerara uma boa e mais assertiva recomendação. \cite{jannach2010recommender}
 
 ----- \\
 
@@ -75,9 +84,10 @@ Sistemas de Recomendação
 
 % devo contar historia sobre porque o recsys é importante? (devido a grande quantidade de dados) exemplos (fora da musica) ✔
 % quando o Recsys comecou? ✔
+
 % como RecSys revolucionou o mercado?
 
-% Devo explicar sobre os 4 tipos de sistemas?
+% Devo explicar sobre os 4 tipos de sistemas? ✔
 
 % falar sobre concurso netflix 2006 https://en.wikipedia.org/wiki/Netflix_Prize
 
@@ -113,10 +123,6 @@ Formula a tua questão de pesquisa
 
 % como que vamos buscar melhorar esse serviço?
 
-Objetivo Geral
-
-%??
-
 Atualmente, os Spotify não consegue captar um sentimento tão bem, devido a não levar em consideração as ações que os usuários estão tomando naquele momento. 
 
 A ideia desse projeto é que com ele, possamos evoluir a recomendação musical para algo mais voltado ao sentimento que o usuário esta sentindo no momento em que esta ouvindo a musica.
@@ -136,7 +142,13 @@ Desenvolver um sistema de recomendação musical, considerando o contexto compor
 
 \item Selecionar a API a ser utilizada no sistema de recomendação.
 
+{\color{red} \item Definir os contextos de ambiente a serem utilizados no sistema.
+
+\item Definir os contextos comportamentais do usuário a serem utilizados no sistema.}
+
 \item Criar a infraestrutura necessária para o armazenamento e relacionamento das músicas com os contextos comportamentais e de ambiente do usuário.
+
+{\color{red} \item Criar um protótipo do sistema de recomendação.}
 
 \item Avaliar o sistema de recomendação com usuários voluntários.
 
