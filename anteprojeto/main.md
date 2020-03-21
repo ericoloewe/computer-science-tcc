@@ -86,10 +86,11 @@ Deve ser desenvolvido neste tópico, pelo menos, de 2 a 3 páginas. A
 tecnologia avançou muito nos últimos anos, principalmente quando estamos
 falando de internet e armazenamento. (Muraro, 2009) O custo de armazenar
 um arquivo vem cada vez ficando mais barato e tudo isso, tem feito com
-que as pessoas tenham mais espaço de armazenando, dando a possibilidade
-de gerarem cada vez mais informações. (Universidade Federal do Ceara,
-n.d.) A quantidade de aplicações disponíveis na internet tem aumentado
-cada vez mais gerando cada vez mais dados e opções para os usuários.
+que as pessoas tenham mais espaço de armazenamento, dando a
+possibilidade de gerarem cada vez mais informações. (Universidade
+Federal do Ceara, n.d.) A quantidade de aplicações disponíveis na
+internet tem aumentado cada vez mais gerando cada vez mais dados e
+opções para os usuários.
 
 Diversas vezes o indivíduo possui dificuldades em realizar escolhas
 entre as diversas alternativas daquilo que lhe e apresentado, e acaba
@@ -101,7 +102,7 @@ surgem os sistemas de recomendação. Esses sistemas buscam filtrar a
 grande massa de dados disponível, para auxiliar o indivíduo na escolha
 das opções disponíveis.
 
-Sistemas de recomendação (RecSys - Recommender Systems) são
+Sistemas de recomendação (RecSys - *Recommender Systems*) são
 implementações de softwares e técnicas, que apresentam sugestões de
 itens que seriam de uso de um usuário. As sugestões são de acordo com
 vários processos de decisão, como, que item comprar, que musica escutar
@@ -123,12 +124,12 @@ al., 2010)
 
 As recomendações personalizadas necessitam que o sistema conheça algo
 sobre cada usuário da base. Todo sistema de recomendação deve
-desenvolver e manter um user model ou user profile, que por exemplo,
-contém as preferências dele. A existência de um user model e essencial
+desenvolver e manter um *user model* ou *user profile*, que por exemplo,
+contém as preferências dele. A existência de um *user model* é essencial
 para qualquer sistema de recomendação. (Dietmar et al., 2010)
 
-Os sistemas de recomendação iniciaram com a \"Usenet\" da Duke
-University na década de 70, um sistema com uma distribuição global que
+Os sistemas de recomendação iniciaram com a \"*Usenet*\" da *Duke
+University* na década de 70, um sistema com uma distribuição global que
 buscava divulgar novas notícias postadas e classificadas pelos seus
 usuários. Em 1985, iniciaram-se as recomendações baseadas em conteúdo, a
 partir de uma arquitetura para sistemas de informação de larga escala. A
@@ -144,9 +145,6 @@ escolhas de um usuário entre as diversas músicas existentes na época.
 recomendação, sendo eles: recomendação colaborativa, recomendação
 baseada em conteúdo, recomendação baseada em conhecimento, e sistemas de
 recomendação híbridos.
-
-ACHO QUE DEVERIAS FAZER UM PARAGRAFO SOMENTE PARA OS 4 TIPOS. NO TEU TC1
-TU ABORDAS CADA UM COM MAIS DETALHE.
 
 A recomendação colaborativa parte da ideia de que se os usuários
 compartilharam dos mesmos interesses no passado, eles irão continuar
