@@ -141,6 +141,14 @@ musical, onde a recomendação passou a ser utilizada para facilitar as
 escolhas de um usuário entre as diversas músicas existentes na época.
 (Bhatnagar, 2016)
 
+Desde então, os sistemas de recomendação têm só revolucionado o mercado
+de aplicações de diversas formas, pois com eles, tem se aumentando o
+número de itens vendidos em sites de venda online, além dos sites
+conseguirem vender itens mais diversificados a partir dos sistemas. Tem
+melhorado a satisfação dos usuários e com isso, aumentando sua
+fidelidade na aplicação, e o principal, os RecSys ajudam a entender
+melhor o que o usuário quer. (Ricci et al., 2011)
+
 (Dietmar et al., 2010) traz em sua obra os 4 tipos de sistemas de
 recomendação, sendo eles: recomendação colaborativa que parte da ideia
 de que se os usuários compartilharam dos mesmos interesses no passado,
