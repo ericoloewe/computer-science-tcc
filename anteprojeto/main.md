@@ -149,6 +149,15 @@ melhorado a satisfação dos usuários e com isso, aumentando sua
 fidelidade na aplicação, e o principal, os RecSys ajudam a entender
 melhor o que o usuário quer. (Ricci et al., 2011)
 
+Os RecSys têm evoluído muito desde o seu surgimento, isso acontece dado
+o interesse acadêmico e comercial sobre a área dado os benefícios que
+ela pode trazer. Um caso famoso dos sistemas de recomendação foi o
+*Netflix Prize*, uma competição feita pela Netflix, que ofereceu um
+milhão a quem melhorasse o algoritmo de recomendação de seu sistema em
+10%. A competição iniciou em 2006 e demorou 3 anos para alguém conseguir
+resolver o problema deles. Nesse caso o vencedor utilizou o modelo
+híbrido de RecSys. (Falk, 2019)
+
 (Dietmar et al., 2010) traz em sua obra os 4 tipos de sistemas de
 recomendação, sendo eles: recomendação colaborativa que parte da ideia
 de que se os usuários compartilharam dos mesmos interesses no passado,
