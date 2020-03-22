@@ -177,19 +177,20 @@ assertiva recomendação. (Dietmar et al., 2010)
 
 Os sistemas de recomendação têm ajudado muito na venda de produtos
 online, porém, um dos segmentos de mercado que apresentaram problemas,
-são as vendas de álbum ou faixas online. Elas possibilitam as pessoas
-baixarem ou receberem as faixas a partir de uma compra em lojas
-virtuais. Aonde muitos viram esse problema e criaram uma nova maneira de
-anunciar os "produtos musicais" online, que é o streaming musical.
+são as vendas de álbum ou faixas online. Pois elas possibilitam as
+pessoas baixarem ou receberem as faixas a partir de compras em lojas
+virtuais, porem o preço de cada faixa ainda era muito caro o que fazia
+com que muitos usuários optassem pela pirataria. Aonde muitos viram esse
+problema e criaram uma nova maneira de anunciar os "produtos musicais"
+online, que é o streaming musical. (Borja & Dieringer, 2016)
 
 O mercado musical tem evoluído muito desde seu início, no início, seu
-consumo foi a partir de partituras em 1929, e então veio os discos de 78
-RPM e LPs em 1959, e em 1979 veio as fitas K7, 1999 veio os CDs, até que
-então vieram os mp3's, com a popularização da internet, vieram a venda
-de álbuns e musicas online. Que durou por muito tempo, mas ainda assim,
-dada a dificuldade de se adquirir uma música, as pessoas ainda optavam
-pelo download das faixas, o que mudou muito com o surgimento dos
-streamings musicais. (Va, 2017)
+consumo foi aumentando cada vez mais com a evolução das tecnologias e
+internet. Com o streaming musical, as pessoas passaram a consumir mais
+os sistemas de streaming, diminuindo o consumo de pirataria online a
+partir de downloads. Em 2018 o lucro global da indústria musical cresceu
+9,7%, nesse crescimento, o streaming pago possui boa parte dele com um
+34% do total. (IFPI, 2019)
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
