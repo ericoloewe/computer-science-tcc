@@ -82,11 +82,10 @@ BIBLIOGRAFIA
  MOTIVAÇÃO
 =========
 
-Deve ser desenvolvido neste tópico, pelo menos, de 2 a 3 páginas. A
-tecnologia avançou muito nos últimos anos, principalmente quando estamos
-falando de internet e armazenamento. (Muraro, 2009) O custo de armazenar
-um arquivo vem cada vez ficando mais barato e tudo isso, tem feito com
-que as pessoas tenham mais espaço de armazenamento, dando a
+A tecnologia avançou muito nos últimos anos, principalmente quando
+estamos falando de internet e armazenamento. (Muraro, 2009) O custo de
+armazenar um arquivo vem cada vez ficando mais barato e tudo isso, tem
+feito com que as pessoas tenham mais espaço de armazenamento, dando a
 possibilidade de gerarem cada vez mais informações. (Universidade
 Federal do Ceara, n.d.) A quantidade de aplicações disponíveis na
 internet tem aumentado cada vez mais gerando cada vez mais dados e
@@ -175,6 +174,22 @@ fornecido manualmente (conteúdo recente ao produto e usuário). E por
 último, e não menos importante, sistemas de recomendação híbridos onde a
 ideia é combinar as diferentes técnicas, buscando gerar uma boa e mais
 assertiva recomendação. (Dietmar et al., 2010)
+
+Os sistemas de recomendação têm ajudado muito na venda de produtos
+online, porém, um dos segmentos de mercado que apresentaram problemas,
+são as vendas de álbum ou faixas online. Elas possibilitam as pessoas
+baixarem ou receberem as faixas a partir de uma compra em lojas
+virtuais. Aonde muitos viram esse problema e criaram uma nova maneira de
+anunciar os "produtos musicais" online, que é o streaming musical.
+
+O mercado musical tem evoluído muito desde seu início, no início, seu
+consumo foi a partir de partituras em 1929, e então veio os discos de 78
+RPM e LPs em 1959, e em 1979 veio as fitas K7, 1999 veio os CDs, até que
+então vieram os mp3's, com a popularização da internet, vieram a venda
+de álbuns e musicas online. Que durou por muito tempo, mas ainda assim,
+dada a dificuldade de se adquirir uma música, as pessoas ainda optavam
+pelo download das faixas, o que mudou muito com o surgimento dos
+streamings musicais. (Va, 2017)
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
