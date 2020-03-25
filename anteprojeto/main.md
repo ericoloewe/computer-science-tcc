@@ -195,7 +195,7 @@ com um 34% do total. (IFPI, 2019)
 Os sistemas de streaming são um tipo de mecanismo de processamento de
 dados projetado com um conjunto de dados infinitos em mente. (Niwa,
 2018) Esse mecanismo pode ser desenvolvido para processar muitos tipos
-de média, como vídeos, fotos, áudio. Nesse trabalho será utilizado o
+de média como vídeos, fotos, áudio. Nesse trabalho será utilizado o
 streaming de áudio, mais especificamente, o streaming disponível nas
 *API's* do Spotify.
 
@@ -206,36 +206,28 @@ streaming de áudio é reproduzido em tempo real. O que é muito mais
 conveniente do que baixar uma música online e então consumi-la. (Luini
 et al., 2002)
 
-Spotify é o um serviço de musica
+Fundado em 2006, Spotify em seu site se define como:
 
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+Um serviço de streaming digital de música, podcast e video que permite
+que seus usuários tenham acesso milhões de músicas ou outros conteúdos
+dos artistas ao redor do mundo. (Spotify, 2019)
 
-Sistemas de Recomendação
+Falar sobre:
 
-\- conceito
+\- o que é o spotify ✔
 
-\- histórico
-
-\- Exemplos de uso
-
-\- Sistemas de Recomendação para Streaming
-
-\- Vantagens/desvantagens
-
-Serviços de Streaming Musicais
-
-\- conceito
-
-\- histórico
-
-\- exemplos
-
-\- mais utilizado a partir de alguma estatística
+\- como o streaming musical revolucionou a área
 
 \- O que faltam nos sistemas de recomendação musicais para serviços de
-streaming
+streaming?
 
-\- Formula a tua questão de pesquisa
+> \- precisão preditiva vs qualidade percebida
+>
+> \- de que maneira o spotify monta as playlists
+
+\- Formular minha questão de pesquisa
+
+> \- como que vamos buscar melhorar esse serviço?
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
