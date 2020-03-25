@@ -177,20 +177,36 @@ assertiva recomendação. (Dietmar et al., 2010)
 
 Os sistemas de recomendação têm ajudado muito na venda de produtos
 online, porém, um dos segmentos de mercado que apresentaram problemas,
-são as vendas de álbum ou faixas online. Pois elas possibilitam as
-pessoas baixarem ou receberem as faixas a partir de compras em lojas
-virtuais, porem o preço de cada faixa ainda era muito caro o que fazia
-com que muitos usuários optassem pela pirataria. Aonde muitos viram esse
+são as vendas de álbum ou faixas online. Elas possibilitam as pessoas
+baixarem ou receberem as faixas a partir de compras em lojas virtuais,
+porem o preço de cada faixa ainda era muito caro o que fazia com que
+muitos usuários optassem pela pirataria. Aonde muitos viram esse
 problema e criaram uma nova maneira de anunciar os "produtos musicais"
 online, que é o streaming musical. (Borja & Dieringer, 2016)
 
-O mercado musical tem evoluído muito desde seu início, no início, seu
+O mercado musical tem evoluído muito desde seu início, no começo, seu
 consumo foi aumentando cada vez mais com a evolução das tecnologias e
 internet. Com o streaming musical, as pessoas passaram a consumir mais
-os sistemas de streaming, diminuindo o consumo de pirataria online a
-partir de downloads. Em 2018 o lucro global da indústria musical cresceu
-9,7%, nesse crescimento, o streaming pago possui boa parte dele com um
-34% do total. (IFPI, 2019)
+os sistemas de streaming, diminuindo o consumo de pirataria online.
+(Eriksson et al., 2019) Em 2018 o lucro global da indústria musical
+cresceu 9,7%, nesse crescimento, o streaming pago possui boa parte dele
+com um 34% do total. (IFPI, 2019)
+
+Os sistemas de streaming são um tipo de mecanismo de processamento de
+dados projetado com um conjunto de dados infinitos em mente. (Niwa,
+2018) Esse mecanismo pode ser desenvolvido para processar muitos tipos
+de média, como vídeos, fotos, áudio. Nesse trabalho será utilizado o
+streaming de áudio, mais especificamente, o streaming disponível nas
+*API's* do Spotify.
+
+O streaming de áudio é semelhante a transmissão de radio tradicional,
+exceto que é utilizado a internet para enviar e receber os áudios, ao
+invés de utilizar ondas aéreas. Assim como o ato de ligar um radio o
+streaming de áudio é reproduzido em tempo real. O que é muito mais
+conveniente do que baixar uma música online e então consumi-la. (Luini
+et al., 2002)
+
+Spotify é o um serviço de musica
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
