@@ -240,19 +240,17 @@ Objetivos específicos
  METODOLOGIA
 ===========
 
-**OBSERVAÇÕES:**
+Natureza: aplicada
 
-1)  **Entende-se por metodologia a forma, a maneira como a pesquisa será
-    realizada. É o caminho para se chegar no conhecimento, na resposta
-    ao problema de pesquisa. São os passos da pesquisa.**
+Método Científico:
 
-2)  **Apresentamos o universo a ser pesquisado (pessoas, coisas,
-    fenômenos\....), o método, as técnicas de coleta de dados a serem
-    utilizadas (pesquisa bibliográfica, documental, de campo, de
-    laboratório, entrevista, questionário, testes, formulários, etc), a
-    forma de análise e interpretação dos dados.**
+Objetivo do Estudo:
 
- CRONOGRAMA
+Procedimento Técnico:
+
+Abordagem:
+
+CRONOGRAMA
 ==========
 
 Trabalho de Conclusão I
