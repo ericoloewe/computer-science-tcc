@@ -6,8 +6,6 @@ title: UNIVERSIDADE FEEVALE
 
 ##### SISTEMA DE RECOMENDAÇÃO MUSICAL BASEADO EM CONTEXTO COMPORTAMENTAL E DE AMBIENTE
 
-(Título Provisório)
-
 ###### Anteprojeto de Trabalho de Conclusão
 
 Novo Hamburgo
@@ -17,8 +15,6 @@ Novo Hamburgo
 ÉRICO DE SOUZA LOEWE
 
 ##### SISTEMA DE RECOMENDAÇÃO MUSICAL BASEADO EM CONTEXTO COMPORTAMENTAL E DE AMBIENTE
-
-(Título Provisório)
 
 > Anteprojeto de Trabalho de Conclusão de Curso, apresentado como
 > requisito parcial
@@ -175,14 +171,14 @@ fornecido manualmente (conteúdo recente ao produto e usuário). E por
 ideia é combinar as diferentes técnicas, buscando gerar uma boa e mais
 assertiva recomendação. (Dietmar et al., 2010)
 
-Os sistemas de recomendação têm ajudado muito na venda de produtos
-online, porém, um dos segmentos de mercado que apresentaram problemas,
-são as vendas de álbum ou faixas online. Elas possibilitam as pessoas
-baixarem ou receberem as faixas a partir de compras em lojas virtuais,
-porem o preço de cada faixa ainda era muito caro o que fazia com que
-muitos usuários optassem pela pirataria. Aonde muitos viram esse
-problema e criaram uma nova maneira de anunciar os "produtos musicais"
-online, que é o streaming musical. (Borja & Dieringer, 2016)
+Esses sistemas têm ajudado muito na venda de produtos online, porém, um
+dos segmentos de mercado que apresentaram problemas, são as vendas de
+álbum ou faixas online. Elas possibilitam as pessoas baixarem ou
+receberem as faixas a partir de compras em lojas virtuais, porem o preço
+de cada faixa ainda era muito caro o que fazia com que muitos usuários
+optassem pela pirataria. Aonde muitos viram esse problema e criaram uma
+nova maneira de anunciar os "produtos musicais" online, que é o
+streaming musical. (Borja & Dieringer, 2016)
 
 O mercado musical tem evoluído muito desde seu início, no começo, seu
 consumo foi aumentando cada vez mais com a evolução das tecnologias e
@@ -199,45 +195,19 @@ de média como vídeos, fotos, áudio. Nesse trabalho será utilizado o
 streaming de áudio, mais especificamente, o streaming disponível nas
 *API's* do Spotify.
 
-O streaming de áudio é semelhante a transmissão de radio tradicional,
-exceto que é utilizado a internet para enviar e receber os áudios, ao
-invés de utilizar ondas aéreas. Assim como o ato de ligar um radio o
-streaming de áudio é reproduzido em tempo real. O que é muito mais
-conveniente do que baixar uma música online e então consumi-la. (Luini
-et al., 2002)
+Dentro dos sistemas de streaming, existe o streaming de áudio que é
+semelhante a transmissão de radio tradicional, exceto que é utilizado a
+internet para enviar e receber os áudios, ao invés de utilizar ondas
+aéreas. Assim como o ato de ligar um radio o streaming de áudio é
+reproduzido em tempo real. O que é muito mais conveniente do que baixar
+uma música online e então consumi-la. (Luini et al., 2002)
 
-Fundado em 2006, Spotify em seu site se define como:
-
-Um serviço de streaming digital de música, podcast e video que permite
-que seus usuários tenham acesso milhões de músicas ou outros conteúdos
-dos artistas ao redor do mundo. (Spotify, 2019)
-
-Falar sobre:
-
-\- o que é o spotify ✔
-
-\- como o streaming musical revolucionou a área
-
-\- O que faltam nos sistemas de recomendação musicais para serviços de
-streaming?
-
-> \- precisão preditiva vs qualidade percebida
->
-> \- de que maneira o spotify monta as playlists
-
-\- Formular minha questão de pesquisa
-
-> \- como que vamos buscar melhorar esse serviço?
-
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
-
-Atualmente, o Spotify não consegue captar um sentimento tão bem, devido
-a não levar em consideração as ações que os usuários estão tomando
-naquele momento.
-
-A ideia desse projeto e que com ele, possamos evoluir a recomendação
-musical para algo mais voltado ao sentimento que o usuário está sentindo
-no momento em que está ouvindo a música.
+Portando, de acordo com esse contexto, este trabalho procura evoluir a
+recomendação musical utilizando o contexto comportamental do usuário e o
+contexto de ambiente. Esse contexto será obtido, através da criação um
+plugin que irá permitir que o usuário escute suas músicas enquanto
+registramos eventos do contexto vivido naquele momento. Para então,
+evoluir a recomendação personalizada do plugin para o usuário.
 
 **\
 OBJETIVOS**
