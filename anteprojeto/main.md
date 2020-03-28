@@ -240,15 +240,28 @@ Objetivos específicos
  METODOLOGIA
 ===========
 
-Natureza: aplicada
+Esse trabalho tem como natureza de pesquisa aplicada, pois através dos
+conhecimentos estudados de RecSys será desenvolvido um sistema que irá
+gerar as recomendações musicais personalizadas por usuário através do
+contexto comportamento e ambiental obtido através do plugin de
+reprodução musical.
 
-Método Científico:
+O método científico utilizado por esse trabalho é do tipo dedutivo, dado
+que primeiro será realizado um estudo relacionado ao problema proposto
+anteriormente, para então se obter o entendimento de como poderá ser
+resolvido o problema.
 
-Objetivo do Estudo:
+Natureza: aplicada ✔
 
-Procedimento Técnico:
+Método Científico: dedutivo ✔
 
-Abordagem:
+Objetivo do Estudo: Exploratória (quero entender a personalidade musical
+de cada usuário para recomendar melhores musicas para eles)
+
+Procedimento Técnico: Pesquisa Bibliográfica, Pesquisa Experimental,
+Levantamento
+
+Abordagem: Quantitativa
 
 CRONOGRAMA
 ==========
