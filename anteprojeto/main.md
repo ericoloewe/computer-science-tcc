@@ -144,9 +144,9 @@ melhorado a satisfação dos usuários e com isso, aumentando sua
 fidelidade na aplicação, e o principal, os RecSys ajudam a entender
 melhor o que o usuário quer. (Ricci et al., 2011)
 
-Os RecSys têm evoluído muito desde o seu surgimento, isso acontece dado
-o interesse acadêmico e comercial sobre a área dado os benefícios que
-ela pode trazer. Um caso famoso dos sistemas de recomendação foi o
+Os *RecSys* têm evoluído muito desde o seu surgimento, isso acontece
+dado o interesse acadêmico e comercial sobre a área dado os benefícios
+que ela pode trazer. Um caso famoso dos sistemas de recomendação foi o
 *Netflix Prize*, uma competição feita pela Netflix, que ofereceu um
 milhão a quem melhorasse o algoritmo de recomendação de seu sistema em
 10%. A competição iniciou em 2006 e demorou 3 anos para alguém conseguir
@@ -178,27 +178,27 @@ receberem as faixas a partir de compras em lojas virtuais, porem o preço
 de cada faixa ainda era muito caro o que fazia com que muitos usuários
 optassem pela pirataria. Aonde muitos viram esse problema e criaram uma
 nova maneira de anunciar os "produtos musicais" online, que é o
-streaming musical. (Borja & Dieringer, 2016)
+*streaming* musical. (Borja & Dieringer, 2016)
 
 O mercado musical tem evoluído muito desde seu início, no começo, seu
 consumo foi aumentando cada vez mais com a evolução das tecnologias e
-internet. Com o streaming musical, as pessoas passaram a consumir mais
-os sistemas de streaming, diminuindo o consumo de pirataria online.
+internet. Com o *streaming* musical, as pessoas passaram a consumir mais
+os sistemas de *streaming*, diminuindo o consumo de pirataria online.
 (Eriksson et al., 2019) Em 2018 o lucro global da indústria musical
-cresceu 9,7%, nesse crescimento, o streaming pago possui boa parte dele
-com um 34% do total. (IFPI, 2019)
+cresceu 9,7%, nesse crescimento, o *streaming* pago possui boa parte
+dele com um 34% do total. (IFPI, 2019)
 
-Os sistemas de streaming são um tipo de mecanismo de processamento de
+Os sistemas de *streaming* são um tipo de mecanismo de processamento de
 dados projetado com um conjunto de dados infinitos em mente. (Niwa,
 2018) Esse mecanismo pode ser desenvolvido para processar muitos tipos
 de média como vídeos, fotos, áudio. Nesse trabalho será utilizado o
-streaming de áudio, mais especificamente, o streaming disponível nas
+*streaming* de áudio, mais especificamente, o *streaming* disponível nas
 *API's* do Spotify.
 
-Dentro dos sistemas de streaming, existe o streaming de áudio que é
+Dentro dos sistemas de *streaming*, existe o *streaming* de áudio que é
 semelhante a transmissão de radio tradicional, exceto que é utilizado a
 internet para enviar e receber os áudios, ao invés de utilizar ondas
-aéreas. Assim como o ato de ligar um radio o streaming de áudio é
+aéreas. Assim como o ato de ligar um radio o *streaming* de áudio é
 reproduzido em tempo real. O que é muito mais conveniente do que baixar
 uma música online e então consumi-la. (Luini et al., 2002)
 
@@ -220,7 +220,7 @@ encontra-se.
 
 Objetivos específicos
 
--   Investigar APIs de Serviços de Streamings Musicais.
+-   Investigar APIs de Serviços de *Streamings* Musicais.
 
 -   Selecionar a API a ser utilizada no sistema de recomendação.
 
@@ -241,7 +241,7 @@ Objetivos específicos
 ===========
 
 Esse trabalho tem como natureza de pesquisa aplicada, pois através dos
-conhecimentos estudados de RecSys será desenvolvido um sistema que irá
+conhecimentos estudados de *RecSys* será desenvolvido um sistema que irá
 gerar as recomendações musicais personalizadas por usuário através do
 contexto comportamento e ambiental obtido através do plugin de
 reprodução musical.
@@ -249,14 +249,28 @@ reprodução musical.
 O método científico utilizado por esse trabalho é do tipo dedutivo, dado
 que primeiro será realizado um estudo relacionado ao problema proposto
 anteriormente, para então se obter o entendimento de como poderá ser
-resolvido o problema.
+resolvido o problema. Esse estudo irá buscar entender a personalidade
+musical de cada usuário através dos dados obtidos e dos estudos de
+*Machine Learning* aplicados sobre os dados, para então desenvolver um
+sistema de recomendação baseado nos estudos realizados fazendo com que
+essa pesquisa tenha como objetivo de estudo exploratório.
+
+Será utilizado 4 tipos de procedimentos técnicos nessa pesquisa.
+Bibliográfica, dado que será necessária uma base de conhecimentos e
+estudos sobre os sistemas de recomendação e seus algoritmos. Como será
+utilizado a *API* do Spotify para consultar as faixas e outras
+utilidades, utilizaremos o procedimento técnico Documental. Com o estudo
+realizado e os registros de contextos prontos, utilizaremos da pesquisa
+experimental para avaliar a base disponível através dos algoritmos de
+RecSys. Será feito uma pesquisa de avaliação do usuário ouvinte para
+estudarmos o seu entendimento em relação ao que foi recomendado, nesse
+caso será utilizado o procedimento técnico do tipo levantamento.
 
 Natureza: aplicada ✔
 
 Método Científico: dedutivo ✔
 
-Objetivo do Estudo: Exploratória (quero entender a personalidade musical
-de cada usuário para recomendar melhores musicas para eles)
+Objetivo do Estudo: Exploratória ✔
 
 Procedimento Técnico: Pesquisa Bibliográfica, Pesquisa Experimental,
 Levantamento
