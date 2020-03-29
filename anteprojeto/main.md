@@ -267,16 +267,12 @@ ouvinte para estudarmos o seu entendimento em relação ao que foi
 recomendado, nesse caso será utilizado o procedimento técnico do tipo
 levantamento.
 
-Natureza: aplicada ✔
-
-Método Científico: dedutivo ✔
-
-Objetivo do Estudo: Exploratória ✔
-
-Procedimento Técnico: Pesquisa Bibliográfica, Pesquisa Experimental,
-Levantamento ✔
-
-Abordagem: Quantitativa
+A abordagem dessa pesquisa será do tipo quantitativa, pois o foco de
+estudo desse trabalho será voltado para algoritmos de sistemas de
+recomendação que buscam entender o gosto de um usuário e não diretamente
+a estudos referentes a psicologia cognitiva. Então assim que as bases
+estiverem prontas, será realizado um estudo em cima delas apresentando
+estatisticamente diversos comportamentos e suas tendencias.
 
 CRONOGRAMA
 ==========
