@@ -256,15 +256,16 @@ sistema de recomendação baseado nos estudos realizados fazendo com que
 essa pesquisa tenha como objetivo de estudo exploratório.
 
 Será utilizado 4 tipos de procedimentos técnicos nessa pesquisa.
-Bibliográfica, dado que será necessária uma base de conhecimentos e
-estudos sobre os sistemas de recomendação e seus algoritmos. Como será
+Pesquisa bibliográfica, dado que será necessária uma base de
+conhecimentos e estudos sobre os *RecSys* e seus algoritmos. Como será
 utilizado a *API* do Spotify para consultar as faixas e outras
-utilidades, utilizaremos o procedimento técnico Documental. Com o estudo
-realizado e os registros de contextos prontos, utilizaremos da pesquisa
-experimental para avaliar a base disponível através dos algoritmos de
-RecSys. Será feito uma pesquisa de avaliação do usuário ouvinte para
-estudarmos o seu entendimento em relação ao que foi recomendado, nesse
-caso será utilizado o procedimento técnico do tipo levantamento.
+utilidades, utilizaremos o procedimento técnico pesquisa documental. Com
+o estudo realizado e os registros de contextos prontos, utilizaremos da
+pesquisa experimental para avaliar a base disponível através dos
+algoritmos de *RecSys*. Será feito uma pesquisa de avaliação do usuário
+ouvinte para estudarmos o seu entendimento em relação ao que foi
+recomendado, nesse caso será utilizado o procedimento técnico do tipo
+levantamento.
 
 Natureza: aplicada ✔
 
@@ -273,7 +274,7 @@ Método Científico: dedutivo ✔
 Objetivo do Estudo: Exploratória ✔
 
 Procedimento Técnico: Pesquisa Bibliográfica, Pesquisa Experimental,
-Levantamento
+Levantamento ✔
 
 Abordagem: Quantitativa
 
