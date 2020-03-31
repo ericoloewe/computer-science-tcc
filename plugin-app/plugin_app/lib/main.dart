@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:plugin_app/welcome.dart';
 
+import 'login.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -21,11 +23,12 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.brown,
       ),
-      initialRoute: '/welcome',
+      initialRoute: '/login',
       routes: {
         // When navigating to the "/" route, build the FirstScreen widget.
         '/': (context) => MyHomePage(title: 'Home page'),
         '/welcome': (context) => WelcomePage(),
+        '/login': (context) => LoginPage(),
       },
     );
   }

@@ -6,7 +6,10 @@ class WelcomePage extends StatelessWidget {
     return Scaffold(
       body: Padding(
           padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 16.0),
-          child: Column(children: <Widget>[
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
             Container(
                 height: 350,
                 child: ListView(children: <Widget>[
