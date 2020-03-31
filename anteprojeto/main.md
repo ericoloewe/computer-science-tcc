@@ -272,7 +272,19 @@ estudo desse trabalho será voltado para algoritmos de sistemas de
 recomendação que buscam entender o gosto de um usuário e não diretamente
 a estudos referentes a psicologia cognitiva. Então assim que as bases
 estiverem prontas, será realizado um estudo em cima delas apresentando
-estatisticamente diversos comportamentos e suas tendencias.
+estatisticamente diversos comportamentos e suas tendências.
+
+Para avaliar o estudo, será desenvolvido um sistema que irá permitir o
+usuário criar uma nova *playlist*, onde o sistema irá consultar os
+contextos relacionados as músicas escutadas pelo usuário gerando uma
+nova lista das músicas recomendadas. A avaliação de contexto será feita
+enquanto o usuário estiver ouvindo as músicas e editando a *playlist*,
+possibilitando que o sistema identifique e altere (caso julgue
+necessário) as músicas no meio da edição. Ao final da edição, será
+enviado uma avaliação para o usuário, a qual vai permitir que o sistema
+tenha conhecimento dos gostos do usuário. Ao final, será apresentado
+nessa pesquisa diversos comportamentos e tendências dos usuários
+encontradas a partir desse sistema.
 
 CRONOGRAMA
 ==========
