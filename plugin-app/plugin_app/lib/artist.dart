@@ -65,14 +65,13 @@ class _MyArtistPage extends State<ArtistPage> {
                     ),
                     child: ListView(
                         children: artists
-                            .map((a) => ChoiceChip(
-                                  padding: const EdgeInsets.symmetric(
-                                      vertical: 15, horizontal: 15),
-                                  label: Text(a.name),
-                                  selected: _value == a.name,
-                                  onSelected: (bool selected) {
-                                    print(selected);
-                                  },
+                            .map((a) => ListTile(
+                                  leading: CircleAvatar(
+                                    backgroundImage: NetworkImage(a.image),
+                                  ),
+                                  title: Text(a.name),
+                                  selected: _value == a,
+                                  onTap: () => _value = a,
                                 ))
                             .toList()))
               ],
@@ -83,7 +82,8 @@ class _MyArtistPage extends State<ArtistPage> {
 class Artist {
   String name;
   String description;
-  String image;
+  String image =
+      'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg';
 
   Artist(this.name);
 }
