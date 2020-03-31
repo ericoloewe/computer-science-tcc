@@ -1,32 +1,32 @@
 import 'package:flutter/material.dart';
 
-class ArtistPage extends StatefulWidget {
+class GenderPage extends StatefulWidget {
   @override
-  _MyArtistPage createState() => _MyArtistPage();
+  _MyGenderPage createState() => _MyGenderPage();
 }
 
-class _MyArtistPage extends State<ArtistPage> {
+class _MyGenderPage extends State<GenderPage> {
   final findController = TextEditingController();
-  List<Artist> artists = <Artist>[
-    Artist('lorem'),
-    Artist('ipsum'),
-    Artist('dolor'),
-    Artist('set'),
-    Artist('lorem 2'),
-    Artist('ipsum 3'),
-    Artist('dolor 4'),
-    Artist('set 5'),
-    Artist('lorem 1'),
-    Artist('ipsum 321'),
-    Artist('dolor 3213'),
-    Artist('set 434'),
-    Artist('lorem 55'),
-    Artist('ipsum 66'),
-    Artist('dolor 77'),
-    Artist('set 8'),
+  List<Gender> genders = <Gender>[
+    Gender('lorem'),
+    Gender('ipsum'),
+    Gender('dolor'),
+    Gender('set'),
+    Gender('lorem 2'),
+    Gender('ipsum 3'),
+    Gender('dolor 4'),
+    Gender('set 5'),
+    Gender('lorem 1'),
+    Gender('ipsum 321'),
+    Gender('dolor 3213'),
+    Gender('set 434'),
+    Gender('lorem 55'),
+    Gender('ipsum 66'),
+    Gender('dolor 77'),
+    Gender('set 8'),
   ];
 
-  Artist _value;
+  Gender _value;
 
   @override
   void dispose() {
@@ -40,7 +40,7 @@ class _MyArtistPage extends State<ArtistPage> {
         appBar: AppBar(
           // Here we take the value from the MyHomePage object that was created by
           // the App.build method, and use it to set our appbar title.
-          title: Text("Artista preferidos"),
+          title: Text("Generos musicais preferidos"),
         ),
         body: Padding(
             padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 16.0),
@@ -48,7 +48,7 @@ class _MyArtistPage extends State<ArtistPage> {
               children: <Widget>[
                 TextFormField(
                   decoration: const InputDecoration(
-                    hintText: 'Nome do artista',
+                    hintText: 'Nome do Generos',
                   ),
                   controller: findController,
                   validator: (value) {
@@ -64,28 +64,28 @@ class _MyArtistPage extends State<ArtistPage> {
                       maxHeight: MediaQuery.of(context).size.height - 193,
                     ),
                     child: ListView(
-                        children: artists
+                        children: genders
                             .map((a) => ListTile(
-                                  leading: CircleAvatar(
-                                    backgroundImage: NetworkImage(a.image),
-                                  ),
-                                  title: Text(a.name),
-                                  selected: _value == a,
-                                  onTap: () => setState(() {
-                                    _value = a;
-                                  }),
-                                ))
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(a.image),
+                          ),
+                          title: Text(a.name),
+                          selected: _value == a,
+                          onTap: () => setState(() {
+                            _value = a;
+                          }),
+                        ))
                             .toList()))
               ],
             )));
   }
 }
 
-class Artist {
+class Gender {
   String name;
   String description;
   String image =
       'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg';
 
-  Artist(this.name);
+  Gender(this.name);
 }
