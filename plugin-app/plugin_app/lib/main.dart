@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plugin_app/welcome.dart';
 
+import 'artist.dart';
 import 'login.dart';
 
 void main() => runApp(MyApp());
@@ -23,12 +24,13 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.brown,
       ),
-      initialRoute: '/login',
+      initialRoute: '/artist',
       routes: {
         // When navigating to the "/" route, build the FirstScreen widget.
         '/': (context) => MyHomePage(title: 'Home page'),
         '/welcome': (context) => WelcomePage(),
         '/login': (context) => LoginPage(),
+        '/artist': (context) => ArtistPage(),
       },
     );
   }
