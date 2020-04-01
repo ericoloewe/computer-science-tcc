@@ -34,29 +34,18 @@ Novo Hamburgo
 RESUMO
 ======
 
-O resumo é construído na forma de um parágrafo único e não pode
-ultrapassar 500 palavras. Todo resumo é uma apresentação concisa dos
-pontos relevantes de um trabalho/documento.
+Sabe-se que as pessoas têm dificuldades em lidar com um grande volume de
+informações, e com a internet e a evolução da tecnologia houve aumento
+da quantidade disponível trazendo a necessidade de os sistemas evoluírem
+suas recomendações, surgindo os RecSys. Esses sistemas são utilizados em
+diversos tipos de aplicações como vendas, seleção de um filme e até
+mesmo na seleção de uma música, que é um dos objetivos dessa pesquisa.
+Esse trabalho tem como objetivo desenvolver um modelo de sistema de
+recomendação baseado em contexto comportamental e de ambiente buscando
+aperfeiçoar as recomendações musicais para o usuário.
 
-Palavras-chave: No máximo 5 palavras-chave, separadas entre si por ponto
-e finalizadas também pó ponto.
-
-**OBSERVAÇÕES:**
-
-**[Dicas para elaboração do resumo:]{.underline}**
-
-**- Apresentar o assunto/tema a ser abordado;**
-
-**- Destacar a área de atuação do trabalho e qual problemática ou
-trabalho busca solucionar. Situar o trabalho, de forma específica,
-dentro de uma área, projeto de pesquisa ou problema empresarial;**
-
-**- Ressaltar o método do trabalho (caso já saiba, colocar no
-anteprojeto).**
-
-**- Destacar os objetivos do trabalho. Exemplos: "Sendo assim, este
-trabalho tem como objetivo\...." , "Desta forma, este trabalho tem como
-objetivo \...." , etc.**
+Palavras-chave: *RecSys.* *Machine Learning.* Sistemas de recomendação
+musical. Música. Spotify.
 
  SUMÁRIO
 =======
