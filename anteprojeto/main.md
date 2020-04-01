@@ -286,6 +286,7 @@ Trabalho de Conclusão I
                                                                                                Mar     Abr   Mai   Jun
   Anteprojeto                                                                                                      
   Pesquisa bibliográfica sobre técnicas e algoritmos utilizados por sistemas de recomendação                       
+  Estudar API do Spotify                                                                                           
   Definir contexto comportamental e de ambiente                                                                    
   Liberação da aplicação para obter os dados necessários.                                                          
   Estudar técnicas para avaliar os resultados                                                                      
