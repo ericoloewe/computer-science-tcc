@@ -291,28 +291,31 @@ CRONOGRAMA
 
 Trabalho de Conclusão I
 
-  ------- ------- ----- ----- -----
-  Etapa   Meses               
-          Mar     Abr   Mai   Jun
-                              
-  ------- ------- ----- ----- -----
+  -------------------------------------------------------------------------------------------- ------- ----- ----- -----
+  Etapa                                                                                        Meses               
+                                                                                               Mar     Abr   Mai   Jun
+  Anteprojeto                                                                                                      
+  Pesquisa bibliográfica sobre técnicas e algoritmos utilizados por sistemas de recomendação                       
+  Definir contexto comportamental e de ambiente                                                                    
+  Liberação da aplicação para obter os dados necessários.                                                          
+  Estudar técnicas para avaliar os resultados                                                                      
+  Elaborar TCC I                                                                                                   
+  -------------------------------------------------------------------------------------------- ------- ----- ----- -----
 
 Trabalho de Conclusão II
 
-  ------- ------- ----- ----- -----
-  Etapa   Meses               
-          Ago     Set   Out   Nov
-                              
-  ------- ------- ----- ----- -----
+  ----------------------------------------- ------- ----- ----- -----
+  Etapa                                     Meses               
+                                            Ago     Set   Out   Nov
+  Organizar dados obtidos                                       
+  Definir técnica para avaliar resultados                       
+  Desenvolver sistema de recomendação                           
+  Análise dos resultados                                        
+  Elaborar TCC II                                               
+  ----------------------------------------- ------- ----- ----- -----
 
-OBSERVAÇÕES: 
+BIBLIOGRAFIA
 ============
-
-- O cronograma é a etapa do trabalho em que o pesquisador define o cronograma da pesquisa, determinando fases a serem cumpridas e os prazos para a realização das tarefas. 
-==========================================================================================================================================================================
-
-- Construímos em forma de quadro, como no modelo acima. BIBLIOGRAFIA
-====================================================================
 
 Usar normas conforme Manual de Metodologia Científica da Feevale = livro
 prof. Prodanov. .
