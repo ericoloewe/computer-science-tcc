@@ -40,9 +40,11 @@ da quantidade disponível trazendo a necessidade de os sistemas evoluírem
 suas recomendações, surgindo os RecSys. Esses sistemas são utilizados em
 diversos tipos de aplicações como vendas, seleção de um filme e até
 mesmo na seleção de uma música, que é um dos objetivos dessa pesquisa.
-Esse trabalho tem como objetivo desenvolver um modelo de sistema de
-recomendação baseado em contexto comportamental e de ambiente buscando
-aperfeiçoar as recomendações musicais para o usuário.
+Neste trabalho será desenvolvido um modelo de sistema de recomendação
+baseado em contexto comportamental e de ambiente. O objetivo desse
+sistema é apresentar informações sobre o comportamento e tendência do
+usuário, possibilitando o aperfeiçoamento das recomendações musicais de
+acordo com o contexto vivenciado pelo usuário.
 
 Palavras-chave: *RecSys.* *Machine Learning.* Sistemas de recomendação
 musical. Música. Spotify.
@@ -286,7 +288,7 @@ Trabalho de Conclusão I
                                                                                                Mar     Abr   Mai   Jun
   Anteprojeto                                                                                                      
   Pesquisa bibliográfica sobre técnicas e algoritmos utilizados por sistemas de recomendação                       
-  Estudar API do Spotify                                                                                           
+  Investigar APIs de Serviços de *Streamings* Musicais                                                             
   Definir contexto comportamental e de ambiente                                                                    
   Liberação da aplicação para obter os dados necessários.                                                          
   Estudar técnicas para avaliar os resultados                                                                      
