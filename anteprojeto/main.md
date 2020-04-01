@@ -310,39 +310,27 @@ Trabalho de Conclusão II
 BIBLIOGRAFIA
 ============
 
-Usar normas conforme Manual de Metodologia Científica da Feevale = livro
-prof. Prodanov. .
-
-**OBSERVAÇÕES:**
-
-**- Ordem alfabética**
-
-**- Devem entrar todos os títulos utilizados na estruturação do
-anteprojeto de pesquisa.**
-
-**OBSERVAÇÕES GERAIS:**
-
-**- Início de parágrafo = 1,5.**
-
-**- Folha A4, letra Times New Roman, tamanho 12 no texto normal. Nos
-títulos pode-se utilizar letra maior (14) e em letra maiúscula.**
-
-**- Espaçamento entre título e texto = dois espaços 1,5.**
-
-**- Espaçamento entre parágrafos = 6,0 pontos depois.**
-
-**- Espaçamento, no sumário, entre um título e outro = 6,0 pontos
-depois.**
-
-**- Margens: superior = 3cm**
-
-**Inferior = 2cm**
-
-**Esquerda = 3cm**
-
-**Direita = 2cm**
-
-**- O anteprojeto deve conter em torno de 11 páginas no total.**
-
-**- Alinhamento no texto justificado. Os títulos, contudo, são
-centralizados.**
+Bhatnagar, V. (2016). Collaborative filtering using data mining and
+analysis. In *Collaborative Filtering Using Data Mining and Analysis*.
+https://doi.org/10.4018/978-1-5225-0489-4Borja, K., & Dieringer, S.
+(2016). Streaming or stealing? The complementary features between music
+streaming and music piracy. *Journal of Retailing and Consumer
+Services*, *32*, 86--95.
+https://doi.org/10.1016/j.jretconser.2016.06.007Dietmar, J., Zanker, M.,
+Felfernig, A., & Friedrich, G. (2010). Recommendation system -An
+Introduction. In *Cambridge University Press* (Vol. 91).Eriksson, M.,
+Fleischer, R., Johansson, A., Snickars, P., & Vonderau, P. (2019).
+Spotify Teardown. In *Spotify Teardown*. MIT Press.
+https://doi.org/10.7551/mitpress/10932.001.0001Falk, K. (2019).
+*Practical Recommender Systems*.IFPI. (2019). *IFPI Global Music Report
+2019*. https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019Luini, B.
+J. R., Whitman, A. E., & Date, P. (2002). *Streaming Audio: The FezGuys'
+Guide*.Muraro, R. M. (2009). *Os avanços tecnológicos e o futuro da
+humanidade*. Querendo ser Deus.Niwa, H. (2018). Streaming Systems. In
+*Development* (Vol. 134, Issue 4). O'Reilly Media.Resnick, Paul and
+Varian, H. R. (1997). Recommender Systems. *Communications of the ACM*,
+*40*(4), 56--58.Ricci, F., Rokach, L., & Shapira, B. (2011). Recommender
+Systems Handbook. In *Recommender Systems Handbook*.
+https://doi.org/10.1007/978-0-387-85820-3Universidade Federal do Ceara.
+(n.d.). *A Magnetorresistência Gigante*. Retrieved March 12, 2020, from
+https://seara.ufc.br/tintim-por-tintim/tecnologia/a-magnetorresistencia-gigante/
