@@ -58,7 +58,8 @@ anteprojeto).**
 trabalho tem como objetivo\...." , "Desta forma, este trabalho tem como
 objetivo \...." , etc.**
 
-SUMÁRIO
+ SUMÁRIO
+=======
 
 MOTIVAÇÃO
 \...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...5
@@ -209,8 +210,8 @@ plugin que irá permitir que o usuário escute suas músicas enquanto
 registramos eventos do contexto vivido naquele momento. Para então,
 evoluir a recomendação personalizada do plugin para o usuário.
 
-**\
-**OBJETIVOS
+** **OBJETIVOS
+==============
 
 Objetivo geral
 
