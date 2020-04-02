@@ -274,7 +274,10 @@ necessário) as músicas no meio da edição. Ao final da edição, será
 enviado uma avaliação para o usuário, a qual vai permitir que o sistema
 tenha conhecimento dos gostos do usuário. Ao final, será apresentado
 nessa pesquisa diversos comportamentos e tendências dos usuários
-encontradas a partir desse sistema.
+encontradas a partir desse sistema. Procura-se responder a seguinte
+questão: É possível aperfeiçoar as recomendações de um sistema aplicando
+os conhecimentos de RecSys em cima dos dados de contexto comportamental
+e de ambiente gerados pelo usuário através de suas musicas conhecidas?
 
 CRONOGRAMA
 ==========
