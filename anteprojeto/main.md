@@ -248,14 +248,14 @@ objetivo de estudo exploratório.
 Serão utilizados 4 tipos de procedimentos técnicos nessa pesquisa.
 Pesquisa bibliográfica, dado que será necessária uma base de
 conhecimentos e estudos sobre os *RecSys*, suas técnicas e algoritmos.
-Como será utilizada a *API* do Spotify para consultar as faixas e outras
-utilidades, utilizaremos o procedimento técnico pesquisa documental. Com
-o estudo realizado e os registros de contextos prontos, utilizaremos da
-pesquisa experimental para avaliar a base disponível através dos
-algoritmos de *RecSys*. Será feito uma pesquisa de avaliação do usuário
-ouvinte para estudarmos o seu entendimento em relação ao que foi
-recomendado, nesse caso será utilizado o procedimento técnico do tipo
-levantamento.
+Como será utilizada a *API* de algum serviço de *streaming* musical para
+consultar as faixas e outras utilidades, utilizaremos o procedimento
+técnico pesquisa documental. Com o estudo realizado e os registros de
+contextos prontos, utilizaremos da pesquisa experimental para avaliar a
+base disponível através dos algoritmos de *RecSys*. Será feito uma
+pesquisa de avaliação do usuário ouvinte para estudarmos o seu
+entendimento em relação ao que foi recomendado, nesse caso será
+utilizado o procedimento técnico do tipo levantamento.
 
 A abordagem dessa pesquisa será do tipo quantitativa, pois o foco de
 estudo desse trabalho será voltado para algoritmos de sistemas de
@@ -264,20 +264,12 @@ a estudos referentes a psicologia cognitiva. Então assim que as bases
 estiverem prontas, será realizado um estudo em cima delas apresentando
 estatisticamente diversos comportamentos e suas tendências.
 
-Para avaliar o estudo, será desenvolvido um sistema que permitirá ao
-usuário criar uma nova *playlist*, onde o sistema consultará os
-contextos relacionados as músicas escutadas pelo usuário, gerando uma
-nova lista de músicas recomendadas. A avaliação de contexto será feita
-enquanto o usuário estiver ouvindo as músicas e editando a *playlist*,
-possibilitando que o sistema identifique e altere (caso julgue
-necessário) as músicas no meio da edição. Ao final da edição, será
-enviado uma avaliação para o usuário, a qual vai permitir que o sistema
-tenha conhecimento dos gostos do usuário. Ao final, será apresentado
-nessa pesquisa diversos comportamentos e tendências dos usuários
-encontradas a partir desse sistema. Procura-se responder a seguinte
-questão: É possível aperfeiçoar as recomendações de um sistema aplicando
-os conhecimentos de RecSys em cima dos dados de contexto comportamental
-e de ambiente gerados pelo usuário através de suas musicas conhecidas?
+Ao final, será apresentado nessa pesquisa diversos comportamentos e
+tendências dos usuários encontradas a partir desse sistema. Procura-se
+responder a seguinte questão: É possível aperfeiçoar as recomendações de
+um sistema aplicando os conhecimentos de RecSys em cima dos dados de
+contexto comportamental e de ambiente gerados pelo usuário através de
+suas músicas conhecidas reproduzidas?
 
 CRONOGRAMA
 ==========
