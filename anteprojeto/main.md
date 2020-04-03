@@ -232,12 +232,12 @@ Objetivos específicos
 
 Esse trabalho tem como natureza a pesquisa aplicada, pois através dos
 conhecimentos estudados de *RecSys* será desenvolvido um sistema que
-gerará as recomendações musicais personalizadas por usuário por meio do
+gerará as recomendações musicais personalizadas por usuário, por meio do
 contexto comportamental e ambiental, obtido através do *plugin* de
 reprodução musical.
 
 O método científico utilizado por esse trabalho é do tipo dedutivo, dado
-que primeiro será realizado uma pesquisa bibliográfica relacionada ao
+que primeiro será realizada uma pesquisa bibliográfica relacionada ao
 problema proposto, para então se obter o entendimento de como ele poderá
 ser resolvido. Esse estudo buscará o funcionamento dos *RecSys* musicais
 por meio dos resultados gerados através do sistema desenvolvido nessa
@@ -253,22 +253,21 @@ técnico pesquisa documental.
 
 Com o estudo realizado e os registros de contextos definidos, será
 utilizado da pesquisa experimental, para avaliar a base disponível
-através da aplicação liberada aos usuários. Será feito uma pesquisa de
-avaliação do usuário ouvinte para estudarmos o seu entendimento em
-relação ao que foi recomendado, nesse caso será utilizado o procedimento
+através da aplicação liberada aos usuários. Será realizada uma pesquisa
+de avaliação do usuário ouvinte para estudarmos o seu entendimento em
+relação ao que foi recomendado. Nesse caso será utilizado o procedimento
 técnico do tipo levantamento. Para realizar ambos procedimentos, será
 necessário realizar um estudo de técnicas para avaliar os resultados de
 um RecSys.
 
-A abordagem dessa pesquisa será do tipo quantitativa, pois será aplicado
-os conhecimentos de RecSys nos dados de contexto relacionados à música
-gerando resultados estatísticos das tendências de comportamentos dos
-usuários.
+A abordagem dessa pesquisa será do tipo quantitativa, pois serão
+aplicados os conhecimentos de RecSys nos dados de contextos relacionados
+à música, gerando resultados estatísticos das tendências de
+comportamentos dos usuários.
 
-Ao final, procura-se responder a seguinte questão: É possível
+Ao final, esse trabalho procura responder a seguinte questão: É possível
 aperfeiçoar as recomendações de um sistema, aplicando os conhecimentos
-de RecSys em cima dos dados de contexto comportamental e de ambiente,
-gerados pelo usuário através de suas músicas conhecidas?
+de RecSys sobre os dados de contexto comportamental e de ambiente?
 
 CRONOGRAMA
 ==========
