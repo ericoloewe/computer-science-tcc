@@ -237,23 +237,26 @@ contexto comportamental e ambiental, obtido através do *plugin* de
 reprodução musical.
 
 O método científico utilizado por esse trabalho é do tipo dedutivo, dado
-que primeiro será realizado um estudo relacionado ao problema proposto,
-para então se obter o entendimento de como ele poderá ser resolvido.
-Esse estudo buscará o funcionamento dos *RecSys* musicais por meio dos
-resultados gerados através do sistema desenvolvido nessa pesquisa,
-fazendo com que ela tenha como objetivo de estudo exploratório.
+que primeiro será realizado uma pesquisa bibliográfica relacionada ao
+problema proposto, para então se obter o entendimento de como ele poderá
+ser resolvido. Esse estudo buscará o funcionamento dos *RecSys* musicais
+por meio dos resultados gerados através do sistema desenvolvido nessa
+pesquisa, fazendo com que ela tenha como objetivo de estudo
+exploratório.
 
 Serão utilizados 4 tipos de procedimentos técnicos nessa pesquisa.
 Pesquisa bibliográfica, dado que será necessária uma base de
 conhecimentos e estudos sobre os *RecSys*, suas técnicas e algoritmos.
 Como será utilizada a *API* de algum serviço de *streaming* musical para
 consultar as faixas e outras utilidades, utilizaremos o procedimento
-técnico pesquisa documental. Com o estudo realizado e os registros de
-contextos prontos, utilizaremos da pesquisa experimental para avaliar a
-base disponível através dos algoritmos de *RecSys*. Será feito uma
-pesquisa de avaliação do usuário ouvinte para estudarmos o seu
-entendimento em relação ao que foi recomendado, nesse caso será
-utilizado o procedimento técnico do tipo levantamento.
+técnico pesquisa documental.
+
+Com o estudo realizado e os registros de contextos definidos,
+utilizaremos da pesquisa experimental para avaliar a base disponível
+através da aplicação liberada aos usuários. Será feito uma pesquisa de
+avaliação do usuário ouvinte para estudarmos o seu entendimento em
+relação ao que foi recomendado, nesse caso será utilizado o procedimento
+técnico do tipo levantamento.
 
 A abordagem dessa pesquisa será do tipo quantitativa, pois será aplicado
 os conhecimentos de RecSys nos dados de contexto relacionados à música
@@ -279,6 +282,7 @@ Trabalho de Conclusão I
   Definir contexto comportamental e de ambiente                                                                    
   Liberação da aplicação para obter os dados necessários.                                                          
   Estudar técnicas para avaliar os resultados                                                                      
+  Desenvolver tela de avaliação de playlist                                                                        
   Elaborar TCC I                                                                                                   
   -------------------------------------------------------------------------------------------- ------- ----- ----- -----
 
