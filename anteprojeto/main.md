@@ -239,10 +239,10 @@ reprodução musical.
 O método científico utilizado por esse trabalho é do tipo dedutivo, dado
 que primeiro será realizada uma pesquisa bibliográfica relacionada ao
 problema proposto, para então se obter o entendimento de como ele poderá
-ser resolvido. Ela buscará estudar o funcionamento dos *RecSys*
-musicais, por meio dos resultados gerados através do sistema
-desenvolvido nessa pesquisa, fazendo com que ela tenha como objetivo de
-estudo exploratório.
+ser resolvido. Essa pesquisa buscará estudar o funcionamento dos
+sistemas de recomendação musicais, por meio dos resultados apresentados
+nessa pesquisa, fazendo com que ela tenha como objetivo de estudo
+exploratório.
 
 Serão utilizados 4 tipos de procedimentos técnicos nessa pesquisa.
 Pesquisa bibliográfica, dado que será necessária uma base de
@@ -265,9 +265,10 @@ aplicados os conhecimentos de RecSys nos dados de contextos relacionados
 à música, gerando resultados estatísticos das tendências de
 comportamentos dos usuários.
 
-Ao final, esse trabalho procura responder a seguinte questão: É possível
-aperfeiçoar as recomendações de um sistema, aplicando os conhecimentos
-de RecSys sobre os dados de contexto comportamental e de ambiente?
+Ao final, esse trabalho procura responder a seguinte questão: Com base
+nas músicas conhecidas pelo usuário, é possível aperfeiçoar as
+recomendações de um sistema, aplicando os conhecimentos de RecSys sobre
+os dados de contexto comportamental e de ambiente?
 
 CRONOGRAMA
 ==========
