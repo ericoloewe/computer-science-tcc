@@ -239,11 +239,9 @@ reprodução musical.
 O método científico utilizado por esse trabalho é do tipo dedutivo, dado
 que primeiro será realizado um estudo relacionado ao problema proposto,
 para então se obter o entendimento de como ele poderá ser resolvido.
-Esse estudo buscará entender a personalidade musical de cada usuário,
-por meio dos dados obtidos e dos estudos de *Machine Learning* aplicados
-sobre os dados, para então desenvolver um sistema de recomendação
-baseado nos estudos realizados fazendo com que essa pesquisa tenha como
-objetivo de estudo exploratório.
+Esse estudo buscará o funcionamento dos *RecSys* musicais por meio dos
+resultados gerados através do sistema desenvolvido nessa pesquisa,
+fazendo com que ela tenha como objetivo de estudo exploratório.
 
 Serão utilizados 4 tipos de procedimentos técnicos nessa pesquisa.
 Pesquisa bibliográfica, dado que será necessária uma base de
