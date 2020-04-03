@@ -251,12 +251,14 @@ Como será utilizada a *API* de algum serviço de *streaming* musical para
 consultar as faixas e outras utilidades, utilizaremos o procedimento
 técnico pesquisa documental.
 
-Com o estudo realizado e os registros de contextos definidos,
-utilizaremos da pesquisa experimental para avaliar a base disponível
+Com o estudo realizado e os registros de contextos definidos, será
+utilizado da pesquisa experimental, para avaliar a base disponível
 através da aplicação liberada aos usuários. Será feito uma pesquisa de
 avaliação do usuário ouvinte para estudarmos o seu entendimento em
 relação ao que foi recomendado, nesse caso será utilizado o procedimento
-técnico do tipo levantamento.
+técnico do tipo levantamento. Para realizar ambos procedimentos, será
+necessário realizar um estudo de técnicas para avaliar os resultados de
+um RecSys.
 
 A abordagem dessa pesquisa será do tipo quantitativa, pois será aplicado
 os conhecimentos de RecSys nos dados de contexto relacionados à música
