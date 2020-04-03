@@ -257,19 +257,15 @@ pesquisa de avaliação do usuário ouvinte para estudarmos o seu
 entendimento em relação ao que foi recomendado, nesse caso será
 utilizado o procedimento técnico do tipo levantamento.
 
-A abordagem dessa pesquisa será do tipo quantitativa, pois o foco de
-estudo desse trabalho será voltado para algoritmos de sistemas de
-recomendação que buscam entender o gosto de um usuário e não diretamente
-a estudos referentes a psicologia cognitiva. Então assim que as bases
-estiverem prontas, será realizado um estudo em cima delas apresentando
-estatisticamente diversos comportamentos e suas tendências.
+A abordagem dessa pesquisa será do tipo quantitativa, pois será aplicado
+os conhecimentos de RecSys nos dados de contexto relacionados à música
+gerando resultados estatísticos das tendências de comportamentos dos
+usuários.
 
-Ao final, será apresentado nessa pesquisa diversos comportamentos e
-tendências dos usuários encontradas a partir desse sistema. Procura-se
-responder a seguinte questão: É possível aperfeiçoar as recomendações de
-um sistema aplicando os conhecimentos de RecSys em cima dos dados de
-contexto comportamental e de ambiente gerados pelo usuário através de
-suas músicas conhecidas reproduzidas?
+Ao final, procura-se responder a seguinte questão: É possível
+aperfeiçoar as recomendações de um sistema, aplicando os conhecimentos
+de RecSys em cima dos dados de contexto comportamental e de ambiente,
+gerados pelo usuário através de suas músicas conhecidas?
 
 CRONOGRAMA
 ==========
