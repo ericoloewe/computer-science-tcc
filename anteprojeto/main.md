@@ -260,10 +260,14 @@ técnico do tipo levantamento. Para realizar ambos procedimentos, será
 necessário realizar um estudo de técnicas para avaliar os resultados de
 um RecSys.
 
-A abordagem dessa pesquisa será do tipo quantitativa, pois serão
-aplicados os conhecimentos de RecSys nos dados de contextos relacionados
-à música, gerando resultados estatísticos das tendências de
-comportamentos dos usuários.
+Tendo as técnicas de avaliação a serem utilizadas definidas, elas serão
+desenvolvidas no sistema, permitindo que os usuários consigam contribuir
+com sua recomendação através de suas avaliações. Essa pesquisa, irá
+apresentar no final os resultados estatísticos obtidos pelas
+recomendações do sistema e suas avaliações, apresentando, por exemplo, a
+quantidade de acertos e erros (a partir da perspectiva do usuário)
+obtidos nas recomendações, fazendo com que, essa pesquisa tenha como
+abordagem do tipo quantitativa.
 
 Ao final, esse trabalho procura responder a seguinte questão: Com base
 nas músicas conhecidas pelo usuário, é possível aperfeiçoar as
