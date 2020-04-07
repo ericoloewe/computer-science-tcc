@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { Button, Typography } from "@material-ui/core";
 
-export function Welcome() {
+export default function () {
   return (
     <article className="welcome-page">
       <section className="description">

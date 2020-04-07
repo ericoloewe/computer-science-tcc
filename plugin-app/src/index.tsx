@@ -1,24 +1,31 @@
-import React from "react";
+import React, { Suspense, StrictMode } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import { Home } from "./pages/home";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Welcome } from "./pages/welcome";
+import { Loader } from "./components/loader/index";
+
+const Home = React.lazy(() => import("./pages/home"));
+const Welcome = React.lazy(() => import("./pages/welcome"));
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Switch>
-        <Route path="/welcome">
-          <Welcome />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </BrowserRouter>
-  </React.StrictMode>,
+  <StrictMode>
+    <Suspense fallback={<Loader />}>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/login">
+            <Welcome />
+          </Route>
+          <Route path="/welcome">
+            <Welcome />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </Suspense>
+  </StrictMode>,
   document.getElementById("root")
 );
 

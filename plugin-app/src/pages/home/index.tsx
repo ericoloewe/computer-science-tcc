@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./style.css";
 import { Layout } from "../shared/layout";
 
-export function Home() {
+export default function () {
   return (
     <Layout>
       <div className="App">
