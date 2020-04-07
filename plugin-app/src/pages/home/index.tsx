@@ -2,22 +2,26 @@ import React from "react";
 import logo from "./logo.svg";
 import "./style.css";
 import { Layout } from "../shared/layout";
+import { Link } from "react-router-dom";
 
 export default function () {
   return (
-    <Layout>
+    <Layout className="home-page" pageTitle="Home">
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.tsx</code> and save to reload.
           </p>
-          <a className="App-link" href="/welcome">
+          <Link className="App-link" to="/welcome">
             Go to welcome
-          </a>
-          <a className="App-link" href="/login">
+          </Link>
+          <Link className="App-link" to="/login">
             Go to login
-          </a>
+          </Link>
+          <Link className="App-link" to="/artists">
+            Go to artists
+          </Link>
         </header>
       </div>
     </Layout>

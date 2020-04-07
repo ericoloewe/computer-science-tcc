@@ -1,21 +1,17 @@
 import React from "react";
 import "./style.css";
 
-import {
-  AppBar,
-  Toolbar,
-  IconButton,
-  Typography,
-  Button
-} from "@material-ui/core";
+import { AppBar, Toolbar, IconButton, Typography } from "@material-ui/core";
 
 import { Menu } from "@material-ui/icons";
 
 interface Props {
+  className?: string;
   children: any;
+  pageTitle: string;
 }
 
-export function Layout({ children }: Props) {
+export function Layout({ className, children, pageTitle }: Props) {
   return (
     <div className="root-layout">
       <header className="header">
@@ -30,13 +26,12 @@ export function Layout({ children }: Props) {
               <Menu />
             </IconButton>
             <Typography variant="h6" className={"title"}>
-              News
+              {pageTitle}
             </Typography>
-            <Button color="inherit">Login</Button>
           </Toolbar>
         </AppBar>
       </header>
-      <article>{children}</article>
+      <article className={className}>{children}</article>
     </div>
   );
 }

@@ -3,17 +3,21 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Loader } from "./components/loader/index";
+import { Loader } from "./components/loader";
 
 const Home = React.lazy(() => import("./pages/home"));
 const Welcome = React.lazy(() => import("./pages/welcome"));
 const Login = React.lazy(() => import("./pages/login"));
+const Artists = React.lazy(() => import("./pages/artists"));
 
 ReactDOM.render(
   <StrictMode>
     <Suspense fallback={<Loader />}>
       <BrowserRouter>
         <Switch>
+          <Route path="/artists">
+            <Artists />
+          </Route>
           <Route path="/login">
             <Login />
           </Route>

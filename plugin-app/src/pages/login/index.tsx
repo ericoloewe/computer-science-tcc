@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import { Button, Typography, TextField } from "@material-ui/core";
+import { Button, TextField } from "@material-ui/core";
 
 export default function () {
   return (
@@ -8,6 +8,7 @@ export default function () {
       <img
         className="logo"
         src="https://developer.spotify.com/assets/branding-guidelines/icon3@2x.png"
+        alt="Spotify logo"
       />
       <section className="fields">
         <TextField id="standard-helperText" label="Email" />
