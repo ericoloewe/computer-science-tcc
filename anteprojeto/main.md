@@ -241,7 +241,7 @@ que primeiro será realizada uma pesquisa bibliográfica relacionada ao
 problema proposto, para então se obter o entendimento de como ele poderá
 ser resolvido. Essa pesquisa buscará estudar o funcionamento dos
 sistemas de recomendação musicais, por meio dos resultados apresentados
-nessa pesquisa, fazendo com que ela tenha como objetivo de estudo
+nessa pesquisa, fazendo com que ela tenha como objetivo um estudo
 exploratório.
 
 Serão utilizados 4 tipos de procedimentos técnicos nessa pesquisa.
@@ -262,17 +262,17 @@ um RecSys.
 
 Tendo as técnicas de avaliação a serem utilizadas definidas, elas serão
 desenvolvidas no sistema, permitindo que os usuários consigam contribuir
-com sua recomendação através de suas avaliações. Essa pesquisa, irá
-apresentar no final os resultados estatísticos obtidos pelas
+com sua recomendação através de suas avaliações. Essa pesquisa,
+apresentará no final os resultados estatísticos obtidos pelas
 recomendações do sistema e suas avaliações, apresentando, por exemplo, a
 quantidade de acertos e erros (a partir da perspectiva do usuário)
-obtidos nas recomendações, fazendo com que, essa pesquisa tenha como
+obtidos nas recomendações, fazendo com que, essa pesquisa tenha uma
 abordagem do tipo quantitativa.
 
 Ao final, esse trabalho procura responder a seguinte questão: Com base
 nas músicas conhecidas pelo usuário, é possível aperfeiçoar as
-recomendações de um sistema, aplicando os conhecimentos de RecSys sobre
-os dados de contexto comportamental e de ambiente?
+recomendações de um sistema, aplicando os conhecimentos de RecSys e
+utilizando dados de contexto comportamental e de ambiente?
 
 CRONOGRAMA
 ==========
