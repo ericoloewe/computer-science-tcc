@@ -131,7 +131,7 @@ aplicações de diversas formas, pois com eles, aumentam-se o número de
 itens vendidos em sites de venda online, além dos sites conseguirem
 vender itens mais diversificados. Eles têm melhorado a satisfação dos
 usuários e, com isso, têm aumentado suas fidelidades na aplicação, e o
-principal, os RecSys ajudam a entender melhor o que o usuários querem.
+principal, os RecSys ajudam a entender melhor o que os usuários querem.
 (RICCI; ROKACH; SHAPIRA, 2011)
 
 Os *RecSys* têm evoluído muito desde o seu surgimento, isso acontece
