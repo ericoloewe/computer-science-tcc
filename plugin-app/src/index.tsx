@@ -7,6 +7,7 @@ import { Loader } from "./components/loader/index";
 
 const Home = React.lazy(() => import("./pages/home"));
 const Welcome = React.lazy(() => import("./pages/welcome"));
+const Login = React.lazy(() => import("./pages/login"));
 
 ReactDOM.render(
   <StrictMode>
@@ -14,7 +15,7 @@ ReactDOM.render(
       <BrowserRouter>
         <Switch>
           <Route path="/login">
-            <Welcome />
+            <Login />
           </Route>
           <Route path="/welcome">
             <Welcome />

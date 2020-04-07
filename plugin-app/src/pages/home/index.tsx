@@ -15,6 +15,9 @@ export default function () {
           <a className="App-link" href="/welcome">
             Go to welcome
           </a>
+          <a className="App-link" href="/login">
+            Go to login
+          </a>
         </header>
       </div>
     </Layout>
