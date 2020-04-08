@@ -1,7 +1,7 @@
 import "./style.scss";
 
 import React from "react";
-import { AppBar, Toolbar, Typography, IconButton } from "@material-ui/core";
+import { AppBar, Toolbar, IconButton, TextField } from "@material-ui/core";
 import { ExpandMore as ExpandMoreIcon, Search as SearchIcon, Add as AddIcon } from "@material-ui/icons";
 
 import { ChooseWithActions } from "../../components/choose-with-actions";
@@ -52,7 +52,7 @@ export default function () {
 }
 
 function SearchAppBar() {
-  const musicTitle = "Musica 1";
+  const musicTitle = "Musica 123";
 
   return (
     <AppBar position="static" color="primary" className="music-app-bar">
@@ -60,9 +60,7 @@ function SearchAppBar() {
         <IconButton edge="start" className={"classes.menuButton"} color="inherit" aria-label="like">
           <ExpandMoreIcon />
         </IconButton>
-        <Typography variant="h6" className={"title"}>
-          {musicTitle}
-        </Typography>
+        <TextField id="standard-basic" label="Search" defaultValue={musicTitle} />
         <div style={{ flexGrow: 1 }} />
         <IconButton edge="end" className={"classes.menuButton"} color="inherit" aria-label="like">
           <SearchIcon />
