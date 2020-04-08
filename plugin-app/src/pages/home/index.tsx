@@ -25,6 +25,9 @@ export default function () {
           <Link className="App-link" to="/gender">
             Go to gender
           </Link>
+          <Link className="App-link" to="/new-playlist-felling">
+            Go to new-playlist-felling
+          </Link>
         </header>
       </div>
     </Layout>
