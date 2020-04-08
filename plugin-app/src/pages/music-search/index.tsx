@@ -2,7 +2,7 @@ import "./style.scss";
 
 import React from "react";
 import { AppBar, Toolbar, IconButton, TextField } from "@material-ui/core";
-import { ExpandMore as ExpandMoreIcon, Search as SearchIcon, Add as AddIcon } from "@material-ui/icons";
+import { Search as SearchIcon, Add as AddIcon, ArrowBack as ArrowBackIcon } from "@material-ui/icons";
 
 import { ChooseWithActions } from "../../components/choose-with-actions";
 
@@ -58,7 +58,7 @@ function SearchAppBar() {
     <AppBar position="static" color="primary" className="music-app-bar">
       <Toolbar>
         <IconButton edge="start" className={"classes.menuButton"} color="inherit" aria-label="like">
-          <ExpandMoreIcon />
+          <ArrowBackIcon />
         </IconButton>
         <TextField id="standard-basic" label="Search" defaultValue={musicTitle} />
         <div style={{ flexGrow: 1 }} />
