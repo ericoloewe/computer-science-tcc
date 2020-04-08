@@ -1,6 +1,6 @@
 import React, { Suspense, StrictMode } from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Loader } from "./components/loader";
