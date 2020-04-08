@@ -10,7 +10,7 @@ const Welcome = React.lazy(() => import("./pages/welcome"));
 const Login = React.lazy(() => import("./pages/login"));
 const Artists = React.lazy(() => import("./pages/artists"));
 const Gender = React.lazy(() => import("./pages/gender"));
-const NewPlaylistFelling = React.lazy(() => import("./pages/new-playlist-felling"));
+const PlaylistFelling = React.lazy(() => import("./pages/playlist-felling"));
 
 ReactDOM.render(
   <StrictMode>
@@ -18,7 +18,7 @@ ReactDOM.render(
       <BrowserRouter>
         <Switch>
           <Route path="/new-playlist-felling">
-            <NewPlaylistFelling />
+            <PlaylistFelling />
           </Route>
           <Route path="/gender">
             <Gender />

@@ -23,11 +23,11 @@ const gender = [
 export default function () {
   return (
     <Layout
-      className="new-playlist-page"
+      className="playlist-page"
       pageTitle="O que você esta sentindo?"
       hideMenu={true}
     >
-      <Choose textFieldLabel="Genero musical" items={gender} />
+      <Choose textFieldLabel="Sentimentos" items={gender} />
       <Button variant="contained" color="primary" href="/">
         Proximo
       </Button>
