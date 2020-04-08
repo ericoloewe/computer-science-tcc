@@ -38,7 +38,11 @@ const artists = [
 
 export default function () {
   return (
-    <Layout className="artists-page" pageTitle="Artistas preferidos">
+    <Layout
+      className="artists-page"
+      pageTitle="Artistas preferidos"
+      hideMenu={true}
+    >
       <Choose textFieldLabel="Nome do artista" items={artists} />
       <Button variant="contained" color="primary" href="/">
         Proximo

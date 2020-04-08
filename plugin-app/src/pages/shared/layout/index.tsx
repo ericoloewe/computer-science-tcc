@@ -6,25 +6,28 @@ import { AppBar, Toolbar, IconButton, Typography } from "@material-ui/core";
 import { Menu } from "@material-ui/icons";
 
 interface Props {
-  className?: string;
   children: any;
+  className?: string;
+  hideMenu?: boolean;
   pageTitle: string;
 }
 
-export function Layout({ className, children, pageTitle }: Props) {
+export function Layout({ className, children, hideMenu, pageTitle }: Props) {
   return (
     <div className="root-layout">
       <header className="header">
         <AppBar position="static">
           <Toolbar>
-            <IconButton
-              edge="start"
-              className={"classes.menuButton"}
-              color="inherit"
-              aria-label="menu"
-            >
-              <Menu />
-            </IconButton>
+            {!hideMenu && (
+              <IconButton
+                edge="start"
+                className={"classes.menuButton"}
+                color="inherit"
+                aria-label="menu"
+              >
+                <Menu />
+              </IconButton>
+            )}
             <Typography variant="h6" className={"title"}>
               {pageTitle}
             </Typography>

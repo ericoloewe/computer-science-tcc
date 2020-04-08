@@ -22,7 +22,11 @@ const gender = [
 
 export default function () {
   return (
-    <Layout className="artists-page" pageTitle="Generos musicais preferidos">
+    <Layout
+      className="gender-page"
+      pageTitle="Generos musicais preferidos"
+      hideMenu={true}
+    >
       <Choose textFieldLabel="Genero musical" items={gender} />
       <Button variant="contained" color="primary" href="/">
         Proximo
