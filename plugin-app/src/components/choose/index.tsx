@@ -22,7 +22,7 @@ export function Choose({ items, textFieldLabel }: Props) {
       <Paper className="paper">
         <List className="list" dense={false}>
           {items.map((ci) => (
-            <ListItem selected={ci.selected}>
+            <ListItem key={ci.title} selected={ci.selected}>
               {ci.image && (
                 <ListItemAvatar>
                   <Avatar src={ci.image?.src} alt={ci.image.alt} />

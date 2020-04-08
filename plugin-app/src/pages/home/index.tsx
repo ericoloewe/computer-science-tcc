@@ -1,41 +1,55 @@
+import "./style.scss";
+
 import React from "react";
-import logo from "./logo.svg";
-import "./style.css";
+import { Favorite as FavoriteIcon, Add as AddIcon } from "@material-ui/icons";
+
+import { ChooseWithActions } from "../../components/choose-with-actions";
 import { Layout } from "../shared/layout";
-import { Link } from "react-router-dom";
+import { Fab } from "@material-ui/core";
+
+const playlists = [
+  {
+    title: "Playlist 1",
+    description: "Greyhound divisively hello coldly wonderfully marginally far...",
+    image: {
+      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
+      alt: "jack johson",
+    },
+    selected: true,
+  },
+  {
+    title: "Playlist 2",
+    description: "Greyhound divisively hello coldly wonderfully marginally far...",
+    image: {
+      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
+      alt: "jack johson",
+    },
+  },
+  {
+    title: "Playlist 3",
+    description: "Greyhound divisively hello coldly wonderfully marginally far...",
+    image: {
+      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
+      alt: "jack johson",
+    },
+  },
+  {
+    title: "Playlist 4",
+    description: "Greyhound divisively hello coldly wonderfully marginally far...",
+    image: {
+      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
+      alt: "jack johson",
+    },
+  },
+];
 
 export default function () {
   return (
-    <Layout className="home-page" pageTitle="Home">
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <Link className="App-link" to="/welcome">
-            Go to welcome
-          </Link>
-          <Link className="App-link" to="/login">
-            Go to login
-          </Link>
-          <Link className="App-link" to="/artists">
-            Go to artists
-          </Link>
-          <Link className="App-link" to="/gender">
-            Go to gender
-          </Link>
-          <Link className="App-link" to="/playlist-felling">
-            Go to playlist-felling
-          </Link>
-          <Link className="App-link" to="/playlist">
-            Go to playlist
-          </Link>
-          <Link className="App-link" to="/music-search">
-            Go to MusicSearch
-          </Link>
-        </header>
-      </div>
+    <Layout className="home-page" pageTitle="Playlists">
+      <ChooseWithActions items={playlists} actionIcon={<FavoriteIcon />} />
+      <Fab className="new-playlist-button" color="primary" aria-label="add">
+        <AddIcon />
+      </Fab>
     </Layout>
   );
 }

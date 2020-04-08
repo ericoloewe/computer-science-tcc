@@ -1,0 +1,10 @@
+.home-page {
+  position: relative;
+  flex: 1;
+
+  .new-playlist-button {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+  }
+}

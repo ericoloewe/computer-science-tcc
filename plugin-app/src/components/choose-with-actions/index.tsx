@@ -1,6 +1,15 @@
 import "./style.scss";
 import React from "react";
-import { ListItem, ListItemAvatar, Avatar, ListItemText, List, Paper, ListItemSecondaryAction, IconButton } from "@material-ui/core";
+import {
+  ListItem,
+  ListItemAvatar,
+  Avatar,
+  ListItemText,
+  List,
+  Paper,
+  ListItemSecondaryAction,
+  IconButton,
+} from "@material-ui/core";
 
 interface Props {
   actionIcon: any;
@@ -20,7 +29,7 @@ export function ChooseWithActions({ items, actionIcon }: Props) {
       <Paper className="paper">
         <List className="list" dense={false}>
           {items.map((ci) => (
-            <ListItem selected={ci.selected}>
+            <ListItem key={ci.title} selected={ci.selected}>
               {ci.image && (
                 <ListItemAvatar>
                   <Avatar src={ci.image?.src} alt={ci.image.alt} />
