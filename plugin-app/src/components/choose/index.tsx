@@ -7,6 +7,7 @@ import {
   Avatar,
   ListItemText,
   List,
+  Paper,
 } from "@material-ui/core";
 
 interface Props {
@@ -25,18 +26,20 @@ export function Choose({ items, textFieldLabel }: Props) {
     <div className="choose-component">
       <TextField label={textFieldLabel} />
 
-      <List dense={false}>
-        {items.map((ci) => (
-          <ListItem selected={ci.selected}>
-            {ci.image && (
-              <ListItemAvatar>
-                <Avatar src={ci.image?.src} alt={ci.image.alt} />
-              </ListItemAvatar>
-            )}
-            <ListItemText primary="Single-line item" />
-          </ListItem>
-        ))}
-      </List>
+      <Paper className="paper">
+        <List className="list" dense={false}>
+          {items.map((ci) => (
+            <ListItem selected={ci.selected}>
+              {ci.image && (
+                <ListItemAvatar>
+                  <Avatar src={ci.image?.src} alt={ci.image.alt} />
+                </ListItemAvatar>
+              )}
+              <ListItemText primary={ci.title} />
+            </ListItem>
+          ))}
+        </List>
+      </Paper>
     </div>
   );
 }
