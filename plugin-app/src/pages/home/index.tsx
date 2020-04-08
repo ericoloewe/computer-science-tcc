@@ -22,6 +22,9 @@ export default function () {
           <Link className="App-link" to="/artists">
             Go to artists
           </Link>
+          <Link className="App-link" to="/gender">
+            Go to gender
+          </Link>
         </header>
       </div>
     </Layout>

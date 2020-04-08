@@ -1,0 +1,15 @@
+.artists-page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.root-layout {
+  > .header {
+    .title.MuiTypography-h6 {
+      font-size: 1.15rem;
+    }
+  }
+}
