@@ -1,7 +1,7 @@
 import "./style.scss";
 
 import React from "react";
-import { AppBar, Toolbar, IconButton, TextField } from "@material-ui/core";
+import { AppBar, Toolbar, IconButton, TextField, makeStyles } from "@material-ui/core";
 import { Search as SearchIcon, Add as AddIcon, ArrowBack as ArrowBackIcon } from "@material-ui/icons";
 
 import { ChooseWithActions } from "../../components/choose-with-actions";
@@ -51,7 +51,35 @@ export default function () {
   );
 }
 
+const useStyles = makeStyles({
+  root: {
+    "& label": {
+      color: "white",
+    },
+    "& .MuiInput-underline": {
+      "&:after,&:before": {
+        borderBottomColor: "white",
+      },
+    },
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "white",
+      },
+      "&:hover fieldset": {
+        borderColor: "#eee",
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "white",
+      },
+    },
+  },
+  input: {
+    color: "white",
+  },
+});
+
 function SearchAppBar() {
+  const classes = useStyles();
   const musicTitle = "Musica 123";
 
   return (
@@ -60,7 +88,15 @@ function SearchAppBar() {
         <IconButton edge="start" className={"classes.menuButton"} color="inherit" aria-label="like">
           <ArrowBackIcon />
         </IconButton>
-        <TextField id="standard-basic" label="Search" defaultValue={musicTitle} />
+        <TextField
+          id="standard-basic"
+          className={classes.root}
+          label="Search"
+          defaultValue={musicTitle}
+          InputProps={{
+            className: classes.input,
+          }}
+        />
         <div style={{ flexGrow: 1 }} />
         <IconButton edge="end" className={"classes.menuButton"} color="inherit" aria-label="like">
           <SearchIcon />
