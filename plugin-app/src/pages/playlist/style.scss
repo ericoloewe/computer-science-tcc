@@ -13,3 +13,10 @@
     top: auto;
   }
 }
+
+.choose-with-actions-component {
+  > .paper {
+    margin-top: 10px;
+    max-height: 70vh;
+  }
+}

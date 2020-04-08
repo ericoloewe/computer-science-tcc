@@ -1,18 +1,6 @@
 import "./style.scss";
 import React from "react";
-import {
-  TextField,
-  ListItem,
-  ListItemAvatar,
-  Avatar,
-  ListItemText,
-  List,
-  Paper,
-  ListItemSecondaryAction,
-  IconButton,
-} from "@material-ui/core";
-
-import FavoriteIcon from "@material-ui/icons/Favorite";
+import { TextField, ListItem, ListItemAvatar, Avatar, ListItemText, List, Paper } from "@material-ui/core";
 
 interface Props {
   textFieldLabel: string;
@@ -41,11 +29,6 @@ export function Choose({ items, textFieldLabel }: Props) {
                 </ListItemAvatar>
               )}
               <ListItemText primary={ci.title} secondary={ci.description} />
-              <ListItemSecondaryAction>
-                <IconButton edge="end" aria-label="delete">
-                  <FavoriteIcon />
-                </IconButton>
-              </ListItemSecondaryAction>
             </ListItem>
           ))}
         </List>

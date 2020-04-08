@@ -1,11 +1,10 @@
 import "./style.scss";
 
 import React from "react";
-import { AppBar, Toolbar, Typography, IconButton, Button } from "@material-ui/core";
-import { ExpandLess as ExpandLessIcon, Favorite as FavoriteIcon, Search as SearchIcon } from "@material-ui/icons";
+import { AppBar, Toolbar, Typography, IconButton } from "@material-ui/core";
+import { ExpandMore as ExpandMoreIcon, Search as SearchIcon, Add as AddIcon } from "@material-ui/icons";
 
 import { ChooseWithActions } from "../../components/choose-with-actions";
-import { Layout } from "../shared/layout";
 
 const musics = [
   {
@@ -45,31 +44,28 @@ const musics = [
 
 export default function () {
   return (
-    <Layout className="playlist-page" pageTitle="Nome da playlist">
-      <Button variant="contained" color="primary" href="/" startIcon={<SearchIcon>send</SearchIcon>}>
-        Buscar musica
-      </Button>
-      <ChooseWithActions items={musics} actionIcon={<FavoriteIcon />} />
-      <MusicAppBar />
-    </Layout>
+    <article className="music-search-page">
+      <SearchAppBar />
+      <ChooseWithActions items={musics} actionIcon={<AddIcon />} />
+    </article>
   );
 }
 
-function MusicAppBar() {
+function SearchAppBar() {
   const musicTitle = "Musica 1";
 
   return (
-    <AppBar position="fixed" color="primary" className="music-app-bar">
+    <AppBar position="static" color="primary" className="music-app-bar">
       <Toolbar>
         <IconButton edge="start" className={"classes.menuButton"} color="inherit" aria-label="like">
-          <FavoriteIcon />
+          <ExpandMoreIcon />
         </IconButton>
         <Typography variant="h6" className={"title"}>
           {musicTitle}
         </Typography>
         <div style={{ flexGrow: 1 }} />
         <IconButton edge="end" className={"classes.menuButton"} color="inherit" aria-label="like">
-          <ExpandLessIcon />
+          <SearchIcon />
         </IconButton>
       </Toolbar>
     </AppBar>

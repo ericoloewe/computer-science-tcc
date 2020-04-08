@@ -12,12 +12,16 @@ const Artists = React.lazy(() => import("./pages/artists"));
 const Gender = React.lazy(() => import("./pages/gender"));
 const PlaylistFelling = React.lazy(() => import("./pages/playlist-felling"));
 const Playlist = React.lazy(() => import("./pages/playlist"));
+const MusicSearch = React.lazy(() => import("./pages/music-search"));
 
 ReactDOM.render(
   <StrictMode>
     <Suspense fallback={<Loader />}>
       <BrowserRouter>
         <Switch>
+          <Route path="/music-search">
+            <MusicSearch />
+          </Route>
           <Route path="/playlist">
             <Playlist />
           </Route>

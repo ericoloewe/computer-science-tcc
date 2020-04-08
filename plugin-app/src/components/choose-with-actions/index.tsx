@@ -1,20 +1,9 @@
 import "./style.scss";
 import React from "react";
-import {
-  TextField,
-  ListItem,
-  ListItemAvatar,
-  Avatar,
-  ListItemText,
-  List,
-  Paper,
-  ListItemSecondaryAction,
-  IconButton,
-} from "@material-ui/core";
-
-import FavoriteIcon from "@material-ui/icons/Favorite";
+import { ListItem, ListItemAvatar, Avatar, ListItemText, List, Paper, ListItemSecondaryAction, IconButton } from "@material-ui/core";
 
 interface Props {
+  actionIcon: any;
   items: ChooseItem[];
 }
 
@@ -25,7 +14,7 @@ export interface ChooseItem {
   selected?: boolean;
 }
 
-export function ChooseWithActions({ items }: Props) {
+export function ChooseWithActions({ items, actionIcon }: Props) {
   return (
     <div className="choose-with-actions-component">
       <Paper className="paper">
@@ -40,7 +29,7 @@ export function ChooseWithActions({ items }: Props) {
               <ListItemText primary={ci.title} secondary={ci.description} />
               <ListItemSecondaryAction>
                 <IconButton edge="end" aria-label="delete">
-                  <FavoriteIcon />
+                  {actionIcon}
                 </IconButton>
               </ListItemSecondaryAction>
             </ListItem>

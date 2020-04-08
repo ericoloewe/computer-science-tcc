@@ -31,6 +31,9 @@ export default function () {
           <Link className="App-link" to="/playlist">
             Go to playlist
           </Link>
+          <Link className="App-link" to="/music-search">
+            Go to MusicSearch
+          </Link>
         </header>
       </div>
     </Layout>
