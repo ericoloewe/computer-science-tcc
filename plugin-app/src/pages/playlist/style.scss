@@ -30,20 +30,24 @@
     justify-content: space-around;
     padding-top: 20px;
     padding-bottom: 20px;
+
+    > .like-to-listen {
+      margin-top: 20px;
+    }
   }
-  
+
   > .album {
     align-items: center;
     display: flex;
     height: 30vh;
     justify-content: center;
-    
+
     > .image {
       max-height: 100%;
       max-width: 100%;
     }
   }
-  
+
   > .title-and-description,
   > .slider,
   > .feelings {

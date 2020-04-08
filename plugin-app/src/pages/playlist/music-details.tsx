@@ -12,8 +12,13 @@ import {
   FormControl,
   InputLabel,
   Select,
+  InputAdornment,
 } from "@material-ui/core";
-import { ExpandMore as ExpandMoreIcon } from "@material-ui/icons";
+import {
+  ExpandMore as ExpandMoreIcon,
+  Fingerprint as FingerprintIcon,
+  Favorite as FavoriteIcon,
+} from "@material-ui/icons";
 
 const feelings = [
   { text: "Feliz", value: "feliz" },
@@ -56,6 +61,11 @@ export function MusicDetails() {
               name: "age",
               id: "age-native-simple",
             }}
+            startAdornment={
+              <InputAdornment position="start">
+                <FavoriteIcon />
+              </InputAdornment>
+            }
           >
             <option aria-label="Sentimento" value="" />
             {feelings.map((f) => (
@@ -63,7 +73,7 @@ export function MusicDetails() {
             ))}
           </Select>
         </FormControl>
-        <FormControl className="make-me-feel">
+        <FormControl className="like-to-listen">
           <InputLabel htmlFor="age-native-simple">Eu gosto de ouvir quando me sinto</InputLabel>
           <Select
             native
@@ -71,6 +81,11 @@ export function MusicDetails() {
               name: "age",
               id: "age-native-simple",
             }}
+            startAdornment={
+              <InputAdornment position="start">
+                <FingerprintIcon />
+              </InputAdornment>
+            }
           >
             <option aria-label="Sentimento" value="" />
             {feelings.map((f) => (
