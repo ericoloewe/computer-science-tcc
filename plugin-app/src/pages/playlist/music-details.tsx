@@ -25,10 +25,14 @@ const feelings = [
   { text: "Triste", value: "triste" },
 ];
 
-export function MusicDetails() {
+interface Props {
+  onExpandClick: () => void;
+}
+
+export function MusicDetails({ onExpandClick }: Props) {
   return (
     <section className="music-details-component">
-      <IconButton className="expand-more" aria-label="expand">
+      <IconButton className="expand-more" aria-label="expand" onClick={onExpandClick}>
         <ExpandMoreIcon />
       </IconButton>
       <div className="album">

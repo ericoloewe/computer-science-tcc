@@ -49,7 +49,7 @@ export default function () {
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(false);
 
   return isMusicDetailsOpen ? (
-    <MusicDetails />
+    <MusicDetails onExpandClick={() => setOpenMusicDetails(false)} />
   ) : (
     <Layout className="playlist-page" pageTitle="Nome da playlist">
       <Button variant="contained" color="primary" href="/" startIcon={<SearchIcon>send</SearchIcon>}>
