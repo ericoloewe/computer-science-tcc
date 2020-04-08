@@ -1,0 +1,15 @@
+.playlist-page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.music-app-bar {
+  bottom: 0;
+
+  .playlist-page > & {
+    top: auto;
+  }
+}

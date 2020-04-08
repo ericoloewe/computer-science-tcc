@@ -23,7 +23,7 @@ const gender = [
 export default function () {
   return (
     <Layout
-      className="playlist-page"
+      className="playlist-felling-page"
       pageTitle="O que você esta sentindo?"
       hideMenu={true}
     >

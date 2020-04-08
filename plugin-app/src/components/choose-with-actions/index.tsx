@@ -15,7 +15,6 @@ import {
 import FavoriteIcon from "@material-ui/icons/Favorite";
 
 interface Props {
-  textFieldLabel: string;
   items: ChooseItem[];
 }
 
@@ -26,11 +25,9 @@ export interface ChooseItem {
   selected?: boolean;
 }
 
-export function Choose({ items, textFieldLabel }: Props) {
+export function ChooseWithActions({ items }: Props) {
   return (
-    <div className="choose-component">
-      <TextField label={textFieldLabel} />
-
+    <div className="choose-with-actions-component">
       <Paper className="paper">
         <List className="list" dense={false}>
           {items.map((ci) => (

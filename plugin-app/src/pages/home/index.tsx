@@ -28,6 +28,9 @@ export default function () {
           <Link className="App-link" to="/playlist-felling">
             Go to playlist-felling
           </Link>
+          <Link className="App-link" to="/playlist">
+            Go to playlist
+          </Link>
         </header>
       </div>
     </Layout>

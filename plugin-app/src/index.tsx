@@ -11,13 +11,17 @@ const Login = React.lazy(() => import("./pages/login"));
 const Artists = React.lazy(() => import("./pages/artists"));
 const Gender = React.lazy(() => import("./pages/gender"));
 const PlaylistFelling = React.lazy(() => import("./pages/playlist-felling"));
+const Playlist = React.lazy(() => import("./pages/playlist"));
 
 ReactDOM.render(
   <StrictMode>
     <Suspense fallback={<Loader />}>
       <BrowserRouter>
         <Switch>
-          <Route path="/new-playlist-felling">
+          <Route path="/playlist">
+            <Playlist />
+          </Route>
+          <Route path="/playlist-felling">
             <PlaylistFelling />
           </Route>
           <Route path="/gender">
