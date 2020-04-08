@@ -1,11 +1,13 @@
 import "./style.scss";
 
-import React from "react";
-import { AppBar, Toolbar, Typography, IconButton, Button } from "@material-ui/core";
-import { ExpandLess as ExpandLessIcon, Favorite as FavoriteIcon, Search as SearchIcon } from "@material-ui/icons";
+import React, { useState } from "react";
+import { Button } from "@material-ui/core";
+import { Favorite as FavoriteIcon, Search as SearchIcon } from "@material-ui/icons";
 
 import { ChooseWithActions } from "../../components/choose-with-actions";
 import { Layout } from "../shared/layout";
+import { MusicAppBar } from "./music-app-bar";
+import { MusicDetails } from "./music-details";
 
 const musics = [
   {
@@ -44,34 +46,17 @@ const musics = [
 ];
 
 export default function () {
-  return (
+  const [isMusicDetailsOpen, setOpenMusicDetails] = useState(false);
+
+  return isMusicDetailsOpen ? (
+    <MusicDetails />
+  ) : (
     <Layout className="playlist-page" pageTitle="Nome da playlist">
       <Button variant="contained" color="primary" href="/" startIcon={<SearchIcon>send</SearchIcon>}>
         Buscar musica
       </Button>
       <ChooseWithActions items={musics} actionIcon={<FavoriteIcon />} />
-      <MusicAppBar />
+      <MusicAppBar onExpandClick={() => setOpenMusicDetails(true)} />
     </Layout>
-  );
-}
-
-function MusicAppBar() {
-  const musicTitle = "Musica 1";
-
-  return (
-    <AppBar position="fixed" color="primary" className="music-app-bar">
-      <Toolbar>
-        <IconButton edge="start" className={"classes.menuButton"} color="inherit" aria-label="like">
-          <FavoriteIcon />
-        </IconButton>
-        <Typography variant="h6" className={"title"}>
-          {musicTitle}
-        </Typography>
-        <div style={{ flexGrow: 1 }} />
-        <IconButton edge="end" className={"classes.menuButton"} color="inherit" aria-label="like">
-          <ExpandLessIcon />
-        </IconButton>
-      </Toolbar>
-    </AppBar>
   );
 }
