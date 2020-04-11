@@ -3,36 +3,22 @@ import "./style.scss";
 import { Layout } from "../shared/layout";
 import { Choose, ChooseItem } from "../../components/choose";
 import { Button } from "@material-ui/core";
-import { Link, useParams, useHistory } from "react-router-dom";
-import { playlistService, Feeling } from "../../services/playlist";
-
-const feelingsMock: Feeling[] = [
-  {
-    id: 1,
-    title: "Sentimento 1",
-  },
-  {
-    id: 2,
-    title: "Sentimento 2",
-  },
-  {
-    id: 3,
-    title: "Sentimento 3",
-  },
-  {
-    id: 4,
-    title: "Sentimento 4",
-  },
-];
+import { useParams, useHistory } from "react-router-dom";
+import { playlistService } from "../../services/playlist";
+import { StringUtil } from "../../utils/string";
+import { feelingService } from "../../services/feeling";
 
 export default function () {
-  let { playlistId } = useParams();
+  let { playlistId: playlistIdParam } = useParams();
+  const playlistId = StringUtil.toString(playlistIdParam);
   const history = useHistory();
 
   const [feelings, setFeelings] = useState([] as ChooseItem[]);
 
   async function fetchData() {
-    setFeelings(feelingsMock);
+    const feelings = await feelingService.load();
+
+    setFeelings(feelings);
   }
 
   function chooseFelling(item: ChooseItem) {
@@ -43,8 +29,12 @@ export default function () {
   }
 
   function saveAndGoToPlaylist() {
-    playlistService.saveFeelings(feelings.filter((f) => f.selected));
-    history.push(`/playlist/${playlistId || ""}`);
+    playlistService.saveFeelings(
+      playlistId,
+      feelings.filter((f) => f.selected)
+    );
+
+    history.push(`/playlist/${playlistId}`);
   }
 
   useEffect(() => {

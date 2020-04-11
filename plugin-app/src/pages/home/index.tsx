@@ -55,7 +55,7 @@ export default function () {
   return (
     <Layout className="home-page" pageTitle="Playlists">
       <ChooseWithActions items={playlists} actionIcon={<FavoriteIcon />} linkComponent={PlaylistLink} />
-      <Link to="/playlist/feeling">
+      <Link to="/playlist/new">
         <Fab className="new-playlist-button" color="primary" aria-label="add">
           <AddIcon />
         </Fab>

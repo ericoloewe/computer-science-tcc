@@ -73,7 +73,9 @@ export function MusicDetails({ onExpandClick }: Props) {
           >
             <option aria-label="Sentimento" value="" />
             {feelings.map((f) => (
-              <option value={f.value}>{f.text}</option>
+              <option key={f.value} value={f.value}>
+                {f.text}
+              </option>
             ))}
           </Select>
         </FormControl>
@@ -93,7 +95,9 @@ export function MusicDetails({ onExpandClick }: Props) {
           >
             <option aria-label="Sentimento" value="" />
             {feelings.map((f) => (
-              <option value={f.value}>{f.text}</option>
+              <option key={f.value} value={f.value}>
+                {f.text}
+              </option>
             ))}
           </Select>
         </FormControl>

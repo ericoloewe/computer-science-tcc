@@ -5,6 +5,7 @@ import { AppBar, Toolbar, IconButton, TextField, makeStyles } from "@material-ui
 import { Search as SearchIcon, Add as AddIcon, ArrowBack as ArrowBackIcon } from "@material-ui/icons";
 
 import { ChooseWithActions } from "../../components/choose-with-actions";
+import { useHistory } from "react-router-dom";
 
 const musics = [
   {
@@ -47,9 +48,15 @@ const musics = [
 ];
 
 export default function () {
+  const history = useHistory();
+
+  function goBack() {
+    history.goBack();
+  }
+
   return (
     <article className="music-search-page">
-      <SearchAppBar />
+      <SearchAppBar onBackClick={goBack} />
       <ChooseWithActions items={musics} actionIcon={<AddIcon />} />
     </article>
   );
@@ -82,14 +89,18 @@ const useStyles = makeStyles({
   },
 });
 
-function SearchAppBar() {
+interface SearchAppBarProps {
+  onBackClick: () => void;
+}
+
+function SearchAppBar({ onBackClick }: SearchAppBarProps) {
   const classes = useStyles();
   const musicTitle = "Musica 123";
 
   return (
     <AppBar position="static" color="primary" className="music-app-bar">
       <Toolbar>
-        <IconButton edge="start" className={"classes.menuButton"} color="inherit" aria-label="like">
+        <IconButton edge="start" color="inherit" aria-label="like" onClick={onBackClick}>
           <ArrowBackIcon />
         </IconButton>
         <TextField
@@ -102,7 +113,7 @@ function SearchAppBar() {
           }}
         />
         <div style={{ flexGrow: 1 }} />
-        <IconButton edge="end" className={"classes.menuButton"} color="inherit" aria-label="like">
+        <IconButton edge="end" color="inherit" aria-label="like">
           <SearchIcon />
         </IconButton>
       </Toolbar>

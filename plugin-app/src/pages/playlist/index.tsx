@@ -1,62 +1,44 @@
 import "./style.scss";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "@material-ui/core";
 import { Favorite as FavoriteIcon, Search as SearchIcon } from "@material-ui/icons";
+import { Link, useParams } from "react-router-dom";
 
 import { ChooseWithActions } from "../../components/choose-with-actions";
 import { Layout } from "../shared/layout";
+import { Music } from "../../services/music";
 import { MusicAppBar } from "./music-app-bar";
 import { MusicDetails } from "./music-details";
-
-const musics = [
-  {
-    id: 1,
-    title: "Musica 1",
-    description: "Greyhound divisively hello coldly wonderfully marginally far...",
-    image: {
-      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
-      alt: "jack johson",
-    },
-    selected: true,
-  },
-  {
-    id: 2,
-    title: "Musica 2",
-    description: "Greyhound divisively hello coldly wonderfully marginally far...",
-    image: {
-      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
-      alt: "jack johson",
-    },
-  },
-  {
-    id: 3,
-    title: "Musica 3",
-    description: "Greyhound divisively hello coldly wonderfully marginally far...",
-    image: {
-      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
-      alt: "jack johson",
-    },
-  },
-  {
-    id: 4,
-    title: "Musica 4",
-    description: "Greyhound divisively hello coldly wonderfully marginally far...",
-    image: {
-      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
-      alt: "jack johson",
-    },
-  },
-];
+import { playlistService } from "../../services/playlist";
 
 export default function () {
+  let { playlistId } = useParams();
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(false);
+  const [musics, setMusics] = useState([] as Music[]);
+
+  async function fetchData() {
+    if (!!playlistId) {
+      const musics = await playlistService.loadMusics(playlistId);
+
+      setMusics(musics);
+    }
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return isMusicDetailsOpen ? (
     <MusicDetails onExpandClick={() => setOpenMusicDetails(false)} />
   ) : (
     <Layout className="playlist-page" pageTitle="Nome da playlist">
-      <Button variant="contained" color="primary" href="/" startIcon={<SearchIcon>send</SearchIcon>}>
+      <Button
+        variant="contained"
+        color="primary"
+        startIcon={<SearchIcon>send</SearchIcon>}
+        {...{ component: Link, to: "/playlist/music-search" }}
+      >
         Buscar musica
       </Button>
       <ChooseWithActions items={musics} actionIcon={<FavoriteIcon />} />
