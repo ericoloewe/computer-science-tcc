@@ -11,6 +11,7 @@ const Login = React.lazy(() => import("./pages/login"));
 const Artists = React.lazy(() => import("./pages/artists"));
 const Gender = React.lazy(() => import("./pages/gender"));
 const Playlist = React.lazy(() => import("./pages/playlist"));
+const PlaylistNew = React.lazy(() => import("./pages/playlist-new"));
 const PlaylistFeeling = React.lazy(() => import("./pages/playlist-feeling"));
 const PlaylistMusicSearch = React.lazy(() => import("./pages/playlist-music-search"));
 
@@ -19,6 +20,9 @@ ReactDOM.render(
     <Suspense fallback={<Loader />}>
       <BrowserRouter>
         <Switch>
+          <Route exact={true} path="/playlist/new">
+            <PlaylistNew />
+          </Route>
           <Route path="/playlist/:playlistId/feeling">
             <PlaylistFeeling />
           </Route>

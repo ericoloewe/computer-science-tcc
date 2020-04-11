@@ -1,5 +1,6 @@
 import { Music } from "./music";
 import { Feeling } from "./feeling";
+import { Playlist } from "./playlist";
 
 export const playlistMusicsMock: Music[] = [
   {
@@ -90,6 +91,45 @@ export const searchMusicsMock: Music[] = [
   {
     id: 4,
     title: "Musica 4",
+    description: "Greyhound divisively hello coldly wonderfully marginally far...",
+    image: {
+      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
+      alt: "jack johson",
+    },
+  },
+];
+
+export const playlistsMock: Playlist[] = [
+  {
+    id: 1,
+    title: "Playlist 1",
+    description: "Greyhound divisively hello coldly wonderfully marginally far...",
+    image: {
+      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
+      alt: "jack johson",
+    },
+  },
+  {
+    id: 2,
+    title: "Playlist 2",
+    description: "Greyhound divisively hello coldly wonderfully marginally far...",
+    image: {
+      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
+      alt: "jack johson",
+    },
+  },
+  {
+    id: 3,
+    title: "Playlist 3",
+    description: "Greyhound divisively hello coldly wonderfully marginally far...",
+    image: {
+      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
+      alt: "jack johson",
+    },
+  },
+  {
+    id: 4,
+    title: "Playlist 4",
     description: "Greyhound divisively hello coldly wonderfully marginally far...",
     image: {
       src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
