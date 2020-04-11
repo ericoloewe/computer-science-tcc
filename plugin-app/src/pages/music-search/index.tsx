@@ -8,6 +8,7 @@ import { ChooseWithActions } from "../../components/choose-with-actions";
 
 const musics = [
   {
+    id: 1,
     title: "Musica 1",
     description: "Greyhound divisively hello coldly wonderfully marginally far...",
     image: {
@@ -17,6 +18,7 @@ const musics = [
     selected: true,
   },
   {
+    id: 2,
     title: "Musica 2",
     description: "Greyhound divisively hello coldly wonderfully marginally far...",
     image: {
@@ -25,6 +27,7 @@ const musics = [
     },
   },
   {
+    id: 3,
     title: "Musica 3",
     description: "Greyhound divisively hello coldly wonderfully marginally far...",
     image: {
@@ -33,6 +36,7 @@ const musics = [
     },
   },
   {
+    id: 4,
     title: "Musica 4",
     description: "Greyhound divisively hello coldly wonderfully marginally far...",
     image: {
