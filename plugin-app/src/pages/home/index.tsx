@@ -10,7 +10,7 @@ import { Layout } from "../shared/layout";
 import { playlistService } from "../../services/playlist";
 
 function PlaylistLink({ item, children }: { item: ChooseItem; children: any }) {
-  return <Link to={`/playlist/feeling/${item.id}`}>{children}</Link>;
+  return <Link to={`/playlist/${item.id}/feeling`}>{children}</Link>;
 }
 
 export default function () {

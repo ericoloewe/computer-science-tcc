@@ -37,7 +37,7 @@ export default function () {
         variant="contained"
         color="primary"
         startIcon={<SearchIcon>send</SearchIcon>}
-        {...{ component: Link, to: "/playlist/music-search" }}
+        {...{ component: Link, to: `/playlist/${playlistId}/music-search` }}
       >
         Buscar musica
       </Button>
