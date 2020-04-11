@@ -3,9 +3,10 @@ import "./style.scss";
 import { Layout } from "../shared/layout";
 import { Choose, ChooseItem } from "../../components/choose";
 import { Button } from "@material-ui/core";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useHistory } from "react-router-dom";
+import { playlistService, Feeling } from "../../services/playlist";
 
-const feelingsMock: ChooseItem[] = [
+const feelingsMock: Feeling[] = [
   {
     id: 1,
     title: "Sentimento 1",
@@ -26,6 +27,7 @@ const feelingsMock: ChooseItem[] = [
 
 export default function () {
   let { playlistId } = useParams();
+  const history = useHistory();
 
   const [feelings, setFeelings] = useState([] as ChooseItem[]);
 
@@ -40,6 +42,11 @@ export default function () {
     setFeelings([...feelings]);
   }
 
+  function saveAndGoToPlaylist() {
+    playlistService.saveFeelings(feelings.filter((f) => f.selected));
+    history.push(`/playlist/${playlistId || ""}`);
+  }
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -47,7 +54,7 @@ export default function () {
   return (
     <Layout className="playlist-feeling-page" pageTitle="O que você esta sentindo?" hideMenu={true}>
       <Choose textFieldLabel="Sentimentos" items={feelings} onChoose={chooseFelling} />
-      <Button variant="contained" color="primary" {...{ component: Link, to: `/playlist/${playlistId}` }}>
+      <Button variant="contained" color="primary" onClick={saveAndGoToPlaylist}>
         Proximo
       </Button>
     </Layout>
