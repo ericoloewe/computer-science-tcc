@@ -1,63 +1,43 @@
 import "./style.scss";
 
-import React from "react";
-import { AppBar, Toolbar, IconButton, TextField, makeStyles } from "@material-ui/core";
+import React, { useState } from "react";
+import { AppBar, Toolbar, IconButton, TextField, makeStyles, Typography } from "@material-ui/core";
 import { Search as SearchIcon, Add as AddIcon, ArrowBack as ArrowBackIcon } from "@material-ui/icons";
-
-import { ChooseWithActions } from "../../components/choose-with-actions";
 import { useHistory } from "react-router-dom";
 
-const musics = [
-  {
-    id: 1,
-    title: "Musica 1",
-    description: "Greyhound divisively hello coldly wonderfully marginally far...",
-    image: {
-      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
-      alt: "jack johson",
-    },
-    selected: true,
-  },
-  {
-    id: 2,
-    title: "Musica 2",
-    description: "Greyhound divisively hello coldly wonderfully marginally far...",
-    image: {
-      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
-      alt: "jack johson",
-    },
-  },
-  {
-    id: 3,
-    title: "Musica 3",
-    description: "Greyhound divisively hello coldly wonderfully marginally far...",
-    image: {
-      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
-      alt: "jack johson",
-    },
-  },
-  {
-    id: 4,
-    title: "Musica 4",
-    description: "Greyhound divisively hello coldly wonderfully marginally far...",
-    image: {
-      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
-      alt: "jack johson",
-    },
-  },
-];
+import { ChooseWithActions } from "../../components/choose-with-actions";
+import { Music, musicService } from "../../services/music";
 
 export default function () {
   const history = useHistory();
+  const [searchText, setSearchText] = useState("");
+  const [musics, setMusics] = useState([] as Music[]);
 
   function goBack() {
     history.goBack();
   }
 
+  async function changeSearchText(text: string) {
+    setSearchText(text);
+    searchMusicsOfTexts(text);
+  }
+
+  async function searchMusicsOfTexts(text: string) {
+    const musics = await musicService.searchMusic(text);
+
+    setMusics(musics);
+  }
+
   return (
     <article className="music-search-page">
-      <SearchAppBar onBackClick={goBack} />
-      <ChooseWithActions items={musics} actionIcon={<AddIcon />} />
+      <SearchAppBar searchText={searchText} onSearchChange={changeSearchText} onBackClick={goBack} />
+      <section className="choose-or-description">
+        {!!searchText ? (
+          <ChooseWithActions items={musics} actionIcon={<AddIcon />} />
+        ) : (
+          <Typography paragraph>Digite um termo a ser procurado</Typography>
+        )}
+      </section>
     </article>
   );
 }
@@ -91,11 +71,12 @@ const useStyles = makeStyles({
 
 interface SearchAppBarProps {
   onBackClick: () => void;
+  onSearchChange: (text: string) => void;
+  searchText: string;
 }
 
-function SearchAppBar({ onBackClick }: SearchAppBarProps) {
+function SearchAppBar({ onBackClick, onSearchChange, searchText }: SearchAppBarProps) {
   const classes = useStyles();
-  const musicTitle = "Musica 123";
 
   return (
     <AppBar position="static" color="primary" className="music-app-bar">
@@ -107,7 +88,8 @@ function SearchAppBar({ onBackClick }: SearchAppBarProps) {
           id="standard-basic"
           className={classes.root}
           label="Search"
-          defaultValue={musicTitle}
+          onChange={(e) => onSearchChange(e.target.value)}
+          value={searchText}
           InputProps={{
             className: classes.input,
           }}

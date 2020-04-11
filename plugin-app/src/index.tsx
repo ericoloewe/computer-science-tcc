@@ -10,20 +10,20 @@ const Welcome = React.lazy(() => import("./pages/welcome"));
 const Login = React.lazy(() => import("./pages/login"));
 const Artists = React.lazy(() => import("./pages/artists"));
 const Gender = React.lazy(() => import("./pages/gender"));
-const PlaylistFeeling = React.lazy(() => import("./pages/playlist-feeling"));
 const Playlist = React.lazy(() => import("./pages/playlist"));
-const MusicSearch = React.lazy(() => import("./pages/music-search"));
+const PlaylistFeeling = React.lazy(() => import("./pages/playlist-feeling"));
+const PlaylistMusicSearch = React.lazy(() => import("./pages/playlist-music-search"));
 
 ReactDOM.render(
   <StrictMode>
     <Suspense fallback={<Loader />}>
       <BrowserRouter>
         <Switch>
-          <Route path="/playlist/feeling/:playlistId">
+          <Route path="/playlist/:playlistId/feeling">
             <PlaylistFeeling />
           </Route>
-          <Route path="/playlist/music-search/:playlistId">
-            <MusicSearch />
+          <Route path="/playlist/:playlistId/music-search">
+            <PlaylistMusicSearch />
           </Route>
           <Route path="/playlist/:playlistId">
             <Playlist />

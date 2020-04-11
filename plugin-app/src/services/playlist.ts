@@ -1,5 +1,6 @@
+import { playlistMusicsMock } from "./mocks";
 import { Music } from "./music";
-import { musicsMock } from "./mocks";
+import { Feeling } from "./feeling";
 
 type PlaylistId = string | number;
 
@@ -9,7 +10,7 @@ class PlaylistService {
   }
 
   async loadMusics(playlistId: PlaylistId): Promise<Music[]> {
-    return Promise.resolve(musicsMock);
+    return Promise.resolve(playlistMusicsMock);
   }
 
   saveFeelings(playlistId: PlaylistId, feelings: Feeling[]) {

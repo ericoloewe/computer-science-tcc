@@ -1,6 +1,8 @@
+import { searchMusicsMock } from "./mocks";
+
 class MusicService {
   async searchMusic(text: string): Promise<Music[]> {
-    return Promise.resolve([]);
+    return Promise.resolve(searchMusicsMock);
   }
 }
 
