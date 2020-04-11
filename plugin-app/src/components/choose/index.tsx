@@ -8,6 +8,7 @@ interface Props {
 }
 
 export interface ChooseItem {
+  id: string | number;
   title: string;
   description?: string;
   image?: { src: string; alt: string };

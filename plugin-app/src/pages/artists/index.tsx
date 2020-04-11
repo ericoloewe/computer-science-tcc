@@ -6,6 +6,7 @@ import { Button } from "@material-ui/core";
 
 const artists = [
   {
+    id: 1,
     title: "Lorem ipsum 1",
     image: {
       src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
@@ -14,6 +15,7 @@ const artists = [
     selected: true,
   },
   {
+    id: 2,
     title: "Lorem ipsum 2",
     image: {
       src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
@@ -21,6 +23,7 @@ const artists = [
     },
   },
   {
+    id: 3,
     title: "Lorem ipsum 3",
     image: {
       src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
@@ -28,6 +31,7 @@ const artists = [
     },
   },
   {
+    id: 4,
     title: "Lorem ipsum 4",
     image: {
       src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
@@ -38,11 +42,7 @@ const artists = [
 
 export default function () {
   return (
-    <Layout
-      className="artists-page"
-      pageTitle="Artistas preferidos"
-      hideMenu={true}
-    >
+    <Layout className="artists-page" pageTitle="Artistas preferidos" hideMenu={true}>
       <Choose textFieldLabel="Nome do artista" items={artists} />
       <Button variant="contained" color="primary" href="/">
         Proximo
