@@ -1,15 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./style.scss";
 import { Layout } from "../shared/layout";
-import { Choose } from "../../components/choose";
+import { Choose, ChooseItem } from "../../components/choose";
 import { Button } from "@material-ui/core";
 import { Link, useParams } from "react-router-dom";
 
-const feelings = [
+const feelingsMock: ChooseItem[] = [
   {
     id: 1,
     title: "Sentimento 1",
-    selected: true,
   },
   {
     id: 2,
@@ -28,9 +27,26 @@ const feelings = [
 export default function () {
   let { playlistId } = useParams();
 
+  const [feelings, setFeelings] = useState([] as ChooseItem[]);
+
+  async function fetchData() {
+    setFeelings(feelingsMock);
+  }
+
+  function chooseFelling(item: ChooseItem) {
+    const index = feelings.findIndex((f) => f === item);
+
+    feelings[index].selected = !feelings[index].selected;
+    setFeelings([...feelings]);
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <Layout className="playlist-feeling-page" pageTitle="O que você esta sentindo?" hideMenu={true}>
-      <Choose textFieldLabel="Sentimentos" items={feelings} />
+      <Choose textFieldLabel="Sentimentos" items={feelings} onChoose={chooseFelling} />
       <Button variant="contained" color="primary" {...{ component: Link, to: `/playlist/${playlistId}` }}>
         Proximo
       </Button>

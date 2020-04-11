@@ -3,8 +3,9 @@ import React from "react";
 import { TextField, ListItem, ListItemAvatar, Avatar, ListItemText, List, Paper } from "@material-ui/core";
 
 interface Props {
-  textFieldLabel: string;
   items: ChooseItem[];
+  onChoose?: (item: ChooseItem) => void;
+  textFieldLabel: string;
 }
 
 export interface ChooseItem {
@@ -15,7 +16,7 @@ export interface ChooseItem {
   selected?: boolean;
 }
 
-export function Choose({ items, textFieldLabel }: Props) {
+export function Choose({ items, textFieldLabel, onChoose }: Props) {
   return (
     <div className="choose-component">
       <TextField label={textFieldLabel} />
@@ -23,7 +24,7 @@ export function Choose({ items, textFieldLabel }: Props) {
       <Paper className="paper">
         <List className="list" dense={false}>
           {items.map((ci) => (
-            <ListItem key={ci.id} selected={ci.selected}>
+            <ListItem key={ci.id} selected={ci.selected} onClick={() => onChoose && onChoose(ci)} button={true}>
               {ci.image && (
                 <ListItemAvatar>
                   <Avatar src={ci.image?.src} alt={ci.image.alt} />
