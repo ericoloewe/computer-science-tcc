@@ -3,7 +3,7 @@ import "./style.scss";
 import { Layout } from "../shared/layout";
 import { Choose } from "../../components/choose";
 import { Button } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const feelings = [
   {
@@ -26,10 +26,12 @@ const feelings = [
 ];
 
 export default function () {
+  let { playlistId } = useParams();
+
   return (
     <Layout className="playlist-feeling-page" pageTitle="O que você esta sentindo?" hideMenu={true}>
       <Choose textFieldLabel="Sentimentos" items={feelings} />
-      <Button variant="contained" color="primary" {...{ component: Link, to: "/" }}>
+      <Button variant="contained" color="primary" {...{ component: Link, to: `/playlist/${playlistId}` }}>
         Proximo
       </Button>
     </Layout>

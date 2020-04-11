@@ -19,16 +19,16 @@ ReactDOM.render(
     <Suspense fallback={<Loader />}>
       <BrowserRouter>
         <Switch>
-          <Route path="/playlist/feeling">
+          <Route exact={true} path="/playlist/feeling">
             <PlaylistFeeling />
           </Route>
           <Route path="/playlist/feeling/:playlistId">
             <PlaylistFeeling />
           </Route>
-          <Route path="/playlist/music-search">
+          <Route exact={true} path="/playlist/music-search">
             <MusicSearch />
           </Route>
-          <Route path="/playlist">
+          <Route exact={true} path="/playlist">
             <Playlist />
           </Route>
           <Route path="/playlist/:playlistId">
