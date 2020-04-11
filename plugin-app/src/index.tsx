@@ -10,7 +10,7 @@ const Welcome = React.lazy(() => import("./pages/welcome"));
 const Login = React.lazy(() => import("./pages/login"));
 const Artists = React.lazy(() => import("./pages/artists"));
 const Gender = React.lazy(() => import("./pages/gender"));
-const PlaylistFelling = React.lazy(() => import("./pages/playlist-felling"));
+const PlaylistFeeling = React.lazy(() => import("./pages/playlist-feeling"));
 const Playlist = React.lazy(() => import("./pages/playlist"));
 const MusicSearch = React.lazy(() => import("./pages/music-search"));
 
@@ -25,8 +25,8 @@ ReactDOM.render(
           <Route path="/playlist">
             <Playlist />
           </Route>
-          <Route path="/playlist-felling">
-            <PlaylistFelling />
+          <Route path="/playlist-feeling">
+            <PlaylistFeeling />
           </Route>
           <Route path="/gender">
             <Gender />
