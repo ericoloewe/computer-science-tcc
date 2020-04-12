@@ -24,8 +24,12 @@ class PlaylistService {
     return Promise.resolve(playlistMusicsMock);
   }
 
-  saveFeelings(playlistId: PlaylistId, feelings: Feeling[]) {
+  async saveFeelings(playlistId: PlaylistId, feelings: Feeling[]) {
     console.log("saved", feelings);
+  }
+
+  async saveMusics(playlistId: PlaylistId, musicsToSave: import("../components/choose-with-actions").ChooseItem[]) {
+    console.log("saved", musicsToSave);
   }
 }
 

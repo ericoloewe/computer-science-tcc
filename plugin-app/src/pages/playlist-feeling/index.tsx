@@ -28,8 +28,8 @@ export default function () {
     setFeelings([...feelings]);
   }
 
-  function saveAndGoToPlaylist() {
-    playlistService.saveFeelings(
+  async function saveAndGoToPlaylist() {
+    await playlistService.saveFeelings(
       playlistId,
       feelings.filter((f) => f.selected)
     );

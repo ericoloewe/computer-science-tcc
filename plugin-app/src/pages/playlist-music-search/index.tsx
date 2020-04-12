@@ -8,18 +8,25 @@ import {
   Remove as RemoveIcon,
   Search as SearchIcon,
 } from "@material-ui/icons";
-import { useHistory } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 
 import { ChooseWithActions, ChooseItem } from "../../components/choose-with-actions";
 import { musicService } from "../../services/music";
+import { playlistService } from "../../services/playlist";
+import { StringUtil } from "../../utils/string";
 
 export default function () {
+  let { playlistId: playlistIdParam } = useParams();
+  const playlistId = StringUtil.toString(playlistIdParam);
   const history = useHistory();
   const [searchText, setSearchText] = useState("");
   const [selectedMusicsMap, setSelectedMusics] = useState({} as { [key: string]: ChooseItem });
   const [musics, setMusics] = useState([] as ChooseItem[]);
 
-  function goBack() {
+  async function goBack() {
+    const musicsToSave = Object.keys(selectedMusicsMap).map((k) => selectedMusicsMap[k]);
+
+    await playlistService.saveMusics(playlistId, musicsToSave);
     history.goBack();
   }
 
