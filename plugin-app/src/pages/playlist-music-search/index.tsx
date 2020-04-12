@@ -1,6 +1,6 @@
 import "./style.scss";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AppBar, Toolbar, IconButton, TextField, makeStyles, Typography } from "@material-ui/core";
 import {
   Add as AddIcon,
@@ -16,6 +16,7 @@ import { musicService } from "../../services/music";
 export default function () {
   const history = useHistory();
   const [searchText, setSearchText] = useState("");
+  const [selectedMusicsMap, setSelectedMusics] = useState({} as { [key: string]: ChooseItem });
   const [musics, setMusics] = useState([] as ChooseItem[]);
 
   function goBack() {
@@ -27,18 +28,32 @@ export default function () {
     searchMusicsOfTexts(text);
   }
 
-  function chooseMusic(item: ChooseItem) {
-    const index = musics.findIndex((m) => m === item);
+  function chooseMusic(music: ChooseItem) {
+    if (selectedMusicsMap[music.id] != null) {
+      delete selectedMusicsMap[music.id];
+    } else {
+      selectedMusicsMap[music.id] = music;
+    }
 
-    musics[index].selected = !musics[index].selected;
-    setMusics([...musics]);
+    setSelectedMusics({ ...selectedMusicsMap });
+  }
+
+  function markSelectedMusics(musics: ChooseItem[]) {
+    const musicsMappedWithSelected = musics.map((m) => ({ ...m, selected: selectedMusicsMap[m.id] != null }));
+
+    setMusics(musicsMappedWithSelected);
   }
 
   async function searchMusicsOfTexts(text: string) {
     const musics = await musicService.searchMusic(text);
 
-    setMusics(musics);
+    setMusics([...musics]);
+    markSelectedMusics(musics);
   }
+
+  useEffect(() => {
+    markSelectedMusics(musics); // eslint-disable-next-line
+  }, [selectedMusicsMap]);
 
   return (
     <article className="music-search-page">
