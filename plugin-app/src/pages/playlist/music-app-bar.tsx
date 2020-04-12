@@ -1,22 +1,26 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, IconButton } from "@material-ui/core";
-import { ExpandLess as ExpandLessIcon, Favorite as FavoriteIcon } from "@material-ui/icons";
+import {
+  ExpandLess as ExpandLessIcon,
+  Favorite as FavoriteIcon,
+  FavoriteBorder as FavoriteBorderIcon,
+} from "@material-ui/icons";
+import { Music } from "../../services/music";
 
 interface Props {
+  music: Music;
   onExpandClick: () => void;
 }
 
-export function MusicAppBar({ onExpandClick }: Props) {
-  const musicTitle = "Musica 1";
-
-  return (
+export function MusicAppBar({ music, onExpandClick }: Props) {
+  return !!music ? (
     <AppBar position="fixed" color="primary" className="music-app-bar">
       <Toolbar>
-        <IconButton edge="start" className={"classes.menuButton"} color="inherit" aria-label="like">
-          <FavoriteIcon />
+        <IconButton edge="start" color="inherit" aria-label="like">
+          {!!music.liked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
         </IconButton>
         <Typography variant="h6" className={"title"}>
-          {musicTitle}
+          {music.title}
         </Typography>
         <div style={{ flexGrow: 1 }} />
         <IconButton
@@ -30,5 +34,5 @@ export function MusicAppBar({ onExpandClick }: Props) {
         </IconButton>
       </Toolbar>
     </AppBar>
-  );
+  ) : null;
 }

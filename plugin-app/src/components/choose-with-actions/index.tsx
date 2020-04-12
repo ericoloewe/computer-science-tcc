@@ -15,6 +15,7 @@ interface Props {
   actionIcon: JSX.Element;
   selectedActionIcon: JSX.Element;
   items: ChooseItem[];
+  onPress?: (ci: ChooseItem) => void;
   onPressAction?: (ci: ChooseItem) => void;
   linkComponent?: any;
 }
@@ -27,7 +28,14 @@ export interface ChooseItem {
   selected?: boolean;
 }
 
-export function ChooseWithActions({ items, actionIcon, selectedActionIcon, onPressAction, linkComponent }: Props) {
+export function ChooseWithActions({
+  items,
+  actionIcon,
+  selectedActionIcon,
+  onPress,
+  onPressAction,
+  linkComponent,
+}: Props) {
   const DefaultLinkComponent = (props: any) => props.children;
   const LinkComponent = linkComponent || DefaultLinkComponent;
 
@@ -37,7 +45,7 @@ export function ChooseWithActions({ items, actionIcon, selectedActionIcon, onPre
         <List className="list" dense={false}>
           {items.map((ci) => (
             <LinkComponent key={ci.id} item={ci}>
-              <ListItem selected={ci.selected}>
+              <ListItem selected={ci.selected} button={!!onPress as any} onClick={(e) => onPress && onPress(ci)}>
                 {ci.image && (
                   <ListItemAvatar>
                     <Avatar src={ci.image?.src} alt={ci.image.alt} />

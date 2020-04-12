@@ -19,6 +19,7 @@ import {
   Fingerprint as FingerprintIcon,
   Favorite as FavoriteIcon,
 } from "@material-ui/icons";
+import { Music } from "../../services/music";
 
 const feelings = [
   { text: "Feliz", value: "feliz" },
@@ -26,6 +27,7 @@ const feelings = [
 ];
 
 interface Props {
+  music: Music;
   onExpandClick: () => void;
 }
 
