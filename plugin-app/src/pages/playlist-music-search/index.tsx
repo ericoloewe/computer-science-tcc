@@ -2,16 +2,21 @@ import "./style.scss";
 
 import React, { useState } from "react";
 import { AppBar, Toolbar, IconButton, TextField, makeStyles, Typography } from "@material-ui/core";
-import { Search as SearchIcon, Add as AddIcon, ArrowBack as ArrowBackIcon } from "@material-ui/icons";
+import {
+  Add as AddIcon,
+  ArrowBack as ArrowBackIcon,
+  Remove as RemoveIcon,
+  Search as SearchIcon,
+} from "@material-ui/icons";
 import { useHistory } from "react-router-dom";
 
-import { ChooseWithActions } from "../../components/choose-with-actions";
-import { Music, musicService } from "../../services/music";
+import { ChooseWithActions, ChooseItem } from "../../components/choose-with-actions";
+import { musicService } from "../../services/music";
 
 export default function () {
   const history = useHistory();
   const [searchText, setSearchText] = useState("");
-  const [musics, setMusics] = useState([] as Music[]);
+  const [musics, setMusics] = useState([] as ChooseItem[]);
 
   function goBack() {
     history.goBack();
@@ -20,6 +25,13 @@ export default function () {
   async function changeSearchText(text: string) {
     setSearchText(text);
     searchMusicsOfTexts(text);
+  }
+
+  function chooseMusic(item: ChooseItem) {
+    const index = musics.findIndex((m) => m === item);
+
+    musics[index].selected = !musics[index].selected;
+    setMusics([...musics]);
   }
 
   async function searchMusicsOfTexts(text: string) {
@@ -33,7 +45,12 @@ export default function () {
       <SearchAppBar searchText={searchText} onSearchChange={changeSearchText} onBackClick={goBack} />
       <section className="choose-or-description">
         {!!searchText ? (
-          <ChooseWithActions items={musics} actionIcon={<AddIcon />} />
+          <ChooseWithActions
+            items={musics}
+            actionIcon={<AddIcon />}
+            selectedActionIcon={<RemoveIcon />}
+            onPressAction={chooseMusic}
+          />
         ) : (
           <Typography paragraph>Digite um termo a ser procurado</Typography>
         )}

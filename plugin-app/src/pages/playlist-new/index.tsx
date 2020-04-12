@@ -19,7 +19,7 @@ export default function () {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  });
 
   return (
     <Layout className="playlist-new-page" pageTitle="Nova playlist" hideMenu={true}>

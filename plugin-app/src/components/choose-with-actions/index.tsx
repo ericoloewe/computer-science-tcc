@@ -12,9 +12,10 @@ import {
 } from "@material-ui/core";
 
 interface Props {
-  actionIcon: any;
+  actionIcon: JSX.Element;
+  selectedActionIcon: JSX.Element;
   items: ChooseItem[];
-  onPrimaryAction?: () => void;
+  onPressAction?: (ci: ChooseItem) => void;
   linkComponent?: any;
 }
 
@@ -26,7 +27,7 @@ export interface ChooseItem {
   selected?: boolean;
 }
 
-export function ChooseWithActions({ items, actionIcon, onPrimaryAction, linkComponent }: Props) {
+export function ChooseWithActions({ items, actionIcon, selectedActionIcon, onPressAction, linkComponent }: Props) {
   const DefaultLinkComponent = (props: any) => props.children;
   const LinkComponent = linkComponent || DefaultLinkComponent;
 
@@ -44,8 +45,8 @@ export function ChooseWithActions({ items, actionIcon, onPrimaryAction, linkComp
                 )}
                 <ListItemText primary={ci.title} secondary={ci.description} />
                 <ListItemSecondaryAction>
-                  <IconButton edge="end" onClick={onPrimaryAction} aria-label="like">
-                    {actionIcon}
+                  <IconButton edge="end" onClick={() => onPressAction && onPressAction(ci)} aria-label="like">
+                    {ci.selected ? selectedActionIcon : actionIcon}
                   </IconButton>
                 </ListItemSecondaryAction>
               </ListItem>

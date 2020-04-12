@@ -2,7 +2,7 @@ import "./style.scss";
 
 import React, { useState, useEffect } from "react";
 import { Fab } from "@material-ui/core";
-import { Favorite as FavoriteIcon, Add as AddIcon } from "@material-ui/icons";
+import { Favorite as FavoriteIcon, Add as AddIcon, FavoriteBorder as FavoriteBorderIcon } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
 import { ChooseWithActions, ChooseItem } from "../../components/choose-with-actions";
@@ -28,7 +28,12 @@ export default function () {
 
   return (
     <Layout className="home-page" pageTitle="Playlists">
-      <ChooseWithActions items={playlists} actionIcon={<FavoriteIcon />} linkComponent={PlaylistLink} />
+      <ChooseWithActions
+        items={playlists}
+        actionIcon={<FavoriteBorderIcon />}
+        selectedActionIcon={<FavoriteIcon />}
+        linkComponent={PlaylistLink}
+      />
       <Link to="/playlist/new">
         <Fab className="new-playlist-button" color="primary" aria-label="add">
           <AddIcon />

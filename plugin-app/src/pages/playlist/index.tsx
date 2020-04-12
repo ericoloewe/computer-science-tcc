@@ -2,7 +2,11 @@ import "./style.scss";
 
 import React, { useState, useEffect } from "react";
 import { Button } from "@material-ui/core";
-import { Favorite as FavoriteIcon, Search as SearchIcon } from "@material-ui/icons";
+import {
+  Favorite as FavoriteIcon,
+  Search as SearchIcon,
+  FavoriteBorder as FavoriteBorderIcon,
+} from "@material-ui/icons";
 import { Link, useParams } from "react-router-dom";
 
 import { ChooseWithActions } from "../../components/choose-with-actions";
@@ -27,7 +31,7 @@ export default function () {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  });
 
   return isMusicDetailsOpen ? (
     <MusicDetails onExpandClick={() => setOpenMusicDetails(false)} />
@@ -41,7 +45,7 @@ export default function () {
       >
         Buscar musica
       </Button>
-      <ChooseWithActions items={musics} actionIcon={<FavoriteIcon />} />
+      <ChooseWithActions items={musics} actionIcon={<FavoriteBorderIcon />} selectedActionIcon={<FavoriteIcon />} />
       <MusicAppBar onExpandClick={() => setOpenMusicDetails(true)} />
     </Layout>
   );
