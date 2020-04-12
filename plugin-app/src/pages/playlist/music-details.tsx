@@ -31,7 +31,7 @@ interface Props {
   onExpandClick: () => void;
 }
 
-export function MusicDetails({ onExpandClick }: Props) {
+export function MusicDetails({ music, onExpandClick }: Props) {
   return (
     <section className="music-details-component">
       <IconButton className="expand-more" aria-label="expand" onClick={onExpandClick}>
@@ -47,12 +47,12 @@ export function MusicDetails({ onExpandClick }: Props) {
       <div className="title-and-description">
         <ListItem>
           <ListItemAvatar>
-            <Avatar src={"https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023"} alt={"jack johnson"} />
+            <Avatar src={music.image.src} alt={music.image.alt} />
           </ListItemAvatar>
-          <ListItemText primary={"Musica 1"} secondary={"Album"} />
+          <ListItemText primary={music.title} secondary={"Album"} />
         </ListItem>
         <Typography className="details" paragraph={true}>
-          Artista e pequena descrição sobre
+          {music.description}
         </Typography>
       </div>
       <div className="slider">
