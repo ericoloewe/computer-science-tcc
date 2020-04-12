@@ -4,9 +4,13 @@ class MusicService {
   async play(music: import("../components/choose-with-actions").ChooseItem): Promise<void> {
     console.log("Music play", music);
   }
-
+  
   async searchMusic(text: string): Promise<Music[]> {
     return Promise.resolve(searchMusicsMock);
+  }
+  
+  async toggleFavorite(music: import("../components/choose-with-actions").ChooseItem) {
+    console.log("Music favorite toggle", music);
   }
 }
 

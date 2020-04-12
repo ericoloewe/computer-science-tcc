@@ -13,7 +13,7 @@ interface Props {
 }
 
 export function MusicAppBar({ music, onExpandClick }: Props) {
-  return !!music ? (
+  return (
     <AppBar position="fixed" color="primary" className="music-app-bar">
       <Toolbar>
         <IconButton edge="start" color="inherit" aria-label="like">
@@ -34,5 +34,5 @@ export function MusicAppBar({ music, onExpandClick }: Props) {
         </IconButton>
       </Toolbar>
     </AppBar>
-  ) : null;
+  );
 }

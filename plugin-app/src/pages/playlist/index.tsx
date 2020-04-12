@@ -15,33 +15,64 @@ import { Music, musicService } from "../../services/music";
 import { MusicAppBar } from "./music-app-bar";
 import { MusicDetails } from "./music-details";
 import { playlistService } from "../../services/playlist";
+import { StringUtil } from "../../utils/string";
 
 export default function () {
-  let { playlistId } = useParams();
+  let { playlistId: playlistIdParam } = useParams();
+  const playlistId = StringUtil.toString(playlistIdParam);
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(false);
-  const [musics, setMusics] = useState([] as Music[]);
-  const [playingMusic, setPlayingMusic] = useState((null as unknown) as ChooseItem); // TODO: change to music
+  const [musics, setMusics] = useState([] as ChooseItem[]);
+  const [playingMusic, setPlayingMusic] = useState((null as unknown) as Music); // TODO: change to music
+  const [favoriteMusicsMap, setFavoriteMusicsMap] = useState({} as { [key: string]: boolean });
+
+  useEffect(() => {
+    fetchData(); // eslint-disable-next-line
+  }, [playlistId]);
+
+  useEffect(() => {
+    updateFavoriteMusics(musics); // eslint-disable-next-line
+  }, [favoriteMusicsMap]);
 
   async function fetchData() {
-    if (!!playlistId) {
-      const musics = await playlistService.loadMusics(playlistId);
+    const musics = await playlistService.loadMusics(playlistId);
+    const parsedMusics = musics.map((m) => ({ ...m, selected: m.liked }));
 
-      setMusics(musics);
-    }
+    setMusics(parsedMusics);
+    updateFavoriteMusics(parsedMusics);
   }
 
-  async function playMusic(music: ChooseItem) {
-    setPlayingMusic(music);
+  async function favoriteMusic(music: ChooseItem) {
+    if (favoriteMusicsMap[music.id] != null) {
+      delete favoriteMusicsMap[music.id];
+    } else {
+      favoriteMusicsMap[music.id] = true;
+    }
 
+    setFavoriteMusicsMap({ ...favoriteMusicsMap });
+    await musicService.toggleFavorite(music); // TODO: loader
+  }
+
+  function updateFavoriteMusics(musics: ChooseItem[]) {
+    const musicsMappedWithFavorite = musics.map((m) => ({ ...m, selected: !!favoriteMusicsMap[m.id] }));
+
+    if (!!playingMusic) {
+      playingMusic.liked = !!favoriteMusicsMap[playingMusic.id];
+      setPlayingMusic({ ...playingMusic });
+    }
+
+    setMusics(musicsMappedWithFavorite);
+  }
+
+  async function playMusic(item: ChooseItem) {
+    const music = item as Music;
+    
+    music.liked = !!favoriteMusicsMap[music.id];
+    setPlayingMusic(music);
     await musicService.play(music);
   }
 
-  useEffect(() => {
-    fetchData();
-  });
-
   return isMusicDetailsOpen ? (
-    <MusicDetails music={playingMusic as Music} onExpandClick={() => setOpenMusicDetails(false)} />
+    <MusicDetails music={playingMusic} onExpandClick={() => setOpenMusicDetails(false)} />
   ) : (
     <Layout className="playlist-page" pageTitle="Nome da playlist">
       <Button
@@ -53,12 +84,13 @@ export default function () {
         Buscar musica
       </Button>
       <ChooseWithActions
-        items={musics}
         actionIcon={<FavoriteBorderIcon />}
-        selectedActionIcon={<FavoriteIcon />}
+        items={musics}
         onPress={playMusic}
+        onPressAction={favoriteMusic}
+        selectedActionIcon={<FavoriteIcon />}
       />
-      <MusicAppBar music={playingMusic as Music} onExpandClick={() => setOpenMusicDetails(true)} />
+      {!!playingMusic && <MusicAppBar music={playingMusic} onExpandClick={() => setOpenMusicDetails(true)} />}
     </Layout>
   );
 }
