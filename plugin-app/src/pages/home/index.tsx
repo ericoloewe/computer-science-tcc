@@ -1,7 +1,7 @@
 import "./style.scss";
 
 import React, { useState, useEffect } from "react";
-import { Fab } from "@material-ui/core";
+import { Fab, Menu, MenuItem } from "@material-ui/core";
 import { Favorite as FavoriteIcon, Add as AddIcon, FavoriteBorder as FavoriteBorderIcon } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
@@ -27,7 +27,7 @@ export default function () {
   }, []);
 
   return (
-    <Layout className="home-page" pageTitle="Playlists">
+    <Layout className="home-page" pageTitle="Playlists" menuItems={CustomMenu()}>
       <ChooseWithActions
         items={playlists}
         actionIcon={<FavoriteBorderIcon />}
@@ -41,4 +41,12 @@ export default function () {
       </Link>
     </Layout>
   );
+}
+
+function CustomMenu() {
+  return [
+    <MenuItem onClick={(e) => alert("HERE")}>Profile</MenuItem>,
+    <MenuItem>My account</MenuItem>,
+    <MenuItem>Logout</MenuItem>,
+  ];
 }

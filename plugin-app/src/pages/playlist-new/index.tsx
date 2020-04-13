@@ -22,7 +22,7 @@ export default function () {
   });
 
   return (
-    <Layout className="playlist-new-page" pageTitle="Nova playlist" hideMenu={true}>
+    <Layout className="playlist-new-page" pageTitle="Nova playlist" hideDrawerButton={true}>
       <Loader />
       <Typography paragraph>Aguarde enquanto sua playlist esta sendo gerada</Typography>
     </Layout>

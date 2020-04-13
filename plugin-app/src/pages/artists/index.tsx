@@ -42,7 +42,7 @@ const artists = [
 
 export default function () {
   return (
-    <Layout className="artists-page" pageTitle="Artistas preferidos" hideMenu={true}>
+    <Layout className="artists-page" pageTitle="Artistas preferidos" hideDrawerButton={true}>
       <Choose textFieldLabel="Nome do artista" items={artists} />
       <Button variant="contained" color="primary" href="/">
         Proximo
