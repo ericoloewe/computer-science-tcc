@@ -5,7 +5,7 @@ import { Button } from "@material-ui/core";
 import { useHistory, useParams } from "react-router-dom";
 
 import { Choose, ChooseItem } from "../../components/choose";
-import { feelingService, Feeling } from "../../services/feeling";
+import { feelingService } from "../../services/feeling";
 import { Layout } from "../shared/layout";
 import { playlistService } from "../../services/playlist";
 import { StringUtil } from "../../utils/string";
