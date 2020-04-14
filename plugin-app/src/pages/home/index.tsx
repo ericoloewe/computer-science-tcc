@@ -3,18 +3,18 @@ import "./style.scss";
 import React, { useState, useEffect } from "react";
 import { Fab, MenuItem } from "@material-ui/core";
 import { Favorite as FavoriteIcon, Add as AddIcon, FavoriteBorder as FavoriteBorderIcon } from "@material-ui/icons";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import { ChooseWithActions, ChooseItem } from "../../components/choose-with-actions";
 import { Layout } from "../shared/layout";
 import { playlistService } from "../../services/playlist";
-import { authService } from "../../services/auth";
 
 function PlaylistLink({ item, children }: { item: ChooseItem; children: any }) {
   return <Link to={`/playlist/${item.id}/feeling`}>{children}</Link>;
 }
 
 export default function () {
+  const history = useHistory();
   const [playlists, setPlaylists] = useState([] as ChooseItem[]);
 
   async function fetchData() {
@@ -24,7 +24,7 @@ export default function () {
   }
 
   async function logout() {
-    await authService.logout();
+    history.push(`/logout`);
   }
 
   useEffect(() => {

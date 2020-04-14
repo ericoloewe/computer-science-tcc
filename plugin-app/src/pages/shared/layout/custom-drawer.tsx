@@ -1,6 +1,6 @@
 import React from "react";
 import { Drawer, List, ListItem, ListItemIcon, ListItemText, Divider, ListItemAvatar, Avatar } from "@material-ui/core";
-import { Home as HomeIcon, Settings as SettingsIcon } from "@material-ui/icons";
+import { Home as HomeIcon, ExitToApp as ExitToAppIcon } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
 export interface DrawerProps {
@@ -25,11 +25,11 @@ export function CustomDrawer({ isOpen, onClose }: DrawerProps) {
           </ListItemIcon>
           <ListItemText primary="Home" />
         </ListItem>
-        <ListItem button {...{ component: Link, to: `/settings` }}>
+        <ListItem button {...{ component: Link, to: `/logout` }}>
           <ListItemIcon>
-            <SettingsIcon />
+            <ExitToAppIcon />
           </ListItemIcon>
-          <ListItemText primary="Settings" />
+          <ListItemText primary="Sair" />
         </ListItem>
       </List>
     </Drawer>

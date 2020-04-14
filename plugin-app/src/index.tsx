@@ -8,6 +8,7 @@ import { Loader } from "./components/loader";
 const Home = React.lazy(() => import("./pages/home"));
 const Welcome = React.lazy(() => import("./pages/welcome"));
 const Login = React.lazy(() => import("./pages/login"));
+const Logout = React.lazy(() => import("./pages/logout"));
 const Artists = React.lazy(() => import("./pages/artists"));
 const Gender = React.lazy(() => import("./pages/gender"));
 const Playlist = React.lazy(() => import("./pages/playlist"));
@@ -40,6 +41,9 @@ ReactDOM.render(
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/logout">
+            <Logout />
           </Route>
           <Route path="/welcome">
             <Welcome />
