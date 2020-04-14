@@ -11,8 +11,8 @@ class ArtistService {
   }
 
   async search(text: string): Promise<Artist[]> {
-    console.log("text", text);
     await TimerUtil.wait(1000);
+    console.log("text", text);
 
     return Promise.resolve(artistMock);
   }

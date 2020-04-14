@@ -179,3 +179,22 @@ export const artistMock = [
     },
   },
 ];
+
+export const genderMock = [
+  {
+    id: 1,
+    title: "Genero 1",
+  },
+  {
+    id: 2,
+    title: "Genero 2",
+  },
+  {
+    id: 3,
+    title: "Genero 3",
+  },
+  {
+    id: 4,
+    title: "Genero 4",
+  },
+];

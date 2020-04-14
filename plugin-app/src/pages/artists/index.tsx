@@ -14,35 +14,35 @@ export default function () {
   const [artists, setArtists] = useState([] as ChooseItem[]);
   const [selectedArtistsMap, setSelectedArtists] = useState({} as { [key: string]: ChooseItem });
 
-  function chooseMusic(music: ChooseItem) {
-    if (selectedArtistsMap[music.id] != null) {
-      delete selectedArtistsMap[music.id];
+  function chooseArtist(artist: ChooseItem) {
+    if (selectedArtistsMap[artist.id] != null) {
+      delete selectedArtistsMap[artist.id];
     } else {
-      selectedArtistsMap[music.id] = music;
+      selectedArtistsMap[artist.id] = artist;
     }
 
     setSelectedArtists({ ...selectedArtistsMap });
   }
 
-  function markSelectedMusics(musics: ChooseItem[]) {
+  function markSelectedArtists(musics: ChooseItem[]) {
     const musicsMappedWithSelected = musics.map((m) => ({ ...m, selected: selectedArtistsMap[m.id] != null }));
 
     setArtists(musicsMappedWithSelected);
   }
 
-  async function searchMusicsOfTexts(text: string) {
+  async function searchArtistsOfTexts(text: string) {
     const musics = await artistService.search(text);
 
     setArtists([...musics]);
-    markSelectedMusics(musics);
+    markSelectedArtists(musics);
   }
 
   useEffect(() => {
-    markSelectedMusics(artists); // eslint-disable-next-line
+    markSelectedArtists(artists); // eslint-disable-next-line
   }, [selectedArtistsMap]);
 
   useEffect(() => {
-    searchMusicsOfTexts(searchText); // eslint-disable-next-line
+    searchArtistsOfTexts(searchText); // eslint-disable-next-line
   }, [searchText]);
 
   async function saveAndGoHome() {
@@ -57,7 +57,7 @@ export default function () {
       <Choose
         items={artists}
         onChangeSearch={(s) => setSearchText(s)}
-        onChoose={chooseMusic}
+        onChoose={chooseArtist}
         searchLabel="Nome do artista"
         searchValue={searchText}
       />

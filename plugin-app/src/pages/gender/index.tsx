@@ -1,34 +1,67 @@
-import React from "react";
 import "./style.scss";
-import { Layout } from "../shared/layout";
-import { Choose } from "../../components/choose";
-import { Button } from "@material-ui/core";
 
-const gender = [
-  {
-    id: 1,
-    title: "Genero 1",
-    selected: true,
-  },
-  {
-    id: 2,
-    title: "Genero 2",
-  },
-  {
-    id: 3,
-    title: "Genero 3",
-  },
-  {
-    id: 4,
-    title: "Genero 4",
-  },
-];
+import React, { useState, useEffect } from "react";
+import { Button } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
+
+import { Choose, ChooseItem } from "../../components/choose";
+import { Layout } from "../shared/layout";
+import { genderService, Gender } from "../../services/gender";
 
 export default function () {
+  const history = useHistory();
+  const [searchText, setSearchText] = useState("");
+  const [genders, setGenders] = useState([] as ChooseItem[]);
+  const [selectedGendersMap, setSelectedGenders] = useState({} as { [key: string]: ChooseItem });
+
+  function chooseGender(gender: ChooseItem) {
+    if (selectedGendersMap[gender.id] != null) {
+      delete selectedGendersMap[gender.id];
+    } else {
+      selectedGendersMap[gender.id] = gender;
+    }
+
+    setSelectedGenders({ ...selectedGendersMap });
+  }
+
+  function markSelectedGenders(musics: ChooseItem[]) {
+    const musicsMappedWithSelected = musics.map((m) => ({ ...m, selected: selectedGendersMap[m.id] != null }));
+
+    setGenders(musicsMappedWithSelected);
+  }
+
+  async function searchGendersOfTexts(text: string) {
+    const genders = await genderService.search(text);
+
+    setGenders([...genders]);
+    markSelectedGenders(genders);
+  }
+
+  useEffect(() => {
+    markSelectedGenders(genders); // eslint-disable-next-line
+  }, [selectedGendersMap]);
+
+  useEffect(() => {
+    searchGendersOfTexts(searchText); // eslint-disable-next-line
+  }, [searchText]);
+
+  async function saveAndGoHome() {
+    const gendersToSave = Object.keys(selectedGendersMap).map((k) => selectedGendersMap[k]);
+    await genderService.save(gendersToSave as Gender[]);
+
+    history.push(`/`);
+  }
+
   return (
     <Layout className="gender-page" pageTitle="Generos musicais preferidos" hideDrawerButton={true}>
-      <Choose searchLabel="Genero musical" items={gender} />
-      <Button variant="contained" color="primary" href="/">
+      <Choose
+        items={genders}
+        onChangeSearch={(s) => setSearchText(s)}
+        onChoose={chooseGender}
+        searchLabel="Genero musical"
+        searchValue={searchText}
+      />
+      <Button variant="contained" color="primary" onClick={saveAndGoHome}>
         Proximo
       </Button>
     </Layout>
