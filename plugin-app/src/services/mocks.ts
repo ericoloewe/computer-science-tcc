@@ -1,6 +1,7 @@
 import { Music } from "./music";
 import { Feeling } from "./feeling";
 import { Playlist } from "./playlist";
+import { User } from "../contexts/user";
 
 export const playlistMusicsMock: Music[] = [
   {
@@ -137,3 +138,9 @@ export const playlistsMock: Playlist[] = [
     },
   },
 ];
+
+export const profileMock: User = {
+  name: "Lorem ipsum dolor set",
+  mail: "mail@domain.com",
+  avatarSrc: "https://avatars2.githubusercontent.com/u/8793862?s=400&v=4",
+};

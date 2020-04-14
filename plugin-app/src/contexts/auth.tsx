@@ -1,5 +1,6 @@
 import React, { createContext, useState } from "react";
 import { messageService } from "../services/message";
+import { TimerUtil } from "../utils/timer";
 
 interface Props {}
 interface Context {
@@ -15,16 +16,16 @@ export function AuthProvider(props: Props) {
 
   async function login(username: string, password: string): Promise<void> {
     messageService.alert(`login => ${username}, ${password}`);
+    await TimerUtil.wait(1000);
 
     setIsAuthenticated(true);
-    await Promise.resolve();
   }
 
   async function logout(): Promise<void> {
     messageService.alert("logout");
+    await TimerUtil.wait(1000);
 
     setIsAuthenticated(false);
-    await Promise.resolve();
   }
 
   return <AuthContext.Provider value={{ login, logout, isAuthenticated }} {...props} />;

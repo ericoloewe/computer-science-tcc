@@ -3,20 +3,23 @@ import { Drawer, List, ListItem, ListItemIcon, ListItemText, Divider, ListItemAv
 import { Home as HomeIcon, ExitToApp as ExitToAppIcon } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
+import { useUser } from "../../../contexts/user";
+
 export interface DrawerProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
 export function CustomDrawer({ isOpen, onClose }: DrawerProps) {
+  const { avatarSrc, mail, name } = useUser();
   return (
     <Drawer anchor="left" open={isOpen} onClose={onClose}>
       <List component="nav" aria-label="main mailbox folders">
-        <ListItem button>
+        <ListItem>
           <ListItemAvatar>
-            <Avatar src={"https://avatars2.githubusercontent.com/u/8793862?s=400&v=4"} alt="User avatar" />
+            <Avatar src={avatarSrc} alt="User avatar" />
           </ListItemAvatar>
-          <ListItemText primary="Lorem ipsum dolor set" secondary="mail@domain.com" />
+          <ListItemText primary={name} secondary={mail} />
         </ListItem>
         <Divider />
         <ListItem button {...{ component: Link, to: `/` }}>

@@ -4,8 +4,8 @@ import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter, Switch } from "react-router-dom";
 import { Loader } from "./components/loader";
-import { AuthProvider } from "./contexts/auth";
 import { PrivateRoute, NonAuthRoute } from "./components/router";
+import { AppProviders } from "./contexts";
 
 const Home = React.lazy(() => import("./pages/home"));
 const Welcome = React.lazy(() => import("./pages/welcome"));
@@ -21,7 +21,7 @@ const PlaylistMusicSearch = React.lazy(() => import("./pages/playlist-music-sear
 ReactDOM.render(
   <StrictMode>
     <Suspense fallback={<Loader />}>
-      <AuthProvider>
+      <AppProviders>
         <BrowserRouter>
           <Switch>
             <PrivateRoute exact={true} path="/playlist/new">
@@ -56,7 +56,7 @@ ReactDOM.render(
             </PrivateRoute>
           </Switch>
         </BrowserRouter>
-      </AuthProvider>
+      </AppProviders>
     </Suspense>
   </StrictMode>,
   document.getElementById("root")
