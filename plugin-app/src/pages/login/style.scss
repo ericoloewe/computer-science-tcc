@@ -2,18 +2,30 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 30px;
 
-  > .fields {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  > .form {
+    flex: 0.5;
+
+    &,
+    > .actions,
+    > .fields {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+
+    > .actions,
+    > .fields {
+      flex: 1;
+    }
   }
 
   > .logo {
-    max-width: 100px;
-    max-height: 100px;
     align-self: center;
+    flex: 0.3;
+    max-height: 100px;
+    max-width: 100px;
   }
 }

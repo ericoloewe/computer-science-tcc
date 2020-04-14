@@ -2,8 +2,9 @@ import React, { Suspense, StrictMode } from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import { Loader } from "./components/loader";
+import { AuthProvider, useAuth } from "./contexts/auth";
 
 const Home = React.lazy(() => import("./pages/home"));
 const Welcome = React.lazy(() => import("./pages/welcome"));
@@ -16,43 +17,89 @@ const PlaylistNew = React.lazy(() => import("./pages/playlist-new"));
 const PlaylistFeeling = React.lazy(() => import("./pages/playlist-feeling"));
 const PlaylistMusicSearch = React.lazy(() => import("./pages/playlist-music-search"));
 
+function PrivateRoute({ children, ...rest }: any) {
+  const { isAuthenticated } = useAuth();
+
+  return (
+    <Route
+      {...rest}
+      render={({ location }) =>
+        isAuthenticated ? (
+          children
+        ) : (
+          <Redirect
+            to={{
+              pathname: "/login",
+              state: { from: location },
+            }}
+          />
+        )
+      }
+    />
+  );
+}
+
+function NonAuthRoute({ children, ...rest }: any) {
+  const { isAuthenticated } = useAuth();
+
+  return (
+    <Route
+      {...rest}
+      render={({ location }) =>
+        !isAuthenticated ? (
+          children
+        ) : (
+          <Redirect
+            to={{
+              pathname: "/",
+              state: { from: location },
+            }}
+          />
+        )
+      }
+    />
+  );
+}
+
 ReactDOM.render(
   <StrictMode>
     <Suspense fallback={<Loader />}>
-      <BrowserRouter>
-        <Switch>
-          <Route exact={true} path="/playlist/new">
-            <PlaylistNew />
-          </Route>
-          <Route path="/playlist/:playlistId/feeling">
-            <PlaylistFeeling />
-          </Route>
-          <Route path="/playlist/:playlistId/music-search">
-            <PlaylistMusicSearch />
-          </Route>
-          <Route path="/playlist/:playlistId">
-            <Playlist />
-          </Route>
-          <Route path="/gender">
-            <Gender />
-          </Route>
-          <Route path="/artists">
-            <Artists />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/logout">
-            <Logout />
-          </Route>
-          <Route path="/welcome">
-            <Welcome />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
+          <Switch>
+            <PrivateRoute exact={true} path="/playlist/new">
+              <PlaylistNew />
+            </PrivateRoute>
+            <PrivateRoute path="/playlist/:playlistId/feeling">
+              <PlaylistFeeling />
+            </PrivateRoute>
+            <PrivateRoute path="/playlist/:playlistId/music-search">
+              <PlaylistMusicSearch />
+            </PrivateRoute>
+            <PrivateRoute path="/playlist/:playlistId">
+              <Playlist />
+            </PrivateRoute>
+            <PrivateRoute path="/gender">
+              <Gender />
+            </PrivateRoute>
+            <PrivateRoute path="/artists">
+              <Artists />
+            </PrivateRoute>
+            <NonAuthRoute path="/login">
+              <Login />
+            </NonAuthRoute>
+            <PrivateRoute path="/logout">
+              <Logout />
+            </PrivateRoute>
+            <NonAuthRoute path="/welcome">
+              <Welcome />
+            </NonAuthRoute>
+            <PrivateRoute path="/">
+              <Home />
+            </PrivateRoute>
+          </Switch>
+        </BrowserRouter>
+      </AuthProvider>
     </Suspense>
   </StrictMode>,
   document.getElementById("root")

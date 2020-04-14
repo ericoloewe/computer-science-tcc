@@ -6,13 +6,14 @@ import { useHistory } from "react-router-dom";
 
 import { Loader } from "../../components/loader";
 import { Layout } from "../shared/layout";
-import { authService } from "../../services/auth";
+import { useAuth } from "../../contexts/auth";
 
 export default function () {
+  const { logout } = useAuth();
   const history = useHistory();
 
   async function doLogout() {
-    await authService.logout();
+    await logout();
 
     history.push(`/login`);
   }
