@@ -17,13 +17,14 @@ import { MusicDetails } from "./music-details";
 import { playlistService } from "../../services/playlist";
 import { StringUtil } from "../../utils/string";
 import { RenameDialog } from "./rename-dialog";
+import { Loader } from "../../components/loader";
 
 export default function () {
   let { playlistId: playlistIdParam } = useParams();
   const playlistId = StringUtil.toString(playlistIdParam);
   const [isRenameOpen, setOpenRename] = useState(false);
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(false);
-  const [musics, setMusics] = useState([] as ChooseItem[]);
+  const [playlist, setPlaylist] = useState({} as any);
   const [playingMusic, setPlayingMusic] = useState((null as unknown) as Music); // TODO: change to music
   const [favoriteMusicsMap, setFavoriteMusicsMap] = useState({} as { [key: string]: boolean });
 
@@ -32,14 +33,14 @@ export default function () {
   }, [playlistId]);
 
   useEffect(() => {
-    updateFavoriteMusics(musics); // eslint-disable-next-line
+    updateFavoriteMusics(playlist.musics || []); // eslint-disable-next-line
   }, [favoriteMusicsMap]);
 
   async function fetchData() {
-    const musics = await playlistService.loadMusics(playlistId);
-    const parsedMusics = musics.map((m) => ({ ...m, selected: m.liked }));
+    const playlist = await playlistService.load(playlistId);
+    const parsedMusics = playlist.musics.map((m) => ({ ...m, selected: m.liked }));
 
-    setMusics(parsedMusics);
+    setPlaylist(parsedMusics);
     updateFavoriteMusics(parsedMusics);
   }
 
@@ -62,11 +63,12 @@ export default function () {
       setPlayingMusic({ ...playingMusic });
     }
 
-    setMusics(musicsMappedWithFavorite);
+    setPlaylist({ ...playlist, musics: musicsMappedWithFavorite });
   }
 
   async function renamePlaylist(newPlaylistName: string) {
     await playlistService.rename(playlistId, newPlaylistName);
+    setPlaylist({ ...playlist, title: newPlaylistName });
     setOpenRename(false);
   }
 
@@ -90,13 +92,17 @@ export default function () {
       >
         Buscar musica
       </Button>
-      <ChooseWithActions
-        actionIcon={<FavoriteBorderIcon />}
-        items={musics}
-        onPress={playMusic}
-        onPressAction={favoriteMusic}
-        selectedActionIcon={<FavoriteIcon />}
-      />
+      {playlist.musics ? (
+        <ChooseWithActions
+          actionIcon={<FavoriteBorderIcon />}
+          items={playlist.musics}
+          onPress={playMusic}
+          onPressAction={favoriteMusic}
+          selectedActionIcon={<FavoriteIcon />}
+        />
+      ) : (
+        <Loader />
+      )}
       {!!playingMusic && <MusicAppBar music={playingMusic} onExpandClick={() => setOpenMusicDetails(true)} />}
       <RenameDialog isOpen={isRenameOpen} onSubmit={renamePlaylist} />
     </Layout>

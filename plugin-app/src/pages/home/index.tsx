@@ -18,7 +18,7 @@ export default function () {
   const [playlists, setPlaylists] = useState([] as ChooseItem[]);
 
   async function fetchData() {
-    const playlists = await playlistService.load();
+    const playlists = await playlistService.loadAll();
 
     setPlaylists(playlists);
   }
