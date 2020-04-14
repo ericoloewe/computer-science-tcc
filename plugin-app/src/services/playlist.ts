@@ -12,6 +12,10 @@ export interface Playlist {
 }
 
 class PlaylistService {
+  async rename(playlistId: string, newPlaylistName: string) {
+    console.log("rename", playlistId, newPlaylistName);
+  }
+
   async getNextId(): Promise<PlaylistId> {
     return Promise.resolve(playlistsMock.length + 1);
   }

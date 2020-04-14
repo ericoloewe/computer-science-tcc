@@ -1,7 +1,7 @@
 import "./style.scss";
 
 import React, { useState, useEffect } from "react";
-import { Button } from "@material-ui/core";
+import { Button, MenuItem } from "@material-ui/core";
 import {
   Favorite as FavoriteIcon,
   Search as SearchIcon,
@@ -16,10 +16,12 @@ import { MusicAppBar } from "./music-app-bar";
 import { MusicDetails } from "./music-details";
 import { playlistService } from "../../services/playlist";
 import { StringUtil } from "../../utils/string";
+import { RenameDialog } from "./rename-dialog";
 
 export default function () {
   let { playlistId: playlistIdParam } = useParams();
   const playlistId = StringUtil.toString(playlistIdParam);
+  const [isRenameOpen, setOpenRename] = useState(false);
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(false);
   const [musics, setMusics] = useState([] as ChooseItem[]);
   const [playingMusic, setPlayingMusic] = useState((null as unknown) as Music); // TODO: change to music
@@ -63,9 +65,14 @@ export default function () {
     setMusics(musicsMappedWithFavorite);
   }
 
+  async function renamePlaylist(newPlaylistName: string) {
+    await playlistService.rename(playlistId, newPlaylistName);
+    setOpenRename(false);
+  }
+
   async function playMusic(item: ChooseItem) {
     const music = item as Music;
-    
+
     music.liked = !!favoriteMusicsMap[music.id];
     setPlayingMusic(music);
     await musicService.play(music);
@@ -74,7 +81,7 @@ export default function () {
   return isMusicDetailsOpen ? (
     <MusicDetails music={playingMusic} onExpandClick={() => setOpenMusicDetails(false)} />
   ) : (
-    <Layout className="playlist-page" pageTitle="Nome da playlist">
+    <Layout className="playlist-page" pageTitle="Nome da playlist" menuItems={CustomMenu(() => setOpenRename(true))}>
       <Button
         variant="contained"
         color="primary"
@@ -91,6 +98,15 @@ export default function () {
         selectedActionIcon={<FavoriteIcon />}
       />
       {!!playingMusic && <MusicAppBar music={playingMusic} onExpandClick={() => setOpenMusicDetails(true)} />}
+      <RenameDialog isOpen={isRenameOpen} onSubmit={renamePlaylist} />
     </Layout>
   );
+}
+
+function CustomMenu(openRename: () => void) {
+  return [
+    <MenuItem key={"rename"} onClick={() => openRename()}>
+      Renomear
+    </MenuItem>,
+  ];
 }

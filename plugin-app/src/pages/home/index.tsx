@@ -49,5 +49,12 @@ export default function () {
 }
 
 function CustomMenu(refresh: () => Promise<void>, logout: () => Promise<void>) {
-  return [<MenuItem onClick={() => refresh()}>Refresh</MenuItem>, <MenuItem onClick={() => logout()}>Logout</MenuItem>];
+  return [
+    <MenuItem key="refresh" onClick={() => refresh()}>
+      Refresh
+    </MenuItem>,
+    <MenuItem key="logout" onClick={() => logout()}>
+      Logout
+    </MenuItem>,
+  ];
 }
