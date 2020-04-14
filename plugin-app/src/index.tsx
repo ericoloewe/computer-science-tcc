@@ -2,9 +2,10 @@ import React, { Suspense, StrictMode } from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Switch } from "react-router-dom";
 import { Loader } from "./components/loader";
-import { AuthProvider, useAuth } from "./contexts/auth";
+import { AuthProvider } from "./contexts/auth";
+import { PrivateRoute, NonAuthRoute } from "./components/router";
 
 const Home = React.lazy(() => import("./pages/home"));
 const Welcome = React.lazy(() => import("./pages/welcome"));
@@ -16,50 +17,6 @@ const Playlist = React.lazy(() => import("./pages/playlist"));
 const PlaylistNew = React.lazy(() => import("./pages/playlist-new"));
 const PlaylistFeeling = React.lazy(() => import("./pages/playlist-feeling"));
 const PlaylistMusicSearch = React.lazy(() => import("./pages/playlist-music-search"));
-
-function PrivateRoute({ children, ...rest }: any) {
-  const { isAuthenticated } = useAuth();
-
-  return (
-    <Route
-      {...rest}
-      render={({ location }) =>
-        isAuthenticated ? (
-          children
-        ) : (
-          <Redirect
-            to={{
-              pathname: "/login",
-              state: { from: location },
-            }}
-          />
-        )
-      }
-    />
-  );
-}
-
-function NonAuthRoute({ children, ...rest }: any) {
-  const { isAuthenticated } = useAuth();
-
-  return (
-    <Route
-      {...rest}
-      render={({ location }) =>
-        !isAuthenticated ? (
-          children
-        ) : (
-          <Redirect
-            to={{
-              pathname: "/",
-              state: { from: location },
-            }}
-          />
-        )
-      }
-    />
-  );
-}
 
 ReactDOM.render(
   <StrictMode>
