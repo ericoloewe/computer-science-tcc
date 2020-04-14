@@ -1,7 +1,11 @@
 import { feelingsMock } from "./mocks";
+import { TimerUtil } from "../utils/timer";
 
 class FeelingService {
-  async load(): Promise<Feeling[]> {
+  async search(text: string): Promise<Feeling[]> {
+    await TimerUtil.wait(1000);
+    console.log("text", text);
+
     return Promise.resolve(feelingsMock);
   }
 }

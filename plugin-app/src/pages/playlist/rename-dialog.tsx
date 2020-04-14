@@ -1,13 +1,5 @@
 import React, { useState } from "react";
-import {
-  Button,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
-  TextField,
-  DialogActions,
-} from "@material-ui/core";
+import { Button, Dialog, DialogTitle, DialogContent, TextField, DialogActions } from "@material-ui/core";
 
 interface Props {
   isOpen: boolean;

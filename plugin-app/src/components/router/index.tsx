@@ -9,7 +9,7 @@ export function PrivateRoute({ children, ...rest }: any) {
     <Route
       {...rest}
       render={({ location }) =>
-        true ? (
+        isAuthenticated ? (
           children
         ) : (
           <Redirect
