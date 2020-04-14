@@ -144,3 +144,38 @@ export const profileMock: User = {
   mail: "mail@domain.com",
   avatarSrc: "https://avatars2.githubusercontent.com/u/8793862?s=400&v=4",
 };
+
+export const artistMock = [
+  {
+    id: 1,
+    title: "Lorem ipsum 1",
+    image: {
+      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
+      alt: "jack johson",
+    },
+  },
+  {
+    id: 2,
+    title: "Lorem ipsum 2",
+    image: {
+      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
+      alt: "jack johson",
+    },
+  },
+  {
+    id: 3,
+    title: "Lorem ipsum 3",
+    image: {
+      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
+      alt: "jack johson",
+    },
+  },
+  {
+    id: 4,
+    title: "Lorem ipsum 4",
+    image: {
+      src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
+      alt: "jack johson",
+    },
+  },
+];

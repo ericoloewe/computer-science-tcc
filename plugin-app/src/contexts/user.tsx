@@ -16,7 +16,7 @@ const UserContext = createContext({} as any);
 
 export function UserProvider(props: Props) {
   const { isAuthenticated } = useAuth();
-  const [profile, setProfile] = useState<User | null>(null);
+  const [profile, setProfile] = useState<User>({} as any);
 
   async function load(): Promise<void> {
     await TimerUtil.wait(1000);

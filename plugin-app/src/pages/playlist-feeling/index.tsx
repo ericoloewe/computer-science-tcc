@@ -43,7 +43,7 @@ export default function () {
 
   return (
     <Layout className="playlist-feeling-page" pageTitle="O que você esta sentindo?" hideDrawerButton={true}>
-      <Choose textFieldLabel="Sentimentos" items={feelings} onChoose={chooseFelling} />
+      <Choose searchLabel="Sentimentos" items={feelings} onChoose={chooseFelling} />
       <Button variant="contained" color="primary" onClick={saveAndGoToPlaylist}>
         Proximo
       </Button>
