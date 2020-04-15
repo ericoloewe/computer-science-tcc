@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "Pandoc converting .docx to .md ..."
-pandoc ./anteprojeto/main.docx -s --extract-media=pandoc -o ./anteprojeto/main.md
+pandoc ./anteprojeto/main.docx -s --extract-media=./anteprojeto/pandoc -o ./anteprojeto/main.md
 git add ./anteprojeto/main.md
-pandoc ./tcc-i/main.docx -s --extract-media=pandoc -o ./tcc-i/main.md
+pandoc ./tcc-i/main.docx -s --extract-media=./tcc-i/pandoc -o ./tcc-i/main.md
 git add ./tcc-i/main.md
 echo "Pandoc converting done."

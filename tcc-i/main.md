@@ -246,7 +246,7 @@ Exemplo de figura/gráfico no trabalho
 []{#_Toc515473980 .anchor}Figura 1 -- Estrutura de desenvolvimento em
 duas camadas
 
-![](pandoc/media/image1.png)
+![](./tcc-i/pandoc/media/image1.png)
 
 Fonte:
 \...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\....
@@ -276,7 +276,7 @@ Outro exemplo de figura\...
 
 []{#_Toc123031991 .anchor}Figura 2 -- Padrão MVC - separação em camadas
 
-![](pandoc/media/image2.png)
+![](./tcc-i/pandoc/media/image2.png)
 
 Fonte: ......................................
 
