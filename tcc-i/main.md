@@ -72,7 +72,7 @@ Lista de Figuras
 [Figura 1 -- Estrutura de desenvolvimento em duas camadas
 14](#_Toc515473980)
 
-[Figura 2 -- Padrão MVC - separação em camadas 15](#_Toc123031991)
+[Figura 2 -- Padrão MVC - separação em camadas 15](#_Toc515473981)
 
 \* As listas (de figuras, de tabelas e de abreviaturas e siglas,) devem
 ser apresentadas conforme aparecem no trabalho (na ordem), com cada item
@@ -115,17 +115,18 @@ Sumário
 
 [1 Introdução 11](#introdução)
 
-[2 Capítulo 2 13](#capítulo-2)
+[2 Capítulo 2 13](#_Toc515474047)
 
-[2.1 Primeiro subtítulo do capítulo 13](#primeiro-subtítulo-do-capítulo)
+[2.1 Primeiro subtítulo do capítulo 13](#_Toc515474048)
 
-[2.2 Segundo subtítulo do capítulo 14](#segundo-subtítulo-do-capítulo)
+[2.2 Segundo subtítulo do capítulo
+14](#algoritmos-de-sistemas-de-recomendação)
 
-[2.2.1 Subtítulo de nível 3 14](#subtítulo-de-nível-3)
+[2.2.1 Subtítulo de nível 3 14](#_Toc515474050)
 
-[2.2.2 Outro subtítulo de nível 3 14](#outro-subtítulo-de-nível-3)
+[2.2.2 Outro subtítulo de nível 3 14](#_Toc515474051)
 
-[2.3 Terceiro subtítulo do capítulo 16](#terceiro-subtítulo-do-capítulo)
+[2.3 Terceiro subtítulo do capítulo 16](#_Toc515474052)
 
 [3 CONCLUSÃO 17](#conclusão)
 
@@ -271,133 +272,76 @@ contexto será obtido, através da criação um plugin que permitirá ao
 usuário escutar suas músicas enquanto são registrados os eventos do
 contexto vivido naquele momento.
 
-Capítulo 2
-==========
-
-Texto do capítulo. Criado somente para mostrar que a primeira página do
-capítulo não vai o número de página, porém as demais devem ser
-numeradas.
-
-É necessário inserir uma quebra de sessão no final de cada capítulo.
-
-Primeiro subtítulo do capítulo
-------------------------------
-
-O Brasil vive, há mais de uma década, uma experiência de redesenho de
-seu sistema federativo. O sentido da mudança aponta rumo à
-descentralização e ao fortalecimento da capacidade decisória das
-instâncias subnacionais de governo. Ao nível internacional, têm tido
-relevância as propostas freqüentemente associadas ao neoliberalismo,
-tais como Estado Mínimo, desregulamentação, abertura econômica,
-privatização e descentralização das políticas sociais. Ao mesmo tempo,
-constata-se a existência de tentativas de avançar na consolidação das
-novas democracias e, neste sentido, ganham espaço as discussões acerca
-da cidadania e de qual deva ser a responsabilidade do Estado no
-provimento das demandas sociais (RABELO, 1998).
-
-Segundo Rabelo (1998), vários autores têm enfatizado o fato de que a
-descentralização no Brasil tem se implantado de maneira
-\'descoordenada\' ou \'caótica\'. Para Affonso (1998, p.4), por exemplo,
-
-a descentralização decorreu, basicamente, do processo de
-redemocratização desencadeado no bojo do aprofundamento da crise
-econômica. O governo federal \[\...\] se opôs a ela o quanto pode e não
-produziu um plano nacional para a descentralização, o que resultou num
-processo inconcluso e eivado de conflitos.
-
-A demanda democrática aparece como quarto fator a introduzir o
-aparecimento do tema descentralização no centro das discussões políticas
-(NOHLEN, 1987). A partir dos anos 80, junto com o processo de
-redemocratização, aumentou a participação popular, crescendo também a
-capacidade organização da sociedade e as formas de pressão por mais
-participação. Essa demanda democrática abriu caminho para a defesa da
-descentralização, para o aprofundamento da participação e da democracia
-que, em conseqüência disso, se acentuaria. Sob esse aspecto, o "espaço
-local, o poder local está no centro do conjunto de transformações que
-envolvem a descentralização, a desburocratização e a participação"
-(DOWBOR, 1994, p.75).
-
-Segundo subtítulo do capítulo
------------------------------
-
-Exemplo de figura/gráfico no trabalho
-
-[]{#_Toc515473980 .anchor}Figura 1 -- Estrutura de desenvolvimento em
-duas camadas
-
-![](./tcc-i/pandoc/media/image1.png)
-
-Fonte:
-\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\....
-
-Segundo o livro do Prof. Prodanov (2003, p.37), a identificação de
-figuras e gráficos aparece na parte inferior, precedida da palavra
-figura/gráfico, seguida de seu número de ordem de ocorrência no texto em
-algarismos arábicos, assim como de título e/ou legenda explicativa e da
-fonte, se necessário. As figuras e os gráficos ficam centralizados na
-folha.
-
-### Subtítulo de nível 3
-
-texto
-
-### Outro subtítulo de nível 3
+Sistemas de recomendação
+========================
 
 Texto
 
-#### Título 4
+Tipos de sistemas de recomendação
+---------------------------------
 
 Texto
 
-#### Título 4
+### Sistemas de recomendação baseado em conteúdo
 
-Outro exemplo de figura\...
+Texto
 
-[]{#_Toc123031991 .anchor}Figura 2 -- Padrão MVC - separação em camadas
+### Sistemas de recomendação colaborativo
 
-![](./tcc-i/pandoc/media/image2.png)
+Texto
 
-Fonte: ......................................
+### Sistemas de recomendação baseado em conhecimento
 
-Exemplo de Tabela no Trabalho
+Texto
 
-[]{#_Toc515474000 .anchor}Tabela 1 -- Matrícula dos alunos do Centro de
-Educação da FURG segundo o município.
+### Sistemas de recomendação híbrido
 
-+-----------------------+-----------+-----------------+---+
-| Município             | Curso     | Total           |   |
-+=======================+===========+=================+===+
-|                       | Pedagogia | Educação Física |   |
-+-----------------------+-----------+-----------------+---+
-| Blumenau 230 130 360  |           |                 |   |
-|                       |           |                 |   |
-| Timbó 40 20 60        |           |                 |   |
-|                       |           |                 |   |
-| Indaial 30 10 40      |           |                 |   |
-|                       |           |                 |   |
-| Gaspar 20 10 30       |           |                 |   |
-|                       |           |                 |   |
-| Brusque 20 20 40      |           |                 |   |
-|                       |           |                 |   |
-| Outros 50 70 120      |           |                 |   |
-+-----------------------+-----------+-----------------+---+
-| **Total** 390 260 650 |           |                 |   |
-+-----------------------+-----------+-----------------+---+
+Texto
 
-Fonte: Divisão acadêmica/ FURG. 1986.
+Algoritmos de sistemas de recomendação
+--------------------------------------
 
-De acordo com o que está exposto no livro do prof. Prodanov (2003,
-p.37), as tabelas e quadros têm numeração independente e consecutiva. O
-título é colocado na parte superior, precedido da palavra Tabela/Quadro
-e de seu número de ordem em algarismos arábicos (alinhamento
-justificado). Nas tabelas utilizam-se fios horizontais e verticais para
-separar os títulos das colunas no cabeçalho e fechá-las na parte
-inferior, evitando-se fios verticais para separar as colunas e fios
-horizontais para separar as linhas. Já os quadros são fechados, com fios
-para separar linhas e colunas.
+Texto
 
-Terceiro subtítulo do capítulo
-------------------------------
+Técnicas para avaliar OS RESULTADOS de um RecSys
+------------------------------------------------
+
+Texto
+
+Trabalhos relacionados
+======================
+
+Texto
+
+Tabela com tecnicas
+-------------------
+
+Texto
+
+Modelagem do que será feito
+===========================
+
+Texto
+
+Contexto
+--------
+
+Texto
+
+### O que é o contexto comportamental?
+
+Texto
+
+### O que é o contexto ambiente?
+
+Texto
+
+### Como será obtido os contextos?
+
+Texto
+
+Arquitetura do sistema
+----------------------
 
 Texto
 
@@ -431,36 +375,23 @@ da folha, em algarismos arábicos.
 Referências Bibliográficas {#referências-bibliográficas .Título-1---sem-numeração}
 ==========================
 
-ALMEIDA, Célia. Médicos e assistência médica: Estado, mercado ou
-regulação? Uma falsa questão. **Cadernos de Saúde Pública,** Rio de
-Janeiro, v.13, n. 4, p.45 -57, out./dez., 1997a.
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_. Crise Econômica, Crise do Welfare State
-e Reforma Sanitária. In.: GERSCHMAN, S. & WERNECK VIANNA, M. L. (orgs.).
-**A miragem da pós-modernidade:** democracia e políticas sociais no
-contexto da globalização. Rio de Janeiro: Fiocruz, 1997b. p.78 -- 97.
-
-ALMEIDA, Maria Hermínia Tavares de. Federalismo e Políticas Sociais.
-**Projeto Balanço e Perspectivas do Federalismo Fiscal no Brasil,** São
-Paulo, FUNDAP, vol.6, n.1, p.22-27, jan., 1994.
-
-AZEVEDO, Sérgio de. **Federalismo e Reforma do Estado:** resultados
-preliminares de pesquisa. Disponível em:
-\<<http://www.fundaj.gov.br/docs/eg/semi1.rtf>\>. Acesso em: 21 outubro
-2000.
-
-CONSTRUÇÃO do cérebro. **Veja**, São Paulo: v.29, n.12, p.84-89,
-mar.1996.
-
-COSTA, Cristina. **Sociologia:** Introdução à ciência da sociedade. 2
-ed. São Paulo: Moderna, 2000. 257p.
-
-GIANNOTTI, José. Em defesa da Universidade. **Folha de São Paulo**, São
-Paulo, p.3, 13 jun. 2005.
-
-MICROSOFT CORPORATION. Microsoft lança Windows Terminal Server. 1998.
-Disponível em: \<<http://www...........................>\>. Acesso em:
-25 mai. 2006.
-
-PRODANOV, Cleber. **Manual de Metodologia Científica.** 3ª ed. Novo
-Hamburgo: FEEVALE, 2003. 79p.
+BHATNAGAR, V. **Collaborative filtering using data mining and
+analysis**. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming or
+stealing? The complementary features between music streaming and music
+piracy. **Journal of Retailing and Consumer Services**, v. 32, p.
+86--95, 2016. DIETMAR, J. et al. **Recommendation system -An
+Introduction**. \[s.l: s.n.\]. v. 91ERIKSSON, M. et al. **Spotify
+Teardown**. \[s.l.\] MIT Press, 2019. FALK, K. **Practical Recommender
+Systems**. \[s.l: s.n.\]. IFPI. **IFPI Global Music Report 2019**.
+Disponível em:
+\<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. LUINI, B.
+J. R.; WHITMAN, A. E.; DATE, P. **Streaming Audio: The FezGuys' Guide**.
+\[s.l: s.n.\]. MURARO, R. M. **Os avanços tecnológicos e o futuro da
+humanidade**Querendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
+\[s.l.\] O'Reilly Media, 2018. v. 134RESNICK, PAUL AND VARIAN, H. R.
+Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
+56--58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
+Handbook**. \[s.l: s.n.\]. UNIVERSIDADE FEDERAL DO CEARA. **A
+Magnetorresistência Gigante**. Disponível em:
+\<https://seara.ufc.br/tintim-por-tintim/tecnologia/a-magnetorresistencia-gigante/\>.
+Acesso em: 12 mar. 2020.
