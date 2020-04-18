@@ -7,7 +7,7 @@ AMBIENTE
 
 Novo Hamburgo
 
-2019
+2020
 
 Érico De SOUZA LOEWE
 
@@ -28,7 +28,7 @@ Orientador: nome do professor orientador
 
 Novo Hamburgo
 
-2019
+2020
 
 Agradecimentos
 
@@ -113,22 +113,50 @@ Lista de Abreviaturas e Siglas
 
 Sumário
 
-[1 Introdução 11](#introdução)
+[1 Introdução 10](#introdução)
 
-[2 Capítulo 2 13](#_Toc515474047)
+[2 Sistemas de recomendação 14](#sistemas-de-recomendação)
 
-[2.1 Primeiro subtítulo do capítulo 13](#_Toc515474048)
+[2.1 Tipos de sistemas de recomendação
+14](#tipos-de-sistemas-de-recomendação)
 
-[2.2 Segundo subtítulo do capítulo
+[2.1.1 Sistemas de recomendação baseado em conteúdo
+14](#sistemas-de-recomendação-baseado-em-conteúdo)
+
+[2.1.2 Sistemas de recomendação colaborativo
+14](#sistemas-de-recomendação-colaborativo)
+
+[2.1.3 Sistemas de recomendação baseado em conhecimento
+14](#sistemas-de-recomendação-baseado-em-aprendizado)
+
+[2.1.4 Sistemas de recomendação híbrido
+14](#sistemas-de-recomendação-híbridos)
+
+[2.2 Algoritmos de sistemas de recomendação
 14](#algoritmos-de-sistemas-de-recomendação)
 
-[2.2.1 Subtítulo de nível 3 14](#_Toc515474050)
+[2.3 Técnicas para avaliar OS RESULTADOS de um RecSys
+14](#técnicas-para-avaliar-os-resultados-de-um-recsys)
 
-[2.2.2 Outro subtítulo de nível 3 14](#_Toc515474051)
+[3 Trabalhos relacionados 15](#trabalhos-relacionados)
 
-[2.3 Terceiro subtítulo do capítulo 16](#_Toc515474052)
+[3.1 Tabela com tecnicas 15](#tabela-com-tecnicas)
 
-[3 CONCLUSÃO 17](#conclusão)
+[4 Modelagem do que será feito 16](#modelagem-do-que-será-feito)
+
+[4.1 Contexto 16](#contexto)
+
+[4.1.1 O que é o contexto comportamental?
+16](#o-que-é-o-contexto-comportamental)
+
+[4.1.2 O que é o contexto ambiente? 16](#o-que-é-o-contexto-ambiente)
+
+[4.1.3 Como será obtido os contextos?
+16](#como-será-obtido-os-contextos)
+
+[4.2 Arquitetura do sistema 16](#arquitetura-do-sistema)
+
+[5 CONCLUSÃO 17](#conclusão)
 
 [Referências Bibliográficas 18](#referências-bibliográficas)
 
@@ -280,23 +308,46 @@ Texto
 Tipos de sistemas de recomendação
 ---------------------------------
 
-Texto
+(DIETMAR et al., 2010) trazem em sua obra os 4 tipos de sistemas de
+recomendação, sendo eles: recomendação colaborativa, recomendação
+baseada em conteúdo, recomendação baseada em conhecimento, e sistemas de
+recomendação híbridos.
 
 ### Sistemas de recomendação baseado em conteúdo
 
-Texto
+Na recomendação baseada em conteúdo, o sistema aprende a recomendar
+itens que são similares ao que o usuário gostou no passado, essa
+similaridade e calculada baseada na relação das características dos
+itens a serem comparados. Por exemplo, no caso de usuário avaliar
+positivamente um filme do gênero comedia, então, o sistema pode
+registrar essa ação e futuramente recomendar outros filmes desse mesmo
+gênero. (RICCI; ROKACH; SHAPIRA, 2011)
 
 ### Sistemas de recomendação colaborativo
 
-Texto
+A recomendação colaborativa parte da ideia de que se os usuários
+compartilharam dos mesmos interesses no passado, eles irão continuar
+tendo os mesmos interesses no futuro. Por exemplo, os usuários A e B tem
+um histórico de compras bem semelhante e o usuário A comprou um novo
+livro que o usuário B nem chegou a ver, nesse tipo de recomendação, a
+ideia e que o sistema sugira este livro para o usuário B. (DIETMAR et
+al., 2010)
 
-### Sistemas de recomendação baseado em conhecimento
+### Sistemas de recomendação baseado em aprendizado
 
-Texto
+Diferente da recomendação colaborativa ou baseada em conteúdo, a
+recomendação baseada em aprendizado não consegue depender somente do
+histórico de compra de um usuário, e necessário um conteúdo mais
+estruturado e detalhado para ser gerado uma recomendação, geralmente
+nesse tipo, e utilizado um conteúdo adicional fornecido manualmente
+(conteúdo recente ao produto e usuário). (DIETMAR et al., 2010)
 
-### Sistemas de recomendação híbrido
+### Sistemas de recomendação híbridos
 
-Texto
+E por último, e não menos importante, (DIETMAR et al., 2010) traz em sua
+obra o modelo híbrido de recomendação, onde a ideia e combinar as
+diferentes técnicas, buscando gerara uma boa e mais assertiva
+recomendação. (DIETMAR et al., 2010)
 
 Algoritmos de sistemas de recomendação
 --------------------------------------
