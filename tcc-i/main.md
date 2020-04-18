@@ -1,16 +1,18 @@
 UNIVERSIdade FEEVALE
 
-nome do aluno
+ÉRico De SOUZA loewe
 
-título do trabalho
+SISTEMA DE RECOMENDAÇÃO MUSICAL BASEADO EM CONTEXTO COMPORTAMENTAL E DE
+AMBIENTE
 
 Novo Hamburgo
 
 2019
 
-nome do aluno
+Érico De SOUZA LOEWE
 
-título do trabalho
+SISTEMA DE RECOMENDAÇÃO MUSICAL BASEADO EM CONTEXTO COMPORTAMENTAL E DE
+AMBIENTE
 
 > Trabalho de Conclusão de Curso
 >
@@ -44,33 +46,20 @@ borda direita e 8cm da borda esquerda da página (PRODANOV, 2003, p. 42).
 
 Resumo
 
-Esse trabalho apresenta o posicionamento de diversos atores sociais e
-grupos de interesse, envolvidos na área da saúde, no Rio Grande do Sul,
-em relação aos princípios norteadores do Sistema Único de Saúde (SUS) e
-o projeto de política de saúde que defendiam no período inicial do
-processo de reforma sanitária e no período de operacionalização e
-institucionalização do SUS. Ao comparar essas duas fases de análise,
-buscou-se verificar se houve mudança nos posicionamentos e nos projetos
-de política de saúde, defendidos pelos atores, procurando examinar as
-possíveis razões para que elas tenham ocorrido. Através de estudo
-qualitativo, foram realizadas dezoito entrevistas, as quais ocorreram
-com representantes dos grupos sociais selecionados para a pesquisa. De
-acordo com os seus posicionamentos, em relação à reforma sanitária
-brasileira, os diferentes atores sociais e grupos de interesse foram
-classificados em dois blocos/posições: os que apoiavam o processo de
-reforma sanitária -- compondo, assim, a *policy community* reformista -
-e os opositores a ela. Em ambos os grupos/blocos, foram identificadas
-mudanças nas propostas e posições defendidas, mas as maiores novidades
-ocorreram entre os primeiros.
+Sabe-se que as pessoas têm dificuldades em lidar com um grande volume de
+informações, e com a internet e a evolução da tecnologia houve aumento
+da quantidade disponível, trazendo a necessidade de os sistemas
+evoluírem suas recomendações, surgindo os RecSys. Esses sistemas são
+utilizados em diversos tipos de aplicações como vendas, seleção de um
+filme e até mesmo na seleção de uma música, que é um dos objetivos dessa
+pesquisa. Neste trabalho será desenvolvido um sistema de recomendação
+baseado em contexto comportamental e de ambiente. O objetivo desse
+sistema é coletar informações sobre o comportamento e tendência do
+usuário, possibilitando o aperfeiçoamento das recomendações musicais de
+acordo com o contexto vivenciado pelo usuário.
 
-Palavras-chave: Políticas de saúde. Grupos de interesse. Reforma
-sanitária brasileira. Sistema Único de Saúde. Projetos de política de
-saúde.
-
-\* O resumo em português e em língua estrangeira é elemento obrigatório
-=\> não pode ultrapassar, segundo o livro do Prof. Prodanov (2003), 500
-palavras. É obrigatório colocar as palavras-chave (no máximo 5). O
-resumo é construído em parágrafo único.
+Palavras-chave: RecSys. Machine Learning. Sistemas de recomendação
+musical. Música. Spotify.
 
 Abstract
 
