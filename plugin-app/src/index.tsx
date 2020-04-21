@@ -10,6 +10,7 @@ import { AppProviders } from "./contexts";
 const Home = React.lazy(() => import("./pages/home"));
 const Welcome = React.lazy(() => import("./pages/welcome"));
 const Login = React.lazy(() => import("./pages/login"));
+const LoginRedirectSpotify = React.lazy(() => import("./pages/login-redirect-spotify"));
 const Logout = React.lazy(() => import("./pages/logout"));
 const Artists = React.lazy(() => import("./pages/artists"));
 const Gender = React.lazy(() => import("./pages/gender"));
@@ -44,6 +45,9 @@ ReactDOM.render(
             </PrivateRoute>
             <NonAuthRoute path="/login">
               <Login />
+            </NonAuthRoute>
+            <NonAuthRoute path="/login-redirect-spotify">
+              <LoginRedirectSpotify />
             </NonAuthRoute>
             <PrivateRoute path="/logout">
               <Logout />
