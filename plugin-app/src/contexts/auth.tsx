@@ -10,7 +10,6 @@ interface Props {}
 interface Context {
   accessToken: string;
   isAuthenticated: boolean;
-  login: (username: string, password: string) => Promise<void>;
   logout: () => Promise<void>;
   saveToken: (redirectUrl: string) => Promise<void>;
 }
@@ -22,15 +21,9 @@ export function AuthProvider(props: Props) {
   const [accessToken, setAccessToken] = useState(cookieService.get(COOKIE_NAME));
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  async function login(username: string, password: string): Promise<void> {
-    var spotifyUrl = SpotifyUtil.createSpotifyAuthUrl();
-    // eslint-disable-next-line
-    location.href = spotifyUrl;
-  }
-
   async function logout(): Promise<void> {
-    messageService.alert("logout");
-    await TimerUtil.wait(1000);
+    setAccessToken("");
+    cookieService.delete(COOKIE_NAME);
   }
 
   async function saveToken(redirectUrl: string): Promise<void> {
@@ -44,7 +37,7 @@ export function AuthProvider(props: Props) {
     setIsAuthenticated(!StringUtil.isEmpty(accessToken));
   }, [accessToken]);
 
-  return <AuthContext.Provider value={{ login, logout, saveToken, isAuthenticated, accessToken }} {...props} />;
+  return <AuthContext.Provider value={{ logout, saveToken, isAuthenticated, accessToken }} {...props} />;
 }
 
 export const useAuth = () => React.useContext<Context>(AuthContext);

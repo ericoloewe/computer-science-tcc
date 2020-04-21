@@ -24,7 +24,7 @@ export default function () {
   });
 
   return (
-    <Layout className="login-redirect-spotify-page" pageTitle="Login no spotify" hideDrawerButton={true}>
+    <Layout className="login-redirect-spotify-page" pageTitle="Login ✔" hideDrawerButton={true}>
       <Loader />
       <Typography paragraph>Login realizado com sucesso!</Typography>
       <Typography paragraph>Redirecionando para home...</Typography>

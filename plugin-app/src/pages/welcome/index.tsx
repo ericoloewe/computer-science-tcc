@@ -18,7 +18,7 @@ export default function () {
           est laborum.
         </p>
       </section>
-      <Button variant="contained" color="primary" {...{ component: Link, to: `/` }}>
+      <Button variant="contained" color="primary" {...{ component: Link, to: `/login` }}>
         Continuar
       </Button>
     </article>
