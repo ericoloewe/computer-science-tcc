@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { useAuth } from "./auth";
-import { TimerUtil } from "../utils/timer";
 
 import { profileMock } from "../services/mocks";
 
@@ -15,11 +14,11 @@ export interface User {
 const UserContext = createContext({} as any);
 
 export function UserProvider(props: Props) {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, requestService } = useAuth();
   const [profile, setProfile] = useState<User>({} as any);
 
   async function load(): Promise<void> {
-    await TimerUtil.wait(1000);
+    console.log(await requestService.get("https://api.spotify.com/v1/me"));
     setProfile({ ...profileMock });
   }
 

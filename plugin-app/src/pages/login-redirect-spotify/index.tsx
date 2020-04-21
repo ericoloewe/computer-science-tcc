@@ -12,7 +12,7 @@ export default function () {
   const { saveToken } = useAuth();
   const { push } = useHistory();
 
-  async function saveTokenIfNeedAndRedirect() {
+  function saveTokenIfNeedAndRedirect() {
     // eslint-disable-next-line
     saveToken(location.href);
 

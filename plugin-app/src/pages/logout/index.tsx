@@ -12,8 +12,8 @@ export default function () {
   const { logout } = useAuth();
   const history = useHistory();
 
-  async function doLogout() {
-    await logout();
+  function doLogout() {
+    logout();
 
     history.push(`/login`);
   }
