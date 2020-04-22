@@ -364,6 +364,45 @@ Trabalhos relacionados
 
 Texto
 
+Os trabalhos
+------------
+
+### Improving Context-Aware Music Recommender Systems: Beyond the Pre-filtering Approach
+
+Nesse artigo é apresentado uma técnica a partir da *factorization
+machines* para extrair informações do contexto usuário a partir do nome
+da *playlist.*
+
+### Context-Aware Mobile Music Recommendation for Daily Activities
+
+Nesse artigo é apresentado técnicas para coletar informações sobre o
+contexto a partir de um dispositivo mobile e recomendar *playlist* que
+irão suprir o desejo do usuário no curto prazo. Apresentam um modelo
+probabilístico para integrar a informação contextual com a análise do
+conteúdo da música. Por último é apresentado resultados mostrando uma
+melhora nos resultados a partir do modelo proposto.
+
+### Musical serendipity: designing for contextual music recommendation and discovery
+
+Definição clara do contexto
+
+É apresentado sugestões de como incluir as informações de contexto -
+principalmente a localização - nas recomendações musicais interativas,
+através dos vários conceitos e protótipos apresentados.
+
+Foram apresentados dois protótipos nesse trabalho, Sounds of Helsinki
+(Artigo II) e OUTMedia (Artigo IV). Foi apresentado uma plataforma para
+vários conceitos de serviço de música com reconhecimento de contexto
+(Artigo III). Além disso, foi apresentado dois artigos avaliando os
+serviços musicais atuais por suas explicações e transparência (Artigo I)
+e o modo que eles envolvem o contexto em suas interações com os sistemas
+de recomendação e suas tarefas (background jobs) de descoberta (Artigo
+V).
+
+O argumento fundamental e pontapé inicial para essa tese é que
+envolvendo os fatores de contexto, aí então a **diversidade cultural
+poderia ser fomentada**\... (CONTINUAR LENDO RESUMO)
+
 Tabela com tecnicas
 -------------------
 
