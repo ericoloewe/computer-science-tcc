@@ -403,6 +403,12 @@ O argumento fundamental e pontapé inicial para essa tese é que
 envolvendo os fatores de contexto, aí então a **diversidade cultural
 poderia ser fomentada**\... (CONTINUAR LENDO RESUMO)
 
+### Recomender system handbook
+
+Texto
+
+### Desenvolvimento de um Sistema de Recomendação Musical Sensível ao Contexto
+
 Tabela com tecnicas
 -------------------
 
