@@ -113,52 +113,71 @@ Lista de Abreviaturas e Siglas
 
 Sumário
 
-[1 Introdução 10](#introdução)
+[1 Introdução 11](#introdução)
 
-[2 Sistemas de recomendação 14](#sistemas-de-recomendação)
+[2 Sistemas de recomendação 15](#sistemas-de-recomendação)
 
 [2.1 Tipos de sistemas de recomendação
-14](#tipos-de-sistemas-de-recomendação)
+15](#tipos-de-sistemas-de-recomendação)
 
 [2.1.1 Sistemas de recomendação baseado em conteúdo
-14](#sistemas-de-recomendação-baseado-em-conteúdo)
+15](#sistemas-de-recomendação-baseado-em-conteúdo)
 
 [2.1.2 Sistemas de recomendação colaborativo
-14](#sistemas-de-recomendação-colaborativo)
+15](#sistemas-de-recomendação-colaborativo)
 
-[2.1.3 Sistemas de recomendação baseado em conhecimento
-14](#sistemas-de-recomendação-baseado-em-aprendizado)
+[2.1.3 Sistemas de recomendação baseado em aprendizado
+15](#sistemas-de-recomendação-baseado-em-aprendizado)
 
-[2.1.4 Sistemas de recomendação híbrido
-14](#sistemas-de-recomendação-híbridos)
+[2.1.4 Sistemas de recomendação híbridos
+15](#sistemas-de-recomendação-híbridos)
 
 [2.2 Algoritmos de sistemas de recomendação
-14](#algoritmos-de-sistemas-de-recomendação)
+16](#algoritmos-de-sistemas-de-recomendação)
 
 [2.3 Técnicas para avaliar OS RESULTADOS de um RecSys
-14](#técnicas-para-avaliar-os-resultados-de-um-recsys)
+16](#técnicas-para-avaliar-os-resultados-de-um-recsys)
 
-[3 Trabalhos relacionados 15](#trabalhos-relacionados)
+[3 Trabalhos relacionados 17](#trabalhos-relacionados)
 
-[3.1 Tabela com tecnicas 15](#tabela-com-tecnicas)
+[3.1 Os trabalhos 17](#os-trabalhos)
 
-[4 Modelagem do que será feito 16](#modelagem-do-que-será-feito)
+[3.1.1 Improving Context-Aware Music Recommender Systems: Beyond the
+Pre-filtering Approach
+17](#improving-context-aware-music-recommender-systems-beyond-the-pre-filtering-approach)
 
-[4.1 Contexto 16](#contexto)
+[3.1.2 Context-Aware Mobile Music Recommendation for Daily Activities
+17](#context-aware-mobile-music-recommendation-for-daily-activities)
+
+[3.1.3 Musical serendipity: designing for contextual music
+recommendation and discovery
+17](#musical-serendipity-designing-for-contextual-music-recommendation-and-discovery)
+
+[3.1.4 Recommender system handbook 18](#recommender-system-handbook)
+
+[3.1.5 Desenvolvimento de um Sistema de Recomendação Musical Sensível ao
+Contexto
+18](#desenvolvimento-de-um-sistema-de-recomendação-musical-sensível-ao-contexto)
+
+[3.2 Tabela com tecnicas 18](#tabela-com-tecnicas)
+
+[4 Modelagem do que será feito 19](#modelagem-do-que-será-feito)
+
+[4.1 Contexto 19](#contexto)
 
 [4.1.1 O que é o contexto comportamental?
-16](#o-que-é-o-contexto-comportamental)
+19](#o-que-é-o-contexto-comportamental)
 
-[4.1.2 O que é o contexto ambiente? 16](#o-que-é-o-contexto-ambiente)
+[4.1.2 O que é o contexto ambiente? 19](#o-que-é-o-contexto-ambiente)
 
 [4.1.3 Como será obtido os contextos?
-16](#como-será-obtido-os-contextos)
+19](#como-será-obtido-os-contextos)
 
-[4.2 Arquitetura do sistema 16](#arquitetura-do-sistema)
+[4.2 Arquitetura do sistema 19](#arquitetura-do-sistema)
 
-[5 CONCLUSÃO 17](#conclusão)
+[5 CONCLUSÃO 20](#conclusão)
 
-[Referências Bibliográficas 18](#referências-bibliográficas)
+[Referências Bibliográficas 21](#referências-bibliográficas)
 
 O sumário é elemento obrigatório, em que se apresentam os títulos e
 subtítulos (ou seções), seguidos de sua paginação. É recomendável
@@ -403,7 +422,7 @@ O argumento fundamental e pontapé inicial para essa tese é que
 envolvendo os fatores de contexto, aí então a **diversidade cultural
 poderia ser fomentada**\... (CONTINUAR LENDO RESUMO)
 
-### Recomender system handbook
+### Recommender system handbook
 
 Texto
 
