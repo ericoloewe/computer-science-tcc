@@ -115,7 +115,7 @@ Sumário
 
 [1 Introdução 11](#introdução)
 
-[2 Sistemas de recomendação 15](#sistemas-de-recomendação)
+[2 Sistemas de recomendação 15](#sistemas-de-recomendação-e-contexto)
 
 [2.1 Tipos de sistemas de recomendação
 15](#tipos-de-sistemas-de-recomendação)
@@ -319,8 +319,8 @@ contexto será obtido, através da criação um plugin que permitirá ao
 usuário escutar suas músicas enquanto são registrados os eventos do
 contexto vivido naquele momento.
 
-Sistemas de recomendação
-========================
+Sistemas de recomendação e contexto
+===================================
 
 Texto
 
@@ -423,11 +423,16 @@ recomendações de músicas fora do convencional do que em canais como
 rádios e novos lançamentos, o que pode trazer melhores oportunidades de
 descobertas inesperadas.
 
-Possui um capitulo para definição clara do que é contexto.
+Possui um capítulo para definição clara do que é contexto.
 
 ### Recommender system handbook
 
-Texto
+Neste livro é apresentado um capítulo tratando sobre os sistemas de
+recomendação na área musical (Capitulo 13 - Music Recommender Systems),
+nele é abordado recomendações baseadas no conteúdo, modelo hibrido de
+recomendação, geração automática de playlist, data-sets e avaliação, mas
+o principal tópico que sera utilizado nesse trabalho, é a recomendação a
+partir do contexto.
 
 ### Desenvolvimento de um Sistema de Recomendação Musical Sensível ao Contexto
 
