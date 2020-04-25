@@ -387,6 +387,9 @@ relacionados a esse assunto para área. Nesse capítulo será abordado os
 diversos trabalhos encontrados a partir de uma revisão realizada sobre o
 assunto.
 
+O protocolo de revisão
+----------------------
+
 Essa revisão tem como foco encontrar trabalhos que abordam os sistemas
 de recomendação, que a partir das músicas conhecidas pelo usuário, e do
 contexto comportamental e de ambiente apresentado, buscam melhorar
@@ -412,6 +415,21 @@ revisão, elas são:
 -   Sistemas de recomendação musical
 
 -   Context-aware
+
+Para realizar a busca dos trabalhos relacionados ao foco de pesquisa da
+revisão, será utilizado do Google Scholar
+(<https://scholar.google.com/>) para realizar a procura dos artigos em
+diversas plataformas de busca e artigos publicados online.
+
+Além das fontes, será desenvolvido uma *string* de busca, para filtrar
+por estudos que estejam de acordo com o foco de pesquisa do trabalho.
+Pois, existem muitos artigos e diversas áreas de pesquisa relacionadas
+aos sistemas de recomendação musical, então, para realizar uma busca
+mais voltada ao foco, será utilizada a seguinte *string* de busca:
+
+(("recsys" or "recommender systems" or "machine learning") and ("music"
+or "musical" or "song" or "playlist") and ("context" or "context-aware"
+or "hci" or "human computer interaction"))
 
 Os trabalhos
 ------------
