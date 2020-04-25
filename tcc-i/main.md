@@ -403,14 +403,12 @@ melhora nos resultados a partir do modelo proposto.
 
 ### Musical serendipity: designing for contextual music recommendation and discovery
 
-Definição clara do contexto
-
 É apresentado sugestões de como incluir as informações de contexto -
 principalmente a localização - nas recomendações musicais interativas,
 através dos vários conceitos e protótipos apresentados.
 
 Foram apresentados dois protótipos nesse trabalho, Sounds of Helsinki
-(Artigo II) e OUTMedia (Artigo IV). Foi apresentado uma plataforma para
+(Artigo II) e OUTMedia (Artigo IV). Foi proposta uma plataforma para
 vários conceitos de serviço de música com reconhecimento de contexto
 (Artigo III). Além disso, foi apresentado dois artigos avaliando os
 serviços musicais atuais por suas explicações e transparência (Artigo I)
@@ -420,7 +418,12 @@ V).
 
 O argumento fundamental e pontapé inicial para essa tese é que
 envolvendo os fatores de contexto, aí então a **diversidade cultural
-poderia ser fomentada**\... (CONTINUAR LENDO RESUMO)
+poderia ser fomentada**, com o contexto também é possível oferecer mais
+recomendações de músicas fora do convencional do que em canais como
+rádios e novos lançamentos, o que pode trazer melhores oportunidades de
+descobertas inesperadas.
+
+Possui um capitulo para definição clara do que é contexto.
 
 ### Recommender system handbook
 
