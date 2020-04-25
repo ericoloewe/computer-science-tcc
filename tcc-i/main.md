@@ -392,6 +392,15 @@ de recomendação, que a partir das músicas conhecidas pelo usuário, e do
 contexto comportamental e de ambiente apresentado, buscam melhorar
 assertividade das recomendações ao ouvinte.
 
+Dado o foco da pesquisa e o conteúdo encontrado até o momento, foi feito
+uma lista de interesses que serão abordados nessa revisão, deles:
+
+-   Estudos realizados
+
+-   Técnicas de recomendação utilizadas
+
+-   Contextos utilizados para recomendação
+
 Os trabalhos
 ------------
 
