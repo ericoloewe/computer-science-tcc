@@ -381,7 +381,16 @@ Texto
 Trabalhos relacionados
 ======================
 
-Texto
+Os sistemas de recomendação musical iniciaram nos anos 90 e tem evoluído
+muito desde então, ao ponto de que hoje existem diversos trabalhos
+relacionados a esse assunto para área. Nesse capítulo será abordado os
+diversos trabalhos encontrados a partir de uma revisão realizada sobre o
+assunto.
+
+Essa revisão tem como foco encontrar trabalhos que abordam os sistemas
+de recomendação, que buscam melhorar a recomendação musical de um
+usuário de suas músicas conhecidas, e que utilizam do contexto de
+ambiente e comportamental apresentados pelo usuário.
 
 Os trabalhos
 ------------
