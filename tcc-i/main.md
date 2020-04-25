@@ -405,11 +405,11 @@ A partir do escopo de revisão que esse trabalho está inserido, foi
 definido certas palavras-chaves para auxiliar no desenvolvimento da
 revisão, elas são:
 
--   RecSys.
+-   RecSys
 
--   Machine Learning.
+-   Machine Learning
 
--   Sistemas de recomendação musical.
+-   Sistemas de recomendação musical
 
 -   Context-aware
 
