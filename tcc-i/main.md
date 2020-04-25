@@ -388,9 +388,9 @@ diversos trabalhos encontrados a partir de uma revisão realizada sobre o
 assunto.
 
 Essa revisão tem como foco encontrar trabalhos que abordam os sistemas
-de recomendação, que buscam melhorar a recomendação musical de um
-usuário de suas músicas conhecidas, e que utilizam do contexto de
-ambiente e comportamental apresentados pelo usuário.
+de recomendação, que a partir das músicas conhecidas pelo usuário, e do
+contexto comportamental e de ambiente apresentado, buscam melhorar
+assertividade das recomendações ao ouvinte.
 
 Os trabalhos
 ------------
