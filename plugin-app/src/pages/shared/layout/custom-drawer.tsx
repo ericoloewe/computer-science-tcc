@@ -16,15 +16,17 @@ export interface DrawerProps {
 }
 
 export function CustomDrawer({ isOpen, onClose }: DrawerProps) {
-  const { avatarSrc, mail, name } = useUser();
+  const { avatarSrc, email, name, link } = useUser();
+  const customLink = (props: any) => <a {...props} />;
+
   return (
     <Drawer anchor="left" open={isOpen} onClose={onClose}>
       <List component="nav" aria-label="main mailbox folders">
-        <ListItem>
+        <ListItem button {...{ component: customLink, href: link, target: "_blank" }}>
           <ListItemAvatar>
             <Avatar src={avatarSrc} alt="User avatar" />
           </ListItemAvatar>
-          <ListItemText primary={name} secondary={mail} />
+          <ListItemText primary={name} secondary={email} />
         </ListItem>
         <Divider />
         <ListItem button {...{ component: Link, to: `/` }}>

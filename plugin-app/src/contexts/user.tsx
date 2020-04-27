@@ -1,14 +1,15 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { useAuth } from "./auth";
 
-import { profileMock } from "../services/mocks";
+import { SpotifyUserGetResponse } from "../react-app-env";
 
 interface Props {}
 
 export interface User {
   avatarSrc: string;
-  mail: string;
+  email: string;
   name: string;
+  link: string;
 }
 
 const UserContext = createContext({} as any);
@@ -18,12 +19,24 @@ export function UserProvider(props: Props) {
   const [profile, setProfile] = useState<User>({} as any);
 
   async function load(): Promise<void> {
-    console.log(await requestService.get("https://api.spotify.com/v1/me"));
-    setProfile({ ...profileMock });
+    const { data } = await requestService.get<SpotifyUserGetResponse>("https://api.spotify.com/v1/me");
+    const {
+      email,
+      display_name: name,
+      external_urls: { spotify: link },
+      images,
+    } = data;
+    const avatarSrc = images[0]?.url;
+
+    setProfile({ email, name, link, avatarSrc });
   }
 
   useEffect(() => {
-    load(); // eslint-disable-next-line
+    if (isAuthenticated) {
+      load();
+    } else {
+      setProfile({} as any);
+    }
   }, [isAuthenticated]);
 
   return <UserContext.Provider value={profile} {...props} />;
