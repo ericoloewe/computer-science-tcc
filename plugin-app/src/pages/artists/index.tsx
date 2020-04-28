@@ -4,10 +4,17 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
+import { artistService } from "../../services/artist";
 import { Choose, ChooseItem } from "../../components/choose";
 import { Layout } from "../shared/layout";
-import { artistService, Artist } from "../../services/artist";
+import { StringUtil } from "../../utils/string";
+import { TimerUtil } from "../../utils/timer";
 import { useSearch } from "../../contexts/search";
+
+const debounce = TimerUtil.debounce(
+  (searchText: string, searchArtistsOfTexts: Function) => searchArtistsOfTexts(searchText),
+  1200
+);
 
 export default function () {
   const history = useHistory();
@@ -33,11 +40,17 @@ export default function () {
   }
 
   async function searchArtistsOfTexts(text: string) {
-    const artists = await searchArtists(text);
-    const items = artists.map((a) => ({ ...a, title: a.name }));
+    let items: ChooseItem[] = [];
+
+    if (!StringUtil.isEmpty(searchText)) {
+      const artists = await searchArtists(text);
+      items = artists.map((a) => ({ ...a, title: a.name }));
+
+      setArtists([...items]);
+      markSelectedArtists(items);
+    }
 
     setArtists([...items]);
-    markSelectedArtists(items);
   }
 
   useEffect(() => {
@@ -45,7 +58,7 @@ export default function () {
   }, [selectedArtistsMap]);
 
   useEffect(() => {
-    searchArtistsOfTexts(searchText); // eslint-disable-next-line
+    debounce(searchText, searchArtistsOfTexts);
   }, [searchText]);
 
   async function saveAndGoHome() {
