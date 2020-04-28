@@ -6,19 +6,19 @@ import { useHistory } from "react-router-dom";
 
 import { Choose, ChooseItem } from "../../components/choose";
 import { Layout } from "../shared/layout";
-import { genderService, Gender } from "../../services/gender";
+import { genreService, Genre } from "../../services/genre";
 
 export default function () {
   const history = useHistory();
   const [searchText, setSearchText] = useState("");
-  const [genders, setGenders] = useState([] as ChooseItem[]);
+  const [genders, setGenres] = useState([] as ChooseItem[]);
   const [selectedGendersMap, setSelectedGenders] = useState({} as { [key: string]: ChooseItem });
 
-  function chooseGender(gender: ChooseItem) {
-    if (selectedGendersMap[gender.id] != null) {
-      delete selectedGendersMap[gender.id];
+  function chooseGender(genre: ChooseItem) {
+    if (selectedGendersMap[genre.id] != null) {
+      delete selectedGendersMap[genre.id];
     } else {
-      selectedGendersMap[gender.id] = gender;
+      selectedGendersMap[genre.id] = genre;
     }
 
     setSelectedGenders({ ...selectedGendersMap });
@@ -27,14 +27,14 @@ export default function () {
   function markSelectedGenders(musics: ChooseItem[]) {
     const musicsMappedWithSelected = musics.map((m) => ({ ...m, selected: selectedGendersMap[m.id] != null }));
 
-    setGenders(musicsMappedWithSelected);
+    setGenres(musicsMappedWithSelected);
   }
 
   async function searchGendersOfTexts(text: string) {
-    const genders = await genderService.search(text);
+    const genres = await genreService.search(text);
 
-    setGenders([...genders]);
-    markSelectedGenders(genders);
+    setGenres([...genres]);
+    markSelectedGenders(genres);
   }
 
   useEffect(() => {
@@ -47,13 +47,13 @@ export default function () {
 
   async function saveAndGoHome() {
     const gendersToSave = Object.keys(selectedGendersMap).map((k) => selectedGendersMap[k]);
-    await genderService.save(gendersToSave as Gender[]);
+    await genreService.save(gendersToSave as Genre[]);
 
     history.push(`/`);
   }
 
   return (
-    <Layout className="gender-page" pageTitle="Generos musicais preferidos" hideDrawerButton={true}>
+    <Layout className="genre-page" pageTitle="Generos musicais preferidos" hideDrawerButton={true}>
       <Choose
         items={genders}
         onChangeSearch={(s) => setSearchText(s)}
