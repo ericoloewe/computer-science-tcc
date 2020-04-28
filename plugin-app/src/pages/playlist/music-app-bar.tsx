@@ -20,7 +20,7 @@ export function MusicAppBar({ music, onExpandClick }: Props) {
           {!!music.liked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
         </IconButton>
         <Typography variant="h6" className={"title"}>
-          {music.title}
+          {music.name}
         </Typography>
         <div style={{ flexGrow: 1 }} />
         <IconButton

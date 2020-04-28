@@ -13,7 +13,7 @@ class ArtistService {
 export interface Artist {
   id: string;
   name: string;
-  image: import("./music").Image;
+  image: import("./music").CustomImage;
 }
 
 export const artistService = new ArtistService();

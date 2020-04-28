@@ -54,8 +54,10 @@ export default function () {
   async function searchMusicsOfTexts(text: string) {
     const musics = await musicService.searchMusic(text);
 
-    setMusics([...musics]);
-    markSelectedMusics(musics);
+    const parsedMusics = musics.map((m) => ({ ...m, title: m.name }));
+
+    setMusics([...parsedMusics]);
+    markSelectedMusics(parsedMusics);
   }
 
   useEffect(() => {

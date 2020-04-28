@@ -1,22 +1,20 @@
 import { playlistMock, playlistsMock } from "./mocks";
-import { Music, Image } from "./music";
+import { Music, CustomImage } from "./music";
 import { Feeling } from "./feeling";
 import { TimerUtil } from "../utils/timer";
 
-type PlaylistId = string | number;
-
 export interface BasicPlaylist {
-  id: string | number;
+  id: string;
   title: string;
   description: string;
-  image: Image;
+  image: CustomImage;
 }
 
 export interface Playlist {
-  id: string | number;
+  id: string;
   title: string;
   description: string;
-  image: Image;
+  image: CustomImage;
   musics: Music[];
 }
 
@@ -26,9 +24,9 @@ class PlaylistService {
     console.log("rename", playlistId, newPlaylistName);
   }
 
-  async getNextId(): Promise<PlaylistId> {
+  async getNextId(): Promise<string> {
     await TimerUtil.wait(1000);
-    return Promise.resolve(playlistsMock.length + 1);
+    return Promise.resolve(`${playlistsMock.length + 1}`);
   }
 
   async loadAll(): Promise<BasicPlaylist[]> {
@@ -36,17 +34,17 @@ class PlaylistService {
     return Promise.resolve(playlistsMock);
   }
 
-  async load(playlistId: PlaylistId): Promise<Playlist> {
+  async load(playlistId: string): Promise<Playlist> {
     await TimerUtil.wait(1000);
     return Promise.resolve(playlistMock);
   }
 
-  async saveFeelings(playlistId: PlaylistId, feelings: Feeling[]) {
+  async saveFeelings(playlistId: string, feelings: Feeling[]) {
     await TimerUtil.wait(1000);
     console.log("saved", feelings);
   }
 
-  async saveMusics(playlistId: PlaylistId, musicsToSave: import("../components/choose-with-actions").ChooseItem[]) {
+  async saveMusics(playlistId: string, musicsToSave: import("../components/choose-with-actions").ChooseItem[]) {
     await TimerUtil.wait(1000);
     console.log("saved", musicsToSave);
   }

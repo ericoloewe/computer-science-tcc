@@ -18,30 +18,31 @@ import { playlistService } from "../../services/playlist";
 import { StringUtil } from "../../utils/string";
 import { RenameDialog } from "./rename-dialog";
 import { Loader } from "../../components/loader";
+import { usePlaylist } from "../../contexts/playlist";
 
 export default function () {
   let { playlistId: playlistIdParam } = useParams();
   const playlistId = StringUtil.toString(playlistIdParam);
   const [isRenameOpen, setOpenRename] = useState(false);
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(false);
-  const [playlist, setPlaylist] = useState({} as any);
-  const [playingMusic, setPlayingMusic] = useState((null as unknown) as Music); // TODO: change to music
+  const [musicsOfPlaylist, setMusicsOfPlaylist] = useState<Music[]>([]);
+  const [playlistInfo, setPlaylistInfo] = useState({} as any);
+  const [playingMusicId, setPlayingMusicId] = useState("");
   const [favoriteMusicsMap, setFavoriteMusicsMap] = useState({} as { [key: string]: boolean });
+  const { load } = usePlaylist();
+  const playingMusic = getMusicById(playingMusicId);
 
   useEffect(() => {
     fetchData(); // eslint-disable-next-line
   }, [playlistId]);
 
-  useEffect(() => {
-    updateFavoriteMusics(playlist.musics || []); // eslint-disable-next-line
-  }, [favoriteMusicsMap]);
-
   async function fetchData() {
-    const playlist = await playlistService.load(playlistId);
+    const playlist = await load(playlistId);
     const parsedMusics = playlist.musics.map((m) => ({ ...m, selected: m.liked }));
 
-    setPlaylist(parsedMusics);
-    updateFavoriteMusics(parsedMusics);
+    console.log(parsedMusics);
+
+    setMusicsOfPlaylist([...parsedMusics]);
   }
 
   async function favoriteMusic(music: ChooseItem) {
@@ -55,33 +56,22 @@ export default function () {
     await musicService.toggleFavorite(music); // TODO: loader
   }
 
-  function updateFavoriteMusics(musics: ChooseItem[]) {
-    const musicsMappedWithFavorite = musics.map((m) => ({ ...m, selected: !!favoriteMusicsMap[m.id] }));
-
-    if (!!playingMusic) {
-      playingMusic.liked = !!favoriteMusicsMap[playingMusic.id];
-      setPlayingMusic({ ...playingMusic });
-    }
-
-    setPlaylist({ ...playlist, musics: musicsMappedWithFavorite });
-  }
-
   async function renamePlaylist(newPlaylistName: string) {
     await playlistService.rename(playlistId, newPlaylistName);
-    setPlaylist({ ...playlist, title: newPlaylistName });
     setOpenRename(false);
   }
 
   async function playMusic(item: ChooseItem) {
-    const music = item as Music;
+    setPlayingMusicId(item.id);
+    await musicService.play(item.id);
+  }
 
-    music.liked = !!favoriteMusicsMap[music.id];
-    setPlayingMusic(music);
-    await musicService.play(music);
+  function getMusicById(id: string): Music | undefined {
+    return musicsOfPlaylist.find((m) => m.id == id);
   }
 
   return isMusicDetailsOpen ? (
-    <MusicDetails music={playingMusic} onExpandClick={() => setOpenMusicDetails(false)} />
+    <MusicDetails music={playingMusic!} onExpandClick={() => setOpenMusicDetails(false)} />
   ) : (
     <Layout className="playlist-page" pageTitle="Nome da playlist" menuItems={CustomMenu(() => setOpenRename(true))}>
       <Button
@@ -92,10 +82,10 @@ export default function () {
       >
         Buscar musica
       </Button>
-      {playlist.musics ? (
+      {musicsOfPlaylist ? (
         <ChooseWithActions
           actionIcon={<FavoriteBorderIcon />}
-          items={playlist.musics}
+          items={musicsOfPlaylist.map((m) => ({ ...m, title: m.name }))}
           onPress={playMusic}
           onPressAction={favoriteMusic}
           selectedActionIcon={<FavoriteIcon />}
@@ -103,7 +93,7 @@ export default function () {
       ) : (
         <Loader />
       )}
-      {!!playingMusic && <MusicAppBar music={playingMusic} onExpandClick={() => setOpenMusicDetails(true)} />}
+      {!!playingMusic! && <MusicAppBar music={playingMusic!} onExpandClick={() => setOpenMusicDetails(true)} />}
       <RenameDialog isOpen={isRenameOpen} onSubmit={renamePlaylist} />
     </Layout>
   );

@@ -38,22 +38,15 @@ export function MusicDetails({ music, onExpandClick }: Props) {
         <ExpandMoreIcon />
       </IconButton>
       <div className="album">
-        <img
-          className="image"
-          src="https://lojasaraiva.vteximg.com.br/arquivos/ids/4141760/1004281902.jpg?v=637050395611870000"
-          alt="album jack"
-        />
+        <img className="image" src={music.album.image.src} alt={music.album.image.alt} />
       </div>
       <div className="title-and-description">
         <ListItem>
           <ListItemAvatar>
             <Avatar src={music.image.src} alt={music.image.alt} />
           </ListItemAvatar>
-          <ListItemText primary={music.title} secondary={"Album"} />
+          <ListItemText primary={music.name} secondary={music.album.name} />
         </ListItem>
-        <Typography className="details" paragraph={true}>
-          {music.description}
-        </Typography>
       </div>
       <div className="slider">
         <Slider defaultValue={30} aria-labelledby="slider" valueLabelDisplay="auto" />
