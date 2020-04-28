@@ -33,6 +33,10 @@ export class SpotifyUtil {
     return url.toString();
   }
 
+  static getApiUrl(): string {
+    return process.env.REACT_APP_SPOTIFY_API_URL || "https://api.spotify.com/v1";
+  }
+
   static getTokenAndInfoFromRedirectUrl(redirectUrl: string): SpotifyToken {
     var url = new URL(redirectUrl);
 

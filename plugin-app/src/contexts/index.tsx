@@ -1,6 +1,8 @@
 import React from "react";
+
 import { AuthProvider } from "./auth";
 import { UserProvider } from "./user";
+import { SearchProvider } from "./search";
 
 interface Props {
   children: JSX.Element;
@@ -9,7 +11,9 @@ interface Props {
 export function AppProviders({ children }: Props) {
   return (
     <AuthProvider>
-      <UserProvider>{children}</UserProvider>
+      <UserProvider>
+        <SearchProvider>{children}</SearchProvider>
+      </UserProvider>
     </AuthProvider>
   );
 }

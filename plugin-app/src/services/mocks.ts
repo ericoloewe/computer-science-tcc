@@ -53,19 +53,19 @@ export const playlistMock: Playlist = {
 
 export const feelingsMock: Feeling[] = [
   {
-    id: 1,
+    id: "1",
     title: "Sentimento 1",
   },
   {
-    id: 2,
+    id: "2",
     title: "Sentimento 2",
   },
   {
-    id: 3,
+    id: "3",
     title: "Sentimento 3",
   },
   {
-    id: 4,
+    id: "4",
     title: "Sentimento 4",
   },
 ];
@@ -192,19 +192,19 @@ export const artistMock = [
 
 export const genderMock = [
   {
-    id: 1,
+    id: "1",
     title: "Genero 1",
   },
   {
-    id: 2,
+    id: "2",
     title: "Genero 2",
   },
   {
-    id: 3,
+    id: "3",
     title: "Genero 3",
   },
   {
-    id: 4,
+    id: "4",
     title: "Genero 4",
   },
 ];

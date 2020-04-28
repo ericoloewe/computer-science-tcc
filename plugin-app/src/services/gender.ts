@@ -19,7 +19,7 @@ class GenderService {
 }
 
 export interface Gender {
-  id: string | number;
+  id: string;
   title: string;
 }
 

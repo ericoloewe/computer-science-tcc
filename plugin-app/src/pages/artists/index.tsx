@@ -7,9 +7,11 @@ import { useHistory } from "react-router-dom";
 import { Choose, ChooseItem } from "../../components/choose";
 import { Layout } from "../shared/layout";
 import { artistService, Artist } from "../../services/artist";
+import { useSearch } from "../../contexts/search";
 
 export default function () {
   const history = useHistory();
+  const { searchArtists } = useSearch();
   const [searchText, setSearchText] = useState("");
   const [artists, setArtists] = useState([] as ChooseItem[]);
   const [selectedArtistsMap, setSelectedArtists] = useState({} as { [key: string]: ChooseItem });
@@ -31,10 +33,11 @@ export default function () {
   }
 
   async function searchArtistsOfTexts(text: string) {
-    const musics = await artistService.search(text);
+    const artists = await searchArtists(text);
+    const items = artists.map((a) => ({ ...a, title: a.name }));
 
-    setArtists([...musics]);
-    markSelectedArtists(musics);
+    setArtists([...items]);
+    markSelectedArtists(items);
   }
 
   useEffect(() => {
@@ -47,7 +50,7 @@ export default function () {
 
   async function saveAndGoHome() {
     const artistsToSave = Object.keys(selectedArtistsMap).map((k) => selectedArtistsMap[k]);
-    await artistService.save(artistsToSave as Artist[]);
+    await artistService.save(artistsToSave.map((a) => a.id));
 
     history.push(`/`);
   }

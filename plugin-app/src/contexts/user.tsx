@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 import { useAuth } from "./auth";
 
 import { SpotifyUserGetResponse } from "../react-app-env";
+import { SpotifyUtil } from "../utils/spotify";
 
 interface Props {}
 
@@ -13,13 +14,14 @@ export interface User {
 }
 
 const UserContext = createContext({} as any);
+const spotifyUserEndpoint = `${SpotifyUtil.getApiUrl()}/me`;
 
 export function UserProvider(props: Props) {
   const { isAuthenticated, requestService } = useAuth();
   const [profile, setProfile] = useState<User>({} as any);
 
   async function load(): Promise<void> {
-    const { data } = await requestService.get<SpotifyUserGetResponse>("https://api.spotify.com/v1/me");
+    const { data } = await requestService.get<SpotifyUserGetResponse>(spotifyUserEndpoint);
     const {
       email,
       display_name: name,

@@ -11,7 +11,7 @@ class FeelingService {
 }
 
 export interface Feeling {
-  id: number | string;
+  id: string;
   title: string;
 }
 
