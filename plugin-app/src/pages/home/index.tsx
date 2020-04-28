@@ -7,18 +7,19 @@ import { Link, useHistory } from "react-router-dom";
 
 import { ChooseWithActions, ChooseItem } from "../../components/choose-with-actions";
 import { Layout } from "../shared/layout";
-import { playlistService } from "../../services/playlist";
+import { usePlaylist } from "../../contexts/playlist";
 
 function PlaylistLink({ item, children }: { item: ChooseItem; children: any }) {
   return <Link to={`/playlist/${item.id}/feeling`}>{children}</Link>;
 }
 
 export default function () {
+  const { loadAll } = usePlaylist();
   const history = useHistory();
   const [playlists, setPlaylists] = useState([] as ChooseItem[]);
 
   async function fetchData() {
-    const playlists = await playlistService.loadAll();
+    const playlists = await loadAll();
 
     setPlaylists(playlists);
   }

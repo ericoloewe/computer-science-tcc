@@ -7,6 +7,10 @@ export class StringUtil {
     return typeof any === "string";
   }
 
+  static sliceIfNeed(str: string): string {
+    return str.length > 50 ? `${str.slice(0, 50)}...` : str;
+  }
+
   static toString(str: any): string {
     if (!str) {
       throw new Error("Invalid str");
