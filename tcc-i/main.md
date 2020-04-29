@@ -420,9 +420,10 @@ Para realizar a busca dos trabalhos relacionados ao foco de pesquisa da
 revisão, será utilizado do Google Scholar
 (<https://scholar.google.com/>) para realizar a procura dos artigos em
 diversas plataformas de busca e artigos publicados online. Também, por
-indicação dos orientadores desse trabalho, será utilizado a plataforma
-ACM (<https://dl.acm.org/>) e \... para realizar a procura de artigos
-relacionados a pesquisa
+indicação dos orientadores desse trabalho, será utilizado a o motor de
+busca da ACM (<https://dl.acm.org/>) e IEEEXplore
+(<https://ieeexplore.ieee.org/>) para realizar a procura de artigos
+relacionados a pesquisa.
 
 Além das fontes, será desenvolvido uma *string* de busca, para filtrar
 por estudos que estejam de acordo com o foco de pesquisa do trabalho.
@@ -430,9 +431,42 @@ Pois, existem muitos artigos e diversas áreas de pesquisa relacionadas
 aos sistemas de recomendação musical, então, para realizar uma busca
 mais voltada ao foco, será utilizada a seguinte *string* de busca:
 
-(("RecSys" or "recommender systems" or "machine learning") and ("music"
-or "musical" or "song" or "playlist") and ("context" or "context-aware"
-or "HCI" or "human computer interaction"))
+(("RecSys" OR "recommender systems" OR "machine learning") AND ("music"
+OR "musical" OR "song" OR "playlist") AND ("behavioral context" OR
+"environmental context" OR "context-aware" OR "HCI" OR "human computer
+interaction" OR "emotion" OR "pleasure"))
+
+PROCURA NOS MOTORES DE BUSCA
+----------------------------
+
+No dia 28/04/2020 foi realizado a pesquisa nos 3 motores de busca
+apresentados a partir da *string* de busca pré-definida anteriormente.
+As Figuras 1,2 e 3 ilustram esse processo. Todos trouxeram resultados
+pertinentes ao trabalho logo na primeira página da aplicação. Cada motor
+trouxe resultados diferentes, mas todos relacionados a *string* de
+busca, Google Scholar trouxe 24.400 trabalhos, ACM trouxe 46.568
+trabalhos e por fim IEEEXplore que trouxe 211 trabalhos.
+
+![](./tcc-i/pandoc/media/image1.png){width="4.918005249343832in"
+height="3.5833333333333335in"}
+
+Figura 1 Busca utilizando a string no motor Google Scholar (proprio,
+2020)
+
+![](./tcc-i/pandoc/media/image2.png){width="5.016666666666667in"
+height="3.169701443569554in"}
+
+Figura 2 Busca utilizando a string no motor IEEEXplore (proprio, 2020)
+
+![](./tcc-i/pandoc/media/image3.png){width="5.182879483814523in"
+height="3.0833333333333335in"}
+
+Figura 3 Busca utilizando a string no motor ACM (proprio, 2020)
+
+A quantidade de trabalhos encontrados na ACM relacionados a *string* de
+busca foi muito alta, isso devido a ela possuir uma grande comunidade
+relacionado a área de RecSys, com diversas conferências e eventos
+relacionados a área. (ACM RECSYS COMMUNITY., 2020)
 
 Os trabalhos
 ------------
@@ -549,15 +583,16 @@ da folha, em algarismos arábicos.
 Referências Bibliográficas {#referências-bibliográficas .Título-1---sem-numeração}
 ==========================
 
-BHATNAGAR, V. **Collaborative filtering using data mining and
-analysis**. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming or
-stealing? The complementary features between music streaming and music
-piracy. **Journal of Retailing and Consumer Services**, v. 32, p.
-86--95, 2016. DIETMAR, J. et al. **Recommendation system -An
-Introduction**. \[s.l: s.n.\]. v. 91ERIKSSON, M. et al. **Spotify
-Teardown**. \[s.l.\] MIT Press, 2019. FALK, K. **Practical Recommender
-Systems**. \[s.l: s.n.\]. IFPI. **IFPI Global Music Report 2019**.
-Disponível em:
+ACM RECSYS COMMUNITY. **RecSys -- ACM Recommender Systems**. Disponível
+em: \<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. BHATNAGAR, V.
+**Collaborative filtering using data mining and analysis**. \[s.l:
+s.n.\]. BORJA, K.; DIERINGER, S. Streaming or stealing? The
+complementary features between music streaming and music piracy.
+**Journal of Retailing and Consumer Services**, v. 32, p. 86--95, 2016.
+DIETMAR, J. et al. **Recommendation system -An Introduction**. \[s.l:
+s.n.\]. v. 91ERIKSSON, M. et al. **Spotify Teardown**. \[s.l.\] MIT
+Press, 2019. FALK, K. **Practical Recommender Systems**. \[s.l: s.n.\].
+IFPI. **IFPI Global Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. LUINI, B.
 J. R.; WHITMAN, A. E.; DATE, P. **Streaming Audio: The FezGuys' Guide**.
 \[s.l: s.n.\]. MURARO, R. M. **Os avanços tecnológicos e o futuro da
