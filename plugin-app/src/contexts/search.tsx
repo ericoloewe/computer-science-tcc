@@ -2,7 +2,7 @@ import React, { createContext, useContext } from "react";
 
 import { Artist } from "../services/artist";
 import { SearchMapper } from "../mappers/search";
-import { SpotifySearchResponse } from "../react-app-env";
+import { SpotifySearchResponse } from "../@types/spotify";
 import { SpotifyUtil } from "../utils/spotify";
 import { useAuth } from "./auth";
 import { Music } from "../services/music";

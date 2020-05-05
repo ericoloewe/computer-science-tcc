@@ -1,5 +1,5 @@
 import { BasicPlaylist, Playlist } from "../services/playlist";
-import { PlaylistItem } from "../react-app-env";
+import { PlaylistItem } from "../@types/spotify";
 import { StringUtil } from "../utils/string";
 import { ImageMapper } from "./image";
 
@@ -10,7 +10,7 @@ export class PlaylistMapper {
     description,
     images,
     tracks,
-  }: import("../react-app-env").SpotifyLoadPlaylistResponse): Playlist {
+  }: import("../@types/spotify").SpotifyLoadPlaylistResponse): Playlist {
     return {
       id,
       title: name,

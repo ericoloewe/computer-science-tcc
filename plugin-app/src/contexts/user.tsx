@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { useAuth } from "./auth";
 
-import { SpotifyUserGetResponse } from "../react-app-env";
+import { SpotifyUserGetResponse } from "../@types/spotify";
 import { SpotifyUtil } from "../utils/spotify";
 
 interface Props {}

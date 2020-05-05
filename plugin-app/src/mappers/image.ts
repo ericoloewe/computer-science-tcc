@@ -1,4 +1,4 @@
-import { SpotifyImage } from "../react-app-env";
+import { SpotifyImage } from "../@types/spotify";
 import { CustomImage } from "../services/music";
 
 export class ImageMapper {

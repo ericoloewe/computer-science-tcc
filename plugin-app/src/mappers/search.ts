@@ -1,5 +1,5 @@
 import { Artist } from "../services/artist";
-import { SpotifyArtistsSearchItem, SpotifyTracksSearchItem } from "../react-app-env";
+import { SpotifyArtistsSearchItem, SpotifyTracksSearchItem } from "../@types/spotify";
 import { MusicMapper } from "./music";
 
 export class SearchMapper {

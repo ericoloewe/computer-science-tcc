@@ -4,7 +4,7 @@ import { useAuth } from "./auth";
 import { SpotifyUtil } from "../utils/spotify";
 import { PlaylistMapper } from "../mappers/playlist";
 import { BasicPlaylist, Playlist } from "../services/playlist";
-import { SpotifyLoadPlaylistResponse, SpotifyLoadUserPlaylistsResponse } from "../react-app-env";
+import { SpotifyLoadPlaylistResponse, SpotifyLoadUserPlaylistsResponse } from "../@types/spotify";
 
 interface Props {}
 

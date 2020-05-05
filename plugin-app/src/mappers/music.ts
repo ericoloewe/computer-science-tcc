@@ -1,6 +1,6 @@
 import { ImageMapper } from "./image";
 import { Music, Album } from "../services/music";
-import { SpotifyTracksSearchItem } from "../react-app-env";
+import { SpotifyTracksSearchItem } from "../@types/spotify";
 
 export class MusicMapper {
   static toMusic({ id, name, album }: SpotifyTracksSearchItem): Music {
@@ -16,7 +16,7 @@ export class MusicMapper {
     };
   }
 
-  static toAlbum({ id, name, images }: import("../react-app-env").SpotifyAlbum): Album {
+  static toAlbum({ id, name, images }: import("../@types/spotify").SpotifyAlbum): Album {
     return {
       id,
       name,
