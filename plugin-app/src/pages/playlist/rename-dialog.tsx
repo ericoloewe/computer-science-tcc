@@ -3,14 +3,16 @@ import { Button, Dialog, DialogTitle, DialogContent, TextField, DialogActions } 
 
 interface Props {
   isOpen: boolean;
+  playlistTitle: string;
   onSubmit: (newName: string) => void;
+  onClose: () => void;
 }
 
-export function RenameDialog({ isOpen, onSubmit }: Props) {
+export function RenameDialog({ isOpen, onClose, onSubmit, playlistTitle }: Props) {
   const [playlistName, setPlaylistName] = useState("");
 
   return (
-    <Dialog open={isOpen} aria-labelledby="form-dialog-title">
+    <Dialog onClose={onClose} open={isOpen} aria-labelledby="form-dialog-title">
       <DialogTitle id="form-dialog-title">Renomear playlist</DialogTitle>
       <DialogContent>
         <TextField
@@ -21,6 +23,7 @@ export function RenameDialog({ isOpen, onSubmit }: Props) {
           type="text"
           fullWidth
           value={playlistName}
+          defaultValue={playlistTitle}
           onChange={(e) => setPlaylistName(e.target.value)}
         />
       </DialogContent>

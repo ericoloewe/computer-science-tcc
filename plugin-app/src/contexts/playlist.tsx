@@ -38,8 +38,6 @@ export function PlaylistProvider(props: Props) {
   }
 
   async function rename(playlistId: string, newName: string): Promise<void> {
-    console.log("rename ", playlistId, newName);
-
     requestService.put({
       url: `${spotifyLoadPlaylistEndpoint}/${playlistId}`,
       data: {

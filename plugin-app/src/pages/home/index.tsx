@@ -29,8 +29,8 @@ export default function () {
   }
 
   useEffect(() => {
-    fetchData();
-  });
+    fetchData(); // eslint-disable-next-line
+  }, []);
 
   return (
     <Layout className="home-page" pageTitle="Playlists" menuItems={CustomMenu(fetchData, logout)}>

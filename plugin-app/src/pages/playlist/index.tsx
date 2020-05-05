@@ -10,7 +10,6 @@ import { Layout } from "../shared/layout";
 import { Music } from "../../@types/music";
 import { MusicAppBar } from "./music-app-bar";
 import { MusicDetails } from "./music-details";
-import { playlistService } from "../../services/playlist";
 import { StringUtil } from "../../utils/string";
 import { RenameDialog } from "./rename-dialog";
 import { usePlaylist } from "../../contexts/playlist";
@@ -58,6 +57,7 @@ export default function () {
   async function renamePlaylist(newPlaylistName: string) {
     await rename(playlistId, newPlaylistName);
     setOpenRename(false);
+    setPlaylistTitle(newPlaylistName);
   }
 
   async function playMusic(item: ChooseItem) {
@@ -83,7 +83,12 @@ export default function () {
       </Button>
       <MusicsOfPlaylist musics={musicsOfPlaylist} onPlayMusic={playMusic} onFavoriteMusic={favoriteMusic} />
       {!!playingMusic! && <MusicAppBar music={playingMusic!} onExpandClick={() => setOpenMusicDetails(true)} />}
-      <RenameDialog isOpen={isRenameOpen} onSubmit={renamePlaylist} />
+      <RenameDialog
+        isOpen={isRenameOpen}
+        onClose={() => setOpenRename(false)}
+        onSubmit={renamePlaylist}
+        playlistTitle={playlistTitle}
+      />
     </Layout>
   );
 }
