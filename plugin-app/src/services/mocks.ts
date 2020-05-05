@@ -11,7 +11,7 @@ export const playlistMock: Playlist = {
     src: "https://i.scdn.co/image/71f76e2a7c52cabc26ed9af7acc664724d5e0023",
     alt: "jack johson",
   },
-  musics: <any[]>[
+  musics: [
     {
       id: "1",
       name: "Musica 1",
@@ -48,7 +48,7 @@ export const playlistMock: Playlist = {
         alt: "jack johson",
       },
     },
-  ],
+  ] as any[],
 };
 
 export const feelingsMock: Feeling[] = [
@@ -70,7 +70,7 @@ export const feelingsMock: Feeling[] = [
   },
 ];
 
-export const searchMusicsMock: Music[] = <any[]>[
+export const searchMusicsMock: Music[] = [
   {
     id: "1",
     name: "Musica 1",
@@ -106,7 +106,7 @@ export const searchMusicsMock: Music[] = <any[]>[
       alt: "jack johson",
     },
   },
-];
+] as any[];
 
 export const playlistsMock: BasicPlaylist[] = [
   {
