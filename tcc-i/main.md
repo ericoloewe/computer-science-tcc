@@ -417,13 +417,10 @@ revisão, elas são:
 -   Context-aware
 
 Para realizar a busca dos trabalhos relacionados ao foco de pesquisa da
-revisão, será utilizado do Google Scholar
-(<https://scholar.google.com/>) para realizar a procura dos artigos em
-diversas plataformas de busca e artigos publicados online. Também, por
-indicação dos orientadores desse trabalho, será utilizado a o motor de
-busca da ACM (<https://dl.acm.org/>) e IEEEXplore
-(<https://ieeexplore.ieee.org/>) para realizar a procura de artigos
-relacionados a pesquisa.
+revisão, por indicação dos orientadores desse trabalho, será utilizado o
+motor de busca da ACM (<https://dl.acm.org/>), o qual permite realizar
+pesquisas avançadas a partir da linguagem desenvolvida pela ACM e dos
+filtros disponíveis na busca. (ACM, 2020)
 
 Além das fontes, será desenvolvido uma *string* de busca, para filtrar
 por estudos que estejam de acordo com o foco de pesquisa do trabalho.
@@ -439,29 +436,17 @@ interaction" OR "emotion" OR "pleasure"))
 PROCURA NOS MOTORES DE BUSCA
 ----------------------------
 
-No dia 28/04/2020 foi realizado a pesquisa nos 3 motores de busca
-apresentados a partir da *string* de busca pré-definida anteriormente.
-As Figuras 1,2 e 3 ilustram esse processo. Todos trouxeram resultados
-pertinentes ao trabalho logo na primeira página da aplicação. Cada motor
-trouxe resultados diferentes, mas todos relacionados a *string* de
-busca, Google Scholar trouxe 24.400 trabalhos, ACM trouxe 46.568
-trabalhos e por fim IEEEXplore que trouxe 211 trabalhos.
+No dia 28/04/2020 foi realizado a pesquisa no motor de busca apresentado
+a partir da *string* de busca pré-definida anteriormente. As Figura 1 e
+2 ilustram esse processo. Todos trouxeram resultados pertinentes ao
+trabalho logo na primeira página da aplicação. A quantidade de
+resultados apresentados na ACM foram 46.568 trabalhos relacionados a
+*string* de busca.
 
-![](./tcc-i/pandoc/media/image1.png){width="4.918005249343832in"
-height="3.5833333333333335in"}
-
-Figura 1 Busca utilizando a string no motor Google Scholar (proprio,
-2020)
-
-![](./tcc-i/pandoc/media/image2.png){width="5.016666666666667in"
-height="3.169701443569554in"}
-
-Figura 2 Busca utilizando a string no motor IEEEXplore (proprio, 2020)
-
-![](./tcc-i/pandoc/media/image3.png){width="5.182879483814523in"
+![](./tcc-i/pandoc/media/image1.png){width="5.182879483814523in"
 height="3.0833333333333335in"}
 
-Figura 3 Busca utilizando a string no motor ACM (proprio, 2020)
+Figura Busca utilizando a string no motor ACM (proprio, 2020)
 
 A quantidade de trabalhos encontrados na ACM relacionados a *string* de
 busca foi muito alta, isso devido a ela possuir uma grande comunidade
@@ -583,8 +568,10 @@ da folha, em algarismos arábicos.
 Referências Bibliográficas {#referências-bibliográficas .Título-1---sem-numeração}
 ==========================
 
-ACM RECSYS COMMUNITY. **RecSys -- ACM Recommender Systems**. Disponível
-em: \<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. BHATNAGAR, V.
+ACM. **Advanced Search**. Disponível em:
+\<https://dl.acm.org/search/advanced\>. Acesso em: 5 maio. 2020. ACM
+RECSYS COMMUNITY. **RecSys -- ACM Recommender Systems**. Disponível em:
+\<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. BHATNAGAR, V.
 **Collaborative filtering using data mining and analysis**. \[s.l:
 s.n.\]. BORJA, K.; DIERINGER, S. Streaming or stealing? The
 complementary features between music streaming and music piracy.
