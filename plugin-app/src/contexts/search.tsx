@@ -1,12 +1,10 @@
 import React, { createContext, useContext } from "react";
-import { useAuth } from "./auth";
 
-import { TimerUtil } from "../utils/timer";
-import { artistMock } from "../services/mocks";
-import { SpotifyUtil } from "../utils/spotify";
-import { SpotifySearchResponse } from "../react-app-env";
 import { Artist } from "../services/artist";
 import { SearchMapper } from "../mappers/search";
+import { SpotifySearchResponse } from "../react-app-env";
+import { SpotifyUtil } from "../utils/spotify";
+import { useAuth } from "./auth";
 
 interface Props {}
 

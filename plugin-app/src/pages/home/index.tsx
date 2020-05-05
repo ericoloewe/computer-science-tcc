@@ -30,7 +30,7 @@ export default function () {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  });
 
   return (
     <Layout className="home-page" pageTitle="Playlists" menuItems={CustomMenu(fetchData, logout)}>

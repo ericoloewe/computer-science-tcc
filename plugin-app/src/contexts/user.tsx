@@ -38,7 +38,7 @@ export function UserProvider(props: Props) {
       load();
     } else {
       setProfile({} as any);
-    }
+    } // eslint-disable-next-line
   }, [isAuthenticated]);
 
   return <UserContext.Provider value={profile} {...props} />;

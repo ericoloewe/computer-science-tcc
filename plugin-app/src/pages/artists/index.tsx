@@ -58,7 +58,7 @@ export default function () {
   }, [selectedArtistsMap]);
 
   useEffect(() => {
-    debounce(searchText, searchArtistsOfTexts);
+    debounce(searchText, searchArtistsOfTexts); // eslint-disable-next-line
   }, [searchText]);
 
   async function saveAndGoHome() {

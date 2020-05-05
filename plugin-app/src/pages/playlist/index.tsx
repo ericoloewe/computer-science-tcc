@@ -26,7 +26,6 @@ export default function () {
   const [isRenameOpen, setOpenRename] = useState(false);
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(false);
   const [musicsOfPlaylist, setMusicsOfPlaylist] = useState<Music[]>([]);
-  const [playlistInfo, setPlaylistInfo] = useState({} as any);
   const [playingMusicId, setPlayingMusicId] = useState("");
   const [favoriteMusicsMap, setFavoriteMusicsMap] = useState({} as { [key: string]: boolean });
   const { load } = usePlaylist();
@@ -67,7 +66,7 @@ export default function () {
   }
 
   function getMusicById(id: string): Music | undefined {
-    return musicsOfPlaylist.find((m) => m.id == id);
+    return musicsOfPlaylist.find((m) => m.id === id);
   }
 
   return isMusicDetailsOpen ? (

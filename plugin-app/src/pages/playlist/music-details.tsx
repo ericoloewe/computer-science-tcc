@@ -2,7 +2,6 @@ import "./style.scss";
 
 import React from "react";
 import {
-  Typography,
   IconButton,
   ListItem,
   ListItemAvatar,

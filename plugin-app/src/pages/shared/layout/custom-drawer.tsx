@@ -17,6 +17,7 @@ export interface DrawerProps {
 
 export function CustomDrawer({ isOpen, onClose }: DrawerProps) {
   const { avatarSrc, email, name, link } = useUser();
+  // eslint-disable-next-line
   const customLink = (props: any) => <a {...props} />;
 
   return (
