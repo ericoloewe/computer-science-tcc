@@ -5,7 +5,7 @@ import {
   Favorite as FavoriteIcon,
   FavoriteBorder as FavoriteBorderIcon,
 } from "@material-ui/icons";
-import { Music } from "../../services/music";
+import { Music } from "../../@types/music";
 
 interface Props {
   music: Music;

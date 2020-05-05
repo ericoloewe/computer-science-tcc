@@ -1,22 +1,7 @@
 import { playlistMock, playlistsMock } from "./mocks";
-import { Music, CustomImage } from "./music";
 import { Feeling } from "./feeling";
 import { TimerUtil } from "../utils/timer";
-
-export interface BasicPlaylist {
-  id: string;
-  title: string;
-  description: string;
-  image: CustomImage;
-}
-
-export interface Playlist {
-  id: string;
-  title: string;
-  description: string;
-  image: CustomImage;
-  musics: Music[];
-}
+import { BasicPlaylist, Playlist } from "../@types/playlist";
 
 class PlaylistService {
   async rename(playlistId: string, newPlaylistName: string) {

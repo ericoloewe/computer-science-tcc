@@ -11,7 +11,8 @@ import { Link, useParams } from "react-router-dom";
 
 import { ChooseWithActions, ChooseItem } from "../../components/choose-with-actions";
 import { Layout } from "../shared/layout";
-import { Music, musicService } from "../../services/music";
+import { musicService } from "../../services/music";
+import { Music } from "../../@types/music";
 import { MusicAppBar } from "./music-app-bar";
 import { MusicDetails } from "./music-details";
 import { playlistService } from "../../services/playlist";

@@ -5,7 +5,7 @@ import { SearchMapper } from "../mappers/search";
 import { SpotifySearchResponse } from "../@types/spotify";
 import { SpotifyUtil } from "../utils/spotify";
 import { useAuth } from "./auth";
-import { Music } from "../services/music";
+import { Music } from "../@types/music";
 
 interface Props {}
 

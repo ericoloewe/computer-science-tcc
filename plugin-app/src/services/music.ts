@@ -1,4 +1,5 @@
 import { searchMusicsMock } from "./mocks";
+import { Music } from "../@types/music";
 
 class MusicService {
   async play(musicId: string): Promise<void> {
@@ -12,25 +13,6 @@ class MusicService {
   async toggleFavorite(music: import("../components/choose-with-actions").ChooseItem) {
     console.log("Music favorite toggle", music);
   }
-}
-
-export interface CustomImage {
-  alt: string;
-  src: string;
-}
-
-export interface Music {
-  id: string;
-  name: string;
-  image: CustomImage;
-  album: Album;
-  liked?: boolean;
-}
-
-export interface Album {
-  id: string;
-  name: string;
-  image: CustomImage;
 }
 
 export const musicService = new MusicService();

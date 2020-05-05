@@ -1,5 +1,5 @@
 import { ImageMapper } from "./image";
-import { Music, Album } from "../services/music";
+import { Music, Album } from "../@types/music";
 import { SpotifyTracksSearchItem } from "../@types/spotify";
 
 export class MusicMapper {

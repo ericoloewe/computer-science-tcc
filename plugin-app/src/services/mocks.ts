@@ -1,6 +1,6 @@
-import { Music } from "./music";
+import { Music } from "../@types/music";
 import { Feeling } from "./feeling";
-import { BasicPlaylist, Playlist } from "./playlist";
+import { BasicPlaylist, Playlist } from "../@types/playlist";
 import { User } from "../contexts/user";
 
 export const playlistMock: Playlist = {

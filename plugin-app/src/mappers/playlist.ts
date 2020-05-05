@@ -1,4 +1,4 @@
-import { BasicPlaylist, Playlist } from "../services/playlist";
+import { BasicPlaylist, Playlist } from "../@types/playlist";
 import { PlaylistItem } from "../@types/spotify";
 import { StringUtil } from "../utils/string";
 import { ImageMapper } from "./image";

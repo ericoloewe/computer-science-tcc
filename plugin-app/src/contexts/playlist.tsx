@@ -3,7 +3,7 @@ import { useAuth } from "./auth";
 
 import { SpotifyUtil } from "../utils/spotify";
 import { PlaylistMapper } from "../mappers/playlist";
-import { BasicPlaylist, Playlist } from "../services/playlist";
+import { BasicPlaylist, Playlist } from "../@types/playlist";
 import { SpotifyLoadPlaylistResponse, SpotifyLoadUserPlaylistsResponse } from "../@types/spotify";
 
 interface Props {}

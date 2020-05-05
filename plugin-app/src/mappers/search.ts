@@ -14,7 +14,7 @@ export class SearchMapper {
     };
   }
 
-  static toMusic(track: SpotifyTracksSearchItem): import("../services/music").Music {
+  static toMusic(track: SpotifyTracksSearchItem): import("../@types/music").Music {
     return MusicMapper.toMusic(track);
   }
 }

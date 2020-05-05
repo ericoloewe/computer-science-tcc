@@ -18,7 +18,7 @@ import {
   Fingerprint as FingerprintIcon,
   Favorite as FavoriteIcon,
 } from "@material-ui/icons";
-import { Music } from "../../services/music";
+import { Music } from "../../@types/music";
 
 const feelings = [
   { text: "Feliz", value: "feliz" },

@@ -1,5 +1,5 @@
 import { SpotifyImage } from "../@types/spotify";
-import { CustomImage } from "../services/music";
+import { CustomImage } from "../@types/music";
 
 export class ImageMapper {
   static toCustom(alt: string, images: SpotifyImage[]): CustomImage {
