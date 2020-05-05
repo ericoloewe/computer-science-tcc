@@ -1,4 +1,4 @@
-import { searchMusicsMock } from "./mocks";
+import { searchMusicsMock } from "./__mocks";
 import { Music } from "../@types/music";
 
 class MusicService {

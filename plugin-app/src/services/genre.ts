@@ -1,4 +1,4 @@
-import { genderMock as genreMock } from "./mocks";
+import { genderMock as genreMock } from "./__mocks";
 import { messageService } from "./message";
 import { TimerUtil } from "../utils/timer";
 

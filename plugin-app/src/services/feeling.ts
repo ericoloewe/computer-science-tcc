@@ -1,4 +1,4 @@
-import { feelingsMock } from "./mocks";
+import { feelingsMock } from "./__mocks";
 import { TimerUtil } from "../utils/timer";
 
 class FeelingService {

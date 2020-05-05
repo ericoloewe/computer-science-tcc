@@ -1,4 +1,4 @@
-import { playlistMock, playlistsMock } from "./mocks";
+import { playlistMock, playlistsMock } from "./__mocks";
 import { Feeling } from "./feeling";
 import { TimerUtil } from "../utils/timer";
 import { BasicPlaylist, Playlist } from "../@types/playlist";
