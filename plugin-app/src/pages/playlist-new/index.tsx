@@ -5,14 +5,15 @@ import { Typography } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
 import { Loader } from "../../components/loader";
-import { playlistService } from "../../services/playlist";
 import { Layout } from "../shared/layout";
+import { usePlaylist } from "../../contexts/playlist";
 
 export default function () {
+  const { create } = usePlaylist();
   const history = useHistory();
 
   async function fetchData() {
-    const playlistId = await playlistService.getNextId();
+    const playlistId = await create();
 
     history.push(`/playlist/${playlistId}/feeling`);
   }

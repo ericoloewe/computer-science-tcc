@@ -7,6 +7,7 @@ import { SpotifyUtil } from "../utils/spotify";
 interface Props {}
 
 export interface User {
+  id: string;
   avatarSrc: string;
   email: string;
   name: string;
@@ -23,6 +24,7 @@ export function UserProvider(props: Props) {
   async function load(): Promise<void> {
     const { data } = await requestService.get<SpotifyUserGetResponse>(spotifyUserEndpoint);
     const {
+      id,
       email,
       display_name: name,
       external_urls: { spotify: link },
@@ -30,7 +32,7 @@ export function UserProvider(props: Props) {
     } = data;
     const avatarSrc = images[0]?.url;
 
-    setProfile({ email, name, link, avatarSrc });
+    setProfile({ id, email, name, link, avatarSrc });
   }
 
   useEffect(() => {

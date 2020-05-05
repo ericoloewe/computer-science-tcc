@@ -5,10 +5,12 @@ import { SpotifyUtil } from "../utils/spotify";
 import { PlaylistMapper } from "../mappers/playlist";
 import { BasicPlaylist, Playlist } from "../@types/playlist";
 import { SpotifyLoadPlaylistResponse, SpotifyLoadUserPlaylistsResponse } from "../@types/spotify";
+import { useUser } from "./user";
 
 interface Props {}
 
 interface Context {
+  create: () => Promise<string>;
   loadAll: () => Promise<BasicPlaylist[]>;
   load: (id: string) => Promise<Playlist>;
   rename: (playlistId: string, newName: string) => Promise<void>;
@@ -19,7 +21,19 @@ const spotifyPlaylistsEndpoint = `${SpotifyUtil.getApiUrl()}/me/playlists`;
 const spotifyLoadPlaylistEndpoint = `${SpotifyUtil.getApiUrl()}/playlists`;
 
 export function PlaylistProvider(props: Props) {
+  const { id } = useUser();
   const { requestService } = useAuth();
+
+  async function create(): Promise<string> {
+    const { data } = await requestService.post<SpotifyLoadPlaylistResponse>({
+      url: `${SpotifyUtil.getApiUrl()}/users/${id}/playlists`,
+      data: {
+        name: "Nova playlist",
+      },
+    });
+
+    return data.id;
+  }
 
   async function loadAll(): Promise<BasicPlaylist[]> {
     const { data } = await requestService.get<SpotifyLoadUserPlaylistsResponse>({
@@ -46,7 +60,7 @@ export function PlaylistProvider(props: Props) {
     });
   }
 
-  return <PlaylistContext.Provider value={{ load, loadAll, rename }} {...props} />;
+  return <PlaylistContext.Provider value={{ create, load, loadAll, rename }} {...props} />;
 }
 
 export const usePlaylist = () => useContext<Context>(PlaylistContext);
