@@ -10,7 +10,7 @@ title: UNIVERSIDADE FEEVALE
 
 Novo Hamburgo
 
-2018
+2020
 
 ÉRICO DE SOUZA LOEWE
 
@@ -29,7 +29,7 @@ Orientador: Juliano Varella de Carvalho
 
 Novo Hamburgo
 
-2018
+2020
 
 RESUMO
 ======
