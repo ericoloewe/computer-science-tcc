@@ -13,7 +13,7 @@ export interface SpotifyLoadPlaylistResponse {
   primary_color: null;
   public: boolean;
   snapshot_id: string;
-  tracks: Tracks;
+  tracks: SpotifyTracks;
   type: string;
   uri: string;
 }
@@ -42,9 +42,9 @@ export enum OwnerType {
   User = "user",
 }
 
-export interface Tracks {
+export interface SpotifyTracks {
   href: string;
-  items: Item[];
+  items: SpotifyTracksItem[];
   limit: number;
   next: null;
   offset: number;
@@ -52,17 +52,17 @@ export interface Tracks {
   total: number;
 }
 
-export interface Item {
+export interface SpotifyTracksItem {
   added_at: Date;
   added_by: Owner;
   is_local: boolean;
   primary_color: null;
-  track: Track;
+  track: SpotifyTrack;
   video_thumbnail: VideoThumbnail;
 }
 
-export interface Track {
-  album: Album;
+export interface SpotifyTrack {
+  album: SpotifyAlbum;
   artists: Owner[];
   available_markets: string[];
   disc_number: number;
@@ -83,8 +83,8 @@ export interface Track {
   uri: string;
 }
 
-export interface Album {
-  album_type: AlbumTypeEnum;
+export interface SpotifyAlbum {
+  album_type: SpotifyAlbumTypeEnum;
   artists: Owner[];
   available_markets: string[];
   external_urls: ExternalUrls;
@@ -95,12 +95,14 @@ export interface Album {
   release_date: Date;
   release_date_precision: ReleaseDatePrecision;
   total_tracks: number;
-  type: AlbumTypeEnum;
+  type: SpotifyAlbumTypeEnum;
   uri: string;
 }
 
-export enum AlbumTypeEnum {
+export enum SpotifyAlbumTypeEnum {
   Album = "album",
+  Compilation = "compilation",
+  Single = "single",
 }
 
 export enum ReleaseDatePrecision {
@@ -141,7 +143,7 @@ export interface PlaylistItem {
   primary_color: null;
   public: boolean;
   snapshot_id: string;
-  tracks: Tracks;
+  tracks: SpotifyPlaylistTracks;
   type: ItemType;
   uri: string;
 }
@@ -159,7 +161,7 @@ export enum OwnerType {
   User = "user",
 }
 
-export interface Tracks {
+export interface SpotifyPlaylistTracks {
   href: string;
   total: number;
 }
@@ -169,12 +171,13 @@ export enum ItemType {
 }
 
 export interface SpotifySearchResponse {
-  artists: Artists;
+  artists?: SpotifyPagingSearch<SpotifyArtistsSearchItem>;
+  tracks?: SpotifyPagingSearch<SpotifyTracksSearchItem>;
 }
 
-export interface Artists {
+export interface SpotifyPagingSearch<T> {
   href: string;
-  items: SearchItem[];
+  items: T[];
   limit: number;
   next: string;
   offset: number;
@@ -182,7 +185,27 @@ export interface Artists {
   total: number;
 }
 
-export interface SearchItem {
+export interface SpotifyTracksSearchItem {
+  album: Album;
+  artists: Artist[];
+  available_markets: string[];
+  disc_number: number;
+  duration_ms: number;
+  explicit: boolean;
+  external_ids: ExternalIDS;
+  external_urls: ExternalUrls;
+  href: string;
+  id: string;
+  is_local: boolean;
+  name: string;
+  popularity: number;
+  preview_url: null | string;
+  track_number: number;
+  type: ItemType;
+  uri: string;
+}
+
+export interface SpotifyArtistsSearchItem {
   external_urls: ExternalUrls;
   followers: Followers;
   genres: string[];

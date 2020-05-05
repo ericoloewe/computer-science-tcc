@@ -1,24 +1,27 @@
 import "./style.scss";
 
 import React, { useState, useEffect } from "react";
-import { AppBar, Toolbar, IconButton, TextField, makeStyles, Typography } from "@material-ui/core";
-import {
-  Add as AddIcon,
-  ArrowBack as ArrowBackIcon,
-  Remove as RemoveIcon,
-  Search as SearchIcon,
-} from "@material-ui/icons";
+import { Typography } from "@material-ui/core";
+import { Add as AddIcon, Remove as RemoveIcon } from "@material-ui/icons";
 import { useHistory, useParams } from "react-router-dom";
 
 import { ChooseWithActions, ChooseItem } from "../../components/choose-with-actions";
-import { musicService } from "../../services/music";
 import { playlistService } from "../../services/playlist";
 import { StringUtil } from "../../utils/string";
+import { SearchAppBar } from "./search-app-bar";
+import { TimerUtil } from "../../utils/timer";
+import { useSearch } from "../../contexts/search";
+
+const debounce = TimerUtil.debounce(
+  (searchText: string, searchMusicsOfTexts: Function) => searchMusicsOfTexts(searchText),
+  1200
+);
 
 export default function () {
   let { playlistId: playlistIdParam } = useParams();
   const playlistId = StringUtil.toString(playlistIdParam);
   const history = useHistory();
+  let { searchMusic } = useSearch();
   const [searchText, setSearchText] = useState("");
   const [selectedMusicsMap, setSelectedMusics] = useState({} as { [key: string]: ChooseItem });
   const [musics, setMusics] = useState([] as ChooseItem[]);
@@ -28,11 +31,6 @@ export default function () {
 
     await playlistService.saveMusics(playlistId, musicsToSave);
     history.goBack();
-  }
-
-  async function changeSearchText(text: string) {
-    setSearchText(text);
-    searchMusicsOfTexts(text);
   }
 
   function chooseMusic(music: ChooseItem) {
@@ -52,8 +50,7 @@ export default function () {
   }
 
   async function searchMusicsOfTexts(text: string) {
-    const musics = await musicService.searchMusic(text);
-
+    const musics = await searchMusic(text);
     const parsedMusics = musics.map((m) => ({ ...m, title: m.name }));
 
     setMusics([...parsedMusics]);
@@ -64,9 +61,13 @@ export default function () {
     markSelectedMusics(musics); // eslint-disable-next-line
   }, [selectedMusicsMap]);
 
+  useEffect(() => {
+    debounce(searchText, searchMusicsOfTexts); // eslint-disable-next-line
+  }, [searchText]);
+
   return (
     <article className="music-search-page">
-      <SearchAppBar searchText={searchText} onSearchChange={changeSearchText} onBackClick={goBack} />
+      <SearchAppBar searchText={searchText} onSearchChange={(text) => setSearchText(text)} onBackClick={goBack} />
       <section className="choose-or-description">
         {!!searchText ? (
           <ChooseWithActions
@@ -80,66 +81,5 @@ export default function () {
         )}
       </section>
     </article>
-  );
-}
-
-const useStyles = makeStyles({
-  root: {
-    "& label": {
-      color: "white",
-    },
-    "& .MuiInput-underline": {
-      "&:after,&:before": {
-        borderBottomColor: "white",
-      },
-    },
-    "& .MuiOutlinedInput-root": {
-      "& fieldset": {
-        borderColor: "white",
-      },
-      "&:hover fieldset": {
-        borderColor: "#eee",
-      },
-      "&.Mui-focused fieldset": {
-        borderColor: "white",
-      },
-    },
-  },
-  input: {
-    color: "white",
-  },
-});
-
-interface SearchAppBarProps {
-  onBackClick: () => void;
-  onSearchChange: (text: string) => void;
-  searchText: string;
-}
-
-function SearchAppBar({ onBackClick, onSearchChange, searchText }: SearchAppBarProps) {
-  const classes = useStyles();
-
-  return (
-    <AppBar position="static" color="primary" className="music-app-bar">
-      <Toolbar>
-        <IconButton edge="start" color="inherit" aria-label="like" onClick={onBackClick}>
-          <ArrowBackIcon />
-        </IconButton>
-        <TextField
-          id="standard-basic"
-          className={classes.root}
-          label="Search"
-          onChange={(e) => onSearchChange(e.target.value)}
-          value={searchText}
-          InputProps={{
-            className: classes.input,
-          }}
-        />
-        <div style={{ flexGrow: 1 }} />
-        <IconButton edge="end" color="inherit" aria-label="like">
-          <SearchIcon />
-        </IconButton>
-      </Toolbar>
-    </AppBar>
   );
 }

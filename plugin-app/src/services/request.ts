@@ -68,6 +68,10 @@ export class SpotifyRequestService extends RequestService {
   protected parseRequest(getRequest: string | Request): Request {
     const request = super.parseRequest(getRequest);
 
+    if (this.accessToken == null) {
+      throw new Error("No access token, you must login!");
+    }
+
     request.headers = {
       Authorization: `Bearer ${this.accessToken}`,
     };

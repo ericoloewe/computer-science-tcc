@@ -1,8 +1,9 @@
 import { Artist } from "../services/artist";
-import { SearchItem } from "../react-app-env";
+import { SpotifyArtistsSearchItem, SpotifyTracksSearchItem } from "../react-app-env";
+import { MusicMapper } from "./music";
 
 export class SearchMapper {
-  static toArtist({ id, name, images }: SearchItem): Artist {
+  static toArtist({ id, name, images }: SpotifyArtistsSearchItem): Artist {
     return {
       id,
       name,
@@ -11,5 +12,9 @@ export class SearchMapper {
         src: images[0]?.url,
       },
     };
+  }
+
+  static toMusic(track: SpotifyTracksSearchItem): import("../services/music").Music {
+    return MusicMapper.toMusic(track);
   }
 }

@@ -5,11 +5,13 @@ import { SearchMapper } from "../mappers/search";
 import { SpotifySearchResponse } from "../react-app-env";
 import { SpotifyUtil } from "../utils/spotify";
 import { useAuth } from "./auth";
+import { Music } from "../services/music";
 
 interface Props {}
 
 interface Context {
   searchArtists: (text: string) => Promise<Artist[]>;
+  searchMusic: (text: string) => Promise<Music[]>;
 }
 
 const SearchContext = createContext({} as any);
@@ -32,10 +34,24 @@ export function SearchProvider(props: Props) {
   async function searchArtists(text: string): Promise<Artist[]> {
     const { artists } = await search(text, "artist");
 
+    if (!artists) {
+      throw new Error("Invalid response");
+    }
+
     return artists.items.map(SearchMapper.toArtist);
   }
 
-  return <SearchContext.Provider value={{ search, searchArtists }} {...props} />;
+  async function searchMusic(text: string): Promise<Music[]> {
+    const { tracks } = await search(text, "track");
+
+    if (!tracks) {
+      throw new Error("Invalid response");
+    }
+
+    return tracks.items.map(SearchMapper.toMusic);
+  }
+
+  return <SearchContext.Provider value={{ searchArtists, searchMusic }} {...props} />;
 }
 
 export const useSearch = () => useContext<Context>(SearchContext);
