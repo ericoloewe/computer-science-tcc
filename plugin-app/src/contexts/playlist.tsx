@@ -33,8 +33,6 @@ export function PlaylistProvider(props: Props) {
       url: `${spotifyLoadPlaylistEndpoint}/${id}`,
     });
 
-    console.log(data);
-
     return PlaylistMapper.toPlaylist(data);
   }
 
