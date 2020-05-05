@@ -11,6 +11,7 @@ interface Props {}
 interface Context {
   loadAll: () => Promise<BasicPlaylist[]>;
   load: (id: string) => Promise<Playlist>;
+  rename: (playlistId: string, newName: string) => Promise<void>;
 }
 
 const PlaylistContext = createContext({} as any);
@@ -36,7 +37,18 @@ export function PlaylistProvider(props: Props) {
     return PlaylistMapper.toPlaylist(data);
   }
 
-  return <PlaylistContext.Provider value={{ load, loadAll }} {...props} />;
+  async function rename(playlistId: string, newName: string): Promise<void> {
+    console.log("rename ", playlistId, newName);
+
+    requestService.put({
+      url: `${spotifyLoadPlaylistEndpoint}/${playlistId}`,
+      data: {
+        name: newName,
+      },
+    });
+  }
+
+  return <PlaylistContext.Provider value={{ load, loadAll, rename }} {...props} />;
 }
 
 export const usePlaylist = () => useContext<Context>(PlaylistContext);

@@ -6,6 +6,8 @@ export interface SpotifyToken {
 
 export class SpotifyUtil {
   static SCOPES = [
+    "playlist-modify-private",
+    "playlist-modify-public",
     "playlist-read-private",
     "streaming",
     "user-library-read",

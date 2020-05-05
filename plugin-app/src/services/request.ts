@@ -36,6 +36,13 @@ class RequestService {
     return this.mapAxiosToResponse(response);
   }
 
+  async put<T>(putRequest: string | PostRequest): Promise<Response<T>> {
+    let request: PostRequest = this.parseRequest(putRequest);
+    const response = await axios({ ...request, method: "put" });
+
+    return this.mapAxiosToResponse(response);
+  }
+
   protected parseRequest(getRequest: string | Request): Request {
     let request: Request = getRequest as Request;
 

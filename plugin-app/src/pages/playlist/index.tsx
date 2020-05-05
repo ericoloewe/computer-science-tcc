@@ -29,7 +29,7 @@ export default function () {
   const [favoriteMusicsMap, setFavoriteMusicsMap] = useState({} as { [key: string]: boolean });
 
   const { play, toggleFavorite } = useMusic();
-  const { load } = usePlaylist();
+  const { load, rename } = usePlaylist();
   const playingMusic = getMusicById(playingMusicId);
 
   useEffect(() => {
@@ -56,7 +56,7 @@ export default function () {
   }
 
   async function renamePlaylist(newPlaylistName: string) {
-    await playlistService.rename(playlistId, newPlaylistName);
+    await rename(playlistId, newPlaylistName);
     setOpenRename(false);
   }
 
