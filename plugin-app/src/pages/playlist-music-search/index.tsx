@@ -6,11 +6,11 @@ import { Add as AddIcon, Remove as RemoveIcon } from "@material-ui/icons";
 import { useHistory, useParams } from "react-router-dom";
 
 import { ChooseWithActions, ChooseItem } from "../../components/choose-with-actions";
-import { playlistService } from "../../services/playlist";
 import { StringUtil } from "../../utils/string";
 import { SearchAppBar } from "./search-app-bar";
 import { TimerUtil } from "../../utils/timer";
 import { useSearch } from "../../contexts/search";
+import { usePlaylist } from "../../contexts/playlist";
 
 const debounce = TimerUtil.debounce(
   (searchText: string, searchMusicsOfTexts: Function) => searchMusicsOfTexts(searchText),
@@ -22,14 +22,15 @@ export default function () {
   const playlistId = StringUtil.toString(playlistIdParam);
   const history = useHistory();
   let { searchMusic } = useSearch();
+  let { addMusics } = usePlaylist();
   const [searchText, setSearchText] = useState("");
-  const [selectedMusicsMap, setSelectedMusics] = useState({} as { [key: string]: ChooseItem });
+  const [selectedMusicsMap, setSelectedMusics] = useState({} as { [key: string]: string });
   const [musics, setMusics] = useState([] as ChooseItem[]);
 
   async function goBack() {
     const musicsToSave = Object.keys(selectedMusicsMap).map((k) => selectedMusicsMap[k]);
 
-    await playlistService.saveMusics(playlistId, musicsToSave);
+    await addMusics(playlistId, musicsToSave);
     history.goBack();
   }
 
@@ -37,7 +38,7 @@ export default function () {
     if (selectedMusicsMap[music.id] != null) {
       delete selectedMusicsMap[music.id];
     } else {
-      selectedMusicsMap[music.id] = music;
+      selectedMusicsMap[music.id] = music.id;
     }
 
     setSelectedMusics({ ...selectedMusicsMap });
@@ -51,7 +52,7 @@ export default function () {
 
   async function searchMusicsOfTexts(text: string) {
     const musics = await searchMusic(text);
-    const parsedMusics = musics.map((m) => ({ ...m, title: m.name }));
+    const parsedMusics = musics.map((m) => ({ ...m, title: m.name, id: m.uri }));
 
     setMusics([...parsedMusics]);
     markSelectedMusics(parsedMusics);

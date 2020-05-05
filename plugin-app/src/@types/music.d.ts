@@ -7,6 +7,7 @@ export interface Music {
   name: string;
   image: CustomImage;
   album: Album;
+  uri: string;
   liked?: boolean;
 }
 export interface Album {

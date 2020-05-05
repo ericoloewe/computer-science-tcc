@@ -12,8 +12,6 @@ interface Context {
 const MusicContext = createContext<Context>({} as any);
 
 export function MusicProvider(props: Props) {
-  const { requestService } = useAuth();
-
   async function play(musicId: string): Promise<void> {
     console.log("playing ", musicId);
   }

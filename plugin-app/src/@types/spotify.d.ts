@@ -1,3 +1,13 @@
+export enum SpotifyObjectType {
+  Album = "album",
+  Artist = "artist",
+  Compilation = "compilation",
+  Playlist = "playlist",
+  Single = "single",
+  Track = "track",
+  User = "user",
+}
+
 export interface SpotifyLoadPlaylistResponse {
   collaborative: boolean;
   description: string;
@@ -12,7 +22,7 @@ export interface SpotifyLoadPlaylistResponse {
   public: boolean;
   snapshot_id: string;
   tracks: SpotifyTracks;
-  type: string;
+  type: SpotifyObjectType;
   uri: string;
 }
 
@@ -29,13 +39,9 @@ export interface SpotifyOwner {
   external_urls: SpotifyExternalUrls;
   href: string;
   id: string;
-  type: SpotifyOwnerType;
+  type: SpotifyObjectType;
   uri: string;
   name?: string;
-}
-export enum SpotifyOwnerType {
-  Artist = "artist",
-  User = "user",
 }
 export interface SpotifyTracks {
   href: string;
@@ -72,11 +78,11 @@ export interface SpotifyTrack {
   preview_url: string;
   track: boolean;
   track_number: number;
-  type: SpotifyTrackType;
+  type: SpotifyObjectType;
   uri: string;
 }
 export interface SpotifyAlbum {
-  album_type: SpotifyAlbumTypeEnum;
+  album_type: SpotifyObjectType;
   artists: SpotifyOwner[];
   available_markets: string[];
   external_urls: SpotifyExternalUrls;
@@ -87,23 +93,17 @@ export interface SpotifyAlbum {
   release_date: Date;
   release_date_precision: SpotifyReleaseDatePrecision;
   total_tracks: number;
-  type: SpotifyAlbumTypeEnum;
+  type: SpotifyObjectType;
   uri: string;
 }
-export enum SpotifyAlbumTypeEnum {
-  Album = "album",
-  Compilation = "compilation",
-  Single = "single",
-}
+
 export enum SpotifyReleaseDatePrecision {
   Day = "day",
 }
 export interface SpotifyExternalIDS {
   isrc: string;
 }
-export enum SpotifyTrackType {
-  Track = "track",
-}
+
 export interface SpotifyVideoThumbnail {
   url: null;
 }
@@ -129,7 +129,7 @@ export interface PlaylistItem {
   public: boolean;
   snapshot_id: string;
   tracks: SpotifyPlaylistTracks;
-  type: SpotifyItemType;
+  type: SpotifyObjectType;
   uri: string;
 }
 export interface SpotifyOwner {
@@ -137,19 +137,14 @@ export interface SpotifyOwner {
   external_urls: SpotifyExternalUrls;
   href: string;
   id: string;
-  type: SpotifyOwnerType;
+  type: SpotifyObjectType;
   uri: string;
-}
-export enum SpotifyOwnerType {
-  User = "user",
 }
 export interface SpotifyPlaylistTracks {
   href: string;
   total: number;
 }
-export enum SpotifyItemType {
-  Playlist = "playlist",
-}
+
 export interface SpotifySearchResponse {
   artists?: SpotifyPagingSearch<SpotifyArtistsSearchItem>;
   tracks?: SpotifyPagingSearch<SpotifyTracksSearchItem>;
@@ -179,7 +174,7 @@ export interface SpotifyTracksSearchItem {
   popularity: number;
   preview_url: null | string;
   track_number: number;
-  type: SpotifyItemType;
+  type: SpotifyObjectType;
   uri: string;
 }
 export interface SpotifyArtistsSearchItem {
@@ -191,7 +186,7 @@ export interface SpotifyArtistsSearchItem {
   images: SpotifyImage[];
   name: string;
   popularity: number;
-  type: Type;
+  type: SpotifyObjectType;
   uri: string;
 }
 export interface SpotifyExternalUrls {
@@ -201,9 +196,7 @@ export interface SpotifyFollowers {
   href: null;
   total: number;
 }
-export enum Type {
-  Artist = "artist",
-}
+
 export interface SpotifyUserGetResponse {
   country: string;
   display_name: string;
@@ -215,7 +208,7 @@ export interface SpotifyUserGetResponse {
   id: string;
   images: SpotifyImage[];
   product: string;
-  type: string;
+  type: SpotifyObjectType;
   uri: string;
 }
 export interface ExplicitContent {

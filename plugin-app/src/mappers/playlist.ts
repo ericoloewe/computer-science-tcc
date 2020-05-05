@@ -1,7 +1,7 @@
 import { BasicPlaylist, Playlist } from "../@types/playlist";
 import { PlaylistItem } from "../@types/spotify";
 import { StringUtil } from "../utils/string";
-import { ImageMapper } from "./image";
+import { MusicMapper } from "./music";
 
 export class PlaylistMapper {
   static toPlaylist({
@@ -19,16 +19,7 @@ export class PlaylistMapper {
         alt: name,
         src: images[0]?.url,
       },
-      musics: tracks.items.map((t) => ({
-        id: t.track.id,
-        image: ImageMapper.toCustom(t.track.name, t.track.album.images),
-        name: t.track.name,
-        album: {
-          id: t.track.album.id,
-          name: t.track.album.name,
-          image: ImageMapper.toCustom(t.track.album.name, t.track.album.images),
-        },
-      })),
+      musics: tracks.items.map((t) => MusicMapper.toMusic(t.track)),
     };
   }
 
