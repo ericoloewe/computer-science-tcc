@@ -437,6 +437,21 @@ mais voltada ao foco, será utilizada a seguinte *string* de busca:
 ("music" OR "musical") AND ("behavioral context" OR "environmental
 context" OR "context-aware"))
 
+Com os resultados da busca será analisado trabalho a trabalho iniciando
+pelo título, será mantido os trabalhos que indicam uma relação com essa
+pesquisa. A segunda etapa consiste em realizar uma leitura dos resumos
+desses trabalhos e manter os trabalhos pertinentes a esse. E por fim,
+será realizado um último filtro baseado na introdução e conclusão dos
+trabalhos.
+
+Após todos os filtros aplicados, será realizado um estudo aprofundado em
+cima dos trabalhos restantes. Esse estudo consiste em trazer informações
+de cada publicação, visando entender o que já foi desenvolvido e então
+definir o que esse trabalho poderá agregar cientificamente a área de
+sistemas de recomendação. Ao final, será desenvolvido uma tabela
+relacionando das funcionalidades existentes e o uso delas nos trabalhos
+encontrados.
+
 PROCURA NOS MOTORES DE BUSCA
 ----------------------------
 
@@ -481,6 +496,9 @@ relacionados a área. (ACM RECSYS COMMUNITY., 2020)
 
 Os trabalhos
 ------------
+
+Os trabalhos (Anotações antigas) 
+--------------------------------
 
 ### Improving Context-Aware Music Recommender Systems: Beyond the Pre-filtering Approach
 
