@@ -115,7 +115,8 @@ Sumário
 
 [1 Introdução 11](#introdução)
 
-[2 Sistemas de recomendação 15](#sistemas-de-recomendação-e-contexto)
+[2 Sistemas de recomendação e contexto
+15](#sistemas-de-recomendação-e-contexto)
 
 [2.1 Tipos de sistemas de recomendação
 15](#tipos-de-sistemas-de-recomendação)
@@ -140,44 +141,48 @@ Sumário
 
 [3 Trabalhos relacionados 17](#trabalhos-relacionados)
 
-[3.1 Os trabalhos 17](#os-trabalhos)
+[3.1 O protocolo de revisão 17](#o-protocolo-de-revisão)
 
-[3.1.1 Improving Context-Aware Music Recommender Systems: Beyond the
+[3.2 PROCURA NOS MOTORES DE BUSCA 18](#procura-nos-motores-de-busca)
+
+[3.3 Os trabalhos 19](#os-trabalhos)
+
+[3.3.1 Improving Context-Aware Music Recommender Systems: Beyond the
 Pre-filtering Approach
-17](#improving-context-aware-music-recommender-systems-beyond-the-pre-filtering-approach)
+19](#improving-context-aware-music-recommender-systems-beyond-the-pre-filtering-approach)
 
-[3.1.2 Context-Aware Mobile Music Recommendation for Daily Activities
-17](#context-aware-mobile-music-recommendation-for-daily-activities)
+[3.3.2 Context-Aware Mobile Music Recommendation for Daily Activities
+19](#context-aware-mobile-music-recommendation-for-daily-activities)
 
-[3.1.3 Musical serendipity: designing for contextual music
+[3.3.3 Musical serendipity: designing for contextual music
 recommendation and discovery
-17](#musical-serendipity-designing-for-contextual-music-recommendation-and-discovery)
+20](#musical-serendipity-designing-for-contextual-music-recommendation-and-discovery)
 
-[3.1.4 Recommender system handbook 18](#recommender-system-handbook)
+[3.3.4 Recommender system handbook 20](#recommender-system-handbook)
 
-[3.1.5 Desenvolvimento de um Sistema de Recomendação Musical Sensível ao
+[3.3.5 Desenvolvimento de um Sistema de Recomendação Musical Sensível ao
 Contexto
-18](#desenvolvimento-de-um-sistema-de-recomendação-musical-sensível-ao-contexto)
+20](#desenvolvimento-de-um-sistema-de-recomendação-musical-sensível-ao-contexto)
 
-[3.2 Tabela com tecnicas 18](#tabela-com-tecnicas)
+[3.4 Tabela com tecnicas 20](#tabela-com-tecnicas)
 
-[4 Modelagem do que será feito 19](#modelagem-do-que-será-feito)
+[4 Modelagem do que será feito 21](#modelagem-do-que-será-feito)
 
-[4.1 Contexto 19](#contexto)
+[4.1 Contexto 21](#contexto)
 
 [4.1.1 O que é o contexto comportamental?
-19](#o-que-é-o-contexto-comportamental)
+21](#o-que-é-o-contexto-comportamental)
 
-[4.1.2 O que é o contexto ambiente? 19](#o-que-é-o-contexto-ambiente)
+[4.1.2 O que é o contexto ambiente? 21](#o-que-é-o-contexto-ambiente)
 
 [4.1.3 Como será obtido os contextos?
-19](#como-será-obtido-os-contextos)
+21](#como-será-obtido-os-contextos)
 
-[4.2 Arquitetura do sistema 19](#arquitetura-do-sistema)
+[4.2 Arquitetura do sistema 21](#arquitetura-do-sistema)
 
-[5 CONCLUSÃO 20](#conclusão)
+[5 CONCLUSÃO 22](#conclusão)
 
-[Referências Bibliográficas 21](#referências-bibliográficas)
+[Referências Bibliográficas 23](#referências-bibliográficas)
 
 O sumário é elemento obrigatório, em que se apresentam os títulos e
 subtítulos (ou seções), seguidos de sua paginação. É recomendável
