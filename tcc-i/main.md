@@ -14,15 +14,15 @@ Novo Hamburgo
 SISTEMA DE RECOMENDAÇÃO MUSICAL BASEADO EM CONTEXTO COMPORTAMENTAL E DE
 AMBIENTE
 
-> Trabalho de Conclusão de Curso
->
-> apresentado como requisito parcial
->
-> à obtenção do grau de Bacharel em
->
-> Nome do Curso pela
->
-> Universidade Feevale
+Trabalho de Conclusão de Curso
+
+apresentado como requisito parcial
+
+à obtenção do grau de Bacharel em
+
+Nome do Curso pela
+
+Universidade Feevale
 
 Orientador: nome do professor orientador
 
@@ -497,6 +497,21 @@ relacionados a área. (ACM RECSYS COMMUNITY., 2020)
 Os trabalhos
 ------------
 
+Com a busca realizada no dia 05/05/20 no motor da ACM a partir da
+*string* de busca foram encontrados 85 trabalhos, sendo eles: 23 do tipo
+*jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
+e 62 do tipo *proceeding*.
+
+### Sequence-Aware Recommender Systems
+
+Buscam revisar trabalhos existentes que consideram as informações dos
+registros da sequência ordenada de interações do usuário no processo de
+recomendação.
+
+### A Context-Aware User-Item Representation Learning for Item Recommendation
+
+Texto.
+
 Os trabalhos (Anotações antigas) 
 --------------------------------
 
@@ -616,18 +631,18 @@ ACM. **Advanced Search**. Disponível em:
 \<https://dl.acm.org/search/advanced\>. Acesso em: 5 maio. 2020. ACM
 RECSYS COMMUNITY. **RecSys -- ACM Recommender Systems**. Disponível em:
 \<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. BHATNAGAR, V.
-**Collaborative filtering using data mining and analysis**. \[s.l:
-s.n.\]. BORJA, K.; DIERINGER, S. Streaming or stealing? The
-complementary features between music streaming and music piracy.
-**Journal of Retailing and Consumer Services**, v. 32, p. 86--95, 2016.
-DIETMAR, J. et al. **Recommendation system -An Introduction**. \[s.l:
-s.n.\]. v. 91ERIKSSON, M. et al. **Spotify Teardown**. \[s.l.\] MIT
-Press, 2019. FALK, K. **Practical Recommender Systems**. \[s.l: s.n.\].
-IFPI. **IFPI Global Music Report 2019**. Disponível em:
+Collaborative filtering using data mining and analysis. \[s.l: s.n.\].
+BORJA, K.; DIERINGER, S. Streaming or stealing? The complementary
+features between music streaming and music piracy. **Journal of
+Retailing and Consumer Services**, v. 32, p. 86--95, 2016. DIETMAR, J.
+et al. **Recommendation system -An Introduction**. \[s.l: s.n.\]. v.
+91ERIKSSON, M. et al. **Spotify Teardown**. \[s.l.\] MIT Press, 2019.
+FALK, K. Practical Recommender Systems. \[s.l: s.n.\]. IFPI. **IFPI
+Global Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. LUINI, B.
 J. R.; WHITMAN, A. E.; DATE, P. **Streaming Audio: The FezGuys' Guide**.
-\[s.l: s.n.\]. MURARO, R. M. **Os avanços tecnológicos e o futuro da
-humanidade**Querendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
+\[s.l: s.n.\]. MURARO, R. M. Os avanços tecnológicos e o futuro da
+humanidadeQuerendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
 \[s.l.\] O'Reilly Media, 2018. v. 134RESNICK, PAUL AND VARIAN, H. R.
 Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
 56--58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
