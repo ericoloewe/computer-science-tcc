@@ -428,15 +428,14 @@ Pois, existem muitos artigos e diversas áreas de pesquisa relacionadas
 aos sistemas de recomendação musical, então, para realizar uma busca
 mais voltada ao foco, será utilizada a seguinte *string* de busca:
 
-(("RecSys" OR "recommender systems" OR "machine learning") AND ("music"
-OR "musical" OR "song" OR "playlist") AND ("behavioral context" OR
-"environmental context" OR "context-aware" OR "HCI" OR "human computer
-interaction" OR "emotion" OR "pleasure"))
+(("RecSys" OR "recommender systems") AND ("machine learning") AND
+("music" OR "musical") AND ("behavioral context" OR "environmental
+context" OR "context-aware"))
 
 PROCURA NOS MOTORES DE BUSCA
 ----------------------------
 
-No dia 28/04/2020 foi realizado a pesquisa no motor de busca apresentado
+No dia 05/05/2020 foi realizado a pesquisa no motor de busca apresentado
 a partir da *string* de busca pré-definida anteriormente. As Figura 1 e
 2 ilustram esse processo. Todos trouxeram resultados pertinentes ao
 trabalho logo na primeira página da aplicação. A quantidade de
