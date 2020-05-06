@@ -435,17 +435,23 @@ context" OR "context-aware"))
 PROCURA NOS MOTORES DE BUSCA
 ----------------------------
 
-![](./tcc-i/pandoc/media/image1.png){width="5.182879483814523in"
-height="3.0833333333333335in"}
+![](./tcc-i/pandoc/media/image1.png){width="4.538520341207349in"
+height="2.7in"}
 
-Figura Motor avançado de busca da ACM (proprio, 2020)
+Figura Motor avançado de busca da ACM (próprio, 2020)
 
 No dia 05/05/2020 foi realizado a pesquisa no motor de busca apresentado
-a partir da *string* de busca pré-definida anteriormente. As Figura 1 e
-2 ilustram esse processo. Todos trouxeram resultados pertinentes ao
+a partir da *string* de busca pré-definida anteriormente. As Figura 1, 2
+e 3 ilustram esse processo. Todos trouxeram resultados pertinentes ao
 trabalho logo na primeira página da aplicação. A quantidade de
 resultados apresentados na ACM foram 152 trabalhos relacionados a
 *string* de busca.
+
+![](./tcc-i/pandoc/media/image2.png){width="4.599244313210849in"
+height="2.3583333333333334in"}
+
+Figura Resultado de busca dos proceedings no motor de busca da ACM
+(próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
 cima da busca. Procurando trazer somente os trabalhos mais atual
@@ -456,6 +462,12 @@ reduzido os tipos de publicações aceitas para *proceedings* e
 encontrados passou para 85. Então reduzindo a quantidade de trabalhos
 relacionados se fez possível a revisão de todos no tempo hábil
 disponível para desenvolver esse trabalho.
+
+![](./tcc-i/pandoc/media/image3.png){width="4.725in"
+height="2.4463549868766403in"}
+
+Figura Resultado de busca dos journals no motor de busca da ACM
+(próprio, 2020)
 
 A quantidade de trabalhos encontrados na ACM relacionados a *string* de
 busca foi muito alta, isso devido a ela possuir uma grande comunidade
