@@ -437,20 +437,21 @@ mais voltada ao foco, será utilizada a seguinte *string* de busca:
 ("music" OR "musical") AND ("behavioral context" OR "environmental
 context" OR "context-aware"))
 
-Com os resultados da busca será analisado trabalho a trabalho iniciando
-pelo título, será mantido os trabalhos que indicam uma relação com essa
-pesquisa. A segunda etapa consiste em realizar uma leitura dos resumos
-desses trabalhos e manter os trabalhos pertinentes a esse. E por fim,
-será realizado um último filtro baseado na introdução e conclusão dos
-trabalhos.
+Com os resultados da busca cada trabalho será analisado e esta análise
+está dividida em quatro etapas. A leitura inicial, primeira etapa, será
+feita no título de cada artigo, e serão mantidos àqueles que indicam uma
+relação com essa pesquisa. A segunda etapa consistirá em realizar uma
+leitura dos resumos desses trabalhos e manter àqueles adequados. A etapa
+três realizará um filtro, baseando-se na leitura da introdução e
+conclusão dos artigos. A última etapa é representada pela leitura total
+dos artigos selecionados.
 
-Após todos os filtros aplicados, será realizado um estudo aprofundado em
-cima dos trabalhos restantes. Esse estudo consiste em trazer informações
-de cada publicação, visando entender o que já foi desenvolvido e então
-definir o que esse trabalho poderá agregar cientificamente a área de
-sistemas de recomendação. Ao final, será desenvolvido uma tabela
-relacionando das funcionalidades existentes e o uso delas nos trabalhos
-encontrados.
+Após a leitura aprofundada em cima dos artigos selecionados, essa
+revisão trará informações de cada publicação, visando entender o que já
+foi desenvolvido e então definir o que esse trabalho poderá agregar
+cientificamente à área de sistemas de recomendação. Ao final, será
+desenvolvida uma tabela relacionando as funcionalidades existentes e o
+uso delas nos trabalhos encontrados.
 
 PROCURA NOS MOTORES DE BUSCA
 ----------------------------
@@ -458,7 +459,7 @@ PROCURA NOS MOTORES DE BUSCA
 ![](./tcc-i/pandoc/media/image1.png){width="4.538520341207349in"
 height="2.7in"}
 
-Figura Motor avançado de busca da ACM (próprio, 2020)
+Figura 1 Motor avançado de busca da ACM (próprio, 2020)
 
 No dia 05/05/2020 foi realizado a pesquisa no motor de busca apresentado
 a partir da *string* de busca pré-definida anteriormente. As Figura 1, 2
@@ -470,7 +471,7 @@ resultados apresentados na ACM foram 152 trabalhos relacionados a
 ![](./tcc-i/pandoc/media/image2.png){width="4.599244313210849in"
 height="2.3583333333333334in"}
 
-Figura Resultado de busca dos proceedings no motor de busca da ACM
+Figura 2 Resultado de busca dos proceedings no motor de busca da ACM
 (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
@@ -486,7 +487,7 @@ disponível para desenvolver esse trabalho.
 ![](./tcc-i/pandoc/media/image3.png){width="4.725in"
 height="2.4463549868766403in"}
 
-Figura Resultado de busca dos journals no motor de busca da ACM
+Figura 3 Resultado de busca dos journals no motor de busca da ACM
 (próprio, 2020)
 
 A quantidade de trabalhos encontrados na ACM relacionados a *string* de
@@ -507,6 +508,20 @@ e 62 do tipo *proceeding*.
 Buscam revisar trabalhos existentes que consideram as informações dos
 registros da sequência ordenada de interações do usuário no processo de
 recomendação.
+
+Critérios de Qualidade ?
+
+Qual o problema que ele resolveu?
+
+Ele usou o Spotify?
+
+Qual a base de treinamento e teste?
+
+Quais técnicas foram usadas?
+
+Quais os resultados?
+
+Como o trabalho foi avaliado/validado?
 
 ### A Context-Aware User-Item Representation Learning for Item Recommendation
 
