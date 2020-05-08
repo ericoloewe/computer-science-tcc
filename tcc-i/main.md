@@ -458,7 +458,7 @@ height="2.7in"}
 
 Figura Motor avançado de busca da ACM (próprio, 2020)
 
-No dia 05/05/2020 foi realizado a pesquisa no motor de busca apresentado
+No dia 07/05/2020 foi realizado a pesquisa no motor de busca apresentado
 a partir da *string* de busca pré-definida anteriormente. As Figura 1, 2
 e 3 ilustram esse processo. Todos trouxeram resultados pertinentes ao
 trabalho logo na primeira página da aplicação. A quantidade de
@@ -495,7 +495,7 @@ relacionados a área. (ACM RECSYS COMMUNITY., 2020)
 Os trabalhos
 ------------
 
-Com a busca realizada no dia 05/05/20 no motor da ACM a partir da
+Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
 *string* de busca foram encontrados 83 trabalhos, sendo eles: 23 do tipo
 *jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
 e 60 do tipo *proceeding*.
