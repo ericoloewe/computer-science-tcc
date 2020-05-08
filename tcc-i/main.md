@@ -69,47 +69,48 @@ Keywords: tradução das palavras-chave para a língua inglesa.
 
 Lista de Figuras
 
-[Figura 1 -- Estrutura de desenvolvimento em duas camadas
+[Figura 1 – Estrutura de desenvolvimento em duas camadas
 14](#_Toc515473980)
 
-[Figura 2 -- Padrão MVC - separação em camadas 15](#_Toc515473981)
+[Figura 2 – Padrão MVC - separação em camadas 15](#_Toc515473981)
 
 \* As listas (de figuras, de tabelas e de abreviaturas e siglas,) devem
 ser apresentadas conforme aparecem no trabalho (na ordem), com cada item
 designado pelo seu nome/título específico e do respectivo número da
-página. Elaborar uma lista própria para cada tipo. Espaço entre linhas =
-1,5, [sem]{.underline} o espaçamento antes e depois (6ptos).
+página. Elaborar uma lista própria para cada tipo. Espaço entre linhas
+= 1,5, <span class="underline">sem</span> o espaçamento antes e depois
+(6ptos).
 
 Lista de Tabelas
 
-[Tabela 1 -- Matrícula dos alunos do Centro de Educação da FURG segundo
-o município. 15](#_Toc515474000)
+[Tabela 1 – Matrícula dos alunos do Centro de Educação da FURG segundo o
+município. 15](#_Toc515474000)
 
 Lista de Abreviaturas e Siglas
 
-  BSC       Balanced Scorecard
-  --------- -----------------------------------------------------------
-  CAPF      Custo Anual por Funcionário
-  CAPT      Custo Anual por Teclado
-  CAPU      Custo Anual por Usuário
-  CEO       Chief of Executive Office
-  CIA/FVG   Centro de Informática Aplicada da Fundação Getúlio Vargas
-  CIO       Chief of Information Office
-  CO        Contexto Organizacional
-  COBIT     Control Objectives for Information and related Technology
-  ERP       Enterprise Resource Planning
-  FCS       Fatores Críticos de Sucesso
-  FGV       Fundação Getúlio Vargas
-  ISACA     Information Systems Audit and Control Association
-  MIT       Massachusetts Institute of Technology
-  PEE       Planejamento Estratégico Empresarial
-  PETI      Panejamento Estratégico da Tecnologia da Informação
-  RH        Recursos Humanos
-  ROE       Return On Expectation
-  ROI       Return On Investiment
-  SI        Sistemas de Informação
-  SLA       Service Level Agreements
-  SLM       Service Level Managements
+| BSC     | Balanced Scorecard                                        |
+| ------- | --------------------------------------------------------- |
+| CAPF    | Custo Anual por Funcionário                               |
+| CAPT    | Custo Anual por Teclado                                   |
+| CAPU    | Custo Anual por Usuário                                   |
+| CEO     | Chief of Executive Office                                 |
+| CIA/FVG | Centro de Informática Aplicada da Fundação Getúlio Vargas |
+| CIO     | Chief of Information Office                               |
+| CO      | Contexto Organizacional                                   |
+| COBIT   | Control Objectives for Information and related Technology |
+| ERP     | Enterprise Resource Planning                              |
+| FCS     | Fatores Críticos de Sucesso                               |
+| FGV     | Fundação Getúlio Vargas                                   |
+| ISACA   | Information Systems Audit and Control Association         |
+| MIT     | Massachusetts Institute of Technology                     |
+| PEE     | Planejamento Estratégico Empresarial                      |
+| PETI    | Panejamento Estratégico da Tecnologia da Informação       |
+| RH      | Recursos Humanos                                          |
+| ROE     | Return On Expectation                                     |
+| ROI     | Return On Investiment                                     |
+| SI      | Sistemas de Informação                                    |
+| SLA     | Service Level Agreements                                  |
+| SLM     | Service Level Managements                                 |
 
 Sumário
 
@@ -189,8 +190,7 @@ exemplo, espaçamento antes e depois = 6 pts. Este sumário foi elaborado
 automaticamente pelo Word. Para atualizá-lo, basta clicar com o botão
 direito, escolher Atualizar Campo e depois Atualizar o Índice Inteiro.
 
-Introdução
-==========
+# Introdução
 
 A tecnologia avançou muito nos últimos anos, principalmente quando
 aborda-se internet e armazenamento de dados (MURARO, 2009). O custo de
@@ -235,18 +235,18 @@ desenvolver e manter um user model ou user profile, que por exemplo,
 contém as preferências dele. A existência de um user model é essencial
 para qualquer sistema de recomendação (DIETMAR et al., 2010).
 
-Os sistemas de recomendação iniciaram com a \"Usenet\" da Duke
-University, na década de 70, um sistema com uma distribuição global que
-buscava divulgar novas notícias postadas e classificadas pelos seus
-usuários. Em 1985, iniciaram-se as recomendações baseadas em conteúdo, a
-partir de uma arquitetura para sistemas de informação de larga escala. A
-Xerox teve sua grande participação em 1992, desenvolvendo o primeiro
-sistema (Tapestry) designado a realizar a filtragem colaborativa. Em
-1997, foi desenvolvido o primeiro sistema de recomendação de filmes
-chamado Movielens. Até que em 2000, a Pandora iniciou o projeto genoma
-musical, onde a recomendação passou a ser utilizada para facilitar as
-escolhas de um usuário entre as diversas músicas existentes na época
-(BHATNAGAR, 2016).
+Os sistemas de recomendação iniciaram com a "Usenet" da Duke University,
+na década de 70, um sistema com uma distribuição global que buscava
+divulgar novas notícias postadas e classificadas pelos seus usuários. Em
+1985, iniciaram-se as recomendações baseadas em conteúdo, a partir de
+uma arquitetura para sistemas de informação de larga escala. A Xerox
+teve sua grande participação em 1992, desenvolvendo o primeiro sistema
+(Tapestry) designado a realizar a filtragem colaborativa. Em 1997, foi
+desenvolvido o primeiro sistema de recomendação de filmes chamado
+Movielens. Até que em 2000, a Pandora iniciou o projeto genoma musical,
+onde a recomendação passou a ser utilizada para facilitar as escolhas de
+um usuário entre as diversas músicas existentes na época (BHATNAGAR,
+2016).
 
 Desde então, os sistemas de recomendação têm revolucionado o mercado de
 aplicações de diversas formas, pois com eles, aumentam-se o número de
@@ -289,7 +289,7 @@ dos segmentos de mercado que apresentaram problemas, foram as vendas de
 ou receberem as faixas a partir de compras em lojas virtuais, porém o
 preço de cada faixa ainda era muito caro, o que fazia com que muitos
 usuários optassem pela pirataria. Desta forma, surgiu uma nova maneira
-de anunciar os "produtos musicais" online, o streaming musical (BORJA;
+de anunciar os “produtos musicais” online, o streaming musical (BORJA;
 DIERINGER, 2016).
 
 O mercado musical tem evoluído muito desde seu início. No começo, seu
@@ -321,13 +321,11 @@ contexto será obtido, através da criação um plugin que permitirá ao
 usuário escutar suas músicas enquanto são registrados os eventos do
 contexto vivido naquele momento.
 
-Sistemas de recomendação e contexto
-===================================
+# Sistemas de recomendação e contexto
 
 Texto
 
-Tipos de sistemas de recomendação
----------------------------------
+## Tipos de sistemas de recomendação
 
 (DIETMAR et al., 2010) trazem em sua obra os 4 tipos de sistemas de
 recomendação, sendo eles: recomendação colaborativa, recomendação
@@ -370,18 +368,15 @@ obra o modelo híbrido de recomendação, onde a ideia e combinar as
 diferentes técnicas, buscando gerara uma boa e mais assertiva
 recomendação. (DIETMAR et al., 2010)
 
-Algoritmos de sistemas de recomendação
---------------------------------------
+## Algoritmos de sistemas de recomendação
 
 Texto
 
-Técnicas para avaliar OS RESULTADOS de um RecSys
-------------------------------------------------
+## Técnicas para avaliar OS RESULTADOS de um RecSys
 
 Texto
 
-Trabalhos relacionados
-======================
+# Trabalhos relacionados
 
 Os sistemas de recomendação musical iniciaram nos anos 90 e tem evoluído
 muito desde então, ao ponto de que hoje existem diversos trabalhos
@@ -389,8 +384,7 @@ relacionados a esse assunto para área. Nesse capítulo será abordado os
 diversos trabalhos encontrados a partir de uma revisão realizada sobre o
 assunto.
 
-O protocolo de revisão
-----------------------
+## O protocolo de revisão
 
 Essa revisão tem como foco encontrar trabalhos que abordam os sistemas
 de recomendação, que a partir das músicas conhecidas pelo usuário, e do
@@ -400,23 +394,23 @@ assertividade das recomendações ao ouvinte.
 Dado o foco da pesquisa e o conteúdo encontrado até o momento, foi feito
 uma lista de interesses que serão abordados nessa revisão, deles:
 
--   Estudos realizados
+  - Estudos realizados
 
--   Técnicas de recomendação utilizadas
+  - Técnicas de recomendação utilizadas
 
--   Contextos utilizados para recomendação
+  - Contextos utilizados para recomendação
 
 A partir do escopo de revisão que esse trabalho está inserido, foi
 definido certas palavras-chaves para auxiliar no desenvolvimento da
 revisão, elas são:
 
--   RecSys
+  - RecSys
 
--   Machine Learning
+  - Machine Learning
 
--   Sistemas de recomendação musical
+  - Sistemas de recomendação musical
 
--   Context-aware
+  - Context-aware
 
 Para realizar a busca dos trabalhos relacionados ao foco de pesquisa da
 revisão, por indicação dos orientadores desse trabalho, será utilizado o
@@ -430,9 +424,9 @@ Pois, existem muitos artigos e diversas áreas de pesquisa relacionadas
 aos sistemas de recomendação musical, então, para realizar uma busca
 mais voltada ao foco, será utilizada a seguinte *string* de busca:
 
-*(("RecSys" OR "recommender systems") AND ("machine learning") AND
-("music" OR "musical") AND ("behavioral context" OR "environmental
-context" OR "context-aware"))*
+*((“RecSys” OR “recommender systems”) AND (“machine learning”) AND
+(“music” OR “musical”) AND (“behavioral context” OR “environmental
+context” OR “context-aware”))*
 
 Com os resultados da busca cada trabalho será analisado e esta análise
 está dividida em quatro etapas. A leitura inicial, primeira etapa, será
@@ -450,11 +444,9 @@ cientificamente à área de sistemas de recomendação. Ao final, será
 desenvolvida uma tabela relacionando as funcionalidades existentes e o
 uso delas nos trabalhos encontrados.
 
-PROCURA NOS MOTORES DE BUSCA
-----------------------------
+## PROCURA NOS MOTORES DE BUSCA
 
-![](./tcc-i/pandoc/media/image1.png){width="4.538520341207349in"
-height="2.7in"}
+![](./tcc-i/pandoc/media/image1.png)
 
 Figura Motor avançado de busca da ACM (próprio, 2020)
 
@@ -465,8 +457,7 @@ trabalho logo na primeira página da aplicação. A quantidade de
 resultados apresentados na ACM foram 150 trabalhos relacionados a
 *string* de busca.
 
-![](./tcc-i/pandoc/media/image2.png){width="5.259027777777778in"
-height="2.8in"}
+![](./tcc-i/pandoc/media/image2.png)
 
 Figura Resultado de busca dos proceedings no motor de busca da ACM
 (próprio, 2020)
@@ -481,8 +472,7 @@ encontrados passou para 83. Então reduzindo a quantidade de trabalhos
 relacionados se fez possível a revisão de todos no tempo hábil
 disponível para desenvolver esse trabalho.
 
-![](./tcc-i/pandoc/media/image3.png){width="5.158022747156606in"
-height="2.7583333333333333in"}
+![](./tcc-i/pandoc/media/image3.png)
 
 Figura Resultado de busca dos journals no motor de busca da ACM
 (próprio, 2020)
@@ -492,8 +482,7 @@ busca foi muito alta, isso devido a ela possuir uma grande comunidade
 relacionado a área de RecSys, com diversas conferências e eventos
 relacionados a área. (ACM RECSYS COMMUNITY., 2020)
 
-Os trabalhos
-------------
+## Os trabalhos
 
 Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
 *string* de busca foram encontrados 83 trabalhos, sendo eles: 23 do tipo
@@ -524,18 +513,15 @@ Como o trabalho foi avaliado/validado?
 
 Texto.
 
-Tabela com tecnicas
--------------------
+## Tabela com tecnicas
 
 Texto
 
-Modelagem do que será feito
-===========================
+# Modelagem do que será feito
 
 Texto
 
-Contexto
---------
+## Contexto
 
 Texto
 
@@ -551,13 +537,11 @@ Texto
 
 Texto
 
-Arquitetura do sistema
-----------------------
+## Arquitetura do sistema
 
 Texto
 
-CONCLUSÃO
-=========
+# CONCLUSÃO
 
 Pode-se afirmar que está havendo em Porto Alegre uma situação paradoxal.
 Ao mesmo tempo em que se percebe um avanço no cumprimento das diretrizes
@@ -574,7 +558,7 @@ Estado e o Município. Desse modo, o melhor andamento do processo de
 municipalização em Porto Alegre fica na dependência da contrapartida de
 recursos do Estado e da União.
 
-\...\...\...\...\...\...\...\...\...\...\...\...\...\...\.....
+...............................................
 
 PAGINAÇÃO: Segundo o livro do prof. Cléber Prodanov, as folhas do
 trabalho são contadas a partir da folha de rosto (não contamos a capa),
@@ -583,28 +567,27 @@ folha de rosto, o resumo, o abstract, as listas e o sumário. A numeração
 é colocada no canto superior direito da folha, a 2cm da borda superior
 da folha, em algarismos arábicos.
 
-Referências Bibliográficas {#referências-bibliográficas .Título-1---sem-numeração}
-==========================
+# Referências Bibliográficas
 
 ACM. **Advanced Search**. Disponível em:
 \<https://dl.acm.org/search/advanced\>. Acesso em: 5 maio. 2020. ACM
-RECSYS COMMUNITY. **RecSys -- ACM Recommender Systems**. Disponível em:
+RECSYS COMMUNITY. **RecSys – ACM Recommender Systems**. Disponível em:
 \<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. BHATNAGAR, V.
 Collaborative filtering using data mining and analysis. \[s.l: s.n.\].
 BORJA, K.; DIERINGER, S. Streaming or stealing? The complementary
 features between music streaming and music piracy. **Journal of
-Retailing and Consumer Services**, v. 32, p. 86--95, 2016. DIETMAR, J.
-et al. **Recommendation system -An Introduction**. \[s.l: s.n.\]. v.
+Retailing and Consumer Services**, v. 32, p. 86–95, 2016. DIETMAR, J. et
+al. **Recommendation system -An Introduction**. \[s.l: s.n.\]. v.
 91ERIKSSON, M. et al. **Spotify Teardown**. \[s.l.\] MIT Press, 2019.
 FALK, K. Practical Recommender Systems. \[s.l: s.n.\]. IFPI. **IFPI
 Global Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. LUINI, B.
-J. R.; WHITMAN, A. E.; DATE, P. **Streaming Audio: The FezGuys' Guide**.
+J. R.; WHITMAN, A. E.; DATE, P. **Streaming Audio: The FezGuys’ Guide**.
 \[s.l: s.n.\]. MURARO, R. M. Os avanços tecnológicos e o futuro da
 humanidadeQuerendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
-\[s.l.\] O'Reilly Media, 2018. v. 134RESNICK, PAUL AND VARIAN, H. R.
+\[s.l.\] O’Reilly Media, 2018. v. 134RESNICK, PAUL AND VARIAN, H. R.
 Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
-56--58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
+56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
 Handbook**. \[s.l: s.n.\]. UNIVERSIDADE FEDERAL DO CEARA. **A
 Magnetorresistência Gigante**. Disponível em:
 \<https://seara.ufc.br/tintim-por-tintim/tecnologia/a-magnetorresistencia-gigante/\>.

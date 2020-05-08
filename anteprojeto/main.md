@@ -1,7 +1,3 @@
----
-title: UNIVERSIDADE FEEVALE
----
-
 ÉRICO DE SOUZA LOEWE
 
 ##### SISTEMA DE RECOMENDAÇÃO MUSICAL BASEADO EM CONTEXTO COMPORTAMENTAL E DE AMBIENTE
@@ -18,11 +14,11 @@ Novo Hamburgo
 
 > Anteprojeto de Trabalho de Conclusão de Curso, apresentado como
 > requisito parcial
->
+> 
 > à obtenção do grau de Bacharel em
->
+> 
 > Ciência da Computação pela
->
+> 
 > Universidade Feevale
 
 Orientador: Juliano Varella de Carvalho
@@ -31,8 +27,7 @@ Novo Hamburgo
 
 2020
 
-RESUMO
-======
+# RESUMO
 
 Sabe-se que as pessoas têm dificuldades em lidar com um grande volume de
 informações, e com a internet e a evolução da tecnologia houve aumento
@@ -49,26 +44,26 @@ acordo com o contexto vivenciado pelo usuário.
 Palavras-chave: *RecSys.* *Machine Learning.* Sistemas de recomendação
 musical. Música. Spotify.
 
- SUMÁRIO
-=======
+#   
+SUMÁRIO
 
 MOTIVAÇÃO
-\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...5
+...........................................................................................................................5
 
 OBJETIVOS
-\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...9
+..............................................................................................................................9
 
 METODOLOGIA
-\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\.....10
+....................................................................................................................10
 
 CRONOGRAMA
-\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...11
+.....................................................................................................................11
 
 BIBLIOGRAFIA
-\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\...\.....12
+....................................................................................................................12
 
- MOTIVAÇÃO
-=========
+#   
+MOTIVAÇÃO
 
 A tecnologia avançou muito nos últimos anos, principalmente quando
 aborda-se internet e armazenamento de dados (MURARO, 2009). O custo de
@@ -113,12 +108,12 @@ desenvolver e manter um *user model* ou *user profile*, que por exemplo,
 contém as preferências dele. A existência de um *user model* é essencial
 para qualquer sistema de recomendação (DIETMAR et al., 2010).
 
-Os sistemas de recomendação iniciaram com a \"*Usenet*\" da *Duke
+Os sistemas de recomendação iniciaram com a "*Usenet*" da *Duke
 University,* na década de 70, um sistema com uma distribuição global que
 buscava divulgar novas notícias postadas e classificadas pelos seus
-usuários. Em 1985, iniciaram-se as recomendações baseadas em conteúdo, a
-partir de uma arquitetura para sistemas de informação de larga escala. A
-Xerox teve sua grande participação em 1992, desenvolvendo o primeiro
+usuários. Em 1985, iniciaram-se as recomendações baseadas em conteúdo,
+a partir de uma arquitetura para sistemas de informação de larga escala.
+A Xerox teve sua grande participação em 1992, desenvolvendo o primeiro
 sistema (Tapestry) designado a realizar a filtragem colaborativa. Em
 1997, foi desenvolvido o primeiro sistema de recomendação de filmes
 chamado Movielens. Até que em 2000, a Pandora iniciou o projeto genoma
@@ -167,7 +162,7 @@ de álbum ou faixas musicais *online*. Elas possibilitam as pessoas
 baixarem ou receberem as faixas a partir de compras em lojas virtuais,
 porém o preço de cada faixa ainda era muito caro, o que fazia com que
 muitos usuários optassem pela pirataria. Desta forma, surgiu uma nova
-maneira de anunciar os "produtos musicais" *online*, o *streaming*
+maneira de anunciar os “produtos musicais” *online*, o *streaming*
 musical (BORJA; DIERINGER, 2016).
 
 O mercado musical tem evoluído muito desde seu início. No começo, seu
@@ -199,8 +194,8 @@ contexto será obtido, através da criação um *plugin* que permitirá ao
 usuário escutar suas músicas enquanto são registrados os eventos do
 contexto vivido naquele momento.
 
-** **OBJETIVOS
-==============
+# **  
+**OBJETIVOS
 
 Objetivo geral
 
@@ -210,25 +205,25 @@ encontra-se.
 
 Objetivos específicos
 
--   Investigar APIs de Serviços de *Streamings* Musicais.
+  - Investigar APIs de Serviços de *Streamings* Musicais.
 
--   Selecionar a API a ser utilizada no sistema de recomendação.
+  - Selecionar a API a ser utilizada no sistema de recomendação.
 
--   Definir os contextos de ambiente a serem utilizados no sistema.
+  - Definir os contextos de ambiente a serem utilizados no sistema.
 
--   Definir os contextos comportamentais do usuário a serem utilizados
+  - Definir os contextos comportamentais do usuário a serem utilizados
     no sistema.
 
--   Criar a infraestrutura necessária para o armazenamento e
+  - Criar a infraestrutura necessária para o armazenamento e
     relacionamento das músicas com os contextos comportamentais e de
     ambiente do usuário.
 
--   Criar um protótipo do sistema de recomendação.
+  - Criar um protótipo do sistema de recomendação.
 
--   Avaliar o sistema de recomendação com usuários voluntários.
+  - Avaliar o sistema de recomendação com usuários voluntários.
 
- METODOLOGIA
-===========
+#   
+METODOLOGIA
 
 Esse trabalho tem como natureza a pesquisa aplicada, pois através dos
 conhecimentos estudados de *RecSys* será desenvolvido um sistema que
@@ -264,8 +259,8 @@ Tendo as técnicas de avaliação a serem utilizadas definidas, elas serão
 desenvolvidas no sistema, permitindo que os usuários consigam contribuir
 com sua recomendação através de suas avaliações. Essa pesquisa,
 apresentará no final os resultados estatísticos obtidos pelas
-recomendações do sistema e suas avaliações, apresentando, por exemplo, a
-quantidade de acertos e erros (a partir da perspectiva do usuário)
+recomendações do sistema e suas avaliações, apresentando, por exemplo,
+a quantidade de acertos e erros (a partir da perspectiva do usuário)
 obtidos nas recomendações, fazendo com que, essa pesquisa tenha uma
 abordagem do tipo quantitativa.
 
@@ -274,55 +269,52 @@ nas músicas conhecidas pelo usuário, é possível aperfeiçoar as
 recomendações de um sistema, aplicando os conhecimentos de RecSys e
 utilizando dados de contexto comportamental e de ambiente?
 
-CRONOGRAMA
-==========
+# CRONOGRAMA
 
 Trabalho de Conclusão I
 
-  -------------------------------------------------------------------------------------------- ------- ----- ----- -----
-  Etapa                                                                                        Meses               
-                                                                                               Mar     Abr   Mai   Jun
-  Anteprojeto                                                                                                      
-  Pesquisa bibliográfica sobre técnicas e algoritmos utilizados por sistemas de recomendação                       
-  Investigar APIs de Serviços de *Streamings* Musicais                                                             
-  Definir contexto comportamental e de ambiente                                                                    
-  Liberação da aplicação para obter os dados necessários.                                                          
-  Estudar técnicas para avaliar os resultados                                                                      
-  Desenvolver tela de avaliação de playlist                                                                        
-  Elaborar TCC I                                                                                                   
-  -------------------------------------------------------------------------------------------- ------- ----- ----- -----
+|                                                                                            |       |     |     |     |
+| ------------------------------------------------------------------------------------------ | ----- | --- | --- | --- |
+| Etapa                                                                                      | Meses |     |     |     |
+|                                                                                            | Mar   | Abr | Mai | Jun |
+| Anteprojeto                                                                                |       |     |     |     |
+| Pesquisa bibliográfica sobre técnicas e algoritmos utilizados por sistemas de recomendação |       |     |     |     |
+| Investigar APIs de Serviços de *Streamings* Musicais                                       |       |     |     |     |
+| Definir contexto comportamental e de ambiente                                              |       |     |     |     |
+| Liberação da aplicação para obter os dados necessários.                                    |       |     |     |     |
+| Estudar técnicas para avaliar os resultados                                                |       |     |     |     |
+| Desenvolver tela de avaliação de playlist                                                  |       |     |     |     |
+| Elaborar TCC I                                                                             |       |     |     |     |
 
 Trabalho de Conclusão II
 
-  ----------------------------------------- ------- ----- ----- -----
-  Etapa                                     Meses               
-                                            Ago     Set   Out   Nov
-  Organizar dados obtidos                                       
-  Definir técnica para avaliar resultados                       
-  Desenvolver sistema de recomendação                           
-  Análise dos resultados                                        
-  Elaborar TCC II                                               
-  ----------------------------------------- ------- ----- ----- -----
+|                                         |       |     |     |     |
+| --------------------------------------- | ----- | --- | --- | --- |
+| Etapa                                   | Meses |     |     |     |
+|                                         | Ago   | Set | Out | Nov |
+| Organizar dados obtidos                 |       |     |     |     |
+| Definir técnica para avaliar resultados |       |     |     |     |
+| Desenvolver sistema de recomendação     |       |     |     |     |
+| Análise dos resultados                  |       |     |     |     |
+| Elaborar TCC II                         |       |     |     |     |
 
-BIBLIOGRAFIA
-============
+# BIBLIOGRAFIA
 
 BHATNAGAR, V. **Collaborative filtering using data mining and
 analysis**. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming or
 stealing? The complementary features between music streaming and music
-piracy. **Journal of Retailing and Consumer Services**, v. 32, p.
-86--95, 2016. DIETMAR, J. et al. **Recommendation system -An
-Introduction**. \[s.l: s.n.\]. v. 91ERIKSSON, M. et al. **Spotify
-Teardown**. \[s.l.\] MIT Press, 2019. FALK, K. **Practical Recommender
-Systems**. \[s.l: s.n.\]. IFPI. **IFPI Global Music Report 2019**.
-Disponível em:
+piracy. **Journal of Retailing and Consumer Services**, v. 32, p. 86–95,
+2016. DIETMAR, J. et al. **Recommendation system -An Introduction**.
+\[s.l: s.n.\]. v. 91ERIKSSON, M. et al. **Spotify Teardown**. \[s.l.\]
+MIT Press, 2019. FALK, K. **Practical Recommender Systems**. \[s.l:
+s.n.\]. IFPI. **IFPI Global Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. LUINI, B.
-J. R.; WHITMAN, A. E.; DATE, P. **Streaming Audio: The FezGuys' Guide**.
+J. R.; WHITMAN, A. E.; DATE, P. **Streaming Audio: The FezGuys’ Guide**.
 \[s.l: s.n.\]. MURARO, R. M. **Os avanços tecnológicos e o futuro da
 humanidade**Querendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
-\[s.l.\] O'Reilly Media, 2018. v. 134RESNICK, PAUL AND VARIAN, H. R.
+\[s.l.\] O’Reilly Media, 2018. v. 134RESNICK, PAUL AND VARIAN, H. R.
 Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
-56--58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
+56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
 Handbook**. \[s.l: s.n.\]. UNIVERSIDADE FEDERAL DO CEARA. **A
 Magnetorresistência Gigante**. Disponível em:
 \<https://seara.ufc.br/tintim-por-tintim/tecnologia/a-magnetorresistencia-gigante/\>.
