@@ -100,5 +100,50 @@
 
 #### Pagina 1
 
+- [Sequence-Aware Recommender Systems](https://dl.acm.org/doi/abs/10.1145/3190616) (https://doi.org/10.1145/3190616)
 
+- [A Context-Aware User-Item Representation Learning for Item Recommendation](https://dl.acm.org/doi/abs/10.1145/3298988) (https://doi.org/10.1145/3298988)
 
+- [Sound and Music Recommendation with Knowledge Graphs](https://dl.acm.org/doi/abs/10.1145/2926718) (https://doi.org/10.1145/2926718)
+
+- [A Bayesian framework for learning rule sets for interpretable classification](https://dl.acm.org/doi/abs/10.5555/3122009.3176814) ()
+
+- [Parallel and Distributed Collaborative Filtering: A Survey](https://dl.acm.org/doi/abs/10.1145/2951952) (https://doi.org/10.1145/2951952)
+
+- [Introduction to Intelligent Music Systems and Applications](https://dl.acm.org/doi/abs/10.1145/2991468) (https://doi.org/10.1145/2991468)
+
+- [Quantitative Study of Music Listening Behavior in a Smartphone Context](https://dl.acm.org/doi/abs/10.1145/2738220) (https://doi.org/10.1145/2738220)
+
+- [Deep Learning Based Recommender System: A Survey and New Perspectives](https://dl.acm.org/doi/abs/10.1145/3285029) (https://doi.org/10.1145/3285029)
+
+- [Structural Analysis of User Choices for Mobile App Recommendation](https://dl.acm.org/doi/abs/10.1145/2983533) (https://doi.org/10.1145/2983533)
+
+- [Modeling Embedding Dimension Correlations via Convolutional Neural Collaborative Filtering](https://dl.acm.org/doi/abs/10.1145/3357154) (https://doi.org/10.1145/3357154)
+
+- [SPrank: Semantic Path-Based Ranking for Top-*N* Recommendations Using Linked Open Data](https://dl.acm.org/doi/abs/10.1145/2899005) (https://doi.org/10.1145/2899005)
+
+- [Top-N Recommendation with Multi-Channel Positive Feedback using Factorization Machines](https://dl.acm.org/doi/abs/10.1145/3291756) (https://doi.org/10.1145/3291756)
+
+- [Version-Aware Rating Prediction for Mobile App Recommendation](https://dl.acm.org/doi/abs/10.1145/3015458) (https://doi.org/10.1145/3015458)
+
+- [RecRules: Recommending IF-THEN Rules for End-User Development](https://dl.acm.org/doi/abs/10.1145/3344211) (https://doi.org/10.1145/3344211)
+
+- [Understanding the Role of Places and Activities on Mobile Phone Interaction and Usage Patterns](https://dl.acm.org/doi/abs/10.1145/3131901) (https://doi.org/10.1145/3131901)
+
+- [Collaborative Intent Prediction with Real-Time Contextual Data](https://dl.acm.org/doi/abs/10.1145/3041659) (https://doi.org/10.1145/3041659)
+
+- [LFTF: a framework for efficient tensor analytics at scale](https://dl.acm.org/doi/abs/10.14778/3067421.3067424) (https://doi.org/10.14778/3067421.3067424)
+
+- [Tensors for Data Mining and Data Fusion: Models, Applications, and Scalable Algorithms](https://dl.acm.org/doi/abs/10.1145/2915921) (https://doi.org/10.1145/2915921)
+
+- [Smartphone App Usage Prediction Using Points of Interest](https://dl.acm.org/doi/abs/10.1145/3161413) (https://doi.org/10.1145/3161413)
+
+- [Evaluation-as-a-Service for the Computational Sciences: Overview and Outlook](https://dl.acm.org/doi/abs/10.1145/3239570) (https://doi.org/10.1145/3239570)
+
+#### Page 2
+
+- [Beyond Interruptibility: Predicting Opportune Moments to Engage Mobile Phone Users](https://dl.acm.org/doi/abs/10.1145/3130956) (https://doi.org/10.1145/3130956)
+
+- [Recommender system for learning objects based in the fusion of social signals, interests, and preferences of learner users in ubiquitous e-learning systems](https://dl.acm.org/doi/abs/10.1007/s00779-018-01197-7) (https://doi.org/10.1007/s00779-018-01197-7)
+
+- [RuleSelector: Selecting Conditional Action Rules from User Behavior Patterns](https://dl.acm.org/doi/abs/10.1145/3191767) (https://doi.org/10.1145/3191767)
