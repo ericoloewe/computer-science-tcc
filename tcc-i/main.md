@@ -462,11 +462,11 @@ No dia 05/05/2020 foi realizado a pesquisa no motor de busca apresentado
 a partir da *string* de busca pré-definida anteriormente. As Figura 1, 2
 e 3 ilustram esse processo. Todos trouxeram resultados pertinentes ao
 trabalho logo na primeira página da aplicação. A quantidade de
-resultados apresentados na ACM foram 152 trabalhos relacionados a
+resultados apresentados na ACM foram 150 trabalhos relacionados a
 *string* de busca.
 
-![](./tcc-i/pandoc/media/image2.png){width="4.599244313210849in"
-height="2.3583333333333334in"}
+![](./tcc-i/pandoc/media/image2.png){width="5.259027777777778in"
+height="2.8in"}
 
 Figura Resultado de busca dos proceedings no motor de busca da ACM
 (próprio, 2020)
@@ -477,12 +477,12 @@ relacionado a área foi mantido somente os artigos publicados nos últimos
 5 anos. Visando trazer um conteúdo mais técnico para o trabalho, foi
 reduzido os tipos de publicações aceitas para *proceedings* e
 *journals*. Após aplicado esses filtros, a quantidade de trabalhos
-encontrados passou para 85. Então reduzindo a quantidade de trabalhos
+encontrados passou para 83. Então reduzindo a quantidade de trabalhos
 relacionados se fez possível a revisão de todos no tempo hábil
 disponível para desenvolver esse trabalho.
 
-![](./tcc-i/pandoc/media/image3.png){width="4.725in"
-height="2.4463549868766403in"}
+![](./tcc-i/pandoc/media/image3.png){width="5.158022747156606in"
+height="2.7583333333333333in"}
 
 Figura Resultado de busca dos journals no motor de busca da ACM
 (próprio, 2020)
@@ -496,9 +496,9 @@ Os trabalhos
 ------------
 
 Com a busca realizada no dia 05/05/20 no motor da ACM a partir da
-*string* de busca foram encontrados 85 trabalhos, sendo eles: 23 do tipo
+*string* de busca foram encontrados 83 trabalhos, sendo eles: 23 do tipo
 *jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
-e 62 do tipo *proceeding*.
+e 60 do tipo *proceeding*.
 
 ### Sequence-Aware Recommender Systems
 
