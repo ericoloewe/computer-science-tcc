@@ -221,7 +221,7 @@
 - [RuleSelector: Selecting Conditional Action Rules from User Behavior Patterns](https://dl.acm.org/doi/abs/10.1145/3191767) 
 
 
-## Trabalhos que serão mantidos pelo resumo
+## Trabalhos que serão mantidos pelo resumo (23 trabalhos)
 
 ### Proceedings
 
@@ -233,6 +233,25 @@
 - [Towards a theoretical approach for analysing music recommender systems as sociotechnical cultural intermediaries](https://dl.acm.org/doi/abs/10.1145/2908131.2908148) 🥓
 - [The New Challenges when Modeling Context through Diversity over Time in Recommender Systems](https://dl.acm.org/doi/abs/10.1145/2930238.2930370) 🍕
 - [Session details: Main Track - Prediction Methods and Recommender Systems](https://dl.acm.org/doi/abs/10.5555/2814058.3252429) 🥩
+- [Personalizing Session-based Recommendations with Hierarchical Recurrent Neural Networks](https://dl.acm.org/doi/abs/10.1145/3109859.3109896) 🍕
+- [Towards Accurate and Interpretable Sequential Prediction: A CNN & Attention-Based Feature Extractor](https://dl.acm.org/doi/abs/10.1145/3357384.3357887) 🍟
+- [Prediction of music pairwise preferences from facial expressions](https://dl.acm.org/doi/abs/10.1145/3301275.3302266) 🥩
+- [Song Recommendation System Using Collaborative Filtering Methods](https://dl.acm.org/doi/abs/10.1145/3369199.3369233) 🥩
+- [Towards Intent-Aware Contextual Music Recommendation: Initial Experiments](https://dl.acm.org/doi/abs/10.1145/3209978.3210154)  🥓
+- [WSDM Cup 2018: Music Recommendation and Churn Prediction](https://dl.acm.org/doi/abs/10.1145/3159652.3160605) 🥩
+- [Explainable Agents and Robots: Results from a Systematic Literature Review](https://dl.acm.org/doi/abs/10.5555/3306127.3331806) 🍕
+- [CSAN: Contextual Self-Attention Network for User Sequential Recommendation](https://dl.acm.org/doi/abs/10.1145/3240508.3240609) (https://doi.org/10.1145/3240508.3240609) 🍕
+
+### Journals
+
+- [A Context-Aware User-Item Representation Learning for Item Recommendation](https://dl.acm.org/doi/abs/10.1145/3298988) 🍕
+- [Sound and Music Recommendation with Knowledge Graphs](https://dl.acm.org/doi/abs/10.1145/2926718) 🥩
+- [A Bayesian framework for learning rule sets for interpretable classification](https://dl.acm.org/doi/abs/10.5555/3122009.3176814) 🍕
+- [Introduction to Intelligent Music Systems and Applications](https://dl.acm.org/doi/abs/10.1145/2991468) 🥩
+- [Quantitative Study of Music Listening Behavior in a Smartphone Context](https://dl.acm.org/doi/abs/10.1145/2738220) 🥓🥓
+- [Top-N Recommendation with Multi-Channel Positive Feedback using Factorization Machines](https://dl.acm.org/doi/abs/10.1145/3291756)  🍕
+- [Collaborative Intent Prediction with Real-Time Contextual Data](https://dl.acm.org/doi/abs/10.1145/3041659) 🍕
+
 
 ## Legenda
 
