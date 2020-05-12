@@ -30,7 +30,10 @@ export default function () {
   async function goBack() {
     const musicsToSave = Object.keys(selectedMusicsMap).map((k) => selectedMusicsMap[k]);
 
-    await addMusics(playlistId, musicsToSave);
+    if (musicsToSave.length > 0) {
+      await addMusics(playlistId, musicsToSave);
+    }
+
     history.goBack();
   }
 
@@ -63,7 +66,9 @@ export default function () {
   }, [selectedMusicsMap]);
 
   useEffect(() => {
-    debounce(searchText, searchMusicsOfTexts); // eslint-disable-next-line
+    if (!StringUtil.isEmpty(searchText)) {
+      debounce(searchText, searchMusicsOfTexts); // eslint-disable-next-line
+    }
   }, [searchText]);
 
   return (
