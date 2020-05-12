@@ -61,8 +61,14 @@ export default function () {
   }
 
   async function playMusic(item: ChooseItem) {
+    const music = getMusicById(item.id);
+
+    if (!music) {
+      throw new Error("Invalid music");
+    }
+
+    await play(music?.uri);
     setPlayingMusicId(item.id);
-    await play(item.id);
   }
 
   function getMusicById(id: string): Music | undefined {
