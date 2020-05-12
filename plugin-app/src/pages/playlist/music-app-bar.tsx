@@ -16,9 +16,6 @@ export function MusicAppBar({ music, onExpandClick }: Props) {
   return (
     <AppBar position="fixed" color="primary" className="music-app-bar">
       <Toolbar>
-        <IconButton edge="start" color="inherit" aria-label="like">
-          {!!music.liked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
-        </IconButton>
         <Typography variant="h6" className={"title"}>
           {music.name}
         </Typography>
