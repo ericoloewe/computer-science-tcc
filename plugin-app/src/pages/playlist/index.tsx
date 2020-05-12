@@ -76,7 +76,7 @@ export default function () {
   }
 
   return isMusicDetailsOpen && playingMusic ? (
-    <MusicDetails music={playingMusic} onExpandClick={() => setOpenMusicDetails(false)} />
+    <MusicDetails onExpandClick={() => setOpenMusicDetails(false)} />
   ) : (
     <Layout className="playlist-page" pageTitle={playlistTitle} menuItems={CustomMenu(() => setOpenRename(true))}>
       <Button
@@ -88,7 +88,7 @@ export default function () {
         Buscar musica
       </Button>
       <MusicsOfPlaylist musics={musicsOfPlaylist} onPlayMusic={playMusic} onFavoriteMusic={favoriteMusic} />
-      {!!playingMusic! && <MusicAppBar music={playingMusic!} onExpandClick={() => setOpenMusicDetails(true)} />}
+      {!!playingMusic! && <MusicAppBar onExpandClick={() => setOpenMusicDetails(true)} />}
       <RenameDialog
         isOpen={isRenameOpen}
         onClose={() => setOpenRename(false)}

@@ -2,22 +2,21 @@ import React from "react";
 import { AppBar, Toolbar, Typography, IconButton } from "@material-ui/core";
 import {
   ExpandLess as ExpandLessIcon,
-  Favorite as FavoriteIcon,
-  FavoriteBorder as FavoriteBorderIcon,
 } from "@material-ui/icons";
-import { Music } from "../../@types/music";
+import { useMusic } from "../../contexts/music";
 
 interface Props {
-  music: Music;
   onExpandClick: () => void;
 }
 
-export function MusicAppBar({ music, onExpandClick }: Props) {
+export function MusicAppBar({ onExpandClick }: Props) {
+  const { playingMusicInfo } = useMusic();
+
   return (
     <AppBar position="fixed" color="primary" className="music-app-bar">
       <Toolbar>
         <Typography variant="h6" className={"title"}>
-          {music.name}
+          {playingMusicInfo?.currentTrack.name}
         </Typography>
         <div style={{ flexGrow: 1 }} />
         <IconButton

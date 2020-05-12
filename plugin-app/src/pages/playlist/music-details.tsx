@@ -18,7 +18,7 @@ import {
   Fingerprint as FingerprintIcon,
   Favorite as FavoriteIcon,
 } from "@material-ui/icons";
-import { Music } from "../../@types/music";
+import { useMusic } from "../../contexts/music";
 
 const feelings = [
   { text: "Feliz", value: "feliz" },
@@ -26,25 +26,33 @@ const feelings = [
 ];
 
 interface Props {
-  music: Music;
   onExpandClick: () => void;
 }
 
-export function MusicDetails({ music, onExpandClick }: Props) {
+export function MusicDetails({ onExpandClick }: Props) {
+  const { playingMusicInfo } = useMusic();
+
   return (
     <section className="music-details-component">
       <IconButton className="expand-more" aria-label="expand" onClick={onExpandClick}>
         <ExpandMoreIcon />
       </IconButton>
       <div className="album">
-        <img className="image" src={music.album.image.src} alt={music.album.image.alt} />
+        <img
+          className="image"
+          src={playingMusicInfo?.currentTrack.album.image.src}
+          alt={playingMusicInfo?.currentTrack.album.image.alt}
+        />
       </div>
       <div className="title-and-description">
         <ListItem>
           <ListItemAvatar>
-            <Avatar src={music.image.src} alt={music.image.alt} />
+            <Avatar src={playingMusicInfo?.currentTrack.image.src} alt={playingMusicInfo?.currentTrack.image.alt} />
           </ListItemAvatar>
-          <ListItemText primary={music.name} secondary={music.album.name} />
+          <ListItemText
+            primary={playingMusicInfo?.currentTrack.name}
+            secondary={playingMusicInfo?.currentTrack.album.name}
+          />
         </ListItem>
       </div>
       <div className="slider">

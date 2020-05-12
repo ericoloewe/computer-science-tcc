@@ -1,8 +1,22 @@
 import { ImageMapper } from "./image";
 import { Music, Album } from "../@types/music";
-import { SpotifyTracksSearchItem } from "../@types/spotify";
+import { SpotifyTracksSearchItem, SpotifyImage } from "../@types/spotify";
 
 export class MusicMapper {
+  static toMusicTrack({ name, album, uri }: Spotify.Track): Music {
+    return {
+      id: uri,
+      image: ImageMapper.toCustom(name, album.images as SpotifyImage[]),
+      name,
+      album: {
+        id: album.uri,
+        name: album.name,
+        image: ImageMapper.toCustom(album.name, album.images as SpotifyImage[]),
+      },
+      uri,
+    };
+  }
+
   static toMusic({ id, name, album, uri }: SpotifyTracksSearchItem): Music {
     return {
       id,
