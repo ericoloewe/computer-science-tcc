@@ -16,7 +16,7 @@
 
   - Descrito a introdução do trabalho
 
-  - Realizado descrição dos tipos de sistemas de recomendação
+  - Elaborada a descrição dos tipos de sistemas de recomendação
 
   - Encontrado a necessidade de procurar por trabalhos relacionados
 
@@ -54,6 +54,8 @@
       - Técnicas utilizadas para avaliação dos resultados
     
       - Contextos utilizados na recomendação
+
+  - Elaborar perguntas para avaliar os trabalhos encontrados
 
   - Montar tabela de relação dos trabalhos encontrados
 
