@@ -14,6 +14,10 @@
 
   - Lidos artigos recomendados
 
+  - Descrito a introdução do trabalho
+
+  - Realizado descrição dos tipos de sistemas de recomendação
+
   - Encontrado a necessidade de procurar por trabalhos relacionados
 
   - Encontrado diversos trabalhos nessa pesquisa
@@ -29,6 +33,34 @@
 
   - Iniciado a revisão em cima dos trabalhos da ACM
 
-  - Levantado os trabalhos encontrados (85 trabalhos)
+  - Levantado os trabalhos encontrados (83 trabalhos)
+
+  - Realizado a leitura dos títulos e descartado os trabalhos não
+    pertinentes ao trabalho
+
+  - Realizado a leitura dos resumos e feito um novo descarte
 
 ## O que ainda precisa ser feito para o TCC I?
+
+  - Realizar a leitura da introdução e conclusão dos trabalhos e
+    selecionar os trabalhos pertinentes ao trabalho
+
+  - Descrever sobre os trabalhos encontrados no TCC I
+    
+      - Objetivo de pesquisa / Estudos realizados
+    
+      - Algoritmos utilizados para recomendação
+    
+      - Técnicas utilizadas para avaliação dos resultados
+    
+      - Contextos utilizados na recomendação
+
+  - Montar tabela de relação dos trabalhos encontrados
+
+  - Elaborar perguntas não respondidas pelos trabalhos encontrados
+
+  - Descrever modelagem do que será feito no TCC II
+    
+      - Definir o que é contexto e como será obtido
+    
+      - Descrever sobre a arquitetura do sistema
