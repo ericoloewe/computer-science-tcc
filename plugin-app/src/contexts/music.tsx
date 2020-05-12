@@ -13,7 +13,7 @@ interface Context {
   toggleFavorite: (musicId: string) => Promise<void>;
 }
 
-interface PlayingMusicInfo {
+export interface PlayingMusicInfo {
   position: number;
   duration: number;
   currentTrack: Music;

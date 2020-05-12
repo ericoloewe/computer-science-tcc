@@ -1,6 +1,6 @@
 import "./style.scss";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   IconButton,
   ListItem,
@@ -18,7 +18,7 @@ import {
   Fingerprint as FingerprintIcon,
   Favorite as FavoriteIcon,
 } from "@material-ui/icons";
-import { useMusic } from "../../contexts/music";
+import { useMusic, PlayingMusicInfo } from "../../contexts/music";
 
 const feelings = [
   { text: "Feliz", value: "feliz" },
@@ -55,9 +55,7 @@ export function MusicDetails({ onExpandClick }: Props) {
           />
         </ListItem>
       </div>
-      <div className="slider">
-        <Slider defaultValue={30} aria-labelledby="slider" valueLabelDisplay="auto" />
-      </div>
+      {playingMusicInfo && <MusicSlider {...playingMusicInfo} />}
       <div className="feelings">
         <FormControl className="make-me-feel">
           <InputLabel htmlFor="age-native-simple">Essa musica faz me sentir</InputLabel>
@@ -105,5 +103,27 @@ export function MusicDetails({ onExpandClick }: Props) {
         </FormControl>
       </div>
     </section>
+  );
+}
+
+let timer: NodeJS.Timeout;
+
+function MusicSlider({ position, duration }: PlayingMusicInfo) {
+  const [realPosition, setRealPosition] = useState(0);
+
+  clearTimeout(timer);
+
+  timer = setTimeout(() => {
+    setRealPosition(realPosition + 1);
+  }, 1000);
+
+  useEffect(() => {
+    setRealPosition(position / 1000);
+  }, [position]);
+
+  return (
+    <div className="slider">
+      <Slider value={realPosition} max={duration / 1000} aria-labelledby="slider" valueLabelDisplay="auto" />
+    </div>
   );
 }

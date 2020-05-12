@@ -67,8 +67,8 @@ export default function () {
 
   useEffect(() => {
     if (!StringUtil.isEmpty(searchText)) {
-      debounce(searchText, searchMusicsOfTexts); // eslint-disable-next-line
-    }
+      debounce(searchText, searchMusicsOfTexts);
+    } // eslint-disable-next-line
   }, [searchText]);
 
   return (
