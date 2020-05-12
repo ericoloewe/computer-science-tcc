@@ -17,6 +17,7 @@ export interface PlayingMusicInfo {
   position: number;
   duration: number;
   currentTrack: Music;
+  paused: boolean;
 }
 
 const MusicContext = createContext<Context>({} as any);
@@ -38,10 +39,11 @@ export function MusicProvider(props: Props) {
         const {
           position,
           duration,
+          paused,
           track_window: { current_track },
         } = state;
 
-        setPlayingMusicInfo({ currentTrack: MusicMapper.toMusicTrack(current_track), duration, position });
+        setPlayingMusicInfo({ currentTrack: MusicMapper.toMusicTrack(current_track), duration, position, paused });
       });
     } // eslint-disable-next-line
   }, [player]);

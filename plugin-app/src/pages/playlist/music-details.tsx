@@ -108,14 +108,16 @@ export function MusicDetails({ onExpandClick }: Props) {
 
 let timer: NodeJS.Timeout;
 
-function MusicSlider({ position, duration }: PlayingMusicInfo) {
+function MusicSlider({ position, paused, duration }: PlayingMusicInfo) {
   const [realPosition, setRealPosition] = useState(0);
 
-  clearTimeout(timer);
+  if (!paused) {
+    clearTimeout(timer);
 
-  timer = setTimeout(() => {
-    setRealPosition(realPosition + 1);
-  }, 1000);
+    timer = setTimeout(() => {
+      setRealPosition(realPosition + 1);
+    }, 1000);
+  }
 
   useEffect(() => {
     setRealPosition(position / 1000);
