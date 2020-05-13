@@ -243,17 +243,37 @@ Será realizado uma analise em suas introduções e conclusões e manter as publ
   - Não existe muito estudo sobre recomendação de multimidia
   - Tentam resolver esse problema (grandes desafios)
   - Não tem muita relação com contexto tbm
-- [Context-aware Preference Modeling with Factorization](https://dl.acm.org/doi/abs/10.1145/2792838.2796543) 🍟
+- [Context-aware Preference Modeling with Factorization](https://dl.acm.org/doi/abs/10.1145/2792838.2796543) 🍟🎈
   - O trabalho na pratica (não teoria)
   - Focou no feedback e predição das classificações
   - Parece trazer um ótimo entendimento de contexto e seus algoritmos
   - Foca nos métodos de fatoração para obter um feedback implícito
   - GENERICO
-- [Adversarial tensor factorization for context-aware recommendation](https://dl.acm.org/doi/abs/10.1145/3298689.3346987) 🍕
-- [Metalearning for Context-aware Filtering: Selection of Tensor Factorization Algorithms](https://dl.acm.org/doi/abs/10.1145/3109859.3109899) 🍕
-- [Convolutional Matrix Factorization for Document Context-Aware Recommendation](https://dl.acm.org/doi/abs/10.1145/2959100.2959165) 🍕
+- [Adversarial tensor factorization for context-aware recommendation](https://dl.acm.org/doi/abs/10.1145/3298689.3346987) 🍕🎈🎆
+  - tradicionalmente contexto se baseia nas interações dos usuários
+  - usam do tensor
+  - aprendem atraves do user-item-context ao invés da tradicional matriz user-item 
+  - **Factorization machines have recently become one of the pre-ferred latent factor models for context-aware recommendations**
+  - Falam sobre trabalhos relacionados
+  - Não incluem localização, tempo e redes sociais no contexto 
+  - GENERICO
+- [Metalearning for Context-aware Filtering: Selection of Tensor Factorization Algorithms](https://dl.acm.org/doi/abs/10.1145/3109859.3109899) 🍕🎈🎆
+  - Um dos desafios do recsys hoje é escolher o melhor algoritmo para recsys de contexto
+  - Usam do Metalearning (MtL) 
+  - Apresenta o primeira abordagem conhecida sobre algoritmos de fatoração tensor
+  - GENERICO: 🌭
+- [Convolutional Matrix Factorization for Document Context-Aware Recommendation](https://dl.acm.org/doi/abs/10.1145/2959100.2959165) 🍕 🌭🌭
+  - Natural language processing (NLP)
+  - aplicaram contexto para melhorar os algoritmos de NLP
 - [Towards a theoretical approach for analysing music recommender systems as sociotechnical cultural intermediaries](https://dl.acm.org/doi/abs/10.1145/2908131.2908148) 🥓
-- [The New Challenges when Modeling Context through Diversity over Time in Recommender Systems](https://dl.acm.org/doi/abs/10.1145/2930238.2930370) 🍕
+  - Artigo bem enrolado (não é muito técnico)
+    - Meio filosofico "RecSys impacts  upon  the role of music in everyday life"
+    - Colocou big data nas keywords :roll_eyes:
+  - Busca entender o gosto e cultura do usuario
+  - Parece não ter muita relação com a recomendação usando context-aware
+- [The New Challenges when Modeling Context through Diversity over Time in Recommender Systems](https://dl.acm.org/doi/abs/10.1145/2930238.2930370) 🍕 
+  - focam em dois fatores humanos: contexto e diversidade
+  - não deixam explicito, mas realizaram os testes em cima de um dataset musical
 - [Session details: Main Track - Prediction Methods and Recommender Systems](https://dl.acm.org/doi/abs/10.5555/2814058.3252429) 🥩
 - [Personalizing Session-based Recommendations with Hierarchical Recurrent Neural Networks](https://dl.acm.org/doi/abs/10.1145/3109859.3109896) 🍕
 - [Towards Accurate and Interpretable Sequential Prediction: A CNN & Attention-Based Feature Extractor](https://dl.acm.org/doi/abs/10.1145/3357384.3357887) 🍟
@@ -274,9 +294,9 @@ Será realizado uma analise em suas introduções e conclusões e manter as publ
 - [Top-N Recommendation with Multi-Channel Positive Feedback using Factorization Machines](https://dl.acm.org/doi/abs/10.1145/3291756)  🍕
 - [Collaborative Intent Prediction with Real-Time Contextual Data](https://dl.acm.org/doi/abs/10.1145/3041659) 🍕
 
-### Trabalhos que serão mantidos pela introdução e conclusão
+## Trabalhos que serão mantidos pela introdução e conclusão
 
-- 
+- [The New Challenges when Modeling Context through Diversity over Time in Recommender Systems](https://dl.acm.org/doi/abs/10.1145/2930238.2930370) 🍕 
 
 ## Legenda
 
@@ -291,6 +311,18 @@ Será realizado uma analise em suas introduções e conclusões e manter as publ
 🌭 = interessante, mas não tem relação com o trabalho
 
 🍔 = talvez fale, mas não esta claro no titulo
+
+----------------------------------
+
+🎈 = usam do método de fatoração
+
+🎆 = usam do método de fatoração tensor
+
+--------------------
+
+CARS = context-aware recommender system
+
+RS = RecSys = recommender system
 
 ## Questões
 
