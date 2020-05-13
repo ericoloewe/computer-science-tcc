@@ -2,6 +2,10 @@
 
 ## Lista de trabalhos
 
+Foi realizado uma busca em cima da string de busca e listado os trabalhos encontrados nela.
+
+Será realizado uma analise em seus títulos e manter os pertinentes ao trabalho.
+
 ### Proceedings
 
 [Link](https://dl.acm.org/action/doSearch?fillQuickSearch=false&expand=dl&AllField=AllField%3A%28%28%E2%80%9CRecSys%E2%80%9D+OR+%E2%80%9Crecommender+systems%E2%80%9D%29+AND+%28%E2%80%9Cmachine+learning%E2%80%9D%29+AND+%28%E2%80%9Cmusic%E2%80%9D+OR+%E2%80%9Cmusical%E2%80%9D%29+AND+%28%E2%80%9Cbehavioral+context%E2%80%9D+OR+%E2%80%9Cenvironmental+context%E2%80%9D+OR+%E2%80%9Ccontext-aware%E2%80%9D%29%29&Ppub=%5B20150507+TO+20200507%5D&startPage=0&ConceptID=118222&pageSize=20)
@@ -152,6 +156,10 @@
 
 ## Trabalhos que serão mantidos pelo titulo (44 trabalhos)
 
+Foi realizado uma analise em cima dos trabalhos selecionados pelos títulos.
+
+Será realizado uma analise em seus resumos e manter os pertinentes ao trabalho.
+
 ### Proceedings
 
 - [Multimedia recommender systems](https://dl.acm.org/doi/abs/10.1145/3240323.3241620) 
@@ -223,10 +231,24 @@
 
 ## Trabalhos que serão mantidos pelo resumo (23 trabalhos)
 
+Foi realizado uma analise em cima dos trabalhos selecionados pelos resumo.
+
+Será realizado uma analise em suas introduções e conclusões e manter as publicações pertinentes ao trabalho.
+
 ### Proceedings
 
 - [Multimedia recommender systems](https://dl.acm.org/doi/abs/10.1145/3240323.3241620) 🍟
+  - GENERICO: Buscam melhorar a recomendação de musicas, fotos e videos
+  - Utilizam o filtro baseado em conteudo e colaborativo
+  - Não existe muito estudo sobre recomendação de multimidia
+  - Tentam resolver esse problema (grandes desafios)
+  - Não tem muita relação com contexto tbm
 - [Context-aware Preference Modeling with Factorization](https://dl.acm.org/doi/abs/10.1145/2792838.2796543) 🍟
+  - O trabalho na pratica (não teoria)
+  - Focou no feedback e predição das classificações
+  - Parece trazer um ótimo entendimento de contexto e seus algoritmos
+  - Foca nos métodos de fatoração para obter um feedback implícito
+  - GENERICO
 - [Adversarial tensor factorization for context-aware recommendation](https://dl.acm.org/doi/abs/10.1145/3298689.3346987) 🍕
 - [Metalearning for Context-aware Filtering: Selection of Tensor Factorization Algorithms](https://dl.acm.org/doi/abs/10.1145/3109859.3109899) 🍕
 - [Convolutional Matrix Factorization for Document Context-Aware Recommendation](https://dl.acm.org/doi/abs/10.1145/2959100.2959165) 🍕
@@ -252,6 +274,9 @@
 - [Top-N Recommendation with Multi-Channel Positive Feedback using Factorization Machines](https://dl.acm.org/doi/abs/10.1145/3291756)  🍕
 - [Collaborative Intent Prediction with Real-Time Contextual Data](https://dl.acm.org/doi/abs/10.1145/3041659) 🍕
 
+### Trabalhos que serão mantidos pela introdução e conclusão
+
+- 
 
 ## Legenda
 
@@ -266,3 +291,6 @@
 🌭 = interessante, mas não tem relação com o trabalho
 
 🍔 = talvez fale, mas não esta claro no titulo
+
+## Questões
+
