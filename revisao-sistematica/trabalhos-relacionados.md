@@ -274,11 +274,21 @@ Será realizado uma analise em suas introduções e conclusões e manter as publ
 - [The New Challenges when Modeling Context through Diversity over Time in Recommender Systems](https://dl.acm.org/doi/abs/10.1145/2930238.2930370) 🍕 
   - focam em dois fatores humanos: contexto e diversidade
   - não deixam explicito, mas realizaram os testes em cima de um dataset musical
-- [Session details: Main Track - Prediction Methods and Recommender Systems](https://dl.acm.org/doi/abs/10.5555/2814058.3252429) 🥩
-- [Personalizing Session-based Recommendations with Hierarchical Recurrent Neural Networks](https://dl.acm.org/doi/abs/10.1145/3109859.3109896) 🍕
+- [Session details: Main Track - Prediction Methods and Recommender Systems](https://dl.acm.org/doi/abs/10.5555/2814058.3252429) 🥩💥
+- [Personalizing Session-based Recommendations with Hierarchical Recurrent Neural Networks](https://dl.acm.org/doi/abs/10.1145/3109859.3109896) 🍕🎇
+  - Usaram Recurrent Neural Networks (RNN) para fazer a recomendação em cima da sessão
+  - Recomendação baseada na sessão
+  - Não testaram na area musical (trabalhos futuros)
 - [Towards Accurate and Interpretable Sequential Prediction: A CNN & Attention-Based Feature Extractor](https://dl.acm.org/doi/abs/10.1145/3357384.3357887) 🍟
+  - Usam do "Attention mechanism" e Covolutional neural network (CNN)
+  - Fala sobre a recomendação a partir dos dados sequenciais
+  - o que é muito interessante para **prever o proximo item a ser recomendado**
+  - Falou sobre um outro artigo que utiliza context-aware recomendation
+  - GENERICO
 - [Prediction of music pairwise preferences from facial expressions](https://dl.acm.org/doi/abs/10.1145/3301275.3302266) 🥩
-- [Song Recommendation System Using Collaborative Filtering Methods](https://dl.acm.org/doi/abs/10.1145/3369199.3369233) 🥩
+  - Tentam auxiliar na recomendação a partir das expressões faciais
+  - Utilizam do contexto mas a partir de expressões faciais
+- [Song Recommendation Syste m Using Collaborative Filtering Methods](https://dl.acm.org/doi/abs/10.1145/3369199.3369233) 🥩
 - [Towards Intent-Aware Contextual Music Recommendation: Initial Experiments](https://dl.acm.org/doi/abs/10.1145/3209978.3210154)  🥓
 - [WSDM Cup 2018: Music Recommendation and Churn Prediction](https://dl.acm.org/doi/abs/10.1145/3159652.3160605) 🥩
 - [Explainable Agents and Robots: Results from a Systematic Literature Review](https://dl.acm.org/doi/abs/10.5555/3306127.3331806) 🍕
@@ -297,6 +307,7 @@ Será realizado uma analise em suas introduções e conclusões e manter as publ
 ## Trabalhos que serão mantidos pela introdução e conclusão
 
 - [The New Challenges when Modeling Context through Diversity over Time in Recommender Systems](https://dl.acm.org/doi/abs/10.1145/2930238.2930370) 🍕 
+- [Prediction of music pairwise preferences from facial expressions](https://dl.acm.org/doi/abs/10.1145/3301275.3302266) 🥩
 
 ## Legenda
 
@@ -318,7 +329,13 @@ Será realizado uma analise em suas introduções e conclusões e manter as publ
 
 🎆 = usam do método de fatoração tensor
 
+🎇 = usam do método RNN (Recurrent Neural Networks)
+
 --------------------
+
+💥 = não consegui abrir
+
+-------------------------------------------------
 
 CARS = context-aware recommender system
 
