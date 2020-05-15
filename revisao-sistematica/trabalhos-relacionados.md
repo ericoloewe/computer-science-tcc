@@ -289,15 +289,33 @@ Será realizado uma analise em suas introduções e conclusões e manter as publ
   - Tentam auxiliar na recomendação a partir das expressões faciais
   - Utilizam do contexto mas a partir de expressões faciais
 - [Song Recommendation Syste m Using Collaborative Filtering Methods](https://dl.acm.org/doi/abs/10.1145/3369199.3369233) 🥩
+  - focam na filtragem colaborativa
+  - Não utiliza context-aware
 - [Towards Intent-Aware Contextual Music Recommendation: Initial Experiments](https://dl.acm.org/doi/abs/10.1145/3209978.3210154)  🥓
+  - Fala sobre context-aware e musica
+  - Buscam melhorar as recomendações musicais através das **intenções** do usuário
+  - conseguem recomendar boas musicas aos usuarios
+  - comentam que tem lacunas que não foram tratadas
 - [WSDM Cup 2018: Music Recommendation and Churn Prediction](https://dl.acm.org/doi/abs/10.1145/3159652.3160605) 🥩
-- [Explainable Agents and Robots: Results from a Systematic Literature Review](https://dl.acm.org/doi/abs/10.5555/3306127.3331806) 🍕
+  - Comenta sobre context-aware, mas somente informações do sitema (sem localização, emoção,etc)
+  - buscam entender quando o usuário ira desistir da musica
+- [Explainable Agents and Robots: Results from a Systematic Literature Review](https://dl.acm.org/doi/abs/10.5555/3306127.3331806) 🍕 
+  - fala sobre agentes e robôs na IA
 - [CSAN: Contextual Self-Attention Network for User Sequential Recommendation](https://dl.acm.org/doi/abs/10.1145/3240508.3240609) (https://doi.org/10.1145/3240508.3240609) 🍕
+  - busca modelar o comportamento dos usuários
+  - buscam entender o **comportamento sequencial** do usuário
+  - para ai gerar as recomendações
+  - GENERICO
 
 ### Journals
 
 - [A Context-Aware User-Item Representation Learning for Item Recommendation](https://dl.acm.org/doi/abs/10.1145/3298988) 🍕
-- [Sound and Music Recommendation with Knowledge Graphs](https://dl.acm.org/doi/abs/10.1145/2926718) 🥩
+  - filtragem colaborativa (matriz fatoração)
+  - **c**ontext-**a**ware user-item **r**epresentation **l**earning model for rating prediction, by integrating information from both textual reviews and rating scores
+  - GENERICO
+- [Sound and Music Recommendation with Knowledge Graphs](https://dl.acm.org/doi/abs/10.1145/2926718) 🥩 
+  - Falam somente sobre sistema de recomendação musical
+  - Não falam sobre contexto
 - [A Bayesian framework for learning rule sets for interpretable classification](https://dl.acm.org/doi/abs/10.5555/3122009.3176814) 🍕
 - [Introduction to Intelligent Music Systems and Applications](https://dl.acm.org/doi/abs/10.1145/2991468) 🥩
 - [Quantitative Study of Music Listening Behavior in a Smartphone Context](https://dl.acm.org/doi/abs/10.1145/2738220) 🥓🥓
@@ -308,6 +326,7 @@ Será realizado uma analise em suas introduções e conclusões e manter as publ
 
 - [The New Challenges when Modeling Context through Diversity over Time in Recommender Systems](https://dl.acm.org/doi/abs/10.1145/2930238.2930370) 🍕 
 - [Prediction of music pairwise preferences from facial expressions](https://dl.acm.org/doi/abs/10.1145/3301275.3302266) 🥩
+- [Towards Intent-Aware Contextual Music Recommendation: Initial Experiments](https://dl.acm.org/doi/abs/10.1145/3209978.3210154)  🥓
 
 ## Legenda
 
