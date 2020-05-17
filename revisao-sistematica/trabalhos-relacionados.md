@@ -316,17 +316,40 @@ Será realizado uma analise em suas introduções e conclusões e manter as publ
 - [Sound and Music Recommendation with Knowledge Graphs](https://dl.acm.org/doi/abs/10.1145/2926718) 🥩 
   - Falam somente sobre sistema de recomendação musical
   - Não falam sobre contexto
-- [A Bayesian framework for learning rule sets for interpretable classification](https://dl.acm.org/doi/abs/10.5555/3122009.3176814) 🍕
-- [Introduction to Intelligent Music Systems and Applications](https://dl.acm.org/doi/abs/10.1145/2991468) 🥩
-- [Quantitative Study of Music Listening Behavior in a Smartphone Context](https://dl.acm.org/doi/abs/10.1145/2738220) 🥓🥓
-- [Top-N Recommendation with Multi-Channel Positive Feedback using Factorization Machines](https://dl.acm.org/doi/abs/10.1145/3291756)  🍕
-- [Collaborative Intent Prediction with Real-Time Contextual Data](https://dl.acm.org/doi/abs/10.1145/3041659) 🍕
+- [A Bayesian framework for learning rule sets for interpretable classification](https://dl.acm.org/doi/abs/10.5555/3122009.3176814) 🍕 
+  - Buscam entender a resposta do usuário a propagandas personalizadas baseadas em suas características e contexto
+  - "os usuarios geralmente gostam de saber pq a recomendação foi feita"
+  - Utilizam uma rede bayesiana para classificadores de regras aprendidas
+  - Estudaram sistemas de recomendação em veiculos mobile
+  - A ideia do estudo é recomendar cupons, baseados no contexto do usuario
+- [Introduction to Intelligent Music Systems and Applications](https://dl.acm.org/doi/abs/10.1145/2991468) 🥩 
+  - buscam entender o que é inteligencia e como aplicar em sistemas (filosofico)
+  - buscam entender o quão inteligente os sistemas musicais são
+  - Não utilizam contexto
+- [Quantitative Study of Music Listening Behavior in a Smartphone Context](https://dl.acm.org/doi/abs/10.1145/2738220) 🥓🥓 
+  - Pedem para os usuários anotarem suas atividades na medida que estão ouvindo as musicas
+  - Apos, eles salvam o historico de musicas tocadas e as infos dos sensores do smartphone
+  - Tentam responder as seguintes perguntas:
+    - quão bem podemos predizer as musicas que o usuário gosta de ouvir em cada contexto?
+    - quão bem podemos predizer as atividades de um usuario atraves dos dados coletados do sensor?
+    - O quanto certos fatores (demographics, musical background, long-term musical preference, and personality traits) estão relacionados com a previsibilidade do uso da música e a atividade do usuario para diferentes usuarios?
+  - Buscam trazer insights que irão ajudar os RecSys musicais com contexto
+  - *Os participantes não tem um comportamento natural por "estarem sendo vigiados"*
+  - usam apenas 48 participantes
+- [Top-N Recommendation with Multi-Channel Positive Feedback using Factorization Machines](https://dl.acm.org/doi/abs/10.1145/3291756)  🍕 🎈
+  - Factorization Machines representão o estado da arte da recomendação via context-aware
+  - Ajuda a compreender a exploração de feedback via multicanal
+  - GENERICO
+- [Collaborative Intent Prediction with Real-Time Contextual Data](https://dl.acm.org/doi/abs/10.1145/3041659) 🍕 
+  - monitoram as intenções através do contexto
+  - especifico para assistentes virtuais
 
 ## Trabalhos que serão mantidos pela introdução e conclusão
 
 - [The New Challenges when Modeling Context through Diversity over Time in Recommender Systems](https://dl.acm.org/doi/abs/10.1145/2930238.2930370) 🍕 
 - [Prediction of music pairwise preferences from facial expressions](https://dl.acm.org/doi/abs/10.1145/3301275.3302266) 🥩
 - [Towards Intent-Aware Contextual Music Recommendation: Initial Experiments](https://dl.acm.org/doi/abs/10.1145/3209978.3210154)  🥓
+- [Quantitative Study of Music Listening Behavior in a Smartphone Context](https://dl.acm.org/doi/abs/10.1145/2738220) 🥓🥓 
 
 ## Legenda
 
