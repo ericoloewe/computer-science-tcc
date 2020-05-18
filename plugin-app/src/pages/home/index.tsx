@@ -2,21 +2,21 @@ import "./style.scss";
 
 import React, { useState, useEffect } from "react";
 import { Fab, MenuItem } from "@material-ui/core";
-import { Favorite as FavoriteIcon, Add as AddIcon, FavoriteBorder as FavoriteBorderIcon } from "@material-ui/icons";
+import { Add as AddIcon } from "@material-ui/icons";
 import { Link, useHistory } from "react-router-dom";
 
-import { ChooseWithActions, ChooseItem } from "../../components/choose-with-actions";
+import { ChooseItem } from "../../components/choose-with-actions";
 import { Layout } from "../shared/layout";
 import { usePlaylist } from "../../contexts/playlist";
-
-function PlaylistLink({ item, children }: { item: ChooseItem; children: any }) {
-  return <Link to={`/playlist/${item.id}/feeling`}>{children}</Link>;
-}
+import { MusicDetails } from "./music-details";
+import { MusicAppBar } from "./music-app-bar";
+import { MusicList } from "./music-list";
 
 export default function () {
   const { loadAll } = usePlaylist();
   const history = useHistory();
-  const [playlists, setPlaylists] = useState([] as ChooseItem[]);
+  const [, setPlaylists] = useState([] as ChooseItem[]);
+  const [isMusicDetailsOpen, setOpenMusicDetails] = useState(true);
 
   async function fetchData() {
     const playlists = await loadAll();
@@ -33,18 +33,15 @@ export default function () {
   }, []);
 
   return (
-    <Layout className="home-page" pageTitle="Playlists" menuItems={CustomMenu(fetchData, logout)}>
-      <ChooseWithActions
-        items={playlists}
-        actionIcon={<FavoriteBorderIcon />}
-        selectedActionIcon={<FavoriteIcon />}
-        linkComponent={PlaylistLink}
-      />
-      <Link to="/playlist/new">
-        <Fab className="new-playlist-button" color="primary" aria-label="add">
-          <AddIcon />
-        </Fab>
-      </Link>
+    <Layout className="home-page" pageTitle="Reprodução de musicas" menuItems={CustomMenu(fetchData, logout)}>
+      {isMusicDetailsOpen ? (
+        <MusicDetails onExpandClick={() => setOpenMusicDetails(false)} />
+      ) : (
+        <>
+          <MusicList musics={[]} onPlayMusic={() => {}} />
+          <MusicAppBar onExpandClick={() => setOpenMusicDetails(true)} />
+        </>
+      )}
     </Layout>
   );
 }

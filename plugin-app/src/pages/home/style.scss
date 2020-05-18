@@ -8,3 +8,67 @@
     bottom: 16px;
   }
 }
+
+.music-app-bar {
+  bottom: 0;
+
+  .new-button {
+    left: 50%;
+    position: absolute;
+    top: -50%;
+    transform: translateX(-50%);
+  }
+
+  .home-page > & {
+    top: auto;
+  }
+}
+
+.music-details-component {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+
+  > .expand-more {
+    align-self: flex-start;
+  }
+
+  > .feelings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    > .like-to-listen {
+      margin-top: 20px;
+    }
+  }
+
+  > .album {
+    align-items: center;
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+
+    > .image {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+
+  > .title-and-description,
+  > .slider,
+  > .feelings {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.choose-with-actions-component {
+  > .paper {
+    margin-top: 10px;
+    max-height: 70vh;
+  }
+}
