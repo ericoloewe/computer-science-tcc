@@ -17,6 +17,7 @@ export class SpotifyUtil {
     "streaming",
     "user-library-read",
     "user-read-email",
+    "user-read-playback-state",
     "user-read-private",
     "user-top-read",
   ];

@@ -11,14 +11,17 @@ import { usePlaylist } from "../../contexts/playlist";
 import { MusicDetails } from "./music-details";
 import { MusicAppBar } from "./music-app-bar";
 import { MusicList } from "./music-list";
+import { useUser } from "../../contexts/user";
 
 export default function () {
+  const { getAvailableDevices } = useUser();
   const { loadAll } = usePlaylist();
   const history = useHistory();
   const [, setPlaylists] = useState([] as ChooseItem[]);
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(true);
 
   async function fetchData() {
+    await getAvailableDevices();
     const playlists = await loadAll();
 
     setPlaylists(playlists);

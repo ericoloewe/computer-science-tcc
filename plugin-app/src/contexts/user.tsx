@@ -14,6 +14,11 @@ export interface User {
   link: string;
 }
 
+interface Context {
+  getAvailableDevices: () => Promise<void>;
+  profile: User;
+}
+
 const UserContext = createContext({} as any);
 const spotifyUserEndpoint = `${SpotifyUtil.getApiUrl()}/me`;
 
@@ -35,6 +40,13 @@ export function UserProvider(props: Props) {
     setProfile({ id, email, name, link, avatarSrc });
   }
 
+  async function getAvailableDevices(): Promise<void> {
+    const endpoint = `${spotifyUserEndpoint}/player/devices`;
+    const { data } = await requestService.get<any>(endpoint);
+
+    console.log(data);
+  }
+
   useEffect(() => {
     if (isAuthenticated) {
       load();
@@ -43,7 +55,7 @@ export function UserProvider(props: Props) {
     } // eslint-disable-next-line
   }, [isAuthenticated]);
 
-  return <UserContext.Provider value={profile} {...props} />;
+  return <UserContext.Provider value={{ getAvailableDevices, profile }} {...props} />;
 }
 
-export const useUser = () => useContext<User>(UserContext);
+export const useUser = () => useContext<Context>(UserContext);
