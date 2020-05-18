@@ -1,7 +1,7 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, IconButton, Fab } from "@material-ui/core";
 import { ExpandLess as ExpandLessIcon, Add as AddIcon } from "@material-ui/icons";
-import { useMusic } from "../../contexts/music";
+import { usePlayer } from "../../contexts/player";
 import { Link } from "react-router-dom";
 import { StringUtil } from "../../utils/string";
 
@@ -10,7 +10,7 @@ interface Props {
 }
 
 export function MusicAppBar({ onExpandClick }: Props) {
-  const { playingMusicInfo } = useMusic();
+  const { playingMusicInfo } = usePlayer();
 
   return (
     <AppBar position="fixed" color="primary" className="music-app-bar">

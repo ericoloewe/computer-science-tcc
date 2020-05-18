@@ -10,7 +10,7 @@ interface Props {}
 interface Context {
   play: (musicId: string) => Promise<void>;
   playingMusicInfo?: PlayingMusicInfo;
-  toggleFavorite: (musicId: string) => Promise<void>;
+  transferUserPlaybackToPlugin: () => Promise<void>;
 }
 
 export interface PlayingMusicInfo {
@@ -21,8 +21,9 @@ export interface PlayingMusicInfo {
 }
 
 const MusicContext = createContext<Context>({} as any);
+const spotifyUserEndpoint = `${SpotifyUtil.getApiUrl()}/me`;
 
-export function MusicProvider(props: Props) {
+export function PlayerProvider(props: Props) {
   const { accessToken, isAuthenticated, requestService } = useAuth();
   const [player, setPlayer] = useState<SpotifyPlayer | null>(null);
   const [playingMusicInfo, setPlayingMusicInfo] = useState<PlayingMusicInfo | undefined>();
@@ -43,6 +44,8 @@ export function MusicProvider(props: Props) {
           track_window: { current_track },
         } = state;
 
+        console.log("state", state);
+
         setPlayingMusicInfo({ currentTrack: MusicMapper.toMusicTrack(current_track), duration, position, paused });
       });
     } // eslint-disable-next-line
@@ -51,6 +54,7 @@ export function MusicProvider(props: Props) {
   async function createSpotifyPlayerIfNeed() {
     const player = await SpotifyUtil.createPlayer(accessToken);
 
+    console.log("player", player);
     setPlayer(player);
   }
 
@@ -69,11 +73,18 @@ export function MusicProvider(props: Props) {
     });
   }
 
-  async function toggleFavorite(musicId: string): Promise<void> {
-    console.log("playing ", musicId);
+  async function transferUserPlaybackToPlugin(): Promise<void> {
+    const endpoint1 = `${spotifyUserEndpoint}/player`;
+
+    const { data: data2 } = await requestService.put<any>({
+      url: endpoint1,
+      data: {
+        device_ids: [player?.device_id],
+      },
+    });
   }
 
-  return <MusicContext.Provider value={{ playingMusicInfo, play, toggleFavorite }} {...props} />;
+  return <MusicContext.Provider value={{ playingMusicInfo, play, transferUserPlaybackToPlugin }} {...props} />;
 }
 
-export const useMusic = () => useContext<Context>(MusicContext);
+export const usePlayer = () => useContext<Context>(MusicContext);

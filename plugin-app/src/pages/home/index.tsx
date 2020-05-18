@@ -12,19 +12,19 @@ import { MusicDetails } from "./music-details";
 import { MusicAppBar } from "./music-app-bar";
 import { MusicList } from "./music-list";
 import { useUser } from "../../contexts/user";
+import { SpotifyDevice } from "../../@types/spotify";
 
 export default function () {
   const { getAvailableDevices } = useUser();
   const { loadAll } = usePlaylist();
   const history = useHistory();
-  const [, setPlaylists] = useState([] as ChooseItem[]);
+  const [devices, setDevices] = useState<SpotifyDevice[]>([]);
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(true);
 
   async function fetchData() {
-    await getAvailableDevices();
-    const playlists = await loadAll();
+    const devices = await getAvailableDevices();
 
-    setPlaylists(playlists);
+    setDevices(devices);
   }
 
   async function logout() {

@@ -3,14 +3,14 @@ import { AppBar, Toolbar, Typography, IconButton } from "@material-ui/core";
 import {
   ExpandLess as ExpandLessIcon,
 } from "@material-ui/icons";
-import { useMusic } from "../../contexts/music";
+import { usePlayer } from "../../contexts/player";
 
 interface Props {
   onExpandClick: () => void;
 }
 
 export function MusicAppBar({ onExpandClick }: Props) {
-  const { playingMusicInfo } = useMusic();
+  const { playingMusicInfo } = usePlayer();
 
   return (
     <AppBar position="fixed" color="primary" className="music-app-bar">

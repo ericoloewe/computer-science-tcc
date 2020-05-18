@@ -14,7 +14,7 @@ import { StringUtil } from "../../utils/string";
 import { RenameDialog } from "./rename-dialog";
 import { usePlaylist } from "../../contexts/playlist";
 import { MusicsOfPlaylist } from "./musics-of-playlist";
-import { useMusic } from "../../contexts/music";
+import { usePlayer } from "../../contexts/player";
 
 export default function () {
   let { playlistId: playlistIdParam } = useParams();
@@ -27,7 +27,7 @@ export default function () {
   const [playlistTitle, setPlaylistTitle] = useState("Carregando playlist");
   const [favoriteMusicsMap, setFavoriteMusicsMap] = useState({} as { [key: string]: boolean });
 
-  const { play, toggleFavorite } = useMusic();
+  const { play, toggleFavorite } = usePlayer();
   const { load, rename } = usePlaylist();
   const playingMusic = getMusicById(playingMusicId);
 

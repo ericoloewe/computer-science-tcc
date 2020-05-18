@@ -1,8 +1,9 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { useAuth } from "./auth";
 
-import { SpotifyUserGetResponse } from "../@types/spotify";
+import { SpotifyUserGetResponse, SpotifyDevicesResponse, SpotifyDevice } from "../@types/spotify";
 import { SpotifyUtil } from "../utils/spotify";
+import { TimerUtil } from "../utils/timer";
 
 interface Props {}
 
@@ -15,7 +16,7 @@ export interface User {
 }
 
 interface Context {
-  getAvailableDevices: () => Promise<void>;
+  getAvailableDevices: () => Promise<SpotifyDevice[]>;
   profile: User;
 }
 
@@ -40,11 +41,11 @@ export function UserProvider(props: Props) {
     setProfile({ id, email, name, link, avatarSrc });
   }
 
-  async function getAvailableDevices(): Promise<void> {
+  async function getAvailableDevices(): Promise<SpotifyDevice[]> {
     const endpoint = `${spotifyUserEndpoint}/player/devices`;
-    const { data } = await requestService.get<any>(endpoint);
+    const { data } = await requestService.get<SpotifyDevicesResponse>(endpoint);
 
-    console.log(data);
+    return data.devices;
   }
 
   useEffect(() => {

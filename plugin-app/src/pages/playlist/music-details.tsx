@@ -18,7 +18,7 @@ import {
   Fingerprint as FingerprintIcon,
   Favorite as FavoriteIcon,
 } from "@material-ui/icons";
-import { useMusic, PlayingMusicInfo } from "../../contexts/music";
+import { usePlayer, PlayingMusicInfo } from "../../contexts/player";
 
 const feelings = [
   { text: "Feliz", value: "feliz" },
@@ -30,7 +30,7 @@ interface Props {
 }
 
 export function MusicDetails({ onExpandClick }: Props) {
-  const { playingMusicInfo } = useMusic();
+  const { playingMusicInfo } = usePlayer();
 
   return (
     <section className="music-details-component">
