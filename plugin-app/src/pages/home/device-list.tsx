@@ -1,19 +1,25 @@
 import React from "react";
 import { SpotifyDevice } from "../../@types/spotify";
-import { List, ListItem, ListItemText } from "@material-ui/core";
+import { List, ListItem, ListItemText, Button } from "@material-ui/core";
 
 interface Props {
   devices: SpotifyDevice[];
+  onAccept: () => void;
 }
 
-export function DeviceList({ devices }: Props) {
+export function DeviceList({ devices, onAccept }: Props) {
   return (
-    <List>
-      {devices.map((d) => (
-        <ListItem key={d.id} selected={d.is_active}>
-          <ListItemText primary={d.name} secondary={d.type} />
-        </ListItem>
-      ))}
-    </List>
+    <section className="device-list">
+      <List>
+        {devices.map((d) => (
+          <ListItem key={d.id} selected={d.is_active}>
+            <ListItemText primary={d.name} secondary={d.type} />
+          </ListItem>
+        ))}
+      </List>
+      <Button className="button" color="primary" variant="contained" onClick={onAccept}>
+        Usar plugin para tocar musicas
+      </Button>
+    </section>
   );
 }

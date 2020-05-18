@@ -1,11 +1,23 @@
 .home-page {
   position: relative;
+  display: flex;
   flex: 1;
+  flex-direction: column;
 
   .new-playlist-button {
     position: absolute;
     right: 16px;
     bottom: 16px;
+  }
+}
+
+.device-list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  > .button {
+    align-self: center;
   }
 }
 

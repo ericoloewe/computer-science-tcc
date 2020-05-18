@@ -5,6 +5,7 @@ import { SpotifyUtil, SpotifyPlayer } from "../utils/spotify";
 import { Music } from "../@types/music";
 import { MusicMapper } from "../mappers/music";
 import { SpotifyPlayerResponse } from "../@types/spotify";
+import { TimerUtil } from "../utils/timer";
 
 interface Props {}
 
@@ -66,15 +67,19 @@ export function PlayerProvider(props: Props) {
 
   async function createSpotifyPlayerIfNeedAndValidatePlayer(): Promise<void> {
     await createSpotifyPlayerIfNeed();
-    const currentPlayer = await getCurrentPlayerInfo();
-
-    setIsPluginPlayerActive(player?.device_id === currentPlayer.device.id);
+    await loadCurrentPlayerInfo();
   }
 
-  async function getCurrentPlayerInfo(): Promise<SpotifyPlayerResponse> {
-    const { data } = await requestService.get<SpotifyPlayerResponse>(`${spotifyUserEndpoint}/player`);
+  async function getCurrentPlayerInfo(): Promise<SpotifyPlayerResponse | null> {
+    const { data } = await requestService.get<SpotifyPlayerResponse | null>(`${spotifyUserEndpoint}/player`);
 
     return data;
+  }
+
+  async function loadCurrentPlayerInfo(): Promise<void> {
+    const currentPlayer = await getCurrentPlayerInfo();
+
+    setIsPluginPlayerActive((currentPlayer?.device != null && player?.device_id) === currentPlayer?.device?.id);
   }
 
   async function play(spotifyUri: string): Promise<void> {
@@ -101,6 +106,8 @@ export function PlayerProvider(props: Props) {
         device_ids: [player?.device_id],
       },
     });
+    await TimerUtil.wait(500);
+    await loadCurrentPlayerInfo();
   }
 
   return (

@@ -15,9 +15,8 @@ import { DeviceList } from "./device-list";
 import { Loader } from "../../components/loader";
 
 export default function () {
-  const { isPlayerReady, isPluginPlayerActive } = usePlayer();
+  const { isPlayerReady, isPluginPlayerActive, transferUserPlaybackToPlugin } = usePlayer();
   const { getAvailableDevices } = useUser();
-  const history = useHistory();
   const [devices, setDevices] = useState<SpotifyDevice[]>([]);
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(true);
 
@@ -27,8 +26,8 @@ export default function () {
     setDevices(devices);
   }
 
-  async function logout() {
-    history.push(`/logout`);
+  async function setPlaybackToPlugin() {
+    await transferUserPlaybackToPlugin();
   }
 
   useEffect(() => {
@@ -36,7 +35,7 @@ export default function () {
   }, [isPlayerReady]);
 
   return (
-    <Layout className="home-page" pageTitle="Reprodução de musicas" menuItems={CustomMenu(fetchData, logout)}>
+    <Layout className="home-page" pageTitle="Reprodução de musicas" menuItems={CustomMenu(fetchData)}>
       {isPlayerReady ? (
         isPluginPlayerActive ? (
           isMusicDetailsOpen ? (
@@ -48,7 +47,7 @@ export default function () {
             </>
           )
         ) : (
-          <DeviceList devices={devices} />
+          <DeviceList devices={devices} onAccept={setPlaybackToPlugin} />
         )
       ) : (
         <Loader />
@@ -57,13 +56,10 @@ export default function () {
   );
 }
 
-function CustomMenu(refresh: () => Promise<void>, logout: () => Promise<void>) {
+function CustomMenu(refresh: () => Promise<void>) {
   return [
     <MenuItem key="refresh" onClick={() => refresh()}>
       Refresh
-    </MenuItem>,
-    <MenuItem key="logout" onClick={() => logout()}>
-      Logout
     </MenuItem>,
   ];
 }
