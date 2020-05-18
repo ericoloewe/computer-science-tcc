@@ -7,8 +7,8 @@ export class StringUtil {
     return typeof any === "string";
   }
 
-  static sliceIfNeed(str: string): string {
-    return str.length > 50 ? `${str.slice(0, 50)}...` : str;
+  static sliceIfNeed(str: string, size: number = 50): string {
+    return str.length > size ? `${str.slice(0, size)}...` : str;
   }
 
   static toString(str: any): string {

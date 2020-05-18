@@ -3,6 +3,7 @@ import { AppBar, Toolbar, Typography, IconButton, Fab } from "@material-ui/core"
 import { ExpandLess as ExpandLessIcon, Add as AddIcon } from "@material-ui/icons";
 import { useMusic } from "../../contexts/music";
 import { Link } from "react-router-dom";
+import { StringUtil } from "../../utils/string";
 
 interface Props {
   onExpandClick: () => void;
@@ -20,7 +21,7 @@ export function MusicAppBar({ onExpandClick }: Props) {
           </Fab>
         </Link>
         <Typography variant="h6" className={"title"}>
-          {playingMusicInfo?.currentTrack.name}
+          {StringUtil.sliceIfNeed(`${playingMusicInfo?.currentTrack.name}`, 30)}
         </Typography>
         <div style={{ flexGrow: 1 }} />
         <IconButton
