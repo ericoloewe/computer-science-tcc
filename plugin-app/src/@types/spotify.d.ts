@@ -1,15 +1,28 @@
+export interface SpotifyPlayerResponse {
+  device: SpotifyDevice;
+  shuffle_state: boolean;
+  repeat_state: string;
+  timestamp: number;
+  context: null;
+  progress_ms: number;
+  item: SpotifyTrack;
+  currently_playing_type: string;
+  actions: { [key: string]: boolean };
+  is_playing: boolean;
+}
+
 export interface SpotifyDevicesResponse {
   devices: Device[];
 }
 
 export interface SpotifyDevice {
-  id:                 string;
-  is_active:          boolean;
+  id: string;
+  is_active: boolean;
   is_private_session: boolean;
-  is_restricted:      boolean;
-  name:               string;
-  type:               string;
-  volume_percent:     number;
+  is_restricted: boolean;
+  name: string;
+  type: string;
+  volume_percent: number;
 }
 
 export enum SpotifyObjectType {

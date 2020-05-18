@@ -1,22 +1,22 @@
 import "./style.scss";
 
 import React, { useState, useEffect } from "react";
-import { Fab, MenuItem } from "@material-ui/core";
-import { Add as AddIcon } from "@material-ui/icons";
-import { Link, useHistory } from "react-router-dom";
+import { MenuItem } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 
-import { ChooseItem } from "../../components/choose-with-actions";
 import { Layout } from "../shared/layout";
-import { usePlaylist } from "../../contexts/playlist";
-import { MusicDetails } from "./music-details";
 import { MusicAppBar } from "./music-app-bar";
+import { MusicDetails } from "./music-details";
 import { MusicList } from "./music-list";
-import { useUser } from "../../contexts/user";
 import { SpotifyDevice } from "../../@types/spotify";
+import { usePlayer } from "../../contexts/player";
+import { useUser } from "../../contexts/user";
+import { DeviceList } from "./device-list";
+import { Loader } from "../../components/loader";
 
 export default function () {
+  const { isPlayerReady, isPluginPlayerActive } = usePlayer();
   const { getAvailableDevices } = useUser();
-  const { loadAll } = usePlaylist();
   const history = useHistory();
   const [devices, setDevices] = useState<SpotifyDevice[]>([]);
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(true);
@@ -32,18 +32,26 @@ export default function () {
   }
 
   useEffect(() => {
-    fetchData(); // eslint-disable-next-line
-  }, []);
+    if (isPlayerReady) fetchData(); // eslint-disable-next-line
+  }, [isPlayerReady]);
 
   return (
     <Layout className="home-page" pageTitle="Reprodução de musicas" menuItems={CustomMenu(fetchData, logout)}>
-      {isMusicDetailsOpen ? (
-        <MusicDetails onExpandClick={() => setOpenMusicDetails(false)} />
+      {isPlayerReady ? (
+        isPluginPlayerActive ? (
+          isMusicDetailsOpen ? (
+            <MusicDetails onExpandClick={() => setOpenMusicDetails(false)} />
+          ) : (
+            <>
+              <MusicList musics={[]} onPlayMusic={() => {}} />
+              <MusicAppBar onExpandClick={() => setOpenMusicDetails(true)} />
+            </>
+          )
+        ) : (
+          <DeviceList devices={devices} />
+        )
       ) : (
-        <>
-          <MusicList musics={[]} onPlayMusic={() => {}} />
-          <MusicAppBar onExpandClick={() => setOpenMusicDetails(true)} />
-        </>
+        <Loader />
       )}
     </Layout>
   );

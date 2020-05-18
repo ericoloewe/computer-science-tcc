@@ -1,3 +1,4 @@
+
 export interface SpotifyToken {
   accessToken: string;
   expiresInSeconds: number;

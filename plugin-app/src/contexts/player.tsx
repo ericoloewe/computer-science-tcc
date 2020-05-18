@@ -4,6 +4,7 @@ import { useAuth } from "./auth";
 import { SpotifyUtil, SpotifyPlayer } from "../utils/spotify";
 import { Music } from "../@types/music";
 import { MusicMapper } from "../mappers/music";
+import { SpotifyPlayerResponse } from "../@types/spotify";
 
 interface Props {}
 
@@ -11,6 +12,8 @@ interface Context {
   play: (musicId: string) => Promise<void>;
   playingMusicInfo?: PlayingMusicInfo;
   transferUserPlaybackToPlugin: () => Promise<void>;
+  isPlayerReady: boolean;
+  isPluginPlayerActive: boolean;
 }
 
 export interface PlayingMusicInfo {
@@ -26,15 +29,19 @@ const spotifyUserEndpoint = `${SpotifyUtil.getApiUrl()}/me`;
 export function PlayerProvider(props: Props) {
   const { accessToken, isAuthenticated, requestService } = useAuth();
   const [player, setPlayer] = useState<SpotifyPlayer | null>(null);
+  const [isPluginPlayerActive, setIsPluginPlayerActive] = useState<any>(null);
+  const [isPlayerReady, setIsPlayerReady] = useState<any>(null);
   const [playingMusicInfo, setPlayingMusicInfo] = useState<PlayingMusicInfo | undefined>();
 
   useEffect(() => {
     if (isAuthenticated) {
-      createSpotifyPlayerIfNeed();
+      createSpotifyPlayerIfNeedAndValidatePlayer();
     } // eslint-disable-next-line
   }, [accessToken, isAuthenticated]);
 
   useEffect(() => {
+    setIsPlayerReady(player != null);
+
     if (player != null) {
       player.original.addListener("player_state_changed", (state) => {
         const {
@@ -51,11 +58,23 @@ export function PlayerProvider(props: Props) {
     } // eslint-disable-next-line
   }, [player]);
 
-  async function createSpotifyPlayerIfNeed() {
+  async function createSpotifyPlayerIfNeed(): Promise<void> {
     const player = await SpotifyUtil.createPlayer(accessToken);
 
-    console.log("player", player);
     setPlayer(player);
+  }
+
+  async function createSpotifyPlayerIfNeedAndValidatePlayer(): Promise<void> {
+    await createSpotifyPlayerIfNeed();
+    const currentPlayer = await getCurrentPlayerInfo();
+
+    setIsPluginPlayerActive(player?.device_id === currentPlayer.device.id);
+  }
+
+  async function getCurrentPlayerInfo(): Promise<SpotifyPlayerResponse> {
+    const { data } = await requestService.get<SpotifyPlayerResponse>(`${spotifyUserEndpoint}/player`);
+
+    return data;
   }
 
   async function play(spotifyUri: string): Promise<void> {
@@ -74,17 +93,22 @@ export function PlayerProvider(props: Props) {
   }
 
   async function transferUserPlaybackToPlugin(): Promise<void> {
-    const endpoint1 = `${spotifyUserEndpoint}/player`;
+    const endpoint = `${spotifyUserEndpoint}/player`;
 
-    const { data: data2 } = await requestService.put<any>({
-      url: endpoint1,
+    await requestService.put({
+      url: endpoint,
       data: {
         device_ids: [player?.device_id],
       },
     });
   }
 
-  return <MusicContext.Provider value={{ playingMusicInfo, play, transferUserPlaybackToPlugin }} {...props} />;
+  return (
+    <MusicContext.Provider
+      value={{ playingMusicInfo, play, transferUserPlaybackToPlugin, isPluginPlayerActive, isPlayerReady }}
+      {...props}
+    />
+  );
 }
 
 export const usePlayer = () => useContext<Context>(MusicContext);

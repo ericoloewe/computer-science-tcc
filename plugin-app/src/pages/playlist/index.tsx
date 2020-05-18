@@ -27,7 +27,7 @@ export default function () {
   const [playlistTitle, setPlaylistTitle] = useState("Carregando playlist");
   const [favoriteMusicsMap, setFavoriteMusicsMap] = useState({} as { [key: string]: boolean });
 
-  const { play, toggleFavorite } = usePlayer();
+  const { play } = usePlayer();
   const { load, rename } = usePlaylist();
   const playingMusic = getMusicById(playingMusicId);
 
@@ -51,7 +51,7 @@ export default function () {
     }
 
     setFavoriteMusicsMap({ ...favoriteMusicsMap });
-    await toggleFavorite(music.id); // TODO: loader
+    // await toggleFavorite(music.id); // TODO: loader
   }
 
   async function renamePlaylist(newPlaylistName: string) {

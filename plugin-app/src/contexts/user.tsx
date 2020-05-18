@@ -3,7 +3,6 @@ import { useAuth } from "./auth";
 
 import { SpotifyUserGetResponse, SpotifyDevicesResponse, SpotifyDevice } from "../@types/spotify";
 import { SpotifyUtil } from "../utils/spotify";
-import { TimerUtil } from "../utils/timer";
 
 interface Props {}
 
