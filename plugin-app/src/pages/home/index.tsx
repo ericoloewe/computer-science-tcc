@@ -1,10 +1,9 @@
 import "./style.scss";
 
 import React, { useState, useEffect } from "react";
-import { MenuItem } from "@material-ui/core";
+import { MenuItem, Fab } from "@material-ui/core";
 
 import { Layout } from "../shared/layout";
-import { MusicAppBar } from "./music-app-bar";
 import { MusicDetails } from "./music-details";
 import { MusicControl } from "./music-control";
 import { SpotifyDevice } from "../../@types/spotify";
@@ -12,6 +11,9 @@ import { usePlayer } from "../../contexts/player";
 import { useUser } from "../../contexts/user";
 import { DeviceList } from "./device-list";
 import { Loader } from "../../components/loader";
+import { ContextInfo } from "./context-info";
+import { Add as AddIcon } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 export default function () {
   const { isPlayerReady, isPluginPlayerActive, transferUserPlaybackToPlugin } = usePlayer();
@@ -42,6 +44,12 @@ export default function () {
           ) : (
             <>
               <MusicControl />
+              <ContextInfo />
+              <Link to="/new-context">
+                <Fab className="new-button" color="primary" aria-label="add">
+                  <AddIcon />
+                </Fab>
+              </Link>
             </>
           )
         ) : (
