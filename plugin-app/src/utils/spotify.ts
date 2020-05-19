@@ -20,6 +20,7 @@ export class SpotifyUtil {
     "user-read-email",
     "user-read-playback-state",
     "user-read-private",
+    "user-read-recently-played",
     "user-top-read",
   ];
 
