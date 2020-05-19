@@ -149,21 +149,18 @@ Sumário
 [3.3 Os trabalhos 19](#os-trabalhos)
 
 [3.3.1 Improving Context-Aware Music Recommender Systems: Beyond the
-Pre-filtering Approach
-19](#improving-context-aware-music-recommender-systems-beyond-the-pre-filtering-approach)
+Pre-filtering Approach 19](#_Toc39608991)
 
 [3.3.2 Context-Aware Mobile Music Recommendation for Daily Activities
-19](#context-aware-mobile-music-recommendation-for-daily-activities)
+19](#_Toc39608992)
 
 [3.3.3 Musical serendipity: designing for contextual music
-recommendation and discovery
-20](#musical-serendipity-designing-for-contextual-music-recommendation-and-discovery)
+recommendation and discovery 20](#_Toc39608993)
 
-[3.3.4 Recommender system handbook 20](#recommender-system-handbook)
+[3.3.4 Recommender system handbook 20](#_Toc39608994)
 
 [3.3.5 Desenvolvimento de um Sistema de Recomendação Musical Sensível ao
-Contexto
-20](#desenvolvimento-de-um-sistema-de-recomendação-musical-sensível-ao-contexto)
+Contexto 20](#_Toc39608995)
 
 [3.4 Tabela com tecnicas 20](#tabela-com-tecnicas)
 
@@ -427,9 +424,9 @@ Pois, existem muitos artigos e diversas áreas de pesquisa relacionadas
 aos sistemas de recomendação musical, então, para realizar uma busca
 mais voltada ao foco, será utilizada a seguinte *string* de busca:
 
-((“RecSys” OR “recommender systems”) AND (“machine learning”) AND
+*((“RecSys” OR “recommender systems”) AND (“machine learning”) AND
 (“music” OR “musical”) AND (“behavioral context” OR “environmental
-context” OR “context-aware”))
+context” OR “context-aware”))*
 
 Com os resultados da busca cada trabalho será analisado e esta análise
 está dividida em quatro etapas. A leitura inicial, primeira etapa, será
@@ -449,18 +446,20 @@ uso delas nos trabalhos encontrados.
 
 ## PROCURA NOS MOTORES DE BUSCA
 
-![](./tcc-i/pandoc/media/image1.png)
+![Tela de celular com publicação numa rede social Descrição gerada
+automaticamente](./tcc-i/pandoc/media/image1.png)
 
 Figura 1 Motor avançado de busca da ACM (próprio, 2020)
 
-No dia 05/05/2020 foi realizado a pesquisa no motor de busca apresentado
+No dia 07/05/2020 foi realizado a pesquisa no motor de busca apresentado
 a partir da *string* de busca pré-definida anteriormente. As Figura 1, 2
 e 3 ilustram esse processo. Todos trouxeram resultados pertinentes ao
 trabalho logo na primeira página da aplicação. A quantidade de
-resultados apresentados na ACM foram 152 trabalhos relacionados a
+resultados apresentados na ACM foram 150 trabalhos relacionados a
 *string* de busca.
 
-![](./tcc-i/pandoc/media/image2.png)
+![Tela de computador com texto preto sobre fundo branco Descrição gerada
+automaticamente](./tcc-i/pandoc/media/image2.png)
 
 Figura 2 Resultado de busca dos proceedings no motor de busca da ACM
 (próprio, 2020)
@@ -471,11 +470,12 @@ relacionado a área foi mantido somente os artigos publicados nos últimos
 5 anos. Visando trazer um conteúdo mais técnico para o trabalho, foi
 reduzido os tipos de publicações aceitas para *proceedings* e
 *journals*. Após aplicado esses filtros, a quantidade de trabalhos
-encontrados passou para 85. Então reduzindo a quantidade de trabalhos
+encontrados passou para 83. Então reduzindo a quantidade de trabalhos
 relacionados se fez possível a revisão de todos no tempo hábil
 disponível para desenvolver esse trabalho.
 
-![](./tcc-i/pandoc/media/image3.png)
+![Tela de computador com texto preto sobre fundo branco Descrição gerada
+automaticamente](./tcc-i/pandoc/media/image3.png)
 
 Figura 3 Resultado de busca dos journals no motor de busca da ACM
 (próprio, 2020)
@@ -487,10 +487,10 @@ relacionados a área. (ACM RECSYS COMMUNITY., 2020)
 
 ## Os trabalhos
 
-Com a busca realizada no dia 05/05/20 no motor da ACM a partir da
-*string* de busca foram encontrados 85 trabalhos, sendo eles: 23 do tipo
+Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
+*string* de busca foram encontrados 83 trabalhos, sendo eles: 23 do tipo
 *jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
-e 62 do tipo *proceeding*.
+e 60 do tipo *proceeding*.
 
 ### Sequence-Aware Recommender Systems
 
@@ -515,58 +515,6 @@ Como o trabalho foi avaliado/validado?
 ### A Context-Aware User-Item Representation Learning for Item Recommendation
 
 Texto.
-
-## Os trabalhos (Anotações antigas) 
-
-### Improving Context-Aware Music Recommender Systems: Beyond the Pre-filtering Approach
-
-Nesse artigo é apresentado uma técnica a partir da *factorization
-machines* para extrair informações do contexto usuário a partir do nome
-da *playlist.*
-
-### Context-Aware Mobile Music Recommendation for Daily Activities
-
-Nesse artigo é apresentado técnicas para coletar informações sobre o
-contexto a partir de um dispositivo mobile e recomendar *playlist* que
-irão suprir o desejo do usuário no curto prazo. Apresentam um modelo
-probabilístico para integrar a informação contextual com a análise do
-conteúdo da música. Por último é apresentado resultados mostrando uma
-melhora nos resultados a partir do modelo proposto.
-
-### Musical serendipity: designing for contextual music recommendation and discovery
-
-É apresentado sugestões de como incluir as informações de contexto -
-principalmente a localização - nas recomendações musicais interativas,
-através dos vários conceitos e protótipos apresentados.
-
-Foram apresentados dois protótipos nesse trabalho, Sounds of Helsinki
-(Artigo II) e OUTMedia (Artigo IV). Foi proposta uma plataforma para
-vários conceitos de serviço de música com reconhecimento de contexto
-(Artigo III). Além disso, foi apresentado dois artigos avaliando os
-serviços musicais atuais por suas explicações e transparência (Artigo I)
-e o modo que eles envolvem o contexto em suas interações com os sistemas
-de recomendação e suas tarefas (background jobs) de descoberta (Artigo
-V).
-
-O argumento fundamental e pontapé inicial para essa tese é que
-envolvendo os fatores de contexto, aí então a **diversidade cultural
-poderia ser fomentada**, com o contexto também é possível oferecer mais
-recomendações de músicas fora do convencional do que em canais como
-rádios e novos lançamentos, o que pode trazer melhores oportunidades de
-descobertas inesperadas.
-
-Possui um capítulo para definição clara do que é contexto.
-
-### Recommender system handbook
-
-Neste livro é apresentado um capítulo tratando sobre os sistemas de
-recomendação na área musical (Capitulo 13 - Music Recommender Systems),
-nele é abordado recomendações baseadas no conteúdo, modelo hibrido de
-recomendação, geração automática de playlist, data-sets e avaliação, mas
-o principal tópico que sera utilizado nesse trabalho, é a recomendação a
-partir do contexto.
-
-### Desenvolvimento de um Sistema de Recomendação Musical Sensível ao Contexto
 
 ## Tabela com tecnicas
 
