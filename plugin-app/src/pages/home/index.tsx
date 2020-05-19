@@ -6,16 +6,15 @@ import { MenuItem } from "@material-ui/core";
 import { Layout } from "../shared/layout";
 import { MusicAppBar } from "./music-app-bar";
 import { MusicDetails } from "./music-details";
-import { MusicList } from "./music-list";
+import { MusicControl } from "./music-control";
 import { SpotifyDevice } from "../../@types/spotify";
 import { usePlayer } from "../../contexts/player";
 import { useUser } from "../../contexts/user";
 import { DeviceList } from "./device-list";
 import { Loader } from "../../components/loader";
-import { Music } from "../../@types/music";
 
 export default function () {
-  const { isPlayerReady, isPluginPlayerActive, queuedMusics, transferUserPlaybackToPlugin } = usePlayer();
+  const { isPlayerReady, isPluginPlayerActive, transferUserPlaybackToPlugin } = usePlayer();
   const { getAvailableDevices } = useUser();
   const [devices, setDevices] = useState<SpotifyDevice[]>([]);
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(true);
@@ -42,8 +41,7 @@ export default function () {
             <MusicDetails onExpandClick={() => setOpenMusicDetails(false)} />
           ) : (
             <>
-              <MusicList musics={queuedMusics} onPlayMusic={() => {}} />
-              <MusicAppBar onExpandClick={() => setOpenMusicDetails(true)} />
+              <MusicControl />
             </>
           )
         ) : (

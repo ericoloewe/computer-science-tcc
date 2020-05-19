@@ -21,19 +21,8 @@
   }
 }
 
-.music-app-bar {
-  bottom: 0;
-
-  .new-button {
-    left: 50%;
-    position: absolute;
-    top: -50%;
-    transform: translateX(-50%);
-  }
-
-  .home-page > & {
-    top: auto;
-  }
+.music-control {
+  margin-top: 20px;
 }
 
 .music-details-component {

@@ -14,7 +14,6 @@ interface Context {
   isPluginPlayerActive: boolean;
   play: (musicId: string) => Promise<void>;
   playingMusicInfo?: PlayingMusicInfo;
-  queuedMusics: Music[];
   transferUserPlaybackToPlugin: () => Promise<void>;
 }
 
@@ -34,7 +33,6 @@ export function PlayerProvider(props: Props) {
   const [isPluginPlayerActive, setIsPluginPlayerActive] = useState<any>(null);
   const [isPlayerReady, setIsPlayerReady] = useState<any>(null);
   const [playingMusicInfo, setPlayingMusicInfo] = useState<PlayingMusicInfo | undefined>();
-  const [queuedMusics, setQueuedMusics] = useState<Music[]>([]);
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -53,8 +51,6 @@ export function PlayerProvider(props: Props) {
           paused,
           track_window: { current_track },
         } = state;
-
-        console.log("state", state);
 
         setPlayingMusicInfo({ currentTrack: MusicMapper.toMusicTrack(current_track), duration, position, paused });
       });
@@ -119,7 +115,6 @@ export function PlayerProvider(props: Props) {
         isPluginPlayerActive,
         play,
         playingMusicInfo,
-        queuedMusics,
         transferUserPlaybackToPlugin,
       }}
       {...props}
