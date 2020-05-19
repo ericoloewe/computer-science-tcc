@@ -2,7 +2,6 @@ import "./style.scss";
 
 import React, { useState, useEffect } from "react";
 import { MenuItem } from "@material-ui/core";
-import { useHistory } from "react-router-dom";
 
 import { Layout } from "../shared/layout";
 import { MusicAppBar } from "./music-app-bar";

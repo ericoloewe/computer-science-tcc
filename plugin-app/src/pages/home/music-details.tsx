@@ -125,7 +125,7 @@ function MusicSlider({ position, paused, duration }: PlayingMusicInfo) {
 
   return (
     <div className="slider">
-      <Slider value={realPosition} max={duration / 1000} aria-labelledby="slider" valueLabelDisplay="auto" />
+      <Slider value={realPosition} max={duration / 1000} aria-labelledby="slider" valueLabelDisplay="off" />
     </div>
   );
 }
