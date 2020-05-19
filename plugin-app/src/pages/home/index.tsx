@@ -12,9 +12,10 @@ import { usePlayer } from "../../contexts/player";
 import { useUser } from "../../contexts/user";
 import { DeviceList } from "./device-list";
 import { Loader } from "../../components/loader";
+import { Music } from "../../@types/music";
 
 export default function () {
-  const { isPlayerReady, isPluginPlayerActive, transferUserPlaybackToPlugin } = usePlayer();
+  const { isPlayerReady, isPluginPlayerActive, queuedMusics, transferUserPlaybackToPlugin } = usePlayer();
   const { getAvailableDevices } = useUser();
   const [devices, setDevices] = useState<SpotifyDevice[]>([]);
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(true);
@@ -41,7 +42,7 @@ export default function () {
             <MusicDetails onExpandClick={() => setOpenMusicDetails(false)} />
           ) : (
             <>
-              <MusicList musics={[]} onPlayMusic={() => {}} />
+              <MusicList musics={queuedMusics} onPlayMusic={() => {}} />
               <MusicAppBar onExpandClick={() => setOpenMusicDetails(true)} />
             </>
           )

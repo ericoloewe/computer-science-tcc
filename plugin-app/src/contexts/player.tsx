@@ -10,11 +10,12 @@ import { TimerUtil } from "../utils/timer";
 interface Props {}
 
 interface Context {
-  play: (musicId: string) => Promise<void>;
-  playingMusicInfo?: PlayingMusicInfo;
-  transferUserPlaybackToPlugin: () => Promise<void>;
   isPlayerReady: boolean;
   isPluginPlayerActive: boolean;
+  play: (musicId: string) => Promise<void>;
+  playingMusicInfo?: PlayingMusicInfo;
+  queuedMusics: Music[];
+  transferUserPlaybackToPlugin: () => Promise<void>;
 }
 
 export interface PlayingMusicInfo {
@@ -33,6 +34,7 @@ export function PlayerProvider(props: Props) {
   const [isPluginPlayerActive, setIsPluginPlayerActive] = useState<any>(null);
   const [isPlayerReady, setIsPlayerReady] = useState<any>(null);
   const [playingMusicInfo, setPlayingMusicInfo] = useState<PlayingMusicInfo | undefined>();
+  const [queuedMusics, setQueuedMusics] = useState<Music[]>([]);
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -112,7 +114,14 @@ export function PlayerProvider(props: Props) {
 
   return (
     <MusicContext.Provider
-      value={{ playingMusicInfo, play, transferUserPlaybackToPlugin, isPluginPlayerActive, isPlayerReady }}
+      value={{
+        isPlayerReady,
+        isPluginPlayerActive,
+        play,
+        playingMusicInfo,
+        queuedMusics,
+        transferUserPlaybackToPlugin,
+      }}
       {...props}
     />
   );
