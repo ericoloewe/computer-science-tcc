@@ -461,7 +461,7 @@ uso delas nos trabalhos encontrados.
 ## PROCURA NOS MOTORES DE BUSCA
 
 ![Tela de celular com publicação numa rede social Descrição gerada
-automaticamente](./tcc-i/pandoc/media/image1.png)
+automaticamente](./pandoc/media/image1.png)
 
 <span id="_Ref40822554" class="anchor"></span>Figura - Motor avançado de
 busca da ACM (próprio, 2020)
@@ -474,7 +474,7 @@ resultados apresentados na ACM foram 150 trabalhos relacionados a
 *string* de busca.
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
-automaticamente](./tcc-i/pandoc/media/image2.png)
+automaticamente](./pandoc/media/image2.png)
 
 <span id="_Ref40822631" class="anchor"></span>Figura - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
@@ -490,7 +490,7 @@ relacionados se fez possível a revisão de todos no tempo hábil
 disponível para desenvolver esse trabalho.
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
-automaticamente](./tcc-i/pandoc/media/image3.png)
+automaticamente](./pandoc/media/image3.png)
 
 <span id="_Ref40822641" class="anchor"></span>Figura - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
