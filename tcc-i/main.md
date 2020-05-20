@@ -515,7 +515,17 @@ orientador. Esse filtro é baseado em 3 etapas (demonstradas na Figura
 4), que visam direcionar esta pesquisa para a revisão dos trabalhos que
 condizem com o objetivo descrito no protocolo.
 
-<span id="_Toc40819482" class="anchor"></span>Figura 5 - Procedimento de
+<span class="chart">\[CHART\]</span>
+
+Figura - Filtro em cima dos trabalhos selecionados através do resumo
+(próprio, 2020)
+
+Dado o alto número de trabalhos encontrados, foi desenvolvido uma
+classificação dos artigos em tipos. Baseado no conhecimento sobre o
+trabalho obtido na leitura da segunda etapa, foi realizado uma
+classificação deles em 4 tipos,
+
+<span id="_Toc40819482" class="anchor"></span>Figura 6 - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
