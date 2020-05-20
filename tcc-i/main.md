@@ -481,9 +481,10 @@ Figura Resultado de busca dos journals no motor de busca da ACM
 (próprio, 2020)
 
 A quantidade de trabalhos encontrados na ACM relacionados a *string* de
-busca foi muito alta, isso devido a ela possuir uma grande comunidade
-relacionado a área de RecSys, com diversas conferências e eventos
-relacionados a área. (ACM RECSYS COMMUNITY., 2020)
+busca foi muito alta, isso aconteceu devido a plataforma possuir uma
+grande comunidade relacionado a área de RecSys, com diversas
+conferências e eventos relacionados a área. (ACM RECSYS COMMUNITY.,
+2020)
 
 ## Os trabalhos
 
@@ -492,10 +493,20 @@ Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
 *jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
 e 60 do tipo *proceeding*.
 
-Figura Procedimento de filtro realizado baseado nos trabalhos
-encontrados no motor de busca da ACM
+Figura Etapas realizadas para filtrar os trabalhos encontrados no motor
+de busca da ACM (próprio, 2020)
 
-Essa pesquisa tem como objetivo responder as seguintes perguntas:
+Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado no
+sistema estruturado anteriormente e de certas recomendações do professor
+orientador. Esse filtro é baseado em 3 etapas (demonstradas na Figura
+4), que visão direcionar esta pesquisa para a revisão dos trabalhos que
+condizem com o objetivo descrito no protocolo.
+
+Figura 5 Procedimento de filtro realizado baseado nos trabalhos
+encontrados no motor de busca da ACM (próprio, 2020)
+
+O estudo que será realizado em cima dos trabalhos tem como objetivo
+responder as seguintes perguntas:
 
   - Critérios de Qualidade?
 
