@@ -497,16 +497,19 @@ Figura Etapas realizadas para filtrar os trabalhos encontrados no motor
 de busca da ACM (próprio, 2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado no
-sistema estruturado anteriormente e de certas recomendações do professor
+sistema estruturado anteriormente e recomendações do professor
 orientador. Esse filtro é baseado em 3 etapas (demonstradas na Figura
-4), que visão direcionar esta pesquisa para a revisão dos trabalhos que
+4), que visam direcionar esta pesquisa para a revisão dos trabalhos que
 condizem com o objetivo descrito no protocolo.
 
 Figura 5 Procedimento de filtro realizado baseado nos trabalhos
 encontrados no motor de busca da ACM (próprio, 2020)
 
-O estudo que será realizado em cima dos trabalhos tem como objetivo
-responder as seguintes perguntas:
+O resultado do filtro foram 4 trabalhos relacionados ao objetivo
+descrito no protocolo de revisão desse trabalho. Será realizado uma
+análise nesses trabalhos nas sessões ... onde, em cada sessão/trabalho,
+será realizado uma descrição do que foi desenvolvido e no fim, será
+respondido as seguintes perguntas:
 
   - Critérios de Qualidade?
 
