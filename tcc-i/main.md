@@ -492,6 +492,9 @@ Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
 *jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
 e 60 do tipo *proceeding*.
 
+Figura Procedimento de filtro realizado baseado nos trabalhos
+encontrados no motor de busca da ACM
+
 Essa pesquisa tem como objetivo responder as seguintes perguntas:
 
   - Critérios de Qualidade?
