@@ -449,7 +449,7 @@ uso delas nos trabalhos encontrados.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./tcc-i/pandoc/media/image1.png)
 
-Figura 1 Motor avançado de busca da ACM (próprio, 2020)
+Figura Motor avançado de busca da ACM (próprio, 2020)
 
 No dia 07/05/2020 foi realizado a pesquisa no motor de busca apresentado
 a partir da *string* de busca pré-definida anteriormente. As Figura 1, 2
@@ -461,7 +461,7 @@ resultados apresentados na ACM foram 150 trabalhos relacionados a
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./tcc-i/pandoc/media/image2.png)
 
-Figura 2 Resultado de busca dos proceedings no motor de busca da ACM
+Figura Resultado de busca dos proceedings no motor de busca da ACM
 (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
@@ -477,7 +477,7 @@ disponível para desenvolver esse trabalho.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./tcc-i/pandoc/media/image3.png)
 
-Figura 3 Resultado de busca dos journals no motor de busca da ACM
+Figura Resultado de busca dos journals no motor de busca da ACM
 (próprio, 2020)
 
 A quantidade de trabalhos encontrados na ACM relacionados a *string* de
@@ -492,29 +492,37 @@ Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
 *jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
 e 60 do tipo *proceeding*.
 
-### Sequence-Aware Recommender Systems
+Essa pesquisa tem como objetivo responder as seguintes perguntas:
 
-Buscam revisar trabalhos existentes que consideram as informações dos
-registros da sequência ordenada de interações do usuário no processo de
-recomendação.
+  - Critérios de Qualidade?
 
-Critérios de Qualidade ?
+  - Qual o problema que ele resolveu?
+    
+      - Ele usou o Spotify?
 
-Qual o problema que ele resolveu?
+  - Qual a base de treinamento e teste?
 
-Ele usou o Spotify?
+  - Quais técnicas foram usadas?
 
-Qual a base de treinamento e teste?
+  - Quais os resultados?
 
-Quais técnicas foram usadas?
+  - Como o trabalho foi avaliado/validado?
 
-Quais os resultados?
+### The New Challenges when Modeling Context through Diversity over Time in Recommender Systems
 
-Como o trabalho foi avaliado/validado?
+Texto
 
-### A Context-Aware User-Item Representation Learning for Item Recommendation
+### Prediction of music pairwise preferences from facial expressions
 
 Texto.
+
+### Towards Intent-Aware Contextual Music Recommendation: Initial Experiments
+
+Texto
+
+### Quantitative Study of Music Listening Behavior in a Smartphone Context
+
+Texto
 
 ## Tabela com tecnicas
 
