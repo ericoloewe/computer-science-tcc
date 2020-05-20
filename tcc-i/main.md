@@ -520,20 +520,26 @@ condizem com o objetivo descrito no protocolo.
 Figura - Filtro em cima dos trabalhos selecionados através do resumo
 (próprio, 2020)
 
-Dado o alto número de trabalhos encontrados, foi desenvolvido uma
-classificação dos artigos em tipos. Baseado no conhecimento sobre o
-trabalho obtido na leitura da segunda etapa, foi realizado uma
-classificação deles em 4 tipos,
+Baseado no conhecimento obtido dos trabalhos na segunda etapa, foi
+realizado uma classificação deles em 4 tipos, que são: Trabalhos que
+possuem relação com o foco de pesquisa da revisão; Trabalhos que
+utilizam dos RecSys e contexto, mas que visam recomendar outros temas
+além da música como notícias, filmes, produtos; Trabalhos que utilizam
+dos RecSys e contexto, mas que não abordam a recomendação musical;
+Trabalhos que utilizam dos RecSys musicais, mas que não utilizam o
+contexto nas recomendações. Foi apresentado na forma de gráfico de pizza
+na Figura 5 a relação entre os tipos e a quantidade de artigos
+encontrados.
 
 <span id="_Toc40819482" class="anchor"></span>Figura 6 - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
-O resultado do filtro foram 4 trabalhos relacionados ao objetivo
-descrito no protocolo de revisão desse trabalho. Será realizado uma
-análise nesses trabalhos nas sessões ... onde, em cada sessão/trabalho,
-será realizado uma descrição do que foi desenvolvido e no fim, será
-respondido as seguintes perguntas:
+O resultado do procedimento de filtro (apresentado na Figura 6) foram 4
+trabalhos relacionados ao objetivo descrito no protocolo de revisão
+desse trabalho. Será realizado uma análise nesses trabalhos nas sessões
+... onde, em cada sessão/trabalho, será realizado uma descrição do que
+foi desenvolvido e no fim, será respondido as seguintes perguntas:
 
   - Critérios de Qualidade?
 
