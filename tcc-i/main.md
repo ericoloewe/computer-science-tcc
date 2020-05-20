@@ -70,19 +70,22 @@ Keywords: tradução das palavras-chave para a língua inglesa.
 Lista de Figuras
 
 [Figura 1 - Motor avançado de busca da ACM (próprio, 2020)
-18](#_Toc40819478)
+18](#_Ref40822554)
 
 [Figura 2 - Resultado de busca dos proceedings no motor de busca da ACM
-(próprio, 2020) 19](#_Toc40819479)
+(próprio, 2020) 19](#_Ref40822631)
 
 [Figura 3 - Resultado de busca dos journals no motor de busca da ACM
-(próprio, 2020) 19](#_Toc40819480)
+(próprio, 2020) 19](#_Ref40822641)
 
 [Figura 4 - Etapas realizadas para filtrar os trabalhos encontrados no
 motor de busca da ACM (próprio, 2020) 20](#_Ref40817235)
 
-[Figura 5 - Procedimento de filtro realizado baseado nos trabalhos
-encontrados no motor de busca da ACM (próprio, 2020) 20](#_Toc40819482)
+[Figura 5 - Filtro em cima dos trabalhos selecionados através do resumo
+(próprio, 2020) 20](#_Ref40822087)
+
+[Figura 6 - Procedimento de filtro realizado baseado nos trabalhos
+encontrados no motor de busca da ACM (próprio, 2020) 21](#_Ref40821926)
 
 \* As listas (de figuras, de tabelas e de abreviaturas e siglas,) devem
 ser apresentadas conforme aparecem no trabalho (na ordem), com cada item
@@ -460,12 +463,12 @@ uso delas nos trabalhos encontrados.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./tcc-i/pandoc/media/image1.png)
 
-<span id="_Toc40819478" class="anchor"></span>Figura - Motor avançado de
+<span id="_Ref40822554" class="anchor"></span>Figura - Motor avançado de
 busca da ACM (próprio, 2020)
 
 No dia 07/05/2020 foi realizado a pesquisa no motor de busca apresentado
-a partir da *string* de busca pré-definida anteriormente. As Figura 1, 2
-e 3 ilustram esse processo. Todos trouxeram resultados pertinentes ao
+a partir da *string* de busca pré-definida anteriormente. As Figuras 1,
+2 e 3 ilustram esse processo. Todos trouxeram resultados pertinentes ao
 trabalho logo na primeira página da aplicação. A quantidade de
 resultados apresentados na ACM foram 150 trabalhos relacionados a
 *string* de busca.
@@ -473,7 +476,7 @@ resultados apresentados na ACM foram 150 trabalhos relacionados a
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./tcc-i/pandoc/media/image2.png)
 
-<span id="_Toc40819479" class="anchor"></span>Figura - Resultado de
+<span id="_Ref40822631" class="anchor"></span>Figura - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
@@ -489,7 +492,7 @@ disponível para desenvolver esse trabalho.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./tcc-i/pandoc/media/image3.png)
 
-<span id="_Toc40819480" class="anchor"></span>Figura - Resultado de
+<span id="_Ref40822641" class="anchor"></span>Figura - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
 
 A quantidade de trabalhos encontrados na ACM relacionados a *string* de
@@ -517,8 +520,8 @@ condizem com o objetivo descrito no protocolo.
 
 <span class="chart">\[CHART\]</span>
 
-Figura - Filtro em cima dos trabalhos selecionados através do resumo
-(próprio, 2020)
+<span id="_Ref40822087" class="anchor"></span>Figura - Filtro em cima
+dos trabalhos selecionados através do resumo (próprio, 2020)
 
 Baseado no conhecimento obtido dos trabalhos na segunda etapa, foi
 realizado uma classificação deles em 4 tipos, que são: Trabalhos que
@@ -531,15 +534,16 @@ contexto nas recomendações. Foi apresentado na forma de gráfico de pizza
 na Figura 5 a relação entre os tipos e a quantidade de artigos
 encontrados.
 
-<span id="_Toc40819482" class="anchor"></span>Figura 6 - Procedimento de
+<span id="_Ref40821926" class="anchor"></span>Figura 6 - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
 O resultado do procedimento de filtro (apresentado na Figura 6) foram 4
 trabalhos relacionados ao objetivo descrito no protocolo de revisão
 desse trabalho. Será realizado uma análise nesses trabalhos nas sessões
-... onde, em cada sessão/trabalho, será realizado uma descrição do que
-foi desenvolvido e no fim, será respondido as seguintes perguntas:
+3.3.1, 3.3.2, 3.3.3 e 3.3.4. Onde, em cada sessão/artigo, será realizado
+uma descrição do que foi desenvolvido e no fim, será respondido as
+seguintes perguntas:
 
   - Critérios de Qualidade?
 
