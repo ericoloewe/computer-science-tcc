@@ -69,10 +69,20 @@ Keywords: tradução das palavras-chave para a língua inglesa.
 
 Lista de Figuras
 
-[Figura 1 – Estrutura de desenvolvimento em duas camadas
-14](#_Toc515473980)
+[Figura 1 - Motor avançado de busca da ACM (próprio, 2020)
+18](#_Toc40819478)
 
-[Figura 2 – Padrão MVC - separação em camadas 15](#_Toc515473981)
+[Figura 2 - Resultado de busca dos proceedings no motor de busca da ACM
+(próprio, 2020) 19](#_Toc40819479)
+
+[Figura 3 - Resultado de busca dos journals no motor de busca da ACM
+(próprio, 2020) 19](#_Toc40819480)
+
+[Figura 4 - Etapas realizadas para filtrar os trabalhos encontrados no
+motor de busca da ACM (próprio, 2020) 20](#_Ref40817235)
+
+[Figura 5 - Procedimento de filtro realizado baseado nos trabalhos
+encontrados no motor de busca da ACM (próprio, 2020) 20](#_Toc40819482)
 
 \* As listas (de figuras, de tabelas e de abreviaturas e siglas,) devem
 ser apresentadas conforme aparecem no trabalho (na ordem), com cada item
@@ -146,41 +156,42 @@ Sumário
 
 [3.2 PROCURA NOS MOTORES DE BUSCA 18](#procura-nos-motores-de-busca)
 
-[3.3 Os trabalhos 19](#os-trabalhos)
+[3.3 Os trabalhos 20](#os-trabalhos)
 
-[3.3.1 Improving Context-Aware Music Recommender Systems: Beyond the
-Pre-filtering Approach 19](#_Toc39608991)
+[3.3.1 The New Challenges when Modeling Context through Diversity over
+Time in Recommender Systems
+21](#the-new-challenges-when-modeling-context-through-diversity-over-time-in-recommender-systems)
 
-[3.3.2 Context-Aware Mobile Music Recommendation for Daily Activities
-19](#_Toc39608992)
+[3.3.2 Prediction of music pairwise preferences from facial expressions
+21](#prediction-of-music-pairwise-preferences-from-facial-expressions)
 
-[3.3.3 Musical serendipity: designing for contextual music
-recommendation and discovery 20](#_Toc39608993)
+[3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial
+Experiments
+21](#towards-intent-aware-contextual-music-recommendation-initial-experiments)
 
-[3.3.4 Recommender system handbook 20](#_Toc39608994)
+[3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone
+Context
+21](#quantitative-study-of-music-listening-behavior-in-a-smartphone-context)
 
-[3.3.5 Desenvolvimento de um Sistema de Recomendação Musical Sensível ao
-Contexto 20](#_Toc39608995)
+[3.4 Tabela com tecnicas 21](#tabela-com-tecnicas)
 
-[3.4 Tabela com tecnicas 20](#tabela-com-tecnicas)
+[4 Modelagem do que será feito 22](#modelagem-do-que-será-feito)
 
-[4 Modelagem do que será feito 21](#modelagem-do-que-será-feito)
-
-[4.1 Contexto 21](#contexto)
+[4.1 Contexto 22](#contexto)
 
 [4.1.1 O que é o contexto comportamental?
-21](#o-que-é-o-contexto-comportamental)
+22](#o-que-é-o-contexto-comportamental)
 
-[4.1.2 O que é o contexto ambiente? 21](#o-que-é-o-contexto-ambiente)
+[4.1.2 O que é o contexto ambiente? 22](#o-que-é-o-contexto-ambiente)
 
 [4.1.3 Como será obtido os contextos?
-21](#como-será-obtido-os-contextos)
+22](#como-será-obtido-os-contextos)
 
-[4.2 Arquitetura do sistema 21](#arquitetura-do-sistema)
+[4.2 Arquitetura do sistema 22](#arquitetura-do-sistema)
 
-[5 CONCLUSÃO 22](#conclusão)
+[5 CONCLUSÃO 23](#conclusão)
 
-[Referências Bibliográficas 23](#referências-bibliográficas)
+[Referências Bibliográficas 24](#referências-bibliográficas)
 
 O sumário é elemento obrigatório, em que se apresentam os títulos e
 subtítulos (ou seções), seguidos de sua paginação. É recomendável
@@ -449,7 +460,8 @@ uso delas nos trabalhos encontrados.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./tcc-i/pandoc/media/image1.png)
 
-Figura Motor avançado de busca da ACM (próprio, 2020)
+<span id="_Toc40819478" class="anchor"></span>Figura - Motor avançado de
+busca da ACM (próprio, 2020)
 
 No dia 07/05/2020 foi realizado a pesquisa no motor de busca apresentado
 a partir da *string* de busca pré-definida anteriormente. As Figura 1, 2
@@ -461,8 +473,8 @@ resultados apresentados na ACM foram 150 trabalhos relacionados a
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./tcc-i/pandoc/media/image2.png)
 
-Figura Resultado de busca dos proceedings no motor de busca da ACM
-(próprio, 2020)
+<span id="_Toc40819479" class="anchor"></span>Figura - Resultado de
+busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
 cima da busca. Procurando trazer somente os trabalhos mais atual
@@ -477,8 +489,8 @@ disponível para desenvolver esse trabalho.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./tcc-i/pandoc/media/image3.png)
 
-Figura Resultado de busca dos journals no motor de busca da ACM
-(próprio, 2020)
+<span id="_Toc40819480" class="anchor"></span>Figura - Resultado de
+busca dos journals no motor de busca da ACM (próprio, 2020)
 
 A quantidade de trabalhos encontrados na ACM relacionados a *string* de
 busca foi muito alta, isso aconteceu devido a plataforma possuir uma
@@ -493,8 +505,9 @@ Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
 *jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
 e 60 do tipo *proceeding*.
 
-Figura Etapas realizadas para filtrar os trabalhos encontrados no motor
-de busca da ACM (próprio, 2020)
+<span id="_Ref40817235" class="anchor"></span>Figura - Etapas realizadas
+para filtrar os trabalhos encontrados no motor de busca da ACM (próprio,
+2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado no
 sistema estruturado anteriormente e recomendações do professor
@@ -502,8 +515,9 @@ orientador. Esse filtro é baseado em 3 etapas (demonstradas na Figura
 4), que visam direcionar esta pesquisa para a revisão dos trabalhos que
 condizem com o objetivo descrito no protocolo.
 
-Figura 5 Procedimento de filtro realizado baseado nos trabalhos
-encontrados no motor de busca da ACM (próprio, 2020)
+<span id="_Toc40819482" class="anchor"></span>Figura 5 - Procedimento de
+filtro realizado baseado nos trabalhos encontrados no motor de busca da
+ACM (próprio, 2020)
 
 O resultado do filtro foram 4 trabalhos relacionados ao objetivo
 descrito no protocolo de revisão desse trabalho. Será realizado uma
