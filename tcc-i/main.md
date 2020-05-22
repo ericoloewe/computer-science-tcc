@@ -545,19 +545,46 @@ desse trabalho. Será realizado uma análise nesses trabalhos nas sessões
 uma descrição do que foi desenvolvido e no fim, será respondido as
 seguintes perguntas:
 
-  - Critérios de Qualidade?
-
   - Qual o problema que ele resolveu?
     
-      - Ele usou o Spotify?
-
-  - Qual a base de treinamento e teste?
+      - Buscam obter uma recomendação é personalizada pelo gosto do
+        usuário?
 
   - Quais técnicas foram usadas?
+    
+      - Foi utilizada da recomendação colaborativa?
+    
+      - Quais foram os algoritmos utilizados na recomendação?
 
-  - Quais os resultados?
+  - Qual a base de treinamento e teste?
+    
+      - Foi desenvolvido alguma aplicação para obter a base?
 
-  - Como o trabalho foi avaliado/validado?
+  - Quais os contextos utilizados?
+    
+      - Foi analisado o comportamento? Quais aspectos?
+    
+      - Foi analisado o ambiente? Quais fatores?
+
+  - Como é obtido o contexto?
+    
+      - O usuário pode auxiliar na definição do contexto?
+    
+      - É apresentado o contexto atual para o usuário?
+
+  - Como foi relacionado os contextos com as recomendações?
+
+  - Foi avaliado o nível de prazer do usuário com a música recomendada?
+
+  - A recomendação atingiu as expectativas do usuário?
+    
+      - Quais foram os critérios de qualidade utilizados?
+    
+      - Quantidade de usuários utilizadas? (tamanho da base)
+    
+      - Como foram as técnicas usadas?
+
+  - Tiveram outros resultados apresentados? Quais?
 
 ### The New Challenges when Modeling Context through Diversity over Time in Recommender Systems
 
