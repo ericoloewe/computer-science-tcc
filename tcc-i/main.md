@@ -463,8 +463,8 @@ uso delas nos trabalhos encontrados.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
-de busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Figura - Motor avançado de
+busca da ACM (próprio, 2020)
 
 No dia 07/05/2020 foi realizado a pesquisa no motor de busca apresentado
 a partir da *string* de busca pré-definida anteriormente. As Figuras 1,
@@ -476,7 +476,7 @@ resultados apresentados na ACM foram 150 trabalhos relacionados a
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
+<span id="_Ref40822631" class="anchor"></span>Figura - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
@@ -492,7 +492,7 @@ disponível para desenvolver esse trabalho.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
+<span id="_Ref40822641" class="anchor"></span>Figura - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
 
 A quantidade de trabalhos encontrados na ACM relacionados a *string* de
@@ -508,19 +508,18 @@ Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
 *jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
 e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
-realizadas para filtrar os trabalhos encontrados no motor de busca da
-ACM (próprio, 2020)
+<span id="_Ref40822414" class="anchor"></span>Figura - Etapas realizadas
+para filtrar os trabalhos encontrados no motor de busca da ACM (próprio,
+2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado no
-sistema estruturado anteriormente e recomendações do professor
-orientador. Esse filtro é baseado em 3 etapas (demonstradas na Figura
-4), que visam direcionar esta pesquisa para a revisão dos trabalhos que
-condizem com o objetivo descrito no protocolo.
+sistema estruturado anteriormente. Esse filtro é baseado em 3 etapas
+(demonstradas na Figura 4), que visam direcionar esta pesquisa para a
+revisão dos trabalhos que condizem com o objetivo descrito no protocolo.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
+<span id="_Ref40822493" class="anchor"></span>Figura - Filtro em cima
 dos trabalhos selecionados através do resumo (próprio, 2020)
 
 Baseado no conhecimento obtido dos trabalhos na segunda etapa, foi
@@ -534,20 +533,19 @@ contexto nas recomendações. Foi apresentado na forma de gráfico de pizza
 na Figura 5 a relação entre os tipos e a quantidade de artigos
 encontrados.
 
-<span id="_Ref40822509" class="anchor"></span>Figura - Procedimento de
+<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
 O resultado do procedimento de filtro (apresentado na Figura 6) foram 4
 trabalhos relacionados ao objetivo descrito no protocolo de revisão
-desse trabalho. Será realizado uma análise nesses trabalhos nas sessões
-3.3.1, 3.3.2, 3.3.3 e 3.3.4. Onde, em cada sessão/artigo, será realizado
-uma descrição do que foi desenvolvido e no fim, será respondido as
-seguintes perguntas:
+desse trabalho. Será realizado uma análise nesses trabalhos nas próximas
+seções. Onde, em cada seção/artigo, será realizado uma descrição do que
+foi desenvolvido e no fim, será respondido as seguintes perguntas:
 
   - Qual o problema que ele resolveu?
     
-      - Buscam obter uma recomendação é personalizada pelo gosto do
+      - Buscam obter uma recomendação personalizada pelo gosto do
         usuário?
 
   - Quais técnicas foram usadas?
@@ -558,7 +556,7 @@ seguintes perguntas:
 
   - Qual a base de treinamento e teste?
     
-      - Foi desenvolvido alguma aplicação para obter a base?
+      - Foi desenvolvida alguma aplicação para obter as bases?
 
   - Quais os contextos utilizados?
     
@@ -572,9 +570,10 @@ seguintes perguntas:
     
       - É apresentado o contexto atual para o usuário?
 
-  - Como foi relacionado os contextos com as recomendações?
+  - Como foram relacionados os contextos com as recomendações?
 
-  - Foi avaliado o nível de prazer do usuário com a música recomendada?
+  - Foi avaliado o nível de satisfação do usuário com a música
+    recomendada?
 
   - A recomendação atingiu as expectativas do usuário?
     
@@ -582,7 +581,7 @@ seguintes perguntas:
     
       - Quantidade de usuários utilizadas? (tamanho da base)
     
-      - Como foram as técnicas usadas?
+      - Quais foram as técnicas de avaliação usadas?
 
   - Tiveram outros resultados apresentados? Quais?
 
