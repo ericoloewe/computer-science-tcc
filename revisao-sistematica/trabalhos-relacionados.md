@@ -344,7 +344,7 @@ Será realizado uma analise em suas introduções e conclusões e manter as publ
   - monitoram as intenções através do contexto
   - especifico para assistentes virtuais
 
-## Trabalhos que serão mantidos pela introdução e conclusão
+## Trabalhos que serão mantidos pela introdução e conclusão (4 trabalhos)
 
 - [The New Challenges when Modeling Context through Diversity over Time in Recommender Systems](https://dl.acm.org/doi/abs/10.1145/2930238.2930370) 🍕 
 - [Prediction of music pairwise preferences from facial expressions](https://dl.acm.org/doi/abs/10.1145/3301275.3302266) 🥩
