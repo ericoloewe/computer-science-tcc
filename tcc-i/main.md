@@ -571,6 +571,7 @@ foi desenvolvido e no fim, será respondido as seguintes perguntas:
       - É apresentado o contexto atual para o usuário?
 
   - Como foram relacionados os contextos com as recomendações?
+    (REMOVIDO)
 
   - Foi avaliado o nível de satisfação do usuário com a música
     recomendada?
@@ -653,36 +654,31 @@ Nesse trabalho é realizado a obtenção do contexto de duas maneiras: De
 maneira implícita e explicita. O modelo foi desenvolvido especificamente
 para obtenção do contexto implícito do usuário. É definido uma noção
 através das características comuns dos itens consultados durante um
-certo espaço de tempo. O contexto explicito foi utilizado como validação
-do contexto implícito obtido através do modelo.
+certo espaço de tempo. O contexto explicito foi obtido diretamente do
+usuário através de perguntas, e foi utilizado como validação do contexto
+implícito obtido através do modelo.
 
 O uso do contexto implícito foi dividido em 3 etapas: detectar o
 contexto o mais rápido possível, utilizar o histórico para detectar
 contextos semelhantes. Exploração de contextos semelhantes.
 
-  - O usuário pode auxiliar na definição do contexto?
-
-  - É apresentado o contexto atual para o usuário?
-
-#### Como foram relacionados os contextos com as recomendações?
-
-Texto
+A validação da acuracidade do modelo, a comparação dos contextos foi
+classificada em 4 possibilidades: O contexto implícito e explicito são
+os mesmos. Os contextos são parcialmente os mesmos. Os contextos são
+diferentes, mas o usuário concorda com o contexto obtido de forma
+implícita. E por último, é quando os contextos são diferentes e o
+usuário não entende o contexto obtido.
 
 #### Foi avaliado o nível de satisfação do usuário com a música recomendada?
 
-Texto
+Não foi apresentado nenhuma avaliação desse tipo.
 
 #### A recomendação atingiu as expectativas do usuário?
 
-  - Quais foram os critérios de qualidade utilizados?
-
-  - Quantidade de usuários utilizadas? (tamanho da base)
-
-  - Quais foram as técnicas de avaliação usadas?
-
-#### Tiveram outros resultados apresentados? Quais?
-
-Texto
+Essa métrica foi validada através da obtenção do contexto explicito
+citado em 3.3.1.5, onde é apresentado as 4 percepções dos usuários em
+relação ao contexto implícito obtido. Porem não é apresentado nenhum
+resultado dessa avaliação.
 
 ### Prediction of music pairwise preferences from facial expressions
 
