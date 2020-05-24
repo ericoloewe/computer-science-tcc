@@ -163,38 +163,38 @@ Sumário
 
 [3.3.1 The New Challenges when Modeling Context through Diversity over
 Time in Recommender Systems
-21](#the-new-challenges-when-modeling-context-through-diversity-over-time-in-recommender-systems)
+22](#the-new-challenges-when-modeling-context-through-diversity-over-time-in-recommender-systems)
 
 [3.3.2 Prediction of music pairwise preferences from facial expressions
-21](#prediction-of-music-pairwise-preferences-from-facial-expressions)
+24](#prediction-of-music-pairwise-preferences-from-facial-expressions)
 
 [3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial
 Experiments
-21](#towards-intent-aware-contextual-music-recommendation-initial-experiments)
+25](#towards-intent-aware-contextual-music-recommendation-initial-experiments)
 
 [3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone
 Context
-21](#quantitative-study-of-music-listening-behavior-in-a-smartphone-context)
+26](#quantitative-study-of-music-listening-behavior-in-a-smartphone-context)
 
-[3.4 Tabela com tecnicas 21](#tabela-com-tecnicas)
+[3.4 Tabela com tecnicas 27](#tabela-com-tecnicas)
 
-[4 Modelagem do que será feito 22](#modelagem-do-que-será-feito)
+[4 Modelagem do que será feito 29](#modelagem-do-que-será-feito)
 
-[4.1 Contexto 22](#contexto)
+[4.1 Contexto 29](#contexto)
 
 [4.1.1 O que é o contexto comportamental?
-22](#o-que-é-o-contexto-comportamental)
+29](#o-que-é-o-contexto-comportamental)
 
-[4.1.2 O que é o contexto ambiente? 22](#o-que-é-o-contexto-ambiente)
+[4.1.2 O que é o contexto ambiente? 29](#o-que-é-o-contexto-ambiente)
 
 [4.1.3 Como será obtido os contextos?
-22](#como-será-obtido-os-contextos)
+29](#como-será-obtido-os-contextos)
 
-[4.2 Arquitetura do sistema 22](#arquitetura-do-sistema)
+[4.2 Arquitetura do sistema 29](#arquitetura-do-sistema)
 
-[5 CONCLUSÃO 23](#conclusão)
+[5 CONCLUSÃO 30](#conclusão)
 
-[Referências Bibliográficas 24](#referências-bibliográficas)
+[Referências Bibliográficas 31](#referências-bibliográficas)
 
 O sumário é elemento obrigatório, em que se apresentam os títulos e
 subtítulos (ou seções), seguidos de sua paginação. É recomendável
@@ -463,8 +463,8 @@ uso delas nos trabalhos encontrados.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura - Motor avançado de
-busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
+de busca da ACM (próprio, 2020)
 
 No dia 07/05/2020 foi realizado a pesquisa no motor de busca apresentado
 a partir da *string* de busca pré-definida anteriormente. As Figuras 1,
@@ -476,7 +476,7 @@ resultados apresentados na ACM foram 150 trabalhos relacionados a
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822631" class="anchor"></span>Figura - Resultado de
+<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
@@ -492,7 +492,7 @@ disponível para desenvolver esse trabalho.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura - Resultado de
+<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
 
 A quantidade de trabalhos encontrados na ACM relacionados a *string* de
@@ -508,9 +508,9 @@ Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
 *jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
 e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura - Etapas realizadas
-para filtrar os trabalhos encontrados no motor de busca da ACM (próprio,
-2020)
+<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
+realizadas para filtrar os trabalhos encontrados no motor de busca da
+ACM (próprio, 2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado no
 sistema estruturado anteriormente. Esse filtro é baseado em 3 etapas
@@ -519,7 +519,7 @@ revisão dos trabalhos que condizem com o objetivo descrito no protocolo.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura - Filtro em cima
+<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
 dos trabalhos selecionados através do resumo (próprio, 2020)
 
 Baseado no conhecimento obtido dos trabalhos na segunda etapa, foi
@@ -533,7 +533,7 @@ contexto nas recomendações. Foi apresentado na forma de gráfico de pizza
 na Figura 5 a relação entre os tipos e a quantidade de artigos
 encontrados.
 
-<span id="_Ref40822509" class="anchor"></span>Figura - Procedimento de
+<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
@@ -682,17 +682,178 @@ resultado dessa avaliação.
 
 ### Prediction of music pairwise preferences from facial expressions
 
-Texto.
+#### Qual o problema que ele resolveu?
+
+Texto
+
+  - Buscam obter uma recomendação personalizada pelo gosto do usuário?
+
+#### Quais técnicas foram usadas?
+
+Texto
+
+  - Foi utilizada da recomendação colaborativa?
+
+  - Quais foram os algoritmos utilizados na recomendação?
+
+#### Qual a base de treinamento e teste?
+
+Texto
+
+  - Foi desenvolvida alguma aplicação para obter as bases?
+
+#### Quais os contextos utilizados?
+
+Texto
+
+  - Foi analisado o comportamento? Quais aspectos?
+
+  - Foi analisado o ambiente? Quais fatores?
+
+#### Como é obtido o contexto?
+
+Texto
+
+  - O usuário pode auxiliar na definição do contexto?
+
+  - É apresentado o contexto atual para o usuário?
+
+#### Foi avaliado o nível de satisfação do usuário com a música recomendada?
+
+Texto
+
+#### A recomendação atingiu as expectativas do usuário?
+
+Texto
+
+  - Quais foram os critérios de qualidade utilizados?
+
+  - Quantidade de usuários utilizadas? (tamanho da base)
+
+  - Quais foram as técnicas de avaliação usadas?
+
+#### Tiveram outros resultados apresentados? Quais?
+
+Texto
 
 ### Towards Intent-Aware Contextual Music Recommendation: Initial Experiments
+
+####  Qual o problema que ele resolveu?
+
+Texto
+
+  - Buscam obter uma recomendação personalizada pelo gosto do usuário?
+    
+    1.  #### Quais técnicas foram usadas?
+
+Texto
+
+  - Foi utilizada da recomendação colaborativa?
+
+  - Quais foram os algoritmos utilizados na recomendação?
+    
+    1.  #### Qual a base de treinamento e teste?
+
+Texto
+
+  - Foi desenvolvida alguma aplicação para obter as bases?
+    
+    1.  #### Quais os contextos utilizados?
+
+Texto
+
+  - Foi analisado o comportamento? Quais aspectos?
+
+  - Foi analisado o ambiente? Quais fatores?
+    
+    1.  #### Como é obtido o contexto?
+
+Texto
+
+  - O usuário pode auxiliar na definição do contexto?
+
+  - É apresentado o contexto atual para o usuário?
+    
+    1.  #### Foi avaliado o nível de satisfação do usuário com a música recomendada?
+
+Texto
+
+#### A recomendação atingiu as expectativas do usuário?
+
+Texto
+
+  - Quais foram os critérios de qualidade utilizados?
+
+  - Quantidade de usuários utilizadas? (tamanho da base)
+
+  - Quais foram as técnicas de avaliação usadas?
+    
+    1.  #### Tiveram outros resultados apresentados? Quais?
 
 Texto
 
 ### Quantitative Study of Music Listening Behavior in a Smartphone Context
 
+####  Qual o problema que ele resolveu?
+
+Texto
+
+  - Buscam obter uma recomendação personalizada pelo gosto do usuário?
+    
+    1.  #### Quais técnicas foram usadas?
+
+Texto
+
+  - Foi utilizada da recomendação colaborativa?
+
+  - Quais foram os algoritmos utilizados na recomendação?
+    
+    1.  #### Qual a base de treinamento e teste?
+
+Texto
+
+  - Foi desenvolvida alguma aplicação para obter as bases?
+    
+    1.  #### Quais os contextos utilizados?
+
+Texto
+
+  - Foi analisado o comportamento? Quais aspectos?
+
+  - Foi analisado o ambiente? Quais fatores?
+    
+    1.  #### Como é obtido o contexto?
+
+Texto
+
+  - O usuário pode auxiliar na definição do contexto?
+
+  - É apresentado o contexto atual para o usuário?
+    
+    1.  #### Foi avaliado o nível de satisfação do usuário com a música recomendada?
+
+Texto
+
+#### A recomendação atingiu as expectativas do usuário?
+
+Texto
+
+  - Quais foram os critérios de qualidade utilizados?
+
+  - Quantidade de usuários utilizadas? (tamanho da base)
+
+  - Quais foram as técnicas de avaliação usadas?
+    
+    1.  #### Tiveram outros resultados apresentados? Quais?
+
 Texto
 
 ## Tabela com tecnicas
+
+Texto
+
+Table 1 Relação das funcionalidades desenvolvidas em cada artigo
+revisado (próprio, 2020)
 
 |                                                                   | 3.3.1 The New Challenges when Modeling Context through Diversity over Time in Recommender Systems | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
 | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
