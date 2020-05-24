@@ -604,6 +604,58 @@ tempo. Foi definido tambem como a oposição do contexto explicito, o qual
 implicito, se refere a uma sequencia de itens, enquanto o explicito,
 inclue informações adicionais do usuario.
 
+#### Qual o problema que ele resolveu?
+
+Nesse trabalho é apresentado um modelo que busca melhorar as
+recomendações musicais através do contexto que o usuário está vivendo.
+É apresentado uma preocupação em trazer as melhores recomendações
+baseadas nas particularidades de cada usuário.
+
+#### Quais técnicas foram usadas?
+
+Esse trabalho apresenta superficialmente as técnicas utilizadas para
+realizar as recomendações.
+
+#### Qual a base de treinamento e teste?
+
+Não foi realizado nenhuma aplicação para obter a base de treinamento
+desse trabalho. Foi utilizado uma base pronta que continha mais de
+200.000 representações dos acessos de usuários em um sistema. Essa base
+foi utilizada para validar a habilidade do modelo apresentado de obter o
+contexto implícito através dos dados de acesso.
+
+#### Quais os contextos utilizados?
+
+  - Foi analisado o comportamento? Quais aspectos?
+
+  - Foi analisado o ambiente? Quais fatores?
+
+#### Como é obtido o contexto?
+
+  - O usuário pode auxiliar na definição do contexto?
+
+  - É apresentado o contexto atual para o usuário?
+
+#### Como foram relacionados os contextos com as recomendações?
+
+Texto
+
+#### Foi avaliado o nível de satisfação do usuário com a música recomendada?
+
+Texto
+
+#### A recomendação atingiu as expectativas do usuário?
+
+  - Quais foram os critérios de qualidade utilizados?
+
+  - Quantidade de usuários utilizadas? (tamanho da base)
+
+  - Quais foram as técnicas de avaliação usadas?
+
+#### Tiveram outros resultados apresentados? Quais?
+
+Texto
+
 ### Prediction of music pairwise preferences from facial expressions
 
 Texto.
@@ -620,12 +672,14 @@ Texto
 
 Texto
 
-|                                                                 | 3.3.1 The New Challenges when Modeling Context through Diversity over Time in Recommender Systems | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
-| --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
-| O trabalho foi validado em um caso real?                        | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
-| Apresenta como o sistema chegou em tal recomendação ao usuário? | ✔                                                                                                 | \-                                                                     | \-                                                                              | \-                                                                           | \-                      |
-| Utiliza do contexto explicito?                                  | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
-| Utiliza do contexto implícito?                                  | ✔                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
+|                                                                   | 3.3.1 The New Challenges when Modeling Context through Diversity over Time in Recommender Systems | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
+| Tem foco no entendimento do contexto para recomendações musicais? | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              | ✔                       |
+| Apresenta o desenvolvimento realizado no trabalho?                | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
+| O trabalho foi validado em um caso real?                          | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
+| Apresenta como o sistema chegou em tal recomendação ao usuário?   | ✔                                                                                                 | \-                                                                     | \-                                                                              | \-                                                                           | \-                      |
+| Utiliza do contexto explicito?                                    | ✔                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
+| Utiliza do contexto implícito?                                    | ✔                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
 
 # Modelagem do que será feito
 
