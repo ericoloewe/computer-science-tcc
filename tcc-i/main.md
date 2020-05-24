@@ -87,17 +87,10 @@ motor de busca da ACM (próprio, 2020) 20](#_Ref40822414)
 [Figura 6 - Procedimento de filtro realizado baseado nos trabalhos
 encontrados no motor de busca da ACM (próprio, 2020) 21](#_Ref40822509)
 
-\* As listas (de figuras, de tabelas e de abreviaturas e siglas,) devem
-ser apresentadas conforme aparecem no trabalho (na ordem), com cada item
-designado pelo seu nome/título específico e do respectivo número da
-página. Elaborar uma lista própria para cada tipo. Espaço entre linhas
-= 1,5, <span class="underline">sem</span> o espaçamento antes e depois
-(6ptos).
-
 Lista de Tabelas
 
-[Tabela 1 – Matrícula dos alunos do Centro de Educação da FURG segundo o
-município. 15](#_Toc515474000)
+[Table 1 Relação das funcionalidades desenvolvidas em cada artigo
+revisado (próprio, 2020) 27](#_Toc41243154)
 
 Lista de Abreviaturas e Siglas
 
@@ -178,31 +171,23 @@ Context
 
 [3.4 Tabela com tecnicas 27](#tabela-com-tecnicas)
 
-[4 Modelagem do que será feito 29](#modelagem-do-que-será-feito)
+[4 Modelagem do que será feito 30](#modelagem-do-que-será-feito)
 
-[4.1 Contexto 29](#contexto)
+[4.1 Contexto 30](#contexto)
 
 [4.1.1 O que é o contexto comportamental?
-29](#o-que-é-o-contexto-comportamental)
+30](#o-que-é-o-contexto-comportamental)
 
-[4.1.2 O que é o contexto ambiente? 29](#o-que-é-o-contexto-ambiente)
+[4.1.2 O que é o contexto ambiente? 30](#o-que-é-o-contexto-ambiente)
 
 [4.1.3 Como será obtido os contextos?
-29](#como-será-obtido-os-contextos)
+30](#como-será-obtido-os-contextos)
 
-[4.2 Arquitetura do sistema 29](#arquitetura-do-sistema)
+[4.2 Arquitetura do sistema 30](#arquitetura-do-sistema)
 
-[5 CONCLUSÃO 30](#conclusão)
+[5 CONCLUSÃO 31](#conclusão)
 
-[Referências Bibliográficas 31](#referências-bibliográficas)
-
-O sumário é elemento obrigatório, em que se apresentam os títulos e
-subtítulos (ou seções), seguidos de sua paginação. É recomendável
-(PRODANOV, 2003, p.32) que não se ultrapassem cinco níveis de
-subtítulos. Deixar um espaço maior para separar cada título =\> por
-exemplo, espaçamento antes e depois = 6 pts. Este sumário foi elaborado
-automaticamente pelo Word. Para atualizá-lo, basta clicar com o botão
-direito, escolher Atualizar Campo e depois Atualizar o Índice Inteiro.
+[Referências Bibliográficas 32](#referências-bibliográficas)
 
 # Introdução
 
@@ -852,8 +837,8 @@ Texto
 
 Texto
 
-Table 1 Relação das funcionalidades desenvolvidas em cada artigo
-revisado (próprio, 2020)
+<span id="_Toc41243154" class="anchor"></span>Table 1 Relação das
+funcionalidades desenvolvidas em cada artigo revisado (próprio, 2020)
 
 |                                                                   | 3.3.1 The New Challenges when Modeling Context through Diversity over Time in Recommender Systems | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
 | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
