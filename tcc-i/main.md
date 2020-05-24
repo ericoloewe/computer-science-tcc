@@ -463,8 +463,8 @@ uso delas nos trabalhos encontrados.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
-de busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Figura - Motor avançado de
+busca da ACM (próprio, 2020)
 
 No dia 07/05/2020 foi realizado a pesquisa no motor de busca apresentado
 a partir da *string* de busca pré-definida anteriormente. As Figuras 1,
@@ -476,7 +476,7 @@ resultados apresentados na ACM foram 150 trabalhos relacionados a
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
+<span id="_Ref40822631" class="anchor"></span>Figura - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
@@ -492,7 +492,7 @@ disponível para desenvolver esse trabalho.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
+<span id="_Ref40822641" class="anchor"></span>Figura - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
 
 A quantidade de trabalhos encontrados na ACM relacionados a *string* de
@@ -508,9 +508,9 @@ Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
 *jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
 e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
-realizadas para filtrar os trabalhos encontrados no motor de busca da
-ACM (próprio, 2020)
+<span id="_Ref40822414" class="anchor"></span>Figura - Etapas realizadas
+para filtrar os trabalhos encontrados no motor de busca da ACM (próprio,
+2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado no
 sistema estruturado anteriormente. Esse filtro é baseado em 3 etapas
@@ -519,7 +519,7 @@ revisão dos trabalhos que condizem com o objetivo descrito no protocolo.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
+<span id="_Ref40822493" class="anchor"></span>Figura - Filtro em cima
 dos trabalhos selecionados através do resumo (próprio, 2020)
 
 Baseado no conhecimento obtido dos trabalhos na segunda etapa, foi
@@ -597,6 +597,13 @@ tende a diminuir gradualmente conforme a seção é encerrada.
 Nesse trabalho foi desenvolvido um modelo chamado DANCE, para monitorar
 e explorar a evolução da diversidade ao longo do tempo.
 
+O conceito de contexto implicito foi definido como caracteristicas
+comuns compartilhadas aos items consultados durante uma certa faxa de
+tempo. Foi definido tambem como a oposição do contexto explicito, o qual
+é definido como uma situação dentre os fatores conhecidos. O contexto
+implicito, se refere a uma sequencia de itens, enquanto o explicito,
+inclue informações adicionais do usuario.
+
 ### Prediction of music pairwise preferences from facial expressions
 
 Texto.
@@ -612,6 +619,13 @@ Texto
 ## Tabela com tecnicas
 
 Texto
+
+|                                                                 | 3.3.1 The New Challenges when Modeling Context through Diversity over Time in Recommender Systems | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
+| O trabalho foi validado em um caso real?                        | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
+| Apresenta como o sistema chegou em tal recomendação ao usuário? | ✔                                                                                                 | \-                                                                     | \-                                                                              | \-                                                                           | \-                      |
+| Utiliza do contexto explicito?                                  | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
+| Utiliza do contexto implícito?                                  | ✔                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
 
 # Modelagem do que será feito
 
