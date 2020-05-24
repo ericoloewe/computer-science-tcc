@@ -667,6 +667,8 @@ resultado dessa avaliação.
 
 ### Prediction of music pairwise preferences from facial expressions
 
+Texto
+
 #### Qual o problema que ele resolveu?
 
 Texto
@@ -723,6 +725,8 @@ Texto
 
 ### Towards Intent-Aware Contextual Music Recommendation: Initial Experiments
 
+Texto
+
 ####  Qual o problema que ele resolveu?
 
 Texto
@@ -778,6 +782,8 @@ Texto
 Texto
 
 ### Quantitative Study of Music Listening Behavior in a Smartphone Context
+
+Texto
 
 ####  Qual o problema que ele resolveu?
 
