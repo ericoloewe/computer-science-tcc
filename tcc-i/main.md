@@ -595,14 +595,13 @@ nível de diversidade precisa ser alto no início da seção de navegação e
 tende a diminuir gradualmente conforme a seção é encerrada.
 
 Nesse trabalho foi desenvolvido um modelo chamado DANCE, para monitorar
-e explorar a evolução da diversidade ao longo do tempo.
-
-O conceito de contexto implicito foi definido como caracteristicas
-comuns compartilhadas aos items consultados durante uma certa faxa de
-tempo. Foi definido tambem como a oposição do contexto explicito, o qual
-é definido como uma situação dentre os fatores conhecidos. O contexto
-implicito, se refere a uma sequencia de itens, enquanto o explicito,
-inclue informações adicionais do usuario.
+e explorar a evolução da diversidade ao longo do tempo. No modelo foi
+desenvolvido o conceito de contexto implicito, o qual ficou definido
+como caracteristicas comuns compartilhadas aos items consultados durante
+uma certa faxa de tempo. Foi definido tambem como a oposição do contexto
+explicito, o qual é definido como uma situação dentre os fatores
+conhecidos. O contexto implicito, se refere a uma sequencia de itens,
+enquanto o explicito, inclue informações adicionais do usuario.
 
 #### Qual o problema que ele resolveu?
 
@@ -626,11 +625,40 @@ contexto implícito através dos dados de acesso.
 
 #### Quais os contextos utilizados?
 
-  - Foi analisado o comportamento? Quais aspectos?
+A principal métrica utilizada nesse trabalho foi a diversidade. A qual
+pode ser obtida através de diversos tipos de dados (numéricos, binários,
+texto, intervalos, ...), desde que seja possível calcular a semelhança
+entre dois dados desse mesmo tipo. Através da diversidade, é obtido o
+contexto implícito do usuário.
 
-  - Foi analisado o ambiente? Quais fatores?
+O modelo é capaz de detectar as mudanças de contexto comportamental a
+partir das consultas do usuário, e cada subsequência de itens
+consultados entre duas mudanças de contexto correspondem ao contexto
+implícito. E com a obtenção do contexto é realizado a recomendação ao
+usuário.
+
+No modelo do trabalho, não apresentado o uso do contexto de ambiente, é
+utilizado somente o *ip* do usuário, mas não está claro se é utilizado
+como uma representação da posição geográfica onde o usuário se encontra.
+
+Como nesse trabalho o contexto é obtido através da diversidade
+encontrada na diferença de certos atributos, é utilizados atributos que
+não possuem relação direta com contexto, mas sim com a música. Para
+obtenção da diversidade é utilizado: 7 atributos relacionados ao artista
+da música. 6 atributos relacionados a música.
 
 #### Como é obtido o contexto?
+
+Nesse trabalho é realizado a obtenção do contexto de duas maneiras: De
+maneira implícita e explicita. O modelo foi desenvolvido especificamente
+para obtenção do contexto implícito do usuário. É definido uma noção
+através das características comuns dos itens consultados durante um
+certo espaço de tempo. O contexto explicito foi utilizado como validação
+do contexto implícito obtido através do modelo.
+
+O uso do contexto implícito foi dividido em 3 etapas: detectar o
+contexto o mais rápido possível, utilizar o histórico para detectar
+contextos semelhantes. Exploração de contextos semelhantes.
 
   - O usuário pode auxiliar na definição do contexto?
 
@@ -670,14 +698,14 @@ Texto
 
 ## Tabela com tecnicas
 
-Texto
-
 |                                                                   | 3.3.1 The New Challenges when Modeling Context through Diversity over Time in Recommender Systems | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
 | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
 | Tem foco no entendimento do contexto para recomendações musicais? | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              | ✔                       |
 | Apresenta o desenvolvimento realizado no trabalho?                | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
 | O trabalho foi validado em um caso real?                          | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
 | Apresenta como o sistema chegou em tal recomendação ao usuário?   | ✔                                                                                                 | \-                                                                     | \-                                                                              | \-                                                                           | \-                      |
+| Utiliza do contexto comportamental?                               | ✔                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
+| Utiliza do contexto de ambiente?                                  | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
 | Utiliza do contexto explicito?                                    | ✔                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
 | Utiliza do contexto implícito?                                    | ✔                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
 
