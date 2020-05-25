@@ -677,7 +677,7 @@ Texto
 
 #### Quais técnicas foram usadas?
 
-Texto
+PAIRWISE SCORE, CLASSIFICAÇÃO
 
   - Foi utilizada da recomendação colaborativa?
 
