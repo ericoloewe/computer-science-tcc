@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using web_api.Models;
@@ -9,9 +10,10 @@ using web_api.Models;
 namespace web_api.Migrations
 {
     [DbContext(typeof(PluginContext))]
-    partial class PluginContextModelSnapshot : ModelSnapshot
+    [Migration("20200526024814_UserEventRelation")]
+    partial class UserEventRelation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -76,61 +78,61 @@ namespace web_api.Migrations
                         new
                         {
                             Id = "1",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
+                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 851, DateTimeKind.Local).AddTicks(3211),
                             Name = "Alegre"
                         },
                         new
                         {
                             Id = "2",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
+                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local).AddTicks(7626),
                             Name = "Triste"
                         },
                         new
                         {
                             Id = "3",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
+                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local).AddTicks(7729),
                             Name = "Assustado"
                         },
                         new
                         {
                             Id = "4",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
+                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local).AddTicks(7768),
                             Name = "Ansioso"
                         },
                         new
                         {
                             Id = "5",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
+                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local).AddTicks(7802),
                             Name = "Bravo"
                         },
                         new
                         {
                             Id = "6",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
+                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local).AddTicks(7847),
                             Name = "Feliz"
                         },
                         new
                         {
                             Id = "7",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
+                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local).AddTicks(7883),
                             Name = "Chorando"
                         },
                         new
                         {
                             Id = "8",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
+                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local).AddTicks(7986),
                             Name = "Com vergonha"
                         },
                         new
                         {
                             Id = "9",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
+                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local).AddTicks(8029),
                             Name = "Com raiva"
                         },
                         new
                         {
                             Id = "10",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
+                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local).AddTicks(8067),
                             Name = "Amando"
                         });
                 });

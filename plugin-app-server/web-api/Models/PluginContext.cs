@@ -19,16 +19,19 @@ namespace web_api.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "1", Name = "Alegre", CreatedDate = DateTime.Now });
-            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "2", Name = "Triste", CreatedDate = DateTime.Now });
-            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "3", Name = "Assustado", CreatedDate = DateTime.Now });
-            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "4", Name = "Ansioso", CreatedDate = DateTime.Now });
-            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "5", Name = "Bravo", CreatedDate = DateTime.Now });
-            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "6", Name = "Feliz", CreatedDate = DateTime.Now });
-            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "7", Name = "Chorando", CreatedDate = DateTime.Now });
-            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "8", Name = "Com vergonha", CreatedDate = DateTime.Now });
-            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "9", Name = "Com raiva", CreatedDate = DateTime.Now });
-            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "10", Name = "Amando", CreatedDate = DateTime.Now });
+
+            var datetime = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local);
+
+            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "1", Name = "Alegre", CreatedDate = datetime });
+            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "2", Name = "Triste", CreatedDate = datetime });
+            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "3", Name = "Assustado", CreatedDate = datetime });
+            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "4", Name = "Ansioso", CreatedDate = datetime });
+            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "5", Name = "Bravo", CreatedDate = datetime });
+            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "6", Name = "Feliz", CreatedDate = datetime });
+            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "7", Name = "Chorando", CreatedDate = datetime });
+            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "8", Name = "Com vergonha", CreatedDate = datetime });
+            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "9", Name = "Com raiva", CreatedDate = datetime });
+            modelBuilder.Entity<Feeling>().HasData(new Feeling { Id = "10", Name = "Amando", CreatedDate = datetime });
         }
     }
 }
