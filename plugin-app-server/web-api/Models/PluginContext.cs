@@ -13,8 +13,10 @@ namespace web_api.Models
         public DbSet<User> Users { get; set; }
         public DbSet<UserEvent> UserEvents { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseNpgsql("Host=127.0.0.1;Database=spotify_plugin;Username=postgres;Password=postgres");
+        public PluginContext(DbContextOptions<PluginContext> options) : base(options)
+        {
+        }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

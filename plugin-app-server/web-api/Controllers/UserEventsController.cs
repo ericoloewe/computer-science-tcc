@@ -37,7 +37,7 @@ namespace web_api.Controllers
             }
             catch (ArgumentException ex)
             {
-                logger.LogError($"There was an exception => {ex.Message}", ex);
+                logger.LogError(ex, $"There was an exception => {ex.Message}");
                 return BadRequest();
             }
         }
