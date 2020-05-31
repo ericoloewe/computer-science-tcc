@@ -779,11 +779,17 @@ Texto
 
 ####  Qual o problema que ele resolveu?
 
-Texto
+É abordado 3 contribuições no artigo: Por primeiro, é estimado uma
+distribuição empírica das intenções do ouvinte ao reproduzir um video no
+Youtube. Na segunda é realizado um experimento semelhante ao da
+primeira, porem utilizando o Spotify. E por último, é relatado os
+resultados iniciais obtidos utilizando o modelo de intenções treinados
+para melhorar as recomendações. O modelo apresentado, demonstra
+melhorias promissoras na recomendação de músicas através das intenções
+do usuário, ao invés de recomendações que dependem apenas de suas
+atividades.
 
-  - Buscam obter uma recomendação personalizada pelo gosto do usuário?
-    
-    1.  #### Quais técnicas foram usadas?
+#### Quais técnicas foram usadas?
 
 Texto
 
