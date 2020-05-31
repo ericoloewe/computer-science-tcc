@@ -448,8 +448,8 @@ uso delas nos trabalhos encontrados.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura - Motor avançado de
-busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
+de busca da ACM (próprio, 2020)
 
 No dia 07/05/2020 foi realizado a pesquisa no motor de busca apresentado
 a partir da *string* de busca pré-definida anteriormente. As Figuras 1,
@@ -461,7 +461,7 @@ resultados apresentados na ACM foram 150 trabalhos relacionados a
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822631" class="anchor"></span>Figura - Resultado de
+<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
@@ -477,7 +477,7 @@ disponível para desenvolver esse trabalho.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura - Resultado de
+<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
 
 A quantidade de trabalhos encontrados na ACM relacionados a *string* de
@@ -493,9 +493,9 @@ Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
 *jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
 e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura - Etapas realizadas
-para filtrar os trabalhos encontrados no motor de busca da ACM (próprio,
-2020)
+<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
+realizadas para filtrar os trabalhos encontrados no motor de busca da
+ACM (próprio, 2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado no
 sistema estruturado anteriormente. Esse filtro é baseado em 3 etapas
@@ -504,7 +504,7 @@ revisão dos trabalhos que condizem com o objetivo descrito no protocolo.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura - Filtro em cima
+<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
 dos trabalhos selecionados através do resumo (próprio, 2020)
 
 Baseado no conhecimento obtido dos trabalhos na segunda etapa, foi
@@ -518,7 +518,7 @@ contexto nas recomendações. Foi apresentado na forma de gráfico de pizza
 na Figura 5 a relação entre os tipos e a quantidade de artigos
 encontrados.
 
-<span id="_Ref40822509" class="anchor"></span>Figura - Procedimento de
+<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
@@ -673,10 +673,10 @@ uma aplicação, onde a preferência do usuário é obtida através da
 observação do seu comportamento. Cada usuário devia ouvir ao menos 10
 segundos de cada música em par apresentada e ao finalizar, poderia
 escolher qual música era mais adequada para se ouvir no ambiente
-pré-estabelecido que era seu trabalho. Nela, é obtido os dois contextos
-estudados nesse trabalho, no momento em que o usuário escutava as
-músicas, era gravado suas expressões faciais através de uma câmera, e o
-tempo dedicado a ouvir cada musica.
+pré-estabelecido que era seu trabalho. Nesse momento que é obtido os
+dois contextos estudados na pesquisa revisada, quando o usuário escutava
+as músicas, foi gravado suas expressões faciais através de uma câmera e
+o tempo dedicado a ouvir cada música.
 
 #### Qual o problema que ele resolveu?
 
@@ -706,6 +706,12 @@ algoritmos *Random forest* e *Gradient Boosting* por apresentarem os
 melhores resultados. Eles os escolheram, dado a principal base de
 predição, que foi, o uso do tempo em que os usuários escutaram as
 músicas e a diferença da duração entre duas músicas em par.
+
+Para auxiliar no score em par, foi utilizado o *Spearman’s Rank
+Correlation Coefficient* entre as diferentes durações (distribuições não
+normais). Isso é, quanto maior a diferença entre as duas músicas, maior
+a probabilidade de o usuário ter gostado da música que ele por mais
+tempo.
 
 Para obter os resultados, foi realizado a comparação da precisão das
 preferências de predição dos modelos bases utilizando *Root Mean Squared
@@ -747,17 +753,25 @@ Não foi avaliado o nível de satisfação dos usuários.
 
 #### A recomendação atingiu as expectativas do usuário?
 
-Texto
+Para obter os resultados, foi realizado a comparação da precisão das
+preferências de predição dos modelos bases utilizando *Root Mean Squared
+Error* (RMSE), precisão, *recall*, *F-measure* e acuracidade. A
+precisão, *recall* e *F-measure* foram calculadas ponderando os
+*scores* de cada classe pelo número de instancias verdadeiras de cada,
+para explicar o desequilíbrio dela.
 
-  - Quais foram os critérios de qualidade utilizados?
+A base foi obtida através da aplicação obteve um total de 75 usuários
+treinados para utilizar a aplicação com uma média de idade de 29,8 anos.
 
-  - Quantidade de usuários utilizadas? (tamanho da base)
-
-  - Quais foram as técnicas de avaliação usadas?
+O principal critério de qualidade utilizado foi o tempo em que o usuário
+escutou cada música, pois, quanto maior a diferença entre as duas
+músicas, maior a probabilidade de o usuário ter gostado da música que
+ele por mais tempo. Outro critério apresentado foi a sua avaliação das
+músicas em par.
 
 #### Tiveram outros resultados apresentados? Quais?
 
-Texto
+Não tiveram outros resultados apresentados.
 
 ### Towards Intent-Aware Contextual Music Recommendation: Initial Experiments
 
@@ -882,7 +896,7 @@ Texto
 
 Texto
 
-<span id="_Toc41243154" class="anchor"></span>Table Relação das
+<span id="_Toc41243154" class="anchor"></span>Table 1 Relação das
 funcionalidades desenvolvidas em cada artigo revisado (próprio, 2020)
 
 |                                                                   | 3.3.1 The New Challenges when Modeling Context through Diversity over Time in Recommender Systems | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
