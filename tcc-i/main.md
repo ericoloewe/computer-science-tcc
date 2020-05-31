@@ -698,9 +698,9 @@ melhores resultados. Eles os escolheram, dado a principal base de
 predição, que foi, o uso do tempo em que os usuários escutaram as
 músicas e a diferença da duração entre duas músicas em par.
 
-Foi realizado a comparação da precisão das preferências de predição dos
-modelos bases utilizando *Root Mean Squared Error* (RMSE), precisão,
-*recall*, *F-measure* e acuracidade.
+Para obter os resultados, foi realizado a comparação da precisão das
+preferências de predição dos modelos bases utilizando *Root Mean Squared
+Error* (RMSE), precisão, *recall*, *F-measure* e acuracidade.
 
 #### Qual a base de treinamento e teste?
 
@@ -710,15 +710,18 @@ Texto
 
 #### Quais os contextos utilizados?
 
-Texto
-
-  - Foi analisado o comportamento? Quais aspectos?
-
-  - Foi analisado o ambiente? Quais fatores?
+O principal contexto utilizado nesse trabalho foi as emoções dos
+usuários obtidas através das expressões faciais dos usuários gravadas
+durante os testes realizados. No fim, foi apresentado um outro contexto
+comportamental, que é o tempo em que os usuários escutaram cada música.
+Não foi apresentado nenhum tipo de contexto de ambiente.
 
 #### Como é obtido o contexto?
 
-Texto
+Os dois contexto são obtidos enquanto o usuário está utilizando a
+aplicação de teste para reproduzir músicas, as emoções são obtidas a
+partir das expressões faciais produzidas, e o tempo que é gravado
+enquanto ele escuta cada música.
 
   - O usuário pode auxiliar na definição do contexto?
 
