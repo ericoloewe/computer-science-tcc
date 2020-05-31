@@ -791,41 +791,53 @@ atividades.
 
 #### Quais técnicas foram usadas?
 
-Texto
+Dado o escopo desse trabalho, será apresentado somente as técnicas
+utilizadas nas recomendações de áudio (Seção 2.2) apresentadas no artigo
+revisado. Nessa seção, é apresentado a especificação de um algoritmo que
+busca entender as intenções do usuário através dos títulos das
+*playlists* disponibilizadas pelos usuários. A pesquisa não utilizou da
+recomendação colaborativa.
 
-  - Foi utilizada da recomendação colaborativa?
+As intenções foram obtidas através de diversos tipos de algoritmos de
+*machine learning* como: *Logistic Regression*, *both fuzzy* e *hard
+Clustering*, mas os melhores resultados foram obtidos utilizando o
+*Random Forest classifier* (utilizando a implementação do *sklearn*).
 
-  - Quais foram os algoritmos utilizados na recomendação?
-    
-    1.  #### Qual a base de treinamento e teste?
+#### Qual a base de treinamento e teste?
 
-Texto
+A base de intenções é montada a partir de testes realizados utilizando a
+API do Spotify em Python em cima das *playlists* dispostas do usuário.
+Não é apresentado nenhuma aplicação desenvolvida para obter as bases.
 
-  - Foi desenvolvida alguma aplicação para obter as bases?
-    
-    1.  #### Quais os contextos utilizados?
+#### Quais os contextos utilizados?
 
-Texto
+Esse trabalho realizou a interpretação de contexto como intenções. O
+principal atributo utilizado são as atividades que o usuário está
+executando, o qual é obtido através de seu comportamento (buscas por
+*playlists*).
 
-  - Foi analisado o comportamento? Quais aspectos?
+#### Como é obtido o contexto?
 
-  - Foi analisado o ambiente? Quais fatores?
-    
-    1.  #### Como é obtido o contexto?
+Para obter o comportamento do usuário, foi avaliado durante um período
+de teste as intenções dos usuários nas buscas por *playlists*, e a
+partir delas, foi gerado uma playlist de acordo com suas intenções. Esse
+comportamento é obtido de maneira implícita e o usuário não pode ajudar
+na definição do contexto. Não é apresentado ao usuário o contexto atual
+obtido através do seu comportamento.
 
-Texto
+#### Foi avaliado o nível de satisfação do usuário com a música recomendada?
 
-  - O usuário pode auxiliar na definição do contexto?
-
-  - É apresentado o contexto atual para o usuário?
-    
-    1.  #### Foi avaliado o nível de satisfação do usuário com a música recomendada?
-
-Texto
+Para validar as recomendações do sistema, foi realizado uma comparação
+com o RecSys do Spotify (SPTF) e o criado no artigo revisado (AIR).
+Nessa comparação foi pedido ao usuário para avaliar as duas *playlists*
+geradas pelos sistemas. As *playlists* geradas automaticamente para cada
+uma das 10 atividades foram agrupadas. Depois foram avaliadas por 1-3
+avaliadores humanos. A avaliação era para validar o quanto a *playlist*
+se enquadrava na atividade estipulada.
 
 #### A recomendação atingiu as expectativas do usuário?
 
-Texto
+Não é apresentado o tamanho da base utilizada nesse artigo.
 
   - Quais foram os critérios de qualidade utilizados?
 
