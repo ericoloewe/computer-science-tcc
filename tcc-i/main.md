@@ -846,20 +846,19 @@ com o RecSys do Spotify (SPTF) e o criado no artigo revisado (AIR).
 Nessa comparação foi pedido ao usuário para avaliar as duas *playlists*
 geradas pelos sistemas. As *playlists* geradas automaticamente para cada
 uma das 10 atividades foram agrupadas. Depois foram avaliadas por 1-3
-avaliadores humanos. A avaliação era para validar o quanto a *playlist*
-se enquadrava na atividade estipulada.
+avaliadores humanos. A avaliação tem como objetivo validar o quanto a
+*playlist* se enquadrava na atividade estipulada.
 
-Não é apresentado o tamanho da base utilizada nesse artigo.
+A partir das avaliações realizadas, foram utilizadas 3 métricas para
+estimar a qualidade das recomendações feitas a partir dos coeficientes
+de correlação, elas são: Kendallτ, τ-AP e nMMR. Essas métricas são
+importantes para avaliar numericamente a qualidade de cada playlist
+recomendada. Ao final, foi analisado as avaliações e foi visto que não é
+apresentado o tamanho da base utilizada nesse artigo.
 
-  - Quais foram os critérios de qualidade utilizados?
+#### Tiveram outros resultados apresentados? Quais?
 
-  - Quantidade de usuários utilizadas? (tamanho da base)
-
-  - Quais foram as técnicas de avaliação usadas?
-    
-    1.  #### Tiveram outros resultados apresentados? Quais?
-
-Texto
+Não tiveram outros resultados apresentados.
 
 ### Quantitative Study of Music Listening Behavior in a Smartphone Context
 
