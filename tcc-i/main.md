@@ -775,7 +775,16 @@ Não tiveram outros resultados apresentados.
 
 ### Towards Intent-Aware Contextual Music Recommendation: Initial Experiments
 
-Texto
+É apresentado técnicas e resultados no artigo revisado que buscam
+estudar as intenções dos usuários demonstradas a partir do estudo
+realizado em cima da API do Spotify e Youtube, que visa entender as
+intenções dos usuários a partir das descrições das *playlists*. A partir
+desse estudo, é gerado *playlists* especificas para cada atividade
+relacionada as intenções dos usuários. Isso foi desenvolvido no sistema
+de recomendação apresentado (AIR), que usa a API do Spotify para obter
+suas melhores *playlist* relacionados a busca, delas é obtido as top 10
+músicas com melhores scores, as quais são incluídas nas recomendações
+futuras para cada atividade.
 
 ####  Qual o problema que ele resolveu?
 
@@ -827,6 +836,11 @@ obtido através do seu comportamento.
 
 #### Foi avaliado o nível de satisfação do usuário com a música recomendada?
 
+Não foi avaliado o nível de satisfação dos usuários referente a música
+recomendada.
+
+#### A recomendação atingiu as expectativas do usuário?
+
 Para validar as recomendações do sistema, foi realizado uma comparação
 com o RecSys do Spotify (SPTF) e o criado no artigo revisado (AIR).
 Nessa comparação foi pedido ao usuário para avaliar as duas *playlists*
@@ -834,8 +848,6 @@ geradas pelos sistemas. As *playlists* geradas automaticamente para cada
 uma das 10 atividades foram agrupadas. Depois foram avaliadas por 1-3
 avaliadores humanos. A avaliação era para validar o quanto a *playlist*
 se enquadrava na atividade estipulada.
-
-#### A recomendação atingiu as expectativas do usuário?
 
 Não é apresentado o tamanho da base utilizada nesse artigo.
 
