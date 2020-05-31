@@ -662,7 +662,7 @@ Não foi apresentado nenhuma avaliação desse tipo.
 
 Essa métrica foi validada através da obtenção do contexto explicito
 citado em 3.3.1.5, onde é apresentado as 4 percepções dos usuários em
-relação ao contexto implícito obtido. Porem não é apresentado nenhum
+relação ao contexto implícito obtido. Porém não é apresentado nenhum
 resultado dessa avaliação.
 
 ### Prediction of music pairwise preferences from facial expressions
@@ -704,9 +704,10 @@ Error* (RMSE), precisão, *recall*, *F-measure* e acuracidade.
 
 #### Qual a base de treinamento e teste?
 
-Texto
-
-  - Foi desenvolvida alguma aplicação para obter as bases?
+A base dessa pesquisa foi gerada através do uso em um ambiente
+controlado de uma aplicação desenvolvida para obter a base desse
+trabalho. Foi utilizado um total de 75 usuários treinados para utilizar
+a aplicação com uma média de idade de 29,8 anos.
 
 #### Quais os contextos utilizados?
 
@@ -718,14 +719,18 @@ Não foi apresentado nenhum tipo de contexto de ambiente.
 
 #### Como é obtido o contexto?
 
-Os dois contexto são obtidos enquanto o usuário está utilizando a
+Os dois contextos são obtidos enquanto o usuário está utilizando a
 aplicação de teste para reproduzir músicas, as emoções são obtidas a
 partir das expressões faciais produzidas, e o tempo que é gravado
-enquanto ele escuta cada música.
+enquanto ele escuta cada música. Não é apresentado o contexto atual ao
+usuário, e não existe um formulário onde o usuário possa definir
+explicitamente o contexto.
 
-  - O usuário pode auxiliar na definição do contexto?
-
-  - É apresentado o contexto atual para o usuário?
+A preferência do usuário foi obtida através da observação do seu
+comportamento em cima da aplicação. Cada usuário devia ouvir ao menos 10
+segundos de cada música em par apresentada e ao finalizar, poderia
+escolher qual musica era mais adequada para se ouvir no ambiente
+pré-estabelecido que era seu trabalho.
 
 #### Foi avaliado o nível de satisfação do usuário com a música recomendada?
 
