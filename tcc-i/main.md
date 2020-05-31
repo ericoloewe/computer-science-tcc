@@ -679,15 +679,28 @@ demonstradas enquanto escuta suas músicas?
 
 #### Quais técnicas foram usadas?
 
-PAIRWISE SCORE, CLASSIFICAÇÃO
+A principal técnica utilizada para predição das músicas foi gerando um
+score a partir da comparação par a par em cima das escolhas do usuário
+nas opções de músicas apresentadas. Essa comparação foi realizada como
+um problema de regressão, onde eles predizem a pontuação numérica em
+pares. E classificando o problema, onde foi predito uma pontuação em
+pares como classe discreta alternativa (esquerda é preferida, direita é
+preferida, igualmente preferidas).
 
-Para realizar a predição da expressão facial, foram experimentados
-diversos algoritmos, e no fim, foi utilizado os algoritmos Random forest
-e Gradient Boosting por apresentarem os melhores resultados.
+A recomendação gerada foi personalizada por usuário e não foi utilizado
+nenhum modelo colaborativo. Mas foi demonstrado o interesse no trabalho
+em adicionar ao RecSys o filtro do tipo colaborativo.
 
-  - Foi utilizada da recomendação colaborativa?
+Para realizar a predição da música desejada dado a expressão facial,
+foram experimentados diversos algoritmos, e no fim, foi utilizado os
+algoritmos *Random forest* e *Gradient Boosting* por apresentarem os
+melhores resultados. Eles os escolheram, dado a principal base de
+predição, que foi, o uso do tempo em que os usuários escutaram as
+músicas e a diferença da duração entre duas músicas em par.
 
-  - Quais foram os algoritmos utilizados na recomendação?
+Foi realizado a comparação da precisão das preferências de predição dos
+modelos bases utilizando *Root Mean Squared Error* (RMSE), precisão,
+*recall*, *F-measure* e acuracidade.
 
 #### Qual a base de treinamento e teste?
 
