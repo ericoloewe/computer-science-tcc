@@ -667,7 +667,16 @@ resultado dessa avaliação.
 
 ### Prediction of music pairwise preferences from facial expressions
 
-Texto
+Essa pesquisa apresenta técnicas de como obter as preferências de um
+usuário através de suas expressões faciais. Para isso, foi desenvolvido
+uma aplicação, onde a preferência do usuário é obtida através da
+observação do seu comportamento. Cada usuário devia ouvir ao menos 10
+segundos de cada música em par apresentada e ao finalizar, poderia
+escolher qual música era mais adequada para se ouvir no ambiente
+pré-estabelecido que era seu trabalho. Nela, é obtido os dois contextos
+estudados nesse trabalho, no momento em que o usuário escutava as
+músicas, era gravado suas expressões faciais através de uma câmera, e o
+tempo dedicado a ouvir cada musica.
 
 #### Qual o problema que ele resolveu?
 
@@ -729,12 +738,12 @@ explicitamente o contexto.
 A preferência do usuário foi obtida através da observação do seu
 comportamento em cima da aplicação. Cada usuário devia ouvir ao menos 10
 segundos de cada música em par apresentada e ao finalizar, poderia
-escolher qual musica era mais adequada para se ouvir no ambiente
+escolher qual música era mais adequada para se ouvir no ambiente
 pré-estabelecido que era seu trabalho.
 
 #### Foi avaliado o nível de satisfação do usuário com a música recomendada?
 
-Texto
+Não foi avaliado o nível de satisfação dos usuários.
 
 #### A recomendação atingiu as expectativas do usuário?
 
