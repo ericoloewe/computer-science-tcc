@@ -448,8 +448,8 @@ uso delas nos trabalhos encontrados.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
-de busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Figura - Motor avançado de
+busca da ACM (próprio, 2020)
 
 No dia 07/05/2020 foi realizado a pesquisa no motor de busca apresentado
 a partir da *string* de busca pré-definida anteriormente. As Figuras 1,
@@ -461,7 +461,7 @@ resultados apresentados na ACM foram 150 trabalhos relacionados a
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
+<span id="_Ref40822631" class="anchor"></span>Figura - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
@@ -477,7 +477,7 @@ disponível para desenvolver esse trabalho.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
+<span id="_Ref40822641" class="anchor"></span>Figura - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
 
 A quantidade de trabalhos encontrados na ACM relacionados a *string* de
@@ -493,9 +493,9 @@ Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
 *jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
 e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
-realizadas para filtrar os trabalhos encontrados no motor de busca da
-ACM (próprio, 2020)
+<span id="_Ref40822414" class="anchor"></span>Figura - Etapas realizadas
+para filtrar os trabalhos encontrados no motor de busca da ACM (próprio,
+2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado no
 sistema estruturado anteriormente. Esse filtro é baseado em 3 etapas
@@ -504,7 +504,7 @@ revisão dos trabalhos que condizem com o objetivo descrito no protocolo.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
+<span id="_Ref40822493" class="anchor"></span>Figura - Filtro em cima
 dos trabalhos selecionados através do resumo (próprio, 2020)
 
 Baseado no conhecimento obtido dos trabalhos na segunda etapa, foi
@@ -518,7 +518,7 @@ contexto nas recomendações. Foi apresentado na forma de gráfico de pizza
 na Figura 5 a relação entre os tipos e a quantidade de artigos
 encontrados.
 
-<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
+<span id="_Ref40822509" class="anchor"></span>Figura - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
@@ -671,13 +671,19 @@ Texto
 
 #### Qual o problema que ele resolveu?
 
-Texto
-
-  - Buscam obter uma recomendação personalizada pelo gosto do usuário?
+Nesse trabalho, é apresentado uma abordagem para predizer a preferência
+musical do usuário a partir das expressões faciais. Ela busca responder
+a seguinte questão: É possível inferir (implicitamente) em pares as
+preferencias musicais de um usuário a partir de suas expressões faciais
+demonstradas enquanto escuta suas músicas?
 
 #### Quais técnicas foram usadas?
 
 PAIRWISE SCORE, CLASSIFICAÇÃO
+
+Para realizar a predição da expressão facial, foram experimentados
+diversos algoritmos, e no fim, foi utilizado os algoritmos Random forest
+e Gradient Boosting por apresentarem os melhores resultados.
 
   - Foi utilizada da recomendação colaborativa?
 
@@ -783,7 +789,10 @@ Texto
 
 ### Quantitative Study of Music Listening Behavior in a Smartphone Context
 
-Texto
+\- falar sobre 2 questões de pesquisa
+
+\- parece que usaram os sensores “crus”, poderíamos utilizar algo como:
+esta correndo, dormindo, caminhando
 
 ####  Qual o problema que ele resolveu?
 
@@ -843,7 +852,7 @@ Texto
 
 Texto
 
-<span id="_Toc41243154" class="anchor"></span>Table 1 Relação das
+<span id="_Toc41243154" class="anchor"></span>Table Relação das
 funcionalidades desenvolvidas em cada artigo revisado (próprio, 2020)
 
 |                                                                   | 3.3.1 The New Challenges when Modeling Context through Diversity over Time in Recommender Systems | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
