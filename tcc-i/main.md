@@ -580,36 +580,14 @@ usuário. Semelhante a estudos sobre e-commerce apresentados, onde o
 nível de diversidade precisa ser alto no início da seção de navegação e
 tende a diminuir gradualmente conforme a seção é encerrada.
 
-Nesse trabalho foi desenvolvido um modelo chamado DANCE, para monitorar
-e explorar a evolução da diversidade ao longo do tempo. No modelo foi
+Nesse trabalho foi apresentado um modelo chamado DANCE, para monitorar e
+explorar a evolução da diversidade ao longo do tempo. No modelo foi
 desenvolvido o conceito de contexto implicito, o qual ficou definido
 como caracteristicas comuns compartilhadas aos items consultados durante
 uma certa faxa de tempo. Foi definido tambem como a oposição do contexto
 explicito, o qual é definido como uma situação dentre os fatores
 conhecidos. O contexto implicito, se refere a uma sequencia de itens,
 enquanto o explicito, inclue informações adicionais do usuario.
-
-#### Qual o problema que ele resolveu?
-
-Nesse trabalho é apresentado um modelo que busca melhorar as
-recomendações musicais através do contexto que o usuário está vivendo.
-É apresentado uma preocupação em trazer as melhores recomendações
-baseadas nas particularidades de cada usuário.
-
-#### Quais técnicas foram usadas?
-
-Esse trabalho apresenta superficialmente as técnicas utilizadas para
-realizar as recomendações.
-
-#### Qual a base de treinamento e teste?
-
-Não foi realizado nenhuma aplicação para obter a base de treinamento
-desse trabalho. Foi utilizado uma base pronta que continha mais de
-200.000 representações dos acessos de usuários em um sistema. Essa base
-foi utilizada para validar a habilidade do modelo apresentado de obter o
-contexto implícito através dos dados de acesso.
-
-#### Quais os contextos utilizados?
 
 A principal métrica utilizada nesse trabalho foi a diversidade. A qual
 pode ser obtida através de diversos tipos de dados (numéricos, binários,
@@ -621,49 +599,23 @@ O modelo é capaz de detectar as mudanças de contexto comportamental a
 partir das consultas do usuário, e cada subsequência de itens
 consultados entre duas mudanças de contexto correspondem ao contexto
 implícito. E com a obtenção do contexto é realizado a recomendação ao
-usuário.
+usuário. O modelo do trabalho, não é apresentado o uso do contexto de
+ambiente, é utilizado somente o *ip* do usuário, mas não está claro se é
+utilizado como uma representação da posição geográfica onde o usuário se
+encontra.
 
-No modelo do trabalho, não apresentado o uso do contexto de ambiente, é
-utilizado somente o *ip* do usuário, mas não está claro se é utilizado
-como uma representação da posição geográfica onde o usuário se encontra.
+Não foi realizado nenhuma aplicação para obter a base de treinamento
+desse trabalho. Foi utilizado uma base pronta que continha mais de
+200.000 representações dos acessos de usuários em um sistema. Essa base
+foi utilizada para validar a habilidade do modelo apresentado de obter o
+contexto implícito através dos dados de acesso.
 
-Como nesse trabalho o contexto é obtido através da diversidade
-encontrada na diferença de certos atributos, é utilizados atributos que
-não possuem relação direta com contexto, mas sim com a música. Para
-obtenção da diversidade é utilizado: 7 atributos relacionados ao artista
-da música. 6 atributos relacionados a música.
-
-#### Como é obtido o contexto?
-
-Nesse trabalho é realizado a obtenção do contexto de duas maneiras: De
-maneira implícita e explicita. O modelo foi desenvolvido especificamente
-para obtenção do contexto implícito do usuário. É definido uma noção
-através das características comuns dos itens consultados durante um
-certo espaço de tempo. O contexto explicito foi obtido diretamente do
-usuário através de perguntas, e foi utilizado como validação do contexto
-implícito obtido através do modelo.
-
-O uso do contexto implícito foi dividido em 3 etapas: detectar o
-contexto o mais rápido possível, utilizar o histórico para detectar
-contextos semelhantes. Exploração de contextos semelhantes.
-
-A validação da acuracidade do modelo, a comparação dos contextos foi
-classificada em 4 possibilidades: O contexto implícito e explicito são
-os mesmos. Os contextos são parcialmente os mesmos. Os contextos são
-diferentes, mas o usuário concorda com o contexto obtido de forma
-implícita. E por último, é quando os contextos são diferentes e o
-usuário não entende o contexto obtido.
-
-#### Foi avaliado o nível de satisfação do usuário com a música recomendada?
-
-Não foi apresentado nenhuma avaliação desse tipo.
-
-#### A recomendação atingiu as expectativas do usuário?
-
-Essa métrica foi validada através da obtenção do contexto explicito
-citado em 3.3.1.5, onde é apresentado as 4 percepções dos usuários em
-relação ao contexto implícito obtido. Porém não é apresentado nenhum
-resultado dessa avaliação.
+Ao final da revisão do artigo foi verificado que o trabalho não
+apresenta dados e técnicas suficientes para ser considerado nesse
+trabalho. Pois todas as informações do sistema desenvolvido estão em
+outros artigos citados por esse. Então dado a falta de informações
+apresentadas nesse trabalho, não serão respondidas as questões
+pré-estabelecidas anteriormente.
 
 ### Prediction of music pairwise preferences from facial expressions
 
