@@ -956,7 +956,7 @@ filtragem apresentada na seção anterior.
 
 Antes dos usuários passarem a utilizar o sistema, foi realizado algumas
 perguntas a eles, validando e obtendo informações previas deles. Nessa
-seção, foi utilizado o *Pearson’s linear correlation coeficient* e AUC
+seção, foi utilizado o *Pearson’s linear correlation coefficient* e AUC
 para determinar quais fatores dos usuários são indicadores de desempenho
 das duas tarefas.
 
