@@ -881,8 +881,13 @@ seguintes questões:
     correlacionam com a previsibilidade do uso de músicas e da atividade
     do usuário para diferentes usuários?
 
-O artigo não apresentou ou desenvolveu sistema de recomendação musical,
-porém, trouxe diversas informações pertinentes a esse trabalho.
+Cada pergunta investiga diferentes interações entre os fatores musicais,
+pessoais e situacionais da audição musical. Especificamente é
+considerado um conjunto fechado de 8 tipos de atividades, onde é
+relacionado a dados diários obtidos pelos usuários durante um período de
+3 semanas. O artigo não apresentou ou desenvolveu sistema de
+recomendação musical, porém, trouxe diversas informações pertinentes a
+esse trabalho.
 
 ####  Qual o problema que ele resolveu?
 
