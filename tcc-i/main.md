@@ -966,43 +966,7 @@ e classificaram os fatores de uma preferência musical em 3 tipos
 
 Figura 7 Fatores da preferência musical (próprio, 2020)
 
-  - Usuário
-    
-      - Demográfico
-    
-      - Traços de personalidade
-    
-      - Fundo musical
-    
-      - Preferências musicais a longo prazo
-
-  - Música
-    
-      - Timbre
-    
-      - Ritmo
-    
-      - Melodia
-    
-      - Letra
-    
-      - Gênero
-    
-      - Emoção
-
-  - Contexto
-    
-      - Atividades do usuário
-    
-      - Humor do usuário
-    
-      - Contexto social
-    
-      - Tempo
-    
-      - Localização
-        
-        1.  #### Como é obtido o contexto?
+#### Como é obtido o contexto?
 
 O contexto é obtido a partir do aplicativo desenvolvido, ele trouxe
 diversas informações sobre o dia a dia dos usuários, essas informações
@@ -1017,17 +981,15 @@ O artigo revisado não desenvolveu um sistema de recomendação.
 
 Como artigo revisado não desenvolveu um sistema de recomendação. Apenas
 disponibilizou diversos dados estatísticos que auxiliariam o
-desenvolvimento de um RecSys.
+desenvolvimento de um RecSys. Por isso não foi definido nenhum critério
+de qualidade ou técnicas de avaliação das recomendações. A base foi
+obtida através do aplicativo desenvolvido nesse trabalho, ela continha
+48 usuários, que a partir de uma filtragem dos dados efetuada, passou
+para 19 nas respostas das questões.
 
-  - Quais foram os critérios de qualidade utilizados?
+#### Tiveram outros resultados apresentados? Quais?
 
-  - Quantidade de usuários utilizadas? (tamanho da base)
-
-  - Quais foram as técnicas de avaliação usadas?
-    
-    1.  #### Tiveram outros resultados apresentados? Quais?
-
-Texto
+Não tiveram outros resultados apresentados.
 
 ## Tabela com tecnicas
 
