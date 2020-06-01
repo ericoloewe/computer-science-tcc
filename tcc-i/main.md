@@ -865,13 +865,28 @@ Não tiveram outros resultados apresentados.
 \- falar sobre 2 questões de pesquisa
 
 \- parece que usaram os sensores “crus”, poderíamos utilizar algo como:
-esta correndo, dormindo, caminhando
+está correndo, dormindo, caminhando
 
 ####  Qual o problema que ele resolveu?
 
-Texto
+Nesse trabalho é apresentado diversas técnicas que buscam melhorar a
+recomendação personalizadas a partir de diversos dados obtidos através
+de sensores (implicitamente), ou através de perguntas realizadas ao
+usuário. O artigo revisado tem como principal objetivo responder as
+seguintes questões:
 
-  - Buscam obter uma recomendação personalizada pelo gosto do usuário?
+  - Em que medida podemos prever a música que um usuário prefere ouvir
+    em diferentes contextos de atividade (ou seja, uso de música) da
+    realidade?
+
+  - Em que medida podemos prever a atividade de um usuário a partir dos
+    dados do sensor coletados dos smartphones em um contexto de um
+    ouvinte musical da realidade?
+
+  - Como fatores pessoais, como dados demográficos, histórico musical,
+    preferência musical de longo prazo e traços de personalidade, se
+    correlacionam com a previsibilidade do uso de músicas e da atividade
+    do usuário para diferentes usuários?
     
     1.  #### Quais técnicas foram usadas?
 
