@@ -862,17 +862,10 @@ Não tiveram outros resultados apresentados.
 
 ### Quantitative Study of Music Listening Behavior in a Smartphone Context
 
-\- falar sobre 2 questões de pesquisa
-
-\- parece que usaram os sensores “crus”, poderíamos utilizar algo como:
-está correndo, dormindo, caminhando
-
-####  Qual o problema que ele resolveu?
-
-Nesse trabalho é apresentado diversas técnicas que buscam melhorar a
-recomendação personalizadas a partir de diversos dados obtidos através
-de sensores (implicitamente), ou através de perguntas realizadas ao
-usuário. O artigo revisado tem como principal objetivo responder as
+O artigo revisado apresentou diversos resultados quantitativos, que
+foram obtidos através da classificação e computação dos dados de um
+aplicativo, o qual foi desenvolvido para reproduzir músicas e registrar
+o contexto de um usuário. Ele tem como principal objetivo responder as
 seguintes questões:
 
 1.  Em que medida podemos prever a música que um usuário prefere ouvir
@@ -887,8 +880,19 @@ seguintes questões:
     preferência musical de longo prazo e traços de personalidade, se
     correlacionam com a previsibilidade do uso de músicas e da atividade
     do usuário para diferentes usuários?
-    
-    1.  #### Quais técnicas foram usadas?
+
+O artigo não apresentou ou desenvolveu sistema de recomendação musical,
+porém, trouxe diversas informações pertinentes a esse trabalho.
+
+####  Qual o problema que ele resolveu?
+
+Nesse trabalho é apresentado diversas técnicas que buscam melhorar a
+recomendação personalizadas a partir de diversos dados obtidos através
+de sensores (implicitamente), ou através de perguntas realizadas ao
+usuário. O artigo revisado tem como principal objetivo responder as
+questões descritas anteriormente.
+
+#### Quais técnicas foram usadas?
 
 Nessa seção será apresentado o conteúdo divido nas 3 questões que o
 artigo revisado busca resolver. Em nenhuma das questões é abordado a
