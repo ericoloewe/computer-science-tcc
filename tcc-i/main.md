@@ -934,9 +934,9 @@ definidas com os dados obtidos dos sensores. Foram considerados os
 mesmos 19 usuários obtidos na filtragem apresentada na seção anterior.
 
 A partir do aplicativo desenvolvido, foi possível obter os dados dos
-sensores, e semelhante a classificação dos dados musicais com o
-contexto, para classificar as atividades dos usuários com os sensores
-foi utilizado o RBF e SVM.
+sensores utilizando o *Funf Open Sensing Framework*, e semelhante a
+classificação dos dados musicais com o contexto, para classificar as
+atividades dos usuários com os sensores foi utilizado o RBF e SVM.
 
 ##### Como fatores pessoais se correlacionam com a previsibilidade do uso de músicas e da atividade do usuário para diferentes usuários?
 
@@ -953,33 +953,71 @@ das duas tarefas.
 
 #### Qual a base de treinamento e teste?
 
-Texto
+A partir do aplicativo desenvolvido no artigo revisado, foi gerado uma
+base de treinamento e teste. Ela foi dividida em 3 partes, sendo elas:
+relação música x contexto, relação dos sensores x atividades e por
+último os fatores extraídos dos usuários.
 
-  - Foi desenvolvida alguma aplicação para obter as bases?
+#### Quais os contextos utilizados?
+
+O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
+e classificaram os fatores de uma preferência musical em 3 tipos
+(usuário, música e contexto). Eles são:
+
+Figura 7 Fatores da preferência musical (próprio, 2020)
+
+  - Usuário
     
-    1.  #### Quais os contextos utilizados?
-
-Texto
-
-  - Foi analisado o comportamento? Quais aspectos?
-
-  - Foi analisado o ambiente? Quais fatores?
+      - Demográfico
     
-    1.  #### Como é obtido o contexto?
-
-Texto
-
-  - O usuário pode auxiliar na definição do contexto?
-
-  - É apresentado o contexto atual para o usuário?
+      - Traços de personalidade
     
-    1.  #### Foi avaliado o nível de satisfação do usuário com a música recomendada?
+      - Fundo musical
+    
+      - Preferências musicais a longo prazo
 
-Texto
+  - Música
+    
+      - Timbre
+    
+      - Ritmo
+    
+      - Melodia
+    
+      - Letra
+    
+      - Gênero
+    
+      - Emoção
+
+  - Contexto
+    
+      - Atividades do usuário
+    
+      - Humor do usuário
+    
+      - Contexto social
+    
+      - Tempo
+    
+      - Localização
+        
+        1.  #### Como é obtido o contexto?
+
+O contexto é obtido a partir do aplicativo desenvolvido, ele trouxe
+diversas informações sobre o dia a dia dos usuários, essas informações
+foram obtidas através de sensores e formulários que o usuário conseguia
+responder. Não é apresentado o contexto atual para o usuário.
+
+#### Foi avaliado o nível de satisfação do usuário com a música recomendada?
+
+O artigo revisado não desenvolveu um sistema de recomendação.
 
 #### A recomendação atingiu as expectativas do usuário?
 
-Texto
+Como artigo revisado não desenvolveu um sistema de recomendação. Apenas
+disponibilizou diversos dados estatísticos que auxiliariam o
+desenvolvimento de um RecSys.
 
   - Quais foram os critérios de qualidade utilizados?
 
