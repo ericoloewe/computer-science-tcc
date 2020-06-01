@@ -891,7 +891,8 @@ seguintes questões:
     1.  #### Quais técnicas foram usadas?
 
 Nessa seção será apresentado o conteúdo divido nas 3 questões que o
-artigo revisado busca resolver.
+artigo revisado busca resolver. Em nenhuma das questões é abordado a
+filtragem colaborativa.
 
 #####  Em que medida podemos prever a música que um usuário prefere ouvir em diferentes contextos de atividade (ou seja, uso de música) da realidade?
 
@@ -937,11 +938,20 @@ sensores, e semelhante a classificação dos dados musicais com o
 contexto, para classificar as atividades dos usuários com os sensores
 foi utilizado o RBF e SVM.
 
-##### Como fatores pessoais, como dados demográficos, histórico musical, preferência musical de longo prazo e traços de personalidade, se correlacionam com a previsibilidade do uso de músicas e da atividade do usuário para diferentes usuários?
+##### Como fatores pessoais se correlacionam com a previsibilidade do uso de músicas e da atividade do usuário para diferentes usuários?
 
-  - Foi utilizada da recomendação colaborativa?
-    
-    1.  #### Qual a base de treinamento e teste?
+Dado os resultados obtidos nas seções anteriores, essa seção busca
+determinar quais fatores do usuário são forte indicadores de desempenho
+das duas tarefas. Foram considerados os mesmos 19 usuários obtidos na
+filtragem apresentada na seção anterior.
+
+Antes dos usuários passarem a utilizar o sistema, foi realizado algumas
+perguntas a eles, validando e obtendo informações previas deles. Nessa
+seção, foi utilizado o *Pearson’s linear correlation coeficient* e AUC
+para determinar quais fatores dos usuários são indicadores de desempenho
+das duas tarefas.
+
+#### Qual a base de treinamento e teste?
 
 Texto
 
