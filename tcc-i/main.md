@@ -875,24 +875,45 @@ de sensores (implicitamente), ou através de perguntas realizadas ao
 usuário. O artigo revisado tem como principal objetivo responder as
 seguintes questões:
 
-  - Em que medida podemos prever a música que um usuário prefere ouvir
+1.  Em que medida podemos prever a música que um usuário prefere ouvir
     em diferentes contextos de atividade (ou seja, uso de música) da
     realidade?
 
-  - Em que medida podemos prever a atividade de um usuário a partir dos
+2.  Em que medida podemos prever a atividade de um usuário a partir dos
     dados do sensor coletados dos smartphones em um contexto de um
     ouvinte musical da realidade?
 
-  - Como fatores pessoais, como dados demográficos, histórico musical,
+3.  Como fatores pessoais, como dados demográficos, histórico musical,
     preferência musical de longo prazo e traços de personalidade, se
     correlacionam com a previsibilidade do uso de músicas e da atividade
     do usuário para diferentes usuários?
     
     1.  #### Quais técnicas foram usadas?
 
-Texto
+Nessa seção será apresentado o conteúdo divido nas 3 questões que o
+artigo revisado busca resolver.
+
+#####  Em que medida podemos prever a música que um usuário prefere ouvir em diferentes contextos de atividade (ou seja, uso de música) da realidade?
+
+Essa seção do trabalho teve como principal objetivo classificar
+(utilizando *auto-tagging*) a relação das preferencias musicais x
+contextos dos usuários. Antes de iniciar essa classificação, foi
+realizado um filtro na base gerada pelos usuários e aplicando certos
+critérios de qualidade sobraram 19 dos 48 usuários participantes do
+teste.
+
+Baseado nos 19 usuários restantes, foi realizado a criação das *tags* do
+teste, que foi dividida em 2 esquemas de aprendizados, o personalizado e
+o geral. Os algoritmos considerados para essa classificação foram o
+linear e não linear, da *radial basis function* (RBF) e *support vector
+machine* (SVM). Dado os problemas com dados negativos nas classificações
+binarias, foi utilizado a técnica *EasyEnsemble* para neutralizar os
+dados. Por fim, para medir a precisão das tags criadas, foi utilizado o
+*operating characteristic curve* (AUC).
 
   - Foi utilizada da recomendação colaborativa?
+
+<!-- end list -->
 
   - Quais foram os algoritmos utilizados na recomendação?
     
