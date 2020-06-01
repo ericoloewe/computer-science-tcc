@@ -907,15 +907,39 @@ teste, que foi dividida em 2 esquemas de aprendizados, o personalizado e
 o geral. Os algoritmos considerados para essa classificação foram o
 linear e não linear, da *radial basis function* (RBF) e *support vector
 machine* (SVM). Dado os problemas com dados negativos nas classificações
-binarias, foi utilizado a técnica *EasyEnsemble* para neutralizar os
-dados. Por fim, para medir a precisão das tags criadas, foi utilizado o
-*operating characteristic curve* (AUC).
+binarias, foi utilizado a técnica *EasyEnsemble* (mais especificamente a
+*Beta weights*) para neutralizar os dados.
+
+Por fim, para medir a precisão das *tags* criadas, foi utilizado o
+*operating characteristic curve* (AUC) mais especificamente o *Pearson’s
+linear correlation coefficient*. Buscando auxiliar a visualização da
+valência-excitação das emoções no espaço, foi utilizado a técnica de
+*Affective Norm for English Words* (ANEW). E no fim, para computar a
+associação entre as músicas e as emoções, foi feito uso do GPR
+(*Gaussian process regression*), mais especificamente o método
+*isotropic rational quadratic covariance kernel* implementado pelo
+*toolkit* *Gaussian process for machine learning* (GPML).
+
+Como a experiencia da música é multidimensional, o artigo revisado busca
+extrair os atributos das músicas, e visando auxiliar o processo de
+classificação, foram utilizados o *MIRtoolbox* e o *PsySound toolbox* os
+quais conseguem extrair os atributos musicais.
+
+##### Em que medida podemos prever a atividade de um usuário a partir dos dados do sensor coletados dos smartphones em um contexto de um ouvinte musical da realidade?
+
+O principal objetivo dessa seção do trabalho foi classificar as
+atividades dos usuários (*user-activity*) e relacionar as 8 atividades
+definidas com os dados obtidos dos sensores. Foram considerados os
+mesmos 19 usuários obtidos na filtragem apresentada na seção anterior.
+
+A partir do aplicativo desenvolvido, foi possível obter os dados dos
+sensores, e semelhante a classificação dos dados musicais com o
+contexto, para classificar as atividades dos usuários com os sensores
+foi utilizado o RBF e SVM.
+
+##### Como fatores pessoais, como dados demográficos, histórico musical, preferência musical de longo prazo e traços de personalidade, se correlacionam com a previsibilidade do uso de músicas e da atividade do usuário para diferentes usuários?
 
   - Foi utilizada da recomendação colaborativa?
-
-<!-- end list -->
-
-  - Quais foram os algoritmos utilizados na recomendação?
     
     1.  #### Qual a base de treinamento e teste?
 
