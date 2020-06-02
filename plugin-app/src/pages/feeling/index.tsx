@@ -55,7 +55,7 @@ export default function () {
   async function saveAndGoToPlaylist() {
     const feelingsToSave = feelings
       .filter((f) => f.selected)
-      .map((f) => f.title)
+      .map((f) => f.title.toLowerCase())
       .join(";");
 
     await saveEvent(EventType.CHOOSE_FEELING, feelingsToSave);
