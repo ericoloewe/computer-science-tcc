@@ -7,6 +7,7 @@ namespace web_api.Models
     public class UserEvent
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string Id { get; set; }
         public string Type { get; set; }
         public string Value { get; set; }

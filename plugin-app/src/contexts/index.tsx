@@ -5,6 +5,7 @@ import { UserProvider } from "./user";
 import { SearchProvider } from "./search";
 import { PlaylistProvider } from "./playlist";
 import { PlayerProvider } from "./player";
+import { EventsProvider } from "./event";
 
 interface Props {
   children: JSX.Element;
@@ -16,7 +17,9 @@ export function AppProviders({ children }: Props) {
       <UserProvider>
         <PlaylistProvider>
           <PlayerProvider>
-            <SearchProvider>{children}</SearchProvider>
+            <EventsProvider>
+              <SearchProvider>{children}</SearchProvider>
+            </EventsProvider>
           </PlayerProvider>
         </PlaylistProvider>
       </UserProvider>

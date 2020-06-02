@@ -16,11 +16,14 @@ namespace web_api.Services
 
         public async Task Save(UserEventData eventData)
         {
-            await repository.Save(new UserEvent()
+            foreach (var value in eventData.Value.Split(";"))
             {
-                Type = eventData.Type,
-                Value = eventData.Value,
-            });
+                await repository.Save(new UserEvent()
+                {
+                    Type = eventData.Type,
+                    Value = value,
+                });
+            }
         }
     }
 }
