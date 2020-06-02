@@ -71,68 +71,6 @@ namespace web_api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Feelings");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "1",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
-                            Name = "Alegre"
-                        },
-                        new
-                        {
-                            Id = "2",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
-                            Name = "Triste"
-                        },
-                        new
-                        {
-                            Id = "3",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
-                            Name = "Assustado"
-                        },
-                        new
-                        {
-                            Id = "4",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
-                            Name = "Ansioso"
-                        },
-                        new
-                        {
-                            Id = "5",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
-                            Name = "Bravo"
-                        },
-                        new
-                        {
-                            Id = "6",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
-                            Name = "Feliz"
-                        },
-                        new
-                        {
-                            Id = "7",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
-                            Name = "Chorando"
-                        },
-                        new
-                        {
-                            Id = "8",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
-                            Name = "Com vergonha"
-                        },
-                        new
-                        {
-                            Id = "9",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
-                            Name = "Com raiva"
-                        },
-                        new
-                        {
-                            Id = "10",
-                            CreatedDate = new DateTime(2020, 5, 25, 23, 48, 13, 854, DateTimeKind.Local),
-                            Name = "Amando"
-                        });
                 });
 
             modelBuilder.Entity("web_api.Models.Genre", b =>
