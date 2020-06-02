@@ -2,7 +2,7 @@ import "./style.scss";
 
 import React, { useEffect } from "react";
 import { Typography, Container, Grid, Card, CardContent } from "@material-ui/core";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 import { Layout } from "../shared/layout";
 import { usePlaylist } from "../../contexts/playlist";
@@ -22,16 +22,24 @@ export default function () {
       <Container className="music-control">
         <Grid container spacing={1}>
           <Grid container item xs={6} spacing={3}>
-            <ContextCard title="Musica" icon={<MusicNote />} />
+            <Link to="/new-context/music-search">
+              <ContextCard title="Musica" icon={<MusicNote />} />
+            </Link>
           </Grid>
           <Grid container item xs={6} spacing={3}>
-            <ContextCard title="Sentimento" icon={<EmojiEmotions />} />
+            <Link to="/new-context/feeling">
+              <ContextCard title="Sentimento" icon={<EmojiEmotions />} />
+            </Link>
           </Grid>
           <Grid container item xs={6} spacing={3}>
-            <ContextCard title="Localização" icon={<Explore />} />
+            <Link to="/new-context/location">
+              <ContextCard title="Localização" icon={<Explore />} />
+            </Link>
           </Grid>
           <Grid container item xs={6} spacing={3}>
-            <ContextCard title="Atividade" icon={<DirectionsRun />} />
+            <Link to="/new-context/activity">
+              <ContextCard title="Atividade" icon={<DirectionsRun />} />
+            </Link>
           </Grid>
         </Grid>
       </Container>

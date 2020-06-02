@@ -15,6 +15,7 @@ const Logout = React.lazy(() => import("./pages/logout"));
 const Artists = React.lazy(() => import("./pages/artists"));
 const Gender = React.lazy(() => import("./pages/genre"));
 const Feeling = React.lazy(() => import("./pages/feeling"));
+const MusicSearch = React.lazy(() => import("./pages/music-search"));
 const NewContext = React.lazy(() => import("./pages/new-context"));
 
 ReactDOM.render(
@@ -28,6 +29,9 @@ ReactDOM.render(
             </PrivateRoute>
             <PrivateRoute path="/new-context/feeling">
               <Feeling />
+            </PrivateRoute>
+            <PrivateRoute path="/new-context/music-search">
+              <MusicSearch />
             </PrivateRoute>
             <PrivateRoute path="/new-context/gender">
               <Gender />
