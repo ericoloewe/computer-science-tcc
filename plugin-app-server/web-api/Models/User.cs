@@ -8,10 +8,9 @@ namespace web_api.Models
     public class User
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string Id { get; set; }
         public string Name { get; set; }
-        public string SpotifyUri { get; set; }
+        public string SpotifyUri { get { return Id; } }
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public DateTime CreatedDate { get; set; }
 

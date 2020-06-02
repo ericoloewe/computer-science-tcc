@@ -1,5 +1,6 @@
 import React, { createContext, useContext } from "react";
 import { requestService } from "../services/request";
+import { useUser } from "./user";
 
 interface Props {}
 
@@ -27,12 +28,16 @@ const eventApiEndpoint = `${apiEndpoint}/UserEvents`;
 const UserContext = createContext({} as any);
 
 export function EventsProvider(props: Props) {
+  const { profile } = useUser();
+  const spotifyUserId = profile.id;
+
   async function save(type: EventType, value?: string): Promise<void> {
     await requestService.post({
       url: eventApiEndpoint,
       data: {
         type,
         value,
+        spotifyUserId,
       },
     });
   }

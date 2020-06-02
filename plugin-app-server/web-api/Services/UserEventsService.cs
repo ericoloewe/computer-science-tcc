@@ -22,6 +22,7 @@ namespace web_api.Services
                 {
                     Type = eventData.Type,
                     Value = value,
+                    UserId = eventData.SpotifyUserUri
                 });
             }
         }
