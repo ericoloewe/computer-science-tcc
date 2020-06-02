@@ -35,7 +35,9 @@ namespace web_api
             services.AddDbContext<PluginContext>(options => options.UseNpgsql(Configuration.GetConnectionString("PluginContext")));
 
             services
+                .AddScoped<IUserService, UserService>()
                 .AddScoped<IUserEventsService, UserEventsService>()
+                .AddScoped<IUserRepository, UserRepository>()
                 .AddScoped<IUserEventsRepository, UserEventsRepository>();
 
             services.AddCors(options =>

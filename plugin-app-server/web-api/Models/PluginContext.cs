@@ -31,14 +31,14 @@ namespace web_api.Models
                 E.Property("CreatedDate").CurrentValue = DateTime.Now;
             });
 
-            var EditedEntities = ChangeTracker.Entries()
-                .Where(E => E.State == EntityState.Modified)
-                .ToList();
+            //var EditedEntities = ChangeTracker.Entries()
+            //    .Where(E => E.State == EntityState.Modified)
+            //    .ToList();
 
-            EditedEntities.ForEach(E =>
-            {
-                E.Property("ModifiedDate").CurrentValue = DateTime.Now;
-            });
+            //EditedEntities.ForEach(E =>
+            //{
+            //    E.Property("ModifiedDate").CurrentValue = DateTime.Now;
+            //});
 
             return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
         }

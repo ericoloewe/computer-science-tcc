@@ -29,7 +29,7 @@ const UserContext = createContext({} as any);
 
 export function EventsProvider(props: Props) {
   const { profile } = useUser();
-  const spotifyUserId = profile.id;
+  const spotifyUserUri = profile.uri;
 
   async function save(type: EventType, value?: string): Promise<void> {
     await requestService.post({
@@ -37,7 +37,7 @@ export function EventsProvider(props: Props) {
       data: {
         type,
         value,
-        spotifyUserId,
+        spotifyUserUri,
       },
     });
   }

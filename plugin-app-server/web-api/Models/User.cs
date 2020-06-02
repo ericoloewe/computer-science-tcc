@@ -10,6 +10,7 @@ namespace web_api.Models
         [Key]
         public string Id { get; set; }
         public string Name { get; set; }
+        public string AvatarSrc { get; set; }
         public string SpotifyUri { get { return Id; } }
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public DateTime CreatedDate { get; set; }

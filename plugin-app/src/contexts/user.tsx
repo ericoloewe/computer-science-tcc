@@ -12,6 +12,13 @@ export interface User {
   email: string;
   name: string;
   link: string;
+  uri: string;
+}
+
+interface BasicUser {
+  spotifyUri: string;
+  name: string;
+  avatarSrc: string;
 }
 
 interface Context {
@@ -21,6 +28,9 @@ interface Context {
 
 const UserContext = createContext({} as any);
 const spotifyUserEndpoint = `${SpotifyUtil.getApiUrl()}/me`;
+
+const apiEndpoint = process.env.REACT_APP_API_HOST || "https://localhost:44301/api";
+const userApiEndpoint = `${apiEndpoint}/user`;
 
 export function UserProvider(props: Props) {
   const { isAuthenticated, requestService } = useAuth();
@@ -34,10 +44,13 @@ export function UserProvider(props: Props) {
       display_name: name,
       external_urls: { spotify: link },
       images,
+      uri,
     } = data;
     const avatarSrc = images[0]?.url;
 
-    setProfile({ id, email, name, link, avatarSrc });
+    setProfile({ id, email, name, link, avatarSrc, uri });
+
+    tryToSaveAtApi({ avatarSrc, spotifyUri: uri, name });
   }
 
   async function getAvailableDevices(): Promise<SpotifyDevice[]> {
@@ -45,6 +58,13 @@ export function UserProvider(props: Props) {
     const { data } = await requestService.get<SpotifyDevicesResponse>(endpoint);
 
     return data.devices;
+  }
+
+  async function tryToSaveAtApi(basicUser: BasicUser): Promise<void> {
+    await requestService.post({
+      url: userApiEndpoint,
+      data: basicUser,
+    });
   }
 
   useEffect(() => {

@@ -4,5 +4,6 @@
     {
         public string SpotifyUri { get; set; }
         public string Name { get; set; }
+        public string AvatarSrc { get; set; }
     }
 }
