@@ -38,13 +38,13 @@ export function CustomDrawer({ isOpen, onClose }: DrawerProps) {
           </ListItemIcon>
           <ListItemText primary="Home" />
         </ListItem>
-        <ListItem button {...{ component: Link, to: `/artists` }}>
+        <ListItem button {...{ component: Link, to: `/new-context/artists` }}>
           <ListItemIcon>
             <FaceIcon />
           </ListItemIcon>
           <ListItemText primary="Artistas preferidos" />
         </ListItem>
-        <ListItem button {...{ component: Link, to: `/gender` }}>
+        <ListItem button {...{ component: Link, to: `/new-context/gender` }}>
           <ListItemIcon>
             <LibraryMusicIcon />
           </ListItemIcon>

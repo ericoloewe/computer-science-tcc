@@ -10,9 +10,11 @@ import { Layout } from "../shared/layout";
 import { playlistService } from "../../services/playlist";
 import { StringUtil } from "../../utils/string";
 import { useEvents, EventType } from "../../contexts/event";
+import { useFeeling } from "../../contexts/feeling";
 
 export default function () {
   const history = useHistory();
+  const { search } = useFeeling();
   const { save: saveEvent } = useEvents();
   const [searchText, setSearchText] = useState("");
   const [feelings, setFeelings] = useState([] as ChooseItem[]);
@@ -35,10 +37,11 @@ export default function () {
   }
 
   async function searchFeelingsOfTexts(text: string) {
-    const feelings = await feelingService.search(text);
+    const feelings = await search(text);
+    const parsedFeelings = feelings.map((f) => ({ id: f.id, title: f.name }));
 
-    setFeelings([...feelings]);
-    markSelectedFeelings(feelings);
+    setFeelings([...parsedFeelings]);
+    markSelectedFeelings(parsedFeelings);
   }
 
   useEffect(() => {
