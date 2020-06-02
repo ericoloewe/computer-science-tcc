@@ -18,7 +18,7 @@ namespace web_api.Services
         {
             await repository.Save(new UserEvent()
             {
-                Type = UserEventTypeConverter.ToEnum(eventData.Type),
+                Type = eventData.Type,
                 Value = eventData.Value,
             });
         }
