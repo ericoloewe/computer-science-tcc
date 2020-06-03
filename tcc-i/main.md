@@ -120,74 +120,67 @@ Lista de Abreviaturas e Siglas
 
 Sumário
 
-[1 Introdução 11](#introdução)
+[1 Introdução 10](#introdução)
 
-[2 Sistemas de recomendação e contexto
-15](#sistemas-de-recomendação-e-contexto)
+[2 Sistemas de recomendação e contexto 14](#_Toc42024121)
 
-[2.1 Tipos de sistemas de recomendação
-15](#tipos-de-sistemas-de-recomendação)
+[2.1 Tipos de sistemas de recomendação 14](#_Toc42024122)
 
-[2.1.1 Sistemas de recomendação baseado em conteúdo
-15](#sistemas-de-recomendação-baseado-em-conteúdo)
+[2.1.1 Sistemas de recomendação baseado em conteúdo 14](#_Toc42024123)
 
-[2.1.2 Sistemas de recomendação colaborativo
-15](#sistemas-de-recomendação-colaborativo)
+[2.1.2 Sistemas de recomendação colaborativo 14](#_Toc42024124)
 
 [2.1.3 Sistemas de recomendação baseado em aprendizado
-15](#sistemas-de-recomendação-baseado-em-aprendizado)
+14](#_Toc42024125)
 
-[2.1.4 Sistemas de recomendação híbridos
-15](#sistemas-de-recomendação-híbridos)
+[2.1.4 Sistemas de recomendação híbridos 14](#_Toc42024126)
 
-[2.2 Algoritmos de sistemas de recomendação
-16](#algoritmos-de-sistemas-de-recomendação)
+[2.2 Algoritmos de sistemas de recomendação 15](#_Toc42024127)
 
-[2.3 Técnicas para avaliar OS RESULTADOS de um RecSys
-16](#técnicas-para-avaliar-os-resultados-de-um-recsys)
+[2.3 Técnicas para avaliar OS RESULTADOS de um RecSys 15](#_Toc42024128)
 
-[3 Trabalhos relacionados 17](#trabalhos-relacionados)
+[3 Trabalhos relacionados 16](#trabalhos-relacionados)
 
-[3.1 O protocolo de revisão 17](#o-protocolo-de-revisão)
+[3.1 O protocolo de revisão 16](#o-protocolo-de-revisão)
 
-[3.2 PROCURA NOS MOTORES DE BUSCA 18](#procura-nos-motores-de-busca)
+[3.2 PROCURA NOS MOTORES DE BUSCA 17](#procura-nos-motores-de-busca)
 
-[3.3 Os trabalhos 20](#os-trabalhos)
+[3.3 Os trabalhos 19](#os-trabalhos)
 
 [3.3.1 The New Challenges when Modeling Context through Diversity over
 Time in Recommender Systems
-22](#the-new-challenges-when-modeling-context-through-diversity-over-time-in-recommender-systems)
+21](#the-new-challenges-when-modeling-context-through-diversity-over-time-in-recommender-systems)
 
 [3.3.2 Prediction of music pairwise preferences from facial expressions
-24](#prediction-of-music-pairwise-preferences-from-facial-expressions)
+22](#prediction-of-music-pairwise-preferences-from-facial-expressions)
 
 [3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial
 Experiments
-25](#towards-intent-aware-contextual-music-recommendation-initial-experiments)
+24](#towards-intent-aware-contextual-music-recommendation-initial-experiments)
 
 [3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone
 Context
 26](#quantitative-study-of-music-listening-behavior-in-a-smartphone-context)
 
-[3.4 Tabela com tecnicas 27](#tabela-com-tecnicas)
+[3.4 Tabela com tecnicas 30](#tabela-com-tecnicas)
 
-[4 Modelagem do que será feito 30](#modelagem-do-que-será-feito)
+[4 Modelagem do que será feito 32](#modelagem-do-que-será-feito)
 
-[4.1 Contexto 30](#contexto)
+[4.1 Contexto 32](#contexto)
 
 [4.1.1 O que é o contexto comportamental?
-30](#o-que-é-o-contexto-comportamental)
+32](#o-que-é-o-contexto-comportamental)
 
-[4.1.2 O que é o contexto ambiente? 30](#o-que-é-o-contexto-ambiente)
+[4.1.2 O que é o contexto ambiente? 32](#o-que-é-o-contexto-ambiente)
 
 [4.1.3 Como será obtido os contextos?
-30](#como-será-obtido-os-contextos)
+32](#como-será-obtido-os-contextos)
 
-[4.2 Arquitetura do sistema 30](#arquitetura-do-sistema)
+[4.2 Arquitetura do sistema 32](#arquitetura-do-sistema)
 
-[5 CONCLUSÃO 31](#conclusão)
+[5 CONCLUSÃO 33](#conclusão)
 
-[Referências Bibliográficas 32](#referências-bibliográficas)
+[Referências Bibliográficas 34](#referências-bibliográficas)
 
 # Introdução
 
@@ -265,22 +258,37 @@ resolver o problema deles de maneira satisfatória. Nesse caso o vencedor
 utilizou um modelo híbrido de RecSys (FALK, 2019).
 
 (DIETMAR et al., 2010) trazem em sua obra os 4 tipos de sistemas de
-recomendação, sendo eles: recomendação colaborativa, que parte da ideia
-de que se os usuários compartilharam dos mesmos interesses no passado,
-eles continuarão tendo os mesmos interesses no futuro. Recomendação
-baseada em conteúdo, onde o sistema aprende a recomendar itens que são
-similares ao que o usuário gostou no passado, essa similaridade é
-calculada baseada na relação das características dos itens a serem
-comparados (RICCI; ROKACH; SHAPIRA, 2011).
+recomendação, sendo eles: recomendação colaborativa, recomendação
+baseada em conteúdo, recomendação baseada em conhecimento, e sistemas de
+recomendação híbridos.
 
-O terceiro tipo é a recomendação baseada em conhecimento, a qual não
-consegue depender somente do histórico de compra de um usuário, é
-necessário um conteúdo mais estruturado e detalhado para ser gerada uma
-recomendação, geralmente nesse tipo, é utilizado um conteúdo adicional
-fornecido manualmente (conteúdo recente ao produto e usuário). E por
-último, sistemas de recomendação híbridos onde a ideia é combinar as
-diferentes técnicas, a fim de gerar uma boa e mais assertiva
-recomendação (DIETMAR et al., 2010).
+Na recomendação baseada em conteúdo, o sistema aprende a recomendar
+itens que são similares ao que o usuário gostou no passado, essa
+similaridade e calculada baseada na relação das características dos
+itens a serem comparados. Por exemplo, no caso de usuário avaliar
+positivamente um filme do gênero comedia, então, o sistema pode
+registrar essa ação e futuramente recomendar outros filmes desse mesmo
+gênero. (RICCI; ROKACH; SHAPIRA, 2011)
+
+A recomendação colaborativa parte da ideia de que se os usuários
+compartilharam dos mesmos interesses no passado, eles irão continuar
+tendo os mesmos interesses no futuro. Por exemplo, os usuários A e B tem
+um histórico de compras bem semelhante e o usuário A comprou um novo
+livro que o usuário B nem chegou a ver, nesse tipo de recomendação, a
+ideia e que o sistema sugira este livro para o usuário B. (DIETMAR et
+al., 2010)
+
+Diferente da recomendação colaborativa ou baseada em conteúdo, a
+recomendação baseada em aprendizado não consegue depender somente do
+histórico de compra de um usuário, e necessário um conteúdo mais
+estruturado e detalhado para ser gerado uma recomendação, geralmente
+nesse tipo, e utilizado um conteúdo adicional fornecido manualmente
+(conteúdo recente ao produto e usuário). (DIETMAR et al., 2010)
+
+E por último, e não menos importante, (DIETMAR et al., 2010) traz em sua
+obra o modelo híbrido de recomendação, onde a ideia e combinar as
+diferentes técnicas, buscando gerara uma boa e mais assertiva
+recomendação. (DIETMAR et al., 2010)
 
 Esses sistemas têm ajudado muito na venda de produtos online, porém, um
 dos segmentos de mercado que apresentaram problemas, foram as vendas de
@@ -319,61 +327,6 @@ do usuário e o contexto do ambiente onde ele está inserido. Esse
 contexto será obtido, através da criação um plugin que permitirá ao
 usuário escutar suas músicas enquanto são registrados os eventos do
 contexto vivido naquele momento.
-
-# Sistemas de recomendação e contexto
-
-Texto
-
-## Tipos de sistemas de recomendação
-
-(DIETMAR et al., 2010) trazem em sua obra os 4 tipos de sistemas de
-recomendação, sendo eles: recomendação colaborativa, recomendação
-baseada em conteúdo, recomendação baseada em conhecimento, e sistemas de
-recomendação híbridos.
-
-### Sistemas de recomendação baseado em conteúdo
-
-Na recomendação baseada em conteúdo, o sistema aprende a recomendar
-itens que são similares ao que o usuário gostou no passado, essa
-similaridade e calculada baseada na relação das características dos
-itens a serem comparados. Por exemplo, no caso de usuário avaliar
-positivamente um filme do gênero comedia, então, o sistema pode
-registrar essa ação e futuramente recomendar outros filmes desse mesmo
-gênero. (RICCI; ROKACH; SHAPIRA, 2011)
-
-### Sistemas de recomendação colaborativo
-
-A recomendação colaborativa parte da ideia de que se os usuários
-compartilharam dos mesmos interesses no passado, eles irão continuar
-tendo os mesmos interesses no futuro. Por exemplo, os usuários A e B tem
-um histórico de compras bem semelhante e o usuário A comprou um novo
-livro que o usuário B nem chegou a ver, nesse tipo de recomendação, a
-ideia e que o sistema sugira este livro para o usuário B. (DIETMAR et
-al., 2010)
-
-### Sistemas de recomendação baseado em aprendizado
-
-Diferente da recomendação colaborativa ou baseada em conteúdo, a
-recomendação baseada em aprendizado não consegue depender somente do
-histórico de compra de um usuário, e necessário um conteúdo mais
-estruturado e detalhado para ser gerado uma recomendação, geralmente
-nesse tipo, e utilizado um conteúdo adicional fornecido manualmente
-(conteúdo recente ao produto e usuário). (DIETMAR et al., 2010)
-
-### Sistemas de recomendação híbridos
-
-E por último, e não menos importante, (DIETMAR et al., 2010) traz em sua
-obra o modelo híbrido de recomendação, onde a ideia e combinar as
-diferentes técnicas, buscando gerara uma boa e mais assertiva
-recomendação. (DIETMAR et al., 2010)
-
-## Algoritmos de sistemas de recomendação
-
-Texto
-
-## Técnicas para avaliar OS RESULTADOS de um RecSys
-
-Texto
 
 # Trabalhos relacionados
 
@@ -448,8 +401,8 @@ uso delas nos trabalhos encontrados.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
-de busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Figura - Motor avançado de
+busca da ACM (próprio, 2020)
 
 No dia 07/05/2020 foi realizado a pesquisa no motor de busca apresentado
 a partir da *string* de busca pré-definida anteriormente. As Figuras 1,
@@ -461,7 +414,7 @@ resultados apresentados na ACM foram 150 trabalhos relacionados a
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
+<span id="_Ref40822631" class="anchor"></span>Figura - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
@@ -477,7 +430,7 @@ disponível para desenvolver esse trabalho.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
+<span id="_Ref40822641" class="anchor"></span>Figura - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
 
 A quantidade de trabalhos encontrados na ACM relacionados a *string* de
@@ -493,9 +446,9 @@ Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
 *jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
 e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
-realizadas para filtrar os trabalhos encontrados no motor de busca da
-ACM (próprio, 2020)
+<span id="_Ref40822414" class="anchor"></span>Figura - Etapas realizadas
+para filtrar os trabalhos encontrados no motor de busca da ACM (próprio,
+2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado no
 sistema estruturado anteriormente. Esse filtro é baseado em 3 etapas
@@ -504,7 +457,7 @@ revisão dos trabalhos que condizem com o objetivo descrito no protocolo.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
+<span id="_Ref40822493" class="anchor"></span>Figura - Filtro em cima
 dos trabalhos selecionados através do resumo (próprio, 2020)
 
 Baseado no conhecimento obtido dos trabalhos na segunda etapa, foi
@@ -518,7 +471,7 @@ contexto nas recomendações. Foi apresentado na forma de gráfico de pizza
 na Figura 5 a relação entre os tipos e a quantidade de artigos
 encontrados.
 
-<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
+<span id="_Ref40822509" class="anchor"></span>Figura - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
@@ -635,7 +588,7 @@ o tempo dedicado a ouvir cada música.
 Nesse trabalho, é apresentado uma abordagem para predizer a preferência
 musical do usuário a partir das expressões faciais. Ela busca responder
 a seguinte questão: É possível inferir (implicitamente) em pares as
-preferencias musicais de um usuário a partir de suas expressões faciais
+preferências musicais de um usuário a partir de suas expressões faciais
 demonstradas enquanto escuta suas músicas?
 
 #### Quais técnicas foram usadas?
@@ -858,7 +811,7 @@ filtragem colaborativa.
 #####  Em que medida podemos prever a música que um usuário prefere ouvir em diferentes contextos de atividade (ou seja, uso de música) da realidade?
 
 Essa seção do trabalho teve como principal objetivo classificar
-(utilizando *auto-tagging*) a relação das preferencias musicais x
+(utilizando *auto-tagging*) a relação das preferências musicais x
 contextos dos usuários. Antes de iniciar essa classificação, foi
 realizado um filtro na base gerada pelos usuários e aplicando certos
 critérios de qualidade sobraram 19 dos 48 usuários participantes do
@@ -925,7 +878,7 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são:
 
-Figura 7 Fatores da preferência musical (próprio, 2020)
+Figura Fatores da preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
 
@@ -954,21 +907,24 @@ Não tiveram outros resultados apresentados.
 
 ## Tabela com tecnicas
 
-Texto
+Para relacionar os trabalhos revisados, foi criado uma tabela contendo
+as funcionalidades encontradas nos artigos e, é feito uma relação delas,
+visando chegar em algum resultado.
 
-<span id="_Toc41243154" class="anchor"></span>Table 1 Relação das
+<span id="_Toc41243154" class="anchor"></span>Table Relação das
 funcionalidades desenvolvidas em cada artigo revisado (próprio, 2020)
 
-|                                                                   | 3.3.1 The New Challenges when Modeling Context through Diversity over Time in Recommender Systems | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
-| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
-| Tem foco no entendimento do contexto para recomendações musicais? | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              | ✔                       |
-| Apresenta o desenvolvimento realizado no trabalho?                | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
-| O trabalho foi validado em um caso real?                          | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
-| Apresenta como o sistema chegou em tal recomendação ao usuário?   | ✔                                                                                                 | \-                                                                     | \-                                                                              | \-                                                                           | \-                      |
-| Utiliza do contexto comportamental?                               | ✔                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
-| Utiliza do contexto de ambiente?                                  | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
-| Utiliza do contexto explicito?                                    | ✔                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
-| Utiliza do contexto implícito?                                    | ✔                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
+|                                                                   | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
+| ----------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
+| Tem foco no entendimento do contexto para recomendações musicais? | ✔                                                                      | ✔                                                                               | ❌                                                                            | ✔                       |
+| Apresenta o desenvolvimento realizado no trabalho?                | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
+| O trabalho foi validado em um caso real?                          | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
+| Utiliza do contexto comportamental?                               | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
+| Utiliza do contexto de ambiente?                                  | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
+| Utiliza do contexto explicito?                                    | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
+| Utiliza do contexto implícito?                                    | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
+| Usa ACM?                                                          | ❌                                                                      | ✔                                                                               | ✔                                                                            |                         |
+| Usa SVM?                                                          | ❌                                                                      | ✔                                                                               | ✔                                                                            | \-                      |
 
 # Modelagem do que será feito
 
