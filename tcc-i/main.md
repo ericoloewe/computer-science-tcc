@@ -70,27 +70,30 @@ Keywords: tradução das palavras-chave para a língua inglesa.
 Lista de Figuras
 
 [Figura 1 - Motor avançado de busca da ACM (próprio, 2020)
-18](#_Ref40822595)
+15](#_Ref40822595)
 
 [Figura 2 - Resultado de busca dos proceedings no motor de busca da ACM
-(próprio, 2020) 19](#_Ref40822631)
+(próprio, 2020) 16](#_Ref40822631)
 
 [Figura 3 - Resultado de busca dos journals no motor de busca da ACM
-(próprio, 2020) 19](#_Ref40822641)
+(próprio, 2020) 16](#_Ref40822641)
 
 [Figura 4 - Etapas realizadas para filtrar os trabalhos encontrados no
-motor de busca da ACM (próprio, 2020) 20](#_Ref40822414)
+motor de busca da ACM (próprio, 2020) 17](#_Ref40822414)
 
 [Figura 5 - Filtro em cima dos trabalhos selecionados através do resumo
-(próprio, 2020) 20](#_Ref40822493)
+(próprio, 2020) 17](#_Ref40822493)
 
 [Figura 6 - Procedimento de filtro realizado baseado nos trabalhos
-encontrados no motor de busca da ACM (próprio, 2020) 21](#_Ref40822509)
+encontrados no motor de busca da ACM (próprio, 2020) 18](#_Ref40822509)
+
+[Figura 7 Fatores da preferência musical (próprio, 2020)
+27](#_Toc42024460)
 
 Lista de Tabelas
 
 [Table 1 Relação das funcionalidades desenvolvidas em cada artigo
-revisado (próprio, 2020) 27](#_Toc41243154)
+revisado (próprio, 2020) 28](#_Toc42024448)
 
 Lista de Abreviaturas e Siglas
 
@@ -122,65 +125,48 @@ Sumário
 
 [1 Introdução 10](#introdução)
 
-[2 Sistemas de recomendação e contexto 14](#_Toc42024121)
+[2 Trabalhos relacionados 14](#trabalhos-relacionados)
 
-[2.1 Tipos de sistemas de recomendação 14](#_Toc42024122)
+[2.1 O protocolo de revisão 14](#o-protocolo-de-revisão)
 
-[2.1.1 Sistemas de recomendação baseado em conteúdo 14](#_Toc42024123)
+[2.2 PROCURA NOS MOTORES DE BUSCA 15](#procura-nos-motores-de-busca)
 
-[2.1.2 Sistemas de recomendação colaborativo 14](#_Toc42024124)
+[2.3 Os trabalhos 17](#os-trabalhos)
 
-[2.1.3 Sistemas de recomendação baseado em aprendizado
-14](#_Toc42024125)
-
-[2.1.4 Sistemas de recomendação híbridos 14](#_Toc42024126)
-
-[2.2 Algoritmos de sistemas de recomendação 15](#_Toc42024127)
-
-[2.3 Técnicas para avaliar OS RESULTADOS de um RecSys 15](#_Toc42024128)
-
-[3 Trabalhos relacionados 16](#trabalhos-relacionados)
-
-[3.1 O protocolo de revisão 16](#o-protocolo-de-revisão)
-
-[3.2 PROCURA NOS MOTORES DE BUSCA 17](#procura-nos-motores-de-busca)
-
-[3.3 Os trabalhos 19](#os-trabalhos)
-
-[3.3.1 The New Challenges when Modeling Context through Diversity over
+[2.3.1 The New Challenges when Modeling Context through Diversity over
 Time in Recommender Systems
-21](#the-new-challenges-when-modeling-context-through-diversity-over-time-in-recommender-systems)
+19](#the-new-challenges-when-modeling-context-through-diversity-over-time-in-recommender-systems)
 
-[3.3.2 Prediction of music pairwise preferences from facial expressions
-22](#prediction-of-music-pairwise-preferences-from-facial-expressions)
+[2.3.2 Prediction of music pairwise preferences from facial expressions
+20](#prediction-of-music-pairwise-preferences-from-facial-expressions)
 
-[3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial
+[2.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial
 Experiments
-24](#towards-intent-aware-contextual-music-recommendation-initial-experiments)
+22](#towards-intent-aware-contextual-music-recommendation-initial-experiments)
 
-[3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone
+[2.3.4 Quantitative Study of Music Listening Behavior in a Smartphone
 Context
-26](#quantitative-study-of-music-listening-behavior-in-a-smartphone-context)
+24](#quantitative-study-of-music-listening-behavior-in-a-smartphone-context)
 
-[3.4 Tabela com tecnicas 30](#tabela-com-tecnicas)
+[2.4 Tabela com tecnicas 28](#tabela-com-tecnicas)
 
-[4 Modelagem do que será feito 32](#modelagem-do-que-será-feito)
+[3 Modelagem do que será feito 30](#modelagem-do-que-será-feito)
 
-[4.1 Contexto 32](#contexto)
+[3.1 Contexto 30](#contexto)
 
-[4.1.1 O que é o contexto comportamental?
-32](#o-que-é-o-contexto-comportamental)
+[3.1.1 O que é o contexto comportamental?
+30](#o-que-é-o-contexto-comportamental)
 
-[4.1.2 O que é o contexto ambiente? 32](#o-que-é-o-contexto-ambiente)
+[3.1.2 O que é o contexto ambiente? 30](#o-que-é-o-contexto-ambiente)
 
-[4.1.3 Como será obtido os contextos?
-32](#como-será-obtido-os-contextos)
+[3.1.3 Como será obtido os contextos?
+30](#como-será-obtido-os-contextos)
 
-[4.2 Arquitetura do sistema 32](#arquitetura-do-sistema)
+[3.2 Arquitetura do sistema 30](#arquitetura-do-sistema)
 
-[5 CONCLUSÃO 33](#conclusão)
+[4 CONCLUSÃO 31](#conclusão)
 
-[Referências Bibliográficas 34](#referências-bibliográficas)
+[Referências Bibliográficas 32](#referências-bibliográficas)
 
 # Introdução
 
@@ -878,7 +864,8 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são:
 
-Figura Fatores da preferência musical (próprio, 2020)
+<span id="_Toc42024460" class="anchor"></span>Figura Fatores da
+preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
 
@@ -909,9 +896,9 @@ Não tiveram outros resultados apresentados.
 
 Para relacionar os trabalhos revisados, foi criado uma tabela contendo
 as funcionalidades encontradas nos artigos e, é feito uma relação delas,
-visando chegar em algum resultado.
+visando facilitar a visão das funcionalidades entre as revisões feitas.
 
-<span id="_Toc41243154" class="anchor"></span>Table Relação das
+<span id="_Toc42024448" class="anchor"></span>Table Relação das
 funcionalidades desenvolvidas em cada artigo revisado (próprio, 2020)
 
 |                                                                   | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
