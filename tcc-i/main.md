@@ -915,27 +915,98 @@ funcionalidades desenvolvidas em cada artigo revisado (próprio, 2020)
 
 # Modelagem do que será feito
 
-Texto
+Recomendação dinâmica utilizando o feedback do usuário do contexto
+atual.
+
+Responder as perguntas:
+
+\- como é possível capturar as ações do usuário e classifica-las como
+contexto?
+
+\- como é possível validar se as ações do usuário condiz com o contexto?
+
+\- como é possível relacionar as músicas que o usuário gosta aos
+contextos?
+
+\- como é possível classificar o contexto para apresentar para usuário?
+
+\- como é possível recomendar novas musicas a partir da relação de
+contexto x musica?
 
 ## Contexto
 
-Texto
+Conforme o dicionário Michaelis contexto pode ser tido por:
+
+> O conjunto de circunstâncias inter-relacionadas de cuja tessitura se
+> depreende determinado fato ou situação; circunstância(s), conjuntura,
+> situação.
+
+Um sistema de recomendação busca encontrar os melhores itens para um
+devido fim, onde geralmente se baseia em dados históricos para
+produzi-las. Observa-se que, com o entendimento do contexto, ou conforme
+a definição das “circunstâncias que levaram a certos fatos ou
+situações”, é possível auxiliar as recomendações, aumentando o
+número de dados disponíveis para realizar a classificação e filtro.
+
+Figura 8 Apresentação dos contextos utilizados no trabalho (próprio,
+2020)
 
 ### O que é o contexto comportamental?
 
-Texto
+Conforme o dicionário Michaelis contexto pode ser tido por:
+
+> Qualquer ação ou reação do organismo ou parte dele
+
+Unindo a definição do contexto com a definição acima, foi realizado um
+estudo das possíveis ações a serem registradas em um sistema, as quais,
+seria realizado um estudo, para gerar uma classificação e no futuro,
+auxiliar na recomendação musical.
+
+será utilizado:
+
+Horário,
+
+Humor,
+
+Atividade,
+
+ações sequenciais.
+
+Quantidade de musicas escutadas no dia (tempo)
 
 ### O que é o contexto ambiente?
 
-Texto
+Será utilizado:
+
+Localização
+
+clima
 
 ### Como será obtido os contextos?
 
-Texto
+A partir da captura de dados de uma app.
+
+Ele irá obter dados
+
+implicitamente
+
+\- localização
+
+\- ações
+
+\- tempo
+
+\- clima
+
+explicitamente.
+
+\- localização
+
+\- humor
+
+\- atividade
 
 ## Arquitetura do sistema
-
-Texto
 
 # CONCLUSÃO
 
