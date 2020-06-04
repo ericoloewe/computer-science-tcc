@@ -70,27 +70,30 @@ Keywords: tradução das palavras-chave para a língua inglesa.
 Lista de Figuras
 
 [Figura 1 - Motor avançado de busca da ACM (próprio, 2020)
-18](#_Ref40822595)
+15](#_Ref40822595)
 
 [Figura 2 - Resultado de busca dos proceedings no motor de busca da ACM
-(próprio, 2020) 19](#_Ref40822631)
+(próprio, 2020) 16](#_Ref40822631)
 
 [Figura 3 - Resultado de busca dos journals no motor de busca da ACM
-(próprio, 2020) 19](#_Ref40822641)
+(próprio, 2020) 16](#_Ref40822641)
 
 [Figura 4 - Etapas realizadas para filtrar os trabalhos encontrados no
-motor de busca da ACM (próprio, 2020) 20](#_Ref40822414)
+motor de busca da ACM (próprio, 2020) 17](#_Ref40822414)
 
 [Figura 5 - Filtro em cima dos trabalhos selecionados através do resumo
-(próprio, 2020) 20](#_Ref40822493)
+(próprio, 2020) 17](#_Ref40822493)
 
 [Figura 6 - Procedimento de filtro realizado baseado nos trabalhos
-encontrados no motor de busca da ACM (próprio, 2020) 21](#_Ref40822509)
+encontrados no motor de busca da ACM (próprio, 2020) 18](#_Ref40822509)
+
+[Figura 7 Fatores da preferência musical (próprio, 2020)
+27](#_Toc42024460)
 
 Lista de Tabelas
 
 [Table 1 Relação das funcionalidades desenvolvidas em cada artigo
-revisado (próprio, 2020) 27](#_Toc41243154)
+revisado (próprio, 2020) 28](#_Toc42024448)
 
 Lista de Abreviaturas e Siglas
 
@@ -120,72 +123,48 @@ Lista de Abreviaturas e Siglas
 
 Sumário
 
-[1 Introdução 11](#introdução)
+[1 Introdução 10](#introdução)
 
-[2 Sistemas de recomendação e contexto
-15](#sistemas-de-recomendação-e-contexto)
+[2 Trabalhos relacionados 14](#trabalhos-relacionados)
 
-[2.1 Tipos de sistemas de recomendação
-15](#tipos-de-sistemas-de-recomendação)
+[2.1 O protocolo de revisão 14](#o-protocolo-de-revisão)
 
-[2.1.1 Sistemas de recomendação baseado em conteúdo
-15](#sistemas-de-recomendação-baseado-em-conteúdo)
+[2.2 PROCURA NOS MOTORES DE BUSCA 15](#procura-nos-motores-de-busca)
 
-[2.1.2 Sistemas de recomendação colaborativo
-15](#sistemas-de-recomendação-colaborativo)
+[2.3 Os trabalhos 17](#os-trabalhos)
 
-[2.1.3 Sistemas de recomendação baseado em aprendizado
-15](#sistemas-de-recomendação-baseado-em-aprendizado)
-
-[2.1.4 Sistemas de recomendação híbridos
-15](#sistemas-de-recomendação-híbridos)
-
-[2.2 Algoritmos de sistemas de recomendação
-16](#algoritmos-de-sistemas-de-recomendação)
-
-[2.3 Técnicas para avaliar OS RESULTADOS de um RecSys
-16](#técnicas-para-avaliar-os-resultados-de-um-recsys)
-
-[3 Trabalhos relacionados 17](#trabalhos-relacionados)
-
-[3.1 O protocolo de revisão 17](#o-protocolo-de-revisão)
-
-[3.2 PROCURA NOS MOTORES DE BUSCA 18](#procura-nos-motores-de-busca)
-
-[3.3 Os trabalhos 20](#os-trabalhos)
-
-[3.3.1 The New Challenges when Modeling Context through Diversity over
+[2.3.1 The New Challenges when Modeling Context through Diversity over
 Time in Recommender Systems
-22](#the-new-challenges-when-modeling-context-through-diversity-over-time-in-recommender-systems)
+19](#the-new-challenges-when-modeling-context-through-diversity-over-time-in-recommender-systems)
 
-[3.3.2 Prediction of music pairwise preferences from facial expressions
-24](#prediction-of-music-pairwise-preferences-from-facial-expressions)
+[2.3.2 Prediction of music pairwise preferences from facial expressions
+20](#prediction-of-music-pairwise-preferences-from-facial-expressions)
 
-[3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial
+[2.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial
 Experiments
-25](#towards-intent-aware-contextual-music-recommendation-initial-experiments)
+22](#towards-intent-aware-contextual-music-recommendation-initial-experiments)
 
-[3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone
+[2.3.4 Quantitative Study of Music Listening Behavior in a Smartphone
 Context
-26](#quantitative-study-of-music-listening-behavior-in-a-smartphone-context)
+24](#quantitative-study-of-music-listening-behavior-in-a-smartphone-context)
 
-[3.4 Tabela com tecnicas 27](#tabela-com-tecnicas)
+[2.4 Tabela com tecnicas 28](#tabela-com-tecnicas)
 
-[4 Modelagem do que será feito 30](#modelagem-do-que-será-feito)
+[3 Modelagem do que será feito 30](#modelagem-do-que-será-feito)
 
-[4.1 Contexto 30](#contexto)
+[3.1 Contexto 30](#contexto)
 
-[4.1.1 O que é o contexto comportamental?
+[3.1.1 O que é o contexto comportamental?
 30](#o-que-é-o-contexto-comportamental)
 
-[4.1.2 O que é o contexto ambiente? 30](#o-que-é-o-contexto-ambiente)
+[3.1.2 O que é o contexto ambiente? 30](#o-que-é-o-contexto-ambiente)
 
-[4.1.3 Como será obtido os contextos?
+[3.1.3 Como será obtido os contextos?
 30](#como-será-obtido-os-contextos)
 
-[4.2 Arquitetura do sistema 30](#arquitetura-do-sistema)
+[3.2 Arquitetura do sistema 30](#arquitetura-do-sistema)
 
-[5 CONCLUSÃO 31](#conclusão)
+[4 CONCLUSÃO 31](#conclusão)
 
 [Referências Bibliográficas 32](#referências-bibliográficas)
 
@@ -265,22 +244,37 @@ resolver o problema deles de maneira satisfatória. Nesse caso o vencedor
 utilizou um modelo híbrido de RecSys (FALK, 2019).
 
 (DIETMAR et al., 2010) trazem em sua obra os 4 tipos de sistemas de
-recomendação, sendo eles: recomendação colaborativa, que parte da ideia
-de que se os usuários compartilharam dos mesmos interesses no passado,
-eles continuarão tendo os mesmos interesses no futuro. Recomendação
-baseada em conteúdo, onde o sistema aprende a recomendar itens que são
-similares ao que o usuário gostou no passado, essa similaridade é
-calculada baseada na relação das características dos itens a serem
-comparados (RICCI; ROKACH; SHAPIRA, 2011).
+recomendação, sendo eles: recomendação colaborativa, recomendação
+baseada em conteúdo, recomendação baseada em conhecimento, e sistemas de
+recomendação híbridos.
 
-O terceiro tipo é a recomendação baseada em conhecimento, a qual não
-consegue depender somente do histórico de compra de um usuário, é
-necessário um conteúdo mais estruturado e detalhado para ser gerada uma
-recomendação, geralmente nesse tipo, é utilizado um conteúdo adicional
-fornecido manualmente (conteúdo recente ao produto e usuário). E por
-último, sistemas de recomendação híbridos onde a ideia é combinar as
-diferentes técnicas, a fim de gerar uma boa e mais assertiva
-recomendação (DIETMAR et al., 2010).
+Na recomendação baseada em conteúdo, o sistema aprende a recomendar
+itens que são similares ao que o usuário gostou no passado, essa
+similaridade e calculada baseada na relação das características dos
+itens a serem comparados. Por exemplo, no caso de usuário avaliar
+positivamente um filme do gênero comedia, então, o sistema pode
+registrar essa ação e futuramente recomendar outros filmes desse mesmo
+gênero. (RICCI; ROKACH; SHAPIRA, 2011)
+
+A recomendação colaborativa parte da ideia de que se os usuários
+compartilharam dos mesmos interesses no passado, eles irão continuar
+tendo os mesmos interesses no futuro. Por exemplo, os usuários A e B tem
+um histórico de compras bem semelhante e o usuário A comprou um novo
+livro que o usuário B nem chegou a ver, nesse tipo de recomendação, a
+ideia e que o sistema sugira este livro para o usuário B. (DIETMAR et
+al., 2010)
+
+Diferente da recomendação colaborativa ou baseada em conteúdo, a
+recomendação baseada em aprendizado não consegue depender somente do
+histórico de compra de um usuário, e necessário um conteúdo mais
+estruturado e detalhado para ser gerado uma recomendação, geralmente
+nesse tipo, e utilizado um conteúdo adicional fornecido manualmente
+(conteúdo recente ao produto e usuário). (DIETMAR et al., 2010)
+
+E por último, e não menos importante, (DIETMAR et al., 2010) traz em sua
+obra o modelo híbrido de recomendação, onde a ideia e combinar as
+diferentes técnicas, buscando gerara uma boa e mais assertiva
+recomendação. (DIETMAR et al., 2010)
 
 Esses sistemas têm ajudado muito na venda de produtos online, porém, um
 dos segmentos de mercado que apresentaram problemas, foram as vendas de
@@ -319,61 +313,6 @@ do usuário e o contexto do ambiente onde ele está inserido. Esse
 contexto será obtido, através da criação um plugin que permitirá ao
 usuário escutar suas músicas enquanto são registrados os eventos do
 contexto vivido naquele momento.
-
-# Sistemas de recomendação e contexto
-
-Texto
-
-## Tipos de sistemas de recomendação
-
-(DIETMAR et al., 2010) trazem em sua obra os 4 tipos de sistemas de
-recomendação, sendo eles: recomendação colaborativa, recomendação
-baseada em conteúdo, recomendação baseada em conhecimento, e sistemas de
-recomendação híbridos.
-
-### Sistemas de recomendação baseado em conteúdo
-
-Na recomendação baseada em conteúdo, o sistema aprende a recomendar
-itens que são similares ao que o usuário gostou no passado, essa
-similaridade e calculada baseada na relação das características dos
-itens a serem comparados. Por exemplo, no caso de usuário avaliar
-positivamente um filme do gênero comedia, então, o sistema pode
-registrar essa ação e futuramente recomendar outros filmes desse mesmo
-gênero. (RICCI; ROKACH; SHAPIRA, 2011)
-
-### Sistemas de recomendação colaborativo
-
-A recomendação colaborativa parte da ideia de que se os usuários
-compartilharam dos mesmos interesses no passado, eles irão continuar
-tendo os mesmos interesses no futuro. Por exemplo, os usuários A e B tem
-um histórico de compras bem semelhante e o usuário A comprou um novo
-livro que o usuário B nem chegou a ver, nesse tipo de recomendação, a
-ideia e que o sistema sugira este livro para o usuário B. (DIETMAR et
-al., 2010)
-
-### Sistemas de recomendação baseado em aprendizado
-
-Diferente da recomendação colaborativa ou baseada em conteúdo, a
-recomendação baseada em aprendizado não consegue depender somente do
-histórico de compra de um usuário, e necessário um conteúdo mais
-estruturado e detalhado para ser gerado uma recomendação, geralmente
-nesse tipo, e utilizado um conteúdo adicional fornecido manualmente
-(conteúdo recente ao produto e usuário). (DIETMAR et al., 2010)
-
-### Sistemas de recomendação híbridos
-
-E por último, e não menos importante, (DIETMAR et al., 2010) traz em sua
-obra o modelo híbrido de recomendação, onde a ideia e combinar as
-diferentes técnicas, buscando gerara uma boa e mais assertiva
-recomendação. (DIETMAR et al., 2010)
-
-## Algoritmos de sistemas de recomendação
-
-Texto
-
-## Técnicas para avaliar OS RESULTADOS de um RecSys
-
-Texto
 
 # Trabalhos relacionados
 
@@ -448,8 +387,8 @@ uso delas nos trabalhos encontrados.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
-de busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Figura - Motor avançado de
+busca da ACM (próprio, 2020)
 
 No dia 07/05/2020 foi realizado a pesquisa no motor de busca apresentado
 a partir da *string* de busca pré-definida anteriormente. As Figuras 1,
@@ -461,7 +400,7 @@ resultados apresentados na ACM foram 150 trabalhos relacionados a
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
+<span id="_Ref40822631" class="anchor"></span>Figura - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
@@ -477,7 +416,7 @@ disponível para desenvolver esse trabalho.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
+<span id="_Ref40822641" class="anchor"></span>Figura - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
 
 A quantidade de trabalhos encontrados na ACM relacionados a *string* de
@@ -493,9 +432,9 @@ Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
 *jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
 e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
-realizadas para filtrar os trabalhos encontrados no motor de busca da
-ACM (próprio, 2020)
+<span id="_Ref40822414" class="anchor"></span>Figura - Etapas realizadas
+para filtrar os trabalhos encontrados no motor de busca da ACM (próprio,
+2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado no
 sistema estruturado anteriormente. Esse filtro é baseado em 3 etapas
@@ -504,7 +443,7 @@ revisão dos trabalhos que condizem com o objetivo descrito no protocolo.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
+<span id="_Ref40822493" class="anchor"></span>Figura - Filtro em cima
 dos trabalhos selecionados através do resumo (próprio, 2020)
 
 Baseado no conhecimento obtido dos trabalhos na segunda etapa, foi
@@ -518,7 +457,7 @@ contexto nas recomendações. Foi apresentado na forma de gráfico de pizza
 na Figura 5 a relação entre os tipos e a quantidade de artigos
 encontrados.
 
-<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
+<span id="_Ref40822509" class="anchor"></span>Figura - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
@@ -580,36 +519,14 @@ usuário. Semelhante a estudos sobre e-commerce apresentados, onde o
 nível de diversidade precisa ser alto no início da seção de navegação e
 tende a diminuir gradualmente conforme a seção é encerrada.
 
-Nesse trabalho foi desenvolvido um modelo chamado DANCE, para monitorar
-e explorar a evolução da diversidade ao longo do tempo. No modelo foi
+Nesse trabalho foi apresentado um modelo chamado DANCE, para monitorar e
+explorar a evolução da diversidade ao longo do tempo. No modelo foi
 desenvolvido o conceito de contexto implicito, o qual ficou definido
 como caracteristicas comuns compartilhadas aos items consultados durante
 uma certa faxa de tempo. Foi definido tambem como a oposição do contexto
 explicito, o qual é definido como uma situação dentre os fatores
 conhecidos. O contexto implicito, se refere a uma sequencia de itens,
 enquanto o explicito, inclue informações adicionais do usuario.
-
-#### Qual o problema que ele resolveu?
-
-Nesse trabalho é apresentado um modelo que busca melhorar as
-recomendações musicais através do contexto que o usuário está vivendo.
-É apresentado uma preocupação em trazer as melhores recomendações
-baseadas nas particularidades de cada usuário.
-
-#### Quais técnicas foram usadas?
-
-Esse trabalho apresenta superficialmente as técnicas utilizadas para
-realizar as recomendações.
-
-#### Qual a base de treinamento e teste?
-
-Não foi realizado nenhuma aplicação para obter a base de treinamento
-desse trabalho. Foi utilizado uma base pronta que continha mais de
-200.000 representações dos acessos de usuários em um sistema. Essa base
-foi utilizada para validar a habilidade do modelo apresentado de obter o
-contexto implícito através dos dados de acesso.
-
-#### Quais os contextos utilizados?
 
 A principal métrica utilizada nesse trabalho foi a diversidade. A qual
 pode ser obtida através de diversos tipos de dados (numéricos, binários,
@@ -621,265 +538,475 @@ O modelo é capaz de detectar as mudanças de contexto comportamental a
 partir das consultas do usuário, e cada subsequência de itens
 consultados entre duas mudanças de contexto correspondem ao contexto
 implícito. E com a obtenção do contexto é realizado a recomendação ao
-usuário.
+usuário. O modelo do trabalho, não é apresentado o uso do contexto de
+ambiente, é utilizado somente o *ip* do usuário, mas não está claro se é
+utilizado como uma representação da posição geográfica onde o usuário se
+encontra.
 
-No modelo do trabalho, não apresentado o uso do contexto de ambiente, é
-utilizado somente o *ip* do usuário, mas não está claro se é utilizado
-como uma representação da posição geográfica onde o usuário se encontra.
+Não foi realizado nenhuma aplicação para obter a base de treinamento
+desse trabalho. Foi utilizado uma base pronta que continha mais de
+200.000 representações dos acessos de usuários em um sistema. Essa base
+foi utilizada para validar a habilidade do modelo apresentado de obter o
+contexto implícito através dos dados de acesso.
 
-Como nesse trabalho o contexto é obtido através da diversidade
-encontrada na diferença de certos atributos, é utilizados atributos que
-não possuem relação direta com contexto, mas sim com a música. Para
-obtenção da diversidade é utilizado: 7 atributos relacionados ao artista
-da música. 6 atributos relacionados a música.
-
-#### Como é obtido o contexto?
-
-Nesse trabalho é realizado a obtenção do contexto de duas maneiras: De
-maneira implícita e explicita. O modelo foi desenvolvido especificamente
-para obtenção do contexto implícito do usuário. É definido uma noção
-através das características comuns dos itens consultados durante um
-certo espaço de tempo. O contexto explicito foi obtido diretamente do
-usuário através de perguntas, e foi utilizado como validação do contexto
-implícito obtido através do modelo.
-
-O uso do contexto implícito foi dividido em 3 etapas: detectar o
-contexto o mais rápido possível, utilizar o histórico para detectar
-contextos semelhantes. Exploração de contextos semelhantes.
-
-A validação da acuracidade do modelo, a comparação dos contextos foi
-classificada em 4 possibilidades: O contexto implícito e explicito são
-os mesmos. Os contextos são parcialmente os mesmos. Os contextos são
-diferentes, mas o usuário concorda com o contexto obtido de forma
-implícita. E por último, é quando os contextos são diferentes e o
-usuário não entende o contexto obtido.
-
-#### Foi avaliado o nível de satisfação do usuário com a música recomendada?
-
-Não foi apresentado nenhuma avaliação desse tipo.
-
-#### A recomendação atingiu as expectativas do usuário?
-
-Essa métrica foi validada através da obtenção do contexto explicito
-citado em 3.3.1.5, onde é apresentado as 4 percepções dos usuários em
-relação ao contexto implícito obtido. Porem não é apresentado nenhum
-resultado dessa avaliação.
+Ao final da revisão do artigo foi verificado que o trabalho não
+apresenta dados e técnicas suficientes para ser considerado nesse
+trabalho. Pois todas as informações do sistema desenvolvido estão em
+outros artigos citados por esse. Então dado a falta de informações
+apresentadas nesse trabalho, não serão respondidas as questões
+pré-estabelecidas anteriormente.
 
 ### Prediction of music pairwise preferences from facial expressions
 
-Texto
+Essa pesquisa apresenta técnicas de como obter as preferências de um
+usuário através de suas expressões faciais. Para isso, foi desenvolvido
+uma aplicação, onde a preferência do usuário é obtida através da
+observação do seu comportamento. Cada usuário devia ouvir ao menos 10
+segundos de cada música em par apresentada e ao finalizar, poderia
+escolher qual música era mais adequada para se ouvir no ambiente
+pré-estabelecido que era seu trabalho. Nesse momento que é obtido os
+dois contextos estudados na pesquisa revisada, quando o usuário escutava
+as músicas, foi gravado suas expressões faciais através de uma câmera e
+o tempo dedicado a ouvir cada música.
 
 #### Qual o problema que ele resolveu?
 
-Texto
-
-  - Buscam obter uma recomendação personalizada pelo gosto do usuário?
+Nesse trabalho, é apresentado uma abordagem para predizer a preferência
+musical do usuário a partir das expressões faciais. Ela busca responder
+a seguinte questão: É possível inferir (implicitamente) em pares as
+preferências musicais de um usuário a partir de suas expressões faciais
+demonstradas enquanto escuta suas músicas?
 
 #### Quais técnicas foram usadas?
 
-PAIRWISE SCORE, CLASSIFICAÇÃO
+A principal técnica utilizada para predição das músicas foi gerando um
+score a partir da comparação par a par em cima das escolhas do usuário
+nas opções de músicas apresentadas. Essa comparação foi realizada como
+um problema de regressão, onde eles predizem a pontuação numérica em
+pares. E classificando o problema, onde foi predito uma pontuação em
+pares como classe discreta alternativa (esquerda é preferida, direita é
+preferida, igualmente preferidas).
 
-  - Foi utilizada da recomendação colaborativa?
+A recomendação gerada foi personalizada por usuário e não foi utilizado
+nenhum modelo colaborativo. Mas foi demonstrado o interesse no trabalho
+em adicionar ao RecSys o filtro do tipo colaborativo.
 
-  - Quais foram os algoritmos utilizados na recomendação?
+Para realizar a predição da música desejada dado a expressão facial,
+foram experimentados diversos algoritmos, e no fim, foi utilizado os
+algoritmos *Random forest* e *Gradient Boosting* por apresentarem os
+melhores resultados. Eles os escolheram, dado a principal base de
+predição, que foi, o uso do tempo em que os usuários escutaram as
+músicas e a diferença da duração entre duas músicas em par.
+
+Para auxiliar no score em par, foi utilizado o *Spearman’s Rank
+Correlation Coefficient* entre as diferentes durações (distribuições não
+normais). Isso é, quanto maior a diferença entre as duas músicas, maior
+a probabilidade de o usuário ter gostado da música que ele por mais
+tempo.
+
+Para obter os resultados, foi realizado a comparação da precisão das
+preferências de predição dos modelos bases utilizando *Root Mean Squared
+Error* (RMSE), precisão, *recall*, *F-measure* e acuracidade.
 
 #### Qual a base de treinamento e teste?
 
-Texto
-
-  - Foi desenvolvida alguma aplicação para obter as bases?
+A base dessa pesquisa foi gerada através do uso em um ambiente
+controlado de uma aplicação desenvolvida para obter a base desse
+trabalho. Foi utilizado um total de 75 usuários treinados para utilizar
+a aplicação com uma média de idade de 29,8 anos.
 
 #### Quais os contextos utilizados?
 
-Texto
-
-  - Foi analisado o comportamento? Quais aspectos?
-
-  - Foi analisado o ambiente? Quais fatores?
+O principal contexto utilizado nesse trabalho foi as emoções dos
+usuários obtidas através das expressões faciais dos usuários gravadas
+durante os testes realizados. No fim, foi apresentado um outro contexto
+comportamental, que é o tempo em que os usuários escutaram cada música.
+Não foi apresentado nenhum tipo de contexto de ambiente.
 
 #### Como é obtido o contexto?
 
-Texto
+Os dois contextos são obtidos enquanto o usuário está utilizando a
+aplicação de teste para reproduzir músicas, as emoções são obtidas a
+partir das expressões faciais produzidas, e o tempo que é gravado
+enquanto ele escuta cada música. Não é apresentado o contexto atual ao
+usuário, e não existe um formulário onde o usuário possa definir
+explicitamente o contexto.
 
-  - O usuário pode auxiliar na definição do contexto?
-
-  - É apresentado o contexto atual para o usuário?
+A preferência do usuário foi obtida através da observação do seu
+comportamento em cima da aplicação. Cada usuário devia ouvir ao menos 10
+segundos de cada música em par apresentada e ao finalizar, poderia
+escolher qual música era mais adequada para se ouvir no ambiente
+pré-estabelecido que era seu trabalho.
 
 #### Foi avaliado o nível de satisfação do usuário com a música recomendada?
 
-Texto
+Não foi avaliado o nível de satisfação dos usuários.
 
 #### A recomendação atingiu as expectativas do usuário?
 
-Texto
+Para obter os resultados, foi realizado a comparação da precisão das
+preferências de predição dos modelos bases utilizando *Root Mean Squared
+Error* (RMSE), precisão, *recall*, *F-measure* e acuracidade. A
+precisão, *recall* e *F-measure* foram calculadas ponderando os
+*scores* de cada classe pelo número de instancias verdadeiras de cada,
+para explicar o desequilíbrio dela.
 
-  - Quais foram os critérios de qualidade utilizados?
+A base foi obtida através da aplicação obteve um total de 75 usuários
+treinados para utilizar a aplicação com uma média de idade de 29,8 anos.
 
-  - Quantidade de usuários utilizadas? (tamanho da base)
-
-  - Quais foram as técnicas de avaliação usadas?
+O principal critério de qualidade utilizado foi o tempo em que o usuário
+escutou cada música, pois, quanto maior a diferença entre as duas
+músicas, maior a probabilidade de o usuário ter gostado da música que
+ele por mais tempo. Outro critério apresentado foi a sua avaliação das
+músicas em par.
 
 #### Tiveram outros resultados apresentados? Quais?
 
-Texto
+Não tiveram outros resultados apresentados.
 
 ### Towards Intent-Aware Contextual Music Recommendation: Initial Experiments
 
-Texto
+É apresentado técnicas e resultados no artigo revisado que buscam
+estudar as intenções dos usuários demonstradas a partir do estudo
+realizado em cima da API do Spotify e Youtube, que visa entender as
+intenções dos usuários a partir das descrições das *playlists*. A partir
+desse estudo, é gerado *playlists* especificas para cada atividade
+relacionada as intenções dos usuários. Isso foi desenvolvido no sistema
+de recomendação apresentado (AIR), que usa a API do Spotify para obter
+suas melhores *playlist* relacionados a busca, delas é obtido as top 10
+músicas com melhores scores, as quais são incluídas nas recomendações
+futuras para cada atividade.
 
 ####  Qual o problema que ele resolveu?
 
-Texto
+É abordado 3 contribuições no artigo: Por primeiro, é estimado uma
+distribuição empírica das intenções do ouvinte ao reproduzir um video no
+Youtube. Na segunda é realizado um experimento semelhante ao da
+primeira, porem utilizando o Spotify. E por último, é relatado os
+resultados iniciais obtidos utilizando o modelo de intenções treinados
+para melhorar as recomendações. O modelo apresentado, demonstra
+melhorias promissoras na recomendação de músicas através das intenções
+do usuário, ao invés de recomendações que dependem apenas de suas
+atividades.
 
-  - Buscam obter uma recomendação personalizada pelo gosto do usuário?
-    
-    1.  #### Quais técnicas foram usadas?
+#### Quais técnicas foram usadas?
 
-Texto
+Dado o escopo desse trabalho, será apresentado somente as técnicas
+utilizadas nas recomendações de áudio (Seção 2.2) apresentadas no artigo
+revisado. Nessa seção, é apresentado a especificação de um algoritmo que
+busca entender as intenções do usuário através dos títulos das
+*playlists* disponibilizadas pelos usuários. A pesquisa não utilizou da
+recomendação colaborativa.
 
-  - Foi utilizada da recomendação colaborativa?
+As intenções foram obtidas através de diversos tipos de algoritmos de
+*machine learning* como: *Logistic Regression*, *both fuzzy* e *hard
+Clustering*, mas os melhores resultados foram obtidos utilizando o
+*Random Forest classifier* (utilizando a implementação do *sklearn*).
 
-  - Quais foram os algoritmos utilizados na recomendação?
-    
-    1.  #### Qual a base de treinamento e teste?
+#### Qual a base de treinamento e teste?
 
-Texto
+A base de intenções é montada a partir de testes realizados utilizando a
+API do Spotify em Python em cima das *playlists* dispostas do usuário.
+Não é apresentado nenhuma aplicação desenvolvida para obter as bases.
 
-  - Foi desenvolvida alguma aplicação para obter as bases?
-    
-    1.  #### Quais os contextos utilizados?
+#### Quais os contextos utilizados?
 
-Texto
+Esse trabalho realizou a interpretação de contexto como intenções. O
+principal atributo utilizado são as atividades que o usuário está
+executando, o qual é obtido através de seu comportamento (buscas por
+*playlists*).
 
-  - Foi analisado o comportamento? Quais aspectos?
+#### Como é obtido o contexto?
 
-  - Foi analisado o ambiente? Quais fatores?
-    
-    1.  #### Como é obtido o contexto?
+Para obter o comportamento do usuário, foi avaliado durante um período
+de teste as intenções dos usuários nas buscas por *playlists*, e a
+partir delas, foi gerado uma playlist de acordo com suas intenções. Esse
+comportamento é obtido de maneira implícita e o usuário não pode ajudar
+na definição do contexto. Não é apresentado ao usuário o contexto atual
+obtido através do seu comportamento.
 
-Texto
+#### Foi avaliado o nível de satisfação do usuário com a música recomendada?
 
-  - O usuário pode auxiliar na definição do contexto?
-
-  - É apresentado o contexto atual para o usuário?
-    
-    1.  #### Foi avaliado o nível de satisfação do usuário com a música recomendada?
-
-Texto
+Não foi avaliado o nível de satisfação dos usuários referente a música
+recomendada.
 
 #### A recomendação atingiu as expectativas do usuário?
 
-Texto
+Para validar as recomendações do sistema, foi realizado uma comparação
+com o RecSys do Spotify (SPTF) e o criado no artigo revisado (AIR).
+Nessa comparação foi pedido ao usuário para avaliar as duas *playlists*
+geradas pelos sistemas. As *playlists* geradas automaticamente para cada
+uma das 10 atividades foram agrupadas. Depois foram avaliadas por 1-3
+avaliadores humanos. A avaliação tem como objetivo validar o quanto a
+*playlist* se enquadrava na atividade estipulada.
 
-  - Quais foram os critérios de qualidade utilizados?
+A partir das avaliações realizadas, foram utilizadas 3 métricas para
+estimar a qualidade das recomendações feitas a partir dos coeficientes
+de correlação, elas são: Kendallτ, τ-AP e nMMR. Essas métricas são
+importantes para avaliar numericamente a qualidade de cada playlist
+recomendada. Ao final, foi analisado as avaliações e foi visto que não é
+apresentado o tamanho da base utilizada nesse artigo.
 
-  - Quantidade de usuários utilizadas? (tamanho da base)
+#### Tiveram outros resultados apresentados? Quais?
 
-  - Quais foram as técnicas de avaliação usadas?
-    
-    1.  #### Tiveram outros resultados apresentados? Quais?
-
-Texto
+Não tiveram outros resultados apresentados.
 
 ### Quantitative Study of Music Listening Behavior in a Smartphone Context
 
-Texto
+O artigo revisado apresentou diversos resultados quantitativos, que
+foram obtidos através da classificação e computação dos dados de um
+aplicativo, o qual foi desenvolvido para reproduzir músicas e registrar
+o contexto de um usuário. Ele tem como principal objetivo responder as
+seguintes questões:
+
+1.  Em que medida podemos prever a música que um usuário prefere ouvir
+    em diferentes contextos de atividade (ou seja, uso de música) da
+    realidade?
+
+2.  Em que medida podemos prever a atividade de um usuário a partir dos
+    dados do sensor coletados dos smartphones em um contexto de um
+    ouvinte musical da realidade?
+
+3.  Como fatores pessoais, como dados demográficos, histórico musical,
+    preferência musical de longo prazo e traços de personalidade, se
+    correlacionam com a previsibilidade do uso de músicas e da atividade
+    do usuário para diferentes usuários?
+
+Cada pergunta investiga diferentes interações entre os fatores musicais,
+pessoais e situacionais da audição musical. Especificamente é
+considerado um conjunto fechado de 8 tipos de atividades, onde é
+relacionado a dados diários obtidos pelos usuários durante um período de
+3 semanas. O artigo não apresentou ou desenvolveu sistema de
+recomendação musical, porém, trouxe diversas informações pertinentes a
+esse trabalho.
 
 ####  Qual o problema que ele resolveu?
 
-Texto
+Nesse trabalho é apresentado diversas técnicas que buscam melhorar a
+recomendação personalizadas a partir de diversos dados obtidos através
+de sensores (implicitamente), ou através de perguntas realizadas ao
+usuário. O artigo revisado tem como principal objetivo responder as
+questões descritas anteriormente.
 
-  - Buscam obter uma recomendação personalizada pelo gosto do usuário?
-    
-    1.  #### Quais técnicas foram usadas?
+#### Quais técnicas foram usadas?
 
-Texto
+Nessa seção será apresentado o conteúdo divido nas 3 questões que o
+artigo revisado busca resolver. Em nenhuma das questões é abordado a
+filtragem colaborativa.
 
-  - Foi utilizada da recomendação colaborativa?
+#####  Em que medida podemos prever a música que um usuário prefere ouvir em diferentes contextos de atividade (ou seja, uso de música) da realidade?
 
-  - Quais foram os algoritmos utilizados na recomendação?
-    
-    1.  #### Qual a base de treinamento e teste?
+Essa seção do trabalho teve como principal objetivo classificar
+(utilizando *auto-tagging*) a relação das preferências musicais x
+contextos dos usuários. Antes de iniciar essa classificação, foi
+realizado um filtro na base gerada pelos usuários e aplicando certos
+critérios de qualidade sobraram 19 dos 48 usuários participantes do
+teste.
 
-Texto
+Baseado nos 19 usuários restantes, foi realizado a criação das *tags* do
+teste, que foi dividida em 2 esquemas de aprendizados, o personalizado e
+o geral. Os algoritmos considerados para essa classificação foram o
+linear e não linear, da *radial basis function* (RBF) e *support vector
+machine* (SVM). Dado os problemas com dados negativos nas classificações
+binarias, foi utilizado a técnica *EasyEnsemble* (mais especificamente a
+*Beta weights*) para neutralizar os dados.
 
-  - Foi desenvolvida alguma aplicação para obter as bases?
-    
-    1.  #### Quais os contextos utilizados?
+Por fim, para medir a precisão das *tags* criadas, foi utilizado o
+*operating characteristic curve* (AUC) mais especificamente o *Pearson’s
+linear correlation coefficient*. Buscando auxiliar a visualização da
+valência-excitação das emoções no espaço, foi utilizado a técnica de
+*Affective Norm for English Words* (ANEW). E no fim, para computar a
+associação entre as músicas e as emoções, foi feito uso do GPR
+(*Gaussian process regression*), mais especificamente o método
+*isotropic rational quadratic covariance kernel* implementado pelo
+*toolkit* *Gaussian process for machine learning* (GPML).
 
-Texto
+Como a experiencia da música é multidimensional, o artigo revisado busca
+extrair os atributos das músicas, e visando auxiliar o processo de
+classificação, foram utilizados o *MIRtoolbox* e o *PsySound toolbox* os
+quais conseguem extrair os atributos musicais.
 
-  - Foi analisado o comportamento? Quais aspectos?
+##### Em que medida podemos prever a atividade de um usuário a partir dos dados do sensor coletados dos smartphones em um contexto de um ouvinte musical da realidade?
 
-  - Foi analisado o ambiente? Quais fatores?
-    
-    1.  #### Como é obtido o contexto?
+O principal objetivo dessa seção do trabalho foi classificar as
+atividades dos usuários (*user-activity*) e relacionar as 8 atividades
+definidas com os dados obtidos dos sensores. Foram considerados os
+mesmos 19 usuários obtidos na filtragem apresentada na seção anterior.
 
-Texto
+A partir do aplicativo desenvolvido, foi possível obter os dados dos
+sensores utilizando o *Funf Open Sensing Framework*, e semelhante a
+classificação dos dados musicais com o contexto, para classificar as
+atividades dos usuários com os sensores foi utilizado o RBF e SVM.
 
-  - O usuário pode auxiliar na definição do contexto?
+##### Como fatores pessoais se correlacionam com a previsibilidade do uso de músicas e da atividade do usuário para diferentes usuários?
 
-  - É apresentado o contexto atual para o usuário?
-    
-    1.  #### Foi avaliado o nível de satisfação do usuário com a música recomendada?
+Dado os resultados obtidos nas seções anteriores, essa seção busca
+determinar quais fatores do usuário são forte indicadores de desempenho
+das duas tarefas. Foram considerados os mesmos 19 usuários obtidos na
+filtragem apresentada na seção anterior.
 
-Texto
+Antes dos usuários passarem a utilizar o sistema, foi realizado algumas
+perguntas a eles, validando e obtendo informações previas deles. Nessa
+seção, foi utilizado o *Pearson’s linear correlation coefficient* e AUC
+para determinar quais fatores dos usuários são indicadores de desempenho
+das duas tarefas.
+
+#### Qual a base de treinamento e teste?
+
+A partir do aplicativo desenvolvido no artigo revisado, foi gerado uma
+base de treinamento e teste. Ela foi dividida em 3 partes, sendo elas:
+relação música x contexto, relação dos sensores x atividades e por
+último os fatores extraídos dos usuários.
+
+#### Quais os contextos utilizados?
+
+O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
+e classificaram os fatores de uma preferência musical em 3 tipos
+(usuário, música e contexto). Eles são:
+
+<span id="_Toc42024460" class="anchor"></span>Figura Fatores da
+preferência musical (próprio, 2020)
+
+#### Como é obtido o contexto?
+
+O contexto é obtido a partir do aplicativo desenvolvido, ele trouxe
+diversas informações sobre o dia a dia dos usuários, essas informações
+foram obtidas através de sensores e formulários que o usuário conseguia
+responder. Não é apresentado o contexto atual para o usuário.
+
+#### Foi avaliado o nível de satisfação do usuário com a música recomendada?
+
+O artigo revisado não desenvolveu um sistema de recomendação.
 
 #### A recomendação atingiu as expectativas do usuário?
 
-Texto
+Como artigo revisado não desenvolveu um sistema de recomendação. Apenas
+disponibilizou diversos dados estatísticos que auxiliariam o
+desenvolvimento de um RecSys. Por isso não foi definido nenhum critério
+de qualidade ou técnicas de avaliação das recomendações. A base foi
+obtida através do aplicativo desenvolvido nesse trabalho, ela continha
+48 usuários, que a partir de uma filtragem dos dados efetuada, passou
+para 19 nas respostas das questões.
 
-  - Quais foram os critérios de qualidade utilizados?
+#### Tiveram outros resultados apresentados? Quais?
 
-  - Quantidade de usuários utilizadas? (tamanho da base)
-
-  - Quais foram as técnicas de avaliação usadas?
-    
-    1.  #### Tiveram outros resultados apresentados? Quais?
-
-Texto
+Não tiveram outros resultados apresentados.
 
 ## Tabela com tecnicas
 
-Texto
+Para relacionar os trabalhos revisados, foi criado uma tabela contendo
+as funcionalidades encontradas nos artigos e, é feito uma relação delas,
+visando facilitar a visão das funcionalidades entre as revisões feitas.
 
-<span id="_Toc41243154" class="anchor"></span>Table 1 Relação das
+<span id="_Toc42024448" class="anchor"></span>Table Relação das
 funcionalidades desenvolvidas em cada artigo revisado (próprio, 2020)
 
-|                                                                   | 3.3.1 The New Challenges when Modeling Context through Diversity over Time in Recommender Systems | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
-| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
-| Tem foco no entendimento do contexto para recomendações musicais? | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              | ✔                       |
-| Apresenta o desenvolvimento realizado no trabalho?                | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
-| O trabalho foi validado em um caso real?                          | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
-| Apresenta como o sistema chegou em tal recomendação ao usuário?   | ✔                                                                                                 | \-                                                                     | \-                                                                              | \-                                                                           | \-                      |
-| Utiliza do contexto comportamental?                               | ✔                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
-| Utiliza do contexto de ambiente?                                  | ❌                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
-| Utiliza do contexto explicito?                                    | ✔                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
-| Utiliza do contexto implícito?                                    | ✔                                                                                                 |                                                                        |                                                                                 |                                                                              |                         |
+|                                                                   | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
+| ----------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
+| Tem foco no entendimento do contexto para recomendações musicais? | ✔                                                                      | ✔                                                                               | ❌                                                                            | ✔                       |
+| Apresenta o desenvolvimento realizado no trabalho?                | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
+| O trabalho foi validado em um caso real?                          | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
+| Utiliza do contexto comportamental?                               | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
+| Utiliza do contexto de ambiente?                                  | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
+| Utiliza do contexto explicito?                                    | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
+| Utiliza do contexto implícito?                                    | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
+| Usa ACM?                                                          | ❌                                                                      | ✔                                                                               | ✔                                                                            |                         |
+| Usa SVM?                                                          | ❌                                                                      | ✔                                                                               | ✔                                                                            | \-                      |
 
 # Modelagem do que será feito
 
-Texto
+Recomendação dinâmica utilizando o feedback do usuário do contexto
+atual.
+
+Responder as perguntas:
+
+\- como é possível capturar as ações do usuário e classifica-las como
+contexto?
+
+\- como é possível validar se as ações do usuário condiz com o contexto?
+
+\- como é possível relacionar as músicas que o usuário gosta aos
+contextos?
+
+\- como é possível classificar o contexto para apresentar para usuário?
+
+\- como é possível recomendar novas musicas a partir da relação de
+contexto x musica?
 
 ## Contexto
 
-Texto
+Conforme o dicionário Michaelis contexto pode ser tido por:
+
+> O conjunto de circunstâncias inter-relacionadas de cuja tessitura se
+> depreende determinado fato ou situação; circunstância(s), conjuntura,
+> situação.
+
+Um sistema de recomendação busca encontrar os melhores itens para um
+devido fim, onde geralmente se baseia em dados históricos para
+produzi-las. Observa-se que, com o entendimento do contexto, ou conforme
+a definição das “circunstâncias que levaram a certos fatos ou
+situações”, é possível auxiliar as recomendações, aumentando o
+número de dados disponíveis para realizar a classificação e filtro.
+
+Figura 8 Apresentação dos contextos utilizados no trabalho (próprio,
+2020)
 
 ### O que é o contexto comportamental?
 
-Texto
+Conforme o dicionário Michaelis contexto pode ser tido por:
+
+> Qualquer ação ou reação do organismo ou parte dele
+
+Unindo a definição do contexto com a definição acima, foi realizado um
+estudo das possíveis ações a serem registradas em um sistema, as quais,
+seria realizado um estudo, para gerar uma classificação e no futuro,
+auxiliar na recomendação musical.
+
+será utilizado:
+
+Horário,
+
+Humor,
+
+Atividade,
+
+ações sequenciais.
+
+Quantidade de musicas escutadas no dia (tempo)
 
 ### O que é o contexto ambiente?
 
-Texto
+Será utilizado:
+
+Localização
+
+clima
 
 ### Como será obtido os contextos?
 
-Texto
+A partir da captura de dados de uma app.
+
+Ele irá obter dados
+
+implicitamente
+
+\- localização
+
+\- ações
+
+\- tempo
+
+\- clima
+
+explicitamente.
+
+\- localização
+
+\- humor
+
+\- atividade
 
 ## Arquitetura do sistema
-
-Texto
 
 # CONCLUSÃO
 
