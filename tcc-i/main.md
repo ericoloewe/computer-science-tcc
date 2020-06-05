@@ -507,47 +507,10 @@ que foi desenvolvido e no fim, foi respondido as seguintes perguntas:
 
 #### The New Challenges when Modeling Context through Diversity over Time in Recommender Systems
 
-Visando melhorar as recomendações musicais, este trabalho realiza um
-estudo sobre o contexto em que o usuário está vivendo, por meio de
-análises da evolução da diversidade, do tempo e do caminho percorrido
-pelo usuário. Semelhante aos estudos sobre e-commerce apresentados, onde
-o nível de diversidade precisa ser alto no início da seção de navegação
-e tende a diminuir gradualmente conforme a seção é encerrada.
-
-Nesse trabalho foi apresentado um modelo chamado DANCE, para monitorar e
-explorar a evolução da diversidade ao longo do tempo. No modelo foi
-desenvolvido o conceito de contexto implícito, o qual ficou definido
-como caracteristicas comuns compartilhadas aos itens consultados durante
-uma certa faxa de tempo. Foi definido também como a oposição do contexto
-explicito, o qual é definido como uma situação dentre os fatores
-conhecidos. O contexto implicito, se refere a uma sequência de itens,
-enquanto o explicito, inclui informações adicionais do usuário.
-
-A principal métrica utilizada nesse trabalho foi a diversidade. A qual
-pode ser obtida através de diversos tipos de dados (numéricos, binários,
-texto, intervalos, ...), desde que seja possível calcular a semelhança
-entre dois dados desse mesmo tipo. Através da diversidade, é obtido o
-contexto implícito do usuário.
-
-O modelo é capaz de detectar as mudanças de contexto comportamental, a
-partir das consultas do usuário, e cada subsequência de itens
-consultados entre duas mudanças de contexto correspondem ao contexto
-implícito. E com a obtenção do contexto é realizado a recomendação ao
-usuário. O modelo do trabalho, não é apresentado o uso do contexto de
-ambiente, é utilizado somente o ip do usuário, mas não está claro se é
-utilizado como uma representação da posição geográfica onde o usuário se
-encontra.
-
-Não foi realizada nenhuma aplicação para obter a base de treinamento
-desse trabalho. Foi utilizada uma base pronta que continha mais de
-200.000 representações dos acessos de usuários em um sistema. Essa base
-foi utilizada para validar a habilidade do modelo apresentado de obter o
-contexto implícito através dos dados de acesso.
-
-Ao final da revisão do artigo foi verificado que o trabalho não
-apresenta dados e técnicas suficientes para serem consideradas nesse
-trabalho. Pois todas as informações do sistema desenvolvido estão em
-outros artigos citados por esse. Então dado a falta de informações
+Foi realizado a revisão do trabalho e então verificado que o trabalho
+não apresenta dados e técnicas suficientes para serem consideradas
+nesse trabalho. Pois todas as informações do sistema desenvolvido estão
+em outros artigos citados por esse. Então dado a falta de informações
 apresentadas nesse trabalho, não serão respondidas as questões
 pré-estabelecidas anteriormente.
 
