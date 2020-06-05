@@ -148,7 +148,7 @@ Experiments
 Context
 24](#quantitative-study-of-music-listening-behavior-in-a-smartphone-context)
 
-[2.4 Tabela com tecnicas 28](#tabela-com-tecnicas)
+[2.4 Tabela com tecnicas 28](#_Toc42267308)
 
 [3 Modelagem do que será feito 30](#modelagem-do-que-será-feito)
 
@@ -514,11 +514,11 @@ em outros artigos citados por esse. Então dado a falta de informações
 apresentadas nesse trabalho, não serão respondidas as questões
 pré-estabelecidas anteriormente.
 
-### Prediction of music pairwise preferences from facial expressions
+#### Prediction of music pairwise preferences from facial expressions
 
 Essa pesquisa apresenta técnicas de como obter as preferências de um
-usuário através de suas expressões faciais. Para isso, foi desenvolvido
-uma aplicação, onde a preferência do usuário é obtida através da
+usuário através de suas expressões faciais. Para isso, foi desenvolvida
+uma aplicação onde a preferência do usuário é obtida através da
 observação do seu comportamento. Cada usuário devia ouvir ao menos 10
 segundos de cada música em par apresentada e ao finalizar, poderia
 escolher qual música era mais adequada para se ouvir no ambiente
@@ -529,54 +529,53 @@ o tempo dedicado a ouvir cada música.
 
 #### Qual o problema que ele resolveu?
 
-Nesse trabalho, é apresentado uma abordagem para predizer a preferência
+Nesse trabalho é apresentada uma abordagem para predizer a preferência
 musical do usuário a partir das expressões faciais. Ela busca responder
-a seguinte questão: É possível inferir (implicitamente) em pares as
+a seguinte questão: É possível inferir (implicitamente), em pares, as
 preferências musicais de um usuário a partir de suas expressões faciais
 demonstradas enquanto escuta suas músicas?
 
 #### Quais técnicas foram usadas?
 
-A principal técnica utilizada para predição das músicas foi gerando um
-score a partir da comparação par a par em cima das escolhas do usuário
-nas opções de músicas apresentadas. Essa comparação foi realizada como
-um problema de regressão, onde eles predizem a pontuação numérica em
-pares. E classificando o problema, onde foi predito uma pontuação em
-pares como classe discreta alternativa (esquerda é preferida, direita é
-preferida, igualmente preferidas).
+A principal técnica utilizada para predição das músicas foi a de gerar
+um *score,* a partir da comparação par a par em cima das escolhas do
+usuário, nas opções de músicas apresentadas. Essa comparação foi
+realizada como um problema de regressão, onde eles predizem a pontuação
+numérica em pares. E classificando o problema, onde foi predito uma
+pontuação em pares como classe discreta alternativa (esquerda é
+preferida, direita é preferida, igualmente preferidas).
 
 A recomendação gerada foi personalizada por usuário e não foi utilizado
-nenhum modelo colaborativo. Mas foi demonstrado o interesse no trabalho
+nenhum modelo colaborativo, mas foi demonstrado o interesse no trabalho
 em adicionar ao RecSys o filtro do tipo colaborativo.
 
-Para realizar a predição da música desejada dado a expressão facial,
+Para realizar a predição da música desejada, dada a expressão facial,
 foram experimentados diversos algoritmos, e no fim, foi utilizado os
-algoritmos *Random forest* e *Gradient Boosting* por apresentarem os
+algoritmos *Random Forest* e *Gradient Boosting* por apresentarem os
 melhores resultados. Eles os escolheram, dado a principal base de
 predição, que foi, o uso do tempo em que os usuários escutaram as
 músicas e a diferença da duração entre duas músicas em par.
 
-Para auxiliar no score em par, foi utilizado o *Spearman’s Rank
+Para auxiliar no *score* em par, foi utilizado o *Spearman’s Rank
 Correlation Coefficient* entre as diferentes durações (distribuições não
 normais). Isso é, quanto maior a diferença entre as duas músicas, maior
-a probabilidade de o usuário ter gostado da música que ele por mais
-tempo.
+a probabilidade de o usuário ter gostado da música que ele escutou por
+mais tempo.
 
-Para obter os resultados, foi realizado a comparação da precisão das
+Para obter os resultados, foi realizada a comparação da precisão das
 preferências de predição dos modelos bases utilizando *Root Mean Squared
 Error* (RMSE), precisão, *recall*, *F-measure* e acuracidade.
 
 #### Qual a base de treinamento e teste?
 
 A base dessa pesquisa foi gerada através do uso em um ambiente
-controlado de uma aplicação desenvolvida para obter a base desse
-trabalho. Foi utilizado um total de 75 usuários treinados para utilizar
-a aplicação com uma média de idade de 29,8 anos.
+controlado de uma aplicação desenvolvida. Foi utilizado um total de 75
+usuários para utilizar a aplicação, com uma média de idade de 29,8 anos.
 
 #### Quais os contextos utilizados?
 
 O principal contexto utilizado nesse trabalho foi as emoções dos
-usuários obtidas através das expressões faciais dos usuários gravadas
+usuários, obtidas através das expressões faciais dos usuários gravadas
 durante os testes realizados. No fim, foi apresentado um outro contexto
 comportamental, que é o tempo em que os usuários escutaram cada música.
 Não foi apresentado nenhum tipo de contexto de ambiente.
@@ -584,7 +583,7 @@ Não foi apresentado nenhum tipo de contexto de ambiente.
 #### Como é obtido o contexto?
 
 Os dois contextos são obtidos enquanto o usuário está utilizando a
-aplicação de teste para reproduzir músicas, as emoções são obtidas a
+aplicação de teste para reproduzir músicas. As emoções são obtidas a
 partir das expressões faciais produzidas, e o tempo que é gravado
 enquanto ele escuta cada música. Não é apresentado o contexto atual ao
 usuário, e não existe um formulário onde o usuário possa definir
@@ -603,11 +602,10 @@ Não foi avaliado o nível de satisfação dos usuários.
 #### A recomendação atingiu as expectativas do usuário?
 
 Para obter os resultados, foi realizado a comparação da precisão das
-preferências de predição dos modelos bases utilizando *Root Mean Squared
+preferências de predição dos modelos, utilizando *Root Mean Squared
 Error* (RMSE), precisão, *recall*, *F-measure* e acuracidade. A
-precisão, *recall* e *F-measure* foram calculadas ponderando os
-*scores* de cada classe pelo número de instancias verdadeiras de cada,
-para explicar o desequilíbrio dela.
+precisão, *recall* e *F-measure* foram calculadas, ponderando os
+*scores* de cada classe pelo número de instâncias verdadeiras de cada.
 
 A base foi obtida através da aplicação obteve um total de 75 usuários
 treinados para utilizar a aplicação com uma média de idade de 29,8 anos.
@@ -615,70 +613,68 @@ treinados para utilizar a aplicação com uma média de idade de 29,8 anos.
 O principal critério de qualidade utilizado foi o tempo em que o usuário
 escutou cada música, pois, quanto maior a diferença entre as duas
 músicas, maior a probabilidade de o usuário ter gostado da música que
-ele por mais tempo. Outro critério apresentado foi a sua avaliação das
-músicas em par.
+ele ouviu por mais tempo. Outro critério apresentado foi a sua avaliação
+das músicas em par.
 
 #### Tiveram outros resultados apresentados? Quais?
 
 Não tiveram outros resultados apresentados.
 
-### Towards Intent-Aware Contextual Music Recommendation: Initial Experiments
+#### Towards Intent-Aware Contextual Music Recommendation: Initial Experiments
 
-É apresentado técnicas e resultados no artigo revisado que buscam
-estudar as intenções dos usuários demonstradas a partir do estudo
-realizado em cima da API do Spotify e Youtube, que visa entender as
-intenções dos usuários a partir das descrições das *playlists*. A partir
-desse estudo, é gerado *playlists* especificas para cada atividade
-relacionada as intenções dos usuários. Isso foi desenvolvido no sistema
-de recomendação apresentado (AIR), que usa a API do Spotify para obter
-suas melhores *playlist* relacionados a busca, delas é obtido as top 10
-músicas com melhores scores, as quais são incluídas nas recomendações
-futuras para cada atividade.
+O artigo apresenta técnicas e resultados que buscam estudar as intenções
+dos usuários ao buscar uma música para escutar, que demonstradas a
+partir do estudo realizado em cima da API do Spotify e Youtube, que visa
+entender as intenções dos usuários a partir das descrições das
+*playlists*. A partir desse estudo, são geradas *playlists* especificas
+para cada atividade relacionada às intenções dos usuários. Isso foi
+desenvolvido no sistema de recomendação apresentado (AIR), que usa a API
+do Spotify para obter suas melhores *playlist* relacionados a busca,
+delas é obtido as top 10 músicas com melhores scores, as quais são
+incluídas nas recomendações futuras para cada atividade.
 
 ####  Qual o problema que ele resolveu?
 
-É abordado 3 contribuições no artigo: Por primeiro, é estimado uma
-distribuição empírica das intenções do ouvinte ao reproduzir um video no
-Youtube. Na segunda é realizado um experimento semelhante ao da
-primeira, porem utilizando o Spotify. E por último, é relatado os
-resultados iniciais obtidos utilizando o modelo de intenções treinados
-para melhorar as recomendações. O modelo apresentado, demonstra
-melhorias promissoras na recomendação de músicas através das intenções
-do usuário, ao invés de recomendações que dependem apenas de suas
-atividades.
+São abordadas 3 contribuições no artigo: (i) é estimado uma distribuição
+empírica das intenções do ouvinte ao reproduzir um vídeo no Youtube;
+(ii) é realizado um experimento semelhante ao da primeira, porém
+utilizando o Spotify; (iii) são relatados os resultados iniciais
+obtidos, utilizando o modelo de intenções treinados para melhorar as
+recomendações. O modelo apresentado demonstra melhorias promissoras na
+recomendação de músicas através das intenções do usuário, ao invés de
+recomendações que dependem apenas de suas atividades.
 
 #### Quais técnicas foram usadas?
 
-Dado o escopo desse trabalho, será apresentado somente as técnicas
-utilizadas nas recomendações de áudio (Seção 2.2) apresentadas no artigo
-revisado. Nessa seção, é apresentado a especificação de um algoritmo que
-busca entender as intenções do usuário através dos títulos das
-*playlists* disponibilizadas pelos usuários. A pesquisa não utilizou da
-recomendação colaborativa.
+Dado o escopo desse trabalho, serão apresentadas somente as técnicas
+utilizadas nas recomendações de áudio. O artigo apresenta a
+especificação de um algoritmo que busca entender as intenções do
+usuário através dos títulos das *playlists* disponibilizadas por ele. A
+pesquisa não utilizou da recomendação colaborativa.
 
 As intenções foram obtidas através de diversos tipos de algoritmos de
-*machine learning* como: *Logistic Regression*, *both fuzzy* e *hard
+*machine learning* como: *Logistic Regression*, *Both Fuzzy* e H*ard
 Clustering*, mas os melhores resultados foram obtidos utilizando o
-*Random Forest classifier* (utilizando a implementação do *sklearn*).
+*Random Forest Classifier* (utilizando a implementação do *sklearn*).
 
 #### Qual a base de treinamento e teste?
 
 A base de intenções é montada a partir de testes realizados utilizando a
-API do Spotify em Python em cima das *playlists* dispostas do usuário.
-Não é apresentado nenhuma aplicação desenvolvida para obter as bases.
+API do Spotify em Python, em cima das *playlists* dispostas do usuário.
+Não é apresentada nenhuma aplicação desenvolvida para obter as bases.
 
 #### Quais os contextos utilizados?
 
 Esse trabalho realizou a interpretação de contexto como intenções. O
 principal atributo utilizado são as atividades que o usuário está
-executando, o qual é obtido através de seu comportamento (buscas por
+executando, as qual são obtidas através de seu comportamento (buscas por
 *playlists*).
 
 #### Como é obtido o contexto?
 
-Para obter o comportamento do usuário, foi avaliado durante um período
-de teste as intenções dos usuários nas buscas por *playlists*, e a
-partir delas, foi gerado uma playlist de acordo com suas intenções. Esse
+Para obter o comportamento do usuário foi avaliado durante um período de
+teste as intenções dos usuários nas buscas por *playlists* e, a partir
+delas, foi gerado uma *playlist* de acordo com suas intenções. Esse
 comportamento é obtido de maneira implícita e o usuário não pode ajudar
 na definição do contexto. Não é apresentado ao usuário o contexto atual
 obtido através do seu comportamento.
@@ -690,7 +686,7 @@ recomendada.
 
 #### A recomendação atingiu as expectativas do usuário?
 
-Para validar as recomendações do sistema, foi realizado uma comparação
+Para validar as recomendações do sistema, foi realizada uma comparação
 com o RecSys do Spotify (SPTF) e o criado no artigo revisado (AIR).
 Nessa comparação foi pedido ao usuário para avaliar as duas *playlists*
 geradas pelos sistemas. As *playlists* geradas automaticamente para cada
@@ -701,15 +697,14 @@ avaliadores humanos. A avaliação tem como objetivo validar o quanto a
 A partir das avaliações realizadas, foram utilizadas 3 métricas para
 estimar a qualidade das recomendações feitas a partir dos coeficientes
 de correlação, elas são: Kendallτ, τ-AP e nMMR. Essas métricas são
-importantes para avaliar numericamente a qualidade de cada playlist
-recomendada. Ao final, foi analisado as avaliações e foi visto que não é
-apresentado o tamanho da base utilizada nesse artigo.
+importantes para avaliar numericamente a qualidade de cada *playlist*
+recomendada. Não é apresentado o tamanho da base utilizada nesse artigo.
 
 #### Tiveram outros resultados apresentados? Quais?
 
 Não tiveram outros resultados apresentados.
 
-### Quantitative Study of Music Listening Behavior in a Smartphone Context
+#### Quantitative Study of Music Listening Behavior in a Smartphone Context
 
 O artigo revisado apresentou diversos resultados quantitativos, que
 foram obtidos através da classificação e computação dos dados de um
@@ -722,35 +717,34 @@ seguintes questões:
     realidade?
 
 2.  Em que medida podemos prever a atividade de um usuário a partir dos
-    dados do sensor coletados dos smartphones em um contexto de um
+    dados do sensor coletados dos *smartphones*, em um contexto de um
     ouvinte musical da realidade?
 
-3.  Como fatores pessoais, como dados demográficos, histórico musical,
-    preferência musical de longo prazo e traços de personalidade, se
+3.  Como fatores pessoais (dados demográficos, histórico musical,
+    preferência musical de longo prazo e traços de personalidade) se
     correlacionam com a previsibilidade do uso de músicas e da atividade
     do usuário para diferentes usuários?
 
 Cada pergunta investiga diferentes interações entre os fatores musicais,
 pessoais e situacionais da audição musical. Especificamente é
-considerado um conjunto fechado de 8 tipos de atividades, onde é
-relacionado a dados diários obtidos pelos usuários durante um período de
-3 semanas. O artigo não apresentou ou desenvolveu sistema de
+considerado um conjunto fechado de 8 tipos de atividades, atividades
+estas relacionadas a dados diários obtidos pelos usuários durante um
+período de 3 semanas. O artigo não apresentou ou desenvolveu sistema de
 recomendação musical, porém, trouxe diversas informações pertinentes a
 esse trabalho.
 
 ####  Qual o problema que ele resolveu?
 
-Nesse trabalho é apresentado diversas técnicas que buscam melhorar a
-recomendação personalizadas a partir de diversos dados obtidos através
+Nesse trabalho são apresentadas diversas técnicas que buscam melhorar a
+recomendação personalizada, a partir de diversos dados obtidos por meio
 de sensores (implicitamente), ou através de perguntas realizadas ao
 usuário. O artigo revisado tem como principal objetivo responder as
 questões descritas anteriormente.
 
 #### Quais técnicas foram usadas?
 
-Nessa seção será apresentado o conteúdo divido nas 3 questões que o
-artigo revisado busca resolver. Em nenhuma das questões é abordado a
-filtragem colaborativa.
+Essa seção está dividida nas 3 questões que o artigo revisado busca
+resolver. Em nenhuma das questões é abordado a filtragem colaborativa.
 
 #####  Em que medida podemos prever a música que um usuário prefere ouvir em diferentes contextos de atividade (ou seja, uso de música) da realidade?
 
@@ -761,30 +755,31 @@ realizado um filtro na base gerada pelos usuários e aplicando certos
 critérios de qualidade sobraram 19 dos 48 usuários participantes do
 teste.
 
-Baseado nos 19 usuários restantes, foi realizado a criação das *tags* do
-teste, que foi dividida em 2 esquemas de aprendizados, o personalizado e
-o geral. Os algoritmos considerados para essa classificação foram o
-linear e não linear, da *radial basis function* (RBF) e *support vector
-machine* (SVM). Dado os problemas com dados negativos nas classificações
-binarias, foi utilizado a técnica *EasyEnsemble* (mais especificamente a
-*Beta weights*) para neutralizar os dados.
+Baseado nos 19 usuários restantes, foi realizada a criação das *tags* do
+teste, que foram divididas em 2 esquemas de aprendizados: o
+personalizado e o geral. Os algoritmos considerados para essa
+classificação foram o linear e não linear, da *radial basis function*
+(RBF) e *support vector machine* (SVM). Dado os problemas com dados
+negativos nas classificações binárias, foi utilizada a técnica
+*EasyEnsemble* (mais especificamente a *Beta weights*) para neutralizar
+os dados.
 
 Por fim, para medir a precisão das *tags* criadas, foi utilizado o
-*operating characteristic curve* (AUC) mais especificamente o *Pearson’s
-linear correlation coefficient*. Buscando auxiliar a visualização da
-valência-excitação das emoções no espaço, foi utilizado a técnica de
-*Affective Norm for English Words* (ANEW). E no fim, para computar a
-associação entre as músicas e as emoções, foi feito uso do GPR
-(*Gaussian process regression*), mais especificamente o método
+*operating characteristic curve* (AUC), mais especificamente o
+*Pearson’s linear correlation coefficient*. Buscando auxiliar a
+visualização da valência-excitação das emoções no espaço, foi utilizada
+a técnica de *Affective Norm for English Words* (ANEW). E no fim, para
+computar a associação entre as músicas e as emoções, foi feito uso do
+GPR (*Gaussian Process Regression*), mais especificamente o método
 *isotropic rational quadratic covariance kernel* implementado pelo
-*toolkit* *Gaussian process for machine learning* (GPML).
+*toolkit* *Gaussian Process for Machine Learning* (GPML).
 
-Como a experiencia da música é multidimensional, o artigo revisado busca
-extrair os atributos das músicas, e visando auxiliar o processo de
-classificação, foram utilizados o *MIRtoolbox* e o *PsySound toolbox* os
-quais conseguem extrair os atributos musicais.
+Como a experiência da música é multidimensional, o artigo revisado busca
+extrair os atributos das músicas, e visa auxiliar o processo de
+classificação, foram utilizados o *MIRtoolbox* e o *PsySound toolbox,*
+os quais conseguem extrair os atributos musicais.
 
-##### Em que medida podemos prever a atividade de um usuário a partir dos dados do sensor coletados dos smartphones em um contexto de um ouvinte musical da realidade?
+##### Em que medida podemos prever a atividade de um usuário a partir dos dados do sensor coletados dos *smartphones* em um contexto de um ouvinte musical da realidade?
 
 O principal objetivo dessa seção do trabalho foi classificar as
 atividades dos usuários (*user-activity*) e relacionar as 8 atividades
@@ -794,27 +789,28 @@ mesmos 19 usuários obtidos na filtragem apresentada na seção anterior.
 A partir do aplicativo desenvolvido, foi possível obter os dados dos
 sensores utilizando o *Funf Open Sensing Framework*, e semelhante a
 classificação dos dados musicais com o contexto, para classificar as
-atividades dos usuários com os sensores foi utilizado o RBF e SVM.
+atividades dos usuários com os sensores foram utilizadas as técnicas de
+RBF e SVM.
 
 ##### Como fatores pessoais se correlacionam com a previsibilidade do uso de músicas e da atividade do usuário para diferentes usuários?
 
-Dado os resultados obtidos nas seções anteriores, essa seção busca
+Com os resultados obtidos nas seções anteriores, essa seção busca
 determinar quais fatores do usuário são forte indicadores de desempenho
 das duas tarefas. Foram considerados os mesmos 19 usuários obtidos na
 filtragem apresentada na seção anterior.
 
-Antes dos usuários passarem a utilizar o sistema, foi realizado algumas
-perguntas a eles, validando e obtendo informações previas deles. Nessa
-seção, foi utilizado o *Pearson’s linear correlation coefficient* e AUC
-para determinar quais fatores dos usuários são indicadores de desempenho
-das duas tarefas.
+Antes dos usuários passarem a utilizar o sistema, foram realizadas
+algumas perguntas a eles, validando e obtendo informações prévias deles.
+Nessa seção foi utilizado o *Pearson’s linear correlation coefficient* e
+AUC para determinar quais fatores dos usuários são indicadores de
+desempenho das duas tarefas.
 
 #### Qual a base de treinamento e teste?
 
-A partir do aplicativo desenvolvido no artigo revisado, foi gerado uma
-base de treinamento e teste. Ela foi dividida em 3 partes, sendo elas:
-relação música x contexto, relação dos sensores x atividades e por
-último os fatores extraídos dos usuários.
+A partir do aplicativo desenvolvido, foram geradas uma base de
+treinamento e teste. Elas foram divididas em 3 partes, sendo elas: (i)
+relação música x contexto; (ii) relação dos sensores x atividades; (iii)
+e por último, os fatores extraídos dos usuários.
 
 #### Quais os contextos utilizados?
 
@@ -850,26 +846,28 @@ para 19 nas respostas das questões.
 
 Não tiveram outros resultados apresentados.
 
-## Tabela com tecnicas
+## FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
 
-Para relacionar os trabalhos revisados, foi criado uma tabela contendo
-as funcionalidades encontradas nos artigos e, é feito uma relação delas,
-visando facilitar a visão das funcionalidades entre as revisões feitas.
+Para relacionar os trabalhos revisados, foi criada uma tabela contendo
+as funcionalidades encontradas nos artigos.
 
 <span id="_Toc42024448" class="anchor"></span>Table 1 Relação das
 funcionalidades desenvolvidas em cada artigo revisado (próprio, 2020)
 
-|                                                                   | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
-| ----------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
-| Tem foco no entendimento do contexto para recomendações musicais? | ✔                                                                      | ✔                                                                               | ❌                                                                            | ✔                       |
-| Apresenta o desenvolvimento realizado no trabalho?                | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
-| O trabalho foi validado em um caso real?                          | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
-| Utiliza do contexto comportamental?                               | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
-| Utiliza do contexto de ambiente?                                  | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
-| Utiliza do contexto explicito?                                    | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
-| Utiliza do contexto implícito?                                    | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
-| Usa ACM?                                                          | ❌                                                                      | ✔                                                                               | ✔                                                                            |                         |
-| Usa SVM?                                                          | ❌                                                                      | ✔                                                                               | ✔                                                                            | \-                      |
+|                                                                       | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
+| --------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
+| Tem foco no entendimento do contexto para recomendações musicais?     | ✔                                                                      | ✔                                                                               | ❌                                                                            | ✔                       |
+| Apresenta o desenvolvimento realizado no trabalho?                    | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
+| O trabalho foi validado em um caso real?                              | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
+| Utiliza do contexto comportamental?                                   | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
+| Utiliza do contexto de ambiente?                                      | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
+| Utiliza do contexto explicito?                                        | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
+| Utiliza do contexto implícito?                                        | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
+| Utiliza da tecnica de avaliação operating characteristic curve (AUC)? | ❌                                                                      | ✔                                                                               | ✔                                                                            | ?                       |
+| Utiliza do agotimo support vector machine (SVM)                       | ❌                                                                      | ✔                                                                               | ✔                                                                            | ?                       |
+| Utiliza do algoritmo *radial basis function* (RBF)                    | ❌                                                                      | ❌                                                                               | ✔                                                                            | ?                       |
+
+Explicar o porquê do ponto de interrogação acima.
 
 # Modelagem do que será feito
 
