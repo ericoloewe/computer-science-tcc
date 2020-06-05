@@ -51,12 +51,12 @@ informações, e com a internet e a evolução da tecnologia houve aumento
 da quantidade disponível, trazendo a necessidade de os sistemas
 evoluírem suas recomendações, surgindo os RecSys. Esses sistemas são
 utilizados em diversos tipos de aplicações como vendas, seleção de um
-filme e até mesmo na seleção de uma música, que é um dos objetivos dessa
+filme e também na escolha de uma música, que é um dos objetivos dessa
 pesquisa. Neste trabalho será desenvolvido um sistema de recomendação
 baseado em contexto comportamental e de ambiente. O objetivo desse
 sistema é coletar informações sobre o comportamento e tendência do
 usuário, possibilitando o aperfeiçoamento das recomendações musicais de
-acordo com o contexto vivenciado pelo usuário.
+acordo com o contexto vivenciado por ele.
 
 Palavras-chave: RecSys. Machine Learning. Sistemas de recomendação
 musical. Música. Spotify.
@@ -310,17 +310,17 @@ uma música online e então consumi-la (LUINI; WHITMAN; DATE, 2002).
 Portanto, de acordo com esse contexto, este trabalho procura construir
 um sistema de recomendação musical, utilizando o contexto comportamental
 do usuário e o contexto do ambiente onde ele está inserido. Esse
-contexto será obtido, através da criação um plugin que permitirá ao
+contexto será obtido através da criação de um *plugin* que permitirá ao
 usuário escutar suas músicas enquanto são registrados os eventos do
 contexto vivido naquele momento.
 
 # Trabalhos relacionados
 
-Os sistemas de recomendação musical iniciaram nos anos 90 e tem evoluído
+Os sistemas de recomendação musical iniciaram nos anos 90 e têm evoluído
 muito desde então, ao ponto de que hoje existem diversos trabalhos
-relacionados a esse assunto para área. Nesse capítulo será abordado os
-diversos trabalhos encontrados a partir de uma revisão realizada sobre o
-assunto.
+relacionados a esse assunto para área. Nesse capítulo serão abordados
+alguns trabalhos encontrados, a partir de uma revisão bibliográfica
+realizada sobre o assunto.
 
 ## O protocolo de revisão
 
@@ -329,8 +329,8 @@ de recomendação, que a partir das músicas conhecidas pelo usuário, e do
 contexto comportamental e de ambiente apresentado, buscam melhorar
 assertividade das recomendações ao ouvinte.
 
-Dado o foco da pesquisa e o conteúdo encontrado até o momento, foi feito
-uma lista de interesses que serão abordados nessa revisão, deles:
+Dado o foco da pesquisa e o conteúdo encontrado até o momento, foi feita
+uma lista de interesses que serão abordados nessa revisão:
 
   - Estudos realizados
 
@@ -338,70 +338,63 @@ uma lista de interesses que serão abordados nessa revisão, deles:
 
   - Contextos utilizados para recomendação
 
-A partir do escopo de revisão que esse trabalho está inserido, foi
-definido certas palavras-chaves para auxiliar no desenvolvimento da
+A partir do escopo de revisão que esse trabalho está inserido, foram
+definidas certas palavras-chaves para auxiliar no desenvolvimento da
 revisão, elas são:
 
   - RecSys
 
-  - Machine Learning
+  - *Machine Learning*
 
   - Sistemas de recomendação musical
 
-  - Context-aware
+  - *Context-aware (TODO: COLOCAR SIGNIFICADO)*
 
-Para realizar a busca dos trabalhos relacionados ao foco de pesquisa da
-revisão, por indicação dos orientadores desse trabalho, será utilizado o
-motor de busca da ACM (<https://dl.acm.org/>), o qual permite realizar
+Para realizar a busca dos trabalhos relacionados será utilizado o motor
+de busca da ACM (<https://dl.acm.org/>), o qual permite realizar
 pesquisas avançadas a partir da linguagem desenvolvida pela ACM e dos
-filtros disponíveis na busca. (ACM, 2020)
+filtros disponíveis na busca (ACM, 2020). Esse motor de busca foi
+escolhido por conter diversos trabalhos de excelência na área da
+computação.
 
-Além das fontes, será desenvolvido uma *string* de busca, para filtrar
-por estudos que estejam de acordo com o foco de pesquisa do trabalho.
-Pois, existem muitos artigos e diversas áreas de pesquisa relacionadas
-aos sistemas de recomendação musical, então, para realizar uma busca
-mais voltada ao foco, será utilizada a seguinte *string* de busca:
+Foi desenvolvida uma *string* de busca para filtrar por estudos que
+estejam de acordo com o foco de pesquisa do trabalho. Existem muitos
+artigos e diversas áreas de pesquisa relacionadas aos sistemas de
+recomendação musical, então, para realizar uma busca mais assertiva, foi
+utilizada a seguinte *string* de busca:
 
 *((“RecSys” OR “recommender systems”) AND (“machine learning”) AND
 (“music” OR “musical”) AND (“behavioral context” OR “environmental
 context” OR “context-aware”))*
 
-Com os resultados da busca cada trabalho será analisado e esta análise
-está dividida em quatro etapas. A leitura inicial, primeira etapa, será
-feita no título de cada artigo, e serão mantidos àqueles que indicam uma
-relação com essa pesquisa. A segunda etapa consistirá em realizar uma
+Com os resultados da busca cada trabalho foi analisado e esta análise
+foi dividida em quatro etapas. A leitura inicial, primeira etapa, foi
+feita no título de cada artigo, e foram mantidos àqueles que indicam uma
+relação com essa pesquisa. A segunda etapa consistiu em realizar uma
 leitura dos resumos desses trabalhos e manter àqueles adequados. A etapa
-três realizará um filtro, baseando-se na leitura da introdução e
+três realizou um filtro, baseando-se na leitura da introdução e
 conclusão dos artigos. A última etapa é representada pela leitura total
 dos artigos selecionados.
 
 Após a leitura aprofundada em cima dos artigos selecionados, essa
-revisão trará informações de cada publicação, visando entender o que já
-foi desenvolvido e então definir o que esse trabalho poderá agregar
-cientificamente à área de sistemas de recomendação. Ao final, será
-desenvolvida uma tabela relacionando as funcionalidades existentes e o
-uso delas nos trabalhos encontrados.
+revisão trouxe informações de cada publicação, onde foi possível
+entender o que já foi desenvolvido e então definir o que esse trabalho
+poderá agregar cientificamente à área de sistemas de recomendação. Ao
+final, foi desenvolvida uma tabela relacionando as funcionalidades
+existentes e o uso delas nos trabalhos encontrados.
 
 ## PROCURA NOS MOTORES DE BUSCA
+
+No dia 07/05/2020 foi realizada a pesquisa no motor de busca ACM
+utilizando a *string* de busca pré-definida anteriormente. As Figuras 1,
+2 e 3 ilustram esse processo. A quantidade de resultados apresentados na
+ACM foram 150 trabalhos relacionados a *string* de busca.
 
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura - Motor avançado de
-busca da ACM (próprio, 2020)
-
-No dia 07/05/2020 foi realizado a pesquisa no motor de busca apresentado
-a partir da *string* de busca pré-definida anteriormente. As Figuras 1,
-2 e 3 ilustram esse processo. Todos trouxeram resultados pertinentes ao
-trabalho logo na primeira página da aplicação. A quantidade de
-resultados apresentados na ACM foram 150 trabalhos relacionados a
-*string* de busca.
-
-![Tela de computador com texto preto sobre fundo branco Descrição gerada
-automaticamente](./pandoc/media/image2.png)
-
-<span id="_Ref40822631" class="anchor"></span>Figura - Resultado de
-busca dos proceedings no motor de busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
+de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
 cima da busca. Procurando trazer somente os trabalhos mais atual
@@ -414,16 +407,22 @@ relacionados se fez possível a revisão de todos no tempo hábil
 disponível para desenvolver esse trabalho.
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
-automaticamente](./pandoc/media/image3.png)
+automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura - Resultado de
-busca dos journals no motor de busca da ACM (próprio, 2020)
+<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
+busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 A quantidade de trabalhos encontrados na ACM relacionados a *string* de
 busca foi muito alta, isso aconteceu devido a plataforma possuir uma
 grande comunidade relacionado a área de RecSys, com diversas
 conferências e eventos relacionados a área. (ACM RECSYS COMMUNITY.,
 2020)
+
+![Tela de computador com texto preto sobre fundo branco Descrição gerada
+automaticamente](./pandoc/media/image3.png)
+
+<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
+busca dos journals no motor de busca da ACM (próprio, 2020)
 
 ## Os trabalhos
 
@@ -432,9 +431,9 @@ Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
 *jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
 e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura - Etapas realizadas
-para filtrar os trabalhos encontrados no motor de busca da ACM (próprio,
-2020)
+<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
+realizadas para filtrar os trabalhos encontrados no motor de busca da
+ACM (próprio, 2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado no
 sistema estruturado anteriormente. Esse filtro é baseado em 3 etapas
@@ -443,7 +442,7 @@ revisão dos trabalhos que condizem com o objetivo descrito no protocolo.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura - Filtro em cima
+<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
 dos trabalhos selecionados através do resumo (próprio, 2020)
 
 Baseado no conhecimento obtido dos trabalhos na segunda etapa, foi
@@ -457,7 +456,7 @@ contexto nas recomendações. Foi apresentado na forma de gráfico de pizza
 na Figura 5 a relação entre os tipos e a quantidade de artigos
 encontrados.
 
-<span id="_Ref40822509" class="anchor"></span>Figura - Procedimento de
+<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
@@ -864,7 +863,7 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são:
 
-<span id="_Toc42024460" class="anchor"></span>Figura Fatores da
+<span id="_Toc42024460" class="anchor"></span>Figura 7 Fatores da
 preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
@@ -898,7 +897,7 @@ Para relacionar os trabalhos revisados, foi criado uma tabela contendo
 as funcionalidades encontradas nos artigos e, é feito uma relação delas,
 visando facilitar a visão das funcionalidades entre as revisões feitas.
 
-<span id="_Toc42024448" class="anchor"></span>Table Relação das
+<span id="_Toc42024448" class="anchor"></span>Table 1 Relação das
 funcionalidades desenvolvidas em cada artigo revisado (próprio, 2020)
 
 |                                                                   | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
@@ -948,8 +947,7 @@ a definição das “circunstâncias que levaram a certos fatos ou
 situações”, é possível auxiliar as recomendações, aumentando o
 número de dados disponíveis para realizar a classificação e filtro.
 
-Figura 8 Apresentação dos contextos utilizados no trabalho (próprio,
-2020)
+Figura Apresentação dos contextos utilizados no trabalho (próprio, 2020)
 
 ### O que é o contexto comportamental?
 
