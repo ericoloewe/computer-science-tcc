@@ -131,7 +131,7 @@ Sumário
 
 [2.2 PROCURA NOS MOTORES DE BUSCA 15](#procura-nos-motores-de-busca)
 
-[2.3 Os trabalhos 17](#os-trabalhos)
+[2.3 Os trabalhos 17](#_Toc42267303)
 
 [2.3.1 The New Challenges when Modeling Context through Diversity over
 Time in Recommender Systems
@@ -155,18 +155,18 @@ Context
 [3.1 Contexto 30](#contexto)
 
 [3.1.1 O que é o contexto comportamental?
-30](#o-que-é-o-contexto-comportamental)
+31](#o-que-é-o-contexto-comportamental)
 
-[3.1.2 O que é o contexto ambiente? 30](#o-que-é-o-contexto-ambiente)
+[3.1.2 O que é o contexto ambiente? 31](#o-que-é-o-contexto-ambiente)
 
 [3.1.3 Como será obtido os contextos?
-30](#como-será-obtido-os-contextos)
+31](#como-será-obtido-os-contextos)
 
-[3.2 Arquitetura do sistema 30](#arquitetura-do-sistema)
+[3.2 Arquitetura do sistema 32](#arquitetura-do-sistema)
 
-[4 CONCLUSÃO 31](#conclusão)
+[4 CONCLUSÃO 33](#conclusão)
 
-[Referências Bibliográficas 32](#referências-bibliográficas)
+[Referências Bibliográficas 34](#referências-bibliográficas)
 
 # Introdução
 
@@ -344,11 +344,11 @@ revisão, elas são:
 
   - RecSys
 
-  - *Machine Learning*
+  - Machine Learning
 
   - Sistemas de recomendação musical
 
-  - *Context-aware (TODO: COLOCAR SIGNIFICADO)*
+  - Context-aware (TODO: COLOCAR SIGNIFICADO)
 
 Para realizar a busca dos trabalhos relacionados será utilizado o motor
 de busca da ACM (<https://dl.acm.org/>), o qual permite realizar
@@ -363,9 +363,9 @@ artigos e diversas áreas de pesquisa relacionadas aos sistemas de
 recomendação musical, então, para realizar uma busca mais assertiva, foi
 utilizada a seguinte *string* de busca:
 
-*((“RecSys” OR “recommender systems”) AND (“machine learning”) AND
+((“RecSys” OR “recommender systems”) AND (“machine learning”) AND
 (“music” OR “musical”) AND (“behavioral context” OR “environmental
-context” OR “context-aware”))*
+context” OR “context-aware”))
 
 Com os resultados da busca cada trabalho foi analisado e esta análise
 foi dividida em quatro etapas. A leitura inicial, primeira etapa, foi
@@ -393,139 +393,135 @@ ACM foram 150 trabalhos relacionados a *string* de busca.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura - Motor avançado de
-busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
+de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
-cima da busca. Procurando trazer somente os trabalhos mais atual
-relacionado a área foi mantido somente os artigos publicados nos últimos
-5 anos. Visando trazer um conteúdo mais técnico para o trabalho, foi
-reduzido os tipos de publicações aceitas para *proceedings* e
-*journals*. Após aplicado esses filtros, a quantidade de trabalhos
-encontrados passou para 83. Então reduzindo a quantidade de trabalhos
-relacionados se fez possível a revisão de todos no tempo hábil
-disponível para desenvolver esse trabalho.
+cima da busca. Procurando trazer somente os trabalhos mais atuais
+relacionados à área, foram mantidos somente os artigos publicados nos
+últimos 5 anos. Visando trazer um conteúdo mais técnico para o
+trabalho, foram reduzidos os tipos de publicações aceitas para
+*proceedings* e *journals*. Após aplicados esses filtros, a quantidade
+de trabalhos encontrados passou para 83.
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822631" class="anchor"></span>Figura - Resultado de
+<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
-A quantidade de trabalhos encontrados na ACM relacionados a *string* de
-busca foi muito alta, isso aconteceu devido a plataforma possuir uma
-grande comunidade relacionado a área de RecSys, com diversas
+Um dos principais motivos que levou essa revisão ser realizada através
+da ACM ao invés de outras plataformas de busca como IEEE, é devido ela
+possui uma grande comunidade relacionado a área de RecSys, com diversas
 conferências e eventos relacionados a área. (ACM RECSYS COMMUNITY.,
 2020)
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura - Resultado de
+<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
 
-## Os trabalhos
+## ETAPAS DA REVISÃO DOS TRABALHOS
 
-Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
+Com a busca realizada no dia 07/05/20, no motor da ACM, a partir da
 *string* de busca foram encontrados 83 trabalhos, sendo eles: 23 do tipo
-*jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
-e 60 do tipo *proceeding*.
+*journal* e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura - Etapas realizadas
-para filtrar os trabalhos encontrados no motor de busca da ACM (próprio,
-2020)
+<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
+realizadas para filtrar os trabalhos encontrados no motor de busca da
+ACM (próprio, 2020)
 
-Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado no
-sistema estruturado anteriormente. Esse filtro é baseado em 3 etapas
-(demonstradas na Figura 4), que visam direcionar esta pesquisa para a
-revisão dos trabalhos que condizem com o objetivo descrito no protocolo.
+Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado em
+3 etapas (demonstradas na Figura 4), que visam direcionar esta pesquisa
+para a revisão dos trabalhos que condizem com o objetivo descrito no
+protocolo.
+
+Baseado no conhecimento obtido dos trabalhos na segunda etapa, foi
+realizadoa uma classificação deles em 4 tipos, que são: Trabalhos que
+possuem relação com o foco de pesquisa da revisão; Trabalhos que
+utilizam dos RecSys e contexto, mas que visam recomendar outros temas
+além da música como notícias, filmes e, produtos; Trabalhos que
+utilizam dos RecSys e contexto, mas que não abordam a recomendação
+musical; Trabalhos que utilizam dos RecSys musicais, mas que não
+utilizam o contexto nas recomendações. Foi apresentado na forma de
+gráfico de pizza na A Figura 5 mostra a relação entre os tipos e a
+quantidade de artigos encontrados.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura - Filtro em cima
+<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
 dos trabalhos selecionados através do resumo (próprio, 2020)
 
-Baseado no conhecimento obtido dos trabalhos na segunda etapa, foi
-realizado uma classificação deles em 4 tipos, que são: Trabalhos que
-possuem relação com o foco de pesquisa da revisão; Trabalhos que
-utilizam dos RecSys e contexto, mas que visam recomendar outros temas
-além da música como notícias, filmes, produtos; Trabalhos que utilizam
-dos RecSys e contexto, mas que não abordam a recomendação musical;
-Trabalhos que utilizam dos RecSys musicais, mas que não utilizam o
-contexto nas recomendações. Foi apresentado na forma de gráfico de pizza
-na Figura 5 a relação entre os tipos e a quantidade de artigos
-encontrados.
+###  Trabalhos selecionados
 
-<span id="_Ref40822509" class="anchor"></span>Figura - Procedimento de
+O resultado do procedimento de filtro (apresentado na Figura 6) foi de 4
+trabalhos relacionados ao objetivo descrito no protocolo de revisão
+desse trabalho.
+
+<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
-O resultado do procedimento de filtro (apresentado na Figura 6) foram 4
-trabalhos relacionados ao objetivo descrito no protocolo de revisão
-desse trabalho. Será realizado uma análise nesses trabalhos nas próximas
-seções. Onde, em cada seção/artigo, será realizado uma descrição do que
-foi desenvolvido e no fim, será respondido as seguintes perguntas:
+Foi realizado uma revisão nesses trabalhos a qual foi apresentada nas
+próximas seções. Onde, em cada seção/artigo, foi realizado um breve do
+que foi desenvolvido e no fim, foi respondido as seguintes perguntas:
 
-  - Qual o problema que ele resolveu?
-    
-      - Buscam obter uma recomendação personalizada pelo gosto do
-        usuário?
+##### Qual o problema que ele resolveu?
 
-  - Quais técnicas foram usadas?
-    
-      - Foi utilizada da recomendação colaborativa?
-    
-      - Quais foram os algoritmos utilizados na recomendação?
+  - Buscam obter uma recomendação personalizada pelo gosto do usuário?
 
-  - Qual a base de treinamento e teste?
-    
-      - Foi desenvolvida alguma aplicação para obter as bases?
+##### Quais técnicas foram usadas?
 
-  - Quais os contextos utilizados?
-    
-      - Foi analisado o comportamento? Quais aspectos?
-    
-      - Foi analisado o ambiente? Quais fatores?
+  - Foi utilizada alguma recomendação colaborativa?
 
-  - Como é obtido o contexto?
-    
-      - O usuário pode auxiliar na definição do contexto?
-    
-      - É apresentado o contexto atual para o usuário?
+  - Quais foram os algoritmos utilizados na recomendação?
 
-  - Como foram relacionados os contextos com as recomendações?
-    (REMOVIDO)
+##### Qual a base de treinamento e teste?
 
-  - Foi avaliado o nível de satisfação do usuário com a música
-    recomendada?
+  - Foi desenvolvida alguma aplicação para obter as bases?
 
-  - A recomendação atingiu as expectativas do usuário?
-    
-      - Quais foram os critérios de qualidade utilizados?
-    
-      - Quantidade de usuários utilizadas? (tamanho da base)
-    
-      - Quais foram as técnicas de avaliação usadas?
+##### Quais os contextos utilizados?
 
-  - Tiveram outros resultados apresentados? Quais?
+  - Foi analisado o comportamento? Quais aspectos?
 
-### The New Challenges when Modeling Context through Diversity over Time in Recommender Systems
+  - Foi analisado o ambiente? Quais fatores?
 
-Visando melhorar as recomendações musicais, é realizado um estudo sobre
-o contexto em que o usuário está vivendo, através de análises da
-evolução da diversidade através do tempo e do caminho percorrido pelo
-usuário. Semelhante a estudos sobre e-commerce apresentados, onde o
-nível de diversidade precisa ser alto no início da seção de navegação e
-tende a diminuir gradualmente conforme a seção é encerrada.
+##### Como é obtido o contexto?
+
+  - O usuário pode auxiliar na definição do contexto?
+
+  - É apresentado o contexto atual para o usuário?
+
+##### Foi avaliado o nível de satisfação do usuário com a música recomendada?
+
+##### A recomendação atingiu as expectativas do usuário?
+
+  - Quais foram os critérios de qualidade utilizados?
+
+  - Quantidade de usuários utilizada? (tamanho da base)
+
+  - Quais foram as técnicas de avaliação usadas?
+
+##### Tiveram outros resultados apresentados? Quais?
+
+#### The New Challenges when Modeling Context through Diversity over Time in Recommender Systems
+
+Visando melhorar as recomendações musicais, este trabalho realiza um
+estudo sobre o contexto em que o usuário está vivendo, por meio de
+análises da evolução da diversidade, do tempo e do caminho percorrido
+pelo usuário. Semelhante aos estudos sobre e-commerce apresentados, onde
+o nível de diversidade precisa ser alto no início da seção de navegação
+e tende a diminuir gradualmente conforme a seção é encerrada.
 
 Nesse trabalho foi apresentado um modelo chamado DANCE, para monitorar e
 explorar a evolução da diversidade ao longo do tempo. No modelo foi
-desenvolvido o conceito de contexto implicito, o qual ficou definido
-como caracteristicas comuns compartilhadas aos items consultados durante
-uma certa faxa de tempo. Foi definido tambem como a oposição do contexto
+desenvolvido o conceito de contexto implícito, o qual ficou definido
+como caracteristicas comuns compartilhadas aos itens consultados durante
+uma certa faxa de tempo. Foi definido também como a oposição do contexto
 explicito, o qual é definido como uma situação dentre os fatores
-conhecidos. O contexto implicito, se refere a uma sequencia de itens,
-enquanto o explicito, inclue informações adicionais do usuario.
+conhecidos. O contexto implicito, se refere a uma sequência de itens,
+enquanto o explicito, inclui informações adicionais do usuário.
 
 A principal métrica utilizada nesse trabalho foi a diversidade. A qual
 pode ser obtida através de diversos tipos de dados (numéricos, binários,
@@ -533,23 +529,23 @@ texto, intervalos, ...), desde que seja possível calcular a semelhança
 entre dois dados desse mesmo tipo. Através da diversidade, é obtido o
 contexto implícito do usuário.
 
-O modelo é capaz de detectar as mudanças de contexto comportamental a
+O modelo é capaz de detectar as mudanças de contexto comportamental, a
 partir das consultas do usuário, e cada subsequência de itens
 consultados entre duas mudanças de contexto correspondem ao contexto
 implícito. E com a obtenção do contexto é realizado a recomendação ao
 usuário. O modelo do trabalho, não é apresentado o uso do contexto de
-ambiente, é utilizado somente o *ip* do usuário, mas não está claro se é
+ambiente, é utilizado somente o ip do usuário, mas não está claro se é
 utilizado como uma representação da posição geográfica onde o usuário se
 encontra.
 
-Não foi realizado nenhuma aplicação para obter a base de treinamento
-desse trabalho. Foi utilizado uma base pronta que continha mais de
+Não foi realizada nenhuma aplicação para obter a base de treinamento
+desse trabalho. Foi utilizada uma base pronta que continha mais de
 200.000 representações dos acessos de usuários em um sistema. Essa base
 foi utilizada para validar a habilidade do modelo apresentado de obter o
 contexto implícito através dos dados de acesso.
 
 Ao final da revisão do artigo foi verificado que o trabalho não
-apresenta dados e técnicas suficientes para ser considerado nesse
+apresenta dados e técnicas suficientes para serem consideradas nesse
 trabalho. Pois todas as informações do sistema desenvolvido estão em
 outros artigos citados por esse. Então dado a falta de informações
 apresentadas nesse trabalho, não serão respondidas as questões
@@ -863,7 +859,7 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são:
 
-<span id="_Toc42024460" class="anchor"></span>Figura Fatores da
+<span id="_Toc42024460" class="anchor"></span>Figura 7 Fatores da
 preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
@@ -897,7 +893,7 @@ Para relacionar os trabalhos revisados, foi criado uma tabela contendo
 as funcionalidades encontradas nos artigos e, é feito uma relação delas,
 visando facilitar a visão das funcionalidades entre as revisões feitas.
 
-<span id="_Toc42024448" class="anchor"></span>Table Relação das
+<span id="_Toc42024448" class="anchor"></span>Table 1 Relação das
 funcionalidades desenvolvidas em cada artigo revisado (próprio, 2020)
 
 |                                                                   | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
