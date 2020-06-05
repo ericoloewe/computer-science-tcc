@@ -393,8 +393,8 @@ ACM foram 150 trabalhos relacionados a *string* de busca.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
-de busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Figura - Motor avançado de
+busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
 cima da busca. Procurando trazer somente os trabalhos mais atual
@@ -409,7 +409,7 @@ disponível para desenvolver esse trabalho.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
+<span id="_Ref40822631" class="anchor"></span>Figura - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 A quantidade de trabalhos encontrados na ACM relacionados a *string* de
@@ -421,7 +421,7 @@ conferências e eventos relacionados a área. (ACM RECSYS COMMUNITY.,
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
+<span id="_Ref40822641" class="anchor"></span>Figura - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
 
 ## Os trabalhos
@@ -431,9 +431,9 @@ Com a busca realizada no dia 07/05/20 no motor da ACM a partir da
 *jornal* - os quais serão os primeiros a serem trazidos nessa pesquisa -
 e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
-realizadas para filtrar os trabalhos encontrados no motor de busca da
-ACM (próprio, 2020)
+<span id="_Ref40822414" class="anchor"></span>Figura - Etapas realizadas
+para filtrar os trabalhos encontrados no motor de busca da ACM (próprio,
+2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado no
 sistema estruturado anteriormente. Esse filtro é baseado em 3 etapas
@@ -442,7 +442,7 @@ revisão dos trabalhos que condizem com o objetivo descrito no protocolo.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
+<span id="_Ref40822493" class="anchor"></span>Figura - Filtro em cima
 dos trabalhos selecionados através do resumo (próprio, 2020)
 
 Baseado no conhecimento obtido dos trabalhos na segunda etapa, foi
@@ -456,7 +456,7 @@ contexto nas recomendações. Foi apresentado na forma de gráfico de pizza
 na Figura 5 a relação entre os tipos e a quantidade de artigos
 encontrados.
 
-<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
+<span id="_Ref40822509" class="anchor"></span>Figura - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
@@ -863,7 +863,7 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são:
 
-<span id="_Toc42024460" class="anchor"></span>Figura 7 Fatores da
+<span id="_Toc42024460" class="anchor"></span>Figura Fatores da
 preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
@@ -897,7 +897,7 @@ Para relacionar os trabalhos revisados, foi criado uma tabela contendo
 as funcionalidades encontradas nos artigos e, é feito uma relação delas,
 visando facilitar a visão das funcionalidades entre as revisões feitas.
 
-<span id="_Toc42024448" class="anchor"></span>Table 1 Relação das
+<span id="_Toc42024448" class="anchor"></span>Table Relação das
 funcionalidades desenvolvidas em cada artigo revisado (próprio, 2020)
 
 |                                                                   | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
@@ -947,7 +947,8 @@ a definição das “circunstâncias que levaram a certos fatos ou
 situações”, é possível auxiliar as recomendações, aumentando o
 número de dados disponíveis para realizar a classificação e filtro.
 
-Figura Apresentação dos contextos utilizados no trabalho (próprio, 2020)
+Figura 8 Apresentação dos contextos utilizados no trabalho (próprio,
+2020)
 
 ### O que é o contexto comportamental?
 
@@ -970,7 +971,7 @@ Atividade,
 
 ações sequenciais.
 
-Quantidade de musicas escutadas no dia (tempo)
+Quantidade de músicas escutadas no dia (tempo)
 
 ### O que é o contexto ambiente?
 
