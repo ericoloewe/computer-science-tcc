@@ -393,8 +393,8 @@ ACM foram 150 trabalhos relacionados a *string* de busca.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
-de busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Figura - Motor avançado de
+busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
 cima da busca. Procurando trazer somente os trabalhos mais atuais
@@ -407,7 +407,7 @@ de trabalhos encontrados passou para 83.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
+<span id="_Ref40822631" class="anchor"></span>Figura - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Um dos principais motivos que levou essa revisão ser realizada através
@@ -419,7 +419,7 @@ conferências e eventos relacionados a área. (ACM RECSYS COMMUNITY.,
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
+<span id="_Ref40822641" class="anchor"></span>Figura - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
 
 ## ETAPAS DA REVISÃO DOS TRABALHOS
@@ -428,9 +428,9 @@ Com a busca realizada no dia 07/05/20, no motor da ACM, a partir da
 *string* de busca foram encontrados 83 trabalhos, sendo eles: 23 do tipo
 *journal* e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
-realizadas para filtrar os trabalhos encontrados no motor de busca da
-ACM (próprio, 2020)
+<span id="_Ref40822414" class="anchor"></span>Figura - Etapas realizadas
+para filtrar os trabalhos encontrados no motor de busca da ACM (próprio,
+2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado em
 3 etapas (demonstradas na Figura 4), que visam direcionar esta pesquisa
@@ -450,7 +450,7 @@ quantidade de artigos encontrados.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
+<span id="_Ref40822493" class="anchor"></span>Figura - Filtro em cima
 dos trabalhos selecionados através do resumo (próprio, 2020)
 
 ###  Trabalhos selecionados
@@ -459,7 +459,7 @@ O resultado do procedimento de filtro (apresentado na Figura 6) foi de 4
 trabalhos relacionados ao objetivo descrito no protocolo de revisão
 desse trabalho.
 
-<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
+<span id="_Ref40822509" class="anchor"></span>Figura - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
@@ -522,10 +522,10 @@ uma aplicação onde a preferência do usuário é obtida através da
 observação do seu comportamento. Cada usuário devia ouvir ao menos 10
 segundos de cada música em par apresentada e ao finalizar, poderia
 escolher qual música era mais adequada para se ouvir no ambiente
-pré-estabelecido que era seu trabalho. Nesse momento que é obtido os
-dois contextos estudados na pesquisa revisada, quando o usuário escutava
-as músicas, foi gravado suas expressões faciais através de uma câmera e
-o tempo dedicado a ouvir cada música.
+pré-estabelecido que era seu trabalho. É nesse momento que é obtido os
+dois contextos estudados no artigo revisado, que são: (i) as expressões
+faciais gravadas através de uma câmera; (ii) o tempo dedicado a ouvir
+cada música.
 
 #### Qual o problema que ele resolveu?
 
@@ -540,10 +540,10 @@ demonstradas enquanto escuta suas músicas?
 A principal técnica utilizada para predição das músicas foi a de gerar
 um *score,* a partir da comparação par a par em cima das escolhas do
 usuário, nas opções de músicas apresentadas. Essa comparação foi
-realizada como um problema de regressão, onde eles predizem a pontuação
-numérica em pares. E classificando o problema, onde foi predito uma
-pontuação em pares como classe discreta alternativa (esquerda é
-preferida, direita é preferida, igualmente preferidas).
+realizada como: (i) um problema de regressão, onde eles predizem a
+pontuação numérica em pares; (ii) um problema de classificação, onde foi
+predito uma pontuação em pares como classe discreta alternativa (o
+usuário preferiu a da esquerda, direita ou ambas).
 
 A recomendação gerada foi personalizada por usuário e não foi utilizado
 nenhum modelo colaborativo, mas foi demonstrado o interesse no trabalho
@@ -818,7 +818,7 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são:
 
-<span id="_Toc42024460" class="anchor"></span>Figura 7 Fatores da
+<span id="_Toc42024460" class="anchor"></span>Figura Fatores da
 preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
@@ -851,8 +851,8 @@ Não tiveram outros resultados apresentados.
 Para relacionar os trabalhos revisados, foi criada uma tabela contendo
 as funcionalidades encontradas nos artigos.
 
-Quadro 1 Relação das funcionalidades desenvolvidas em cada artigo
-revisado (próprio, 2020)
+Quadro Relação das funcionalidades desenvolvidas em cada artigo revisado
+(próprio, 2020)
 
 |                                                                       | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
 | --------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
@@ -907,8 +907,7 @@ a definição das “circunstâncias que levaram a certos fatos ou
 situações”, é possível auxiliar as recomendações, aumentando o
 número de dados disponíveis para realizar a classificação e filtro.
 
-Figura 8 Apresentação dos contextos utilizados no trabalho (próprio,
-2020)
+Figura Apresentação dos contextos utilizados no trabalho (próprio, 2020)
 
 ### O que é o contexto comportamental?
 
