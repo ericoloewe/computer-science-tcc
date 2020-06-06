@@ -607,14 +607,11 @@ Error* (RMSE), precisão, *recall*, *F-measure* e acuracidade. A
 precisão, *recall* e *F-measure* foram calculadas, ponderando os
 *scores* de cada classe pelo número de instâncias verdadeiras de cada.
 
-A base foi obtida através da aplicação obteve um total de 75 usuários
-treinados para utilizar a aplicação com uma média de idade de 29,8 anos.
-
-O principal critério de qualidade utilizado foi o tempo em que o usuário
-escutou cada música, pois, quanto maior a diferença entre as duas
-músicas, maior a probabilidade de o usuário ter gostado da música que
-ele ouviu por mais tempo. Outro critério apresentado foi a sua avaliação
-das músicas em par.
+Para validar a qualidade da recomendação proposta, foi utilizado o tempo
+em que o usuário escutou cada música, pois, quanto maior a diferença
+entre as duas músicas, maior a probabilidade de o usuário ter gostado da
+música que ele ouviu por mais tempo. Outro critério apresentado foi a
+sua avaliação das músicas em par.
 
 #### Tiveram outros resultados apresentados? Quais?
 
@@ -999,20 +996,20 @@ ACM. **Advanced Search**. Disponível em:
 \<https://dl.acm.org/search/advanced\>. Acesso em: 5 maio. 2020. ACM
 RECSYS COMMUNITY. **RecSys – ACM Recommender Systems**. Disponível em:
 \<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. BHATNAGAR, V.
-**Collaborative filtering using data mining and analysis**. \[s.l:
-s.n.\]. BORJA, K.; DIERINGER, S. Streaming or stealing? The
-complementary features between music streaming and music piracy.
-**Journal of Retailing and Consumer Services**, v. 32, p. 86–95, 2016.
-DIETMAR, J. et al. **Recommendation system -An Introduction**. \[s.l:
-s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário |
-Michaelis On-line**. Disponível em: \<https://michaelis.uol.com.br/\>.
-Acesso em: 6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**.
-\[s.l.\] MIT Press, 2019. FALK, K. **Practical Recommender Systems**.
-\[s.l: s.n.\]. IFPI. **IFPI Global Music Report 2019**. Disponível em:
+Collaborative filtering using data mining and analysis. \[s.l: s.n.\].
+BORJA, K.; DIERINGER, S. Streaming or stealing? The complementary
+features between music streaming and music piracy. **Journal of
+Retailing and Consumer Services**, v. 32, p. 86–95, 2016. DIETMAR, J. et
+al. **Recommendation system -An Introduction**. \[s.l: s.n.\]. v.
+91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário | Michaelis
+On-line**. Disponível em: \<https://michaelis.uol.com.br/\>. Acesso em:
+6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**. \[s.l.\] MIT
+Press, 2019. FALK, K. Practical Recommender Systems. \[s.l: s.n.\].
+IFPI. **IFPI Global Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. LUINI, B.
 J. R.; WHITMAN, A. E.; DATE, P. **Streaming Audio: The FezGuys’ Guide**.
-\[s.l: s.n.\]. MURARO, R. M. **Os avanços tecnológicos e o futuro da
-humanidade**Querendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
+\[s.l: s.n.\]. MURARO, R. M. Os avanços tecnológicos e o futuro da
+humanidadeQuerendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
 \[s.l.\] O’Reilly Media, 2018. v. 134RESNICK, PAUL AND VARIAN, H. R.
 Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
 56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
