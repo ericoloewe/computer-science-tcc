@@ -150,7 +150,7 @@ Context
 
 [2.4 Tabela com tecnicas 28](#_Toc42267308)
 
-[3 Modelagem do que será feito 30](#modelagem-do-que-será-feito)
+[3 Modelagem do que será feito 30](#modelagem-do-nome-do-trabalho-todo)
 
 [3.1 Contexto 30](#contexto)
 
@@ -851,8 +851,8 @@ Não tiveram outros resultados apresentados.
 Para relacionar os trabalhos revisados, foi criada uma tabela contendo
 as funcionalidades encontradas nos artigos.
 
-<span id="_Toc42024448" class="anchor"></span>Table 1 Relação das
-funcionalidades desenvolvidas em cada artigo revisado (próprio, 2020)
+Quadro 1 Relação das funcionalidades desenvolvidas em cada artigo
+revisado (próprio, 2020)
 
 |                                                                       | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
 | --------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
@@ -869,29 +869,32 @@ funcionalidades desenvolvidas em cada artigo revisado (próprio, 2020)
 
 Explicar o porquê do ponto de interrogação acima.
 
-# Modelagem do que será feito
+# Modelagem do “Nome do trabalho” (TODO)
 
 Recomendação dinâmica utilizando o feedback do usuário do contexto
 atual.
 
 Responder as perguntas:
 
-\- como é possível capturar as ações do usuário e classifica-las como
+\- como o trabalho vai capturar as ações do usuário e classifica-las
+como contexto?
+
+\- como o trabalho vai validar se as ações do usuário condiz com o
 contexto?
 
-\- como é possível validar se as ações do usuário condiz com o contexto?
-
-\- como é possível relacionar as músicas que o usuário gosta aos
+\- como o trabalho vai relacionar as músicas que o usuário gosta aos
 contextos?
 
-\- como é possível classificar o contexto para apresentar para usuário?
+\- como o trabalho vai classificar o contexto para apresentar para
+usuário?
 
-\- como é possível recomendar novas musicas a partir da relação de
+\- como o trabalho vai recomendar novas musicas a partir da relação de
 contexto x musica?
 
 ## Contexto
 
-Conforme o dicionário Michaelis contexto pode ser tido por:
+Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
+contexto pode ser tido por:
 
 > O conjunto de circunstâncias inter-relacionadas de cuja tessitura se
 > depreende determinado fato ou situação; circunstância(s), conjuntura,
@@ -909,7 +912,8 @@ Figura 8 Apresentação dos contextos utilizados no trabalho (próprio,
 
 ### O que é o contexto comportamental?
 
-Conforme o dicionário Michaelis contexto pode ser tido por:
+Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
+contexto pode ser tido por:
 
 > Qualquer ação ou reação do organismo ou parte dele
 
@@ -996,18 +1000,20 @@ ACM. **Advanced Search**. Disponível em:
 \<https://dl.acm.org/search/advanced\>. Acesso em: 5 maio. 2020. ACM
 RECSYS COMMUNITY. **RecSys – ACM Recommender Systems**. Disponível em:
 \<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. BHATNAGAR, V.
-Collaborative filtering using data mining and analysis. \[s.l: s.n.\].
-BORJA, K.; DIERINGER, S. Streaming or stealing? The complementary
-features between music streaming and music piracy. **Journal of
-Retailing and Consumer Services**, v. 32, p. 86–95, 2016. DIETMAR, J. et
-al. **Recommendation system -An Introduction**. \[s.l: s.n.\]. v.
-91ERIKSSON, M. et al. **Spotify Teardown**. \[s.l.\] MIT Press, 2019.
-FALK, K. Practical Recommender Systems. \[s.l: s.n.\]. IFPI. **IFPI
-Global Music Report 2019**. Disponível em:
+**Collaborative filtering using data mining and analysis**. \[s.l:
+s.n.\]. BORJA, K.; DIERINGER, S. Streaming or stealing? The
+complementary features between music streaming and music piracy.
+**Journal of Retailing and Consumer Services**, v. 32, p. 86–95, 2016.
+DIETMAR, J. et al. **Recommendation system -An Introduction**. \[s.l:
+s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário |
+Michaelis On-line**. Disponível em: \<https://michaelis.uol.com.br/\>.
+Acesso em: 6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**.
+\[s.l.\] MIT Press, 2019. FALK, K. **Practical Recommender Systems**.
+\[s.l: s.n.\]. IFPI. **IFPI Global Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. LUINI, B.
 J. R.; WHITMAN, A. E.; DATE, P. **Streaming Audio: The FezGuys’ Guide**.
-\[s.l: s.n.\]. MURARO, R. M. Os avanços tecnológicos e o futuro da
-humanidadeQuerendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
+\[s.l: s.n.\]. MURARO, R. M. **Os avanços tecnológicos e o futuro da
+humanidade**Querendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
 \[s.l.\] O’Reilly Media, 2018. v. 134RESNICK, PAUL AND VARIAN, H. R.
 Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
 56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
