@@ -974,31 +974,34 @@ dados disponíveis na aplicação desenvolvida, por isso, o sistema
 desenvolvido nesse trabalho, contara com informações disposta de maneira
 explicita e implícita, sendo elas:
 
-  - Informações adquiridas de maneira implícita:
-    
-      - localização
-    
-      - ações em cima dos componentes do app
-    
-      - tempo
-    
-      - clima
-    
-      - músicas / gênero / artistas preferidas (os)
+##### Informações adquiridas de maneira implícita: 
 
-  - Informações adquiridas de maneira explicita:
-    
-      - localização
-    
-      - humor
-    
-      - atividade
-    
-      - músicas / gênero / artistas preferidas (os)
+  - localização
+
+  - ações em cima dos componentes do app
+
+  - tempo
+
+  - clima
+
+  - músicas / gênero / artistas preferidas (os)
+
+##### Informações adquiridas de maneira explicita: 
+
+  - localização
+
+  - humor
+
+  - atividade
+
+  - músicas / gênero / artistas preferidas (os)
 
 ## Arquitetura do sistema
 
-Texto
+Para validar o modelo de sistema de recomendação, será desenvolvido uma
+aplicação, a qual ira ser distribuída aos usuários, que participarem do
+questionário, feito para obter informações sobre os usuários. As etapas
+do desenvolvimento desse sistema foram apresentadas na Figura 11.
 
 Figura 11 Etapas do desenvolvimento do sistema de recomendação musical
 (próprio, 2020)
