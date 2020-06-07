@@ -493,8 +493,6 @@ que foi desenvolvido e no fim, foi respondido as seguintes perguntas:
 
   - É apresentado o contexto atual para o usuário?
 
-##### Foi avaliado o nível de satisfação do usuário com a música recomendada?
-
 ##### A recomendação atingiu as expectativas do usuário?
 
   - Quais foram os critérios de qualidade utilizados?
@@ -595,10 +593,6 @@ segundos de cada música em par apresentada e ao finalizar, poderia
 escolher qual música era mais adequada para se ouvir no ambiente
 pré-estabelecido que era seu trabalho.
 
-#### Foi avaliado o nível de satisfação do usuário com a música recomendada?
-
-Não foi avaliado o nível de satisfação dos usuários.
-
 #### A recomendação atingiu as expectativas do usuário?
 
 Para obter os resultados, foi realizado a comparação da precisão das
@@ -683,11 +677,6 @@ comportamento é obtido de maneira implícita e o usuário não pode ajudar
 na definição do contexto. Não é apresentado ao usuário o contexto atual
 obtido através do seu comportamento.
 
-#### Foi avaliado o nível de satisfação do usuário com a música recomendada?
-
-Não foi avaliado o nível de satisfação dos usuários referente a música
-recomendada.
-
 #### A recomendação atingiu as expectativas do usuário?
 
 Para validar as recomendações do sistema, foi realizada uma comparação
@@ -700,9 +689,11 @@ avaliadores humanos. A avaliação tem como objetivo validar o quanto a
 
 A partir das avaliações realizadas, foram utilizadas 3 métricas para
 estimar a qualidade das recomendações feitas a partir dos coeficientes
-de correlação, elas são: Kendallτ, τ-AP e nMMR. Essas métricas são
-importantes para avaliar numericamente a qualidade de cada *playlist*
-recomendada. Não é apresentado o tamanho da base utilizada nesse artigo.
+de correlação, elas são: (i) coeficiente de correlação de Kendallτ; (ii)
+τ-AP para calcular a relevância das recomendações; (iii) uma variação do
+*Mean Reciprocal Rank* (nMMR). Essas métricas são importantes para
+avaliar numericamente a qualidade de cada *playlist* recomendada. Não é
+apresentado o tamanho da base utilizada nesse artigo.
 
 #### Tiveram outros resultados apresentados? Quais?
 
@@ -831,10 +822,6 @@ O contexto é obtido a partir do aplicativo desenvolvido, ele trouxe
 diversas informações sobre o dia a dia dos usuários, essas informações
 foram obtidas através de sensores e formulários que o usuário conseguia
 responder. Não é apresentado o contexto atual para o usuário.
-
-#### Foi avaliado o nível de satisfação do usuário com a música recomendada?
-
-O artigo revisado não desenvolveu um sistema de recomendação.
 
 #### A recomendação atingiu as expectativas do usuário?
 
