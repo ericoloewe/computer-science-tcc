@@ -546,8 +546,8 @@ predito uma pontuação em pares como classe discreta alternativa (o
 usuário preferiu a da esquerda, direita ou ambas).
 
 A recomendação gerada foi personalizada por usuário e não foi utilizado
-nenhum modelo colaborativo, mas foi demonstrado o interesse no trabalho
-em adicionar ao RecSys o filtro do tipo colaborativo.
+o modo colaborativo, mas foi demonstrado o interesse nos trabalhos
+futuros em adicionar ao RecSys esse modelo.
 
 Para realizar a predição da música desejada, dada a expressão facial,
 foram experimentados diversos algoritmos, e no fim, foi utilizado os
@@ -620,15 +620,19 @@ Não tiveram outros resultados apresentados.
 #### Towards Intent-Aware Contextual Music Recommendation: Initial Experiments
 
 O artigo apresenta técnicas e resultados que buscam estudar as intenções
-dos usuários ao buscar uma música para escutar, que demonstradas a
-partir do estudo realizado em cima da API do Spotify e Youtube, que visa
-entender as intenções dos usuários a partir das descrições das
-*playlists*. A partir desse estudo, são geradas *playlists* especificas
-para cada atividade relacionada às intenções dos usuários. Isso foi
-desenvolvido no sistema de recomendação apresentado (AIR), que usa a API
-do Spotify para obter suas melhores *playlist* relacionados a busca,
-delas é obtido as top 10 músicas com melhores scores, as quais são
-incluídas nas recomendações futuras para cada atividade.
+dos usuários ao buscar uma música para escutar, as quais são obtidas
+através do título e descrição das *playlists* reproduzidas. Para
+demonstrar as técnicas, foi realizado um estudo em cima da API do
+Spotify e Youtube. A partir desse estudo, são geradas *playlists*
+especificas para cada atividade relacionada às intenções dos usuários. E
+no fim é realizado uma avaliação comparativa dela com a gerada pelo
+método do Spotify (SPTF).
+
+Para gerar as *playlists*, foi desenvolvido um método para realizar a
+recomendação chamado *Activity-aware Intent Recommendation* (AIR), que
+usa a API do Spotify para obter suas melhores *playlist* relacionados a
+busca, delas é obtido as top 10 músicas com melhores *scores*, as quais
+são incluídas nas recomendações futuras para cada atividade.
 
 ####  Qual o problema que ele resolveu?
 
