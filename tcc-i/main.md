@@ -1006,6 +1006,66 @@ do desenvolvimento desse sistema foram apresentadas na Figura 11.
 Figura 11 Etapas do desenvolvimento do sistema de recomendação musical
 (próprio, 2020)
 
+As perguntas colocadas no questionário, serão voltadas a conhecer melhor
+os usuários que utilizarão o sistema, sendo assim, será colocado
+perguntas que entendam suas preferencias, atividades, entre outros.
+Essas perguntas são:
+
+  - Você acredita que as recomendações musicais realizadas via software
+    poderiam ser melhoradas?
+
+  - Você acredita que o contexto poderia melhorar essas recomendações?
+
+  - Em quais atividades costuma ouvir música?
+
+  - Em quais lugares costuma ouvir músicas?
+
+  - Com quais humores você costuma ouvir música?
+
+  - Das condições abaixo, quais acredita que deva influenciar mais na
+    música que gostaria de ouvir?
+    
+      - Humor
+    
+      - Atividades
+    
+      - Localização
+    
+      - Clima
+    
+      - Tempo
+    
+      - Grupo / Individual
+    
+      - Outro
+
+  - Das ações abaixo, quais acredita que deva demonstrar mais o desgosto
+    ou gosto de uma música?
+    
+      - Pausar / Tocar musica
+    
+      - Passar / Voltar N musicas
+    
+      - Aumentar / Abaixar volume
+    
+      - Escolher música / artista / gênero
+    
+      - Abrir / Fechar o app
+    
+      - Definir tempo da musica
+
+  - As músicas que você escuta sozinho, são diferentes das que escuta
+    com os amigos?
+
+  - Quanto tempo por dia você dedica para escutar música?
+
+  - Quais são os gêneros musicais que gosta de escutar?
+
+  - Gostaria de participar de uma pesquisa que visa melhorar a
+    recomendação musical?
+
+  - Dicas e sugestões?
+
 ### Como o trabalho vai capturar as ações do usuário e classificá-las como contexto?
 
 A partir do momento que o usuário utilizar a aplicação, será registrado
