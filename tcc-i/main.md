@@ -907,10 +907,15 @@ número de dados disponíveis para realizar a classificação e filtro.
 <span id="_Toc42382775" class="anchor"></span>Figura Apresentação dos
 contextos utilizados no trabalho (próprio, 2020)
 
+É apresentado na figura 9, uma visão macro dos contextos que serão
+considerados nesse trabalho. Nas próximas seções, será detalhado melhor
+cada item dessa figura, além de, apresentar o processo desenvolvido para
+capturar cada contexto.
+
 ### O que é o contexto comportamental?
 
 Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
-contexto pode ser tido por:
+comportamento pode ser tido por:
 
 > Qualquer ação ou reação do organismo ou parte dele
 
@@ -933,6 +938,14 @@ Quantidade de músicas escutadas no dia (tempo)
 
 ### O que é o contexto ambiente?
 
+Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
+ambiente pode ser tido por:
+
+> Conjunto de condições físicas, biológicas e químicas que rodeiam os
+> seres vivos e as coisas
+
+Texto
+
 Será utilizado:
 
 Localização
@@ -942,9 +955,9 @@ clima
 ### Como será obtido os contextos?
 
 Os contexto do sistemas serão obtidos, a partir da captura de dados de
-sensores, *API’s* e eventos de um app. A lista de possíveis ações, pode
-ser obtida através das possíveis ações a serem executadas pelo usuário
-demonstradas na Figura 10.
+sensores, *API’s* e eventos de um app. A lista de ações, pode ser obtida
+através das possíveis ações a serem executadas pelo usuário demonstradas
+na Figura 10.
 
 ![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A38%3A01.600Z%22%2C%22pageId%22%3A%22CdkkQKYaVUET6wdkgj3H%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image7.png)
 
@@ -973,14 +986,16 @@ explicitamente.
 
 ## Arquitetura do sistema
 
+Texto
+
 Figura Etapas do desenvolvimento do sistema de recomendação musical
 (próprio, 2020)
 
 ### Como o trabalho vai capturar as ações do usuário e classificá-las como contexto?
 
 A partir do momento que o usuário utilizar a aplicação, será registrado
-suas ações, através de eventos disponíveis em seus componentes, esse
-registro é demonstrados na Figura 12.
+suas ações, através de eventos disponíveis em seus componentes, é
+demonstrados na Figura 12 o processo para realizar esse registro.
 
 ![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A48%3A39.750Z%22%2C%22pageId%22%3A%22OW\_eq1zldgSTVgG6IYEs%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image8.png)
 
