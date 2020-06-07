@@ -709,11 +709,11 @@ seguintes questões:
 
 1.  Em que medida podemos prever a música que um usuário prefere ouvir
     em diferentes contextos de atividade (ou seja, uso de música) da
-    realidade?
+    vida real?
 
 2.  Em que medida podemos prever a atividade de um usuário a partir dos
     dados do sensor coletados dos *smartphones*, em um contexto de um
-    ouvinte musical da realidade?
+    ouvinte musical da vida real?
 
 3.  Como fatores pessoais (dados demográficos, histórico musical,
     preferência musical de longo prazo e traços de personalidade) se
