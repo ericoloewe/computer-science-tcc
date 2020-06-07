@@ -667,10 +667,12 @@ Não é apresentada nenhuma aplicação desenvolvida para obter as bases.
 
 #### Quais os contextos utilizados?
 
-Esse trabalho realizou a interpretação de contexto como intenções. O
-principal atributo utilizado são as atividades que o usuário está
-executando, as qual são obtidas através de seu comportamento (buscas por
-*playlists*).
+Esse trabalho não busca entender o contexto em si. Ele apenas busca
+entender uma de suas características, que são as intenções do usuário,
+ao procurar por uma *playlist* e, a partir das intenções obtidas,
+procura gerar playlists relacionadas as atividades as quais o usuário
+está executando. O principal atributo utilizado para predizer suas
+intenções, é a descrição da *playlist* encontrada em sua busca.
 
 #### Como é obtido o contexto?
 
