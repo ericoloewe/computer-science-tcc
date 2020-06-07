@@ -652,6 +652,8 @@ As intenções foram obtidas através de diversos tipos de algoritmos de
 *machine learning* como: *Logistic Regression*, *Both Fuzzy* e H*ard
 Clustering*, mas os melhores resultados foram obtidos utilizando o
 *Random Forest Classifier* (utilizando a implementação do *sklearn*).
+Não foi apresentado os algoritmos utilizados para realizar a
+recomendação musical.
 
 #### Qual a base de treinamento e teste?
 
@@ -857,12 +859,21 @@ possua; (ii)❌ caso não possua; (iii)❓ caso não apresente ainda (próprio,
 | Utiliza do contexto implícito?                                          | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
 | Realiza recomendações do tipo dinâmicas?                                | ❌                                                                      | ❌                                                                               | ❌                                                                            | ✔                       |
 | Utiliza da técnica de avaliação *operating characteristic curve* (AUC)? | ❌                                                                      | ✔                                                                               | ✔                                                                            | ❓                       |
+| Utiliza do *F-measure?*                                                 | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
+| *Utiliza do Root Mean Squared Error?*                                   |                                                                        | ❌                                                                               | ❌                                                                            | ❓                       |
+| Utiliza a métrica do *Mean Reciprocal Rank?*                            | ❌                                                                      | ✔                                                                               | ❌                                                                            | ❓                       |
+| Utiliza a métrica do coeficiente de correlação de Kendall               | ❌                                                                      | ✔                                                                               | ❌                                                                            | ❓                       |
 | Utiliza do algoritmo *support vector machine* (SVM) para classificação? | ❌                                                                      | ✔                                                                               | ✔                                                                            | ❓                       |
 | Utiliza do algoritmo *radial basis function* (RBF) para classificação?  | ❌                                                                      | ❌                                                                               | ✔                                                                            | ❓                       |
 | Utiliza o algoritmo *Random Forest* para recomendação*?*                | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
 | Utiliza o algoritmo *Gradient Boosting* para recomendação*?*            | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
 
-Legenda:
+No Quadro 1, foram apresentadas as relações das funcionalidades dos 3
+artigos revisados e desse trabalho, relações quais podem ser utilizadas
+no desenvolvimento do sistema de recomendação. Nas últimas linhas, foram
+colocados pontos de interrogação, devido ao trabalho estar em
+desenvolvimento e não se ter conhecimento das técnicas que serão
+utilizadas.
 
 # Modelagem do “Nome do trabalho” (TODO)
 
