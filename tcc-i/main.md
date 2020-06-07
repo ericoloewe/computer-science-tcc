@@ -70,30 +70,36 @@ Keywords: tradução das palavras-chave para a língua inglesa.
 Lista de Figuras
 
 [Figura 1 - Motor avançado de busca da ACM (próprio, 2020)
-15](#_Ref40822595)
+16](#_Ref40822595)
 
 [Figura 2 - Resultado de busca dos proceedings no motor de busca da ACM
-(próprio, 2020) 16](#_Ref40822631)
+(próprio, 2020) 17](#_Ref40822631)
 
 [Figura 3 - Resultado de busca dos journals no motor de busca da ACM
-(próprio, 2020) 16](#_Ref40822641)
+(próprio, 2020) 18](#_Ref40822641)
 
 [Figura 4 - Etapas realizadas para filtrar os trabalhos encontrados no
-motor de busca da ACM (próprio, 2020) 17](#_Ref40822414)
+motor de busca da ACM (próprio, 2020) 18](#_Ref40822414)
 
 [Figura 5 - Filtro em cima dos trabalhos selecionados através do resumo
-(próprio, 2020) 17](#_Ref40822493)
+(próprio, 2020) 19](#_Ref40822493)
 
 [Figura 6 - Procedimento de filtro realizado baseado nos trabalhos
-encontrados no motor de busca da ACM (próprio, 2020) 18](#_Ref40822509)
+encontrados no motor de busca da ACM (próprio, 2020) 19](#_Ref40822509)
 
 [Figura 7 Fatores da preferência musical (próprio, 2020)
-27](#_Toc42024460)
+28](#_Toc42382774)
 
-Lista de Tabelas
+[Figura 8 Apresentação dos contextos utilizados no trabalho (próprio,
+2020) 34](#_Toc42382775)
 
-[Table 1 Relação das funcionalidades desenvolvidas em cada artigo
-revisado (próprio, 2020) 28](#_Toc42024448)
+Lista de Quadros
+
+[Quadro 1 Relação das funcionalidades desenvolvidas em cada artigo
+revisado. Acima é listado os trabalhos revisados, e a esquerda as
+funcionalidades encontradas. Foi utilizado 3 símbolos: (i) ✔ caso
+possua; (ii)❌ caso não possua; (iii)❓ caso não apresente ainda (próprio,
+2020) 30](#_Ref42381546)
 
 Lista de Abreviaturas e Siglas
 
@@ -129,44 +135,34 @@ Sumário
 
 [2.1 O protocolo de revisão 14](#o-protocolo-de-revisão)
 
-[2.2 PROCURA NOS MOTORES DE BUSCA 15](#procura-nos-motores-de-busca)
+[2.2 PROCURA NOS MOTORES DE BUSCA 16](#procura-nos-motores-de-busca)
 
-[2.3 Os trabalhos 17](#_Toc42267303)
+[2.3 ETAPAS DA REVISÃO DOS TRABALHOS
+18](#etapas-da-revisão-dos-trabalhos)
 
-[2.3.1 The New Challenges when Modeling Context through Diversity over
-Time in Recommender Systems
-19](#the-new-challenges-when-modeling-context-through-diversity-over-time-in-recommender-systems)
+[2.3.1 Trabalhos selecionados 19](#trabalhos-selecionados)
 
-[2.3.2 Prediction of music pairwise preferences from facial expressions
-20](#prediction-of-music-pairwise-preferences-from-facial-expressions)
+[2.4 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
+30](#funcionalidades-dos-trabalhos-investigados)
 
-[2.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial
-Experiments
-22](#towards-intent-aware-contextual-music-recommendation-initial-experiments)
+[3 Modelagem do “Nome do trabalho” (TODO)
+33](#modelagem-do-nome-do-trabalho-todo)
 
-[2.3.4 Quantitative Study of Music Listening Behavior in a Smartphone
-Context
-24](#quantitative-study-of-music-listening-behavior-in-a-smartphone-context)
-
-[2.4 Tabela com tecnicas 28](#_Toc42267308)
-
-[3 Modelagem do que será feito 30](#modelagem-do-nome-do-trabalho-todo)
-
-[3.1 Contexto 30](#contexto)
+[3.1 Contexto 33](#contexto)
 
 [3.1.1 O que é o contexto comportamental?
-31](#o-que-é-o-contexto-comportamental)
+34](#o-que-é-o-contexto-comportamental)
 
-[3.1.2 O que é o contexto ambiente? 31](#o-que-é-o-contexto-ambiente)
+[3.1.2 O que é o contexto ambiente? 34](#o-que-é-o-contexto-ambiente)
 
 [3.1.3 Como será obtido os contextos?
-31](#como-será-obtido-os-contextos)
+35](#como-será-obtido-os-contextos)
 
-[3.2 Arquitetura do sistema 32](#arquitetura-do-sistema)
+[3.2 Arquitetura do sistema 35](#arquitetura-do-sistema)
 
-[4 CONCLUSÃO 33](#conclusão)
+[4 CONCLUSÃO 36](#conclusão)
 
-[Referências Bibliográficas 34](#referências-bibliográficas)
+[Referências Bibliográficas 37](#referências-bibliográficas)
 
 # Introdução
 
@@ -393,8 +389,8 @@ ACM foram 150 trabalhos relacionados a *string* de busca.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura - Motor avançado de
-busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
+de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
 cima da busca. Procurando trazer somente os trabalhos mais atuais
@@ -407,7 +403,7 @@ de trabalhos encontrados passou para 83.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822631" class="anchor"></span>Figura - Resultado de
+<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Um dos principais motivos que levou essa revisão ser realizada através
@@ -419,7 +415,7 @@ conferências e eventos relacionados a área. (ACM RECSYS COMMUNITY.,
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura - Resultado de
+<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
 
 ## ETAPAS DA REVISÃO DOS TRABALHOS
@@ -428,9 +424,9 @@ Com a busca realizada no dia 07/05/20, no motor da ACM, a partir da
 *string* de busca foram encontrados 83 trabalhos, sendo eles: 23 do tipo
 *journal* e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura - Etapas realizadas
-para filtrar os trabalhos encontrados no motor de busca da ACM (próprio,
-2020)
+<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
+realizadas para filtrar os trabalhos encontrados no motor de busca da
+ACM (próprio, 2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado em
 3 etapas (demonstradas na Figura 4), que visam direcionar esta pesquisa
@@ -450,7 +446,7 @@ quantidade de artigos encontrados.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura - Filtro em cima
+<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
 dos trabalhos selecionados através do resumo (próprio, 2020)
 
 ###  Trabalhos selecionados
@@ -459,7 +455,7 @@ O resultado do procedimento de filtro (apresentado na Figura 6) foi de 4
 trabalhos relacionados ao objetivo descrito no protocolo de revisão
 desse trabalho.
 
-<span id="_Ref40822509" class="anchor"></span>Figura - Procedimento de
+<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
@@ -814,7 +810,7 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são:
 
-<span id="_Toc42024460" class="anchor"></span>Figura Fatores da
+<span id="_Toc42382774" class="anchor"></span>Figura 7 Fatores da
 preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
@@ -843,11 +839,11 @@ Não tiveram outros resultados apresentados.
 Para relacionar os trabalhos revisados, foi criada uma tabela contendo
 as funcionalidades encontradas nos artigos.
 
-Quadro Relação das funcionalidades desenvolvidas em cada artigo
-revisado. Acima é listado os trabalhos revisados, e a esquerda as
-funcionalidades encontradas. Foi utilizado 3 símbolos: (i) ✔ caso
-possua; (ii)❌ caso não possua; (iii)❓ caso não apresente ainda (próprio,
-2020)
+<span id="_Ref42381546" class="anchor"></span>Quadro 1 Relação das
+funcionalidades desenvolvidas em cada artigo revisado. Acima é listado
+os trabalhos revisados, e a esquerda as funcionalidades encontradas. Foi
+utilizado 3 símbolos: (i) ✔ caso possua; (ii)❌ caso não possua; (iii)❓
+caso não apresente ainda (próprio, 2020)
 
 |                                                                         | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta desse trabalho |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
@@ -913,7 +909,8 @@ a definição das “circunstâncias que levaram a certos fatos ou
 situações”, é possível auxiliar as recomendações, aumentando o
 número de dados disponíveis para realizar a classificação e filtro.
 
-Figura Apresentação dos contextos utilizados no trabalho (próprio, 2020)
+<span id="_Toc42382775" class="anchor"></span>Figura 8 Apresentação dos
+contextos utilizados no trabalho (próprio, 2020)
 
 ### O que é o contexto comportamental?
 
@@ -975,29 +972,13 @@ explicitamente.
 
 # CONCLUSÃO
 
-Pode-se afirmar que está havendo em Porto Alegre uma situação paradoxal.
-Ao mesmo tempo em que se percebe um avanço no cumprimento das diretrizes
-norteadoras do Sistema Único de Saúde, tais como, a integralidade da
-atenção à saúde (preventivo e curativo), a universalidade da cobertura e
-do atendimento, a gratuidade e a descentralização das ações e serviços,
-verifica-se também a obstaculização permanente do processo em função da
-insuficiência de recursos. Ao mesmo tempo em que são repassadas novas
-atribuições e poderes ao município de Porto Alegre, não há o repasse de
-recursos financeiros na mesma proporção para fazer frente ao processo de
-municipalização. Além disso, as negociações para se aumentar os recursos
-financeiros sempre ocorrem de maneira conflitiva, principalmente entre o
-Estado e o Município. Desse modo, o melhor andamento do processo de
-municipalização em Porto Alegre fica na dependência da contrapartida de
-recursos do Estado e da União.
-
-...............................................
-
-PAGINAÇÃO: Segundo o livro do prof. Cléber Prodanov, as folhas do
-trabalho são contadas a partir da folha de rosto (não contamos a capa),
-mas nem todas receberão um número. Contamos, mas não numeramos, então, a
-folha de rosto, o resumo, o abstract, as listas e o sumário. A numeração
-é colocada no canto superior direito da folha, a 2cm da borda superior
-da folha, em algarismos arábicos.
+Nesse trabalho foi realizado uma revisão em cima dos trabalhos da ACM,
+de RecSys musical que utilizam o contexto do usuário, nela foi possível
+verificar, que poucos trabalhos buscam unir, a recomendação musical com
+o contexto do usuário. Sendo assim, esse trabalho vai buscar desenvolver
+um RecSys musical, o qual irá analisar o contexto do usuário em tempo
+real, para realizar novas recomendações a ele. E no fim, será realizado
+uma comparação do resultado, com os obtidos no Spotify.
 
 # Referências Bibliográficas
 
@@ -1005,20 +986,20 @@ ACM. **Advanced Search**. Disponível em:
 \<https://dl.acm.org/search/advanced\>. Acesso em: 5 maio. 2020. ACM
 RECSYS COMMUNITY. **RecSys – ACM Recommender Systems**. Disponível em:
 \<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. BHATNAGAR, V.
-Collaborative filtering using data mining and analysis. \[s.l: s.n.\].
-BORJA, K.; DIERINGER, S. Streaming or stealing? The complementary
-features between music streaming and music piracy. **Journal of
-Retailing and Consumer Services**, v. 32, p. 86–95, 2016. DIETMAR, J. et
-al. **Recommendation system -An Introduction**. \[s.l: s.n.\]. v.
-91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário | Michaelis
-On-line**. Disponível em: \<https://michaelis.uol.com.br/\>. Acesso em:
-6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**. \[s.l.\] MIT
-Press, 2019. FALK, K. Practical Recommender Systems. \[s.l: s.n.\].
-IFPI. **IFPI Global Music Report 2019**. Disponível em:
+**Collaborative filtering using data mining and analysis**. \[s.l:
+s.n.\]. BORJA, K.; DIERINGER, S. Streaming or stealing? The
+complementary features between music streaming and music piracy.
+**Journal of Retailing and Consumer Services**, v. 32, p. 86–95, 2016.
+DIETMAR, J. et al. **Recommendation system -An Introduction**. \[s.l:
+s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário |
+Michaelis On-line**. Disponível em: \<https://michaelis.uol.com.br/\>.
+Acesso em: 6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**.
+\[s.l.\] MIT Press, 2019. FALK, K. **Practical Recommender Systems**.
+\[s.l: s.n.\]. IFPI. **IFPI Global Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. LUINI, B.
 J. R.; WHITMAN, A. E.; DATE, P. **Streaming Audio: The FezGuys’ Guide**.
-\[s.l: s.n.\]. MURARO, R. M. Os avanços tecnológicos e o futuro da
-humanidadeQuerendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
+\[s.l: s.n.\]. MURARO, R. M. **Os avanços tecnológicos e o futuro da
+humanidade**Querendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
 \[s.l.\] O’Reilly Media, 2018. v. 134RESNICK, PAUL AND VARIAN, H. R.
 Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
 56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
