@@ -720,13 +720,12 @@ seguintes questões:
     correlacionam com a previsibilidade do uso de músicas e da atividade
     do usuário para diferentes usuários?
 
-Cada pergunta investiga diferentes interações entre os fatores musicais,
-pessoais e situacionais da audição musical. Especificamente é
-considerado um conjunto fechado de 8 tipos de atividades, atividades
-estas relacionadas a dados diários obtidos pelos usuários durante um
-período de 3 semanas. O artigo não apresentou ou desenvolveu sistema de
-recomendação musical, porém, trouxe diversas informações pertinentes a
-esse trabalho.
+Cada pergunta investiga relações entre os fatores musicais, pessoais e
+situacionais da escuta musical. Especificamente é considerado um
+conjunto fechado de 8 tipos de atividades, atividades estas relacionadas
+a dados diários obtidos pelos 48 usuários durante um período de 3
+semanas. O artigo não apresentou ou desenvolveu sistema de recomendação
+musical, porém, trouxe diversas informações pertinentes a esse trabalho.
 
 ####  Qual o problema que ele resolveu?
 
@@ -741,7 +740,7 @@ questões descritas anteriormente.
 Essa seção está dividida nas 3 questões que o artigo revisado busca
 resolver. Em nenhuma das questões é abordado a filtragem colaborativa.
 
-#####  Em que medida podemos prever a música que um usuário prefere ouvir em diferentes contextos de atividade (ou seja, uso de música) da realidade?
+#####  Em que medida podemos prever a música que um usuário prefere ouvir em diferentes contextos de atividade (ou seja, uso de música) da vida real?
 
 Essa seção do trabalho teve como principal objetivo classificar
 (utilizando *auto-tagging*) a relação das preferências musicais x
@@ -774,7 +773,7 @@ extrair os atributos das músicas, e visa auxiliar o processo de
 classificação, foram utilizados o *MIRtoolbox* e o *PsySound toolbox,*
 os quais conseguem extrair os atributos musicais.
 
-##### Em que medida podemos prever a atividade de um usuário a partir dos dados do sensor coletados dos *smartphones* em um contexto de um ouvinte musical da realidade?
+##### Em que medida podemos prever a atividade de um usuário a partir dos dados do sensor coletados dos *smartphones* em um contexto de um ouvinte musical da vida real?
 
 O principal objetivo dessa seção do trabalho foi classificar as
 atividades dos usuários (*user-activity*) e relacionar as 8 atividades
