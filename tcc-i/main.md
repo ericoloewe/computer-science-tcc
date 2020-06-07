@@ -632,7 +632,8 @@ Para gerar as *playlists*, foi desenvolvido um método para realizar a
 recomendação chamado *Activity-aware Intent Recommendation* (AIR), que
 usa a API do Spotify para obter suas melhores *playlist* relacionados a
 busca, delas é obtido as top 10 músicas com melhores *scores*, as quais
-são incluídas nas recomendações futuras para cada atividade.
+são incluídas nas recomendações futuras para cada atividade (Dirigir,
+Trabalhar, Cozinhar, ...).
 
 ####  Qual o problema que ele resolveu?
 
