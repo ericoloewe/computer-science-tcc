@@ -944,13 +944,10 @@ ambiente pode ser tido por:
 > Conjunto de condições físicas, biológicas e químicas que rodeiam os
 > seres vivos e as coisas
 
-Texto
-
-Será utilizado:
-
-Localização
-
-clima
+Com essa definição, foi estudado sensores e informações que pudessem
+representar essas condições. E desse estudo, foi encontrado 3 possíveis
+contextos que podem ser representados na aplicação, que são:
+Localização; Clima; Reprodução musical em grupo / individual.
 
 ### Como será obtido os contextos?
 
@@ -995,7 +992,7 @@ Figura Etapas do desenvolvimento do sistema de recomendação musical
 
 A partir do momento que o usuário utilizar a aplicação, será registrado
 suas ações, através de eventos disponíveis em seus componentes, é
-demonstrados na Figura 12 o processo para realizar esse registro.
+demonstrado na Figura 12 o processo para realizar esse registro.
 
 ![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A48%3A39.750Z%22%2C%22pageId%22%3A%22OW\_eq1zldgSTVgG6IYEs%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image8.png)
 
