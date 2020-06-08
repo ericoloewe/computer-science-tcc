@@ -20,11 +20,11 @@ apresentado como requisito parcial
 
 à obtenção do grau de Bacharel em
 
-Nome do Curso pela
+Ciência da computação pela
 
 Universidade Feevale
 
-Orientador: nome do professor orientador
+Orientador: Juliano Varella De Carvalho
 
 Novo Hamburgo
 
@@ -35,14 +35,9 @@ Agradecimentos
 Gostaria de agradecer a todos os que, de alguma maneira, contribuíram
 para a realização desse trabalho de conclusão, em especial:
 
-Aos amigos e às pessoas que convivem comigo diariamente, minha gratidão,
-pelo apoio emocional - nos períodos mais difíceis do trabalho.
-
-Enfim, os demais agradecimentos que o aluno desejar fazer.
-
-\* Folha de dedicatória ou de agradecimentos = elemento opcional. O
-texto fica na parte inferior da página, respeitando as margens de 2cm da
-borda direita e 8cm da borda esquerda da página (PRODANOV, 2003, p. 42).
+Ao meu professor orientador, a minha família, aos amigos e às pessoas
+que convivem comigo diariamente, minha gratidão, pelo apoio emocional -
+nos períodos mais difíceis do trabalho.
 
 Resumo
 
@@ -91,7 +86,7 @@ encontrados no motor de busca da ACM (próprio, 2020) 19](#_Ref40822509)
 28](#_Toc42382774)
 
 [Figura 8 Apresentação dos contextos utilizados no trabalho (próprio,
-2020) 34](#_Toc42382775)
+2020) 34](#_Ref42447869)
 
 Lista de Quadros
 
@@ -103,29 +98,17 @@ possua; (ii)❌ caso não possua; (iii)❓ caso não apresente ainda (próprio,
 
 Lista de Abreviaturas e Siglas
 
-| BSC     | Balanced Scorecard                                        |
-| ------- | --------------------------------------------------------- |
-| CAPF    | Custo Anual por Funcionário                               |
-| CAPT    | Custo Anual por Teclado                                   |
-| CAPU    | Custo Anual por Usuário                                   |
-| CEO     | Chief of Executive Office                                 |
-| CIA/FVG | Centro de Informática Aplicada da Fundação Getúlio Vargas |
-| CIO     | Chief of Information Office                               |
-| CO      | Contexto Organizacional                                   |
-| COBIT   | Control Objectives for Information and related Technology |
-| ERP     | Enterprise Resource Planning                              |
-| FCS     | Fatores Críticos de Sucesso                               |
-| FGV     | Fundação Getúlio Vargas                                   |
-| ISACA   | Information Systems Audit and Control Association         |
-| MIT     | Massachusetts Institute of Technology                     |
-| PEE     | Planejamento Estratégico Empresarial                      |
-| PETI    | Panejamento Estratégico da Tecnologia da Informação       |
-| RH      | Recursos Humanos                                          |
-| ROE     | Return On Expectation                                     |
-| ROI     | Return On Investiment                                     |
-| SI      | Sistemas de Informação                                    |
-| SLA     | Service Level Agreements                                  |
-| SLM     | Service Level Managements                                 |
+<table>
+<tbody>
+<tr class="odd">
+<td><p>RecSys</p>
+<p>SVM</p></td>
+<td><p><em>Recommender Systems</em></p>
+<p><em>Support Vector Machine</em></p>
+<p><em>TODO</em></p></td>
+</tr>
+</tbody>
+</table>
 
 Sumário
 
@@ -145,24 +128,50 @@ Sumário
 [2.4 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
 30](#funcionalidades-dos-trabalhos-investigados)
 
-[3 Modelagem do “Nome do trabalho” (TODO)
-33](#modelagem-do-nome-do-trabalho-todo)
+[2.5 Conclusões dos trabalhos revisados
+32](#conclusões-dos-trabalhos-revisados)
 
-[3.1 Contexto 33](#contexto)
+[3 Modelagem do “Nome do trabalho” (TODO)
+34](#modelagem-do-nome-do-trabalho-todo)
+
+[3.1 Contexto 34](#contexto)
 
 [3.1.1 O que é o contexto comportamental?
-34](#o-que-é-o-contexto-comportamental)
+35](#o-que-é-o-contexto-comportamental)
 
-[3.1.2 O que é o contexto ambiente? 34](#o-que-é-o-contexto-ambiente)
+[3.1.2 O que é o contexto ambiente? 36](#o-que-é-o-contexto-ambiente)
 
 [3.1.3 Como será obtido os contextos?
-35](#como-será-obtido-os-contextos)
+37](#como-será-obtido-os-contextos)
 
-[3.2 Arquitetura do sistema 35](#arquitetura-do-sistema)
+[3.1.4 O que são as ações do usuário?
+38](#o-que-são-as-ações-do-usuário)
 
-[4 CONCLUSÃO 36](#conclusão)
+[3.2 Arquitetura do sistema 39](#arquitetura-do-sistema)
 
-[Referências Bibliográficas 37](#referências-bibliográficas)
+[3.2.1 Como o trabalho vai capturar as ações do usuário e enviá-las ao
+sistema?
+41](#como-o-trabalho-vai-capturar-as-ações-do-usuário-e-enviá-las-ao-sistema)
+
+[3.2.2 Como o trabalho vai validar se as ações do usuário condizem com o
+contexto?
+42](#como-o-trabalho-vai-validar-se-as-ações-do-usuário-condizem-com-o-contexto)
+
+[3.2.3 Como o trabalho vai relacionar as músicas que o usuário gosta aos
+contextos?
+43](#como-o-trabalho-vai-relacionar-as-músicas-que-o-usuário-gosta-aos-contextos)
+
+[3.2.4 Como o trabalho vai classificar o contexto para apresentar para
+usuário?
+43](#como-o-trabalho-vai-classificar-o-contexto-para-apresentar-para-usuário)
+
+[3.2.5 Como o trabalho vai recomendar novas músicas a partir da relação
+de contexto x música?
+43](#como-o-trabalho-vai-recomendar-novas-músicas-a-partir-da-relação-de-contexto-x-música)
+
+[4 CONCLUSÃO 45](#conclusão)
+
+[Referências Bibliográficas 46](#referências-bibliográficas)
 
 # Introdução
 
@@ -917,7 +926,7 @@ a definição das “circunstâncias que levaram a certos fatos ou
 situações”, é possível auxiliar as recomendações, aumentando o
 número de dados disponíveis para realizar a classificação e filtro.
 
-<span id="_Toc42382775" class="anchor"></span>Figura 9 Apresentação dos
+<span id="_Ref42447869" class="anchor"></span>Figura 9 Apresentação dos
 contextos utilizados no trabalho (próprio, 2020)
 
 É apresentado na Figura 9, uma visão macro dos contextos que serão
