@@ -856,7 +856,7 @@ caso não apresente ainda (próprio, 2020)
 | Realiza recomendações do tipo dinâmicas?                                | ❌                                                                      | ❌                                                                               | ❌                                                                            | ✔                       |
 | Utiliza da técnica de avaliação *operating characteristic curve* (AUC)? | ❌                                                                      | ✔                                                                               | ✔                                                                            | ❓                       |
 | Utiliza do *F-measure?*                                                 | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
-| *Utiliza do Root Mean Squared Error?*                                   |                                                                        | ❌                                                                               | ❌                                                                            | ❓                       |
+| Utiliza do Root Mean Squared Error?                                     |                                                                        | ❌                                                                               | ❌                                                                            | ❓                       |
 | Utiliza a métrica do *Mean Reciprocal Rank?*                            | ❌                                                                      | ✔                                                                               | ❌                                                                            | ❓                       |
 | Utiliza a métrica do coeficiente de correlação de Kendall               | ❌                                                                      | ✔                                                                               | ❌                                                                            | ❓                       |
 | Utiliza do algoritmo *support vector machine* (SVM) para classificação? | ❌                                                                      | ✔                                                                               | ✔                                                                            | ❓                       |
@@ -996,6 +996,35 @@ explicita e implícita, sendo elas:
 
   - músicas / gênero / artistas preferidas (os)
 
+### O que são as ações do usuário?
+
+As ações do usuário são o que irão demonstrar ao sistema, o gosto ou
+desgosto do usuário, em cima das músicas recomendadas. Cada ação terá um
+nível de importância, o qual será utilizado avaliação de sua captura,
+antes de serem enviadas ao sistema para avaliar as recomendações feitas.
+As possíveis ações a serem executadas pelo usuário estão listadas
+abaixo.
+
+  - Pausar / Tocar música
+
+  - Passar / Voltar N músicas
+
+  - Aumentar / Abaixar volume
+
+  - Escolher música / artista / gênero
+
+  - Abrir / Fechar o app
+
+  - Definir tempo da música
+
+  - Definir atividade
+
+  - Definir humor
+
+  - Definir / Trocar localização
+
+  - Definir grupo / individual
+
 ## Arquitetura do sistema
 
 Para validar o modelo de sistema de recomendação, será desenvolvido uma
@@ -1076,20 +1105,28 @@ pelo usuário (próprio, 2020)
 
 ### Como o trabalho vai validar se as ações do usuário condizem com o contexto?
 
-As ações do usuário são o que irão demonstrar o gosto do usuário, em
-cima das músicas recomendadas. A partir do questionário realizado, será
-possível entender melhor os usuários que irão utilizar a aplicação
-desenvolvida. E com isso, desenvolver a avaliação da importância de uma
-ação em cima do contexto.
+As ações do usuário são o que irão demonstrar o gosto ou desgosto do
+usuário, em cima das músicas recomendadas. A partir do questionário
+realizado, será possível entender melhor os usuários que irão utilizar a
+aplicação desenvolvida. E com isso, desenvolver a avaliação da
+importância de uma ação em cima do contexto.
 
 ![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-08T00%3A09%3A10.073Z%22%2C%22pageId%22%3A%22Su-HV9\_zTKp8CvkJRCf5%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image9.png)
 
 Figura 13 Fluxo feito para avaliar se as ações condizem com o contexto
 (próprio, 2020)
 
+A Figura 13 apresenta o processo do sistema desde o momento que ira
+receber as ações e o contexto atual do usuário, até sua última etapa que
+é retornar ao app com a informação se as ações do usuário estão
+indicando para o sistema que sua interpretação do contexto está correta
+ou não.
+
 ### Como o trabalho vai relacionar as músicas que o usuário gosta aos contextos?
 
-Texto
+Como essa pergunta trata de uma relação estrutural do banco, será
+respondida no desenvolvimento desse trabalho, o qual será feito no
+próximo semestre.
 
 ### Como o trabalho vai classificar o contexto para apresentar para usuário?
 
@@ -1115,20 +1152,20 @@ ACM. **Advanced Search**. Disponível em:
 \<https://dl.acm.org/search/advanced\>. Acesso em: 5 maio. 2020. ACM
 RECSYS COMMUNITY. **RecSys – ACM Recommender Systems**. Disponível em:
 \<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. BHATNAGAR, V.
-**Collaborative filtering using data mining and analysis**. \[s.l:
-s.n.\]. BORJA, K.; DIERINGER, S. Streaming or stealing? The
-complementary features between music streaming and music piracy.
-**Journal of Retailing and Consumer Services**, v. 32, p. 86–95, 2016.
-DIETMAR, J. et al. **Recommendation system -An Introduction**. \[s.l:
-s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário |
-Michaelis On-line**. Disponível em: \<https://michaelis.uol.com.br/\>.
-Acesso em: 6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**.
-\[s.l.\] MIT Press, 2019. FALK, K. **Practical Recommender Systems**.
-\[s.l: s.n.\]. IFPI. **IFPI Global Music Report 2019**. Disponível em:
+Collaborative filtering using data mining and analysis. \[s.l: s.n.\].
+BORJA, K.; DIERINGER, S. Streaming or stealing? The complementary
+features between music streaming and music piracy. **Journal of
+Retailing and Consumer Services**, v. 32, p. 86–95, 2016. DIETMAR, J. et
+al. **Recommendation system -An Introduction**. \[s.l: s.n.\]. v.
+91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário | Michaelis
+On-line**. Disponível em: \<https://michaelis.uol.com.br/\>. Acesso em:
+6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**. \[s.l.\] MIT
+Press, 2019. FALK, K. Practical Recommender Systems. \[s.l: s.n.\].
+IFPI. **IFPI Global Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. LUINI, B.
 J. R.; WHITMAN, A. E.; DATE, P. **Streaming Audio: The FezGuys’ Guide**.
-\[s.l: s.n.\]. MURARO, R. M. **Os avanços tecnológicos e o futuro da
-humanidade**Querendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
+\[s.l: s.n.\]. MURARO, R. M. Os avanços tecnológicos e o futuro da
+humanidadeQuerendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
 \[s.l.\] O’Reilly Media, 2018. v. 134RESNICK, PAUL AND VARIAN, H. R.
 Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
 56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
