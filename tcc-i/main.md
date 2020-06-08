@@ -927,7 +927,7 @@ ações:
 
   - Pausar / Tocar música
 
-  - Passar / Voltar \(n\) musicas
+  - Passar / Voltar \(n\) músicas
 
   - Aumentar / Abaixar o volume
 
@@ -1011,62 +1011,59 @@ os usuários que utilizarão o sistema, sendo assim, será colocado
 perguntas que entendam suas preferencias, atividades, entre outros.
 Essas perguntas são:
 
-  - Você acredita que as recomendações musicais realizadas via software
-    poderiam ser melhoradas?
+##### Você acredita que as recomendações musicais realizadas via software poderiam ser melhoradas?
 
-  - Você acredita que o contexto poderia melhorar essas recomendações?
+##### Você acredita que o contexto poderia melhorar essas recomendações? 
 
-  - Em quais atividades costuma ouvir música?
+##### Em quais atividades costuma ouvir música?
 
-  - Em quais lugares costuma ouvir músicas?
+##### Em quais lugares costuma ouvir músicas?
 
-  - Com quais humores você costuma ouvir música?
+##### Com quais humores você costuma ouvir música?
 
-  - Das condições abaixo, quais acredita que deva influenciar mais na
-    música que gostaria de ouvir?
-    
-      - Humor
-    
-      - Atividades
-    
-      - Localização
-    
-      - Clima
-    
-      - Tempo
-    
-      - Grupo / Individual
-    
-      - Outro
+##### Das condições abaixo, quais acredita que deva influenciar mais na música que gostaria de ouvir?
 
-  - Das ações abaixo, quais acredita que deva demonstrar mais o desgosto
-    ou gosto de uma música?
-    
-      - Pausar / Tocar musica
-    
-      - Passar / Voltar N musicas
-    
-      - Aumentar / Abaixar volume
-    
-      - Escolher música / artista / gênero
-    
-      - Abrir / Fechar o app
-    
-      - Definir tempo da musica
+  - Humor
 
-  - As músicas que você escuta sozinho, são diferentes das que escuta
-    com os amigos?
+  - Atividades
 
-  - Quanto tempo por dia você dedica para escutar música?
+  - Localização
 
-  - Quais são os gêneros musicais que gosta de escutar?
+  - Clima
 
-  - Gostaria de participar de uma pesquisa que visa melhorar a
-    recomendação musical?
+  - Tempo
 
-  - Dicas e sugestões?
+  - Grupo / Individual
 
-### Como o trabalho vai capturar as ações do usuário e classificá-las como contexto?
+  - Outro
+
+##### Das ações abaixo, quais acredita que deva demonstrar mais o desgosto ou gosto de uma música?
+
+  - Pausar / Tocar música
+
+  - Passar / Voltar N músicas
+
+  - Aumentar / Abaixar volume
+
+  - Escolher música / artista / gênero
+
+  - Abrir / Fechar o app
+
+  - Definir tempo da música
+
+  - Outra
+
+##### As músicas que você escuta sozinho, são diferentes das que escuta com os amigos?
+
+##### Quanto tempo por dia você dedica para escutar música?
+
+##### Quais são os gêneros musicais que gosta de escutar?
+
+##### Gostaria de participar de uma pesquisa que visa melhorar a recomendação musical?
+
+##### Dicas e sugestões?
+
+### Como o trabalho vai capturar as ações do usuário e enviá-las ao sistema?
 
 A partir do momento que o usuário utilizar a aplicação, será registrado
 suas ações, através de eventos disponíveis em seus componentes, é
@@ -1079,7 +1076,16 @@ pelo usuário (próprio, 2020)
 
 ### Como o trabalho vai validar se as ações do usuário condizem com o contexto?
 
-Texto
+As ações do usuário são o que irão demonstrar o gosto do usuário, em
+cima das músicas recomendadas. A partir do questionário realizado, será
+possível entender melhor os usuários que irão utilizar a aplicação
+desenvolvida. E com isso, desenvolver a avaliação da importância de uma
+ação em cima do contexto.
+
+![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-08T00%3A09%3A10.073Z%22%2C%22pageId%22%3A%22Su-HV9\_zTKp8CvkJRCf5%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image9.png)
+
+Figura 13 Fluxo feito para avaliar se as ações condizem com o contexto
+(próprio, 2020)
 
 ### Como o trabalho vai relacionar as músicas que o usuário gosta aos contextos?
 
