@@ -1059,6 +1059,8 @@ Essas perguntas são:
 
 ##### Você acredita que o contexto poderia melhorar essas recomendações? 
 
+##### Você acredita que as mudanças de contexto acontecem frequentemente?
+
 ##### Em quais atividades costuma ouvir música?
 
 ##### Em quais lugares costuma ouvir músicas?
@@ -1176,7 +1178,19 @@ garantindo uma maior precisão na avaliação do contexto.
 
 ### Como o trabalho vai recomendar novas músicas a partir da relação de contexto x música?
 
-Texto
+Após ser feito a identificação do contexto através da aplicação, será
+realizado sua classificação utilizando os algoritmos estudados nos
+artigos revisados (SVM, RBF, *Random Forest*, ...), e somente então,
+será realizado a recomendação musical, através dos algoritmos de
+*matrix* e *tensor factorization* (Figura 14).
+
+Figura 14 Etapas do processo para realizar a recomendação musical
+
+Com os algoritmos de recomendação, será gerado um score para cada música
+x contexto. A partir dele, será avaliado os n melhores scores e
+inseridos na lista de reprodução atual da aplicação, buscando
+aperfeiçoar, a experiencia do usuário ao ouvir suas músicas preferidas
+ao devido contexto.
 
 # CONCLUSÃO
 
