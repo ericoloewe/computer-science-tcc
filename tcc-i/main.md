@@ -856,13 +856,13 @@ caso não apresente ainda (próprio, 2020)
 | Realiza recomendações do tipo dinâmicas?                                | ❌                                                                      | ❌                                                                               | ❌                                                                            | ✔                       |
 | Utiliza da técnica de avaliação *operating characteristic curve* (AUC)? | ❌                                                                      | ✔                                                                               | ✔                                                                            | ❓                       |
 | Utiliza do *F-measure?*                                                 | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
-| Utiliza do Root Mean Squared Error?                                     |                                                                        | ❌                                                                               | ❌                                                                            | ❓                       |
+| Utiliza do *Root Mean Squared Error*?                                   |                                                                        | ❌                                                                               | ❌                                                                            | ❓                       |
 | Utiliza a métrica do *Mean Reciprocal Rank?*                            | ❌                                                                      | ✔                                                                               | ❌                                                                            | ❓                       |
-| Utiliza a métrica do coeficiente de correlação de Kendall               | ❌                                                                      | ✔                                                                               | ❌                                                                            | ❓                       |
+| Utiliza a métrica do coeficiente de correlação de Kendall?              | ❌                                                                      | ✔                                                                               | ❌                                                                            | ❓                       |
 | Utiliza do algoritmo *support vector machine* (SVM) para classificação? | ❌                                                                      | ✔                                                                               | ✔                                                                            | ❓                       |
 | Utiliza do algoritmo *radial basis function* (RBF) para classificação?  | ❌                                                                      | ❌                                                                               | ✔                                                                            | ❓                       |
-| Utiliza o algoritmo *Random Forest* para recomendação*?*                | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
-| Utiliza o algoritmo *Gradient Boosting* para recomendação*?*            | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
+| Utiliza o algoritmo *Random Forest* para classificação*?*               | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
+| Utiliza o algoritmo *Gradient Boosting* para classificação*?*           | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
 
 No Quadro 1, foram apresentadas as relações das funcionalidades dos 3
 artigos revisados e desse trabalho, relações quais podem ser utilizadas
@@ -870,6 +870,19 @@ no desenvolvimento do sistema de recomendação. Nas últimas linhas, foram
 colocados pontos de interrogação, devido ao trabalho estar em
 desenvolvimento e não se ter conhecimento das técnicas que serão
 utilizadas.
+
+## Conclusões dos trabalhos revisados
+
+Após a revisão dos 4 trabalhos, foi identificado que nenhum deles
+apresentou o algoritmo utilizado na recomendação. Foram apresentados
+algoritmos de classificação (SVM, RBF, *Random Forest, ...*), de
+avaliação de resultados (AUC, *Root Mean Squared Error, Mean
+Reciprocal Rank*, ...), porem em nenhum momento foi apresentado
+algoritmos de recomendação como algoritmos de *matrix factorization*
+(SVD, *Neighbourhood* SVD, *Deep-Learning* MF, ...) ou algoritmos de
+*tensor factorization* (*Tensor Decomposition*, *Nonnegative Tensor
+Factorization*, ...), os quais são os algoritmos utilizados para
+realizar a recomendações nos RecSys.
 
 # Modelagem do “Nome do trabalho” (TODO)
 
@@ -931,7 +944,7 @@ ações:
 
   - Aumentar / Abaixar o volume
 
-  - Escolher musica / artista / gênero
+  - Escolher música / artista / gênero
 
   - Abrir / Fechar o app
 
