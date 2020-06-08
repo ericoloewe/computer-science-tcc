@@ -510,10 +510,10 @@ que foi desenvolvido e no fim, foi respondido as seguintes perguntas:
 
 #### The New Challenges when Modeling Context through Diversity over Time in Recommender Systems
 
-Foi realizado a revisão do trabalho e então verificado que o trabalho
-não apresenta dados e técnicas suficientes para serem consideradas
-nesse trabalho. Pois todas as informações do sistema desenvolvido estão
-em outros artigos citados por esse. Então dado a falta de informações
+Foi realizada a revisão do trabalho e então verificado que ele não
+apresenta dados e técnicas suficientes para serem consideradas nessa
+pesquisa, pois todas as informações do sistema desenvolvido estão em
+outros artigos citados por esse. Dada a falta de informações
 apresentadas nesse trabalho, não serão respondidas as questões
 pré-estabelecidas anteriormente.
 
@@ -875,10 +875,10 @@ caso não apresente ainda (próprio, 2020)
 
 No Quadro 1, foram apresentadas as relações das funcionalidades dos 3
 artigos revisados e desse trabalho, relações quais podem ser utilizadas
-no desenvolvimento do sistema de recomendação. Nas últimas linhas, foram
-colocados pontos de interrogação, devido ao trabalho estar em
-desenvolvimento e não se ter conhecimento das técnicas que serão
-utilizadas.
+no desenvolvimento do sistema de recomendação. Na última coluna do
+Quadro 1 foram colocados pontos de interrogação, devido ao trabalho
+estar em desenvolvimento e não se ter conhecimento das técnicas que
+serão utilizadas.
 
 ## Conclusões dos trabalhos revisados
 
