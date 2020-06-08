@@ -998,16 +998,18 @@ explicita e implícita, sendo elas:
 
 ### O que são as ações do usuário?
 
-As ações do usuário são o que irão demonstrar ao sistema, o gosto ou
-desgosto do usuário, em cima das músicas recomendadas. Cada ação terá um
-nível de importância, o qual será utilizado avaliação de sua captura,
-antes de serem enviadas ao sistema para avaliar as recomendações feitas.
-As possíveis ações a serem executadas pelo usuário estão listadas
-abaixo.
+As ações do usuário trazem diversas informações, referentes ao contexto
+que ele está vivendo, elas auxiliam no entendimento do seu contexto e na
+validação da acuracidade das recomendações feitas. São elas que irão
+demonstrar ao sistema, o gosto ou desgosto do usuário, em cima das
+músicas recomendadas. Cada ação terá um nível de importância, o qual
+será utilizado avaliação de sua captura, antes de serem enviadas ao
+sistema para avaliar as recomendações feitas. As possíveis ações a serem
+executadas pelo usuário estão listadas abaixo.
 
   - Pausar / Tocar música
 
-  - Passar / Voltar N músicas
+  - Passar / Voltar \(n\) músicas
 
   - Aumentar / Abaixar volume
 
@@ -1103,6 +1105,10 @@ demonstrado na Figura 12 o processo para realizar esse registro.
 Figura 12 Fluxo para realizar o registro e análise das ações executadas
 pelo usuário (próprio, 2020)
 
+As ações utilizadas, serão as apresentadas na seção 3.1.4, as quais
+serão capturadas através de eventos dos componentes da aplicação, e
+enviadas ao sistema, realizando sua avaliação.
+
 ### Como o trabalho vai validar se as ações do usuário condizem com o contexto?
 
 As ações do usuário são o que irão demonstrar o gosto ou desgosto do
@@ -1124,13 +1130,36 @@ ou não.
 
 ### Como o trabalho vai relacionar as músicas que o usuário gosta aos contextos?
 
-Como essa pergunta trata de uma relação estrutural do banco, será
+Dado que essa pergunta trata de uma relação estrutural do banco, será
 respondida no desenvolvimento desse trabalho, o qual será feito no
 próximo semestre.
 
 ### Como o trabalho vai classificar o contexto para apresentar para usuário?
 
-Texto
+O contexto obtido através da aplicação, será enviado para o sistema,
+gerando seu registro do que o usuário está vivendo no momento. Quando o
+sistema entender, que as ações do usuário não condizem com o contexto
+atual, será apresentado uma tela perguntando se há divergências no
+contexto da vida real e do entendido pelo sistema. Essa tela ira
+confirmar se os seguintes fatores considerados estão corretos.
+
+  - Clima
+
+  - Atividade
+
+  - Localização
+
+  - Grupo / Individual
+
+  - Humor
+
+  - Histórico de ações
+
+  - Músicas relacionadas ao contexto
+
+Desse modo o sistema validará com o usuário a sua interpretação do
+contexto atual, identificando certos problemas nos dados obtidos,
+garantindo uma maior precisão na avaliação do contexto.
 
 ### Como o trabalho vai recomendar novas músicas a partir da relação de contexto x música?
 
