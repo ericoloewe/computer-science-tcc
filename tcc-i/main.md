@@ -102,10 +102,21 @@ Lista de Abreviaturas e Siglas
 <tbody>
 <tr class="odd">
 <td><p>RecSys</p>
-<p>SVM</p></td>
+<p>SVM</p>
+<p>AUC</p>
+<p>RBF</p>
+<p>GPML</p>
+<p>GPR</p>
+<p>AIR</p>
+<p>SPTF</p></td>
 <td><p><em>Recommender Systems</em></p>
 <p><em>Support Vector Machine</em></p>
-<p><em>TODO</em></p></td>
+<p><em>Operating Characteristic Curve</em></p>
+<p><em>Radial Basis Function</em></p>
+<p><em>Gaussian Process for Machine Learning</em></p>
+<p><em>Gaussian Process Regression</em></p>
+<p><em>Activity-aware Intent Recommendation</em></p>
+<p>RecSys do Spotify</p></td>
 </tr>
 </tbody>
 </table>
@@ -352,7 +363,7 @@ revisão, elas são:
 
   - Sistemas de recomendação musical
 
-  - Context-aware (TODO: COLOCAR SIGNIFICADO)
+  - Context-aware (Cientes de contexto)
 
 Para realizar a busca dos trabalhos relacionados será utilizado o motor
 de busca da ACM (<https://dl.acm.org/>), o qual permite realizar
@@ -1200,6 +1211,16 @@ x contexto. A partir dele, será avaliado os n melhores scores e
 inseridos na lista de reprodução atual da aplicação, buscando
 aperfeiçoar, a experiencia do usuário ao ouvir suas músicas preferidas
 ao devido contexto.
+
+### Como o trabalho vai avaliar as recomendações feitas?
+
+Ao final, para realizar a avaliação das recomendações, será realizado um
+estudo em cima dos algoritmos de avaliação de resultados encontrados nos
+artigos revisados (AUC, *Root Mean Squared Error, Mean Reciprocal Rank*,
+...), estudo qual irá validar quais dos algoritmos se adequam melhor as
+necessidades do sistema.
+
+## roteiro
 
 # CONCLUSÃO
 
