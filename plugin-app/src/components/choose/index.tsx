@@ -18,16 +18,18 @@ export interface ChooseItem {
   selected?: boolean;
 }
 
-export function Choose({ items, searchLabel: textFieldLabel, onChoose, onChangeSearch, searchValue }: Props) {
+export function Choose({ items, searchLabel, onChoose, onChangeSearch, searchValue }: Props) {
   return (
     <div className="choose-component">
-      <TextField
-        label={textFieldLabel}
-        onChange={(e) => onChangeSearch && onChangeSearch(e.target.value)}
-        value={searchValue}
-      />
+      {!!searchLabel && (
+        <TextField
+          label={searchLabel}
+          onChange={(e) => onChangeSearch && onChangeSearch(e.target.value)}
+          value={searchValue}
+        />
+      )}
 
-      {!textFieldLabel || !!searchValue ? (
+      {!searchLabel || !!searchValue ? (
         <Paper className="paper">
           <List className="list" dense={false}>
             {items.map((ci) => (

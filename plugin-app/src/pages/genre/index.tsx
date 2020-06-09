@@ -6,10 +6,12 @@ import { useHistory } from "react-router-dom";
 
 import { Choose, ChooseItem } from "../../components/choose";
 import { Layout } from "../shared/layout";
-import { genreService, Genre } from "../../services/genre";
+import { genreService } from "../../services/genre";
+import { useEvents, EventType } from "../../contexts/event";
 
 export default function () {
   const history = useHistory();
+  const { save: saveEvent } = useEvents();
   const [searchText, setSearchText] = useState("");
   const [genders, setGenres] = useState([] as ChooseItem[]);
   const [selectedGendersMap, setSelectedGenders] = useState({} as { [key: string]: ChooseItem });
@@ -46,9 +48,11 @@ export default function () {
   }, [searchText]);
 
   async function saveAndGoHome() {
-    const gendersToSave = Object.keys(selectedGendersMap).map((k) => selectedGendersMap[k]);
-    await genreService.save(gendersToSave as Genre[]);
+    const genresToSave = Object.keys(selectedGendersMap)
+      .map((k) => selectedGendersMap[k].title)
+      .join(";");
 
+    await saveEvent(EventType.LIKED_GENRE, genresToSave);
     history.push(`/`);
   }
 

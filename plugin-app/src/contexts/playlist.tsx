@@ -22,7 +22,9 @@ const spotifyPlaylistsEndpoint = `${SpotifyUtil.getApiUrl()}/me/playlists`;
 const spotifyLoadPlaylistEndpoint = `${SpotifyUtil.getApiUrl()}/playlists`;
 
 export function PlaylistProvider(props: Props) {
-  const { id } = useUser();
+  const {
+    profile: { id },
+  } = useUser();
   const { requestService } = useAuth();
 
   async function addMusics(playlistId: string, musicsIds: string[]): Promise<void> {

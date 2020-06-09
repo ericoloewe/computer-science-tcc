@@ -1,7 +1,13 @@
+
 export interface SpotifyToken {
   accessToken: string;
   expiresInSeconds: number;
   tokenType: string;
+}
+
+export interface SpotifyPlayer {
+  device_id: string;
+  original: Spotify.SpotifyPlayer;
 }
 
 export class SpotifyUtil {
@@ -12,7 +18,9 @@ export class SpotifyUtil {
     "streaming",
     "user-library-read",
     "user-read-email",
+    "user-read-playback-state",
     "user-read-private",
+    "user-read-recently-played",
     "user-top-read",
   ];
 
@@ -33,6 +41,30 @@ export class SpotifyUtil {
     url.searchParams.set("scope", this.SCOPES.join(" "));
 
     return url.toString();
+  }
+
+  static createPlayer(accessToken: string): Promise<SpotifyPlayer> {
+    return new Promise((resolve, reject) => {
+      window.onSpotifyWebPlaybackSDKReady = () => {
+        const player = new Spotify.Player({
+          name: 'Spotify plugin',
+          getOAuthToken: cb => { cb(accessToken); }
+        });
+
+        // Error handling
+        player.addListener('initialization_error', ({ message }) => reject(message));
+        player.addListener('authentication_error', ({ message }) => reject(message));
+        player.addListener('account_error', ({ message }) => reject(message));
+        player.addListener('playback_error', ({ message }) => reject(message));
+        player.addListener('not_ready', ({ device_id }) => reject(`Device ID has gone offline ${device_id}`))
+
+        // Ready
+        player.addListener('ready', ({ device_id }) => resolve({ device_id, original: player }));
+
+        // Connect to the player!
+        player.connect();
+      };
+    })
   }
 
   static getApiUrl(): string {

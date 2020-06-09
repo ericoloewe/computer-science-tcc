@@ -10,7 +10,7 @@ import { StringUtil } from "../../utils/string";
 import { SearchAppBar } from "./search-app-bar";
 import { TimerUtil } from "../../utils/timer";
 import { useSearch } from "../../contexts/search";
-import { usePlaylist } from "../../contexts/playlist";
+import { useEvents, EventType } from "../../contexts/event";
 
 const debounce = TimerUtil.debounce(
   (searchText: string, searchMusicsOfTexts: Function) => searchMusicsOfTexts(searchText),
@@ -18,11 +18,9 @@ const debounce = TimerUtil.debounce(
 );
 
 export default function () {
-  let { playlistId: playlistIdParam } = useParams();
-  const playlistId = StringUtil.toString(playlistIdParam);
   const history = useHistory();
   let { searchMusic } = useSearch();
-  let { addMusics } = usePlaylist();
+  const { save: saveEvent } = useEvents();
   const [searchText, setSearchText] = useState("");
   const [selectedMusicsMap, setSelectedMusics] = useState({} as { [key: string]: string });
   const [musics, setMusics] = useState([] as ChooseItem[]);
@@ -30,8 +28,11 @@ export default function () {
   async function goBack() {
     const musicsToSave = Object.keys(selectedMusicsMap).map((k) => selectedMusicsMap[k]);
 
-    await addMusics(playlistId, musicsToSave);
-    history.goBack();
+    if (musicsToSave.length > 0) {
+      await saveEvent(EventType.LIKED_MUSIC, musicsToSave.join(";"));
+    }
+
+    history.push("/");
   }
 
   function chooseMusic(music: ChooseItem) {
@@ -63,7 +64,9 @@ export default function () {
   }, [selectedMusicsMap]);
 
   useEffect(() => {
-    debounce(searchText, searchMusicsOfTexts); // eslint-disable-next-line
+    if (!StringUtil.isEmpty(searchText)) {
+      debounce(searchText, searchMusicsOfTexts);
+    } // eslint-disable-next-line
   }, [searchText]);
 
   return (

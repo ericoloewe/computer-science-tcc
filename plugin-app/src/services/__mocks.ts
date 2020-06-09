@@ -149,6 +149,7 @@ export const playlistsMock: BasicPlaylist[] = [
 
 export const profileMock: User = {
   id: "lorem",
+  uri: "lorem",
   avatarSrc: "https://avatars2.githubusercontent.com/u/8793862?s=400&v=4",
   email: "mail@domain.com",
   link: "https://open.spotify.com/user/4i3jdhv6vubcjdpwsn38iv8u4",
