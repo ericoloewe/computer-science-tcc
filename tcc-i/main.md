@@ -20,11 +20,11 @@ apresentado como requisito parcial
 
 à obtenção do grau de Bacharel em
 
-Nome do Curso pela
+Ciência da computação pela
 
 Universidade Feevale
 
-Orientador: nome do professor orientador
+Orientador: Juliano Varella De Carvalho
 
 Novo Hamburgo
 
@@ -35,14 +35,9 @@ Agradecimentos
 Gostaria de agradecer a todos os que, de alguma maneira, contribuíram
 para a realização desse trabalho de conclusão, em especial:
 
-Aos amigos e às pessoas que convivem comigo diariamente, minha gratidão,
-pelo apoio emocional - nos períodos mais difíceis do trabalho.
-
-Enfim, os demais agradecimentos que o aluno desejar fazer.
-
-\* Folha de dedicatória ou de agradecimentos = elemento opcional. O
-texto fica na parte inferior da página, respeitando as margens de 2cm da
-borda direita e 8cm da borda esquerda da página (PRODANOV, 2003, p. 42).
+Ao meu professor orientador, a minha família, aos amigos e às pessoas
+que convivem comigo diariamente, minha gratidão, pelo apoio emocional -
+nos períodos mais difíceis do trabalho.
 
 Resumo
 
@@ -91,7 +86,7 @@ encontrados no motor de busca da ACM (próprio, 2020) 19](#_Ref40822509)
 28](#_Toc42382774)
 
 [Figura 8 Apresentação dos contextos utilizados no trabalho (próprio,
-2020) 34](#_Toc42382775)
+2020) 34](#_Ref42447869)
 
 Lista de Quadros
 
@@ -103,29 +98,28 @@ possua; (ii)❌ caso não possua; (iii)❓ caso não apresente ainda (próprio,
 
 Lista de Abreviaturas e Siglas
 
-| BSC     | Balanced Scorecard                                        |
-| ------- | --------------------------------------------------------- |
-| CAPF    | Custo Anual por Funcionário                               |
-| CAPT    | Custo Anual por Teclado                                   |
-| CAPU    | Custo Anual por Usuário                                   |
-| CEO     | Chief of Executive Office                                 |
-| CIA/FVG | Centro de Informática Aplicada da Fundação Getúlio Vargas |
-| CIO     | Chief of Information Office                               |
-| CO      | Contexto Organizacional                                   |
-| COBIT   | Control Objectives for Information and related Technology |
-| ERP     | Enterprise Resource Planning                              |
-| FCS     | Fatores Críticos de Sucesso                               |
-| FGV     | Fundação Getúlio Vargas                                   |
-| ISACA   | Information Systems Audit and Control Association         |
-| MIT     | Massachusetts Institute of Technology                     |
-| PEE     | Planejamento Estratégico Empresarial                      |
-| PETI    | Panejamento Estratégico da Tecnologia da Informação       |
-| RH      | Recursos Humanos                                          |
-| ROE     | Return On Expectation                                     |
-| ROI     | Return On Investiment                                     |
-| SI      | Sistemas de Informação                                    |
-| SLA     | Service Level Agreements                                  |
-| SLM     | Service Level Managements                                 |
+<table>
+<tbody>
+<tr class="odd">
+<td><p>RecSys</p>
+<p>SVM</p>
+<p>AUC</p>
+<p>RBF</p>
+<p>GPML</p>
+<p>GPR</p>
+<p>AIR</p>
+<p>SPTF</p></td>
+<td><p><em>Recommender Systems</em></p>
+<p><em>Support Vector Machine</em></p>
+<p><em>Operating Characteristic Curve</em></p>
+<p><em>Radial Basis Function</em></p>
+<p><em>Gaussian Process for Machine Learning</em></p>
+<p><em>Gaussian Process Regression</em></p>
+<p><em>Activity-aware Intent Recommendation</em></p>
+<p>RecSys do Spotify</p></td>
+</tr>
+</tbody>
+</table>
 
 Sumário
 
@@ -145,24 +139,49 @@ Sumário
 [2.4 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
 30](#funcionalidades-dos-trabalhos-investigados)
 
-[3 Modelagem do “Nome do trabalho” (TODO)
-33](#modelagem-do-nome-do-trabalho-todo)
+[2.5 Conclusões dos trabalhos revisados
+32](#conclusões-dos-trabalhos-revisados)
 
-[3.1 Contexto 33](#contexto)
+[3 Modelagem do “Nome do trabalho” (TODO) 34](#modelagem-do-dcrm)
+
+[3.1 Contexto 34](#contexto)
 
 [3.1.1 O que é o contexto comportamental?
-34](#o-que-é-o-contexto-comportamental)
+35](#o-que-é-o-contexto-comportamental)
 
-[3.1.2 O que é o contexto ambiente? 34](#o-que-é-o-contexto-ambiente)
+[3.1.2 O que é o contexto ambiente? 36](#o-que-é-o-contexto-ambiente)
 
 [3.1.3 Como será obtido os contextos?
-35](#como-será-obtido-os-contextos)
+37](#como-será-obtido-os-contextos)
 
-[3.2 Arquitetura do sistema 35](#arquitetura-do-sistema)
+[3.1.4 O que são as ações do usuário?
+38](#o-que-são-as-ações-do-usuário)
 
-[4 CONCLUSÃO 36](#conclusão)
+[3.2 Arquitetura do sistema 39](#arquitetura-do-sistema)
 
-[Referências Bibliográficas 37](#referências-bibliográficas)
+[3.2.1 Como o trabalho vai capturar as ações do usuário e enviá-las ao
+sistema?
+41](#como-o-trabalho-vai-capturar-as-ações-do-usuário-e-enviá-las-ao-sistema)
+
+[3.2.2 Como o trabalho vai validar se as ações do usuário condizem com o
+contexto?
+42](#como-o-trabalho-vai-validar-se-as-ações-do-usuário-condizem-com-o-contexto)
+
+[3.2.3 Como o trabalho vai relacionar as músicas que o usuário gosta aos
+contextos?
+43](#como-o-trabalho-vai-relacionar-as-músicas-que-o-usuário-gosta-aos-contextos)
+
+[3.2.4 Como o trabalho vai classificar o contexto para apresentar para
+usuário?
+43](#como-o-trabalho-vai-classificar-o-contexto-para-apresentar-para-usuário)
+
+[3.2.5 Como o trabalho vai recomendar novas músicas a partir da relação
+de contexto x música?
+43](#como-o-trabalho-vai-recomendar-novas-músicas-a-partir-da-relação-de-contexto-x-música)
+
+[4 CONCLUSÃO 45](#conclusão)
+
+[Referências Bibliográficas 46](#referências-bibliográficas)
 
 # Introdução
 
@@ -344,7 +363,7 @@ revisão, elas são:
 
   - Sistemas de recomendação musical
 
-  - Context-aware (TODO: COLOCAR SIGNIFICADO)
+  - Context-aware (Cientes de contexto)
 
 Para realizar a busca dos trabalhos relacionados será utilizado o motor
 de busca da ACM (<https://dl.acm.org/>), o qual permite realizar
@@ -389,8 +408,8 @@ ACM foram 150 trabalhos relacionados a *string* de busca.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
-de busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Figura - Motor avançado de
+busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
 cima da busca. Procurando trazer somente os trabalhos mais atuais
@@ -403,7 +422,7 @@ de trabalhos encontrados passou para 83.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
+<span id="_Ref40822631" class="anchor"></span>Figura - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Um dos principais motivos que levou essa revisão ser realizada através
@@ -415,7 +434,7 @@ conferências e eventos relacionados a área. (ACM RECSYS COMMUNITY.,
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
+<span id="_Ref40822641" class="anchor"></span>Figura - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
 
 ## ETAPAS DA REVISÃO DOS TRABALHOS
@@ -424,9 +443,9 @@ Com a busca realizada no dia 07/05/20, no motor da ACM, a partir da
 *string* de busca foram encontrados 83 trabalhos, sendo eles: 23 do tipo
 *journal* e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
-realizadas para filtrar os trabalhos encontrados no motor de busca da
-ACM (próprio, 2020)
+<span id="_Ref40822414" class="anchor"></span>Figura - Etapas realizadas
+para filtrar os trabalhos encontrados no motor de busca da ACM (próprio,
+2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado em
 3 etapas (demonstradas na Figura 4), que visam direcionar esta pesquisa
@@ -446,7 +465,7 @@ quantidade de artigos encontrados.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
+<span id="_Ref40822493" class="anchor"></span>Figura - Filtro em cima
 dos trabalhos selecionados através do resumo (próprio, 2020)
 
 ###  Trabalhos selecionados
@@ -455,7 +474,7 @@ O resultado do procedimento de filtro (apresentado na Figura 6) foi de 4
 trabalhos relacionados ao objetivo descrito no protocolo de revisão
 desse trabalho.
 
-<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
+<span id="_Ref40822509" class="anchor"></span>Figura - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
@@ -501,10 +520,10 @@ que foi desenvolvido e no fim, foi respondido as seguintes perguntas:
 
 #### The New Challenges when Modeling Context through Diversity over Time in Recommender Systems
 
-Foi realizado a revisão do trabalho e então verificado que o trabalho
-não apresenta dados e técnicas suficientes para serem consideradas
-nesse trabalho. Pois todas as informações do sistema desenvolvido estão
-em outros artigos citados por esse. Então dado a falta de informações
+Foi realizada a revisão do trabalho e então verificado que ele não
+apresenta dados e técnicas suficientes para serem consideradas nessa
+pesquisa, pois todas as informações do sistema desenvolvido estão em
+outros artigos citados por esse. Dada a falta de informações
 apresentadas nesse trabalho, não serão respondidas as questões
 pré-estabelecidas anteriormente.
 
@@ -810,7 +829,7 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são:
 
-<span id="_Toc42382774" class="anchor"></span>Figura 7 Fatores da
+<span id="_Toc42382774" class="anchor"></span>Figura Fatores da
 preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
@@ -839,7 +858,7 @@ Não tiveram outros resultados apresentados.
 Para relacionar os trabalhos revisados, foi criada uma tabela contendo
 as funcionalidades encontradas nos artigos.
 
-<span id="_Ref42381546" class="anchor"></span>Quadro 1 Relação das
+<span id="_Ref42381546" class="anchor"></span>Quadro Relação das
 funcionalidades desenvolvidas em cada artigo revisado. Acima é listado
 os trabalhos revisados, e a esquerda as funcionalidades encontradas. Foi
 utilizado 3 símbolos: (i) ✔ caso possua; (ii)❌ caso não possua; (iii)❓
@@ -856,42 +875,51 @@ caso não apresente ainda (próprio, 2020)
 | Realiza recomendações do tipo dinâmicas?                                | ❌                                                                      | ❌                                                                               | ❌                                                                            | ✔                       |
 | Utiliza da técnica de avaliação *operating characteristic curve* (AUC)? | ❌                                                                      | ✔                                                                               | ✔                                                                            | ❓                       |
 | Utiliza do *F-measure?*                                                 | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
-| *Utiliza do Root Mean Squared Error?*                                   |                                                                        | ❌                                                                               | ❌                                                                            | ❓                       |
+| Utiliza do *Root Mean Squared Error*?                                   |                                                                        | ❌                                                                               | ❌                                                                            | ❓                       |
 | Utiliza a métrica do *Mean Reciprocal Rank?*                            | ❌                                                                      | ✔                                                                               | ❌                                                                            | ❓                       |
-| Utiliza a métrica do coeficiente de correlação de Kendall               | ❌                                                                      | ✔                                                                               | ❌                                                                            | ❓                       |
+| Utiliza a métrica do coeficiente de correlação de Kendall?              | ❌                                                                      | ✔                                                                               | ❌                                                                            | ❓                       |
 | Utiliza do algoritmo *support vector machine* (SVM) para classificação? | ❌                                                                      | ✔                                                                               | ✔                                                                            | ❓                       |
 | Utiliza do algoritmo *radial basis function* (RBF) para classificação?  | ❌                                                                      | ❌                                                                               | ✔                                                                            | ❓                       |
-| Utiliza o algoritmo *Random Forest* para recomendação*?*                | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
-| Utiliza o algoritmo *Gradient Boosting* para recomendação*?*            | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
+| Utiliza o algoritmo *Random Forest* para classificação*?*               | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
+| Utiliza o algoritmo *Gradient Boosting* para classificação*?*           | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
 
 No Quadro 1, foram apresentadas as relações das funcionalidades dos 3
 artigos revisados e desse trabalho, relações quais podem ser utilizadas
-no desenvolvimento do sistema de recomendação. Nas últimas linhas, foram
-colocados pontos de interrogação, devido ao trabalho estar em
-desenvolvimento e não se ter conhecimento das técnicas que serão
-utilizadas.
+no desenvolvimento do sistema de recomendação. Na última coluna do
+Quadro 1 foram colocados pontos de interrogação, devido ao trabalho
+estar em desenvolvimento e não se ter conhecimento das técnicas que
+serão utilizadas.
 
-# Modelagem do “Nome do trabalho” (TODO)
+## Conclusões dos trabalhos revisados
 
-Recomendação dinâmica utilizando o feedback do usuário do contexto
-atual.
+Após a revisão dos 4 trabalhos, foi identificado que nenhum deles
+apresentou o algoritmo utilizado na recomendação. Foram apresentados
+algoritmos de classificação (SVM, RBF, *Random Forest, ...*), de
+avaliação de resultados (AUC, *Root Mean Squared Error, Mean
+Reciprocal Rank*, ...), porem em nenhum momento foi apresentado
+algoritmos de recomendação como algoritmos de *matrix factorization*
+(SVD, *Neighbourhood* SVD, *Deep-Learning* MF, ...) ou algoritmos de
+*tensor factorization* (*Tensor Decomposition*, *Nonnegative Tensor
+Factorization*, ...), os quais são os algoritmos utilizados para
+realizar a recomendações nos RecSys.
 
-Responder as perguntas:
+# Modelagem do “DCRM”
 
-\- como o trabalho vai capturar as ações do usuário e classifica-las
-como contexto?
+A partir da revisão feita, foi possível conhecer diversos tipos de
+sistemas e modelos que utilizam do contexto para realizar as
+recomendações musicais, tornando possível entender certas lacunas que
+não foram analisadas ou compreendidas nessa área de pesquisa.
 
-\- como o trabalho vai validar se as ações do usuário condiz com o
-contexto?
+![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-05T02%3A05%3A36.505Z%22%2C%22pageId%22%3A%22c8m2vXLdxm1UY1WbSgt9%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image6.png)
 
-\- como o trabalho vai relacionar as músicas que o usuário gosta aos
-contextos?
+Figura Modelo desenvolvido para demonstrar a recomendação dinâmica
+(próprio, 2020)
 
-\- como o trabalho vai classificar o contexto para apresentar para
-usuário?
-
-\- como o trabalho vai recomendar novas musicas a partir da relação de
-contexto x musica?
+Com isso, foi possível entender e desenvolver um modelo de sistemas de
+recomendação chamado DCRM (*Dynamic and Contextual Recommendations of
+Music*), que utiliza de uma análise recorrente do contexto, para
+realizar as recomendações dinâmicas às mudanças do contexto, esse modelo
+ele será apresentado nessa seção do trabalho.
 
 ## Contexto
 
@@ -909,66 +937,315 @@ a definição das “circunstâncias que levaram a certos fatos ou
 situações”, é possível auxiliar as recomendações, aumentando o
 número de dados disponíveis para realizar a classificação e filtro.
 
-<span id="_Toc42382775" class="anchor"></span>Figura 8 Apresentação dos
+<span id="_Ref42447869" class="anchor"></span>Figura Apresentação dos
 contextos utilizados no trabalho (próprio, 2020)
+
+É apresentado na Figura 9, uma visão macro dos contextos que serão
+considerados nesse trabalho. Nas próximas seções, será detalhado melhor
+cada item dessa figura, além de, apresentar o processo desenvolvido para
+capturar cada contexto.
 
 ### O que é o contexto comportamental?
 
 Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
-contexto pode ser tido por:
+comportamento pode ser tido por:
 
 > Qualquer ação ou reação do organismo ou parte dele
 
 Unindo a definição do contexto com a definição acima, foi realizado um
 estudo das possíveis ações a serem registradas em um sistema, as quais,
 seria realizado um estudo, para gerar uma classificação e no futuro,
-auxiliar na recomendação musical.
+auxiliar na recomendação musical. Esse estudo trouxe a seguinte lista de
+ações:
 
-será utilizado:
+  - Pausar / Tocar música
 
-Horário,
+  - Passar / Voltar \(n\) músicas
 
-Humor,
+  - Aumentar / Abaixar o volume
 
-Atividade,
+  - Escolher música / artista / gênero
 
-ações sequenciais.
+  - Abrir / Fechar o app
 
-Quantidade de músicas escutadas no dia (tempo)
+  - Definir tempo da música
+
+  - Definir a atividade
+
+  - Definir o humor
+
+  - Quantidade de músicas escutadas no dia (tempo)
 
 ### O que é o contexto ambiente?
 
-Será utilizado:
+Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
+ambiente pode ser tido por:
 
-Localização
+> Conjunto de condições físicas, biológicas e químicas que rodeiam os
+> seres vivos e as coisas
 
-clima
+Com essa definição, foi estudado sensores e informações que pudessem
+representar essas condições. E desse estudo, foi encontrado 3 possíveis
+contextos que podem ser representados na aplicação, que são:
+Localização; Clima; Reprodução musical em grupo / individual.
 
 ### Como será obtido os contextos?
 
-A partir da captura de dados de uma app.
+Os contextos do sistemas serão obtidos, a partir da captura de dados de
+sensores, *API’s* e eventos de um app. A lista de ações, pode ser obtida
+através das possíveis ações a serem executadas pelo usuário demonstradas
+na Figura 10.
 
-Ele irá obter dados
+![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A38%3A01.600Z%22%2C%22pageId%22%3A%22CdkkQKYaVUET6wdkgj3H%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image7.png)
 
-implicitamente
+Figura Lista de ações que auxiliarão o entendimento do contexto de
+ambiente e comportamento do usuário do aplicação (próprio, 2020)
 
-\- localização
+São poucas as ações que auxiliam no entendimento do contexto que podem
+ser obtidas implicitamente, isso devido as limitações dos sensores e
+dados disponíveis na aplicação desenvolvida, por isso, o sistema
+desenvolvido nesse trabalho, contara com informações disposta de maneira
+explicita e implícita, sendo elas:
 
-\- ações
+##### Informações adquiridas de maneira implícita: 
 
-\- tempo
+  - localização
 
-\- clima
+  - ações em cima dos componentes do app
 
-explicitamente.
+  - tempo
 
-\- localização
+  - clima
 
-\- humor
+  - músicas / gênero / artistas preferidas (os)
 
-\- atividade
+##### Informações adquiridas de maneira explicita: 
+
+  - localização
+
+  - humor
+
+  - atividade
+
+  - músicas / gênero / artistas preferidas (os)
+
+### O que são as ações do usuário?
+
+As ações do usuário trazem diversas informações, referentes ao contexto
+que ele está vivendo, elas auxiliam no entendimento do seu contexto e na
+validação da acuracidade das recomendações feitas. São elas que irão
+demonstrar ao sistema, o gosto ou desgosto do usuário, em cima das
+músicas recomendadas. Cada ação terá um nível de importância, o qual
+será utilizado avaliação de sua captura, antes de serem enviadas ao
+sistema para avaliar as recomendações feitas. As possíveis ações a serem
+executadas pelo usuário estão listadas abaixo.
+
+  - Pausar / Tocar música
+
+  - Passar / Voltar \(n\) músicas
+
+  - Aumentar / Abaixar volume
+
+  - Escolher música / artista / gênero
+
+  - Abrir / Fechar o app
+
+  - Definir tempo da música
+
+  - Definir atividade
+
+  - Definir humor
+
+  - Definir / Trocar localização
+
+  - Definir grupo / individual
 
 ## Arquitetura do sistema
+
+Para validar o modelo de sistema de recomendação, será desenvolvido uma
+aplicação, a qual ira ser distribuída aos usuários, que participarem do
+questionário, feito para obter informações sobre os usuários. As etapas
+do desenvolvimento desse sistema foram apresentadas na Figura 11.
+
+Figura Etapas do desenvolvimento do sistema de recomendação musical
+(próprio, 2020)
+
+As perguntas colocadas no questionário, serão voltadas a conhecer melhor
+os usuários que utilizarão o sistema, sendo assim, será colocado
+perguntas que entendam suas preferencias, atividades, entre outros.
+Essas perguntas são:
+
+##### Você acredita que as recomendações musicais realizadas via software poderiam ser melhoradas?
+
+##### Você acredita que o contexto poderia melhorar essas recomendações? 
+
+##### Você acredita que as mudanças de contexto acontecem frequentemente?
+
+##### Em quais atividades costuma ouvir música?
+
+##### Em quais lugares costuma ouvir músicas?
+
+##### Com quais humores você costuma ouvir música?
+
+##### Das condições abaixo, quais acredita que deva influenciar mais na música que gostaria de ouvir?
+
+  - Humor
+
+  - Atividades
+
+  - Localização
+
+  - Clima
+
+  - Tempo
+
+  - Grupo / Individual
+
+  - Outro
+
+##### Das ações abaixo, quais acredita que deva demonstrar mais o desgosto ou gosto de uma música?
+
+  - Pausar / Tocar música
+
+  - Passar / Voltar N músicas
+
+  - Aumentar / Abaixar volume
+
+  - Escolher música / artista / gênero
+
+  - Abrir / Fechar o app
+
+  - Definir tempo da música
+
+  - Outra
+
+##### As músicas que você escuta sozinho, são diferentes das que escuta com os amigos?
+
+##### Quanto tempo por dia você dedica para escutar música?
+
+##### Quais são os gêneros musicais que gosta de escutar?
+
+##### Gostaria de participar de uma pesquisa que visa melhorar a recomendação musical?
+
+##### Dicas e sugestões?
+
+### Como o trabalho vai capturar as ações do usuário e enviá-las ao sistema?
+
+A partir do momento que o usuário utilizar a aplicação, será registrado
+suas ações, através de eventos disponíveis em seus componentes, é
+demonstrado na Figura 12 o processo para realizar esse registro.
+
+![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A48%3A39.750Z%22%2C%22pageId%22%3A%22OW\_eq1zldgSTVgG6IYEs%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image8.png)
+
+Figura Fluxo para realizar o registro e análise das ações executadas
+pelo usuário (próprio, 2020)
+
+As ações utilizadas, serão as apresentadas na seção 3.1.4, as quais
+serão capturadas através de eventos dos componentes da aplicação, e
+enviadas ao sistema, realizando sua avaliação.
+
+### Como o trabalho vai validar se as ações do usuário condizem com o contexto?
+
+As ações do usuário são o que irão demonstrar o gosto ou desgosto do
+usuário, em cima das músicas recomendadas. A partir do questionário
+realizado, será possível entender melhor os usuários que irão utilizar a
+aplicação desenvolvida. E com isso, desenvolver a avaliação da
+importância de uma ação em cima do contexto.
+
+![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-08T00%3A09%3A10.073Z%22%2C%22pageId%22%3A%22Su-HV9\_zTKp8CvkJRCf5%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image9.png)
+
+Figura Fluxo feito para avaliar se as ações condizem com o contexto
+(próprio, 2020)
+
+A Figura 13 apresenta o processo do sistema desde o momento que ira
+receber as ações e o contexto atual do usuário, até sua última etapa que
+é retornar ao app com a informação se as ações do usuário estão
+indicando para o sistema que sua interpretação do contexto está correta
+ou não.
+
+### Como o trabalho vai relacionar as músicas que o usuário gosta aos contextos?
+
+Dado que essa pergunta trata de uma relação estrutural do banco, será
+respondida no desenvolvimento desse trabalho, o qual será feito no
+próximo semestre.
+
+### Como o trabalho vai classificar o contexto para apresentar para usuário?
+
+O contexto obtido através da aplicação, será enviado para o sistema,
+gerando seu registro do que o usuário está vivendo no momento. Quando o
+sistema entender, que as ações do usuário não condizem com o contexto
+atual, será apresentado uma tela perguntando se há divergências no
+contexto da vida real e do entendido pelo sistema. Essa tela ira
+confirmar se os seguintes fatores considerados estão corretos.
+
+  - Clima
+
+  - Atividade
+
+  - Localização
+
+  - Grupo / Individual
+
+  - Humor
+
+  - Histórico de ações
+
+  - Músicas relacionadas ao contexto
+
+Desse modo o sistema validará com o usuário a sua interpretação do
+contexto atual, identificando certos problemas nos dados obtidos,
+garantindo uma maior precisão na avaliação do contexto.
+
+### Como o trabalho vai recomendar novas músicas a partir da relação de contexto x música?
+
+Após ser feito a identificação do contexto através da aplicação, será
+realizado sua classificação utilizando os algoritmos estudados nos
+artigos revisados (SVM, RBF, *Random Forest*, ...), e somente então,
+será realizado a recomendação musical, através dos algoritmos de
+*matrix* e *tensor factorization* (Figura 14).
+
+Figura Etapas do processo para realizar a recomendação musical
+
+Com os algoritmos de recomendação, será gerado um score para cada música
+x contexto. A partir dele, será avaliado os n melhores scores e
+inseridos na lista de reprodução atual da aplicação, buscando
+aperfeiçoar, a experiencia do usuário ao ouvir suas músicas preferidas
+ao devido contexto.
+
+### Como o trabalho vai avaliar as recomendações feitas?
+
+Ao final, para realizar a avaliação das recomendações, será realizado um
+estudo em cima dos algoritmos de avaliação de resultados encontrados nos
+artigos revisados (AUC, *Root Mean Squared Error, Mean Reciprocal Rank*,
+...), estudo qual irá validar quais dos algoritmos se adequam melhor as
+necessidades do sistema.
+
+## roteiro
+
+Para desenvolver o modelo e o sistema de recomendação musical, será
+passado as perguntas do questionário para um formulário do Google Drive,
+o qual será distribuído em diversos meios de comunicação. Nele, conterá
+ao final um campo para o usuário preencher seu e-mail caso deseja
+participar do teste do sistema DCRM, o qual será utilizado no futuro
+para o envio de um convite para utilizar a aplicação desenvolvida.
+
+A aplicação desenvolvida é capaz de salvar as ações dos usuários no
+aplicativo, e diversas outras informações relacionadas a ele. Desses
+dados, será gerado uma base de teste, a qual será utilizada para um
+estudo dos algoritmos de classificação e recomendação levantados nesse
+trabalho.
+
+Com o conhecimento dos algoritmos que serão utilizados, eles serão
+aplicados ao sistema de recomendação, e será realizado uma integração do
+sistema com a aplicação. Essa integração irá colocar em pratica o modelo
+dinâmico desenvolvido. E aí então, será retornado um e-mail aos usuários
+da base, pedindo para realizarem testes na nova funcionalidade da
+aplicação.
+
+No momento em que for realizado as recomendações, será solicitado um
+score como avaliação da recomendação, e esse score será utilizado no
+futuro para apresentar os resultados nesse trabalho do ganho das
+recomendações dinâmicas.
 
 # CONCLUSÃO
 
@@ -986,20 +1263,20 @@ ACM. **Advanced Search**. Disponível em:
 \<https://dl.acm.org/search/advanced\>. Acesso em: 5 maio. 2020. ACM
 RECSYS COMMUNITY. **RecSys – ACM Recommender Systems**. Disponível em:
 \<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. BHATNAGAR, V.
-**Collaborative filtering using data mining and analysis**. \[s.l:
-s.n.\]. BORJA, K.; DIERINGER, S. Streaming or stealing? The
-complementary features between music streaming and music piracy.
-**Journal of Retailing and Consumer Services**, v. 32, p. 86–95, 2016.
-DIETMAR, J. et al. **Recommendation system -An Introduction**. \[s.l:
-s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário |
-Michaelis On-line**. Disponível em: \<https://michaelis.uol.com.br/\>.
-Acesso em: 6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**.
-\[s.l.\] MIT Press, 2019. FALK, K. **Practical Recommender Systems**.
-\[s.l: s.n.\]. IFPI. **IFPI Global Music Report 2019**. Disponível em:
+Collaborative filtering using data mining and analysis. \[s.l: s.n.\].
+BORJA, K.; DIERINGER, S. Streaming or stealing? The complementary
+features between music streaming and music piracy. **Journal of
+Retailing and Consumer Services**, v. 32, p. 86–95, 2016. DIETMAR, J. et
+al. **Recommendation system -An Introduction**. \[s.l: s.n.\]. v.
+91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário | Michaelis
+On-line**. Disponível em: \<https://michaelis.uol.com.br/\>. Acesso em:
+6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**. \[s.l.\] MIT
+Press, 2019. FALK, K. Practical Recommender Systems. \[s.l: s.n.\].
+IFPI. **IFPI Global Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. LUINI, B.
 J. R.; WHITMAN, A. E.; DATE, P. **Streaming Audio: The FezGuys’ Guide**.
-\[s.l: s.n.\]. MURARO, R. M. **Os avanços tecnológicos e o futuro da
-humanidade**Querendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
+\[s.l: s.n.\]. MURARO, R. M. Os avanços tecnológicos e o futuro da
+humanidadeQuerendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
 \[s.l.\] O’Reilly Media, 2018. v. 134RESNICK, PAUL AND VARIAN, H. R.
 Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
 56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
