@@ -4,12 +4,12 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
-import { artistService } from "../../services/artist";
 import { Choose, ChooseItem } from "../../components/choose";
 import { Layout } from "../shared/layout";
 import { StringUtil } from "../../utils/string";
 import { TimerUtil } from "../../utils/timer";
 import { useSearch } from "../../contexts/search";
+import { EventType, useEvents } from "../../contexts/event";
 
 const debounce = TimerUtil.debounce(
   (searchText: string, searchArtistsOfTexts: Function) => searchArtistsOfTexts(searchText),
@@ -18,6 +18,7 @@ const debounce = TimerUtil.debounce(
 
 export default function () {
   const history = useHistory();
+  const { save: saveEvent } = useEvents();
   const { searchArtists } = useSearch();
   const [searchText, setSearchText] = useState("");
   const [artists, setArtists] = useState([] as ChooseItem[]);
@@ -62,9 +63,11 @@ export default function () {
   }, [searchText]);
 
   async function saveAndGoHome() {
-    const artistsToSave = Object.keys(selectedArtistsMap).map((k) => selectedArtistsMap[k]);
-    await artistService.save(artistsToSave.map((a) => a.id));
+    const genresToSave = Object.keys(selectedArtistsMap)
+      .map((k) => selectedArtistsMap[k].id)
+      .join(";");
 
+    await saveEvent(EventType.LIKED_ARTIST, genresToSave);
     history.push(`/`);
   }
 

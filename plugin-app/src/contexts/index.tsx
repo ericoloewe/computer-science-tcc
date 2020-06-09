@@ -4,7 +4,9 @@ import { AuthProvider } from "./auth";
 import { UserProvider } from "./user";
 import { SearchProvider } from "./search";
 import { PlaylistProvider } from "./playlist";
-import { MusicProvider } from "./music";
+import { PlayerProvider } from "./player";
+import { EventsProvider } from "./event";
+import { FeelingProvider } from "./feeling";
 
 interface Props {
   children: JSX.Element;
@@ -15,9 +17,13 @@ export function AppProviders({ children }: Props) {
     <AuthProvider>
       <UserProvider>
         <PlaylistProvider>
-          <MusicProvider>
-            <SearchProvider>{children}</SearchProvider>
-          </MusicProvider>
+          <PlayerProvider>
+            <EventsProvider>
+              <FeelingProvider>
+                <SearchProvider>{children}</SearchProvider>
+              </FeelingProvider>
+            </EventsProvider>
+          </PlayerProvider>
         </PlaylistProvider>
       </UserProvider>
     </AuthProvider>

@@ -1,61 +1,71 @@
 import "./style.scss";
 
 import React, { useState, useEffect } from "react";
-import { Fab, MenuItem } from "@material-ui/core";
-import { Favorite as FavoriteIcon, Add as AddIcon, FavoriteBorder as FavoriteBorderIcon } from "@material-ui/icons";
-import { Link, useHistory } from "react-router-dom";
+import { MenuItem, Fab } from "@material-ui/core";
 
-import { ChooseWithActions, ChooseItem } from "../../components/choose-with-actions";
 import { Layout } from "../shared/layout";
-import { usePlaylist } from "../../contexts/playlist";
-
-function PlaylistLink({ item, children }: { item: ChooseItem; children: any }) {
-  return <Link to={`/playlist/${item.id}/feeling`}>{children}</Link>;
-}
+import { MusicDetails } from "./music-details";
+import { MusicControl } from "./music-control";
+import { SpotifyDevice } from "../../@types/spotify";
+import { usePlayer } from "../../contexts/player";
+import { useUser } from "../../contexts/user";
+import { DeviceList } from "./device-list";
+import { Loader } from "../../components/loader";
+import { ContextInfo } from "./context-info";
+import { Add as AddIcon } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 export default function () {
-  const { loadAll } = usePlaylist();
-  const history = useHistory();
-  const [playlists, setPlaylists] = useState([] as ChooseItem[]);
+  const { isPlayerReady, isPluginPlayerActive, transferUserPlaybackToPlugin } = usePlayer();
+  const { getAvailableDevices } = useUser();
+  const [devices, setDevices] = useState<SpotifyDevice[]>([]);
+  const [isMusicDetailsOpen, setOpenMusicDetails] = useState(true);
 
   async function fetchData() {
-    const playlists = await loadAll();
+    const devices = await getAvailableDevices();
 
-    setPlaylists(playlists);
+    setDevices(devices);
   }
 
-  async function logout() {
-    history.push(`/logout`);
+  async function setPlaybackToPlugin() {
+    await transferUserPlaybackToPlugin();
   }
 
   useEffect(() => {
-    fetchData(); // eslint-disable-next-line
-  }, []);
+    if (isPlayerReady) fetchData(); // eslint-disable-next-line
+  }, [isPlayerReady]);
 
   return (
-    <Layout className="home-page" pageTitle="Playlists" menuItems={CustomMenu(fetchData, logout)}>
-      <ChooseWithActions
-        items={playlists}
-        actionIcon={<FavoriteBorderIcon />}
-        selectedActionIcon={<FavoriteIcon />}
-        linkComponent={PlaylistLink}
-      />
-      <Link to="/playlist/new">
-        <Fab className="new-playlist-button" color="primary" aria-label="add">
-          <AddIcon />
-        </Fab>
-      </Link>
+    <Layout className="home-page" pageTitle="Reprodução de musicas" menuItems={CustomMenu(fetchData)}>
+      {isPlayerReady ? (
+        isPluginPlayerActive ? (
+          isMusicDetailsOpen ? (
+            <MusicDetails onExpandClick={() => setOpenMusicDetails(false)} />
+          ) : (
+            <>
+              <MusicControl />
+              <ContextInfo />
+              <Link to="/new-context">
+                <Fab className="new-button" color="primary" aria-label="add">
+                  <AddIcon />
+                </Fab>
+              </Link>
+            </>
+          )
+        ) : (
+          <DeviceList devices={devices} onAccept={setPlaybackToPlugin} />
+        )
+      ) : (
+        <Loader />
+      )}
     </Layout>
   );
 }
 
-function CustomMenu(refresh: () => Promise<void>, logout: () => Promise<void>) {
+function CustomMenu(refresh: () => Promise<void>) {
   return [
     <MenuItem key="refresh" onClick={() => refresh()}>
       Refresh
-    </MenuItem>,
-    <MenuItem key="logout" onClick={() => logout()}>
-      Logout
     </MenuItem>,
   ];
 }

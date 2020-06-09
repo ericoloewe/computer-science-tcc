@@ -14,10 +14,9 @@ const LoginRedirectSpotify = React.lazy(() => import("./pages/login-redirect-spo
 const Logout = React.lazy(() => import("./pages/logout"));
 const Artists = React.lazy(() => import("./pages/artists"));
 const Gender = React.lazy(() => import("./pages/genre"));
-const Playlist = React.lazy(() => import("./pages/playlist"));
-const PlaylistNew = React.lazy(() => import("./pages/playlist-new"));
-const PlaylistFeeling = React.lazy(() => import("./pages/playlist-feeling"));
-const PlaylistMusicSearch = React.lazy(() => import("./pages/playlist-music-search"));
+const Feeling = React.lazy(() => import("./pages/feeling"));
+const MusicSearch = React.lazy(() => import("./pages/music-search"));
+const NewContext = React.lazy(() => import("./pages/new-context"));
 
 ReactDOM.render(
   <StrictMode>
@@ -25,22 +24,19 @@ ReactDOM.render(
       <AppProviders>
         <BrowserRouter>
           <Switch>
-            <PrivateRoute exact={true} path="/playlist/new">
-              <PlaylistNew />
+            <PrivateRoute exact path="/new-context">
+              <NewContext />
             </PrivateRoute>
-            <PrivateRoute path="/playlist/:playlistId/feeling">
-              <PlaylistFeeling />
+            <PrivateRoute path="/new-context/feeling">
+              <Feeling />
             </PrivateRoute>
-            <PrivateRoute path="/playlist/:playlistId/music-search">
-              <PlaylistMusicSearch />
+            <PrivateRoute path="/new-context/music-search">
+              <MusicSearch />
             </PrivateRoute>
-            <PrivateRoute path="/playlist/:playlistId">
-              <Playlist />
-            </PrivateRoute>
-            <PrivateRoute path="/gender">
+            <PrivateRoute path="/new-context/gender">
               <Gender />
             </PrivateRoute>
-            <PrivateRoute path="/artists">
+            <PrivateRoute path="/new-context/artists">
               <Artists />
             </PrivateRoute>
             <NonAuthRoute path="/login">

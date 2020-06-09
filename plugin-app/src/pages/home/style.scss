@@ -1,10 +1,75 @@
 .home-page {
   position: relative;
+  display: flex;
   flex: 1;
+  flex-direction: column;
 
-  .new-playlist-button {
+  .new-button {
     position: absolute;
     right: 16px;
     bottom: 16px;
+  }
+}
+
+.device-list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  > .button {
+    align-self: center;
+  }
+}
+
+.music-control {
+  margin-top: 20px;
+}
+
+.music-details-component {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+
+  > .expand-more {
+    align-self: flex-start;
+  }
+
+  > .feelings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    > .like-to-listen {
+      margin-top: 20px;
+    }
+  }
+
+  > .album {
+    align-items: center;
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+
+    > .image {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+
+  > .title-and-description,
+  > .slider,
+  > .feelings {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.choose-with-actions-component {
+  > .paper {
+    margin-top: 10px;
+    max-height: 70vh;
   }
 }

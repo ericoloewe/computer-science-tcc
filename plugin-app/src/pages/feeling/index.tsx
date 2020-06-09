@@ -9,11 +9,13 @@ import { feelingService } from "../../services/feeling";
 import { Layout } from "../shared/layout";
 import { playlistService } from "../../services/playlist";
 import { StringUtil } from "../../utils/string";
+import { useEvents, EventType } from "../../contexts/event";
+import { useFeeling } from "../../contexts/feeling";
 
 export default function () {
-  let { playlistId: playlistIdParam } = useParams();
-  const playlistId = StringUtil.toString(playlistIdParam);
   const history = useHistory();
+  const { search } = useFeeling();
+  const { save: saveEvent } = useEvents();
   const [searchText, setSearchText] = useState("");
   const [feelings, setFeelings] = useState([] as ChooseItem[]);
   const [selectedFeelingsMap, setSelectedFeelings] = useState({} as { [key: string]: ChooseItem });
@@ -35,10 +37,11 @@ export default function () {
   }
 
   async function searchFeelingsOfTexts(text: string) {
-    const feelings = await feelingService.search(text);
+    const feelings = await search(text);
+    const parsedFeelings = feelings.map((f) => ({ id: f.id, title: f.name }));
 
-    setFeelings([...feelings]);
-    markSelectedFeelings(feelings);
+    setFeelings([...parsedFeelings]);
+    markSelectedFeelings(parsedFeelings);
   }
 
   useEffect(() => {
@@ -50,12 +53,13 @@ export default function () {
   }, [searchText]);
 
   async function saveAndGoToPlaylist() {
-    await playlistService.saveFeelings(
-      playlistId,
-      feelings.filter((f) => f.selected)
-    );
+    const feelingsToSave = feelings
+      .filter((f) => f.selected)
+      .map((f) => f.title.toLowerCase())
+      .join(";");
 
-    history.push(`/playlist/${playlistId}`);
+    await saveEvent(EventType.CHOOSE_FEELING, feelingsToSave);
+    history.push(`/`);
   }
 
   return (
