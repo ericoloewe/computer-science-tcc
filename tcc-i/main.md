@@ -1222,6 +1222,31 @@ necessidades do sistema.
 
 ## roteiro
 
+Para desenvolver o modelo e o sistema de recomendação musical, será
+passado as perguntas do questionário para um formulário do Google Drive,
+o qual será distribuído em diversos meios de comunicação. Nele, conterá
+ao final um campo para o usuário preencher seu e-mail caso deseja
+participar do teste do sistema DCRM, o qual será utilizado no futuro
+para o envio de um convite para utilizar a aplicação desenvolvida.
+
+A aplicação desenvolvida é capaz de salvar as ações dos usuários no
+aplicativo, e diversas outras informações relacionadas a ele. Desses
+dados, será gerado uma base de teste, a qual será utilizada para um
+estudo dos algoritmos de classificação e recomendação levantados nesse
+trabalho.
+
+Com o conhecimento dos algoritmos que serão utilizados, eles serão
+aplicados ao sistema de recomendação, e será realizado uma integração do
+sistema com a aplicação. Essa integração irá colocar em pratica o modelo
+dinâmico desenvolvido. E aí então, será retornado um e-mail aos usuários
+da base, pedindo para realizarem testes na nova funcionalidade da
+aplicação.
+
+No momento em que for realizado as recomendações, será solicitado um
+score como avaliação da recomendação, e esse score será utilizado no
+futuro para apresentar os resultados nesse trabalho do ganho das
+recomendações dinâmicas.
+
 # CONCLUSÃO
 
 Nesse trabalho foi realizado uma revisão em cima dos trabalhos da ACM,
