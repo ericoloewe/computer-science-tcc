@@ -1076,11 +1076,29 @@ os usuários que utilizarão o sistema, sendo assim, será colocado
 perguntas que entendam suas preferencias, atividades, entre outros.
 Essas perguntas são:
 
-1.  ##### Você acredita que as recomendações musicais realizadas via software poderiam ser melhoradas? 
+1.  ##### Qual o Player de música você utiliza atualmente?
+    
+      - Spotify
+    
+      - Deezer
+    
+      - Youtube Music
+    
+      - TIDAL
+    
+      - Apple Music
+    
+      - Google Play Music
+    
+      - Outro
 
-2.  ##### Você acredita que o contexto poderia melhorar essas recomendações? 
+2.  ##### Você utiliza o Spotify?
 
-3.  ##### Em quais atividades costuma ouvir música?
+3.  ##### Você acredita que as recomendações musicais realizadas via software poderiam ser melhoradas? 
+
+4.  ##### Você acredita que o contexto poderia melhorar essas recomendações? 
+
+5.  ##### Em quais atividades costuma ouvir música?
     
       - Acordando
     
@@ -1112,7 +1130,7 @@ Essas perguntas são:
     
       - Outro
 
-4.  ##### Em quais lugares costuma ouvir músicas?
+6.  ##### Em quais lugares costuma ouvir músicas?
     
       - Academia
     
@@ -1136,7 +1154,7 @@ Essas perguntas são:
     
       - Outro
 
-5.  ##### Com quais humores você costuma ouvir música?
+7.  ##### Com quais humores você costuma ouvir música?
     
       - Aborrecido
     
@@ -1190,7 +1208,7 @@ Essas perguntas são:
     
       - Outro
 
-6.  ##### Das condições abaixo, quais acredita que deva influenciar mais na música que gostaria de ouvir?
+8.  ##### Das condições abaixo, quais acredita que deva influenciar mais na música que gostaria de ouvir?
     
       - Atividades
     
@@ -1206,7 +1224,7 @@ Essas perguntas são:
     
       - Outro
 
-7.  ##### Das ações abaixo, quais acredita que deva demonstrar mais o desgosto ou gosto de uma música?
+9.  ##### Das ações abaixo, quais acredita que deva demonstrar mais o quanto aprecia ou deprecia uma música?
     
       - Abrir / Fechar o app
     
@@ -1222,9 +1240,9 @@ Essas perguntas são:
     
       - Outra
 
-8.  ##### As músicas que você escuta sozinho, são diferentes das que escuta com os amigos?
+10. ##### As músicas que você escuta sozinho, são diferentes das que escuta com os amigos?
 
-9.  ##### Quanto tempo por dia você dedica para escutar música?
+11. ##### Quanto tempo por semana você dedica para escutar música?
     
       - menos que 5 horas
     
@@ -1236,7 +1254,7 @@ Essas perguntas são:
     
       - mais que 50 horas
 
-10. ##### Quais são os gêneros musicais que gosta de escutar?
+12. ##### Quais são os gêneros musicais que gosta de escutar?
     
       - Alternativa
     
@@ -1274,11 +1292,11 @@ Essas perguntas são:
     
       - Vocal
 
-11. ##### Gostaria de participar de uma pesquisa que visa melhorar a recomendação musical?
+13. ##### Gostaria de participar de uma pesquisa que visa melhorar a recomendação musical?
 
-12. ##### Sua idade
+14. ##### Sua idade
 
-13. ##### Dicas e sugestões?
+15. ##### Dicas e sugestões?
 
 ### Como o trabalho vai capturar as ações do usuário e enviá-las ao sistema?
 
