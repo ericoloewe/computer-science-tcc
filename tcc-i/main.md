@@ -142,7 +142,8 @@ Sumário
 [2.5 Conclusões dos trabalhos revisados
 32](#conclusões-dos-trabalhos-revisados)
 
-[3 Modelagem do “Nome do trabalho” (TODO) 34](#modelagem-do-dcrm)
+[3 Modelagem do “Nome do trabalho” (TODO)
+34](#modelagem-do-dynamic-and-contextual-recommendations-of-music)
 
 [3.1 Contexto 34](#contexto)
 
@@ -157,7 +158,7 @@ Sumário
 [3.1.4 O que são as ações do usuário?
 38](#o-que-são-as-ações-do-usuário)
 
-[3.2 Arquitetura do sistema 39](#arquitetura-do-sistema)
+[3.2 Arquitetura do sistema 39](#metodologia-do-sistema)
 
 [3.2.1 Como o trabalho vai capturar as ações do usuário e enviá-las ao
 sistema?
@@ -408,8 +409,8 @@ ACM foram 150 trabalhos relacionados a *string* de busca.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura - Motor avançado de
-busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
+de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
 cima da busca. Procurando trazer somente os trabalhos mais atuais
@@ -422,7 +423,7 @@ de trabalhos encontrados passou para 83.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822631" class="anchor"></span>Figura - Resultado de
+<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Um dos principais motivos que levou essa revisão ser realizada através
@@ -434,7 +435,7 @@ conferências e eventos relacionados a área. (ACM RECSYS COMMUNITY.,
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura - Resultado de
+<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
 
 ## ETAPAS DA REVISÃO DOS TRABALHOS
@@ -443,9 +444,9 @@ Com a busca realizada no dia 07/05/20, no motor da ACM, a partir da
 *string* de busca foram encontrados 83 trabalhos, sendo eles: 23 do tipo
 *journal* e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura - Etapas realizadas
-para filtrar os trabalhos encontrados no motor de busca da ACM (próprio,
-2020)
+<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
+realizadas para filtrar os trabalhos encontrados no motor de busca da
+ACM (próprio, 2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado em
 3 etapas (demonstradas na Figura 4), que visam direcionar esta pesquisa
@@ -465,7 +466,7 @@ quantidade de artigos encontrados.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura - Filtro em cima
+<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
 dos trabalhos selecionados através do resumo (próprio, 2020)
 
 ###  Trabalhos selecionados
@@ -474,7 +475,7 @@ O resultado do procedimento de filtro (apresentado na Figura 6) foi de 4
 trabalhos relacionados ao objetivo descrito no protocolo de revisão
 desse trabalho.
 
-<span id="_Ref40822509" class="anchor"></span>Figura - Procedimento de
+<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
@@ -829,7 +830,7 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são:
 
-<span id="_Toc42382774" class="anchor"></span>Figura Fatores da
+<span id="_Toc42382774" class="anchor"></span>Figura 7 Fatores da
 preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
@@ -858,7 +859,7 @@ Não tiveram outros resultados apresentados.
 Para relacionar os trabalhos revisados, foi criada uma tabela contendo
 as funcionalidades encontradas nos artigos.
 
-<span id="_Ref42381546" class="anchor"></span>Quadro Relação das
+<span id="_Ref42381546" class="anchor"></span>Quadro 1 Relação das
 funcionalidades desenvolvidas em cada artigo revisado. Acima é listado
 os trabalhos revisados, e a esquerda as funcionalidades encontradas. Foi
 utilizado 3 símbolos: (i) ✔ caso possua; (ii)❌ caso não possua; (iii)❓
@@ -903,7 +904,7 @@ algoritmos de recomendação como algoritmos de *matrix factorization*
 Factorization*, ...), os quais são os algoritmos utilizados para
 realizar a recomendações nos RecSys.
 
-# Modelagem do “DCRM”
+# Modelagem do “*Dynamic and Contextual Recommendations of Music*”
 
 A partir da revisão feita, foi possível conhecer diversos tipos de
 sistemas e modelos que utilizam do contexto para realizar as
@@ -912,7 +913,7 @@ não foram analisadas ou compreendidas nessa área de pesquisa.
 
 ![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-05T02%3A05%3A36.505Z%22%2C%22pageId%22%3A%22c8m2vXLdxm1UY1WbSgt9%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image6.png)
 
-Figura Modelo desenvolvido para demonstrar a recomendação dinâmica
+Figura 8 Modelo desenvolvido para demonstrar a recomendação dinâmica
 (próprio, 2020)
 
 Com isso, foi possível entender e desenvolver um modelo de sistemas de
@@ -937,7 +938,7 @@ a definição das “circunstâncias que levaram a certos fatos ou
 situações”, é possível auxiliar as recomendações, aumentando o
 número de dados disponíveis para realizar a classificação e filtro.
 
-<span id="_Ref42447869" class="anchor"></span>Figura Apresentação dos
+<span id="_Ref42447869" class="anchor"></span>Figura 9 Apresentação dos
 contextos utilizados no trabalho (próprio, 2020)
 
 É apresentado na Figura 9, uma visão macro dos contextos que serão
@@ -998,7 +999,7 @@ na Figura 10.
 
 ![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A38%3A01.600Z%22%2C%22pageId%22%3A%22CdkkQKYaVUET6wdkgj3H%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image7.png)
 
-Figura Lista de ações que auxiliarão o entendimento do contexto de
+Figura 10 Lista de ações que auxiliarão o entendimento do contexto de
 ambiente e comportamento do usuário do aplicação (próprio, 2020)
 
 São poucas as ações que auxiliam no entendimento do contexto que podem
@@ -1060,14 +1061,14 @@ executadas pelo usuário estão listadas abaixo.
 
   - Definir grupo / individual
 
-## Arquitetura do sistema
+## Metodologia do sistema
 
 Para validar o modelo de sistema de recomendação, será desenvolvido uma
-aplicação, a qual ira ser distribuída aos usuários, que participarem do
+aplicação, a qual irá ser distribuída aos usuários, que participarem do
 questionário, feito para obter informações sobre os usuários. As etapas
 do desenvolvimento desse sistema foram apresentadas na Figura 11.
 
-Figura Etapas do desenvolvimento do sistema de recomendação musical
+Figura 11 Etapas do desenvolvimento do sistema de recomendação musical
 (próprio, 2020)
 
 As perguntas colocadas no questionário, serão voltadas a conhecer melhor
@@ -1075,59 +1076,209 @@ os usuários que utilizarão o sistema, sendo assim, será colocado
 perguntas que entendam suas preferencias, atividades, entre outros.
 Essas perguntas são:
 
-##### Você acredita que as recomendações musicais realizadas via software poderiam ser melhoradas?
+1.  ##### Você acredita que as recomendações musicais realizadas via software poderiam ser melhoradas? 
 
-##### Você acredita que o contexto poderia melhorar essas recomendações? 
+2.  ##### Você acredita que o contexto poderia melhorar essas recomendações? 
 
-##### Você acredita que as mudanças de contexto acontecem frequentemente?
+3.  ##### Em quais atividades costuma ouvir música?
+    
+      - Acordando
+    
+      - Assistindo a filmes / séries / novelas
+    
+      - Comendo
+    
+      - Correndo
+    
+      - Dirigindo
+    
+      - Estudando
+    
+      - Jogando
+    
+      - Lazer
+    
+      - Lendo
+    
+      - Indo dormir
+    
+      - Passeando
+    
+      - Praticando exercícios
+    
+      - Trabalhando
+    
+      - Treinando
+    
+      - Outro
 
-##### Em quais atividades costuma ouvir música?
+4.  ##### Em quais lugares costuma ouvir músicas?
+    
+      - Academia
+    
+      - Bar
+    
+      - Biblioteca
+    
+      - Casa
+    
+      - Com os amigos
+    
+      - Escola
+    
+      - Festa
+    
+      - Praia
+    
+      - Restaurante
+    
+      - Trabalho
+    
+      - Outro
 
-##### Em quais lugares costuma ouvir músicas?
+5.  ##### Com quais humores você costuma ouvir música?
+    
+      - Aborrecido
+    
+      - Alegre
+    
+      - Amoroso
+    
+      - Ansioso
+    
+      - Apavorado
+    
+      - Assustado
+    
+      - Constrangido
+    
+      - Culpado
+    
+      - Deprimido
+    
+      - Desapontado
+    
+      - Excitado
+    
+      - Envergonhado
+    
+      - Em pânico
+    
+      - Feliz
+    
+      - Frustrado
+    
+      - Furioso
+    
+      - Inseguro
+    
+      - Irado
+    
+      - Irritado
+    
+      - Humilhado
+    
+      - Magoado
+    
+      - Nervoso
+    
+      - Orgulhoso
+    
+      - Triste
+    
+      - Zangado
+    
+      - Outro
 
-##### Com quais humores você costuma ouvir música?
+6.  ##### Das condições abaixo, quais acredita que deva influenciar mais na música que gostaria de ouvir?
+    
+      - Atividades
+    
+      - Clima
+    
+      - Grupo / Individual
+    
+      - Horário do dia
+    
+      - Humor
+    
+      - Localização
+    
+      - Outro
 
-##### Das condições abaixo, quais acredita que deva influenciar mais na música que gostaria de ouvir?
+7.  ##### Das ações abaixo, quais acredita que deva demonstrar mais o desgosto ou gosto de uma música?
+    
+      - Abrir / Fechar o app
+    
+      - Aumentar / Abaixar volume
+    
+      - Definir tempo da música
+    
+      - Escolher música / artista / gênero
+    
+      - Pausar / Tocar música
+    
+      - Passar / Voltar \(n\) músicas
+    
+      - Outra
 
-  - Humor
+8.  ##### As músicas que você escuta sozinho, são diferentes das que escuta com os amigos?
 
-  - Atividades
+9.  ##### Quanto tempo por dia você dedica para escutar música?
+    
+      - menos que 5 horas
+    
+      - de 5 a 10 horas
+    
+      - de 10 a 30 horas
+    
+      - de 30 a 50 horas
+    
+      - mais que 50 horas
 
-  - Localização
+10. ##### Quais são os gêneros musicais que gosta de escutar?
+    
+      - Alternativa
+    
+      - Blues
+    
+      - Clássica
+    
+      - Country
+    
+      - Dance
+    
+      - Eletrônica
+    
+      - Folk
+    
+      - Funk
+    
+      - Hip Hop
+    
+      - Latina
+    
+      - MPB
+    
+      - Jazz
+    
+      - Pop
+    
+      - Reggae
+    
+      - R\&B
+    
+      - Rock
+    
+      - Soundtrack
+    
+      - Vocal
 
-  - Clima
+11. ##### Gostaria de participar de uma pesquisa que visa melhorar a recomendação musical?
 
-  - Tempo
+12. ##### Sua idade
 
-  - Grupo / Individual
-
-  - Outro
-
-##### Das ações abaixo, quais acredita que deva demonstrar mais o desgosto ou gosto de uma música?
-
-  - Pausar / Tocar música
-
-  - Passar / Voltar N músicas
-
-  - Aumentar / Abaixar volume
-
-  - Escolher música / artista / gênero
-
-  - Abrir / Fechar o app
-
-  - Definir tempo da música
-
-  - Outra
-
-##### As músicas que você escuta sozinho, são diferentes das que escuta com os amigos?
-
-##### Quanto tempo por dia você dedica para escutar música?
-
-##### Quais são os gêneros musicais que gosta de escutar?
-
-##### Gostaria de participar de uma pesquisa que visa melhorar a recomendação musical?
-
-##### Dicas e sugestões?
+13. ##### Dicas e sugestões?
 
 ### Como o trabalho vai capturar as ações do usuário e enviá-las ao sistema?
 
@@ -1137,7 +1288,7 @@ demonstrado na Figura 12 o processo para realizar esse registro.
 
 ![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A48%3A39.750Z%22%2C%22pageId%22%3A%22OW\_eq1zldgSTVgG6IYEs%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image8.png)
 
-Figura Fluxo para realizar o registro e análise das ações executadas
+Figura 12 Fluxo para realizar o registro e análise das ações executadas
 pelo usuário (próprio, 2020)
 
 As ações utilizadas, serão as apresentadas na seção 3.1.4, as quais
@@ -1154,7 +1305,7 @@ importância de uma ação em cima do contexto.
 
 ![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-08T00%3A09%3A10.073Z%22%2C%22pageId%22%3A%22Su-HV9\_zTKp8CvkJRCf5%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image9.png)
 
-Figura Fluxo feito para avaliar se as ações condizem com o contexto
+Figura 13 Fluxo feito para avaliar se as ações condizem com o contexto
 (próprio, 2020)
 
 A Figura 13 apresenta o processo do sistema desde o momento que ira
@@ -1204,7 +1355,7 @@ artigos revisados (SVM, RBF, *Random Forest*, ...), e somente então,
 será realizado a recomendação musical, através dos algoritmos de
 *matrix* e *tensor factorization* (Figura 14).
 
-Figura Etapas do processo para realizar a recomendação musical
+Figura 14 Etapas do processo para realizar a recomendação musical
 
 Com os algoritmos de recomendação, será gerado um score para cada música
 x contexto. A partir dele, será avaliado os n melhores scores e
