@@ -55,7 +55,7 @@ export default function () {
       .map((f) => f.title.toLowerCase())
       .join(";");
 
-    await saveEvent(EventType.CHOOSE_FEELING, activitiesToSave);
+    await saveEvent(EventType.CHOOSE_ACTIVITY, activitiesToSave);
     history.push(`/`);
   }
 
