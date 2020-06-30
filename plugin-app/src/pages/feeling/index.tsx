@@ -72,7 +72,7 @@ export default function () {
         searchValue={searchText}
       />
       <Button variant="contained" color="primary" onClick={saveAndGoToPlaylist}>
-        Proximo
+        Salvar
       </Button>
     </Layout>
   );

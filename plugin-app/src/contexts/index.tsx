@@ -1,12 +1,13 @@
 import React from "react";
 
+import { ActivityProvider } from "./activity";
 import { AuthProvider } from "./auth";
-import { UserProvider } from "./user";
-import { SearchProvider } from "./search";
-import { PlaylistProvider } from "./playlist";
-import { PlayerProvider } from "./player";
 import { EventsProvider } from "./event";
 import { FeelingProvider } from "./feeling";
+import { PlayerProvider } from "./player";
+import { PlaylistProvider } from "./playlist";
+import { SearchProvider } from "./search";
+import { UserProvider } from "./user";
 
 interface Props {
   children: JSX.Element;
@@ -20,7 +21,9 @@ export function AppProviders({ children }: Props) {
           <PlayerProvider>
             <EventsProvider>
               <FeelingProvider>
-                <SearchProvider>{children}</SearchProvider>
+                <ActivityProvider>
+                  <SearchProvider>{children}</SearchProvider>
+                </ActivityProvider>
               </FeelingProvider>
             </EventsProvider>
           </PlayerProvider>
