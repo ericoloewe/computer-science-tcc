@@ -8,6 +8,7 @@ import { Choose, ChooseItem } from "../../components/choose";
 import { Layout } from "../shared/layout";
 import { useEvents, EventType } from "../../contexts/event";
 import { useLocation } from "../../contexts/location";
+import { LocationUtil } from "../../utils/location";
 
 export default function () {
   const history = useHistory();
@@ -33,6 +34,16 @@ export default function () {
     setLocations(musicsMappedWithSelected);
   }
 
+  async function saveLocation() {
+    const position = await LocationUtil.getPosition();
+    const locationAsEventData = JSON.stringify({
+      lat: position.coords.latitude,
+      lng: position.coords.latitude,
+    });
+
+    saveEvent(EventType.LOAD_LOCATION, locationAsEventData);
+  }
+
   async function searchLocationsOfTexts(text: string) {
     const locations = await search(text);
     const parsedLocations = locations.map((a) => ({ id: a.id, title: a.name }));
@@ -48,6 +59,10 @@ export default function () {
   useEffect(() => {
     searchLocationsOfTexts(searchText); // eslint-disable-next-line
   }, [searchText]);
+
+  useEffect(() => {
+    saveLocation();
+  });
 
   async function saveAndGoHome() {
     const locationsToSave = locations

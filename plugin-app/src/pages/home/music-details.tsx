@@ -56,52 +56,6 @@ export function MusicDetails({ onExpandClick }: Props) {
         </ListItem>
       </div>
       {playingMusicInfo && <MusicSlider {...playingMusicInfo} />}
-      <div className="feelings">
-        <FormControl className="make-me-feel">
-          <InputLabel htmlFor="age-native-simple">Essa musica faz me sentir</InputLabel>
-          <Select
-            native
-            inputProps={{
-              name: "age",
-              id: "age-native-simple",
-            }}
-            startAdornment={
-              <InputAdornment position="start">
-                <FavoriteIcon />
-              </InputAdornment>
-            }
-          >
-            <option aria-label="Sentimento" value="" />
-            {feelings.map((f) => (
-              <option key={f.value} value={f.value}>
-                {f.text}
-              </option>
-            ))}
-          </Select>
-        </FormControl>
-        <FormControl className="like-to-listen">
-          <InputLabel htmlFor="age-native-simple">Eu gosto de ouvir quando me sinto</InputLabel>
-          <Select
-            native
-            inputProps={{
-              name: "age",
-              id: "age-native-simple",
-            }}
-            startAdornment={
-              <InputAdornment position="start">
-                <FingerprintIcon />
-              </InputAdornment>
-            }
-          >
-            <option aria-label="Sentimento" value="" />
-            {feelings.map((f) => (
-              <option key={f.value} value={f.value}>
-                {f.text}
-              </option>
-            ))}
-          </Select>
-        </FormControl>
-      </div>
     </section>
   );
 }
