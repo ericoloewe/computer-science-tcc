@@ -4,6 +4,7 @@ import { ActivityProvider } from "./activity";
 import { AuthProvider } from "./auth";
 import { EventsProvider } from "./event";
 import { FeelingProvider } from "./feeling";
+import { LocationProvider } from "./location";
 import { PlayerProvider } from "./player";
 import { PlaylistProvider } from "./playlist";
 import { SearchProvider } from "./search";
@@ -22,7 +23,9 @@ export function AppProviders({ children }: Props) {
             <EventsProvider>
               <FeelingProvider>
                 <ActivityProvider>
-                  <SearchProvider>{children}</SearchProvider>
+                  <LocationProvider>
+                    <SearchProvider>{children}</SearchProvider>
+                  </LocationProvider>
                 </ActivityProvider>
               </FeelingProvider>
             </EventsProvider>

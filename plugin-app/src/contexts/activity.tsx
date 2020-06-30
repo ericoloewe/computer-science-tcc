@@ -16,7 +16,7 @@ interface Context {
 const apiEndpoint = process.env.REACT_APP_API_HOST || "https://localhost:44301/api";
 const eventApiEndpoint = `${apiEndpoint}/activities`;
 
-const UserContext = createContext({} as any);
+const ActivityContext = createContext({} as any);
 
 export function ActivityProvider(props: Props) {
   async function search(text?: string): Promise<Activity[]> {
@@ -28,7 +28,7 @@ export function ActivityProvider(props: Props) {
     return data;
   }
 
-  return <UserContext.Provider value={{ search }} {...props} />;
+  return <ActivityContext.Provider value={{ search }} {...props} />;
 }
 
-export const useActivity = () => useContext<Context>(UserContext);
+export const useActivity = () => useContext<Context>(ActivityContext);

@@ -49,7 +49,7 @@ export default function () {
     searchActivitiesOfTexts(searchText); // eslint-disable-next-line
   }, [searchText]);
 
-  async function saveAndGoToPlaylist() {
+  async function saveAndGoHome() {
     const activitiesToSave = activities
       .filter((f) => f.selected)
       .map((f) => f.title.toLowerCase())
@@ -60,7 +60,7 @@ export default function () {
   }
 
   return (
-    <Layout className="playlist-feeling-page" pageTitle="O que você esta fazendo?" hideDrawerButton={true}>
+    <Layout className="playlist-activity-page" pageTitle="O que você esta fazendo?" hideDrawerButton={true}>
       <Choose
         items={activities}
         onChangeSearch={(s) => setSearchText(s)}
@@ -68,7 +68,7 @@ export default function () {
         searchLabel="Atividades"
         searchValue={searchText}
       />
-      <Button variant="contained" color="primary" onClick={saveAndGoToPlaylist}>
+      <Button variant="contained" color="primary" onClick={saveAndGoHome}>
         Salvar
       </Button>
     </Layout>

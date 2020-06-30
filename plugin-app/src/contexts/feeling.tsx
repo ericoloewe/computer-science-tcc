@@ -16,7 +16,7 @@ interface Context {
 const apiEndpoint = process.env.REACT_APP_API_HOST || "https://localhost:44301/api";
 const eventApiEndpoint = `${apiEndpoint}/feelings`;
 
-const UserContext = createContext({} as any);
+const FeelingContext = createContext({} as any);
 
 export function FeelingProvider(props: Props) {
   async function search(text?: string): Promise<Feeling[]> {
@@ -28,7 +28,7 @@ export function FeelingProvider(props: Props) {
     return data;
   }
 
-  return <UserContext.Provider value={{ search }} {...props} />;
+  return <FeelingContext.Provider value={{ search }} {...props} />;
 }
 
-export const useFeeling = () => useContext<Context>(UserContext);
+export const useFeeling = () => useContext<Context>(FeelingContext);

@@ -52,7 +52,7 @@ export default function () {
     searchFeelingsOfTexts(searchText); // eslint-disable-next-line
   }, [searchText]);
 
-  async function saveAndGoToPlaylist() {
+  async function saveAndGoHome() {
     const feelingsToSave = feelings
       .filter((f) => f.selected)
       .map((f) => f.title.toLowerCase())
@@ -71,7 +71,7 @@ export default function () {
         searchLabel="Sentimentos"
         searchValue={searchText}
       />
-      <Button variant="contained" color="primary" onClick={saveAndGoToPlaylist}>
+      <Button variant="contained" color="primary" onClick={saveAndGoHome}>
         Salvar
       </Button>
     </Layout>
