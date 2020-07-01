@@ -47,20 +47,31 @@ da quantidade disponível, trazendo a necessidade de os sistemas
 evoluírem suas recomendações, surgindo os RecSys. Esses sistemas são
 utilizados em diversos tipos de aplicações como vendas, seleção de um
 filme e na escolha de uma música, que é um dos objetivos dessa pesquisa.
-Neste trabalho será desenvolvido um sistema de recomendação baseado em
-contexto comportamental e de ambiente. O objetivo desse sistema é
-coletar informações sobre o comportamento e tendência do usuário,
-possibilitando o aperfeiçoamento das recomendações musicais de acordo
-com o contexto vivenciado por ele.
+Neste trabalho será desenvolvido um sistema de recomendação musical
+baseado em contexto comportamental e de ambiente. O objetivo desse
+sistema é coletar informações sobre o comportamento e tendência do
+usuário, possibilitando o aperfeiçoamento das recomendações musicais de
+acordo com o contexto vivenciado por ele.
 
 Palavras-chave: RecSys. Machine Learning. Sistemas de recomendação
 musical. Música. Spotify.
 
 Abstract
 
-Tradução do Resumo para a língua inglesa.
+Everybody knows people have difficulties in dealing with a large volume
+of information. With the internet and the evolution of technology, there
+was an increase of the available amount of information, bringing the
+need for systems to improve their recommendations, arising the RecSys.
+These systems are used in several types of applications such as sales,
+selecting a movie and choosing a song, which one is one of the goals of
+this research. In this work, a music recommender system based on
+behavior and environmental context will be developed. The system purpose
+is to collect information about the user’s behavior and environment,
+enabling the improvement of music recommendations according to the
+context experienced by him.
 
-Keywords: tradução das palavras-chave para a língua inglesa.
+Keywords: RecSys. Machine Learning. Music Recommender System. Music.
+Spotify.
 
 Lista de Figuras
 
