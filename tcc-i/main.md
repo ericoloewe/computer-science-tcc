@@ -1078,10 +1078,9 @@ As ações do usuário trazem diversas informações, referentes ao contexto
 que ele está vivendo, elas auxiliam no entendimento do seu contexto e na
 validação da acuracidade das recomendações feitas. São elas que irão
 demonstrar ao sistema, o gosto ou desgosto do usuário, em cima das
-músicas recomendadas. Cada ação terá um nível de importância, o qual
-será utilizado avaliação de sua captura, antes de serem enviadas ao
-sistema para avaliar as recomendações feitas. As possíveis ações a serem
-executadas pelo usuário estão listadas abaixo.
+músicas recomendadas. Cada ação terá um nível de importância, a qual
+será obtida através das respostas do questionário. As possíveis ações a
+serem executadas pelo usuário estão listadas abaixo.
 
   - Pausar / Tocar música
 
@@ -1134,13 +1133,11 @@ outros fatores. Essas perguntas são:
     
       - Outro
 
-2.  ##### Você utiliza o Spotify?
+2.  ##### Você acredita que as recomendações musicais realizadas via *software* poderiam ser melhoradas? 
 
-3.  ##### Você acredita que as recomendações musicais realizadas via *software* poderiam ser melhoradas? 
+3.  ##### Você acredita que o contexto poderia melhorar essas recomendações? 
 
-4.  ##### Você acredita que o contexto poderia melhorar essas recomendações? 
-
-5.  ##### Em quais atividades costuma ouvir música?
+4.  ##### Em quais atividades costuma ouvir música?
     
       - Acordando
     
@@ -1172,7 +1169,7 @@ outros fatores. Essas perguntas são:
     
       - Outro, qual?
 
-6.  ##### Em quais lugares costuma ouvir músicas?
+5.  ##### Em quais lugares costuma ouvir músicas?
     
       - Academia
     
@@ -1196,7 +1193,7 @@ outros fatores. Essas perguntas são:
     
       - Outro, qual?
 
-7.  ##### Com quais humores você costuma ouvir música?
+6.  ##### Com quais humores você costuma ouvir música?
     
       - Aborrecido
     
@@ -1250,7 +1247,7 @@ outros fatores. Essas perguntas são:
     
       - Outro, qual?
 
-8.  ##### Das condições abaixo, quais acredita que deva influenciar mais na música que gostaria de ouvir?
+7.  ##### Das condições abaixo, quais acredita que deva influenciar mais na música que gostaria de ouvir?
     
       - Atividades
     
@@ -1266,7 +1263,7 @@ outros fatores. Essas perguntas são:
     
       - Outro, Qual?
 
-9.  ##### Das ações abaixo, quais acredita que deva demonstrar mais o quanto aprecia ou deprecia uma música?
+8.  ##### Das ações abaixo, quais acredita que deva demonstrar mais o quanto aprecia ou deprecia uma música?
     
       - Abrir / Fechar o app
     
@@ -1282,9 +1279,9 @@ outros fatores. Essas perguntas são:
     
       - Outra, qual?
 
-10. ##### As músicas que você escuta sozinho, são diferentes das que escuta com os amigos?
+9.  ##### As músicas que você escuta sozinho, são diferentes das que escuta com os amigos?
 
-11. ##### Quanto tempo por semana você dedica para escutar música?
+10. ##### Quanto tempo por semana você dedica para escutar música?
     
       - menos que 5 horas
     
@@ -1296,7 +1293,7 @@ outros fatores. Essas perguntas são:
     
       - mais que 50 horas
 
-12. ##### Quais são os gêneros musicais que gosta de escutar?
+11. ##### Quais são os gêneros musicais que gosta de escutar?
     
       - Alternativa
     
@@ -1334,11 +1331,11 @@ outros fatores. Essas perguntas são:
     
       - Vocal
 
-13. ##### Gostaria de participar de uma pesquisa que visa melhorar a recomendação musical?
+12. ##### Gostaria de participar de uma pesquisa que visa melhorar a recomendação musical?
 
-14. ##### Sua idade
+13. ##### Sua idade
 
-15. ##### Dicas e sugestões?
+14. ##### Dicas e sugestões?
 
 ### Como o trabalho vai capturar as ações do usuário e enviá-las ao sistema?
 
