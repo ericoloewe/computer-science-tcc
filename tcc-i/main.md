@@ -76,49 +76,53 @@ Spotify.
 
 Lista de Figuras
 
-Figura 1 - Motor avançado de busca da ACM (próprio, 2020) 16
+[Figura 1 - Motor avançado de busca da ACM (próprio, 2020)
+15](#_Ref40822595)
 
-Figura 2 - Resultado de busca dos proceedings no motor de busca da ACM
-(próprio, 2020) 17
+[Figura 2 - Resultado de busca dos proceedings no motor de busca da ACM
+(próprio, 2020) 16](#_Ref40822631)
 
-Figura 3 - Resultado de busca dos journals no motor de busca da ACM
-(próprio, 2020) 18
+[Figura 3 - Resultado de busca dos journals no motor de busca da ACM
+(próprio, 2020) 17](#_Ref40822641)
 
-Figura 4 - Etapas realizadas para filtrar os trabalhos encontrados no
-motor de busca da ACM (próprio, 2020) 18
+[Figura 4 - Etapas realizadas para filtrar os trabalhos encontrados no
+motor de busca da ACM (próprio, 2020) 17](#_Ref40822414)
 
-Figura 5 - Filtro em cima dos trabalhos selecionados através do resumo
-(próprio, 2020) 19
+[Figura 5 - Filtro em cima dos trabalhos selecionados através do resumo
+(próprio, 2020) 18](#_Ref40822493)
 
-Figura 6 - Procedimento de filtro realizado baseado nos trabalhos
-encontrados no motor de busca da ACM (próprio, 2020) 19
+[Figura 6 - Procedimento de filtro realizado baseado nos trabalhos
+encontrados no motor de busca da ACM (próprio, 2020) 18](#_Ref40822509)
 
-Figura 7 Fatores da preferência musical (próprio, 2020) 28
+[Figura 7 Fatores da preferência musical (próprio, 2020)
+28](#_Toc44538330)
 
-Figura 8 Modelo desenvolvido para demonstrar a recomendação dinâmica
-(próprio, 2020) 34
+[Figura 8 Modelo desenvolvido para demonstrar a recomendação dinâmica
+(próprio, 2020) 34](#_Toc44538331)
 
-Figura 9 Apresentação dos contextos utilizados no trabalho (próprio,
-2020) 35
+[Figura 9 Apresentação dos contextos utilizados no trabalho (próprio,
+2020) 35](#_Ref42447869)
 
-Figura 10 Lista de ações que auxiliarão o entendimento do contexto de
-ambiente e comportamento do usuário da aplicação (próprio, 2020) 37
+[Figura 10 Lista de ações que auxiliarão o entendimento do contexto de
+ambiente e comportamento do usuário da aplicação (próprio, 2020)
+37](#_Ref42447458)
 
-Figura 11 Etapas do desenvolvimento do sistema de recomendação musical
-(próprio, 2020) 39
+[Figura 11 Etapas do desenvolvimento do sistema de recomendação musical
+(próprio, 2020) 39](#_Ref42452795)
 
-Figura 12 Fluxo para realizar o registro e análise das ações executadas
-pelo usuário (próprio, 2020) 43
+[Figura 12 Fluxo para realizar o registro e análise das ações executadas
+pelo usuário (próprio, 2020) 43](#_Toc44538335)
 
-Figura 13 Fluxo feito para avaliar se as ações condizem com o contexto
-(próprio, 2020) 44
+[Figura 13 Fluxo feito para avaliar se as ações condizem com o contexto
+(próprio, 2020) 44](#_Ref42460243)
 
-Figura 14 Etapas do processo para realizar a recomendação musical 45
+[Figura 14 Etapas do processo para realizar a recomendação musical
+45](#_Ref42465942)
 
 Lista de Quadros
 
-Quadro 1 Relação das funcionalidades desenvolvidas em cada artigo
-revisado 30
+[Quadro 1 Relação das funcionalidades desenvolvidas em cada artigo
+revisado 30](#_Ref42381546)
 
 Lista de Abreviaturas e Siglas
 
@@ -147,58 +151,71 @@ Lista de Abreviaturas e Siglas
 
 Sumário
 
-1 Introdução 10
+[1 Introdução 10](#introdução)
 
-2 Trabalhos relacionados 14
+[2 Trabalhos relacionados 14](#trabalhos-relacionados)
 
-2.1 O protocolo de revisão 14
+[2.1 O protocolo de revisão 14](#o-protocolo-de-revisão)
 
-2.2 PROCURA NOS MOTORES DE BUSCA 16
+[2.2 PROCURA NOS MOTORES DE BUSCA 15](#procura-nos-motores-de-busca)
 
-2.3 ETAPAS DA REVISÃO DOS TRABALHOS 18
+[2.3 ETAPAS DA REVISÃO DOS TRABALHOS
+17](#etapas-da-revisão-dos-trabalhos)
 
-2.3.1 Trabalhos selecionados 19
+[2.3.1 Trabalhos selecionados 18](#trabalhos-selecionados)
 
-2.4 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS 29
+[2.4 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
+29](#funcionalidades-dos-trabalhos-investigados)
 
-2.5 Conclusões dos trabalhos revisados 32
+[2.5 Conclusões dos trabalhos revisados
+32](#conclusões-dos-trabalhos-revisados)
 
-3 Modelagem do “Dynamic and Contextual Recommendations of Music” 34
+[3 Modelagem do “Dynamic and Contextual Recommendations of Music”
+34](#modelagem-do-dynamic-and-contextual-recommendations-of-music)
 
-3.1 Contexto 34
+[3.1 Contexto 34](#contexto)
 
-3.1.1 O que é o contexto comportamental? 35
+[3.1.1 O que é o contexto comportamental?
+35](#o-que-é-o-contexto-comportamental)
 
-3.1.2 O que é o contexto ambiente? 36
+[3.1.2 O que é o contexto ambiente? 36](#o-que-é-o-contexto-ambiente)
 
-3.1.3 Como será obtido os contextos? 36
+[3.1.3 Como será obtido os contextos?
+36](#como-será-obtido-os-contextos)
 
-3.1.4 O que são as ações do usuário? 37
+[3.1.4 O que são as ações do usuário?
+37](#o-que-são-as-ações-do-usuário)
 
-3.2 Metodologia do sistema 38
+[3.2 Metodologia do sistema 38](#metodologia-do-sistema)
 
-3.2.1 Como o trabalho vai capturar as ações do usuário e enviá-las ao
-sistema? 43
+[3.2.1 Como o trabalho vai capturar as ações do usuário e enviá-las ao
+sistema?
+43](#como-o-trabalho-vai-capturar-as-ações-do-usuário-e-enviá-las-ao-sistema)
 
-3.2.2 Como o trabalho vai validar se as ações do usuário condizem com o
-contexto? 43
+[3.2.2 Como o trabalho vai validar se as ações do usuário condizem com o
+contexto?
+43](#como-o-trabalho-vai-validar-se-as-ações-do-usuário-condizem-com-o-contexto)
 
-3.2.3 Como o trabalho vai relacionar as músicas que o usuário gosta aos
-contextos? 44
+[3.2.3 Como o trabalho vai relacionar as músicas que o usuário gosta aos
+contextos?
+44](#como-o-trabalho-vai-relacionar-as-músicas-que-o-usuário-gosta-aos-contextos)
 
-3.2.4 Como o trabalho vai classificar o contexto para apresentar para
-usuário? 44
+[3.2.4 Como o trabalho vai classificar o contexto para apresentar para
+usuário?
+44](#como-o-trabalho-vai-classificar-o-contexto-para-apresentar-para-usuário)
 
-3.2.5 Como o trabalho vai recomendar novas músicas a partir da relação
-de contexto x música? 45
+[3.2.5 Como o trabalho vai recomendar novas músicas a partir da relação
+de contexto x música?
+45](#como-o-trabalho-vai-recomendar-novas-músicas-a-partir-da-relação-de-contexto-x-música)
 
-3.2.6 Como o trabalho vai avaliar as recomendações feitas? 46
+[3.2.6 Como o trabalho vai avaliar as recomendações feitas?
+46](#como-o-trabalho-vai-avaliar-as-recomendações-feitas)
 
-3.3 roteiro 46
+[3.3 roteiro 46](#roteiro)
 
-4 CONCLUSÃO 47
+[4 CONCLUSÃO 47](#conclusão)
 
-Referências Bibliográficas 48
+[Referências Bibliográficas 48](#referências-bibliográficas)
 
 # Introdução
 
@@ -419,13 +436,17 @@ apresentada nas próximas seções.
 
 No dia 07/05/2020 foi realizada a pesquisa no motor de busca ACM
 utilizando a *string* de busca pré-definida anteriormente. As Figuras 1,
-2 e 3 ilustram esse processo. A quantidade de resultados apresentados na
-ACM foram 150 trabalhos relacionados a *string* de busca.
+2 e 3 ilustram esse processo. A figura 1 apresenta a string de busca
+desenvolvida no motor de busca da ACM, e a figura 2 e 3 apresentam
+respectivamente os resultados das buscas por *proceedings* e *journals*.
+A quantidade de resultados apresentados na ACM foram 150 trabalhos
+relacionados a *string* de busca.
 
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-Figura 1 - Motor avançado de busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
+de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
 cima da busca. Procurando trazer somente os trabalhos mais atuais
@@ -438,8 +459,8 @@ de trabalhos encontrados passou para 83.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-Figura 2 - Resultado de busca dos proceedings no motor de busca da ACM
-(próprio, 2020)
+<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
+busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Um dos principais motivos que levou essa revisão ser realizada através
 da ACM ao invés de outras plataformas de busca como IEEE, é devido ela
@@ -450,8 +471,8 @@ conferências e eventos relacionados a área. (ACM RECSYS COMMUNITY.,
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-Figura 3 - Resultado de busca dos journals no motor de busca da ACM
-(próprio, 2020)
+<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
+busca dos journals no motor de busca da ACM (próprio, 2020)
 
 ## ETAPAS DA REVISÃO DOS TRABALHOS
 
@@ -459,8 +480,9 @@ Com a busca realizada no dia 07/05/20, no motor da ACM, a partir da
 *string* de busca foram encontrados 83 trabalhos, sendo eles: 23 do tipo
 *journal* e 60 do tipo *proceeding*.
 
-Figura 4 - Etapas realizadas para filtrar os trabalhos encontrados no
-motor de busca da ACM (próprio, 2020)
+<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
+realizadas para filtrar os trabalhos encontrados no motor de busca da
+ACM (próprio, 2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado em
 3 etapas (demonstradas na Figura 4), que visam direcionar esta pesquisa
@@ -480,8 +502,8 @@ tipos e a quantidade de artigos encontrados.
 
 <span class="chart">\[CHART\]</span>
 
-Figura 5 - Filtro em cima dos trabalhos selecionados através do resumo
-(próprio, 2020)
+<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
+dos trabalhos selecionados através do resumo (próprio, 2020)
 
 ###  Trabalhos selecionados
 
@@ -489,8 +511,9 @@ O resultado do procedimento de filtro apresentado na Figura 6 abaixo,
 resultou em 4 trabalhos relacionados ao objetivo descrito no protocolo
 de revisão desse trabalho.
 
-Figura 6 - Procedimento de filtro realizado baseado nos trabalhos
-encontrados no motor de busca da ACM (próprio, 2020)
+<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
+filtro realizado baseado nos trabalhos encontrados no motor de busca da
+ACM (próprio, 2020)
 
 Foi realizado uma revisão nesses trabalhos a qual foi apresentada nas
 próximas seções. Onde, em cada seção/artigo, foi realizado um breve do
@@ -843,7 +866,8 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são:
 
-Figura 7 Fatores da preferência musical (próprio, 2020)
+<span id="_Toc44538330" class="anchor"></span>Figura 7 Fatores da
+preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
 
@@ -880,8 +904,8 @@ esta resposta após avaliação das técnicas que serão utilizadas, onde
 temos a seguinte legenda de símbolos: ✔ caso possua, ❌ caso não possua e
 ❓ caso não seja possível concluir o comparativo (próprio, 2020).
 
-Quadro 1 Relação das funcionalidades desenvolvidas em cada artigo
-revisado
+<span id="_Ref42381546" class="anchor"></span>Quadro 1 Relação das
+funcionalidades desenvolvidas em cada artigo revisado
 
 |                                                                               | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta deste trabalho |
 | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
@@ -924,10 +948,10 @@ recomendações musicais, tornando possível entender certas lacunas que
 não foram analisadas ou compreendidas nessa área de pesquisa. A Figura 8
 abaixo, apresenta o modelo de análise de recomendações dinâmica.
 
-![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-05T02%3A05%3A36.505Z%22%2C%22pageId%22%3A%22c8m2vXLdxm1UY1WbSgt9%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image5.png)
+![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-05T02%3A05%3A36.505Z%22%2C%22pageId%22%3A%22c8m2vXLdxm1UY1WbSgt9%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image6.png)
 
-Figura 8 Modelo desenvolvido para demonstrar a recomendação dinâmica
-(próprio, 2020)
+<span id="_Toc44538331" class="anchor"></span>Figura 8 Modelo
+desenvolvido para demonstrar a recomendação dinâmica (próprio, 2020)
 
 Com isso, foi possível entender e desenvolver um modelo de sistemas de
 recomendação chamado *DCRM* (*Dynamic and Contextual Recommendations of
@@ -953,8 +977,8 @@ número de dados disponíveis para realizar a classificação e filtro. É
 apresentado na Figura 9 abaixo, uma visão macro dos contextos que serão
 considerados neste trabalho.
 
-Figura 9 Apresentação dos contextos utilizados no trabalho (próprio,
-2020)
+<span id="_Ref42447869" class="anchor"></span>Figura 9 Apresentação dos
+contextos utilizados no trabalho (próprio, 2020)
 
 Nas próximas subseções será detalhado melhor cada item da Figura 9, além
 de, apresentar o processo desenvolvido para capturar cada contexto.
@@ -1012,10 +1036,11 @@ app. A lista de ações, pode ser obtida através das possíveis ações a
 serem executadas pelo usuário demonstradas as quais são apresentadas na
 Figura 10 abaixo.
 
-![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A38%3A01.600Z%22%2C%22pageId%22%3A%22CdkkQKYaVUET6wdkgj3H%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image6.png)
+![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A38%3A01.600Z%22%2C%22pageId%22%3A%22CdkkQKYaVUET6wdkgj3H%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image7.png)
 
-Figura 10 Lista de ações que auxiliarão o entendimento do contexto de
-ambiente e comportamento do usuário da aplicação (próprio, 2020)
+<span id="_Ref42447458" class="anchor"></span>Figura 10 Lista de ações
+que auxiliarão o entendimento do contexto de ambiente e comportamento do
+usuário da aplicação (próprio, 2020)
 
 São poucas as ações que auxiliam no entendimento do contexto e que podem
 ser obtidas implicitamente, isso devido as limitações dos sensores e
@@ -1083,8 +1108,8 @@ aplicação, a qual irá ser distribuída aos usuários, que participarem do
 questionário, feito para obter informações sobre os usuários. As etapas
 do desenvolvimento desse sistema são apresentadas na Figura 11 abaixo.
 
-Figura 11 Etapas do desenvolvimento do sistema de recomendação musical
-(próprio, 2020)
+<span id="_Ref42452795" class="anchor"></span>Figura 11 Etapas do
+desenvolvimento do sistema de recomendação musical (próprio, 2020)
 
 As perguntas aplicadas no questionário, serão voltadas a conhecer melhor
 os usuários que utilizarão a aplicação, sendo assim, serão utilizadas
@@ -1319,10 +1344,11 @@ A partir do momento que o usuário utilizar a aplicação, será registrado
 suas ações, através de eventos disponíveis em seus componentes, é
 demonstrado na Figura 12 abaixo o processo para realizar esse registro.
 
-![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A48%3A39.750Z%22%2C%22pageId%22%3A%22OW\_eq1zldgSTVgG6IYEs%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image7.png)
+![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A48%3A39.750Z%22%2C%22pageId%22%3A%22OW\_eq1zldgSTVgG6IYEs%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image8.png)
 
-Figura 12 Fluxo para realizar o registro e análise das ações executadas
-pelo usuário (próprio, 2020)
+<span id="_Toc44538335" class="anchor"></span>Figura 12 Fluxo para
+realizar o registro e análise das ações executadas pelo usuário
+(próprio, 2020)
 
 As ações utilizadas serão as apresentadas na seção 3.1.4, as quais serão
 capturadas através de eventos dos componentes da aplicação, e enviadas
@@ -1340,10 +1366,10 @@ e o contexto atual do usuário, até sua última etapa que é retornar ao
 app com a informação se as ações do usuário estão indicando para o
 sistema que sua interpretação do contexto está correta ou não..
 
-![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-08T00%3A09%3A10.073Z%22%2C%22pageId%22%3A%22Su-HV9\_zTKp8CvkJRCf5%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image8.png)
+![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-08T00%3A09%3A10.073Z%22%2C%22pageId%22%3A%22Su-HV9\_zTKp8CvkJRCf5%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image9.png)
 
-Figura 13 Fluxo feito para avaliar se as ações condizem com o contexto
-(próprio, 2020)
+<span id="_Ref42460243" class="anchor"></span>Figura 13 Fluxo feito para
+avaliar se as ações condizem com o contexto (próprio, 2020)
 
 ### Como o trabalho vai relacionar as músicas que o usuário gosta aos contextos?
 
@@ -1389,7 +1415,8 @@ então, será realizada a recomendação musical, através dos algoritmos de
 *Matrix* e *Tensor Factorization.* A Figura 14 abaixo apresenta as
 etapas utilizadas no processo para realizar a recomendação musical.
 
-Figura 14 Etapas do processo para realizar a recomendação musical
+<span id="_Ref42465942" class="anchor"></span>Figura 14 Etapas do
+processo para realizar a recomendação musical
 
 Com os algoritmos de recomendação, será gerado um score para cada música
 x contexto. A partir dele, será avaliado os n melhores scores e
