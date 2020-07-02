@@ -516,8 +516,9 @@ filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
 Foi realizado uma revisão nesses trabalhos a qual foi apresentada nas
-próximas seções. Onde, em cada seção/artigo, foi realizado um breve do
-que foi desenvolvido e no fim, foi respondido as seguintes perguntas:
+próximas seções. Onde, em cada seção/artigo, foi apresentado um breve
+resumo do que foi desenvolvido e no fim, foi respondido as seguintes
+perguntas:
 
 ##### Qual o problema que ele resolveu?
 
@@ -864,7 +865,7 @@ e por último, os fatores extraídos dos usuários.
 
 O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
-(usuário, música e contexto). Eles são:
+(usuário, música e contexto). Eles são apresentados na Figura 7 abaixo.
 
 <span id="_Toc44538330" class="anchor"></span>Figura 7 Fatores da
 preferência musical (próprio, 2020)
@@ -893,7 +894,8 @@ Não tiveram outros resultados apresentados.
 ## FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
 
 Para relacionar os trabalhos revisados, foi criada uma tabela contendo
-as funcionalidades encontradas nos artigos.
+as funcionalidades encontradas nos artigos revisados nas seções
+anteriores.
 
 O Quadro 1 abaixo apresenta a relação das funcionalidades dos 3 artigos
 revisados e da proposta deste trabalho, focando em comparar apenas as
@@ -907,36 +909,36 @@ temos a seguinte legenda de símbolos: ✔ caso possua, ❌ caso não possua e
 <span id="_Ref42381546" class="anchor"></span>Quadro 1 Relação das
 funcionalidades desenvolvidas em cada artigo revisado
 
-|                                                                               | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta deste trabalho |
-| ----------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
-| Tem foco no entendimento do contexto para recomendações musicais?             | ✔                                                                      | ✔                                                                               | ❌                                                                            | ✔                       |
-| O trabalho foi/será validado em um caso real?                                 | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
-| Utiliza do contexto comportamental?                                           | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
-| Utiliza do contexto de ambiente?                                              | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
-| Utiliza do contexto explicito?                                                | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
-| Utiliza do contexto implícito?                                                | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
-| Realiza recomendações do tipo dinâmicas?                                      | ❌                                                                      | ❌                                                                               | ❌                                                                            | ✔                       |
-| Utiliza da técnica de avaliação *Operating Characteristic* *Curve* (AUC)?     | ❌                                                                      | ✔                                                                               | ✔                                                                            | ❓                       |
-| Utiliza do *F-measure?*                                                       | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
-| Utiliza do Root Mean Squared Error?                                           |                                                                        | ❌                                                                               | ❌                                                                            | ❓                       |
-| Utiliza a métrica do *Mean Reciprocal Rank?*                                  | ❌                                                                      | ✔                                                                               | ❌                                                                            | ❓                       |
-| Utiliza a métrica do coeficiente de correlação de *Kendall*?                  | ❌                                                                      | ✔                                                                               | ❌                                                                            | ❓                       |
-| Utiliza do algoritmo *Support* *Vector* *Machine* (*SVM*) para classificação? | ❌                                                                      | ✔                                                                               | ✔                                                                            | ❓                       |
-| Utiliza do algoritmo *Radial Basis* *Function* (*RBF*) para classificação?    | ❌                                                                      | ❌                                                                               | ✔                                                                            | ❓                       |
-| Utiliza o algoritmo *Random Forest* para classificação*?*                     | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
-| Utiliza o algoritmo *Gradient Boosting* para classificação*?*                 | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
+|                                                                           | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta deste trabalho |
+| ------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
+| Tem foco no entendimento do contexto para recomendações musicais?         | ✔                                                                      | ✔                                                                               | ❌                                                                            | ✔                       |
+| O trabalho foi/será validado em um caso real?                             | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
+| Utiliza do contexto comportamental?                                       | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
+| Utiliza do contexto de ambiente?                                          | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
+| Utiliza do contexto explicito?                                            | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
+| Utiliza do contexto implícito?                                            | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
+| Realiza recomendações do tipo dinâmicas?                                  | ❌                                                                      | ❌                                                                               | ❌                                                                            | ✔                       |
+| Utiliza da técnica de avaliação *Area Under The Curve* (AUC)?             | ❌                                                                      | ✔                                                                               | ✔                                                                            | ❓                       |
+| Utiliza do *F-measure?*                                                   | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
+| Utiliza do Root Mean Squared Error?                                       |                                                                        | ❌                                                                               | ❌                                                                            | ❓                       |
+| Utiliza a métrica do *Mean Reciprocal Rank?*                              | ❌                                                                      | ✔                                                                               | ❌                                                                            | ❓                       |
+| Utiliza a métrica do coeficiente de correlação de *Kendall*?              | ❌                                                                      | ✔                                                                               | ❌                                                                            | ❓                       |
+| Utiliza do algoritmo *Support Vector Machine* (*SVM*) para classificação? | ❌                                                                      | ✔                                                                               | ✔                                                                            | ❓                       |
+| Utiliza do algoritmo *Radial Basis Function* (*RBF*) para classificação?  | ❌                                                                      | ❌                                                                               | ✔                                                                            | ❓                       |
+| Utiliza o algoritmo *Random Forest* para classificação*?*                 | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
+| Utiliza o algoritmo *Gradient Boosting* para classificação*?*             | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
 
 ## Conclusões dos trabalhos revisados
 
 Após a revisão dos 3 trabalhos estudados em relação a proposta deste
 trabalho, foi identificado que nenhum deles apresentou o algoritmo
 utilizado na recomendação. Foram apresentados algoritmos de
-classificação (*SVM*, *RBF*, *Random Forest,* *etc.*), de avaliação de
+classificação (*SVM*, *RBF*, *Random Forest, etc.*), de avaliação de
 resultados (*AUC*, *Root Mean Squared Error, Mean Reciprocal Rank*,
 etc.), porem em nenhum momento foi apresentado algoritmos de
 recomendação como algoritmos de *Matrix Factorization* (*SVD*,
-*Neighborhood* *SVD*, *Deep-Learning MF*, etc.) ou algoritmos de
-*Tensor* *Factorization* (*Tensor Decomposition*, *Nonnegative Tensor
+*Neighborhood* *SVD*, *Deep-Learning MF*, etc.) ou algoritmos de *Tensor
+Factorization* (*Tensor Decomposition*, *Nonnegative Tensor
 Factorization*, etc.), os quais são os algoritmos utilizados para
 realizar a recomendações nos *RecSys*.
 
@@ -1364,7 +1366,7 @@ importância de uma ação em cima do contexto. A Figura 13 abaixo
 apresenta o processo do sistema desde o momento que irá receber as ações
 e o contexto atual do usuário, até sua última etapa que é retornar ao
 app com a informação se as ações do usuário estão indicando para o
-sistema que sua interpretação do contexto está correta ou não..
+sistema que sua interpretação do contexto está correta ou não.
 
 ![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-08T00%3A09%3A10.073Z%22%2C%22pageId%22%3A%22Su-HV9\_zTKp8CvkJRCf5%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image9.png)
 
@@ -1375,7 +1377,7 @@ avaliar se as ações condizem com o contexto (próprio, 2020)
 
 Ainda existem estudos a serem aprofundados para responder a esta
 pergunta, pois trata de uma relação estrutural do banco e algoritmo, com
-isso a mesma será respondida durante próxima fase de desenvolvimento
+isso a mesma será respondida durante à próxima fase de desenvolvimento
 deste trabalho.
 
 ### Como o trabalho vai classificar o contexto para apresentar para usuário?
@@ -1437,7 +1439,7 @@ melhor as necessidades do sistema.
 Para desenvolver o modelo e o sistema de recomendação musical, serão
 realizadas diversas etapas, onde a primeira será obter uma amostra de
 dados a partir de um questionário que será aplicado: 1) Criar
-questionário com as perguntas listadas na seção XXX deste trabalho,
+questionário com as perguntas listadas na seção 3.2 deste trabalho,
 utilizando o formulário do *Google Drive*; 2) Distribuir o formulário em
 diversos meios de comunicação, onde haverá ao final um campo para o
 usuário preencher seu e-mail caso deseja participar do teste do sistema
