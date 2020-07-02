@@ -1117,7 +1117,7 @@ os usuários que utilizarão a aplicação, sendo assim, serão utilizadas
 perguntas que permita entender suas preferencias, atividades, dentre
 outros fatores. Essas perguntas são:
 
-1.  ##### Qual o Player de música você utiliza atualmente?
+1.  ##### Qual o aplicativo / reprodutor de música você utiliza atualmente?
     
       - Spotify
     
@@ -1131,13 +1131,15 @@ outros fatores. Essas perguntas são:
     
       - Google Play Music
     
-      - Outro
+      - Rádio
+    
+      - Outro, qual?
 
-2.  ##### Você acredita que as recomendações musicais realizadas via *software* poderiam ser melhoradas? 
+2.  ##### Você acha que as recomendações musicais realizadas via software poderiam ser melhoradas? 
 
-3.  ##### Você acredita que o contexto poderia melhorar essas recomendações? 
+3.  ##### Você acredita que o contexto poderia melhorar essas recomendações?
 
-4.  ##### Em quais atividades costuma ouvir música?
+4.  ##### Em quais atividades você costuma ouvir música?
     
       - Acordando
     
@@ -1169,7 +1171,7 @@ outros fatores. Essas perguntas são:
     
       - Outro, qual?
 
-5.  ##### Em quais lugares costuma ouvir músicas?
+5.  ##### Em quais lugares você costuma ouvir músicas?
     
       - Academia
     
@@ -1193,7 +1195,7 @@ outros fatores. Essas perguntas são:
     
       - Outro, qual?
 
-6.  ##### Com quais humores você costuma ouvir música?
+6.  ##### Você costuma ouvir música quando está:
     
       - Aborrecido
     
@@ -1247,7 +1249,7 @@ outros fatores. Essas perguntas são:
     
       - Outro, qual?
 
-7.  ##### Das condições abaixo, quais acredita que deva influenciar mais na música que gostaria de ouvir?
+7.  ##### O que costuma te influenciar na escolha da música?
     
       - Atividades
     
@@ -1263,7 +1265,7 @@ outros fatores. Essas perguntas são:
     
       - Outro, Qual?
 
-8.  ##### Das ações abaixo, quais acredita que deva demonstrar mais o quanto aprecia ou deprecia uma música?
+8.  ##### O que você faz quando gosta ou não de uma música?
     
       - Abrir / Fechar o app
     
@@ -1279,9 +1281,9 @@ outros fatores. Essas perguntas são:
     
       - Outra, qual?
 
-9.  ##### As músicas que você escuta sozinho, são diferentes das que escuta com os amigos?
+9.  ##### As músicas que você escuta sozinho são diferentes das que escuta com os amigos?
 
-10. ##### Quanto tempo por semana você dedica para escutar música?
+10. ##### Quanto tempo por semana você escuta música?
     
       - menos que 5 horas
     
