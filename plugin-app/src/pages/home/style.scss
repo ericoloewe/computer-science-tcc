@@ -21,8 +21,15 @@
   }
 }
 
-.music-control {
+.music-control,
+.context-info {
   margin-top: 20px;
+}
+
+.context-info {
+  .context-info-card {
+    width: 100%;
+  }
 }
 
 .music-details-component {

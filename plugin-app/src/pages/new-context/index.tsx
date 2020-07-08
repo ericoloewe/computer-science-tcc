@@ -19,27 +19,19 @@ export default function () {
 
   return (
     <Layout className="playlist-new-page" pageTitle="Adicionar contexto" hideDrawerButton={true}>
-      <Container className="music-control">
+      <Container>
         <Grid container spacing={1}>
-          <Grid container item xs={6} spacing={3}>
-            <Link to="/new-context/music-search">
-              <ContextCard title="Musica" icon={<MusicNote />} />
-            </Link>
+          <Grid container item md={6}>
+            <ContextCard to="/new-context/music-search" title="Musica" icon={<MusicNote />} />
           </Grid>
-          <Grid container item xs={6} spacing={3}>
-            <Link to="/new-context/feeling">
-              <ContextCard title="Sentimento" icon={<EmojiEmotions />} />
-            </Link>
+          <Grid container item md={6}>
+            <ContextCard to="/new-context/feeling" title="Sentimento" icon={<EmojiEmotions />} />
           </Grid>
-          <Grid container item xs={6} spacing={3}>
-            <Link to="/new-context/location">
-              <ContextCard title="Localização" icon={<Explore />} />
-            </Link>
+          <Grid container item md={6}>
+            <ContextCard to="/new-context/location" title="Localização" icon={<Explore />} />
           </Grid>
-          <Grid container item xs={6} spacing={3}>
-            <Link to="/new-context/activity">
-              <ContextCard title="Atividade" icon={<DirectionsRun />} />
-            </Link>
+          <Grid container item md={6}>
+            <ContextCard to="/new-context/activity" title="Atividade" icon={<DirectionsRun />} />
           </Grid>
         </Grid>
       </Container>
@@ -48,19 +40,22 @@ export default function () {
 }
 
 interface CardProps {
-  title: string;
   icon: JSX.Element;
+  title: string;
+  to: string;
 }
 
-function ContextCard({ title, icon }: CardProps) {
+function ContextCard({ title, icon, to }: CardProps) {
   return (
-    <Card>
-      <CardContent>
-        {icon}
-        <Typography component="h5" variant="h5">
-          {title}
-        </Typography>
-      </CardContent>
+    <Card className="context-card">
+      <Link to={to}>
+        <CardContent className="content-card-content">
+          {icon}
+          <Typography className="title" component="h5" variant="h5">
+            {title}
+          </Typography>
+        </CardContent>
+      </Link>
     </Card>
   );
 }
