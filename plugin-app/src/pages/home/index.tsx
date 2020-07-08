@@ -66,7 +66,7 @@ export default function () {
             <MusicDetails onExpandClick={() => setOpenMusicDetails(false)} />
           ) : (
             <>
-              <MusicControl />
+              <MusicControl onClick={() => setOpenMusicDetails(true)} />
               <ContextInfo contexts={contexts} />
               <Link to="/new-context">
                 <Fab className="new-button" color="primary" aria-label="add">

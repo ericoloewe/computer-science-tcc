@@ -47,13 +47,17 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export function MusicControl() {
+interface Props {
+  onClick: () => void;
+}
+
+export function MusicControl({ onClick }: Props) {
   const classes = useStyles();
   const { playingMusicInfo } = usePlayer();
 
   return (
     <Container className="music-control">
-      <Card className={classes.root}>
+      <Card onClick={onClick} className={classes.root}>
         <div className={classes.details}>
           <CardContent className={classes.content}>
             <Typography component="h5" variant="h5">
