@@ -5,13 +5,13 @@ export function ContextInfo() {
   return (
     <Container className="music-control">
       <Grid container spacing={1}>
-        <Grid container item xs={6} spacing={3}>
+        <Grid container item md={6}>
           <ContextCard />
         </Grid>
-        <Grid container item xs={6} spacing={3}>
+        <Grid container item md={6}>
           <ContextCard />
         </Grid>
-        <Grid container item xs={6} spacing={3}>
+        <Grid container item md={6}>
           <ContextCard />
         </Grid>
       </Grid>
@@ -27,7 +27,9 @@ function ContextCard() {
           Contexto N
         </Typography>
         <Typography variant="subtitle1" color="textSecondary">
-          Valor N
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi est aliquam voluptas dignissimos eum
+          blanditiis distinctio molestiae perferendis culpa. Pariatur sed amet officia incidunt natus impedit fugiat quo
+          quia modi.
         </Typography>
       </CardContent>
     </Card>
