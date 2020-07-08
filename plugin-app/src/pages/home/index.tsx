@@ -15,6 +15,29 @@ import { ContextInfo } from "./context-info";
 import { Add as AddIcon } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
+const contexts = [
+  {
+    title: "Contexto N",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi est aliquam voluptas dignissimos eum blanditiis distinctio molestiae perferendis culpa. Pariatur sed amet officia incidunt natus impedit fugiat quo quia modi.",
+  },
+  {
+    title: "Contexto N",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi est aliquam voluptas dignissimos eum blanditiis distinctio molestiae perferendis culpa. Pariatur sed amet officia incidunt natus impedit fugiat quo quia modi.",
+  },
+  {
+    title: "Contexto N",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi est aliquam voluptas dignissimos eum blanditiis distinctio molestiae perferendis culpa. Pariatur sed amet officia incidunt natus impedit fugiat quo quia modi.",
+  },
+  {
+    title: "Contexto N",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi est aliquam voluptas dignissimos eum blanditiis distinctio molestiae perferendis culpa. Pariatur sed amet officia incidunt natus impedit fugiat quo quia modi.",
+  },
+];
+
 export default function () {
   const { isPlayerReady, isPluginPlayerActive, transferUserPlaybackToPlugin } = usePlayer();
   const { getAvailableDevices } = useUser();
@@ -44,7 +67,7 @@ export default function () {
           ) : (
             <>
               <MusicControl />
-              <ContextInfo />
+              <ContextInfo contexts={contexts} />
               <Link to="/new-context">
                 <Fab className="new-button" color="primary" aria-label="add">
                   <AddIcon />
