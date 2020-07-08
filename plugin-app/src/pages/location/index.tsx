@@ -62,7 +62,7 @@ export default function () {
 
   useEffect(() => {
     saveLocation();
-  });
+  }, []);
 
   async function saveAndGoHome() {
     const locationsToSave = locations
