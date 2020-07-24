@@ -19,7 +19,7 @@ const useStyles = makeStyles(() =>
 );
 
 interface Props {
-  className: string;
+  className?: string;
 }
 
 export function MusicControls({ className }: Props): React.ReactElement {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Card, CardContent, Typography, Paper, Grid } from "@material-ui/core";
+import { Container, Card, CardContent, Typography, Grid } from "@material-ui/core";
 
 interface Context {
   title: string;

@@ -2,15 +2,12 @@ import "./style.scss";
 
 import React, { useEffect } from "react";
 import { Typography, Container, Grid, Card, CardContent } from "@material-ui/core";
-import { useHistory, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { Layout } from "../shared/layout";
-import { usePlaylist } from "../../contexts/playlist";
 import { MusicNote, EmojiEmotions, Explore, DirectionsRun } from "@material-ui/icons";
 
 export default function () {
-  const history = useHistory();
-
   async function fetchData() {}
 
   useEffect(() => {

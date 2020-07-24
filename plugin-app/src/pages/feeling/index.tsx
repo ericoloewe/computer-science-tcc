@@ -2,13 +2,10 @@ import "./style.scss";
 
 import React, { useState, useEffect } from "react";
 import { Button } from "@material-ui/core";
-import { useHistory, useParams } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import { Choose, ChooseItem } from "../../components/choose";
-import { feelingService } from "../../services/feeling";
 import { Layout } from "../shared/layout";
-import { playlistService } from "../../services/playlist";
-import { StringUtil } from "../../utils/string";
 import { useEvents, EventType } from "../../contexts/event";
 import { useFeeling } from "../../contexts/feeling";
 

@@ -1,29 +1,10 @@
 import "./style.scss";
 
 import React, { useState, useEffect } from "react";
-import {
-  IconButton,
-  ListItem,
-  ListItemAvatar,
-  Avatar,
-  ListItemText,
-  Slider,
-  FormControl,
-  InputLabel,
-  Select,
-  InputAdornment,
-} from "@material-ui/core";
-import {
-  ExpandMore as ExpandMoreIcon,
-  Fingerprint as FingerprintIcon,
-  Favorite as FavoriteIcon,
-} from "@material-ui/icons";
+import { IconButton, ListItem, ListItemAvatar, Avatar, ListItemText, Slider } from "@material-ui/core";
+import { ExpandMore as ExpandMoreIcon } from "@material-ui/icons";
 import { usePlayer, PlayingMusicInfo } from "../../contexts/player";
-
-const feelings = [
-  { text: "Feliz", value: "feliz" },
-  { text: "Triste", value: "triste" },
-];
+import { MusicControls } from "../../components/music-controls";
 
 interface Props {
   onExpandClick: () => void;
@@ -56,6 +37,7 @@ export function MusicDetails({ onExpandClick }: Props) {
         </ListItem>
       </div>
       {playingMusicInfo && <MusicSlider {...playingMusicInfo} />}
+      <MusicControls className="custom-controls-details" />
     </section>
   );
 }

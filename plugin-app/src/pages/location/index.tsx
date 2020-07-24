@@ -61,7 +61,7 @@ export default function () {
   }, [searchText]);
 
   useEffect(() => {
-    saveLocation();
+    saveLocation(); // eslint-disable-next-line
   }, []);
 
   async function saveAndGoHome() {

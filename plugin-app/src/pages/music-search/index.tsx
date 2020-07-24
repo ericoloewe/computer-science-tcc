@@ -3,7 +3,7 @@ import "./style.scss";
 import React, { useState, useEffect } from "react";
 import { Typography } from "@material-ui/core";
 import { Add as AddIcon, Remove as RemoveIcon } from "@material-ui/icons";
-import { useHistory, useParams } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import { ChooseWithActions, ChooseItem } from "../../components/choose-with-actions";
 import { StringUtil } from "../../utils/string";
