@@ -5,7 +5,7 @@ import { MenuItem, Fab } from "@material-ui/core";
 
 import { Layout } from "../shared/layout";
 import { MusicDetails } from "./music-details";
-import { MusicControl } from "./music-control";
+import { HomeMusicBanner } from "./music-banner";
 import { SpotifyDevice } from "../../@types/spotify";
 import { usePlayer } from "../../contexts/player";
 import { useUser } from "../../contexts/user";
@@ -39,14 +39,7 @@ const contexts = [
 ];
 
 export default function () {
-  const {
-    isPlayerReady,
-    isPluginPlayerActive,
-    nextTrack,
-    previousTrack,
-    transferUserPlaybackToPlugin,
-    togglePlay,
-  } = usePlayer();
+  const { isPlayerReady, isPluginPlayerActive, transferUserPlaybackToPlugin } = usePlayer();
   const { getAvailableDevices } = useUser();
   const [devices, setDevices] = useState<SpotifyDevice[]>([]);
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(true);
@@ -61,18 +54,6 @@ export default function () {
     await transferUserPlaybackToPlugin();
   }
 
-  async function nextMusic() {
-    await nextTrack();
-  }
-
-  async function previousMusic() {
-    await previousTrack();
-  }
-
-  async function toggleMusic() {
-    await togglePlay();
-  }
-
   useEffect(() => {
     if (isPlayerReady) fetchData(); // eslint-disable-next-line
   }, [isPlayerReady]);
@@ -85,12 +66,7 @@ export default function () {
             <MusicDetails onExpandClick={() => setOpenMusicDetails(false)} />
           ) : (
             <>
-              <MusicControl
-                onBackgroundClick={() => setOpenMusicDetails(true)}
-                onNextClick={() => nextMusic()}
-                onPreviousClick={() => previousMusic()}
-                onTogglePlayClick={() => toggleMusic()}
-              />
+              <HomeMusicBanner onBackgroundClick={() => setOpenMusicDetails(true)} />
               <ContextInfo contexts={contexts} />
               <Link to="/new-context">
                 <Fab className="new-button" color="primary" aria-label="add">

@@ -4,20 +4,14 @@ import {
   Card,
   CardContent,
   Typography,
-  IconButton,
   CardMedia,
   Container,
   makeStyles,
   Theme,
   createStyles,
 } from "@material-ui/core";
-import {
-  Pause as PauseIcon,
-  SkipPrevious as SkipPreviousIcon,
-  PlayArrow as PlayArrowIcon,
-  SkipNext as SkipNextIcon,
-} from "@material-ui/icons";
 import { usePlayer } from "../../contexts/player";
+import { MusicControls } from "../../components/music-controls";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -52,12 +46,9 @@ const useStyles = makeStyles((theme: Theme) =>
 
 interface Props {
   onBackgroundClick: () => void;
-  onNextClick: () => void;
-  onPreviousClick: () => void;
-  onTogglePlayClick: () => void;
 }
 
-export function MusicControl({ onBackgroundClick, onNextClick, onPreviousClick, onTogglePlayClick }: Props) {
+export function HomeMusicBanner({ onBackgroundClick }: Props) {
   const classes = useStyles();
   const { playingMusicInfo } = usePlayer();
 
@@ -74,21 +65,7 @@ export function MusicControl({ onBackgroundClick, onNextClick, onPreviousClick, 
               {playingMusicInfo?.currentTrack.album.name}
             </Typography>
           </CardContent>
-          <div className={classes.controls}>
-            <IconButton aria-label="previous" onClick={onPreviousClick}>
-              <SkipPreviousIcon />
-            </IconButton>
-            <IconButton aria-label="play/pause" onClick={onTogglePlayClick}>
-              {playingMusicInfo?.paused ? (
-                <PlayArrowIcon className={classes.playIcon} />
-              ) : (
-                <PauseIcon className={classes.playIcon} />
-              )}
-            </IconButton>
-            <IconButton aria-label="next" onClick={onNextClick}>
-              <SkipNextIcon />
-            </IconButton>
-          </div>
+          <MusicControls className={classes.controls} />
         </div>
         <CardMedia
           className={classes.cover}
