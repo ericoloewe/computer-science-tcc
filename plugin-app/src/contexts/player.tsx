@@ -12,8 +12,8 @@ interface Props {}
 interface Context {
   isPlayerReady: boolean;
   isPluginPlayerActive: boolean;
-  play: (musicId: string) => Promise<void>;
   playingMusicInfo?: PlayingMusicInfo;
+  togglePlay: () => Promise<void>;
   transferUserPlaybackToPlugin: () => Promise<void>;
 }
 
@@ -80,19 +80,12 @@ export function PlayerProvider(props: Props) {
     setIsPluginPlayerActive((currentPlayer?.device != null && player?.device_id) === currentPlayer?.device?.id);
   }
 
-  async function play(spotifyUri: string): Promise<void> {
+  async function togglePlay(): Promise<void> {
     if (player == null) {
       throw new Error("You have to login first!");
     }
 
-    const spotifyPlaySongEndpoint = `${SpotifyUtil.getApiUrl()}/me/player/play?device_id=${player.device_id}`;
-
-    requestService.put({
-      url: spotifyPlaySongEndpoint,
-      data: {
-        uris: [spotifyUri],
-      },
-    });
+    await player.original.togglePlay();
   }
 
   async function transferUserPlaybackToPlugin(): Promise<void> {
@@ -113,7 +106,7 @@ export function PlayerProvider(props: Props) {
       value={{
         isPlayerReady,
         isPluginPlayerActive,
-        play,
+        togglePlay,
         playingMusicInfo,
         transferUserPlaybackToPlugin,
       }}

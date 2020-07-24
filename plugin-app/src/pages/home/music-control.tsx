@@ -50,17 +50,20 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 interface Props {
-  onClick: () => void;
+  onBackgroundClick: () => void;
+  onNextClick: () => void;
+  onPreviousClick: () => void;
+  onTogglePlayClick: () => void;
 }
 
-export function MusicControl({ onClick }: Props) {
+export function MusicControl({ onBackgroundClick, onNextClick, onPreviousClick, onTogglePlayClick }: Props) {
   const classes = useStyles();
   const { playingMusicInfo } = usePlayer();
 
   return (
     <Container className="music-control">
       <Card className={`${classes.root} music-control-card`}>
-        <div className="background" onClick={onClick}></div>
+        <div className="background" onClick={onBackgroundClick}></div>
         <div className={classes.details}>
           <CardContent className={classes.content}>
             <Typography component="h5" variant="h5">
@@ -71,13 +74,13 @@ export function MusicControl({ onClick }: Props) {
             </Typography>
           </CardContent>
           <div className={classes.controls}>
-            <IconButton aria-label="previous">
+            <IconButton aria-label="previous" onClick={onPreviousClick}>
               <SkipPreviousIcon />
             </IconButton>
-            <IconButton aria-label="play/pause">
+            <IconButton aria-label="play/pause" onClick={onTogglePlayClick}>
               <PlayArrowIcon className={classes.playIcon} />
             </IconButton>
-            <IconButton aria-label="next">
+            <IconButton aria-label="next" onClick={onNextClick}>
               <SkipNextIcon />
             </IconButton>
           </div>

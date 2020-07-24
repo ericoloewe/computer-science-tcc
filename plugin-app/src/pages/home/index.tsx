@@ -39,7 +39,7 @@ const contexts = [
 ];
 
 export default function () {
-  const { isPlayerReady, isPluginPlayerActive, transferUserPlaybackToPlugin } = usePlayer();
+  const { isPlayerReady, isPluginPlayerActive, transferUserPlaybackToPlugin, togglePlay } = usePlayer();
   const { getAvailableDevices } = useUser();
   const [devices, setDevices] = useState<SpotifyDevice[]>([]);
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(true);
@@ -54,6 +54,12 @@ export default function () {
     await transferUserPlaybackToPlugin();
   }
 
+  async function nextMusic() {}
+  async function previousMusic() {}
+  async function toggleMusic() {
+    await togglePlay();
+  }
+
   useEffect(() => {
     if (isPlayerReady) fetchData(); // eslint-disable-next-line
   }, [isPlayerReady]);
@@ -66,7 +72,12 @@ export default function () {
             <MusicDetails onExpandClick={() => setOpenMusicDetails(false)} />
           ) : (
             <>
-              <MusicControl onClick={() => setOpenMusicDetails(true)} />
+              <MusicControl
+                onBackgroundClick={() => setOpenMusicDetails(true)}
+                onNextClick={() => nextMusic()}
+                onPreviousClick={() => previousMusic()}
+                onTogglePlayClick={() => toggleMusic()}
+              />
               <ContextInfo contexts={contexts} />
               <Link to="/new-context">
                 <Fab className="new-button" color="primary" aria-label="add">
