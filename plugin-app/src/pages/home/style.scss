@@ -80,3 +80,14 @@
     max-height: 70vh;
   }
 }
+
+.music-control-card {
+  position: relative;
+
+  > .background {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+}

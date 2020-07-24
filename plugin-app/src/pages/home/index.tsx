@@ -17,22 +17,22 @@ import { Link } from "react-router-dom";
 
 const contexts = [
   {
-    title: "Contexto N",
+    title: "Contexto 1",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi est aliquam voluptas dignissimos eum blanditiis distinctio molestiae perferendis culpa. Pariatur sed amet officia incidunt natus impedit fugiat quo quia modi.",
   },
   {
-    title: "Contexto N",
+    title: "Contexto 2",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi est aliquam voluptas dignissimos eum blanditiis distinctio molestiae perferendis culpa. Pariatur sed amet officia incidunt natus impedit fugiat quo quia modi.",
   },
   {
-    title: "Contexto N",
+    title: "Contexto 3",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi est aliquam voluptas dignissimos eum blanditiis distinctio molestiae perferendis culpa. Pariatur sed amet officia incidunt natus impedit fugiat quo quia modi.",
   },
   {
-    title: "Contexto N",
+    title: "Contexto 4",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi est aliquam voluptas dignissimos eum blanditiis distinctio molestiae perferendis culpa. Pariatur sed amet officia incidunt natus impedit fugiat quo quia modi.",
   },

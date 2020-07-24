@@ -27,9 +27,11 @@ const useStyles = makeStyles((theme: Theme) =>
     details: {
       display: "flex",
       flexDirection: "column",
+      zIndex: 2,
     },
     content: {
       flex: "1 0 auto",
+      zIndex: 2,
     },
     cover: {
       width: 151,
@@ -57,7 +59,8 @@ export function MusicControl({ onClick }: Props) {
 
   return (
     <Container className="music-control">
-      <Card onClick={onClick} className={classes.root}>
+      <Card className={`${classes.root} music-control-card`}>
+        <div className="background" onClick={onClick}></div>
         <div className={classes.details}>
           <CardContent className={classes.content}>
             <Typography component="h5" variant="h5">

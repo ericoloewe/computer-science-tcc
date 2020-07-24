@@ -15,7 +15,7 @@ export function ContextInfo({ contexts }: Props) {
     <Container className="context-info">
       <Grid container spacing={1}>
         {contexts.map((c) => (
-          <Grid container item md={6}>
+          <Grid key={c.title} container item md={6}>
             <ContextCard title={c.title} description={c.description} />
           </Grid>
         ))}
