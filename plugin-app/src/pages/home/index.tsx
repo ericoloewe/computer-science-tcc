@@ -39,7 +39,14 @@ const contexts = [
 ];
 
 export default function () {
-  const { isPlayerReady, isPluginPlayerActive, transferUserPlaybackToPlugin, togglePlay } = usePlayer();
+  const {
+    isPlayerReady,
+    isPluginPlayerActive,
+    nextTrack,
+    previousTrack,
+    transferUserPlaybackToPlugin,
+    togglePlay,
+  } = usePlayer();
   const { getAvailableDevices } = useUser();
   const [devices, setDevices] = useState<SpotifyDevice[]>([]);
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(true);
@@ -54,8 +61,14 @@ export default function () {
     await transferUserPlaybackToPlugin();
   }
 
-  async function nextMusic() {}
-  async function previousMusic() {}
+  async function nextMusic() {
+    await nextTrack();
+  }
+
+  async function previousMusic() {
+    await previousTrack();
+  }
+
   async function toggleMusic() {
     await togglePlay();
   }

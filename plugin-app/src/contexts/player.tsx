@@ -12,7 +12,9 @@ interface Props {}
 interface Context {
   isPlayerReady: boolean;
   isPluginPlayerActive: boolean;
+  nextTrack: () => Promise<void>;
   playingMusicInfo?: PlayingMusicInfo;
+  previousTrack: () => Promise<void>;
   togglePlay: () => Promise<void>;
   transferUserPlaybackToPlugin: () => Promise<void>;
 }
@@ -80,6 +82,22 @@ export function PlayerProvider(props: Props) {
     setIsPluginPlayerActive((currentPlayer?.device != null && player?.device_id) === currentPlayer?.device?.id);
   }
 
+  async function nextTrack(): Promise<void> {
+    if (player == null) {
+      throw new Error("You have to login first!");
+    }
+
+    await player.original.nextTrack();
+  }
+
+  async function previousTrack(): Promise<void> {
+    if (player == null) {
+      throw new Error("You have to login first!");
+    }
+
+    await player.original.previousTrack();
+  }
+
   async function togglePlay(): Promise<void> {
     if (player == null) {
       throw new Error("You have to login first!");
@@ -106,8 +124,10 @@ export function PlayerProvider(props: Props) {
       value={{
         isPlayerReady,
         isPluginPlayerActive,
-        togglePlay,
+        nextTrack,
         playingMusicInfo,
+        previousTrack,
+        togglePlay,
         transferUserPlaybackToPlugin,
       }}
       {...props}

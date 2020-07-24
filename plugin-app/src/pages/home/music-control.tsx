@@ -12,6 +12,7 @@ import {
   createStyles,
 } from "@material-ui/core";
 import {
+  Pause as PauseIcon,
   SkipPrevious as SkipPreviousIcon,
   PlayArrow as PlayArrowIcon,
   SkipNext as SkipNextIcon,
@@ -78,7 +79,11 @@ export function MusicControl({ onBackgroundClick, onNextClick, onPreviousClick, 
               <SkipPreviousIcon />
             </IconButton>
             <IconButton aria-label="play/pause" onClick={onTogglePlayClick}>
-              <PlayArrowIcon className={classes.playIcon} />
+              {playingMusicInfo?.paused ? (
+                <PlayArrowIcon className={classes.playIcon} />
+              ) : (
+                <PauseIcon className={classes.playIcon} />
+              )}
             </IconButton>
             <IconButton aria-label="next" onClick={onNextClick}>
               <SkipNextIcon />
