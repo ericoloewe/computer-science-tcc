@@ -1389,6 +1389,8 @@ conhecer de novas características (a partir do campo “outro”), e foi
 possível obter de características que mais influenciam os usuários na
 escolha de uma música.
 
+## Modelagem do sistema
+
 ### Como o trabalho vai capturar as ações do usuário e enviá-las ao sistema?
 
 A partir do momento que o usuário utilizar a aplicação, será registrado
