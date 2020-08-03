@@ -1339,6 +1339,58 @@ outros fatores. Essas perguntas são:
 
 14. ##### Dicas e sugestões?
 
+O questionário foi aberto no dia 6 de julho de 2020, nesse dia foi
+realizado uma publicação no Instagram para apresentá-lo ao público, e no
+decorrer, foi enviado a outras redes sociais, como WhatsApp, Slack
+(empresarial), Twitter e Facebook. O seu fechamento foi realizado no dia
+18 de julho de 2020, somando o total de 12 dias em que o ele ficou
+aberto.
+
+### Pré-teste do questionário
+
+Com as perguntas do questionário definidas, foi realizado uma validação
+para garantir que elas faziam sentido, e se o público que não está no
+contexto conseguiria realizar ter um entendimento do que está sendo
+perguntado.
+
+A validação foi feita enviando o questionário para 5 pessoas, as quais
+tinham a responsabilidade de analisar as perguntas e avaliar a
+dificuldade de entendimento de cada uma das perguntas. Isso foi feito
+para garantir que o publico que receberia o questionário - o qual não
+está dentro do contexto do trabalho - conseguiria responder as
+perguntas.
+
+### Resultados do questionário
+
+Com um alcance maior do que 1000 pessoas, o questionário teve uma adesão
+de 222 respostas. Resultando em um publico de idades entre 14 e 71 anos
+e um gosto musical bem diversificado, foi obtido em torno de 60 estilos
+musicais, sendo o mais votado o Rock com 181 marcações.
+
+Dos dispositivos ou aplicativos utilizados para realizar a reprodução
+das músicas, com 168 respostas, o Spotify foi o mais escolhido das
+opções, em segundo lugar ficou o Youtube com 103 respostas (variadas
+entre 86 no Youtube Music, e 17 tratando sobre o Youtube clássico).
+
+A pergunta “Você acha que as recomendações musicais realizadas via
+software poderiam ser melhoradas?” trouxe uma visão da opinião de um
+certo público se existe espaço para esse trabalho evoluir as técnicas de
+reprodução musical, e a “Você acredita que o contexto poderia melhorar
+essas recomendações?” se existe espaço para o contexto evoluir essas
+técnicas, e com 95% na primeira e 96% na segunda pergunta das respostas
+marcadas como “sim”, foi possível verificar que esse trabalho terá
+espaço para agregar qualidade as recomendações musicais.
+
+Para aperfeiçoar a visão do trabalho das características possuem maior
+importância, foi realizado as perguntas “Em quais atividades você
+costuma ouvir música?”, “Em quais lugares você costuma ouvir músicas?” e
+“Você costuma ouvir música quando está:”. Com elas, foi possível
+conhecer de novas características (a partir do campo “outro”), e foi
+possível obter de características que mais influenciam os usuários na
+escolha de uma música.
+
+## Modelagem do sistema
+
 ### Como o trabalho vai capturar as ações do usuário e enviá-las ao sistema?
 
 A partir do momento que o usuário utilizar a aplicação, será registrado
@@ -1376,8 +1428,8 @@ avaliar se as ações condizem com o contexto (próprio, 2020)
 
 Ainda existem estudos a serem aprofundados para responder a esta
 pergunta, pois trata de uma relação estrutural do banco e algoritmo, com
-isso a mesma será respondida durante à próxima fase de desenvolvimento
-deste trabalho.
+isso ela será respondida durante à próxima fase de desenvolvimento deste
+trabalho.
 
 ### Como o trabalho vai classificar o contexto para apresentar para usuário?
 
