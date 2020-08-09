@@ -1,6 +1,7 @@
 import React, { createContext, useContext } from "react";
 import { requestService } from "../services/request";
 import { useUser } from "./user";
+import { gtmService } from "../services/gtm";
 
 interface Props {}
 
@@ -29,20 +30,25 @@ const apiEndpoint = process.env.REACT_APP_API_HOST || "https://localhost:44301/a
 const eventApiEndpoint = `${apiEndpoint}/UserEvents`;
 
 const UserContext = createContext({} as any);
+const useGTM = process.env.REACT_APP_USE_GTM !== "false";
 
 export function EventsProvider(props: Props) {
   const { profile } = useUser();
   const spotifyUserUri = profile.uri;
 
   async function save(type: EventType, value?: string): Promise<void> {
-    await requestService.post({
-      url: eventApiEndpoint,
-      data: {
-        type,
-        value,
-        spotifyUserUri,
-      },
-    });
+    if (useGTM) {
+      gtmService.sendEvent("USER_ACTION", { type, value, spotifyUserUri });
+    } else {
+      await requestService.post({
+        url: eventApiEndpoint,
+        data: {
+          type,
+          value,
+          spotifyUserUri,
+        },
+      });
+    }
   }
 
   return <UserContext.Provider value={{ save }} {...props} />;
