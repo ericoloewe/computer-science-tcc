@@ -18,9 +18,9 @@ export function AppProviders({ children }: Props) {
   return (
     <AuthProvider>
       <UserProvider>
-        <PlaylistProvider>
-          <PlayerProvider>
-            <EventsProvider>
+        <EventsProvider>
+          <PlaylistProvider>
+            <PlayerProvider>
               <FeelingProvider>
                 <ActivityProvider>
                   <LocationProvider>
@@ -28,9 +28,9 @@ export function AppProviders({ children }: Props) {
                   </LocationProvider>
                 </ActivityProvider>
               </FeelingProvider>
-            </EventsProvider>
-          </PlayerProvider>
-        </PlaylistProvider>
+            </PlayerProvider>
+          </PlaylistProvider>
+        </EventsProvider>
       </UserProvider>
     </AuthProvider>
   );

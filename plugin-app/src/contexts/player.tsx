@@ -6,6 +6,8 @@ import { Music } from "../@types/music";
 import { MusicMapper } from "../mappers/music";
 import { SpotifyPlayerResponse } from "../@types/spotify";
 import { TimerUtil } from "../utils/timer";
+import { PlayerUtil } from "../utils/player";
+import { useEvents } from "./event";
 
 interface Props {}
 
@@ -29,12 +31,19 @@ export interface PlayingMusicInfo {
 const MusicContext = createContext<Context>({} as any);
 const spotifyUserEndpoint = `${SpotifyUtil.getApiUrl()}/me`;
 
+const debounce = TimerUtil.debounce((state: Spotify.PlaybackState, saveEvent: Function) => {
+  var { type, value } = PlayerUtil.stateToEvent(state);
+
+  saveEvent(type, value);
+}, 1000);
+
 export function PlayerProvider(props: Props) {
   const { accessToken, isAuthenticated, requestService } = useAuth();
   const [player, setPlayer] = useState<SpotifyPlayer | null>(null);
   const [isPluginPlayerActive, setIsPluginPlayerActive] = useState<any>(null);
   const [isPlayerReady, setIsPlayerReady] = useState<any>(null);
   const [playingMusicInfo, setPlayingMusicInfo] = useState<PlayingMusicInfo | undefined>();
+  const { save: saveEvent } = useEvents();
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -54,6 +63,7 @@ export function PlayerProvider(props: Props) {
           track_window: { current_track },
         } = state;
 
+        debounce(state, saveEvent);
         setPlayingMusicInfo({ currentTrack: MusicMapper.toMusicTrack(current_track), duration, position, paused });
       });
     } // eslint-disable-next-line

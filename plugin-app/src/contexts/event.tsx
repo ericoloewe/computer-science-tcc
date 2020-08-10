@@ -7,8 +7,8 @@ interface Props {}
 
 export enum EventType {
   CHANGE_MUSIC_TIME = "CHANGE_MUSIC_TIME",
-  CHANGE_TO_NEXT_MUSIC = "CHANGE_TO_NEXT_MUSIC",
-  CHANGE_TO_PREVIOUS_MUSIC = "CHANGE_TO_PREVIOUS_MUSIC",
+  CHANGE_MUSIC = "CHANGE_MUSIC",
+  RESTART_MUSIC = "RESTART_MUSIC",
   CHOOSE_ACTIVITY = "CHOOSE_ACTIVITY",
   CHOOSE_FEELING = "CHOOSE_FEELING",
   CHOOSE_LOCATION = "CHOOSE_LOCATION",
@@ -37,17 +37,12 @@ export function EventsProvider(props: Props) {
   const spotifyUserUri = profile.uri;
 
   async function save(type: EventType, value?: string): Promise<void> {
+    const data = { type, value, spotifyUserUri };
+
     if (useGTM) {
-      gtmService.sendEvent("USER_ACTION", { type, value, spotifyUserUri });
+      gtmService.sendEvent("USER_ACTION", data);
     } else {
-      await requestService.post({
-        url: eventApiEndpoint,
-        data: {
-          type,
-          value,
-          spotifyUserUri,
-        },
-      });
+      await requestService.post({ url: eventApiEndpoint, data });
     }
   }
 
