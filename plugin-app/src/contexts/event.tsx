@@ -31,6 +31,7 @@ const eventApiEndpoint = `${apiEndpoint}/UserEvents`;
 
 const UserContext = createContext({} as any);
 const useGTM = process.env.REACT_APP_USE_GTM !== "false";
+const eventsHistory: EventType[] = [];
 
 export function EventsProvider(props: Props) {
   const { profile } = useUser();
@@ -39,11 +40,23 @@ export function EventsProvider(props: Props) {
   async function save(type: EventType, value?: string): Promise<void> {
     const data = { type, value, spotifyUserUri };
 
-    if (useGTM) {
-      gtmService.sendEvent("USER_ACTION", data);
-    } else {
-      await requestService.post({ url: eventApiEndpoint, data });
+    console.log(hasToSaveTheEvent(type));
+
+    if (hasToSaveTheEvent(type)) {
+      if (useGTM) {
+        gtmService.sendEvent("USER_ACTION", data);
+      } else {
+        await requestService.post({ url: eventApiEndpoint, data });
+      }
     }
+  }
+
+  function hasToSaveTheEvent(type: EventType) {
+    const lastEvent = eventsHistory[eventsHistory.length - 1];
+
+    eventsHistory.push(type);
+
+    return !(type === lastEvent && (type === EventType.PAUSE_MUSIC || type === EventType.PLAY_MUSIC));
   }
 
   return <UserContext.Provider value={{ save }} {...props} />;
