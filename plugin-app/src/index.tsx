@@ -18,7 +18,6 @@ const Feeling = React.lazy(() => import("./pages/feeling"));
 const Activity = React.lazy(() => import("./pages/activity"));
 const Location = React.lazy(() => import("./pages/location"));
 const MusicSearch = React.lazy(() => import("./pages/music-search"));
-const NewContext = React.lazy(() => import("./pages/new-context"));
 
 ReactDOM.render(
   <StrictMode>
@@ -26,9 +25,6 @@ ReactDOM.render(
       <AppProviders>
         <BrowserRouter>
           <Switch>
-            <PrivateRoute exact path="/new-context">
-              <NewContext />
-            </PrivateRoute>
             <PrivateRoute path="/new-context/activity">
               <Activity />
             </PrivateRoute>

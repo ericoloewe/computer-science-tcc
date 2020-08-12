@@ -22,13 +22,19 @@
 }
 
 .music-control,
-.context-info {
+.list-of-contexts {
   margin-top: 20px;
 }
 
-.context-info {
-  .context-info-card {
+.list-of-contexts {
+  .context-card {
     width: 100%;
+
+    .content-card-content {
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+    }
   }
 }
 

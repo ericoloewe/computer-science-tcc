@@ -11,32 +11,9 @@ import { usePlayer } from "../../contexts/player";
 import { useUser } from "../../contexts/user";
 import { DeviceList } from "./device-list";
 import { Loader } from "../../components/loader";
-import { ContextInfo } from "./context-info";
+import { ListOfContexts } from "./list-of-contexts";
 import { Add as AddIcon } from "@material-ui/icons";
 import { Link } from "react-router-dom";
-
-const contexts = [
-  {
-    title: "Contexto 1",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi est aliquam voluptas dignissimos eum blanditiis distinctio molestiae perferendis culpa. Pariatur sed amet officia incidunt natus impedit fugiat quo quia modi.",
-  },
-  {
-    title: "Contexto 2",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi est aliquam voluptas dignissimos eum blanditiis distinctio molestiae perferendis culpa. Pariatur sed amet officia incidunt natus impedit fugiat quo quia modi.",
-  },
-  {
-    title: "Contexto 3",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi est aliquam voluptas dignissimos eum blanditiis distinctio molestiae perferendis culpa. Pariatur sed amet officia incidunt natus impedit fugiat quo quia modi.",
-  },
-  {
-    title: "Contexto 4",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi est aliquam voluptas dignissimos eum blanditiis distinctio molestiae perferendis culpa. Pariatur sed amet officia incidunt natus impedit fugiat quo quia modi.",
-  },
-];
 
 export default function () {
   const { isPlayerReady, isPluginPlayerActive, transferUserPlaybackToPlugin } = usePlayer();
@@ -67,12 +44,7 @@ export default function () {
           ) : (
             <>
               <HomeMusicBanner onBackgroundClick={() => setOpenMusicDetails(true)} />
-              <ContextInfo contexts={contexts} />
-              <Link to="/new-context">
-                <Fab className="new-button" color="primary" aria-label="add">
-                  <AddIcon />
-                </Fab>
-              </Link>
+              <ListOfContexts />
             </>
           )
         ) : (
