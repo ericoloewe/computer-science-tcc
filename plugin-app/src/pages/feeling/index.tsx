@@ -13,7 +13,6 @@ export default function () {
   const history = useHistory();
   const { search } = useFeeling();
   const { save: saveEvent } = useEvents();
-  const [searchText, setSearchText] = useState("");
   const [feelings, setFeelings] = useState([] as ChooseItem[]);
   const [selectedFeelingsMap, setSelectedFeelings] = useState({} as { [key: string]: ChooseItem });
 
@@ -46,8 +45,8 @@ export default function () {
   }, [selectedFeelingsMap]);
 
   useEffect(() => {
-    searchFeelingsOfTexts(searchText); // eslint-disable-next-line
-  }, [searchText]);
+    searchFeelingsOfTexts(""); // eslint-disable-next-line
+  }, []);
 
   async function saveAndGoHome() {
     const feelingsToSave = feelings
@@ -61,13 +60,7 @@ export default function () {
 
   return (
     <Layout className="playlist-feeling-page" pageTitle="O que você esta sentindo?" hideDrawerButton={true}>
-      <Choose
-        items={feelings}
-        onChangeSearch={(s) => setSearchText(s)}
-        onChoose={chooseFeeling}
-        searchLabel="Sentimentos"
-        searchValue={searchText}
-      />
+      <Choose items={feelings} onChoose={chooseFeeling} />
       <Button variant="contained" color="primary" onClick={saveAndGoHome}>
         Salvar
       </Button>
