@@ -16,7 +16,7 @@ interface Context {
 
 const apiEndpoint = process.env.REACT_APP_API_HOST || "https://localhost:44301/api";
 const eventApiEndpoint = `${apiEndpoint}/locations`;
-const USE_API = process.env.REACT_APP_USE_API === "true";
+const USE_API = process.env.REACT_APP_USE_API_TO_LOAD_LOCATION === "true";
 
 const LocationContext = createContext({} as any);
 
