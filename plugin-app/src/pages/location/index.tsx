@@ -14,7 +14,6 @@ export default function () {
   const history = useHistory();
   const { search } = useLocation();
   const { save: saveEvent } = useEvents();
-  const [searchText, setSearchText] = useState("");
   const [locations, setLocations] = useState([] as ChooseItem[]);
   const [selectedLocationsMap, setSelectedLocations] = useState({} as { [key: string]: ChooseItem });
 
@@ -57,12 +56,8 @@ export default function () {
   }, [selectedLocationsMap]);
 
   useEffect(() => {
-    searchLocationsOfTexts(searchText); // eslint-disable-next-line
-  }, [searchText]);
-
-  useEffect(() => {
     saveLocation(); // eslint-disable-next-line
-    searchLocationsOfTexts(searchText);
+    searchLocationsOfTexts("");
   }, []);
 
   async function saveAndGoHome() {
@@ -77,13 +72,7 @@ export default function () {
 
   return (
     <Layout className="playlist-location-page" pageTitle="Onde você esta?" hideDrawerButton={true}>
-      <Choose
-        items={locations}
-        onChangeSearch={(s) => setSearchText(s)}
-        onChoose={chooseLocation}
-        searchLabel="Localizações"
-        searchValue={searchText}
-      />
+      <Choose items={locations} onChoose={chooseLocation} />
       <Button variant="contained" color="primary" onClick={saveAndGoHome}>
         Salvar
       </Button>
