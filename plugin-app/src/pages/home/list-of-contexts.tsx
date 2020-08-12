@@ -8,6 +8,11 @@ export function ListOfContexts() {
   return (
     <Container className="list-of-contexts">
       <Grid container spacing={1}>
+        <Grid container item md={12}>
+          <Typography variant="h4" component="h4">
+            Informações para ajudar na recomendação
+          </Typography>
+        </Grid>
         <Grid container item md={6}>
           <ContextCard to="/new-context/music-search" title="Musica" icon={<MusicNote />} />
         </Grid>

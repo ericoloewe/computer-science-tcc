@@ -40,8 +40,6 @@ export function EventsProvider(props: Props) {
   async function save(type: EventType, value?: string): Promise<void> {
     const data = { type, value, spotifyUserUri };
 
-    console.log(hasToSaveTheEvent(type));
-
     if (hasToSaveTheEvent(type)) {
       if (useGTM) {
         gtmService.sendEvent("USER_ACTION", data);
