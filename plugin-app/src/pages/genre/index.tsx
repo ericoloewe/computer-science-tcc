@@ -12,7 +12,6 @@ import { useEvents, EventType } from "../../contexts/event";
 export default function () {
   const history = useHistory();
   const { save: saveEvent } = useEvents();
-  const [searchText, setSearchText] = useState("");
   const [genders, setGenres] = useState([] as ChooseItem[]);
   const [selectedGendersMap, setSelectedGenders] = useState({} as { [key: string]: ChooseItem });
 
@@ -44,8 +43,8 @@ export default function () {
   }, [selectedGendersMap]);
 
   useEffect(() => {
-    searchGendersOfTexts(searchText); // eslint-disable-next-line
-  }, [searchText]);
+    searchGendersOfTexts(""); // eslint-disable-next-line
+  }, []);
 
   async function saveAndGoHome() {
     const genresToSave = Object.keys(selectedGendersMap)
@@ -58,13 +57,7 @@ export default function () {
 
   return (
     <Layout className="genre-page" pageTitle="Generos musicais preferidos" hideDrawerButton={true}>
-      <Choose
-        items={genders}
-        onChangeSearch={(s) => setSearchText(s)}
-        onChoose={chooseGender}
-        searchLabel="Genero musical"
-        searchValue={searchText}
-      />
+      <Choose items={genders} onChoose={chooseGender} />
       <Button variant="contained" color="primary" onClick={saveAndGoHome}>
         Proximo
       </Button>
