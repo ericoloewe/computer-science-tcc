@@ -3,9 +3,9 @@ import { SpotifyArtistsSearchItem, SpotifyTracksSearchItem } from "../@types/spo
 import { MusicMapper } from "./music";
 
 export class SearchMapper {
-  static toArtist({ id, name, images }: SpotifyArtistsSearchItem): Artist {
+  static toArtist({ uri, name, images }: SpotifyArtistsSearchItem): Artist {
     return {
-      id,
+      id: uri,
       name,
       image: {
         alt: name,

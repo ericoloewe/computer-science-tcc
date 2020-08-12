@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 import { MusicNote, EmojiEmotions, Explore, DirectionsRun } from "@material-ui/icons";
 import { Typography, Container, Grid, Card, CardContent } from "@material-ui/core";
 
-interface Props {}
-
-export function ListOfContexts({}: Props) {
+export function ListOfContexts() {
   return (
     <Container className="list-of-contexts">
       <Grid container spacing={1}>

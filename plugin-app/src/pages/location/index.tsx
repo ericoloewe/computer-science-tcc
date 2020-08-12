@@ -57,13 +57,13 @@ export default function () {
 
   useEffect(() => {
     saveLocation(); // eslint-disable-next-line
-    searchLocationsOfTexts("");
+    searchLocationsOfTexts(""); // eslint-disable-next-line
   }, []);
 
   async function saveAndGoHome() {
     const locationsToSave = locations
       .filter((f) => f.selected)
-      .map((f) => f.title.toLowerCase())
+      .map((f) => f.id)
       .join(";");
 
     await saveEvent(EventType.CHOOSE_FEELING, locationsToSave);

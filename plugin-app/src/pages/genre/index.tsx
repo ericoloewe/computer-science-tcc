@@ -48,7 +48,7 @@ export default function () {
 
   async function saveAndGoHome() {
     const genresToSave = Object.keys(selectedGendersMap)
-      .map((k) => selectedGendersMap[k].title)
+      .map((k) => selectedGendersMap[k].id)
       .join(";");
 
     await saveEvent(EventType.LIKED_GENRE, genresToSave);

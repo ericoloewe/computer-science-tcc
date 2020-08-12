@@ -51,7 +51,7 @@ export default function () {
   async function saveAndGoHome() {
     const activitiesToSave = activities
       .filter((f) => f.selected)
-      .map((f) => f.title.toLowerCase())
+      .map((f) => f.id)
       .join(";");
 
     await saveEvent(EventType.CHOOSE_ACTIVITY, activitiesToSave);
