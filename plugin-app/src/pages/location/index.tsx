@@ -62,6 +62,7 @@ export default function () {
 
   useEffect(() => {
     saveLocation(); // eslint-disable-next-line
+    searchLocationsOfTexts(searchText);
   }, []);
 
   async function saveAndGoHome() {
