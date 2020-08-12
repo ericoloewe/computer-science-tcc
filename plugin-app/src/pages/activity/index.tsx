@@ -13,7 +13,6 @@ export default function () {
   const history = useHistory();
   const { search } = useActivity();
   const { save: saveEvent } = useEvents();
-  const [searchText, setSearchText] = useState("");
   const [activities, setActivities] = useState([] as ChooseItem[]);
   const [selectedActivitiesMap, setSelectedActivities] = useState({} as { [key: string]: ChooseItem });
 
@@ -46,8 +45,8 @@ export default function () {
   }, [selectedActivitiesMap]);
 
   useEffect(() => {
-    searchActivitiesOfTexts(searchText); // eslint-disable-next-line
-  }, [searchText]);
+    searchActivitiesOfTexts(""); // eslint-disable-next-line
+  }, []);
 
   async function saveAndGoHome() {
     const activitiesToSave = activities
@@ -61,13 +60,7 @@ export default function () {
 
   return (
     <Layout className="playlist-activity-page" pageTitle="O que você esta fazendo?" hideDrawerButton={true}>
-      <Choose
-        items={activities}
-        onChangeSearch={(s) => setSearchText(s)}
-        onChoose={chooseActivity}
-        searchLabel="Atividades"
-        searchValue={searchText}
-      />
+      <Choose items={activities} onChoose={chooseActivity} />
       <Button variant="contained" color="primary" onClick={saveAndGoHome}>
         Salvar
       </Button>
