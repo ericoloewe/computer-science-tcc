@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
+import { AddOptionEvent } from "../../components/add-option-event";
 import { Choose, ChooseItem } from "../../components/choose";
 import { Layout } from "../shared/layout";
 import { useEvents, EventType } from "../../contexts/event";
@@ -60,6 +61,7 @@ export default function () {
 
   return (
     <Layout className="playlist-feeling-page" pageTitle="O que você esta sentindo?" hideDrawerButton={true}>
+      <AddOptionEvent eventType={EventType.CHOOSE_FEELING} />
       <Choose items={feelings} onChoose={chooseFeeling} />
       <Button variant="contained" color="primary" onClick={saveAndGoHome}>
         Salvar

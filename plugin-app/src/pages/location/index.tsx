@@ -4,11 +4,12 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
+import { AddOptionEvent } from "../../components/add-option-event";
 import { Choose, ChooseItem } from "../../components/choose";
 import { Layout } from "../shared/layout";
+import { LocationUtil } from "../../utils/location";
 import { useEvents, EventType } from "../../contexts/event";
 import { useLocation } from "../../contexts/location";
-import { LocationUtil } from "../../utils/location";
 
 export default function () {
   const history = useHistory();
@@ -66,12 +67,13 @@ export default function () {
       .map((f) => f.id)
       .join(";");
 
-    await saveEvent(EventType.CHOOSE_FEELING, locationsToSave);
+    await saveEvent(EventType.CHOOSE_LOCATION, locationsToSave);
     history.push(`/`);
   }
 
   return (
     <Layout className="playlist-location-page" pageTitle="Onde você esta?" hideDrawerButton={true}>
+      <AddOptionEvent eventType={EventType.CHOOSE_LOCATION} />
       <Choose items={locations} onChoose={chooseLocation} />
       <Button variant="contained" color="primary" onClick={saveAndGoHome}>
         Salvar

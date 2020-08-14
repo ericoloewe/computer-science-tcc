@@ -4,10 +4,11 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
+import { AddOptionEvent } from "../../components/add-option-event";
 import { Choose, ChooseItem } from "../../components/choose";
 import { Layout } from "../shared/layout";
-import { useEvents, EventType } from "../../contexts/event";
 import { useActivity } from "../../contexts/activity";
+import { useEvents, EventType } from "../../contexts/event";
 
 export default function () {
   const history = useHistory();
@@ -60,6 +61,7 @@ export default function () {
 
   return (
     <Layout className="playlist-activity-page" pageTitle="O que você esta fazendo?" hideDrawerButton={true}>
+      <AddOptionEvent eventType={EventType.CHOOSE_ACTIVITY} />
       <Choose items={activities} onChoose={chooseActivity} />
       <Button variant="contained" color="primary" onClick={saveAndGoHome}>
         Salvar
