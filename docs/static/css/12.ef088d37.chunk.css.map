@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,mBAIE,6BAA8B,CAJhC,+EACE,YAAa,CACb,qBAAsB,CACtB,QAC2B,CAJ7B,kBAIE,0BAA2B,CAJ7B,yBAOI,aAAc,CAPlB,+BAUM,QAAO,CAVb,aACE,YAAa,CACb,WAAY,CACZ,UAAW,CACX,qBAAsB","file":"12.ef088d37.chunk.css","sourcesContent":[".root-layout {\n  display: flex;\n  height: 100%;\n  width: 100%;\n  flex-direction: column;\n}\n"]}
