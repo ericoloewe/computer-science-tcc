@@ -2,13 +2,11 @@ import "./style.scss";
 
 import React, { useState, useEffect } from "react";
 import { Button } from "@material-ui/core";
-import { useHistory, useParams } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
+import { AddOptionEvent } from "../../components/add-option-event";
 import { Choose, ChooseItem } from "../../components/choose";
-import { feelingService } from "../../services/feeling";
 import { Layout } from "../shared/layout";
-import { playlistService } from "../../services/playlist";
-import { StringUtil } from "../../utils/string";
 import { useEvents, EventType } from "../../contexts/event";
 import { useFeeling } from "../../contexts/feeling";
 
@@ -16,7 +14,6 @@ export default function () {
   const history = useHistory();
   const { search } = useFeeling();
   const { save: saveEvent } = useEvents();
-  const [searchText, setSearchText] = useState("");
   const [feelings, setFeelings] = useState([] as ChooseItem[]);
   const [selectedFeelingsMap, setSelectedFeelings] = useState({} as { [key: string]: ChooseItem });
 
@@ -49,13 +46,13 @@ export default function () {
   }, [selectedFeelingsMap]);
 
   useEffect(() => {
-    searchFeelingsOfTexts(searchText); // eslint-disable-next-line
-  }, [searchText]);
+    searchFeelingsOfTexts(""); // eslint-disable-next-line
+  }, []);
 
-  async function saveAndGoToPlaylist() {
+  async function saveAndGoHome() {
     const feelingsToSave = feelings
       .filter((f) => f.selected)
-      .map((f) => f.title.toLowerCase())
+      .map((f) => f.id)
       .join(";");
 
     await saveEvent(EventType.CHOOSE_FEELING, feelingsToSave);
@@ -64,15 +61,10 @@ export default function () {
 
   return (
     <Layout className="playlist-feeling-page" pageTitle="O que você esta sentindo?" hideDrawerButton={true}>
-      <Choose
-        items={feelings}
-        onChangeSearch={(s) => setSearchText(s)}
-        onChoose={chooseFeeling}
-        searchLabel="Sentimentos"
-        searchValue={searchText}
-      />
-      <Button variant="contained" color="primary" onClick={saveAndGoToPlaylist}>
-        Proximo
+      <AddOptionEvent eventType={EventType.CHOOSE_FEELING} />
+      <Choose items={feelings} onChoose={chooseFeeling} />
+      <Button variant="contained" color="primary" onClick={saveAndGoHome}>
+        Salvar
       </Button>
     </Layout>
   );

@@ -11,6 +11,17 @@ export class StringUtil {
     return str.length > size ? `${str.slice(0, size)}...` : str;
   }
 
+  static toKebabCase(str: string): string {
+    return str
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^-\w ]/g, '')
+      .replace(/-+/g, ' ')
+      .trim()
+      .replace(/ +/g, '-')
+      .toLowerCase()
+  }
+
   static toString(str: any): string {
     if (!str) {
       throw new Error("Invalid str");

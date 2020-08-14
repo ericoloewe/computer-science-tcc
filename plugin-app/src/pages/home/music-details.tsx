@@ -1,29 +1,10 @@
 import "./style.scss";
 
 import React, { useState, useEffect } from "react";
-import {
-  IconButton,
-  ListItem,
-  ListItemAvatar,
-  Avatar,
-  ListItemText,
-  Slider,
-  FormControl,
-  InputLabel,
-  Select,
-  InputAdornment,
-} from "@material-ui/core";
-import {
-  ExpandMore as ExpandMoreIcon,
-  Fingerprint as FingerprintIcon,
-  Favorite as FavoriteIcon,
-} from "@material-ui/icons";
+import { IconButton, ListItem, ListItemAvatar, Avatar, ListItemText, Slider } from "@material-ui/core";
+import { ExpandMore as ExpandMoreIcon } from "@material-ui/icons";
 import { usePlayer, PlayingMusicInfo } from "../../contexts/player";
-
-const feelings = [
-  { text: "Feliz", value: "feliz" },
-  { text: "Triste", value: "triste" },
-];
+import { MusicControls } from "../../components/music-controls";
 
 interface Props {
   onExpandClick: () => void;
@@ -56,52 +37,7 @@ export function MusicDetails({ onExpandClick }: Props) {
         </ListItem>
       </div>
       {playingMusicInfo && <MusicSlider {...playingMusicInfo} />}
-      <div className="feelings">
-        <FormControl className="make-me-feel">
-          <InputLabel htmlFor="age-native-simple">Essa musica faz me sentir</InputLabel>
-          <Select
-            native
-            inputProps={{
-              name: "age",
-              id: "age-native-simple",
-            }}
-            startAdornment={
-              <InputAdornment position="start">
-                <FavoriteIcon />
-              </InputAdornment>
-            }
-          >
-            <option aria-label="Sentimento" value="" />
-            {feelings.map((f) => (
-              <option key={f.value} value={f.value}>
-                {f.text}
-              </option>
-            ))}
-          </Select>
-        </FormControl>
-        <FormControl className="like-to-listen">
-          <InputLabel htmlFor="age-native-simple">Eu gosto de ouvir quando me sinto</InputLabel>
-          <Select
-            native
-            inputProps={{
-              name: "age",
-              id: "age-native-simple",
-            }}
-            startAdornment={
-              <InputAdornment position="start">
-                <FingerprintIcon />
-              </InputAdornment>
-            }
-          >
-            <option aria-label="Sentimento" value="" />
-            {feelings.map((f) => (
-              <option key={f.value} value={f.value}>
-                {f.text}
-              </option>
-            ))}
-          </Select>
-        </FormControl>
-      </div>
+      <MusicControls className="custom-controls-details" />
     </section>
   );
 }

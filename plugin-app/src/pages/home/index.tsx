@@ -1,25 +1,23 @@
 import "./style.scss";
 
 import React, { useState, useEffect } from "react";
-import { MenuItem, Fab } from "@material-ui/core";
+import { MenuItem } from "@material-ui/core";
 
+import { DeviceList } from "./device-list";
+import { HomeMusicBanner } from "./music-banner";
 import { Layout } from "../shared/layout";
+import { ListOfContexts } from "./list-of-contexts";
+import { Loader } from "../../components/loader";
 import { MusicDetails } from "./music-details";
-import { MusicControl } from "./music-control";
 import { SpotifyDevice } from "../../@types/spotify";
 import { usePlayer } from "../../contexts/player";
 import { useUser } from "../../contexts/user";
-import { DeviceList } from "./device-list";
-import { Loader } from "../../components/loader";
-import { ContextInfo } from "./context-info";
-import { Add as AddIcon } from "@material-ui/icons";
-import { Link } from "react-router-dom";
 
 export default function () {
   const { isPlayerReady, isPluginPlayerActive, transferUserPlaybackToPlugin } = usePlayer();
   const { getAvailableDevices } = useUser();
   const [devices, setDevices] = useState<SpotifyDevice[]>([]);
-  const [isMusicDetailsOpen, setOpenMusicDetails] = useState(true);
+  const [isMusicDetailsOpen, setOpenMusicDetails] = useState(false);
 
   async function fetchData() {
     const devices = await getAvailableDevices();
@@ -43,13 +41,8 @@ export default function () {
             <MusicDetails onExpandClick={() => setOpenMusicDetails(false)} />
           ) : (
             <>
-              <MusicControl />
-              <ContextInfo />
-              <Link to="/new-context">
-                <Fab className="new-button" color="primary" aria-label="add">
-                  <AddIcon />
-                </Fab>
-              </Link>
+              <HomeMusicBanner onBackgroundClick={() => setOpenMusicDetails(true)} />
+              <ListOfContexts />
             </>
           )
         ) : (

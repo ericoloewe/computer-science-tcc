@@ -4,15 +4,15 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
+import { AddOptionEvent } from "../../components/add-option-event";
 import { Choose, ChooseItem } from "../../components/choose";
-import { Layout } from "../shared/layout";
 import { genreService } from "../../services/genre";
+import { Layout } from "../shared/layout";
 import { useEvents, EventType } from "../../contexts/event";
 
 export default function () {
   const history = useHistory();
   const { save: saveEvent } = useEvents();
-  const [searchText, setSearchText] = useState("");
   const [genders, setGenres] = useState([] as ChooseItem[]);
   const [selectedGendersMap, setSelectedGenders] = useState({} as { [key: string]: ChooseItem });
 
@@ -44,12 +44,12 @@ export default function () {
   }, [selectedGendersMap]);
 
   useEffect(() => {
-    searchGendersOfTexts(searchText); // eslint-disable-next-line
-  }, [searchText]);
+    searchGendersOfTexts(""); // eslint-disable-next-line
+  }, []);
 
   async function saveAndGoHome() {
     const genresToSave = Object.keys(selectedGendersMap)
-      .map((k) => selectedGendersMap[k].title)
+      .map((k) => selectedGendersMap[k].id)
       .join(";");
 
     await saveEvent(EventType.LIKED_GENRE, genresToSave);
@@ -58,13 +58,8 @@ export default function () {
 
   return (
     <Layout className="genre-page" pageTitle="Generos musicais preferidos" hideDrawerButton={true}>
-      <Choose
-        items={genders}
-        onChangeSearch={(s) => setSearchText(s)}
-        onChoose={chooseGender}
-        searchLabel="Genero musical"
-        searchValue={searchText}
-      />
+      <AddOptionEvent eventType={EventType.LIKED_GENRE} />
+      <Choose items={genders} onChoose={chooseGender} />
       <Button variant="contained" color="primary" onClick={saveAndGoHome}>
         Proximo
       </Button>

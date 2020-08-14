@@ -21,8 +21,21 @@
   }
 }
 
-.music-control {
+.music-control,
+.list-of-contexts {
   margin-top: 20px;
+}
+
+.list-of-contexts {
+  .context-card {
+    width: 100%;
+
+    .content-card-content {
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
 }
 
 .music-details-component {
@@ -59,6 +72,11 @@
     }
   }
 
+  .custom-controls-details {
+    align-self: center;
+    padding-bottom: 20px;
+  }
+
   > .title-and-description,
   > .slider,
   > .feelings {
@@ -71,5 +89,16 @@
   > .paper {
     margin-top: 10px;
     max-height: 70vh;
+  }
+}
+
+.music-control-card {
+  position: relative;
+
+  > .background {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
   }
 }

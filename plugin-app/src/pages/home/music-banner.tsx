@@ -4,19 +4,14 @@ import {
   Card,
   CardContent,
   Typography,
-  IconButton,
   CardMedia,
   Container,
   makeStyles,
   Theme,
   createStyles,
 } from "@material-ui/core";
-import {
-  SkipPrevious as SkipPreviousIcon,
-  PlayArrow as PlayArrowIcon,
-  SkipNext as SkipNextIcon,
-} from "@material-ui/icons";
 import { usePlayer } from "../../contexts/player";
+import { MusicControls } from "../../components/music-controls";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -27,9 +22,11 @@ const useStyles = makeStyles((theme: Theme) =>
     details: {
       display: "flex",
       flexDirection: "column",
+      zIndex: 2,
     },
     content: {
       flex: "1 0 auto",
+      zIndex: 2,
     },
     cover: {
       width: 151,
@@ -47,13 +44,18 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export function MusicControl() {
+interface Props {
+  onBackgroundClick: () => void;
+}
+
+export function HomeMusicBanner({ onBackgroundClick }: Props) {
   const classes = useStyles();
   const { playingMusicInfo } = usePlayer();
 
   return (
     <Container className="music-control">
-      <Card className={classes.root}>
+      <Card className={`${classes.root} music-control-card`}>
+        <div className="background" onClick={onBackgroundClick}></div>
         <div className={classes.details}>
           <CardContent className={classes.content}>
             <Typography component="h5" variant="h5">
@@ -63,17 +65,7 @@ export function MusicControl() {
               {playingMusicInfo?.currentTrack.album.name}
             </Typography>
           </CardContent>
-          <div className={classes.controls}>
-            <IconButton aria-label="previous">
-              <SkipPreviousIcon />
-            </IconButton>
-            <IconButton aria-label="play/pause">
-              <PlayArrowIcon className={classes.playIcon} />
-            </IconButton>
-            <IconButton aria-label="next">
-              <SkipNextIcon />
-            </IconButton>
-          </div>
+          <MusicControls className={classes.controls} />
         </div>
         <CardMedia
           className={classes.cover}

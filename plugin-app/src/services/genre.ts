@@ -1,5 +1,6 @@
-import { genderMock as genreMock } from "./__mocks";
 import { messageService } from "./message";
+import { requestService } from "./request";
+import { StringUtil } from "../utils/string";
 import { TimerUtil } from "../utils/timer";
 
 class GenreService {
@@ -11,10 +12,14 @@ class GenreService {
   }
 
   async search(text: string): Promise<Genre[]> {
-    await TimerUtil.wait(1000);
-    console.log("text", text);
+    const { data } = await requestService.get<string[]>("/genres.json");
 
-    return Promise.resolve(genreMock);
+    return data
+      .filter((l) => !text || l.toLowerCase().includes(text?.toLowerCase()))
+      .map((l) => ({
+        id: StringUtil.toKebabCase(l),
+        title: l,
+      }));
   }
 }
 

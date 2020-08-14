@@ -6,14 +6,18 @@ import { Music } from "../@types/music";
 import { MusicMapper } from "../mappers/music";
 import { SpotifyPlayerResponse } from "../@types/spotify";
 import { TimerUtil } from "../utils/timer";
+import { PlayerUtil } from "../utils/player";
+import { useEvents } from "./event";
 
 interface Props {}
 
 interface Context {
   isPlayerReady: boolean;
   isPluginPlayerActive: boolean;
-  play: (musicId: string) => Promise<void>;
+  nextTrack: () => Promise<void>;
   playingMusicInfo?: PlayingMusicInfo;
+  previousTrack: () => Promise<void>;
+  togglePlay: () => Promise<void>;
   transferUserPlaybackToPlugin: () => Promise<void>;
 }
 
@@ -27,12 +31,19 @@ export interface PlayingMusicInfo {
 const MusicContext = createContext<Context>({} as any);
 const spotifyUserEndpoint = `${SpotifyUtil.getApiUrl()}/me`;
 
+const debounce = TimerUtil.debounce((state: Spotify.PlaybackState, saveEvent: Function) => {
+  var { type, value } = PlayerUtil.stateToEvent(state);
+
+  saveEvent(type, value);
+}, 1000);
+
 export function PlayerProvider(props: Props) {
   const { accessToken, isAuthenticated, requestService } = useAuth();
   const [player, setPlayer] = useState<SpotifyPlayer | null>(null);
   const [isPluginPlayerActive, setIsPluginPlayerActive] = useState<any>(null);
   const [isPlayerReady, setIsPlayerReady] = useState<any>(null);
   const [playingMusicInfo, setPlayingMusicInfo] = useState<PlayingMusicInfo | undefined>();
+  const { save: saveEvent } = useEvents();
 
   useEffect(() => {
     if (isAuthenticated) {
@@ -52,6 +63,7 @@ export function PlayerProvider(props: Props) {
           track_window: { current_track },
         } = state;
 
+        debounce(state, saveEvent);
         setPlayingMusicInfo({ currentTrack: MusicMapper.toMusicTrack(current_track), duration, position, paused });
       });
     } // eslint-disable-next-line
@@ -80,19 +92,28 @@ export function PlayerProvider(props: Props) {
     setIsPluginPlayerActive((currentPlayer?.device != null && player?.device_id) === currentPlayer?.device?.id);
   }
 
-  async function play(spotifyUri: string): Promise<void> {
+  async function nextTrack(): Promise<void> {
     if (player == null) {
       throw new Error("You have to login first!");
     }
 
-    const spotifyPlaySongEndpoint = `${SpotifyUtil.getApiUrl()}/me/player/play?device_id=${player.device_id}`;
+    await player.original.nextTrack();
+  }
 
-    requestService.put({
-      url: spotifyPlaySongEndpoint,
-      data: {
-        uris: [spotifyUri],
-      },
-    });
+  async function previousTrack(): Promise<void> {
+    if (player == null) {
+      throw new Error("You have to login first!");
+    }
+
+    await player.original.previousTrack();
+  }
+
+  async function togglePlay(): Promise<void> {
+    if (player == null) {
+      throw new Error("You have to login first!");
+    }
+
+    await player.original.togglePlay();
   }
 
   async function transferUserPlaybackToPlugin(): Promise<void> {
@@ -113,8 +134,10 @@ export function PlayerProvider(props: Props) {
       value={{
         isPlayerReady,
         isPluginPlayerActive,
-        play,
+        nextTrack,
         playingMusicInfo,
+        previousTrack,
+        togglePlay,
         transferUserPlaybackToPlugin,
       }}
       {...props}

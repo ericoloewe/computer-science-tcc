@@ -15,8 +15,9 @@ const Logout = React.lazy(() => import("./pages/logout"));
 const Artists = React.lazy(() => import("./pages/artists"));
 const Gender = React.lazy(() => import("./pages/genre"));
 const Feeling = React.lazy(() => import("./pages/feeling"));
+const Activity = React.lazy(() => import("./pages/activity"));
+const Location = React.lazy(() => import("./pages/location"));
 const MusicSearch = React.lazy(() => import("./pages/music-search"));
-const NewContext = React.lazy(() => import("./pages/new-context"));
 
 ReactDOM.render(
   <StrictMode>
@@ -24,8 +25,8 @@ ReactDOM.render(
       <AppProviders>
         <BrowserRouter>
           <Switch>
-            <PrivateRoute exact path="/new-context">
-              <NewContext />
+            <PrivateRoute path="/new-context/activity">
+              <Activity />
             </PrivateRoute>
             <PrivateRoute path="/new-context/feeling">
               <Feeling />
@@ -38,6 +39,9 @@ ReactDOM.render(
             </PrivateRoute>
             <PrivateRoute path="/new-context/artists">
               <Artists />
+            </PrivateRoute>
+            <PrivateRoute path="/new-context/location">
+              <Location />
             </PrivateRoute>
             <NonAuthRoute path="/login">
               <Login />
