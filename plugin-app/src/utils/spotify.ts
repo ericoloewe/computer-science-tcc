@@ -74,7 +74,7 @@ export class SpotifyUtil {
   static getTokenAndInfoFromRedirectUrl(redirectUrl: string): SpotifyToken {
     var url = new URL(redirectUrl);
 
-    url.search = url.hash.slice(1, url.hash.length);
+    url.search = url.hash.slice(2, url.hash.length);
 
     const accessToken = url.searchParams.get("access_token");
     const expiresInSeconds = Number(url.searchParams.get("expires_in"));

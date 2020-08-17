@@ -49,6 +49,9 @@ ReactDOM.render(
             <NonAuthRoute path="/login-redirect-spotify">
               <LoginRedirectSpotify />
             </NonAuthRoute>
+            <NonAuthRoute exact path="/:access_token(access_token=.*)">
+              <LoginRedirectSpotify />
+            </NonAuthRoute>
             <PrivateRoute path="/logout">
               <Logout />
             </PrivateRoute>
