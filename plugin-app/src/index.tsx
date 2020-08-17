@@ -7,8 +7,6 @@ import { Loader } from "./components/loader";
 import { PrivateRoute, NonAuthRoute } from "./components/router";
 import { AppProviders } from "./contexts";
 
-const routeBasename = process.env.REACT_APP_ROUTE_BASENAME || "";
-
 const Home = React.lazy(() => import("./pages/home"));
 const Welcome = React.lazy(() => import("./pages/welcome"));
 const Login = React.lazy(() => import("./pages/login"));
@@ -25,7 +23,7 @@ ReactDOM.render(
   <StrictMode>
     <Suspense fallback={<Loader />}>
       <AppProviders>
-        <HashRouter basename={routeBasename}>
+        <HashRouter>
           <Switch>
             <PrivateRoute path="/new-context/activity">
               <Activity />
