@@ -7,8 +7,8 @@
     "static/js/2.785f0ec3.chunk.js": "/computer-science-tcc/static/js/2.785f0ec3.chunk.js",
     "static/js/2.785f0ec3.chunk.js.map": "/computer-science-tcc/static/js/2.785f0ec3.chunk.js.map",
     "main.css": "/computer-science-tcc/static/css/main.2562c6f0.chunk.css",
-    "main.js": "/computer-science-tcc/static/js/main.8da6124a.chunk.js",
-    "main.js.map": "/computer-science-tcc/static/js/main.8da6124a.chunk.js.map",
+    "main.js": "/computer-science-tcc/static/js/main.1ce86b99.chunk.js",
+    "main.js.map": "/computer-science-tcc/static/js/main.1ce86b99.chunk.js.map",
     "runtime-main.js": "/computer-science-tcc/static/js/runtime-main.08806269.js",
     "runtime-main.js.map": "/computer-science-tcc/static/js/runtime-main.08806269.js.map",
     "static/js/5.c7fbd566.chunk.js": "/computer-science-tcc/static/js/5.c7fbd566.chunk.js",
@@ -49,7 +49,7 @@
     "static/js/17.5556e39e.chunk.js": "/computer-science-tcc/static/js/17.5556e39e.chunk.js",
     "static/js/17.5556e39e.chunk.js.map": "/computer-science-tcc/static/js/17.5556e39e.chunk.js.map",
     "index.html": "/computer-science-tcc/index.html",
-    "precache-manifest.64f618f7515f86fffc8c452186845e20.js": "/computer-science-tcc/precache-manifest.64f618f7515f86fffc8c452186845e20.js",
+    "precache-manifest.8de305bfdd18d827d51b9ec25f15c270.js": "/computer-science-tcc/precache-manifest.8de305bfdd18d827d51b9ec25f15c270.js",
     "service-worker.js": "/computer-science-tcc/service-worker.js",
     "static/css/10.35fc799c.chunk.css.map": "/computer-science-tcc/static/css/10.35fc799c.chunk.css.map",
     "static/css/11.d6a6c78d.chunk.css.map": "/computer-science-tcc/static/css/11.d6a6c78d.chunk.css.map",
@@ -70,6 +70,6 @@
     "static/js/runtime-main.08806269.js",
     "static/js/5.c7fbd566.chunk.js",
     "static/css/main.2562c6f0.chunk.css",
-    "static/js/main.8da6124a.chunk.js"
+    "static/js/main.1ce86b99.chunk.js"
   ]
 }
