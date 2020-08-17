@@ -2,6 +2,7 @@
   "name": "plugin-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ericoloewe.github.io/computer-science-tcc/",
   "dependencies": {
     "@material-ui/core": "^4.9.8",
     "@material-ui/icons": "^4.9.1",
@@ -45,6 +46,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": "/computer-science-tcc/"
+  }
 }
