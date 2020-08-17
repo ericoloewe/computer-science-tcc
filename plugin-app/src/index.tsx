@@ -2,7 +2,7 @@ import React, { Suspense, StrictMode } from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter, Switch } from "react-router-dom";
+import { HashRouter, Switch } from "react-router-dom";
 import { Loader } from "./components/loader";
 import { PrivateRoute, NonAuthRoute } from "./components/router";
 import { AppProviders } from "./contexts";
@@ -25,7 +25,7 @@ ReactDOM.render(
   <StrictMode>
     <Suspense fallback={<Loader />}>
       <AppProviders>
-        <BrowserRouter basename={routeBasename}>
+        <HashRouter basename={routeBasename}>
           <Switch>
             <PrivateRoute path="/new-context/activity">
               <Activity />
@@ -61,7 +61,7 @@ ReactDOM.render(
               <Home />
             </PrivateRoute>
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </AppProviders>
     </Suspense>
   </StrictMode>,
