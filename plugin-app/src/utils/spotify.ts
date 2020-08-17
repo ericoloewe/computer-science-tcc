@@ -98,7 +98,7 @@ export class SpotifyUtil {
 
     var url = new URL(process.env.REACT_APP_HOST_URL);
 
-    url.pathname = "/login-redirect-spotify";
+    url.pathname += "/login-redirect-spotify";
 
     return url.toString();
   }
