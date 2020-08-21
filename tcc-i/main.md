@@ -989,11 +989,11 @@ comportamento pode ser tido por:
 
 > Qualquer ação ou reação do organismo ou parte dele.
 
-~~Unindo a definição do contexto com a definição acima,~~ A partir da
-definição de contexto, foi realizado um estudo das possíveis ações a
-serem registradas em um sistema, as quais, seria realizado um estudo,
-para gerar uma classificação e no futuro, auxiliar na recomendação
-musical. Esse estudo trouxe a seguinte lista de ações:
+A partir da definição de contexto, foi realizado um levantamento das
+possíveis ações a serem registradas em um sistema baseado no *app*
+Spotify, as quais, serão colocadas no questionário, e o seu resultado
+será utilizado como peso para cada ação e no futuro, auxiliar na
+recomendação musical. Esse estudo trouxe a seguinte lista de ações:
 
   - Pausar / Tocar música
 
@@ -1022,10 +1022,10 @@ ambiente pode ser tido por:
 > seres vivos e as coisas.
 
 Com essa definição, foram pesquisados sensores e informações que
-pudessem representar essas condições. Foram encontrados 3 possíveis
-contextos que podem ser representados na aplicação, que são: (i)
-Localização; (ii) Clima e; (iii) Reprodução musical em grupo /
-individual.
+pudessem representar essas condições. A partir da análise dos contextos
+levantados, foi identificado 3 possíveis contextos de ambiente que podem
+ser representados na aplicação, que são: (i) Localização; (ii) Clima e;
+(iii) Reprodução musical em grupo / individual.
 
 ### Como serão obtidos os contextos?
 
@@ -1039,6 +1039,12 @@ serem executadas pelo usuário demonstradas na Figura 10.
 <span id="_Ref42447458" class="anchor"></span>Figura 10 Lista de ações
 que auxiliarão o entendimento do contexto de ambiente e comportamento do
 usuário na aplicação (próprio, 2020)
+
+Na aplicação, será obtido contexto de duas maneiras: (i) explicitamente,
+onde o usuário irá cadastrar o que está fazendo. Ex.: emoções,
+atividades. (ii) implicitamente, a qual será obtido através das ações do
+usuário realizadas no aplicativo. Ex.: ações sobre os componentes do
+app, clima.
 
 São poucas as ações que auxiliam no entendimento do contexto e que podem
 ser obtidas implicitamente, isso devido as limitações dos sensores e
@@ -1076,27 +1082,7 @@ validação da acuracidade das recomendações feitas. São elas que
 demonstrarão ao sistema, o gosto ou não do usuário, em cima das músicas
 recomendadas. Cada ação terá um nível de importância, a qual será obtida
 através das respostas do questionário. As possíveis ações a serem
-executadas pelo usuário estão listadas abaixo.
-
-  - Pausar / Tocar música
-
-  - Passar / Voltar \(n\) músicas
-
-  - Aumentar / Abaixar volume
-
-  - Escolher música / artista / gênero
-
-  - Abrir / Fechar o app
-
-  - Definir tempo da música
-
-  - Definir atividade
-
-  - Definir humor
-
-  - Definir / Trocar localização
-
-  - Definir grupo / individual
+executadas pelo usuário estão listadas na seção 3.1.1.
 
 ## pesquisa com usuários sobre recomendação musical
 
@@ -1112,236 +1098,27 @@ desenvolvimento do sistema de recomendação musical (próprio, 2020)
 As perguntas aplicadas no questionário permitiram conhecer melhor os
 usuários que utilizarão a aplicação, sendo assim, foram utilizadas
 perguntas que permitam entender suas preferências, atividades, dentre
-outros fatores. As perguntas do questionário estão listadas no Quadro Y:
+outros fatores. As perguntas do questionário estão listadas no Quadro 2:
 
-1.  ##### Qual o aplicativo / reprodutor de música você utiliza atualmente?
-    
-      - Spotify
-    
-      - Deezer
-    
-      - Youtube Music
-    
-      - TIDAL
-    
-      - Apple Music
-    
-      - Google Play Music
-    
-      - Rádio
-    
-      - Outro, qual?
+Quadro 2 Perguntas e respostas disponibilizadas a um certo público
+através dos formulários do Google. (próprio, 2020)
 
-2.  ##### Você acha que as recomendações musicais realizadas via software poderiam ser melhoradas? 
-
-3.  ##### Você acredita que o contexto poderia melhorar essas recomendações?
-
-4.  ##### Em quais atividades você costuma ouvir música?
-    
-      - Acordando
-    
-      - Assistindo a filmes / séries / novelas
-    
-      - Comendo
-    
-      - Correndo
-    
-      - Dirigindo
-    
-      - Estudando
-    
-      - Jogando
-    
-      - Lazer
-    
-      - Lendo
-    
-      - Indo dormir
-    
-      - Passeando
-    
-      - Praticando exercícios
-    
-      - Trabalhando
-    
-      - Treinando
-    
-      - Outro, qual?
-
-5.  ##### Em quais lugares você costuma ouvir músicas?
-    
-      - Academia
-    
-      - Bar
-    
-      - Biblioteca
-    
-      - Casa
-    
-      - Com os amigos
-    
-      - Escola
-    
-      - Festa
-    
-      - Praia
-    
-      - Restaurante
-    
-      - Trabalho
-    
-      - Outro, qual?
-
-6.  ##### Você costuma ouvir música quando está:
-    
-      - Aborrecido
-    
-      - Alegre
-    
-      - Amoroso
-    
-      - Ansioso
-    
-      - Apavorado
-    
-      - Assustado
-    
-      - Constrangido
-    
-      - Culpado
-    
-      - Deprimido
-    
-      - Desapontado
-    
-      - Excitado
-    
-      - Envergonhado
-    
-      - Em pânico
-    
-      - Feliz
-    
-      - Frustrado
-    
-      - Furioso
-    
-      - Inseguro
-    
-      - Irado
-    
-      - Irritado
-    
-      - Humilhado
-    
-      - Magoado
-    
-      - Nervoso
-    
-      - Orgulhoso
-    
-      - Triste
-    
-      - Zangado
-    
-      - Outro, qual?
-
-7.  ##### O que costuma te influenciar na escolha da música?
-    
-      - Atividades
-    
-      - Clima
-    
-      - Grupo / Individual
-    
-      - Horário do dia
-    
-      - Humor
-    
-      - Localização
-    
-      - Outro, Qual?
-
-8.  ##### O que você faz quando gosta ou não de uma música?
-    
-      - Abrir / Fechar o app
-    
-      - Aumentar / Abaixar volume
-    
-      - Definir tempo da música
-    
-      - Escolher música / artista / gênero
-    
-      - Pausar / Tocar música
-    
-      - Passar / Voltar \(n\) músicas
-    
-      - Outra, qual?
-
-9.  ##### As músicas que você escuta sozinho são diferentes das que escuta com os amigos?
-
-10. ##### Quanto tempo por semana você escuta música?
-    
-      - menos que 5 horas
-    
-      - de 5 a 10 horas
-    
-      - de 11 a 30 horas
-    
-      - de 31 a 50 horas
-    
-      - mais que 50 horas
-
-11. ##### Quais são os gêneros musicais que gosta de escutar?
-    
-      - Alternativa
-    
-      - Blues
-    
-      - Clássica
-    
-      - Country
-    
-      - Dance
-    
-      - Eletrônica
-    
-      - Folk
-    
-      - Funk
-    
-      - Hip Hop
-    
-      - Latina
-    
-      - MPB
-    
-      - Jazz
-    
-      - Pop
-    
-      - Reggae
-    
-      - R\&B
-    
-      - Rock
-    
-      - Soundtrack
-    
-      - Vocal
-
-12. ##### Gostaria de participar de uma pesquisa que visa melhorar a recomendação musical?
-
-13. ##### Sua idade
-
-14. ##### Dicas e sugestões?
-
-O questionário foi aberto no dia 6 de julho de 2020, nesse dia foi
-realizada uma publicação no Instagram para apresentá-lo ao público, e no
-decorrer, foi enviado a outras redes sociais, como WhatsApp, Slack
-(empresarial), Twitter e Facebook. O seu fechamento foi realizado no dia
-18 de julho de 2020, somando o total de 12 dias em que o ele ficou
-aberto.
+| Pergunta                                                                                     | Possíveis respostas                                                                                                                                                                                                                                                       |
+| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1\. Qual o aplicativo / reprodutor de música você utiliza atualmente?                        | Spotify, Deezer, Youtube Music, TIDAL, Apple Music, Google Play Music, Rádio Outro, qual?                                                                                                                                                                                 |
+| 2\. Você acha que as recomendações musicais realizadas via software poderiam ser melhoradas? | Sim, não                                                                                                                                                                                                                                                                  |
+| 3\. Você acredita que o contexto poderia melhorar essas recomendações?                       | Sim, não                                                                                                                                                                                                                                                                  |
+| 4\. Em quais atividades você costuma ouvir música?                                           | Acordando, Assistindo a filmes / séries / novelas, Comendo, Correndo, Dirigindo, Estudando, Jogando, Lazer, Lendo, Indo dormir, Passeando, Praticando exercícios, Trabalhando, Treinando, Outro, qual?                                                                    |
+| 5\. Em quais lugares você costuma ouvir músicas?                                             | Academia, Bar, Biblioteca, Casa, Com os amigos, Escola, Festa, Praia, Restaurante, Trabalho, Outro, qual?                                                                                                                                                                 |
+| 6\. Você costuma ouvir música quando está:                                                   | Aborrecido, Alegre, Amoroso, Ansioso, Apavorado, Assustado, Constrangido, Culpado, Deprimido, Desapontado, Excitado, Envergonhado, Em pânico, Feliz, Frustrado, Furioso, Inseguro, Irado, Irritado, Humilhado, Magoado, Nervoso, Orgulhoso, Triste, Zangado, Outro, qual? |
+| 7\. O que costuma te influenciar na escolha da música?                                       | Atividades, Clima, Grupo / Individual, Horário do dia, Humor, Localização, Outro, Qual?                                                                                                                                                                                   |
+| 8\. O que você faz quando gosta ou não de uma música?                                        | Abrir / Fechar o app, Aumentar / Abaixar volume, Definir tempo da música, Escolher música / artista / gênero, Pausar / Tocar música, Passar / Voltar n músicas, Outra, qual?                                                                                              |
+| 9\. As músicas que você escuta sozinho são diferentes das que escuta com os amigos?          | Sim, não                                                                                                                                                                                                                                                                  |
+| 10\. Quanto tempo por semana você escuta música?                                             | Menos que 5 horas, de 5 a 10 horas, de 11 a 30 horas, de 31 a 50 horas, mais que 50 horas                                                                                                                                                                                 |
+| 11\. Quais são os gêneros musicais que gosta de escutar?                                     | Alternativa, Blues, Clássica, Country, Dance, Eletrônica, Folk, Funk, Hip Hop, Latina, MPB, Jazz, Pop, Reggae, R\&B, Rock, Soundtrack, Vocal                                                                                                                              |
+| 12\. Gostaria de participar de uma pesquisa que visa melhorar a recomendação musical?        | Sim, não                                                                                                                                                                                                                                                                  |
+| 13\. Sua idade                                                                               |                                                                                                                                                                                                                                                                           |
+| 14\. Dicas e sugestões?                                                                      |                                                                                                                                                                                                                                                                           |
 
 ### Pré-teste do questionário
 
@@ -1359,9 +1136,18 @@ as perguntas com completa compreensão das mesmas.
 
 ### Resultados do questionário
 
-Com um alcance maior do que 1000 pessoas, o questionário teve uma adesão
-de 222 respostas. O público respondente tinha entre 14 e 71 anos e um
-gosto musical bem diversificado, foram obtidos em torno de 60 estilos
+O questionário foi aberto no dia 6 de julho de 2020, nesse dia foi
+realizada uma publicação no Instagram para apresentá-lo ao público, e no
+decorrer, foi enviado a outras redes sociais, como WhatsApp, Slack
+(empresarial), Twitter e Facebook. O seu fechamento foi realizado no dia
+18 de julho de 2020, somando o total de 12 dias em que o ele ficou
+aberto.
+
+Com um alcance maior do que 1000 pessoas, sendo 800 funcionários da CWI
+que possuem acesso ao Slack, 200 pessoas alcançadas através do Instagram
+e demais divulgações que tiveram, o questionário teve uma adesão de 222
+respostas. O público respondente tinha entre 14 e 71 anos e um gosto
+musical bem diversificado, foram obtidos em torno de 60 estilos
 musicais, sendo o mais votado o Rock, com 181 marcações.
 
 Dos dispositivos ou aplicativos utilizados para realizar a reprodução
