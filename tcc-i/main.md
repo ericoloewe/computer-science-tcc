@@ -178,15 +178,15 @@ Sumário
 [3.1.1 O que é o contexto comportamental?
 35](#o-que-é-o-contexto-comportamental)
 
-[3.1.2 O que é o contexto ambiente? 36](#o-que-é-o-contexto-ambiente)
+[3.1.2 O que é o contexto ambiente? 36](#o-que-é-o-contexto-de-ambiente)
 
 [3.1.3 Como será obtido os contextos?
-36](#como-será-obtido-os-contextos)
+36](#como-serão-obtidos-os-contextos)
 
 [3.1.4 O que são as ações do usuário?
 37](#o-que-são-as-ações-do-usuário)
 
-[3.2 Metodologia do sistema 38](#metodologia-do-sistema)
+[3.2 Metodologia do sistema 38](#_Toc44538405)
 
 [3.2.1 Como o trabalho vai capturar as ações do usuário e enviá-las ao
 sistema?
@@ -942,13 +942,13 @@ Factorization* (*Tensor Decomposition*, *Nonnegative Tensor
 Factorization*, etc.), os quais são os algoritmos utilizados para
 realizar a recomendações nos *RecSys*.
 
-# Modelagem do “Dynamic and Contextual Recommendations of Music”
+# Modelagem do “*Dynamic and Contextual Recommendations of Music*”
 
-A partir da revisão feita, foi possível conhecer diversos tipos de
-sistemas e modelos que utilizam do contexto para realizar as
+A partir da revisão bibliográfica realizada, foi possível conhecer
+alguns sistemas e modelos que utilizam do contexto para realizar as
 recomendações musicais, tornando possível entender certas lacunas que
-não foram analisadas ou compreendidas nessa área de pesquisa. A Figura 8
-abaixo, apresenta o modelo de análise de recomendações dinâmica.
+não foram analisadas nessa área de pesquisa. A Figura 8 apresenta o
+modelo de análise de recomendações dinâmica.
 
 ![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-05T02%3A05%3A36.505Z%22%2C%22pageId%22%3A%22c8m2vXLdxm1UY1WbSgt9%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image6.png)
 
@@ -958,13 +958,13 @@ desenvolvido para demonstrar a recomendação dinâmica (próprio, 2020)
 Com isso, foi possível entender e desenvolver um modelo de sistemas de
 recomendação chamado *DCRM* (*Dynamic and Contextual Recommendations of
 Music*), que utiliza de uma análise recorrente do contexto, para
-realizar as recomendações dinâmicas às mudanças do contexto, esse modelo
-ele será apresentado nessa nas subseções a seguir.
+realizar as recomendações dinâmicas às mudanças do contexto. Esse modelo
+será apresentado com mais detalhes nas subseções a seguir.
 
 ## Contexto
 
 Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
-contexto pode ser tido por:
+contexto pode ser definido por:
 
 > O conjunto de circunstâncias inter-relacionadas de cuja tessitura se
 > depreende determinado fato ou situação; circunstância(s), conjuntura,
@@ -975,15 +975,12 @@ devido fim, onde geralmente se baseia em dados históricos para
 produzi-las. Observa-se que, com o entendimento do contexto, ou conforme
 a definição das “circunstâncias que levaram a certos fatos ou
 situações”, é possível auxiliar as recomendações, aumentando o
-número de dados disponíveis para realizar a classificação e filtro. É
-apresentado na Figura 9 abaixo, uma visão macro dos contextos que serão
+número de dados disponíveis para realizar uma classificação e/ou
+filtro. A Figura 9 apresenta uma visão macro dos contextos que serão
 considerados neste trabalho.
 
 <span id="_Ref42447869" class="anchor"></span>Figura 9 Apresentação dos
 contextos utilizados no trabalho (próprio, 2020)
-
-Nas próximas subseções será detalhado melhor cada item da Figura 9, além
-de, apresentar o processo desenvolvido para capturar cada contexto.
 
 ### O que é o contexto comportamental?
 
@@ -992,11 +989,11 @@ comportamento pode ser tido por:
 
 > Qualquer ação ou reação do organismo ou parte dele.
 
-Unindo a definição do contexto com a definição acima, foi realizado um
-estudo das possíveis ações a serem registradas em um sistema, as quais,
-seria realizado um estudo, para gerar uma classificação e no futuro,
-auxiliar na recomendação musical. Esse estudo trouxe a seguinte lista de
-ações:
+~~Unindo a definição do contexto com a definição acima,~~ A partir da
+definição de contexto, foi realizado um estudo das possíveis ações a
+serem registradas em um sistema, as quais, seria realizado um estudo,
+para gerar uma classificação e no futuro, auxiliar na recomendação
+musical. Esse estudo trouxe a seguinte lista de ações:
 
   - Pausar / Tocar música
 
@@ -1016,7 +1013,7 @@ ações:
 
   - Quantidade de músicas escutadas no dia (tempo)
 
-### O que é o contexto ambiente?
+### O que é o contexto de ambiente?
 
 Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
 ambiente pode ser tido por:
@@ -1024,25 +1021,24 @@ ambiente pode ser tido por:
 > Conjunto de condições físicas, biológicas e químicas que rodeiam os
 > seres vivos e as coisas.
 
-Com essa definição, foi estudado sensores e informações que pudessem
-representar essas condições. E desse estudo, foi encontrado 3 possíveis
+Com essa definição, foram pesquisados sensores e informações que
+pudessem representar essas condições. Foram encontrados 3 possíveis
 contextos que podem ser representados na aplicação, que são: (i)
 Localização; (ii) Clima e; (iii) Reprodução musical em grupo /
 individual.
 
-### Como será obtido os contextos?
+### Como serão obtidos os contextos?
 
-Os contextos do sistema serão obtidos, a partir da captura de dados de
+Os contextos no *DCRM* serão obtidos a partir da captura de dados de
 sensores, *API’s* (*Application Programming Interface*) e eventos de um
-app. A lista de ações, pode ser obtida através das possíveis ações a
-serem executadas pelo usuário demonstradas as quais são apresentadas na
-Figura 10 abaixo.
+app. A lista de ações pode ser obtida por meio das possíveis ações a
+serem executadas pelo usuário demonstradas na Figura 10.
 
 ![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A38%3A01.600Z%22%2C%22pageId%22%3A%22CdkkQKYaVUET6wdkgj3H%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image7.png)
 
 <span id="_Ref42447458" class="anchor"></span>Figura 10 Lista de ações
 que auxiliarão o entendimento do contexto de ambiente e comportamento do
-usuário da aplicação (próprio, 2020)
+usuário na aplicação (próprio, 2020)
 
 São poucas as ações que auxiliam no entendimento do contexto e que podem
 ser obtidas implicitamente, isso devido as limitações dos sensores e
@@ -1054,7 +1050,7 @@ maneira explicita e implícita, sendo elas:
 
   - localização
 
-  - ações em cima dos componentes do app
+  - ações sobre os componentes do app
 
   - tempo
 
@@ -1074,13 +1070,13 @@ maneira explicita e implícita, sendo elas:
 
 ### O que são as ações do usuário?
 
-As ações do usuário trazem diversas informações, referentes ao contexto
+As ações do usuário trazem diversas informações referentes ao contexto
 que ele está vivendo, elas auxiliam no entendimento do seu contexto e na
-validação da acuracidade das recomendações feitas. São elas que irão
-demonstrar ao sistema, o gosto ou desgosto do usuário, em cima das
-músicas recomendadas. Cada ação terá um nível de importância, a qual
-será obtida através das respostas do questionário. As possíveis ações a
-serem executadas pelo usuário estão listadas abaixo.
+validação da acuracidade das recomendações feitas. São elas que
+demonstrarão ao sistema, o gosto ou não do usuário, em cima das músicas
+recomendadas. Cada ação terá um nível de importância, a qual será obtida
+através das respostas do questionário. As possíveis ações a serem
+executadas pelo usuário estão listadas abaixo.
 
   - Pausar / Tocar música
 
@@ -1102,20 +1098,21 @@ serem executadas pelo usuário estão listadas abaixo.
 
   - Definir grupo / individual
 
-## Metodologia do sistema
+## pesquisa com usuários sobre recomendação musical
 
-Para validar o modelo de sistema de recomendação, será desenvolvido uma
-aplicação, a qual irá ser distribuída aos usuários, que participarem do
-questionário, feito para obter informações sobre os usuários. As etapas
-do desenvolvimento desse sistema são apresentadas na Figura 11 abaixo.
+Para validar o modelo de sistema de recomendação foi desenvolvida uma
+aplicação, a qual foi distribuída aos usuários que participaram do
+questionário previamente realizado, onde foram obtidas informações sobre
+esses usuários. As etapas do desenvolvimento do *DCRM* são apresentadas
+na Figura 11.
 
 <span id="_Ref42452795" class="anchor"></span>Figura 11 Etapas do
 desenvolvimento do sistema de recomendação musical (próprio, 2020)
 
-As perguntas aplicadas no questionário, serão voltadas a conhecer melhor
-os usuários que utilizarão a aplicação, sendo assim, serão utilizadas
-perguntas que permita entender suas preferencias, atividades, dentre
-outros fatores. Essas perguntas são:
+As perguntas aplicadas no questionário permitiram conhecer melhor os
+usuários que utilizarão a aplicação, sendo assim, foram utilizadas
+perguntas que permitam entender suas preferências, atividades, dentre
+outros fatores. As perguntas do questionário estão listadas no Quadro Y:
 
 1.  ##### Qual o aplicativo / reprodutor de música você utiliza atualmente?
     
@@ -1340,7 +1337,7 @@ outros fatores. Essas perguntas são:
 14. ##### Dicas e sugestões?
 
 O questionário foi aberto no dia 6 de julho de 2020, nesse dia foi
-realizado uma publicação no Instagram para apresentá-lo ao público, e no
+realizada uma publicação no Instagram para apresentá-lo ao público, e no
 decorrer, foi enviado a outras redes sociais, como WhatsApp, Slack
 (empresarial), Twitter e Facebook. O seu fechamento foi realizado no dia
 18 de julho de 2020, somando o total de 12 dias em que o ele ficou
@@ -1348,24 +1345,24 @@ aberto.
 
 ### Pré-teste do questionário
 
-Com as perguntas do questionário definidas, foi realizado uma validação
-para garantir que elas faziam sentido, e se o público que não está no
+Com as perguntas do questionário definidas, foi realizada uma validação
+para garantir que elas faziam sentido~~, e se o público que não está no
 contexto conseguiria realizar ter um entendimento do que está sendo
-perguntado.
+perguntado.~~
 
-A validação foi feita enviando o questionário para 5 pessoas, as quais
+O pré-teste foi feito enviando o questionário para 5 pessoas, as quais
 tinham a responsabilidade de analisar as perguntas e avaliar a
 dificuldade de entendimento de cada uma das perguntas. Isso foi feito
-para garantir que o publico que receberia o questionário - o qual não
-está dentro do contexto do trabalho - conseguiria responder as
-perguntas.
+para garantir que o publico que receberia o questionário posteriormente
+- o qual não está dentro do contexto do trabalho - conseguiria responder
+as perguntas com completa compreensão das mesmas.
 
 ### Resultados do questionário
 
 Com um alcance maior do que 1000 pessoas, o questionário teve uma adesão
-de 222 respostas. Resultando em um publico de idades entre 14 e 71 anos
-e um gosto musical bem diversificado, foi obtido em torno de 60 estilos
-musicais, sendo o mais votado o Rock com 181 marcações.
+de 222 respostas. O público respondente tinha entre 14 e 71 anos e um
+gosto musical bem diversificado, foram obtidos em torno de 60 estilos
+musicais, sendo o mais votado o Rock, com 181 marcações.
 
 Dos dispositivos ou aplicativos utilizados para realizar a reprodução
 das músicas, com 168 respostas, o Spotify foi o mais escolhido das
@@ -1373,13 +1370,13 @@ opções, em segundo lugar ficou o Youtube com 103 respostas (variadas
 entre 86 no Youtube Music, e 17 tratando sobre o Youtube clássico).
 
 A pergunta “Você acha que as recomendações musicais realizadas via
-software poderiam ser melhoradas?” trouxe uma visão da opinião de um
-certo público se existe espaço para esse trabalho evoluir as técnicas de
-reprodução musical, e a “Você acredita que o contexto poderia melhorar
-essas recomendações?” se existe espaço para o contexto evoluir essas
-técnicas, e com 95% na primeira e 96% na segunda pergunta das respostas
-marcadas como “sim”, foi possível verificar que esse trabalho terá
-espaço para agregar qualidade as recomendações musicais.
+software poderiam ser melhoradas?” trouxe uma visão da opinião se existe
+espaço para esse trabalho evoluir as técnicas de recomendação musical, e
+a “Você acredita que o contexto poderia melhorar essas recomendações?”
+se existe espaço para o contexto do usuário evoluir essas técnicas. Com
+95% para a primeira e 96% para a segunda pergunta de respostas marcadas
+como “sim”, foi possível verificar que esse trabalho tem espaço para
+agregar qualidade às recomendações musicais.
 
 Para aperfeiçoar a visão do trabalho das características possuem maior
 importância, foi realizado as perguntas “Em quais atividades você
@@ -1389,37 +1386,37 @@ conhecer de novas características (a partir do campo “outro”), e foi
 possível obter de características que mais influenciam os usuários na
 escolha de uma música.
 
-## Modelagem do sistema
+## Modelagem do sistema *DCRM*
 
 ### Como o trabalho vai capturar as ações do usuário e enviá-las ao sistema?
 
-A partir do momento que o usuário utilizar a aplicação, será registrado
-suas ações, através de eventos disponíveis em seus componentes, é
-demonstrado na Figura 12 abaixo o processo para realizar esse registro.
+A partir do momento que o usuário utilizar a aplicação, serão
+registradas suas ações, por meio de eventos disponíveis em seus
+componentes. A Figura 12 ilustra o processo para realizar esse registro.
 
-![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A48%3A39.750Z%22%2C%22pageId%22%3A%22OW\_eq1zldgSTVgG6IYEs%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image8.png)
+![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A48%3A39.750Z%22%2C%22pageId%22%3A%22OW\_eq1zldgSTVgG6IYEs%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image9.png)
 
 <span id="_Toc44538335" class="anchor"></span>Figura 12 Fluxo para
 realizar o registro e análise das ações executadas pelo usuário
 (próprio, 2020)
 
-As ações utilizadas serão as apresentadas na seção 3.1.4, as quais serão
-capturadas através de eventos dos componentes da aplicação, e enviadas
-ao sistema, realizando sua avaliação.
+As ações utilizadas, apresentadas na seção 3.1.4, foram capturadas por
+meio de eventos dos componentes da aplicação, e enviadas ao sistema,
+realizando sua avaliação.
 
 ### Como o trabalho vai validar se as ações do usuário condizem com o contexto?
 
-As ações do usuário são o que irão demonstrar o gosto ou desgosto do
-usuário, em cima das músicas recomendadas. A partir do questionário
-realizado, será possível entender melhor os usuários que irão utilizar a
-aplicação desenvolvida. E com isso, desenvolver a avaliação da
-importância de uma ação em cima do contexto. A Figura 13 abaixo
-apresenta o processo do sistema desde o momento que irá receber as ações
-e o contexto atual do usuário, até sua última etapa que é retornar ao
-app com a informação se as ações do usuário estão indicando para o
-sistema que sua interpretação do contexto está correta ou não.
+As ações do usuário demonstram o gosto ou não do usuário, sobre as
+músicas recomendadas. A partir do questionário realizado, será possível
+entender melhor os usuários que irão utilizar a aplicação desenvolvida.
+E com isso, desenvolver a avaliação da importância de uma ação em cima
+do contexto. A Figura 13 apresenta o processo do sistema desde o momento
+que recebe as ações e o contexto atual do usuário, até sua última etapa,
+que é retornar ao app com a informação se as ações do usuário estão
+indicando para o sistema que sua interpretação do contexto está correta
+ou não.
 
-![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-08T00%3A09%3A10.073Z%22%2C%22pageId%22%3A%22Su-HV9\_zTKp8CvkJRCf5%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image9.png)
+![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-08T00%3A09%3A10.073Z%22%2C%22pageId%22%3A%22Su-HV9\_zTKp8CvkJRCf5%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image10.png)
 
 <span id="_Ref42460243" class="anchor"></span>Figura 13 Fluxo feito para
 avaliar se as ações condizem com o contexto (próprio, 2020)
@@ -1438,8 +1435,7 @@ gerando seu registro do que o usuário está vivendo no momento. Quando o
 algoritmo entender, que as ações do usuário não condizem com o contexto
 atual, será apresentada uma tela na aplicação perguntando se há
 divergências no contexto da vida real e do entendido pelo algoritmo.
-Essa tela irá confirmar se os seguintes fatores considerados estão
-corretos.
+Essa tela confirma se os seguintes fatores considerados estão corretos.
 
   - Clima
 
@@ -1462,17 +1458,17 @@ garantindo uma maior precisão na avaliação do contexto.
 ### Como o trabalho vai recomendar novas músicas a partir da relação de contexto x música?
 
 Após ser feito a identificação do contexto através da aplicação, será
-realizado sua classificação utilizando os algoritmos estudados nos
+realizada sua classificação utilizando os algoritmos estudados nos
 artigos revisados (*SVM*, *RBF*, *Random Forest*, etc.), e somente
 então, será realizada a recomendação musical, através dos algoritmos de
-*Matrix* e *Tensor Factorization.* A Figura 14 abaixo apresenta as
-etapas utilizadas no processo para realizar a recomendação musical.
+*Matrix* e *Tensor Factorization.* A Figura 14 apresenta as etapas
+utilizadas no processo para realizar a recomendação musical.
 
 <span id="_Ref42465942" class="anchor"></span>Figura 14 Etapas do
 processo para realizar a recomendação musical
 
 Com os algoritmos de recomendação, será gerado um score para cada música
-x contexto. A partir dele, será avaliado os n melhores scores e
+x contexto. A partir dele, serão avaliados os “n” melhores *scores* e
 inseridos na lista de reprodução atual da aplicação, buscando
 aperfeiçoar, a experiência do usuário ao ouvir suas músicas preferidas
 ao devido contexto.
