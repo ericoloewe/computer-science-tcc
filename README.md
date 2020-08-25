@@ -2,4 +2,8 @@
 
 My degree final paper
 
-App link: https://ericoloewe.github.io/computer-science-tcc/
+## App
+
+[Spotify Recommender Plugin](https://ericoloewe.github.io/computer-science-tcc/)
+
+link: https://ericoloewe.github.io/computer-science-tcc/
