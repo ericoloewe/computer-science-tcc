@@ -71,7 +71,7 @@ ReactDOM.render(
                 <PrivateRoute path="/logout">
                   <Logout />
                 </PrivateRoute>
-                <PrivateRoute path="/">
+                <PrivateRoute path="/" exact>
                   <Home />
                 </PrivateRoute>
               </ContextIntro>

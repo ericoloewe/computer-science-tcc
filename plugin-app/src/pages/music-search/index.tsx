@@ -70,7 +70,7 @@ export default function () {
   }, [searchText]);
 
   return (
-    <Layout className="music-search-page" pageTitle="Musicas preferidas" hideDrawerButton={true}>
+    <Layout className="music-search-page" pageTitle="Qual musica se encaixa mais nesse momento?" hideDrawerButton={true}>
       <Choose
         items={musics}
         onChangeSearch={(s) => setSearchText(s)}
