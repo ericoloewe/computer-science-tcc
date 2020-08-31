@@ -37,6 +37,18 @@ ReactDOM.render(
         <ThemeProvider theme={theme}>
           <HashRouter>
             <Switch>
+              <NonAuthRoute path="/login">
+                <Login />
+              </NonAuthRoute>
+              <NonAuthRoute path="/login-redirect-spotify">
+                <LoginRedirectSpotify />
+              </NonAuthRoute>
+              <NonAuthRoute exact path="/:access_token(access_token=.*)">
+                <LoginRedirectSpotify />
+              </NonAuthRoute>
+              <NonAuthRoute path="/welcome">
+                <Welcome />
+              </NonAuthRoute>
               <PrivateRoute path="/new-context" exact>
                 <Feeling />
               </PrivateRoute>
@@ -56,21 +68,9 @@ ReactDOM.render(
                 <PrivateRoute path="/artists">
                   <Artists />
                 </PrivateRoute>
-                <NonAuthRoute path="/login">
-                  <Login />
-                </NonAuthRoute>
-                <NonAuthRoute path="/login-redirect-spotify">
-                  <LoginRedirectSpotify />
-                </NonAuthRoute>
-                <NonAuthRoute exact path="/:access_token(access_token=.*)">
-                  <LoginRedirectSpotify />
-                </NonAuthRoute>
                 <PrivateRoute path="/logout">
                   <Logout />
                 </PrivateRoute>
-                <NonAuthRoute path="/welcome">
-                  <Welcome />
-                </NonAuthRoute>
                 <PrivateRoute path="/">
                   <Home />
                 </PrivateRoute>

@@ -4,13 +4,13 @@ import { Route, Redirect } from "react-router-dom";
 import { cookieService } from "../../services/storage";
 
 export function ContextIntro({ children, ...rest }: any) {
-  console.log("HERE");
+  const { isAuthenticated } = useAuth();
 
   return (
     <Route
       {...rest}
       render={({ location }) =>
-        cookieService.get(cookieService.CONTEXT_COOKIE_NAME) === "true" ? (
+        !isAuthenticated || cookieService.get(cookieService.CONTEXT_COOKIE_NAME) === "true" ? (
           children
         ) : (
           <Redirect

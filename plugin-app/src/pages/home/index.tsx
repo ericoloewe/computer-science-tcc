@@ -12,6 +12,7 @@ import { MusicDetails } from "./music-details";
 import { SpotifyDevice } from "../../@types/spotify";
 import { usePlayer } from "../../contexts/player";
 import { useUser } from "../../contexts/user";
+import { LikeOrNotLike } from "./like";
 
 export default function () {
   const { isPlayerReady, isPluginPlayerActive, transferUserPlaybackToPlugin } = usePlayer();
@@ -42,6 +43,7 @@ export default function () {
           ) : (
             <>
               <HomeMusicBanner onBackgroundClick={() => setOpenMusicDetails(true)} />
+              <LikeOrNotLike />
               <ListOfContexts />
             </>
           )
