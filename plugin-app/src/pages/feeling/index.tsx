@@ -56,7 +56,7 @@ export default function () {
       .join(";");
 
     await saveEvent(EventType.CHOOSE_FEELING, feelingsToSave);
-    history.push(`/`);
+    history.push(`/new-context/activity`);
   }
 
   return (
@@ -64,7 +64,7 @@ export default function () {
       <AddOptionEvent eventType={EventType.CHOOSE_FEELING} />
       <Choose items={feelings} onChoose={chooseFeeling} />
       <Button variant="contained" color="primary" onClick={saveAndGoHome}>
-        Salvar
+        Continuar
       </Button>
     </Layout>
   );

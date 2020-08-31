@@ -56,7 +56,7 @@ export default function () {
       .join(";");
 
     await saveEvent(EventType.CHOOSE_ACTIVITY, activitiesToSave);
-    history.push(`/`);
+    history.push(`/new-context/location`);
   }
 
   return (
@@ -64,7 +64,7 @@ export default function () {
       <AddOptionEvent eventType={EventType.CHOOSE_ACTIVITY} />
       <Choose items={activities} onChoose={chooseActivity} />
       <Button variant="contained" color="primary" onClick={saveAndGoHome}>
-        Salvar
+        Continuar
       </Button>
     </Layout>
   );

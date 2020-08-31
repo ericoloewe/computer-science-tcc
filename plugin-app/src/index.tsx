@@ -4,7 +4,7 @@ import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
 import { HashRouter, Switch } from "react-router-dom";
 import { Loader } from "./components/loader";
-import { PrivateRoute, NonAuthRoute } from "./components/router";
+import { PrivateRoute, NonAuthRoute, ContextIntro } from "./components/router";
 import { AppProviders } from "./contexts";
 
 const Home = React.lazy(() => import("./pages/home"));
@@ -25,42 +25,44 @@ ReactDOM.render(
       <AppProviders>
         <HashRouter>
           <Switch>
-            <PrivateRoute path="/new-context/activity">
-              <Activity />
-            </PrivateRoute>
-            <PrivateRoute path="/new-context/feeling">
+            <PrivateRoute path="/new-context" exact>
               <Feeling />
             </PrivateRoute>
-            <PrivateRoute path="/new-context/music-search">
-              <MusicSearch />
-            </PrivateRoute>
-            <PrivateRoute path="/new-context/gender">
-              <Gender />
-            </PrivateRoute>
-            <PrivateRoute path="/new-context/artists">
-              <Artists />
+            <PrivateRoute path="/new-context/activity">
+              <Activity />
             </PrivateRoute>
             <PrivateRoute path="/new-context/location">
               <Location />
             </PrivateRoute>
-            <NonAuthRoute path="/login">
-              <Login />
-            </NonAuthRoute>
-            <NonAuthRoute path="/login-redirect-spotify">
-              <LoginRedirectSpotify />
-            </NonAuthRoute>
-            <NonAuthRoute exact path="/:access_token(access_token=.*)">
-              <LoginRedirectSpotify />
-            </NonAuthRoute>
-            <PrivateRoute path="/logout">
-              <Logout />
-            </PrivateRoute>
-            <NonAuthRoute path="/welcome">
-              <Welcome />
-            </NonAuthRoute>
-            <PrivateRoute path="/">
-              <Home />
-            </PrivateRoute>
+            <ContextIntro>
+              <PrivateRoute path="/music-search">
+                <MusicSearch />
+              </PrivateRoute>
+              <PrivateRoute path="/gender">
+                <Gender />
+              </PrivateRoute>
+              <PrivateRoute path="/artists">
+                <Artists />
+              </PrivateRoute>
+              <NonAuthRoute path="/login">
+                <Login />
+              </NonAuthRoute>
+              <NonAuthRoute path="/login-redirect-spotify">
+                <LoginRedirectSpotify />
+              </NonAuthRoute>
+              <NonAuthRoute exact path="/:access_token(access_token=.*)">
+                <LoginRedirectSpotify />
+              </NonAuthRoute>
+              <PrivateRoute path="/logout">
+                <Logout />
+              </PrivateRoute>
+              <NonAuthRoute path="/welcome">
+                <Welcome />
+              </NonAuthRoute>
+              <PrivateRoute path="/">
+                <Home />
+              </PrivateRoute>
+            </ContextIntro>
           </Switch>
         </HashRouter>
       </AppProviders>
