@@ -50,7 +50,10 @@ ReactDOM.render(
                 <Welcome />
               </NonAuthRoute>
               <PrivateRoute path="/new-context" exact>
-                <Feeling />
+                <Feeling key="feeling" type="feeling" />
+              </PrivateRoute>
+              <PrivateRoute path="/new-context/want-to-fell-like">
+                <Feeling key="want-to-fell-like" type="want-to-fell-like" />
               </PrivateRoute>
               <PrivateRoute path="/new-context/activity">
                 <Activity />

@@ -10,7 +10,11 @@ import { Layout } from "../shared/layout";
 import { useEvents, EventType } from "../../contexts/event";
 import { useFeeling } from "../../contexts/feeling";
 
-export default function () {
+interface Props {
+  type: "feeling" | "want-to-fell-like";
+}
+
+export default function ({ type }: Props) {
   const history = useHistory();
   const { search } = useFeeling();
   const { save: saveEvent } = useEvents();
@@ -55,12 +59,19 @@ export default function () {
       .map((f) => f.id)
       .join(";");
 
-    await saveEvent(EventType.CHOOSE_FEELING, feelingsToSave);
-    history.push(`/new-context/activity`);
+    const eventType = type === "feeling" ? EventType.CHOOSE_FEELING : EventType.CHOOSE_FEELING_TO_BE_LIKE;
+    const routeToGo = type === "feeling" ? `/new-context/want-to-fell-like` : `/new-context/activity`;
+
+    await saveEvent(eventType, feelingsToSave);
+    history.push(routeToGo);
   }
 
   return (
-    <Layout className="playlist-feeling-page" pageTitle="O que você esta sentindo?" hideDrawerButton={true}>
+    <Layout
+      className="playlist-feeling-page"
+      pageTitle={type === "feeling" ? "Estou me sentindo" : "Quero me sentir"}
+      hideDrawerButton={true}
+    >
       <AddOptionEvent eventType={EventType.CHOOSE_FEELING} />
       <Choose items={feelings} onChoose={chooseFeeling} />
       <Button variant="contained" color="primary" onClick={saveAndGoHome}>
