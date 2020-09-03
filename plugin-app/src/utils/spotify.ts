@@ -10,6 +10,20 @@ export interface SpotifyPlayer {
   original: Spotify.SpotifyPlayer;
 }
 
+async function loadSpotifyScripts() {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+
+    script.src = 'https://sdk.scdn.co/spotify-player.js';
+    script.charset = "utf-8";
+    script.async = true;
+    script.onload = () => resolve();
+    script.onerror = () => reject();
+
+    document.body.appendChild(script);
+  })
+}
+
 export class SpotifyUtil {
   static SCOPES = [
     "playlist-modify-private",
@@ -64,6 +78,8 @@ export class SpotifyUtil {
         // Connect to the player!
         player.connect();
       };
+
+      loadSpotifyScripts().catch(reject);
     })
   }
 
