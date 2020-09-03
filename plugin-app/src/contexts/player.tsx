@@ -8,6 +8,7 @@ import { SpotifyPlayerResponse } from "../@types/spotify";
 import { TimerUtil } from "../utils/timer";
 import { PlayerUtil } from "../utils/player";
 import { useEvents } from "./event";
+import { messageService } from "../services/message";
 
 interface Props {}
 
@@ -56,15 +57,20 @@ export function PlayerProvider(props: Props) {
 
     if (player != null) {
       player.original.addListener("player_state_changed", (state) => {
-        const {
-          position,
-          duration,
-          paused,
-          track_window: { current_track },
-        } = state;
+        if (state == null) {
+          setIsPluginPlayerActive(false);
+          messageService.alert("Você foi desconectado!");
+        } else {
+          const {
+            position,
+            duration,
+            paused,
+            track_window: { current_track },
+          } = state;
 
-        debounce(state, saveEvent);
-        setPlayingMusicInfo({ currentTrack: MusicMapper.toMusicTrack(current_track), duration, position, paused });
+          debounce(state, saveEvent);
+          setPlayingMusicInfo({ currentTrack: MusicMapper.toMusicTrack(current_track), duration, position, paused });
+        }
       });
     } // eslint-disable-next-line
   }, [player]);
