@@ -1,13 +1,15 @@
 import React, { createContext, useContext } from "react";
+
+import { gtmService } from "../services/gtm";
 import { requestService } from "../services/request";
 import { useUser } from "./user";
-import { gtmService } from "../services/gtm";
 
 interface Props {}
 
 export enum EventType {
-  CHANGE_MUSIC = "CHANGE_MUSIC",
   CHANGE_MUSIC_TIME = "CHANGE_MUSIC_TIME",
+  CHANGE_TO_NEXT_MUSIC = "CHANGE_TO_NEXT_MUSIC",
+  CHANGE_TO_PREVIOUS_MUSIC = "CHANGE_TO_PREVIOUS_MUSIC",
   CHOOSE_ACTIVITY = "CHOOSE_ACTIVITY",
   CHOOSE_FEELING = "CHOOSE_FEELING",
   CHOOSE_FEELING_TO_BE_LIKE = "CHOOSE_FEELING_TO_BE_LIKE",

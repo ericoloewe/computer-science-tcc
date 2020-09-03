@@ -4,7 +4,7 @@ const musicHistory: string[] = [];
 
 export class PlayerUtil {
   static stateToEvent(state: Spotify.PlaybackState): { type: EventType, value: string } {
-    const { current_track } = state?.track_window;
+    const { current_track, next_tracks, previous_tracks } = state?.track_window;
     const lastMusic = musicHistory[musicHistory.length - 1]
     const value = current_track.uri;
     let type = EventType.PLAY_MUSIC
@@ -12,13 +12,19 @@ export class PlayerUtil {
     if (value == null)
       throw new Error("Invalid current track");
 
+    if (state?.position <= 1000)
+      type = EventType.RESTART_MUSIC
+
     if (state.paused)
       type = EventType.PAUSE_MUSIC
     else if (lastMusic != null) {
-      if (lastMusic !== value)
-        type = EventType.CHANGE_MUSIC
-      else if (state?.position === 0)
-        type = EventType.RESTART_MUSIC
+      const returned = next_tracks.some(t => t.uri === lastMusic)
+      const passed = previous_tracks.some(t => t.uri === lastMusic)
+
+      if (passed)
+        type = EventType.CHANGE_TO_NEXT_MUSIC
+      else if (returned)
+        type = EventType.CHANGE_TO_PREVIOUS_MUSIC
     }
 
     if (lastMusic !== value)
