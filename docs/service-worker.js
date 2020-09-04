@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/computer-science-tcc/precache-manifest.b82f140490b7c1759760c2e11861b3e4.js"
+  "/computer-science-tcc/precache-manifest.44ad909e865626251a092950a41758ef.js"
 );
 
 self.addEventListener('message', (event) => {
