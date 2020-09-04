@@ -125,14 +125,29 @@ export function PlayerProvider(props: Props) {
   async function transferUserPlaybackToPlugin(): Promise<void> {
     const endpoint = `${spotifyUserEndpoint}/player`;
 
-    await requestService.put({
-      url: endpoint,
-      data: {
-        device_ids: [player?.device_id],
-      },
-    });
-    await TimerUtil.wait(500);
-    await loadCurrentPlayerInfo();
+    try {
+      await requestService.put({
+        url: endpoint,
+        data: {
+          device_ids: [player?.device_id],
+        },
+      });
+
+      await TimerUtil.wait(500);
+      await loadCurrentPlayerInfo();
+    } catch (ex) {
+      console.error(ex);
+
+      const { data, status } = ex.response;
+
+      if (status < 200 || status > 299) {
+        if ((data as any)?.error?.reason === "PREMIUM_REQUIRED") {
+          messageService.alert("[USUARIO NÃO PREMIUM] Você precisa ser premium para conectar");
+        } else {
+          messageService.alert("Tivemos um problema ao conectar, tente novamente mais tarde");
+        }
+      }
+    }
   }
 
   return (
