@@ -14,6 +14,8 @@ interface Props {
   type: "feeling" | "want-to-fell-like";
 }
 
+const isWantToFeelLikeEnabled = process.env.REACT_APP_ENABLE_WANT_TO_FEEL_LIKE === "true";
+
 export default function ({ type }: Props) {
   const history = useHistory();
   const { search } = useFeeling();
@@ -60,7 +62,7 @@ export default function ({ type }: Props) {
       .join(";");
 
     const eventType = type === "feeling" ? EventType.CHOOSE_FEELING : EventType.CHOOSE_FEELING_TO_BE_LIKE;
-    const routeToGo = type === "feeling" ? `/new-context/want-to-fell-like` : `/new-context/activity`;
+    const routeToGo = type === "feeling" && isWantToFeelLikeEnabled ? `/new-context/want-to-fell-like` : `/new-context/activity`;
 
     await saveEvent(eventType, feelingsToSave);
     history.push(routeToGo);
@@ -69,7 +71,7 @@ export default function ({ type }: Props) {
   return (
     <Layout
       className="playlist-feeling-page"
-      pageTitle={type === "feeling" ? "Estou me sentindo" : "Quero me sentir"}
+      pageTitle={type === "feeling" ? "Como você esta se sentido?" : "Como você quer se sentir?"}
       hideDrawerButton={true}
     >
       <AddOptionEvent eventType={EventType.CHOOSE_FEELING} />
