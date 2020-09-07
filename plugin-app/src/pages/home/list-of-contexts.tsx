@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import { MusicNote, EmojiEmotions, LibraryMusic } from "@material-ui/icons";
+import { MusicNote } from "@material-ui/icons";
 import { Typography, Container, Grid, Card, CardContent } from "@material-ui/core";
 
 export function ListOfContexts() {

@@ -3,8 +3,6 @@ import { Drawer, List, ListItem, ListItemIcon, ListItemText, Divider, ListItemAv
 import {
   Home as HomeIcon,
   ExitToApp as ExitToAppIcon,
-  LibraryMusic as LibraryMusicIcon,
-  Face as FaceIcon,
 } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
