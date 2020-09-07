@@ -33,7 +33,11 @@
     .content-card-content {
       align-items: center;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+
+      > .title {
+        padding-left: 10px;
+      }
     }
   }
 }

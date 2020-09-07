@@ -13,14 +13,8 @@ export function ListOfContexts() {
             Informações para ajudar na recomendação
           </Typography>
         </Grid>
-        <Grid container item md={4}>
-          <ContextCard to="/music-search" title="Musica" icon={<MusicNote />} />
-        </Grid>
-        <Grid container item md={4}>
-          <ContextCard to="/artists" title="Artistas" icon={<EmojiEmotions />} />
-        </Grid>
-        <Grid container item md={4}>
-          <ContextCard to="/gender" title="Generos" icon={<LibraryMusic />} />
+        <Grid container item>
+          <ContextCard to="/music-search" title="Buscar musica" icon={<MusicNote />} />
         </Grid>
       </Grid>
     </Container>
