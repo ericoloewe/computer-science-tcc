@@ -24,7 +24,7 @@ export function AddOptionEvent({ eventType }: Props): React.ReactElement {
         </Grid>
         <Grid container item md={3}>
           <Button variant="contained" color="secondary" onClick={() => saveEventAndClean(optionText)} fullWidth>
-            Salvar
+            Salvar novo item
           </Button>
         </Grid>
       </Grid>
