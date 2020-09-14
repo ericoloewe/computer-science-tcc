@@ -105,7 +105,7 @@ encontrados no motor de busca da ACM (próprio, 2020) 18](#_Ref40822509)
 
 [Figura 10 Lista de ações que auxiliarão o entendimento do contexto de
 ambiente e comportamento do usuário da aplicação (próprio, 2020)
-37](#_Ref42447458)
+37](#_Toc44538333)
 
 [Figura 11 Etapas do desenvolvimento do sistema de recomendação musical
 (próprio, 2020) 39](#_Ref42452795)
@@ -114,10 +114,10 @@ ambiente e comportamento do usuário da aplicação (próprio, 2020)
 pelo usuário (próprio, 2020) 43](#_Toc44538335)
 
 [Figura 13 Fluxo feito para avaliar se as ações condizem com o contexto
-(próprio, 2020) 44](#_Ref42460243)
+(próprio, 2020) 44](#_Toc44538336)
 
 [Figura 14 Etapas do processo para realizar a recomendação musical
-45](#_Ref42465942)
+45](#_Toc44538337)
 
 Lista de Quadros
 
@@ -193,23 +193,21 @@ sistema?
 43](#como-o-trabalho-vai-capturar-as-ações-do-usuário-e-enviá-las-ao-sistema)
 
 [3.2.2 Como o trabalho vai validar se as ações do usuário condizem com o
-contexto?
-43](#como-o-trabalho-vai-validar-se-as-ações-do-usuário-condizem-com-o-contexto)
+contexto? 43](#_Toc44538407)
 
 [3.2.3 Como o trabalho vai relacionar as músicas que o usuário gosta aos
 contextos?
 44](#como-o-trabalho-vai-relacionar-as-músicas-que-o-usuário-gosta-aos-contextos)
 
 [3.2.4 Como o trabalho vai classificar o contexto para apresentar para
-usuário?
-44](#como-o-trabalho-vai-classificar-o-contexto-para-apresentar-para-usuário)
+usuário? 44](#_Toc44538409)
 
 [3.2.5 Como o trabalho vai recomendar novas músicas a partir da relação
 de contexto x música?
 45](#como-o-trabalho-vai-recomendar-novas-músicas-a-partir-da-relação-de-contexto-x-música)
 
 [3.2.6 Como o trabalho vai avaliar as recomendações feitas?
-46](#como-o-trabalho-vai-avaliar-as-recomendações-feitas)
+46](#_Toc44538411)
 
 [3.3 roteiro 46](#roteiro)
 
@@ -370,6 +368,18 @@ muito desde então, ao ponto de que hoje existem diversos trabalhos
 relacionados a esse assunto para área. Nesse capítulo serão abordados
 alguns trabalhos encontrados, a partir de uma revisão bibliográfica
 realizada sobre o assunto.
+
+## Levantamento bibliográfico inicial
+
+Antes do início da revisão, foi encontrado 2 trabalhos relacionados
+através de: (i) busca genérica no Google Scholar; (ii) indicação dos
+avaliadores desse trabalho.
+
+Realizado a busca genérica no Google Scholar em busca de trabalhos
+relacionados ao tema desse trabalho, na busca, foi priorizado os
+trabalhos em portugues, para dar uma visão clara e rápida do assunto. E
+nessa busca foi encontrado o seguinte trabalho: “Desenvolvimento de um
+Sistema de Recomendação Musical Sensível ao Contexto”.
 
 ## O protocolo de revisão
 
@@ -947,13 +957,7 @@ realizar a recomendações nos *RecSys*.
 A partir da revisão bibliográfica realizada, foi possível conhecer
 alguns sistemas e modelos que utilizam do contexto para realizar as
 recomendações musicais, tornando possível entender certas lacunas que
-não foram analisadas nessa área de pesquisa. A Figura 8 apresenta o
-modelo de análise de recomendações dinâmica.
-
-![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-05T02%3A05%3A36.505Z%22%2C%22pageId%22%3A%22c8m2vXLdxm1UY1WbSgt9%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image6.png)
-
-<span id="_Toc44538331" class="anchor"></span>Figura 8 Modelo
-desenvolvido para demonstrar a recomendação dinâmica (próprio, 2020)
+não foram analisadas nessa área de pesquisa.
 
 Com isso, foi possível entender e desenvolver um modelo de sistemas de
 recomendação chamado *DCRM* (*Dynamic and Contextual Recommendations of
@@ -999,19 +1003,13 @@ recomendação musical. Esse estudo trouxe a seguinte lista de ações:
 
   - Passar / Voltar \(n\) músicas
 
-  - Aumentar / Abaixar o volume
-
   - Escolher música / artista / gênero
-
-  - Abrir / Fechar o app
 
   - Definir tempo da música
 
   - Definir a atividade
 
   - Definir o humor
-
-  - Quantidade de músicas escutadas no dia (tempo)
 
 ### O que é o contexto de ambiente?
 
@@ -1031,20 +1029,11 @@ ser representados na aplicação, que são: (i) Localização; (ii) Clima e;
 
 Os contextos no *DCRM* serão obtidos a partir da captura de dados de
 sensores, *API’s* (*Application Programming Interface*) e eventos de um
-app. A lista de ações pode ser obtida por meio das possíveis ações a
-serem executadas pelo usuário demonstradas na Figura 10.
-
-![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A38%3A01.600Z%22%2C%22pageId%22%3A%22CdkkQKYaVUET6wdkgj3H%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image7.png)
-
-<span id="_Ref42447458" class="anchor"></span>Figura 10 Lista de ações
-que auxiliarão o entendimento do contexto de ambiente e comportamento do
-usuário na aplicação (próprio, 2020)
-
-Na aplicação, será obtido contexto de duas maneiras: (i) explicitamente,
-onde o usuário irá cadastrar o que está fazendo. Ex.: emoções,
-atividades. (ii) implicitamente, a qual será obtido através das ações do
-usuário realizadas no aplicativo. Ex.: ações sobre os componentes do
-app, clima.
+app. Na aplicação, será obtido contexto de duas maneiras: (i)
+explicitamente, onde o usuário irá cadastrar o que está fazendo. Ex.:
+emoções, atividades. (ii) implicitamente, a qual será obtido através das
+ações do usuário realizadas no aplicativo. Ex.: ações sobre os
+componentes do app, localização.
 
 São poucas as ações que auxiliam no entendimento do contexto e que podem
 ser obtidas implicitamente, isso devido as limitações dos sensores e
@@ -1100,8 +1089,8 @@ usuários que utilizarão a aplicação, sendo assim, foram utilizadas
 perguntas que permitam entender suas preferências, atividades, dentre
 outros fatores. As perguntas do questionário estão listadas no Quadro 2:
 
-Quadro 2 Perguntas e respostas disponibilizadas a um certo público
-através dos formulários do Google. (próprio, 2020)
+Quadro Perguntas e respostas disponibilizadas a um certo público através
+dos formulários do Google. (próprio, 2020)
 
 | Pergunta                                                                                     | Possíveis respostas                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1123,25 +1112,15 @@ através dos formulários do Google. (próprio, 2020)
 ### Pré-teste do questionário
 
 Com as perguntas do questionário definidas, foi realizada uma validação
-para garantir que elas faziam sentido~~, e se o público que não está no
-contexto conseguiria realizar ter um entendimento do que está sendo
-perguntado.~~
-
-O pré-teste foi feito enviando o questionário para 5 pessoas, as quais
-tinham a responsabilidade de analisar as perguntas e avaliar a
-dificuldade de entendimento de cada uma das perguntas. Isso foi feito
-para garantir que o publico que receberia o questionário posteriormente
-- o qual não está dentro do contexto do trabalho - conseguiria responder
-as perguntas com completa compreensão das mesmas.
+para garantir que elas faziam sentido. O pré-teste foi feito enviando o
+questionário para 5 pessoas, as quais tinham a responsabilidade de
+analisar as perguntas e avaliar a dificuldade de entendimento de cada
+uma das perguntas. Isso foi feito para garantir que o publico que
+receberia o questionário posteriormente - o qual não está dentro do
+contexto do trabalho - conseguiria responder as perguntas com completa
+compreensão delas.
 
 ### Resultados do questionário
-
-O questionário foi aberto no dia 6 de julho de 2020, nesse dia foi
-realizada uma publicação no Instagram para apresentá-lo ao público, e no
-decorrer, foi enviado a outras redes sociais, como WhatsApp, Slack
-(empresarial), Twitter e Facebook. O seu fechamento foi realizado no dia
-18 de julho de 2020, somando o total de 12 dias em que o ele ficou
-aberto.
 
 Com um alcance maior do que 1000 pessoas, sendo 800 funcionários da CWI
 que possuem acesso ao Slack, 200 pessoas alcançadas através do Instagram
@@ -1149,6 +1128,13 @@ e demais divulgações que tiveram, o questionário teve uma adesão de 222
 respostas. O público respondente tinha entre 14 e 71 anos e um gosto
 musical bem diversificado, foram obtidos em torno de 60 estilos
 musicais, sendo o mais votado o Rock, com 181 marcações.
+
+O questionário foi aberto no dia 6 de julho de 2020, nesse dia foi
+realizada uma publicação no Instagram para apresentá-lo ao público, e no
+decorrer, foi enviado a outras redes sociais, como WhatsApp, Slack
+(empresarial), Twitter e Facebook. O seu fechamento foi realizado no dia
+18 de julho de 2020, somando o total de 12 dias em que o ele ficou
+aberto.
 
 Dos dispositivos ou aplicativos utilizados para realizar a reprodução
 das músicas, com 168 respostas, o Spotify foi o mais escolhido das
@@ -1174,98 +1160,25 @@ escolha de uma música.
 
 ## Modelagem do sistema *DCRM*
 
+Contexto =\> sistema =\> knn =\> radio ou top 10 do genero
+
 ### Como o trabalho vai capturar as ações do usuário e enviá-las ao sistema?
 
 A partir do momento que o usuário utilizar a aplicação, serão
 registradas suas ações, por meio de eventos disponíveis em seus
 componentes. A Figura 12 ilustra o processo para realizar esse registro.
 
-![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A48%3A39.750Z%22%2C%22pageId%22%3A%22OW\_eq1zldgSTVgG6IYEs%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image9.png)
-
-<span id="_Toc44538335" class="anchor"></span>Figura 12 Fluxo para
-realizar o registro e análise das ações executadas pelo usuário
-(próprio, 2020)
-
-As ações utilizadas, apresentadas na seção 3.1.4, foram capturadas por
-meio de eventos dos componentes da aplicação, e enviadas ao sistema,
-realizando sua avaliação.
-
-### Como o trabalho vai validar se as ações do usuário condizem com o contexto?
-
-As ações do usuário demonstram o gosto ou não do usuário, sobre as
-músicas recomendadas. A partir do questionário realizado, será possível
-entender melhor os usuários que irão utilizar a aplicação desenvolvida.
-E com isso, desenvolver a avaliação da importância de uma ação em cima
-do contexto. A Figura 13 apresenta o processo do sistema desde o momento
-que recebe as ações e o contexto atual do usuário, até sua última etapa,
-que é retornar ao app com a informação se as ações do usuário estão
-indicando para o sistema que sua interpretação do contexto está correta
-ou não.
-
-![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-08T00%3A09%3A10.073Z%22%2C%22pageId%22%3A%22Su-HV9\_zTKp8CvkJRCf5%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image10.png)
-
-<span id="_Ref42460243" class="anchor"></span>Figura 13 Fluxo feito para
-avaliar se as ações condizem com o contexto (próprio, 2020)
-
 ### Como o trabalho vai relacionar as músicas que o usuário gosta aos contextos?
 
-Ainda existem estudos a serem aprofundados para responder a esta
-pergunta, pois trata de uma relação estrutural do banco e algoritmo, com
-isso ela será respondida durante à próxima fase de desenvolvimento deste
-trabalho.
-
-### Como o trabalho vai classificar o contexto para apresentar para usuário?
-
-O contexto obtido através da aplicação, será enviado para o sistema,
-gerando seu registro do que o usuário está vivendo no momento. Quando o
-algoritmo entender, que as ações do usuário não condizem com o contexto
-atual, será apresentada uma tela na aplicação perguntando se há
-divergências no contexto da vida real e do entendido pelo algoritmo.
-Essa tela confirma se os seguintes fatores considerados estão corretos.
-
-  - Clima
-
-  - Atividade
-
-  - Localização
-
-  - Grupo / Individual
-
-  - Humor
-
-  - Histórico de ações
-
-  - Músicas relacionadas ao contexto
-
-Desse modo o sistema validará com o usuário a sua interpretação do
-contexto atual, identificando certos problemas nos dados obtidos,
-garantindo uma maior precisão na avaliação do contexto.
+A cada 30 minutos será solicitado ao usuário uma atualização de
+contexto, isso é, será aberto um formulário, o qual possibilita o
+preenchimento do humor, atividades e localização atual do usuário. Essas
+informações serão salvas e relacionadas as próximas músicas reproduzidas
+ou salvas pelo usuário.
 
 ### Como o trabalho vai recomendar novas músicas a partir da relação de contexto x música?
 
-Após ser feito a identificação do contexto através da aplicação, será
-realizada sua classificação utilizando os algoritmos estudados nos
-artigos revisados (*SVM*, *RBF*, *Random Forest*, etc.), e somente
-então, será realizada a recomendação musical, através dos algoritmos de
-*Matrix* e *Tensor Factorization.* A Figura 14 apresenta as etapas
-utilizadas no processo para realizar a recomendação musical.
-
-<span id="_Ref42465942" class="anchor"></span>Figura 14 Etapas do
-processo para realizar a recomendação musical
-
-Com os algoritmos de recomendação, será gerado um score para cada música
-x contexto. A partir dele, serão avaliados os “n” melhores *scores* e
-inseridos na lista de reprodução atual da aplicação, buscando
-aperfeiçoar, a experiência do usuário ao ouvir suas músicas preferidas
-ao devido contexto.
-
-### Como o trabalho vai avaliar as recomendações feitas?
-
-Ao final, para realizar a avaliação das recomendações, será realizado um
-estudo em cima dos algoritmos de avaliação de resultados encontrados nos
-artigos revisados (*AUC*, *Root Mean Squared Error, Mean Reciprocal
-Rank*, etc.), estudo qual irá validar quais dos algoritmos se adequam
-melhor as necessidades do sistema.
+KNN =\> gênero =\> musicas do genero
 
 ## roteiro
 
