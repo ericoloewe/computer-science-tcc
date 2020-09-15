@@ -23,7 +23,7 @@ export function AddOptionEvent({ eventType }: Props): React.ReactElement {
           <TextField label="Novo item" onChange={(e) => setOption(e.target.value)} value={optionText} fullWidth />
         </Grid>
         <Grid container item md={3}>
-          <Button variant="contained" color="secondary" onClick={() => saveEventAndClean(optionText)} fullWidth>
+          <Button variant="contained" color="default" onClick={() => saveEventAndClean(optionText)} fullWidth>
             Salvar novo item
           </Button>
         </Grid>

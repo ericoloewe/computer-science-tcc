@@ -35,7 +35,7 @@ export default function () {
   }, [isPlayerReady]);
 
   return (
-    <Layout className="home-page" pageTitle="Reprodução de musicas" menuItems={CustomMenu(fetchData)}>
+    <Layout className="home-page" pageTitle="Reprodução de músicas" menuItems={CustomMenu(fetchData)}>
       {isPlayerReady ? (
         isPluginPlayerActive ? (
           isMusicDetailsOpen ? (

@@ -60,7 +60,7 @@ export default function () {
   }
 
   return (
-    <Layout className="playlist-activity-page" pageTitle="O que você esta fazendo?" hideDrawerButton={true}>
+    <Layout className="playlist-activity-page" pageTitle="O que você está fazendo?" hideDrawerButton={true}>
       <AddOptionEvent eventType={EventType.CHOOSE_ACTIVITY} />
       <Choose items={activities} onChoose={chooseActivity} />
       <Button variant="contained" color="primary" onClick={saveAndGoHome}>

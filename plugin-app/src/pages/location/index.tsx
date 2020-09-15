@@ -76,7 +76,7 @@ export default function () {
   }
 
   return (
-    <Layout className="playlist-location-page" pageTitle="Onde você esta?" hideDrawerButton={true}>
+    <Layout className="playlist-location-page" pageTitle="Onde você está?" hideDrawerButton={true}>
       <AddOptionEvent eventType={EventType.CHOOSE_LOCATION} />
       <Choose items={locations} onChoose={chooseLocation} />
       <Button variant="contained" color="primary" onClick={saveAndGoHome}>

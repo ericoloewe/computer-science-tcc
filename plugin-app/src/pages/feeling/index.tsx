@@ -71,7 +71,7 @@ export default function ({ type }: Props) {
   return (
     <Layout
       className="playlist-feeling-page"
-      pageTitle={type === "feeling" ? "Como você esta se sentido?" : "Como você quer se sentir?"}
+      pageTitle={type === "feeling" ? "Como você está se sentido?" : "Como você quer se sentir?"}
       hideDrawerButton={true}
     >
       <AddOptionEvent eventType={EventType.CHOOSE_FEELING} />
