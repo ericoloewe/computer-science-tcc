@@ -6,7 +6,7 @@ import { HashRouter, Switch } from "react-router-dom";
 import { Loader } from "./components/loader";
 import { PrivateRoute, NonAuthRoute, ContextIntro } from "./components/router";
 import { AppProviders } from "./contexts";
-import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import { createMuiTheme, ThemeProvider, responsiveFontSizes } from "@material-ui/core/styles";
 import { indigo } from "@material-ui/core/colors";
 
 const Home = React.lazy(() => import("./pages/home"));
@@ -21,7 +21,7 @@ const Activity = React.lazy(() => import("./pages/activity"));
 const Location = React.lazy(() => import("./pages/location"));
 const MusicSearch = React.lazy(() => import("./pages/music-search"));
 
-const theme = createMuiTheme({
+let theme = createMuiTheme({
   palette: {
     primary: {
       main: "#282828",
@@ -29,6 +29,8 @@ const theme = createMuiTheme({
     secondary: indigo,
   },
 });
+
+theme = responsiveFontSizes(theme);
 
 ReactDOM.render(
   <StrictMode>
