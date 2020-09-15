@@ -371,15 +371,36 @@ realizada sobre o assunto.
 
 ## Levantamento bibliográfico inicial
 
-Antes do início da revisão, foi encontrado 2 trabalhos relacionados
-através de: (i) busca genérica no Google Scholar; (ii) indicação dos
-avaliadores desse trabalho.
+Antes do início da revisão, foi encontrado diversos trabalhos
+relacionados através de: (i) busca genérica no Google Scholar; (ii)
+indicação dos avaliadores desse trabalho. Deles, foram selecionados 2
+para serem revisados nesse trabalho.
 
 Realizado a busca genérica no Google Scholar em busca de trabalhos
 relacionados ao tema desse trabalho, na busca, foi priorizado os
 trabalhos em portugues, para dar uma visão clara e rápida do assunto. E
 nessa busca foi encontrado o seguinte trabalho: “Desenvolvimento de um
 Sistema de Recomendação Musical Sensível ao Contexto”.
+
+O trabalho utiliza teve como objetivo desenvolver o modelo de um sistema
+sensível ao contexto, utilizando das técnicas clássicas de recomendação,
+aplicando uma camada de extra de filtragem colaborativa. Nessa camada,
+ele utiliza do algoritmo K-Vizinhos Mais Próximos (KNN) para realiza-la,
+o qual é o mais amplamente utilizado para esse tipo de recomendação
+conforme (ALIAGA, 2018) (fazer apud Bobadilla et al. (2013)), e é um
+algoritmo *lazy*, isso é, não gera um modelo que precisa de treinamento.
+
+No trabalho, foi escolhidos 10 usuários para realizar o teste, tendo um
+contexto comum que era “Estudar” para atividade e “BR” para cultura.
+Foram realizados 240 testes para compilar os dados do experimento, e no
+fim, foi apresentado os resultados do experimento realizado “Com
+contexto” e “Sem contexto”, onde o trabalho obteve uma precisão de 50%
+na taxa de aceitação das recomendações realizadas.
+
+As indicações dos avaliadores foram analisadas e foi verificado que
+apenas uma apresentava o algoritmo utilizado, que é: “Effective
+Nearest-Neighbor Music Recommendations”. A qual será aprofundada nesse
+trabalho.
 
 ## O protocolo de revisão
 
@@ -1089,8 +1110,8 @@ usuários que utilizarão a aplicação, sendo assim, foram utilizadas
 perguntas que permitam entender suas preferências, atividades, dentre
 outros fatores. As perguntas do questionário estão listadas no Quadro 2:
 
-Quadro Perguntas e respostas disponibilizadas a um certo público através
-dos formulários do Google. (próprio, 2020)
+Quadro 2 Perguntas e respostas disponibilizadas a um certo público
+através dos formulários do Google. (próprio, 2020)
 
 | Pergunta                                                                                     | Possíveis respostas                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1227,21 +1248,23 @@ fim, será realizado uma comparação do resultado, com os obtidos no
 ACM. **Advanced Search**. Disponível em:
 \<https://dl.acm.org/search/advanced\>. Acesso em: 5 maio. 2020. ACM
 RECSYS COMMUNITY. **RecSys – ACM Recommender Systems**. Disponível em:
-\<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. BHATNAGAR, V.
-Collaborative filtering using data mining and analysis. \[s.l: s.n.\].
-BORJA, K.; DIERINGER, S. Streaming or stealing? The complementary
-features between music streaming and music piracy. **Journal of
-Retailing and Consumer Services**, v. 32, p. 86–95, 2016. DIETMAR, J. et
-al. **Recommendation system -An Introduction**. \[s.l: s.n.\]. v.
-91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário | Michaelis
-On-line**. Disponível em: \<https://michaelis.uol.com.br/\>. Acesso em:
-6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**. \[s.l.\] MIT
-Press, 2019. FALK, K. Practical Recommender Systems. \[s.l: s.n.\].
-IFPI. **IFPI Global Music Report 2019**. Disponível em:
+\<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. ALIAGA, W. K.
+DESENVOLVIMENTO DE UM SISTEMA DE RECOMENDACÃO MUSICAL SENSÍVEL AO
+CONTEXTO. 2018. BHATNAGAR, V. **Collaborative filtering using data
+mining and analysis**. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming
+or stealing? The complementary features between music streaming and
+music piracy. **Journal of Retailing and Consumer Services**, v. 32, p.
+86–95, 2016. DIETMAR, J. et al. **Recommendation system -An
+Introduction**. \[s.l: s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre
+o dicionário | Michaelis On-line**. Disponível em:
+\<https://michaelis.uol.com.br/\>. Acesso em: 6 jun. 2020. ERIKSSON, M.
+et al. **Spotify Teardown**. \[s.l.\] MIT Press, 2019. FALK, K.
+**Practical Recommender Systems**. \[s.l: s.n.\]. IFPI. **IFPI Global
+Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. LUINI, B.
 J. R.; WHITMAN, A. E.; DATE, P. **Streaming Audio: The FezGuys’ Guide**.
-\[s.l: s.n.\]. MURARO, R. M. Os avanços tecnológicos e o futuro da
-humanidadeQuerendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
+\[s.l: s.n.\]. MURARO, R. M. **Os avanços tecnológicos e o futuro da
+humanidade**Querendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
 \[s.l.\] O’Reilly Media, 2018. v. 134RESNICK, PAUL AND VARIAN, H. R.
 Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
 56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
