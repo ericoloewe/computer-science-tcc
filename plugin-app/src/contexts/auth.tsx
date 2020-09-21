@@ -25,6 +25,13 @@ export function AuthProvider(props: Props) {
   function logout(): void {
     setAccessToken(null);
     cookieService.delete(COOKIE_NAME);
+
+    if (window.confirm("Deseja sair do Spotify?")) {
+      const url = "https://www.spotify.com/logout/";
+
+      const spotifyLogoutWindow = window.open(url, "Spotify Logout", "width=700,height=500,top=40,left=40");
+      setTimeout(() => spotifyLogoutWindow?.close(), 5000);
+    }
   }
 
   function saveToken(redirectUrl: string): void {
