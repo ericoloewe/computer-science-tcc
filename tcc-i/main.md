@@ -155,65 +155,67 @@ Sumário
 
 [2 Trabalhos relacionados 14](#trabalhos-relacionados)
 
-[2.1 O protocolo de revisão 14](#o-protocolo-de-revisão)
+[2.1 Levantamento bibliográfico inicial
+14](#levantamento-bibliográfico-inicial)
 
-[2.2 PROCURA NOS MOTORES DE BUSCA 15](#procura-nos-motores-de-busca)
+[2.2 O protocolo de revisão 15](#o-protocolo-de-revisão)
 
-[2.3 ETAPAS DA REVISÃO DOS TRABALHOS
-17](#etapas-da-revisão-dos-trabalhos)
+[2.3 PROCURA NOS MOTORES DE BUSCA 16](#procura-nos-motores-de-busca)
 
-[2.3.1 Trabalhos selecionados 18](#trabalhos-selecionados)
+[2.4 ETAPAS DA REVISÃO DOS TRABALHOS
+18](#etapas-da-revisão-dos-trabalhos)
 
-[2.4 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
-29](#funcionalidades-dos-trabalhos-investigados)
+[2.4.1 Trabalhos selecionados 19](#trabalhos-selecionados)
 
-[2.5 Conclusões dos trabalhos revisados
-32](#conclusões-dos-trabalhos-revisados)
+[2.5 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
+30](#funcionalidades-dos-trabalhos-investigados)
 
-[3 Modelagem do “Dynamic and Contextual Recommendations of Music”
-34](#modelagem-do-dynamic-and-contextual-recommendations-of-music)
+[2.6 Conclusões dos trabalhos revisados
+33](#conclusões-dos-trabalhos-revisados)
 
-[3.1 Contexto 34](#contexto)
+[3 Modelagem do “*Dynamic and Contextual Recommendations of Music*”
+35](#modelagem-do-dynamic-and-contextual-recommendations-of-music)
+
+[3.1 Contexto 35](#contexto)
 
 [3.1.1 O que é o contexto comportamental?
-35](#o-que-é-o-contexto-comportamental)
+36](#o-que-é-o-contexto-comportamental)
 
-[3.1.2 O que é o contexto ambiente? 36](#o-que-é-o-contexto-de-ambiente)
+[3.1.2 O que é o contexto de ambiente?
+37](#o-que-é-o-contexto-de-ambiente)
 
-[3.1.3 Como será obtido os contextos?
-36](#como-serão-obtidos-os-contextos)
+[3.1.3 Como serão obtidos os contextos?
+37](#como-serão-obtidos-os-contextos)
 
 [3.1.4 O que são as ações do usuário?
-37](#o-que-são-as-ações-do-usuário)
+38](#o-que-são-as-ações-do-usuário)
 
-[3.2 Metodologia do sistema 38](#_Toc44538405)
+[3.2 pesquisa com usuários sobre recomendação musical
+38](#pesquisa-com-usuários-sobre-recomendação-musical)
 
-[3.2.1 Como o trabalho vai capturar as ações do usuário e enviá-las ao
+[3.2.1 Pré-teste do questionário 42](#pré-teste-do-questionário)
+
+[3.2.2 Resultados do questionário 42](#resultados-do-questionário)
+
+[*3.3* Modelagem do sistema *DCRM* 43](#modelagem-do-sistema-dcrm)
+
+[3.3.1 Como o trabalho vai capturar as ações do usuário e enviá-las ao
 sistema?
 43](#como-o-trabalho-vai-capturar-as-ações-do-usuário-e-enviá-las-ao-sistema)
 
-[3.2.2 Como o trabalho vai validar se as ações do usuário condizem com o
-contexto? 43](#_Toc44538407)
-
-[3.2.3 Como o trabalho vai relacionar as músicas que o usuário gosta aos
+[3.3.2 Como o trabalho vai relacionar as músicas que o usuário gosta aos
 contextos?
-44](#como-o-trabalho-vai-relacionar-as-músicas-que-o-usuário-gosta-aos-contextos)
+43](#como-o-trabalho-vai-relacionar-as-músicas-que-o-usuário-gosta-aos-contextos)
 
-[3.2.4 Como o trabalho vai classificar o contexto para apresentar para
-usuário? 44](#_Toc44538409)
-
-[3.2.5 Como o trabalho vai recomendar novas músicas a partir da relação
+[3.3.3 Como o trabalho vai recomendar novas músicas a partir da relação
 de contexto x música?
-45](#como-o-trabalho-vai-recomendar-novas-músicas-a-partir-da-relação-de-contexto-x-música)
+44](#como-o-trabalho-vai-recomendar-novas-músicas-a-partir-da-relação-de-contexto-x-música)
 
-[3.2.6 Como o trabalho vai avaliar as recomendações feitas?
-46](#_Toc44538411)
+[3.4 roteiro 44](#roteiro)
 
-[3.3 roteiro 46](#roteiro)
+[4 CONCLUSÃO 45](#conclusão)
 
-[4 CONCLUSÃO 47](#conclusão)
-
-[Referências Bibliográficas 48](#referências-bibliográficas)
+[Referências Bibliográficas 46](#referências-bibliográficas)
 
 # Introdução
 
@@ -390,8 +392,8 @@ o qual é o mais amplamente utilizado para esse tipo de recomendação
 conforme (ALIAGA, 2018) (fazer apud Bobadilla et al. (2013)), e é um
 algoritmo *lazy*, isso é, não gera um modelo que precisa de treinamento.
 
-No trabalho, foi escolhidos 10 usuários para realizar o teste, tendo um
-contexto comum que era “Estudar” para atividade e “BR” para cultura.
+No trabalho, foram escolhidos 10 usuários para realizar o teste, tendo
+um contexto comum que era “Estudar” para atividade e “BR” para cultura.
 Foram realizados 240 testes para compilar os dados do experimento, e no
 fim, foi apresentado os resultados do experimento realizado “Com
 contexto” e “Sem contexto”, onde o trabalho obteve uma precisão de 50%
@@ -399,8 +401,9 @@ na taxa de aceitação das recomendações realizadas.
 
 As indicações dos avaliadores foram analisadas e foi verificado que
 apenas uma apresentava o algoritmo utilizado, que é: “Effective
-Nearest-Neighbor Music Recommendations”. A qual será aprofundada nesse
-trabalho.
+Nearest-Neighbor Music Recommendations”. A qual apresenta uma técnica
+hibrida de recomendação, que utiliza de uma combinação do KNN, fatoração
+de matriz e um pequeno conjunto heurístico.
 
 ## O protocolo de revisão
 
@@ -1110,8 +1113,8 @@ usuários que utilizarão a aplicação, sendo assim, foram utilizadas
 perguntas que permitam entender suas preferências, atividades, dentre
 outros fatores. As perguntas do questionário estão listadas no Quadro 2:
 
-Quadro 2 Perguntas e respostas disponibilizadas a um certo público
-através dos formulários do Google. (próprio, 2020)
+Quadro Perguntas e respostas disponibilizadas a um certo público através
+dos formulários do Google. (próprio, 2020)
 
 | Pergunta                                                                                     | Possíveis respostas                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
