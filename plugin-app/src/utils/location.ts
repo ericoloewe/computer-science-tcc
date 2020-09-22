@@ -1,3 +1,5 @@
+import { LoggerUtil } from "./logger";
+
 export class LocationUtil {
   static getPosition(): Promise<Position> {
     return new Promise((resolve, reject) => {
@@ -7,7 +9,7 @@ export class LocationUtil {
         navigator.geolocation.getCurrentPosition(position => {
           resolve(position);
         }, error => {
-          console.error(error);
+          LoggerUtil.error(error);
 
           reject('Unable to retrieve your location')
         });

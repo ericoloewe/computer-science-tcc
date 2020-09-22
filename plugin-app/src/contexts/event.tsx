@@ -3,6 +3,7 @@ import React, { createContext, useContext } from "react";
 import { gtmService } from "../services/gtm";
 import { requestService } from "../services/request";
 import { useUser } from "./user";
+import { FirebaseUtil } from "../utils/firebase";
 
 interface Props {}
 
@@ -50,6 +51,12 @@ export function EventsProvider(props: Props) {
       } else {
         await requestService.post({ url: eventApiEndpoint, data });
       }
+
+      FirebaseUtil.addNew(`events/${spotifyUserUri}`, {
+        action: type,
+        value,
+        createdDateTime: new Date().toISOString(),
+      });
     }
   }
 

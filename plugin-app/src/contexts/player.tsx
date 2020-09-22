@@ -1,14 +1,16 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-import { useAuth } from "./auth";
-import { SpotifyUtil, SpotifyPlayer } from "../utils/spotify";
+import { LoggerUtil } from "../utils/logger";
+import { messageService } from "../services/message";
 import { Music } from "../@types/music";
 import { MusicMapper } from "../mappers/music";
-import { SpotifyPlayerResponse } from "../@types/spotify";
-import { TimerUtil } from "../utils/timer";
 import { PlayerUtil } from "../utils/player";
+import { SpotifyPlayerResponse } from "../@types/spotify";
+import { SpotifyUtil, SpotifyPlayer } from "../utils/spotify";
+import { TimerUtil } from "../utils/timer";
+import { useAuth } from "./auth";
 import { useEvents } from "./event";
-import { messageService } from "../services/message";
+import { useUser } from "./user";
 
 interface Props {}
 
@@ -40,6 +42,7 @@ const debounce = TimerUtil.debounce((state: Spotify.PlaybackState, saveEvent: Fu
 
 export function PlayerProvider(props: Props) {
   const { accessToken, isAuthenticated, requestService } = useAuth();
+  const { profile } = useUser();
   const [player, setPlayer] = useState<SpotifyPlayer | null>(null);
   const [isPluginPlayerActive, setIsPluginPlayerActive] = useState<any>(null);
   const [isPlayerReady, setIsPlayerReady] = useState<any>(null);
@@ -136,15 +139,17 @@ export function PlayerProvider(props: Props) {
       await TimerUtil.wait(500);
       await loadCurrentPlayerInfo();
     } catch (ex) {
-      console.error(ex);
+      LoggerUtil.error("transferUserPlaybackToPlugin", ex);
 
       const { data, status } = ex.response;
 
       if (status < 200 || status > 299) {
         if ((data as any)?.error?.reason === "PREMIUM_REQUIRED") {
           messageService.alert("[USUARIO NÃO PREMIUM] Você precisa ser premium para conectar");
+          LoggerUtil.warn("[USUARIO NÃO PREMIUM] Você precisa ser premium para conectar", profile?.id);
         } else {
           messageService.alert("Tivemos um problema ao conectar, tente novamente mais tarde");
+          LoggerUtil.warn("Tivemos um problema ao conectar, tente novamente mais tarde", profile?.id);
         }
       }
     }
