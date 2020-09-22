@@ -16,6 +16,6 @@ export class LoggerUtil {
     static _do(type: 'log' | 'warn' | 'error', args: any[]) {
         console[type](`[${type}]: `, args);
 
-        FirebaseUtil.addNew(`log/${type}`, args);
+        FirebaseUtil.addNew(`log/${type}`, args.filter(Boolean));
     }
 }

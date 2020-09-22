@@ -18,6 +18,7 @@ interface Context {
   isPlayerReady: boolean;
   isPluginPlayerActive: boolean;
   nextTrack: () => Promise<void>;
+  playerHasError: boolean;
   playingMusicInfo?: PlayingMusicInfo;
   previousTrack: () => Promise<void>;
   togglePlay: () => Promise<void>;
@@ -44,6 +45,7 @@ export function PlayerProvider(props: Props) {
   const { accessToken, isAuthenticated, requestService } = useAuth();
   const { profile } = useUser();
   const [player, setPlayer] = useState<SpotifyPlayer | null>(null);
+  const [playerHasError, setPlayerHasError] = useState<boolean>(false);
   const [isPluginPlayerActive, setIsPluginPlayerActive] = useState<any>(null);
   const [isPlayerReady, setIsPlayerReady] = useState<any>(null);
   const [playingMusicInfo, setPlayingMusicInfo] = useState<PlayingMusicInfo | undefined>();
@@ -79,14 +81,23 @@ export function PlayerProvider(props: Props) {
   }, [player]);
 
   async function createSpotifyPlayerIfNeed(): Promise<void> {
-    const player = await SpotifyUtil.createPlayer(accessToken);
+    if (player == null) {
+      const player = await SpotifyUtil.createPlayer(accessToken);
 
-    setPlayer(player);
+      setPlayer(player);
+    }
   }
 
   async function createSpotifyPlayerIfNeedAndValidatePlayer(): Promise<void> {
-    await createSpotifyPlayerIfNeed();
-    await loadCurrentPlayerInfo();
+    try {
+      await createSpotifyPlayerIfNeed();
+      await loadCurrentPlayerInfo();
+    } catch (ex) {
+      setPlayerHasError(true);
+      messageService.alert("Tivemos um problema ao conectar ao spotify");
+
+      LoggerUtil.error("SPOTIFY_CONNECT_PROBLEM", ex, profile?.id);
+    }
   }
 
   async function getCurrentPlayerInfo(): Promise<SpotifyPlayerResponse | null> {
@@ -161,6 +172,7 @@ export function PlayerProvider(props: Props) {
         isPlayerReady,
         isPluginPlayerActive,
         nextTrack,
+        playerHasError,
         playingMusicInfo,
         previousTrack,
         togglePlay,
