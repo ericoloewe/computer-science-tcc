@@ -1,0 +1,1935 @@
+{
+  "events" : {
+    "spotify:user:226rxsqefx3heakyeln7t3unq" : {
+      "-MHlol9hGFfvRU5FBVxJ" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-21T18:01:53.943Z",
+        "value" : "animada;empolgado"
+      },
+      "-MHlomW7ZFn37XkDTJbb" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-21T18:01:59.474Z",
+        "value" : "jogando;lazer"
+      },
+      "-MHlonj5afm58BRLwJKS" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-21T18:02:04.464Z",
+        "value" : "{\"lat\":-26.8940615,\"lng\":-26.8940615}"
+      },
+      "-MHloovFh3Ukoy8Q2q9I" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-21T18:02:09.338Z",
+        "value" : "casa"
+      },
+      "-MHloq1kRp8LuuMagR9Y" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T18:02:13.914Z",
+        "value" : "spotify:track:6wpGqhRvJGNNXwWlPmkMyO"
+      },
+      "-MHloqtS9qh3C8LOjCNS" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T18:02:17.415Z",
+        "value" : "spotify:track:6wpGqhRvJGNNXwWlPmkMyO"
+      },
+      "-MHloyWvVt9EonLXv4FZ" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-21T18:02:48.677Z",
+        "value" : "spotify:track:6wpGqhRvJGNNXwWlPmkMyO"
+      },
+      "-MHlp4Yuy-YkY6zHKjMO" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T18:03:17.476Z",
+        "value" : "spotify:track:6wpGqhRvJGNNXwWlPmkMyO"
+      },
+      "-MHlp52Pcg62GwsCq24E" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T18:03:19.492Z",
+        "value" : "spotify:track:6wpGqhRvJGNNXwWlPmkMyO"
+      },
+      "-MHlpAgBscx96x8F5OjU" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T18:03:42.582Z",
+        "value" : "spotify:track:6wpGqhRvJGNNXwWlPmkMyO"
+      },
+      "-MHlqTtu1yCnLQqzeZuX" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T18:09:23.429Z",
+        "value" : "spotify:track:6wpGqhRvJGNNXwWlPmkMyO"
+      },
+      "-MHlq_Fvcjgth9fCAC3T" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-21T18:09:49.478Z",
+        "value" : "spotify:track:2wSAWEYUHkt92X4SBAPqZE"
+      },
+      "-MHlqaPxGDYkn5yNSoIi" : {
+        "action" : "HATED_MUSIC",
+        "createdDateTime" : "2020-09-21T18:09:54.215Z",
+        "value" : "spotify:track:2wSAWEYUHkt92X4SBAPqZE"
+      },
+      "-MHlqdsZA6fiLANS09QQ" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T18:10:08.398Z",
+        "value" : "spotify:track:2wSAWEYUHkt92X4SBAPqZE"
+      },
+      "-MHlqurwGCepP9NLPrKN" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-21T18:11:17.990Z",
+        "value" : "spotify:track:0jWgAnTrNZmOGmqgvHhZEm"
+      }
+    },
+    "spotify:user:3152wu7mz2aoxfrg5mtqov77lseu" : {
+      "-MGEGsFhBZaMRomLg0EP" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-02T14:45:19.753Z",
+        "value" : "aborrecido;animada;ansioso;assustado"
+      },
+      "-MGEGt4mFD25TTp-E9MT" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-02T14:45:23.151Z",
+        "value" : ""
+      },
+      "-MGEGtM_CoUIArOnAbr2" : {
+        "action" : "CHOOSE_FEELING_TO_BE_LIKE",
+        "createdDateTime" : "2020-09-02T14:45:24.289Z",
+        "value" : "amoroso;animada"
+      },
+      "-MGEGtf0ELg9jj8WapNQ" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-02T14:45:25.533Z",
+        "value" : ""
+      },
+      "-MGEGuPu6L8fESubmlU5" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-02T14:45:28.598Z",
+        "value" : "{\"lat\":-29.979681199999998,\"lng\":-29.979681199999998}"
+      },
+      "-MGEGvV5_GBT1LoGm6Tc" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-02T14:45:33.026Z",
+        "value" : "academia"
+      },
+      "-MGEH477PSdhBTEjyMUn" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-02T14:46:12.457Z",
+        "value" : "{\"lat\":-29.979635399999996,\"lng\":-29.979635399999996}"
+      },
+      "-MGnzpvvPIspXFPc9H9W" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-09T17:52:28.587Z",
+        "value" : "alegre"
+      },
+      "-MGnzrSkSjiNW4JW7zZw" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-09T17:52:34.848Z",
+        "value" : ""
+      },
+      "-MGnzxGcKwMAjpY003eu" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-09T17:52:58.648Z",
+        "value" : "acordando;afazeres-domesticos;brincando-com-os-filhos;comendo;cozinhando;descansando;dirigindo;estudando;fazendo-sexo"
+      },
+      "-MGnzxQ4MDuTMTmAk9nE" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-09T17:52:59.253Z",
+        "value" : "{\"lat\":-29.979652899999998,\"lng\":-29.979652899999998}"
+      },
+      "-MGnzyLNdJIeDcd5SgH9" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-09T17:53:03.048Z",
+        "value" : "teste"
+      },
+      "-MGo--R3RzCsfzgg7Za1" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-09T17:53:11.604Z",
+        "value" : "escola;igreja;na-rua;praia;restaurante;trabalho;transporte"
+      }
+    },
+    "spotify:user:31bfdxg5fe2335adqfcg4xpugpcq" : {
+      "-MHrRc8m-Jwta1ZFmzFu" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T20:11:57.731Z",
+        "value" : "alegre;animado;calmo"
+      },
+      "-MHrRdkLtNqzuQDJw4DC" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-22T20:12:04.297Z",
+        "value" : "acordando"
+      },
+      "-MHrRezZCkuGcQ7Fj0Tl" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-22T20:12:09.367Z",
+        "value" : "{\"lat\":-29.6466039,\"lng\":-29.6466039}"
+      },
+      "-MHrRl_RpUhYy82z1Qdr" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-22T20:12:36.368Z",
+        "value" : "acordando"
+      },
+      "-MHrRldG2SrFXDYu5imF" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-22T20:12:36.613Z",
+        "value" : "{\"lat\":-29.6466039,\"lng\":-29.6466039}"
+      },
+      "-MHrRmiOezF1kmV3yyG1" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-22T20:12:41.036Z",
+        "value" : "casa"
+      },
+      "-MHrRoagzZYbAZfIrro4" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-22T20:12:48.736Z",
+        "value" : "spotify:track:5qLTGDTTIHxxIU835qJWfT"
+      },
+      "-MHrRrQSLpTlI5qxmnzX" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-22T20:13:00.305Z",
+        "value" : "spotify:track:5qLTGDTTIHxxIU835qJWfT"
+      },
+      "-MHrS1Itu8t2TUN2Z0oO" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-22T20:13:44.877Z",
+        "value" : "{\"lat\":-29.6466039,\"lng\":-29.6466039}"
+      },
+      "-MHrS5d2qfL_8oQWZyiL" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-22T20:14:02.626Z",
+        "value" : "spotify:track:5qLTGDTTIHxxIU835qJWfT"
+      }
+    },
+    "spotify:user:3ka2awymoso1wgdlwuq50uz8h" : {
+      "-MHloMDm0_4RHcJliyn1" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-21T17:58:58.984Z",
+        "value" : "empolgado"
+      },
+      "-MHloYAe_Uf6ymmnCXhF" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-21T17:59:47.936Z",
+        "value" : "jogando"
+      },
+      "-MHloYoWzJ40oiTB4cI8" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-21T17:59:50.551Z",
+        "value" : "{\"lat\":-26.8929004,\"lng\":-26.8929004}"
+      },
+      "-MHlo_vhux_vbVy4wkQi" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-21T17:59:59.203Z",
+        "value" : "casa"
+      },
+      "-MHmMxRk28K5hStGLejd" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-21T20:34:30.138Z",
+        "value" : "animada;cansado"
+      },
+      "-MHmMya1RLDfJAXYttXb" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-21T20:34:34.828Z",
+        "value" : "comendo"
+      },
+      "-MHmMyfgYHGgEW8IfrCh" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-21T20:34:35.191Z",
+        "value" : "{\"lat\":-26.8929004,\"lng\":-26.8929004}"
+      },
+      "-MHmMzMmApeKt0P561LW" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-21T20:34:38.012Z",
+        "value" : "casa"
+      }
+    },
+    "spotify:user:4i3jdhv6vubcjdpwsn38iv8u4" : {
+      "-MHipOd3SzdksJEidjyI" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-21T04:04:27.405Z",
+        "value" : "feliz"
+      },
+      "-MHipSu64CP3m07DR_rL" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-21T04:04:44.880Z",
+        "value" : "estudando"
+      },
+      "-MHipT0Xk2yo_eiUm7JE" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-21T04:04:45.355Z",
+        "value" : "{\"lat\":-29.7054476,\"lng\":-29.7054476}"
+      },
+      "-MHipWIyTzzkUZEdvChI" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-21T04:04:58.823Z",
+        "value" : "casa"
+      },
+      "-MHipX_9olfWC-S4aK4d" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:05:04.019Z",
+        "value" : "spotify:track:29aSfWddeZJCfnrcMb20sy"
+      },
+      "-MHipgizIpxmOQZgUAG8" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-21T04:05:45.608Z",
+        "value" : "spotify:track:29aSfWddeZJCfnrcMb20sy"
+      },
+      "-MHippVGQneyyoTlCFnD" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:06:21.531Z",
+        "value" : "spotify:track:29aSfWddeZJCfnrcMb20sy"
+      },
+      "-MHips8E8QuAZ92GAYVO" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-21T04:06:32.345Z",
+        "value" : "spotify:track:2evFJQfQVcDEXyOiyEV6OW"
+      },
+      "-MHiq-PKuwySYr10ceDz" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:07:06.219Z",
+        "value" : "spotify:track:2evFJQfQVcDEXyOiyEV6OW"
+      },
+      "-MHiq11weI7gUX398H5W" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:07:12.914Z",
+        "value" : "spotify:track:2evFJQfQVcDEXyOiyEV6OW"
+      },
+      "-MHiq2rbScl2lXwPXR5l" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:07:20.380Z",
+        "value" : "spotify:track:2evFJQfQVcDEXyOiyEV6OW"
+      },
+      "-MHiq3jKlG0kweDsJ6ZJ" : {
+        "action" : "RESTART_MUSIC",
+        "createdDateTime" : "2020-09-21T04:07:23.947Z",
+        "value" : "spotify:track:6Te1vrlCz4DdCeONagkT6j"
+      },
+      "-MHiqB3OXjdY5g64fFCd" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:07:53.967Z",
+        "value" : "spotify:track:6Te1vrlCz4DdCeONagkT6j"
+      },
+      "-MHir7z3BY2-56pXuITI" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-21T04:12:03.484Z",
+        "value" : "spotify:track:5YrMcUZoNXlUCfwgnfocgL"
+      },
+      "-MHirFOMWUvF4SUK8AEO" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:12:33.836Z",
+        "value" : "spotify:track:5YrMcUZoNXlUCfwgnfocgL"
+      },
+      "-MHis-YVHIZlFHahXMaM" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-21T04:15:51.093Z",
+        "value" : "spotify:track:120w1eBYfiYrSXtegu6uEb"
+      },
+      "-MHis7-wqE3mEfmrBm_P" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:16:21.649Z",
+        "value" : "spotify:track:120w1eBYfiYrSXtegu6uEb"
+      },
+      "-MHisK1oBOfo_6mP4uh4" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-21T04:17:15.017Z",
+        "value" : "spotify:track:120w1eBYfiYrSXtegu6uEb"
+      },
+      "-MHisRXSRf_UI74zMSKQ" : {
+        "action" : "RESTART_MUSIC",
+        "createdDateTime" : "2020-09-21T04:17:45.715Z",
+        "value" : "spotify:track:03nPEoQOYMuDe7KmGljpmd"
+      },
+      "-MHisZ-uP91ercz_xvEw" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:18:16.336Z",
+        "value" : "spotify:track:03nPEoQOYMuDe7KmGljpmd"
+      },
+      "-MHisatbzDG3spRMoFv-" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-21T04:18:28.156Z",
+        "value" : "spotify:track:03nPEoQOYMuDe7KmGljpmd"
+      },
+      "-MHistgT6CdvSXsyBjb2" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:19:45.139Z",
+        "value" : "spotify:track:03nPEoQOYMuDe7KmGljpmd"
+      },
+      "-MHisyKffDvotpLU6oZ2" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-21T04:20:04.161Z",
+        "value" : "spotify:track:6PYnUsNEpYC7A4BS2sjw3L"
+      },
+      "-MHit--UPwUz5RXiSL6Q" : {
+        "action" : "HATED_MUSIC",
+        "createdDateTime" : "2020-09-21T04:20:10.996Z",
+        "value" : "spotify:track:6PYnUsNEpYC7A4BS2sjw3L"
+      },
+      "-MHit4_lzCqTnE8jt7r5" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:20:33.862Z",
+        "value" : "spotify:track:6PYnUsNEpYC7A4BS2sjw3L"
+      },
+      "-MHit56PiSo6hGThdHmL" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-21T04:20:36.015Z",
+        "value" : "spotify:track:50UkypyQJbSQLaXHke5Yep"
+      },
+      "-MHit9ONvVrtbawvqxqe" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-21T04:20:53.549Z",
+        "value" : "spotify:track:4E5P1XyAFtrjpiIxkydly4"
+      },
+      "-MHitGgDGPUAYRxESwhp" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:21:23.427Z",
+        "value" : "spotify:track:4E5P1XyAFtrjpiIxkydly4"
+      },
+      "-MHitSGQ1aaQtWYDeN6-" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:22:10.891Z",
+        "value" : "spotify:track:4E5P1XyAFtrjpiIxkydly4"
+      },
+      "-MHitSbBKO-5akbGITKp" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:22:12.283Z",
+        "value" : "spotify:track:4E5P1XyAFtrjpiIxkydly4"
+      },
+      "-MHitTDtTbKoiyUpOOUr" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-21T04:22:14.825Z",
+        "value" : "spotify:track:1lOe9qE0vR9zwWQAOk6CoO"
+      },
+      "-MHitUSPoFtQnmAUVSqu" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-21T04:22:19.849Z",
+        "value" : "spotify:track:7uKcScNXuO3MWw6LowBjW1"
+      },
+      "-MHitZKLvRfcMhreevoY" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:22:39.767Z",
+        "value" : "spotify:track:7uKcScNXuO3MWw6LowBjW1"
+      },
+      "-MHitZo_eLe9ZF-R9UnR" : {
+        "action" : "RESTART_MUSIC",
+        "createdDateTime" : "2020-09-21T04:22:41.764Z",
+        "value" : "spotify:track:7uKcScNXuO3MWw6LowBjW1"
+      },
+      "-MHit_wMZ4qZhVio7NMS" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-21T04:22:46.358Z",
+        "value" : "spotify:track:24Yi9hE78yPEbZ4kxyoXAI"
+      },
+      "-MHitfzB54ShNc9fATKC" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:23:11.115Z",
+        "value" : "spotify:track:24Yi9hE78yPEbZ4kxyoXAI"
+      },
+      "-MHiti6bt3xqpbrUum93" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:23:19.846Z",
+        "value" : "spotify:track:24Yi9hE78yPEbZ4kxyoXAI"
+      },
+      "-MHitm5tu7YE62-gGvdN" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:23:36.184Z",
+        "value" : "spotify:track:24Yi9hE78yPEbZ4kxyoXAI"
+      },
+      "-MHitmR48VCtr_5xLY9-" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:23:37.542Z",
+        "value" : "spotify:track:24Yi9hE78yPEbZ4kxyoXAI"
+      },
+      "-MHitn6hNvAFhzBNYBpS" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-21T04:23:40.332Z",
+        "value" : "spotify:track:59dLtGBS26x7kc0rHbaPrq"
+      },
+      "-MHitnqPiqZHw1l0Wmn7" : {
+        "action" : "HATED_MUSIC",
+        "createdDateTime" : "2020-09-21T04:23:43.320Z",
+        "value" : "spotify:track:24Yi9hE78yPEbZ4kxyoXAI"
+      },
+      "-MHito1LCBBvzpJYL2Nm" : {
+        "action" : "CHANGE_TO_PREVIOUS_MUSIC",
+        "createdDateTime" : "2020-09-21T04:23:44.084Z",
+        "value" : "spotify:track:24Yi9hE78yPEbZ4kxyoXAI"
+      },
+      "-MHitp5E31PaJY_jONFw" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-21T04:23:48.430Z",
+        "value" : "spotify:track:59dLtGBS26x7kc0rHbaPrq"
+      },
+      "-MHitq0Lf3_G8WgmCY9n" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-21T04:23:52.212Z",
+        "value" : "spotify:track:50UkypyQJbSQLaXHke5Yep"
+      },
+      "-MHitxTQRHJNoQYu8b1m" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:24:22.746Z",
+        "value" : "spotify:track:50UkypyQJbSQLaXHke5Yep"
+      },
+      "-MHiu5qiYr27qynkKkqc" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-21T04:25:01.164Z",
+        "value" : "spotify:track:7xkQdy0cy5ymoWT7nedvLz"
+      },
+      "-MHiuDIFo4SPr8JkluUq" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:25:31.662Z",
+        "value" : "spotify:track:7xkQdy0cy5ymoWT7nedvLz"
+      },
+      "-MHiudS46BSPkxh7DYW8" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-21T04:27:22.883Z",
+        "value" : "spotify:track:3w3y8KPTfNeOKPiqUTakBh"
+      },
+      "-MHiuktvIk5er5zeoxjM" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:27:53.402Z",
+        "value" : "spotify:track:3w3y8KPTfNeOKPiqUTakBh"
+      },
+      "-MHivYb4QLK6MTjPuwu6" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-21T04:31:21.092Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHivahurmZ-uC3DHwD4" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:31:33.817Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiviVXiRR7AXx5iCL_" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:32:05.728Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHivn1YEAzV_wfCzSZY" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:32:24.289Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHivxNgjaJ1tCCOCejA" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:33:06.666Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHivxopadaF2wt-YWht" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:33:08.468Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiw1_5oGwGvpmPsxGD" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:33:27.940Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiw1t-DiA4aSaxmUQX" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:33:29.214Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiw9Gn4CXu5H7oSzSZ" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:33:59.473Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiw9leibUKQlGhncVq" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:34:01.512Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiwDHF5WkjRlhAL3Um" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:34:15.886Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiwICm2rNDkbYNjAx9" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:34:36.081Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiwKvzsYsfQ4QNN2Z-" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:34:47.229Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiwLZmmVTP-Ad1hYEK" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:34:49.840Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiwOqT-ee7z78Jdh-S" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:35:03.261Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiwPhxjQzpa4qZF7wX" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:35:06.812Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiwSf5k8Hk0E5pDBW7" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:35:18.916Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiwTZ1MDSUHJgY-4z7" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:35:22.560Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiwVlUzEgoYpblutCx" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:35:31.613Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiwWX_XdrImV15u3-c" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:35:34.755Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiwZ4o5ns9_6ZydvY-" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:35:45.202Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiw_02BEg9QaHlPjOv" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:35:48.993Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiwairT2Z-qQGLiiOd" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:35:56.021Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiwb5savgFf5ZocmQe" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-21T04:35:57.559Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHiwgtjmWtDLRKztR9A" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-21T04:36:21.293Z",
+        "value" : "spotify:track:61s24wRVyG7NP9m7EjdDKL"
+      },
+      "-MHloH0jrHgnzp6UUIVI" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-21T17:58:26.902Z",
+        "value" : "feliz"
+      },
+      "-MHloIa7wOTjSXPxW8AY" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-21T17:58:33.327Z",
+        "value" : "estudando"
+      },
+      "-MHloIm4CAsNaTVge3ER" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-21T17:58:34.092Z",
+        "value" : "{\"lat\":-29.705136799999995,\"lng\":-29.705136799999995}"
+      },
+      "-MHloJGtDMX9I3ZmXOQR" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-21T17:58:36.128Z",
+        "value" : "casa"
+      },
+      "-MHly6huEoZXkFaheQqy" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-21T18:41:25.925Z",
+        "value" : "alegre"
+      },
+      "-MHlyEAOyqIHBD9Msi2S" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-21T18:41:56.484Z",
+        "value" : "estudando"
+      },
+      "-MHlyEKOeGx3UVDAuxh2" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-21T18:41:57.124Z",
+        "value" : "{\"lat\":-29.705536700000003,\"lng\":-29.705536700000003}"
+      },
+      "-MHlyEm7aXRJ-7dxPYPY" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-21T18:41:58.963Z",
+        "value" : "casa"
+      },
+      "-MHmLjWDpbxZtXQc8vEH" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-21T20:29:00.843Z",
+        "value" : "feliz"
+      },
+      "-MHmLkRicJ9QLdUJv0Ie" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-21T20:29:04.651Z",
+        "value" : "estudando"
+      },
+      "-MHmLkcdTQ4wa-3hP8Fb" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-21T20:29:05.414Z",
+        "value" : "{\"lat\":-29.7057363,\"lng\":-29.7057363}"
+      },
+      "-MHmLkx-9eavVLMlrqx4" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-21T20:29:06.717Z",
+        "value" : "casa"
+      },
+      "-MHmM_P_7wSpripsL1G6" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-21T20:32:41.209Z",
+        "value" : "alegre;animada"
+      },
+      "-MHmMaE4HrJnPxpefiWj" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-21T20:32:44.568Z",
+        "value" : "estudando"
+      },
+      "-MHmMaLc6DIFMOd34Irx" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-21T20:32:45.051Z",
+        "value" : "{\"lat\":-29.705732100000002,\"lng\":-29.705732100000002}"
+      },
+      "-MHmMan_BIqGNUxSw-a3" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-21T20:32:46.904Z",
+        "value" : "casa"
+      },
+      "-MHmZC0jH-BFoUy1uJ1r" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-21T21:27:49.123Z",
+        "value" : "alegre"
+      },
+      "-MHma8WtJvU-6cf6Wluo" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-21T21:36:19.066Z",
+        "value" : ""
+      },
+      "-MHma8g4Rj3kJPd-J_7E" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-21T21:36:19.718Z",
+        "value" : "{\"lat\":-29.7057143,\"lng\":-29.7057143}"
+      },
+      "-MHma8o6BYJPFz0TcSnr" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-21T21:36:20.232Z",
+        "value" : ""
+      },
+      "-MHnhSBHJIs2HNLWq_zf" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T02:47:52.177Z",
+        "value" : "amoroso"
+      },
+      "-MHnhnVZY781ijNKlKM_" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T02:49:23.465Z",
+        "value" : "amoroso"
+      },
+      "-MHnil5GwLJWX9RP6HaW" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T02:53:35.142Z",
+        "value" : "alegre"
+      },
+      "-MHnkRXU1nUhKpQN2DIX" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T03:00:54.703Z",
+        "value" : "animada"
+      },
+      "-MHnkShbp-tr8ZrhIw9W" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-22T03:00:59.513Z",
+        "value" : "estudando"
+      },
+      "-MHnkSnq8gWdx4Zfudme" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-22T03:00:59.912Z",
+        "value" : "{\"lat\":-29.7054642,\"lng\":-29.7054642}"
+      },
+      "-MHnkTS9qWbOyfelUf54" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-22T03:01:02.555Z",
+        "value" : "casa"
+      },
+      "-MHnrePS4zHTgmR0jsOt" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T03:32:26.465Z",
+        "value" : "alegre"
+      },
+      "-MHnrfmpk0X09YERaZLb" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-22T03:32:32.122Z",
+        "value" : "estudando"
+      },
+      "-MHnrgG9t8z_iwDF2UCr" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-22T03:32:34.063Z",
+        "value" : "{\"lat\":-29.7054515,\"lng\":-29.7054515}"
+      },
+      "-MHnrgixnFIny83qLcXj" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-22T03:32:35.969Z",
+        "value" : "banheiro"
+      },
+      "-MHnsoiB_TUYIUpDpAlP" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T03:37:31.560Z",
+        "value" : ""
+      },
+      "-MHnsotkq0xLLeYmwpym" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-22T03:37:32.301Z",
+        "value" : ""
+      },
+      "-MHnsp1aGZQfXM1Fffo6" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-22T03:37:32.867Z",
+        "value" : ""
+      },
+      "-MHnspm7tuE4TBnQUzLB" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-22T03:37:35.909Z",
+        "value" : "spotify:track:4gTyrZ0cv1J5YZgNQiNyN4"
+      },
+      "-MHntSGdO29he3yzv0c6" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T03:40:18.144Z",
+        "value" : ""
+      },
+      "-MHntSSpFsXvFZLVbiPN" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-22T03:40:18.925Z",
+        "value" : ""
+      },
+      "-MHntSdwdbMlEofLAx0g" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-22T03:40:19.700Z",
+        "value" : ""
+      },
+      "-MHnxyCyQcD4K2-yj3fU" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T04:00:00.500Z",
+        "value" : ""
+      },
+      "-MHnxySHpnZSW_As1606" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-22T04:00:01.480Z",
+        "value" : ""
+      },
+      "-MHnxyfCJ18D5WdZLWRR" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-22T04:00:02.371Z",
+        "value" : ""
+      },
+      "-MHo41GgHwYzMIXkrUK0" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T04:30:52.085Z",
+        "value" : ""
+      },
+      "-MHo41R-dq20vzjXL1rx" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-22T04:30:52.745Z",
+        "value" : ""
+      },
+      "-MHo41hZR40b7ILE4Pbv" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-22T04:30:53.869Z",
+        "value" : ""
+      },
+      "-MHo65nuvg5GShE-rbni" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T04:39:55.794Z",
+        "value" : "animado"
+      },
+      "-MHo67RSjV4hAYofYYzN" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-22T04:40:02.487Z",
+        "value" : "estudando"
+      },
+      "-MHo67YnadoAgk7uWAjb" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-22T04:40:02.957Z",
+        "value" : "{\"lat\":-29.7057452,\"lng\":-29.7057452}"
+      },
+      "-MHo687GtZaKgMorpbAQ" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-22T04:40:05.291Z",
+        "value" : "casa"
+      },
+      "-MHo6fpei8euQChmednl" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T04:42:26.654Z",
+        "value" : "animado"
+      },
+      "-MHo6knJ1MFpOAzSBdkd" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-22T04:42:46.983Z",
+        "value" : "comendo"
+      },
+      "-MHo6lcHSyXMz4Pd8gFO" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-22T04:42:50.374Z",
+        "value" : "{\"lat\":-29.7081388,\"lng\":-29.7081388}"
+      },
+      "-MHo6m1kdJD5_HxfXevO" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-22T04:42:52.067Z",
+        "value" : "casa"
+      },
+      "-MHo6xv0g3gsKhux7lwL" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T04:43:40.699Z",
+        "value" : "cansado"
+      },
+      "-MHo7-SvpkIx0a8zu58C" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-22T04:43:51.131Z",
+        "value" : "descansando"
+      },
+      "-MHo7-Zvm_DnJXUHVGTH" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-22T04:43:51.579Z",
+        "value" : "{\"lat\":-29.705468,\"lng\":-29.705468}"
+      },
+      "-MHo70Ev3F6I1W-Mp8o1" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-22T04:43:54.331Z",
+        "value" : "carro"
+      },
+      "-MHsuwnNmX3LPWiq_aTc" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-23T03:04:56.238Z",
+        "value" : "alegre"
+      },
+      "-MHsuzI3BIvfd1oO1Dqp" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-23T03:05:06.461Z",
+        "value" : "estudando"
+      },
+      "-MHsuzQJtxDT8MfasXw8" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-23T03:05:06.989Z",
+        "value" : "{\"lat\":-29.705583800000003,\"lng\":-29.705583800000003}"
+      },
+      "-MHswo0MtmxTLFCKcrLu" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-23T03:13:10.509Z",
+        "value" : "casa"
+      }
+    },
+    "spotify:user:8q3uk0rwypu5r7dsq48476qak" : {
+      "-MGLeZ_8LLOg1vzGSrAy" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-04T01:10:34.406Z",
+        "value" : "normal"
+      },
+      "-MGLe_uqQoMV2j7vydEp" : {
+        "action" : "CHOOSE_FEELING_TO_BE_LIKE",
+        "createdDateTime" : "2020-09-04T01:10:39.891Z",
+        "value" : "feliz"
+      },
+      "-MGLeacLlGXPLoKFJ8Ds" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-04T01:10:42.803Z",
+        "value" : "estudando"
+      },
+      "-MGLebZ0QqOEEVlHh6V_" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-04T01:10:46.622Z",
+        "value" : "{\"lat\":-29.7049991,\"lng\":-29.7049991}"
+      },
+      "-MGLeboOqmQb5xw8eQuM" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-04T01:10:47.671Z",
+        "value" : "casa"
+      }
+    },
+    "spotify:user:b8r2mhyhep5t0np1keaqmvvi0" : {
+      "-MHmbK-RzVJ4R5PfoXm7" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-21T21:41:28.329Z",
+        "value" : "equilibrado"
+      },
+      "-MHmbMGfW_Oj5XsAL_A5" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-21T21:41:37.624Z",
+        "value" : "estudando"
+      },
+      "-MHmbNni-I4PB6wmPBqf" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-21T21:41:43.899Z",
+        "value" : "{\"lat\":-29.685588070028285,\"lng\":-29.685588070028285}"
+      },
+      "-MHmbOjZN4McTGJI2oGc" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-21T21:41:47.730Z",
+        "value" : "casa"
+      },
+      "-MHmcNJzx_6xFvRQwBMk" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-21T21:46:39.997Z",
+        "value" : "alegre"
+      },
+      "-MHmcOljHQzub7C2aOH6" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-21T21:46:45.932Z",
+        "value" : "afazeres-domesticos"
+      },
+      "-MHmcQYKOkAoMj6-6uzY" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-21T21:46:53.202Z",
+        "value" : "{\"lat\":-29.685594221098576,\"lng\":-29.685594221098576}"
+      },
+      "-MHmcR-0qBUDTYcNTlRH" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-21T21:46:55.038Z",
+        "value" : "atelier"
+      },
+      "-MHrEbQSRe2Lw59sk8Qe" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T19:16:37.231Z",
+        "value" : "alegre"
+      },
+      "-MHrEcpGw2J6xqPs0hxI" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-22T19:16:42.978Z",
+        "value" : "descansando"
+      },
+      "-MHrEdZfG3kNU2Pvbqjm" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-22T19:16:46.013Z",
+        "value" : "{\"lat\":-29.685491521688135,\"lng\":-29.685491521688135}"
+      },
+      "-MHrEe1gxXgsZrHPO6Ds" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-22T19:16:47.934Z",
+        "value" : "atelier"
+      },
+      "-MHrEvb61L5tqk8FZS75" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T19:17:25.169Z",
+        "value" : "alegre"
+      },
+      "-MHrEw7wcoF3xY-8Xy2c" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-22T19:17:27.335Z",
+        "value" : "arrumando-a-casa"
+      },
+      "-MHrEwUOnO2I81Wc98cY" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-22T19:17:28.772Z",
+        "value" : "{\"lat\":-29.68558860336227,\"lng\":-29.68558860336227}"
+      },
+      "-MHrEwpF8kHyFG9KVenx" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-22T19:17:30.171Z",
+        "value" : "atelier"
+      },
+      "-MHrJzxvFRvYkpUgPcCv" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T19:40:10.290Z",
+        "value" : "alegre"
+      },
+      "-MHrK-XQnK16pyXv9VUL" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-22T19:40:12.625Z",
+        "value" : "arrumando-a-casa"
+      },
+      "-MHrK0BoL8593YPsq2tp" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-22T19:40:15.339Z",
+        "value" : "{\"lat\":-29.685602156794744,\"lng\":-29.685602156794744}"
+      },
+      "-MHrK0_3JhWr_yolPW9T" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-22T19:40:16.891Z",
+        "value" : "com-os-amigos"
+      }
+    },
+    "spotify:user:jyangalonga" : {
+      "-MHre60SZ0d1Tk8Oa4gE" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-22T21:11:43.489Z",
+        "value" : "cansado;precisando-me-concentrar"
+      },
+      "-MHre8FKnO20o-qLuHFH" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-22T21:11:52.635Z",
+        "value" : "trabalhando"
+      },
+      "-MHre9gUDDrag8MuZKZ3" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-22T21:11:58.533Z",
+        "value" : "{\"lat\":-29.6936924,\"lng\":-29.6936924}"
+      },
+      "-MHreAw24pihhaYoZimv" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-22T21:12:03.625Z",
+        "value" : "casa"
+      },
+      "-MHreCSAixFNquiaRmQJ" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-22T21:12:09.841Z",
+        "value" : "spotify:track:5q453TyHMg7pxYdNG9nufn"
+      },
+      "-MHreMNznGordrlM_twW" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-22T21:12:50.522Z",
+        "value" : "spotify:track:4yGUqYYQiNAdUJXeSMbjCL"
+      },
+      "-MHreuV0OrjW6Nfj_4mO" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-22T21:15:14.332Z",
+        "value" : "spotify:track:0iOQiZ4u83IDrufOZGaWld"
+      },
+      "-MHrewrcwTqhiFrUn9FC" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-22T21:15:24.034Z",
+        "value" : "spotify:track:2ZZo65CEkA83Q662zNebIP"
+      },
+      "-MHrex_P1OVXPTJ-_p6m" : {
+        "action" : "CHANGE_TO_PREVIOUS_MUSIC",
+        "createdDateTime" : "2020-09-22T21:15:26.965Z",
+        "value" : "spotify:track:4yGUqYYQiNAdUJXeSMbjCL"
+      },
+      "-MHrexfbWEfspTfvppyb" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-22T21:15:27.362Z",
+        "value" : "spotify:track:4yGUqYYQiNAdUJXeSMbjCL"
+      },
+      "-MHreySD7riYWA3fsmce" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-22T21:15:30.537Z",
+        "value" : "spotify:track:0iOQiZ4u83IDrufOZGaWld"
+      },
+      "-MHrf454Maucz77veqhE" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-22T21:15:57.728Z",
+        "value" : "spotify:track:0iOQiZ4u83IDrufOZGaWld"
+      },
+      "-MHrfft1PXzUDxp0F5oT" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-22T21:18:36.637Z",
+        "value" : "spotify:track:0iOQiZ4u83IDrufOZGaWld"
+      },
+      "-MHrfgVF484XtJS43tml" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-22T21:18:39.147Z",
+        "value" : "spotify:track:2ZZo65CEkA83Q662zNebIP"
+      },
+      "-MHrfggc7uOH5jtNA-A0" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-22T21:18:39.939Z",
+        "value" : "spotify:track:2ZZo65CEkA83Q662zNebIP"
+      },
+      "-MHrfhzWfyqVbjtoWFuF" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-22T21:18:45.244Z",
+        "value" : "spotify:track:5clUjbxHSe1IEJX7LEH3rv"
+      },
+      "-MHrfiWm_LkZJoEZAPkw" : {
+        "action" : "HATED_MUSIC",
+        "createdDateTime" : "2020-09-22T21:18:47.437Z",
+        "value" : "spotify:track:5clUjbxHSe1IEJX7LEH3rv"
+      },
+      "-MHrfpJs6U-c0OgQEpHk" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-22T21:19:15.283Z",
+        "value" : "spotify:track:5clUjbxHSe1IEJX7LEH3rv"
+      },
+      "-MHrgH92BVG65vKbK6La" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-22T21:21:13.374Z",
+        "value" : "spotify:track:17GaCtZYtHF2pShGftlR5m"
+      },
+      "-MHrgOY0HQ0ziB_b4sLr" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-22T21:21:43.643Z",
+        "value" : "spotify:track:17GaCtZYtHF2pShGftlR5m"
+      },
+      "-MHrgP29V567Qd6GGd_3" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-22T21:21:45.701Z",
+        "value" : "spotify:track:17GaCtZYtHF2pShGftlR5m"
+      },
+      "-MHvH1j0OsPjs5S71aLV" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-23T14:05:04.012Z",
+        "value" : "spotify:track:17GaCtZYtHF2pShGftlR5m"
+      },
+      "-MHvH1kYxwhe83fKo_nf" : {
+        "action" : "HATED_MUSIC",
+        "createdDateTime" : "2020-09-23T14:05:04.110Z",
+        "value" : "spotify:track:17GaCtZYtHF2pShGftlR5m"
+      },
+      "-MHvH51SdEZdJ0qN24iR" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-23T14:05:17.544Z",
+        "value" : "cansado"
+      },
+      "-MHvH7hJcvwiXqeKhwht" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-23T14:05:28.479Z",
+        "value" : "acordando"
+      },
+      "-MHvH7qDmbks1JX8NI_2" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-23T14:05:29.049Z",
+        "value" : "{\"lat\":-29.6897739,\"lng\":-29.6897739}"
+      },
+      "-MHvH8nPHxESTYBTQTdf" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-23T14:05:32.965Z",
+        "value" : "casa"
+      },
+      "-MHvHA96XSPXFgnYCHR-" : {
+        "action" : "HATED_MUSIC",
+        "createdDateTime" : "2020-09-23T14:05:38.514Z",
+        "value" : "spotify:track:17GaCtZYtHF2pShGftlR5m"
+      },
+      "-MHvHLErMoTPg1MXgze_" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-23T14:06:23.943Z",
+        "value" : "spotify:track:17GaCtZYtHF2pShGftlR5m"
+      },
+      "-MHvHMBoMwGEFy0Mg_hI" : {
+        "action" : "HATED_MUSIC",
+        "createdDateTime" : "2020-09-23T14:06:27.844Z",
+        "value" : "spotify:track:17GaCtZYtHF2pShGftlR5m"
+      },
+      "-MHvHTyyFMu1zc6wbybU" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-23T14:06:59.725Z",
+        "value" : "spotify:track:2HD5BWFthrNf2uFyEhi53d"
+      },
+      "-MHvH_EePmhtC-I61QHP" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-23T14:07:25.370Z",
+        "value" : "spotify:track:2H4PGNTvlEXDGcQV9Xe3m1"
+      },
+      "-MHvHgWsgtoWxf2hVkjC" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-23T14:07:55.207Z",
+        "value" : "spotify:track:2H4PGNTvlEXDGcQV9Xe3m1"
+      },
+      "-MHvIQlLcMUWu0VTPCPL" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-23T14:11:08.710Z",
+        "value" : "spotify:track:4WFOFIr7WcOJcy79dZFuvI"
+      },
+      "-MHvIY4b7v8Ipv9R1Afw" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-23T14:11:38.679Z",
+        "value" : "spotify:track:4WFOFIr7WcOJcy79dZFuvI"
+      },
+      "-MHvJXNNhZ9JDsNM19Hp" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-23T14:15:57.928Z",
+        "value" : "spotify:track:1UfHSXONZJ13S5gvSkrOqq"
+      },
+      "-MHvJdjf6w-ecKIC2ort" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-23T14:16:28.091Z",
+        "value" : "spotify:track:1UfHSXONZJ13S5gvSkrOqq"
+      },
+      "-MHvKBgbp4_O1LpjBsmn" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-23T14:18:51.255Z",
+        "value" : "spotify:track:1UfHSXONZJ13S5gvSkrOqq"
+      },
+      "-MHvvR2-mmhbxTNMfBgh" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-23T17:05:55.128Z",
+        "value" : "calmo;cansado"
+      },
+      "-MHvvUpUYYCww13yusC1" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-23T17:06:10.648Z",
+        "value" : "trabalhando"
+      },
+      "-MHvvUt6ytCFs7vKDFZQ" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-23T17:06:10.881Z",
+        "value" : "{\"lat\":-29.6897739,\"lng\":-29.6897739}"
+      },
+      "-MHvvVzfMrMcMpViixO1" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-23T17:06:15.397Z",
+        "value" : "casa"
+      },
+      "-MHvvX7cd4AlbNcgItpK" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-23T17:06:20.066Z",
+        "value" : "spotify:track:1UfHSXONZJ13S5gvSkrOqq"
+      },
+      "-MHvvXkT_WXkzRna_27F" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-23T17:06:22.616Z",
+        "value" : "spotify:track:1UfHSXONZJ13S5gvSkrOqq"
+      },
+      "-MHvvY47fwA-qHfh_ln-" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-23T17:06:23.938Z",
+        "value" : "spotify:track:1UfHSXONZJ13S5gvSkrOqq"
+      },
+      "-MHvvdswP1649yiGDKbk" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-23T17:06:51.830Z",
+        "value" : "spotify:track:1UfHSXONZJ13S5gvSkrOqq"
+      },
+      "-MHvwxZiTKoocp70OPXC" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-23T17:12:34.600Z",
+        "value" : "spotify:track:1UfHSXONZJ13S5gvSkrOqq"
+      },
+      "-MHzzElUBPj2AZnTEvI1" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-24T12:01:02.116Z",
+        "value" : "spotify:track:1UfHSXONZJ13S5gvSkrOqq"
+      },
+      "-MHzzGe2hM1j0wa596vZ" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-24T12:01:09.832Z",
+        "value" : "spotify:track:0W43LnKXzRivi0WPaoBLVO"
+      },
+      "-MHzzMeRQpabpguBUmLR" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-24T12:01:34.411Z",
+        "value" : "feliz;inspirado"
+      },
+      "-MHzzOc70xjHtW9jdD01" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-24T12:01:42.458Z",
+        "value" : "acordando;trabalhando"
+      },
+      "-MHzzOg7FPlGJdEV1ZuD" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-24T12:01:42.714Z",
+        "value" : "{\"lat\":-29.6897739,\"lng\":-29.6897739}"
+      },
+      "-MHzzPwS_aSR56kCfi-4" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-24T12:01:47.855Z",
+        "value" : "casa"
+      },
+      "-MHzzR4vr-K1M_vWtbQy" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-24T12:01:52.557Z",
+        "value" : "spotify:track:1UfHSXONZJ13S5gvSkrOqq"
+      },
+      "-MHzzSEPVLwSaz-iWYtX" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-24T12:01:57.260Z",
+        "value" : "spotify:track:1UfHSXONZJ13S5gvSkrOqq"
+      },
+      "-MHzzTHa9eJgtsqTzOAo" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-24T12:02:01.560Z",
+        "value" : "spotify:track:0SPHbfBIe0mdRnae2MWuzr"
+      },
+      "-MHzzTfjpE1vDe2VjYYy" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-24T12:02:03.169Z",
+        "value" : "spotify:track:00wUbPOYW3MkUDiG9Z4b1O"
+      },
+      "-MHzzTywQy0ikMENkKkj" : {
+        "action" : "RESTART_MUSIC",
+        "createdDateTime" : "2020-09-24T12:02:04.398Z",
+        "value" : "spotify:track:00wUbPOYW3MkUDiG9Z4b1O"
+      },
+      "-MHzzUKR_xGbAvuKsVzN" : {
+        "action" : "CHANGE_TO_PREVIOUS_MUSIC",
+        "createdDateTime" : "2020-09-24T12:02:05.838Z",
+        "value" : "spotify:track:0SPHbfBIe0mdRnae2MWuzr"
+      },
+      "-MHzzWWxCBSlzRrI45xG" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-24T12:02:14.831Z",
+        "value" : "spotify:track:0SPHbfBIe0mdRnae2MWuzr"
+      },
+      "-MHzzaiUSJGT8--SJUE1" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-24T12:02:36.113Z",
+        "value" : "spotify:track:0SPHbfBIe0mdRnae2MWuzr"
+      },
+      "-MI--FoppjjVFNfclPw4" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-24T12:05:28.551Z",
+        "value" : "spotify:track:00wUbPOYW3MkUDiG9Z4b1O"
+      },
+      "-MI--NCsqhs8Pi-oAQAE" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-24T12:05:58.826Z",
+        "value" : "spotify:track:00wUbPOYW3MkUDiG9Z4b1O"
+      },
+      "-MI-07Z1xdZ-DKrRBZZU" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-24T12:09:16.852Z",
+        "value" : "spotify:track:00wUbPOYW3MkUDiG9Z4b1O"
+      },
+      "-MI-SqrG__-ZSCqBVxBX" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-24T14:14:46.530Z",
+        "value" : "spotify:track:00wUbPOYW3MkUDiG9Z4b1O"
+      },
+      "-MI1o-067IkSVUfR60B5" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-25T01:10:45.565Z",
+        "value" : "spotify:track:00wUbPOYW3MkUDiG9Z4b1O"
+      },
+      "-MI44029oN7F1FCdywn9" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-25T11:44:20.672Z",
+        "value" : "animado;inspirado"
+      },
+      "-MI443MyXBh6F1O_sKu7" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-25T11:44:34.293Z",
+        "value" : "trabalhando"
+      },
+      "-MI443QagyZivNgmu4X7" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-25T11:44:34.525Z",
+        "value" : "{\"lat\":-29.6900843,\"lng\":-29.6900843}"
+      },
+      "-MI446jumvzD61wT8k9r" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-25T11:44:48.113Z",
+        "value" : "casa"
+      },
+      "-MI447VSvUoFOtDs3n1g" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T11:44:51.220Z",
+        "value" : "spotify:track:1UfHSXONZJ13S5gvSkrOqq"
+      },
+      "-MI449M-WCAzJ5oKK22_" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T11:44:58.807Z",
+        "value" : "spotify:track:5yvGEIQWLQBME5lNOY7CMG"
+      },
+      "-MI44GkIr3bNnuU1WhMG" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T11:45:29.098Z",
+        "value" : "spotify:track:5yvGEIQWLQBME5lNOY7CMG"
+      },
+      "-MI44KgvM3qO4QTqdkRE" : {
+        "action" : "RESTART_MUSIC",
+        "createdDateTime" : "2020-09-25T11:45:45.266Z",
+        "value" : "spotify:track:3z9e5b0P7zoIeV6I3iyX8O"
+      },
+      "-MI44Ks3etsz4k2p0ts9" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-25T11:45:45.979Z",
+        "value" : "spotify:track:3z9e5b0P7zoIeV6I3iyX8O"
+      },
+      "-MI44M-HUyyYwonNOtnk" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-25T11:45:50.601Z",
+        "value" : "spotify:track:3z9e5b0P7zoIeV6I3iyX8O"
+      },
+      "-MI44S0hIn8-EWQQwgwh" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T11:46:15.268Z",
+        "value" : "spotify:track:3z9e5b0P7zoIeV6I3iyX8O"
+      },
+      "-MI46GUljSx9Ne5E88m0" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T11:54:12.328Z",
+        "value" : "spotify:track:3T5kYazNB0f72vswYOSq4l"
+      },
+      "-MI46NswbvHlru5bbIom" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T11:54:42.611Z",
+        "value" : "spotify:track:3T5kYazNB0f72vswYOSq4l"
+      },
+      "-MI46k-zEE16k__yD4gR" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-25T11:56:17.334Z",
+        "value" : "spotify:track:3T5kYazNB0f72vswYOSq4l"
+      },
+      "-MI48-os5kS9vDFj6_K2" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T12:01:48.335Z",
+        "value" : "spotify:track:3T5kYazNB0f72vswYOSq4l"
+      },
+      "-MI487EqMx9drgwfNGfK" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T12:02:18.733Z",
+        "value" : "spotify:track:0qbV4e18lWrTTxlswVoLbI"
+      },
+      "-MI48EZifcTc8vyQA2Id" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T12:02:48.741Z",
+        "value" : "spotify:track:0qbV4e18lWrTTxlswVoLbI"
+      },
+      "-MI48EtNfTJABvkEFjVm" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-25T12:02:50.063Z",
+        "value" : "spotify:track:0qbV4e18lWrTTxlswVoLbI"
+      },
+      "-MI48g-q6E6doAFfV-jZ" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-25T12:04:45.229Z",
+        "value" : "spotify:track:0qbV4e18lWrTTxlswVoLbI"
+      },
+      "-MI48hCkSjuZLzjxJre5" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T12:04:50.151Z",
+        "value" : "spotify:track:0qbV4e18lWrTTxlswVoLbI"
+      },
+      "-MI49wxtwrs0Ab9J_KUS" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T12:10:16.816Z",
+        "value" : "spotify:track:0eXz8pS25MoeUguNPR9VvD"
+      },
+      "-MI4A3IOq98O_aVBJa5h" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T12:10:46.864Z",
+        "value" : "spotify:track:0eXz8pS25MoeUguNPR9VvD"
+      },
+      "-MI4CKbX2utY5D6ycpUh" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T12:20:42.073Z",
+        "value" : "spotify:track:6jv5Og00Okb2IMEHuzNTkV"
+      },
+      "-MI4CRwpUjCj9VzR46dT" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T12:21:12.108Z",
+        "value" : "spotify:track:6jv5Og00Okb2IMEHuzNTkV"
+      },
+      "-MI4E_R61Z-LSzeXABHw" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T12:30:31.166Z",
+        "value" : "spotify:track:2MuWTIM3b0YEAskbeeFE1i"
+      },
+      "-MI4EgkpwYXbkE0G0LC2" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T12:31:01.164Z",
+        "value" : "spotify:track:2MuWTIM3b0YEAskbeeFE1i"
+      },
+      "-MI4GGd6sVXYRTGErsLA" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-25T12:37:54.366Z",
+        "value" : "spotify:track:2MuWTIM3b0YEAskbeeFE1i"
+      },
+      "-MI4GHWJhtfSIWwQzMtN" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T12:37:57.963Z",
+        "value" : "spotify:track:5nekfiTN45vlxG0eNJQQye"
+      },
+      "-MI4GLXrF1o74qip1LZx" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-25T12:38:14.446Z",
+        "value" : "alegre;empolgado"
+      },
+      "-MI4GMlj82GobnOmQCp2" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-25T12:38:19.494Z",
+        "value" : "trabalhando"
+      },
+      "-MI4GMmMuxaqFKcVgDja" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-25T12:38:19.534Z",
+        "value" : "{\"lat\":-29.6900843,\"lng\":-29.6900843}"
+      },
+      "-MI4GO02LVu44gMmuyHC" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-25T12:38:24.570Z",
+        "value" : "casa"
+      },
+      "-MI4GOu_WTDzeRRFtlHQ" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T12:38:28.252Z",
+        "value" : "spotify:track:5nekfiTN45vlxG0eNJQQye"
+      },
+      "-MI4H4VipzZvRPvJuPF7" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-25T12:41:26.821Z",
+        "value" : "spotify:track:5nekfiTN45vlxG0eNJQQye"
+      },
+      "-MI4XjOOrRV0kaQi3-7z" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T13:54:12.687Z",
+        "value" : "spotify:track:5nekfiTN45vlxG0eNJQQye"
+      }
+    },
+    "spotify:user:tiagoterme" : {
+      "-MI5Vc7JV55mkX6SInRe" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-25T18:24:35.735Z",
+        "value" : "cansado;concentrado"
+      },
+      "-MI5VezyjsCxB7YaQl6k" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-25T18:24:47.490Z",
+        "value" : "trabalhando"
+      },
+      "-MI5VgNuJCEEMNjfAkr2" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-25T18:24:53.182Z",
+        "value" : "{\"lat\":-29.913258400000004,\"lng\":-29.913258400000004}"
+      },
+      "-MI5ViG90et1ka9OvHXt" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-25T18:25:00.878Z",
+        "value" : "casa"
+      },
+      "-MI5Vjb3qOFM5GBjrEn6" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-25T18:25:06.376Z",
+        "value" : "spotify:track:2Y9WfjpGt3kzv7cbRl3s3O"
+      },
+      "-MI5Vp_Dv_-PptZ9MsTg" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T18:25:30.833Z",
+        "value" : "spotify:track:2Y9WfjpGt3kzv7cbRl3s3O"
+      },
+      "-MI5VrE3IDKTauHHLFPw" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-25T18:25:37.608Z",
+        "value" : "spotify:track:2Y9WfjpGt3kzv7cbRl3s3O"
+      },
+      "-MI5Vx25MaHEGgTgQKji" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T18:26:01.418Z",
+        "value" : "spotify:track:2Y9WfjpGt3kzv7cbRl3s3O"
+      },
+      "-MI5W1zGKk47hjyUQtcH" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T18:26:25.749Z",
+        "value" : "spotify:track:1sXerQxrgC3bfZtxZNZ9VR"
+      },
+      "-MI5W9OxGovSiY1mv37J" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T18:26:56.129Z",
+        "value" : "spotify:track:1sXerQxrgC3bfZtxZNZ9VR"
+      },
+      "-MI5X1MHqRv2YPHFks4B" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-25T18:30:45.334Z",
+        "value" : "spotify:track:1sXerQxrgC3bfZtxZNZ9VR"
+      },
+      "-MI5XmnZaCn3uken7qjj" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-25T18:34:03.596Z",
+        "value" : ""
+      },
+      "-MI5XqIUuxYlzxrXCXcG" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-25T18:34:17.928Z",
+        "value" : "trabalhando"
+      },
+      "-MI5Xrv3nYYxgQyW7Dfl" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-25T18:34:24.556Z",
+        "value" : "{\"lat\":-29.6746269,\"lng\":-29.6746269}"
+      },
+      "-MI5XsU-S8x8Tizq_ZZl" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-25T18:34:26.857Z",
+        "value" : "casa"
+      },
+      "-MI5XtVwzukQ3_UkSR9b" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-25T18:34:31.076Z",
+        "value" : "spotify:track:1sXerQxrgC3bfZtxZNZ9VR"
+      },
+      "-MI5Xur7XjsLt0jCIMnD" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T18:34:36.593Z",
+        "value" : "spotify:track:1sXerQxrgC3bfZtxZNZ9VR"
+      },
+      "-MI5XvkVEv8OJmR6xg3A" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-25T18:34:40.264Z",
+        "value" : "spotify:track:1sXerQxrgC3bfZtxZNZ9VR"
+      },
+      "-MI5Xx0IRAnmO1Vfzldw" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T18:34:45.435Z",
+        "value" : "spotify:track:1sXerQxrgC3bfZtxZNZ9VR"
+      },
+      "-MI5XyBH0SZzbWtIdh1r" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T18:34:50.235Z",
+        "value" : "spotify:track:2JR7RCUN6pZIoyNzaqxdUa"
+      },
+      "-MI5Y-lWeo6W00reAquR" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T18:35:00.810Z",
+        "value" : "spotify:track:5JlqbEj7Bbh2RdZgcO5kJE"
+      },
+      "-MI5Y7Blk_lN0LTB5pVi" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T18:35:31.226Z",
+        "value" : "spotify:track:5JlqbEj7Bbh2RdZgcO5kJE"
+      },
+      "-MI5YokU_3JXHrVceSPz" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-25T18:38:33.966Z",
+        "value" : "spotify:track:5JlqbEj7Bbh2RdZgcO5kJE"
+      },
+      "-MI5YpfgZQplL0-7800i" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T18:38:37.756Z",
+        "value" : "spotify:track:5JlqbEj7Bbh2RdZgcO5kJE"
+      },
+      "-MI5YqZ6zOefTHqSlt6M" : {
+        "action" : "RESTART_MUSIC",
+        "createdDateTime" : "2020-09-25T18:38:41.367Z",
+        "value" : "spotify:track:5JlqbEj7Bbh2RdZgcO5kJE"
+      },
+      "-MI5YqhcLfoIbGiAlY1U" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-25T18:38:41.976Z",
+        "value" : "spotify:track:5JlqbEj7Bbh2RdZgcO5kJE"
+      },
+      "-MI5YwpbVLNYTmr-SO1g" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T18:39:07.063Z",
+        "value" : "spotify:track:5JlqbEj7Bbh2RdZgcO5kJE"
+      },
+      "-MI5Zd1Eio1OuHRbwdD3" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T18:42:08.095Z",
+        "value" : "spotify:track:2yGoiZes2YcueNA4nGDmdS"
+      },
+      "-MI5ZkQVHoxWDItMQc8B" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T18:42:38.384Z",
+        "value" : "spotify:track:2yGoiZes2YcueNA4nGDmdS"
+      },
+      "-MI5Zo7NPuyNR_yHlceX" : {
+        "action" : "RESTART_MUSIC",
+        "createdDateTime" : "2020-09-25T18:42:53.544Z",
+        "value" : "spotify:track:4NZn1vRGq9s83B7JWsoQgn"
+      },
+      "-MI5ZvRUmPi7jSBPosjP" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T18:43:23.503Z",
+        "value" : "spotify:track:4NZn1vRGq9s83B7JWsoQgn"
+      },
+      "-MI5ZzLdfGngT1MIVIN4" : {
+        "action" : "LIKED_MUSIC",
+        "createdDateTime" : "2020-09-25T18:43:39.513Z",
+        "value" : "spotify:track:4NZn1vRGq9s83B7JWsoQgn"
+      },
+      "-MI5_eFX2qKcW391Rrgj" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T18:46:35.249Z",
+        "value" : "spotify:track:4NZn1vRGq9s83B7JWsoQgn"
+      },
+      "-MI5_gghMjL4Pl_pKSax" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T18:46:45.244Z",
+        "value" : "spotify:track:1Fpd0r2F1N30VFFCh36fpK"
+      },
+      "-MI5_o4kcrLROh_Liarl" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T18:47:15.520Z",
+        "value" : "spotify:track:1Fpd0r2F1N30VFFCh36fpK"
+      },
+      "-MI5a7JAQg1wFOBrXV8V" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T18:48:38.363Z",
+        "value" : "spotify:track:03YHOdkO4tVMiWqp7pKfBh"
+      },
+      "-MI5aEbdsJ9P-x7ebl1m" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T18:49:08.281Z",
+        "value" : "spotify:track:03YHOdkO4tVMiWqp7pKfBh"
+      },
+      "-MI5aVMz5FgCxE0OX7mg" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-25T18:50:16.911Z",
+        "value" : "spotify:track:03YHOdkO4tVMiWqp7pKfBh"
+      },
+      "-MI6cTRPRiRWlaH0D8J0" : {
+        "action" : "CHOOSE_FEELING",
+        "createdDateTime" : "2020-09-25T23:38:30.555Z",
+        "value" : "calmo"
+      },
+      "-MI6cWY6Mc-6218JmgiZ" : {
+        "action" : "CHOOSE_ACTIVITY",
+        "createdDateTime" : "2020-09-25T23:38:43.275Z",
+        "value" : "descansando"
+      },
+      "-MI6cXhpZXbweXFTSJ4Z" : {
+        "action" : "LOAD_LOCATION",
+        "createdDateTime" : "2020-09-25T23:38:48.058Z",
+        "value" : "{\"lat\":-29.6746269,\"lng\":-29.6746269}"
+      },
+      "-MI6cYGSLC9GvEIDqy3d" : {
+        "action" : "CHOOSE_LOCATION",
+        "createdDateTime" : "2020-09-25T23:38:50.338Z",
+        "value" : "casa"
+      },
+      "-MI6ca5XXGkQ2mxeYEQr" : {
+        "action" : "PAUSE_MUSIC",
+        "createdDateTime" : "2020-09-25T23:39:01.927Z",
+        "value" : "spotify:track:7o7MExeF7niW4VFiie5Zxh"
+      },
+      "-MI6cb723Nfgesat7SjS" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T23:39:06.119Z",
+        "value" : "spotify:track:7o7MExeF7niW4VFiie5Zxh"
+      },
+      "-MI6ce7-43sdeG5bFtEd" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T23:39:18.404Z",
+        "value" : "spotify:track:57wrj5gmY8aZA4YBmqfitc"
+      },
+      "-MI6clOUinTlh2gSse4h" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T23:39:48.196Z",
+        "value" : "spotify:track:57wrj5gmY8aZA4YBmqfitc"
+      },
+      "-MI6cnXSXhfsoqXrLNE1" : {
+        "action" : "RESTART_MUSIC",
+        "createdDateTime" : "2020-09-25T23:39:56.962Z",
+        "value" : "spotify:track:3kwgqoBqTwoAH4nT29TYrq"
+      },
+      "-MI6cv1BRCIrb0TZ9OR-" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T23:40:27.664Z",
+        "value" : "spotify:track:3kwgqoBqTwoAH4nT29TYrq"
+      },
+      "-MI6d2szXWqDOwzRdeed" : {
+        "action" : "RESTART_MUSIC",
+        "createdDateTime" : "2020-09-25T23:41:03.940Z",
+        "value" : "spotify:track:3tjFYV6RSFtuktYl3ZtYcq"
+      },
+      "-MI6dALEOU5SgQKpx_EA" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T23:41:34.484Z",
+        "value" : "spotify:track:3tjFYV6RSFtuktYl3ZtYcq"
+      },
+      "-MI6dKYLeB8sw9RR-xC3" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T23:42:16.283Z",
+        "value" : "spotify:track:4Oun2ylbjFKMPTiaSbbCih"
+      },
+      "-MI6dPd1IMikvMOv7CiR" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T23:42:37.126Z",
+        "value" : "spotify:track:1yoMvmasuxZfqHEipJhRbp"
+      },
+      "-MI6dX5-dUoEZOhwm8pq" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T23:43:07.652Z",
+        "value" : "spotify:track:1yoMvmasuxZfqHEipJhRbp"
+      },
+      "-MI6dr-N6k6Pze1-KXwE" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T23:44:33.309Z",
+        "value" : "spotify:track:7hxHWCCAIIxFLCzvDgnQHX"
+      },
+      "-MI6dyWK0YIXOsj7oaKC" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T23:45:04.090Z",
+        "value" : "spotify:track:7hxHWCCAIIxFLCzvDgnQHX"
+      },
+      "-MI6eKQuQAa3707UeQaT" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T23:46:37.942Z",
+        "value" : "spotify:track:0t1kP63rueHleOhQkYSXFY"
+      },
+      "-MI6eM3pl7aOYqzUN-Op" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T23:46:44.665Z",
+        "value" : "spotify:track:5u1n1kITHCxxp8twBcZxWy"
+      },
+      "-MI6eMzE3f_gf9RRAEYD" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T23:46:48.403Z",
+        "value" : "spotify:track:0VjIjW4GlUZAMYd2vXMi3b"
+      },
+      "-MI6eUTwWubBfTcigoVy" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T23:47:19.104Z",
+        "value" : "spotify:track:0VjIjW4GlUZAMYd2vXMi3b"
+      },
+      "-MI6eVMIXNeXcGAMBAzx" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T23:47:22.712Z",
+        "value" : "spotify:track:6UelLqGlWMcVH1E5c4H7lY"
+      },
+      "-MI6eXLBKbc78mqK2O2e" : {
+        "action" : "CHANGE_TO_NEXT_MUSIC",
+        "createdDateTime" : "2020-09-25T23:47:30.832Z",
+        "value" : "spotify:track:2SAqBLGA283SUiwJ3xOUVI"
+      },
+      "-MI6edoJ5Ta9_GF7OS_Q" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T23:48:01.433Z",
+        "value" : "spotify:track:2SAqBLGA283SUiwJ3xOUVI"
+      },
+      "-MI6f-WnALDJZ_sCoMVR" : {
+        "action" : "RESTART_MUSIC",
+        "createdDateTime" : "2020-09-25T23:49:34.455Z",
+        "value" : "spotify:track:0VLdJcQUsqHBBwqPp4CIKJ"
+      },
+      "-MI6f-pK6dZYHmj6wdDF" : {
+        "action" : "RESTART_MUSIC",
+        "createdDateTime" : "2020-09-25T23:49:35.706Z",
+        "value" : "spotify:track:0VLdJcQUsqHBBwqPp4CIKJ"
+      },
+      "-MI6f7FavotiXv-8Pmay" : {
+        "action" : "PLAY_MUSIC",
+        "createdDateTime" : "2020-09-25T23:50:06.123Z",
+        "value" : "spotify:track:0VLdJcQUsqHBBwqPp4CIKJ"
+      }
+    }
+  },
+  "log" : {
+    "error" : {
+      "-MHnxAbEQrA3m0BViAIi" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHnxc8tNw9wKjp4XeAB" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHnxxxCoM_NyX3D6pjl" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHny8KrMeauv-onVQ94" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHnyoNvyAQAsqydRFHR" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHnypy_B9ER2rL-h8OT" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo-Ptq9tgFTHDHu8MR" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo-Sl49FiMkaUFBbgV" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo-e8p-LNLY6042vJW" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo-nzmL-4aW2pdD96M" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo-pn8Zd09wPV8X9uO" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo-tjvx17lt8JJ6wC2" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo-vXgHxNF2KCyXc4V" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo06AOgjzFEEf_T5hg" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo07n-6P2N6dH5j7me" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo0GrbS_19SKjqVI_Z" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo0f9XB21F5UbY1eV1" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo0sX4IC1PfMz1aiPR" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo17BYhikqGo89XPpe" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo19l0XXQWtdR1r-xl" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo1Dpow6yP7Z7weUSx" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo1LxCIRcHmsTN7fmE" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo1SDOTnjy_ZLZqHkg" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo1mjsQnvlMCm9CZfL" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo1xUqW3jY0hj_3pZl" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo2NUrI4lZSTWGijTs" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo2vnZzNJ7v0-0Jr22" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo3EBkuuSPV6veO0cR" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo3Fu3zSfM91xit6P-" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo3W7qynUZaquapMAa" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo3beIRH97v8s_-pLP" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo3ntowXQWDhE4GmSM" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo3ptFZCPBCrDVxAWl" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo40Jm6gHtbuH9_VhD" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo4Jp3Tr9I0ZQn7sAa" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo4LMmxh6OpO9oxqt3" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo4Rtxf_Yemt3jo-Pp" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo4XL6OejewkDmNBzM" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo4crv2HPKUlEFX5J0" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo4pWJuH6582uxW28A" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHo6c1J7i9cRtabJhp-" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHrE_cYdJ74gulYrWlY" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHrEvsjNbNFeT3PzJcT" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHrK2Iq2uPf1CIhsGna" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHrK3M7Z6kP4nyjPNEx" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ],
+      "-MHrK8Oyfm5krxzFPNJN" : [ "SPOTIFY_CONNECT_PROBLEM", "Failed to initialize player" ]
+    },
+    "log" : {
+      "-MHnhnVA2HUveQ95E8p5" : [ "teste", {
+        "teste" : "lorem"
+      } ]
+    },
+    "warn" : {
+      "-MHrEOrfZorcqbpvdYXy" : [ "[USUARIO NÃO PREMIUM] Você precisa ser premium para conectar", "juliano.varella" ]
+    }
+  }
+}

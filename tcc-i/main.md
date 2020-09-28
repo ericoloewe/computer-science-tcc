@@ -1113,8 +1113,8 @@ usuários que utilizarão a aplicação, sendo assim, foram utilizadas
 perguntas que permitam entender suas preferências, atividades, dentre
 outros fatores. As perguntas do questionário estão listadas no Quadro 2:
 
-Quadro Perguntas e respostas disponibilizadas a um certo público através
-dos formulários do Google. (próprio, 2020)
+Quadro 2 Perguntas e respostas disponibilizadas a um certo público
+através dos formulários do Google. (próprio, 2020)
 
 | Pergunta                                                                                     | Possíveis respostas                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1139,7 +1139,7 @@ Com as perguntas do questionário definidas, foi realizada uma validação
 para garantir que elas faziam sentido. O pré-teste foi feito enviando o
 questionário para 5 pessoas, as quais tinham a responsabilidade de
 analisar as perguntas e avaliar a dificuldade de entendimento de cada
-uma das perguntas. Isso foi feito para garantir que o publico que
+uma das perguntas. Isso foi feito para garantir que o público que
 receberia o questionário posteriormente - o qual não está dentro do
 contexto do trabalho - conseguiria responder as perguntas com completa
 compreensão delas.
