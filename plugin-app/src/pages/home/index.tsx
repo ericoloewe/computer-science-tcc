@@ -1,7 +1,7 @@
 import "./style.scss";
 
 import React, { useState, useEffect } from "react";
-import { MenuItem } from "@material-ui/core";
+import { MenuItem, Grid, Typography } from "@material-ui/core";
 
 import { DeviceList } from "./device-list";
 import { HomeMusicBanner } from "./music-banner";
@@ -12,9 +12,11 @@ import { MusicDetails } from "./music-details";
 import { SpotifyDevice } from "../../@types/spotify";
 import { usePlayer } from "../../contexts/player";
 import { useUser } from "../../contexts/user";
+import { LikeOrNotLike } from "./like";
+import { MusicOff } from "@material-ui/icons";
 
 export default function () {
-  const { isPlayerReady, isPluginPlayerActive, transferUserPlaybackToPlugin } = usePlayer();
+  const { isPlayerReady, isPluginPlayerActive, transferUserPlaybackToPlugin, playerHasError } = usePlayer();
   const { getAvailableDevices } = useUser();
   const [devices, setDevices] = useState<SpotifyDevice[]>([]);
   const [isMusicDetailsOpen, setOpenMusicDetails] = useState(false);
@@ -34,24 +36,48 @@ export default function () {
   }, [isPlayerReady]);
 
   return (
-    <Layout className="home-page" pageTitle="Reprodução de musicas" menuItems={CustomMenu(fetchData)}>
-      {isPlayerReady ? (
-        isPluginPlayerActive ? (
-          isMusicDetailsOpen ? (
-            <MusicDetails onExpandClick={() => setOpenMusicDetails(false)} />
+    <Layout className="home-page" pageTitle="Reprodução de músicas" menuItems={CustomMenu(fetchData)}>
+      {!playerHasError ? (
+        isPlayerReady ? (
+          isPluginPlayerActive ? (
+            isMusicDetailsOpen ? (
+              <MusicDetails onExpandClick={() => setOpenMusicDetails(false)} />
+            ) : (
+              <>
+                <HomeMusicBanner onBackgroundClick={() => setOpenMusicDetails(true)} />
+                <LikeOrNotLike />
+                <ListOfContexts />
+              </>
+            )
           ) : (
-            <>
-              <HomeMusicBanner onBackgroundClick={() => setOpenMusicDetails(true)} />
-              <ListOfContexts />
-            </>
+            <DeviceList devices={devices} onAccept={setPlaybackToPlugin} />
           )
         ) : (
-          <DeviceList devices={devices} onAccept={setPlaybackToPlugin} />
+          <Loader />
         )
       ) : (
-        <Loader />
+        <SpotifyError />
       )}
     </Layout>
+  );
+}
+
+function SpotifyError() {
+  return (
+    <Grid container spacing={4}>
+      <Grid container item md={12} direction="column" justify="center" alignItems="center">
+        <MusicOff style={{ fontSize: 80 }} />
+      </Grid>
+      <Grid container item md={12} direction="column" justify="center" alignItems="center">
+        <Typography variant="h2" component="h2">
+          Opss!!
+        </Typography>
+        <Typography component="p">
+          Tivemos problemas ao conectar ao Spotify, tente novamente mais tarde{" "}
+          <a href="https://ericoloewe.github.io/">ou entre em contato</a>.
+        </Typography>
+      </Grid>
+    </Grid>
   );
 }
 

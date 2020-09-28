@@ -1,17 +1,21 @@
 import React, { createContext, useContext } from "react";
+
+import { gtmService } from "../services/gtm";
 import { requestService } from "../services/request";
 import { useUser } from "./user";
-import { gtmService } from "../services/gtm";
+import { FirebaseUtil } from "../utils/firebase";
 
 interface Props {}
 
 export enum EventType {
   CHANGE_MUSIC_TIME = "CHANGE_MUSIC_TIME",
-  CHANGE_MUSIC = "CHANGE_MUSIC",
-  RESTART_MUSIC = "RESTART_MUSIC",
+  CHANGE_TO_NEXT_MUSIC = "CHANGE_TO_NEXT_MUSIC",
+  CHANGE_TO_PREVIOUS_MUSIC = "CHANGE_TO_PREVIOUS_MUSIC",
   CHOOSE_ACTIVITY = "CHOOSE_ACTIVITY",
   CHOOSE_FEELING = "CHOOSE_FEELING",
+  CHOOSE_FEELING_TO_BE_LIKE = "CHOOSE_FEELING_TO_BE_LIKE",
   CHOOSE_LOCATION = "CHOOSE_LOCATION",
+  HATED_MUSIC = "HATED_MUSIC",
   HIDE_DETAILS = "HIDE_DETAILS",
   LIKED_ARTIST = "LIKED_ARTIST",
   LIKED_GENRE = "LIKED_GENRE",
@@ -19,6 +23,7 @@ export enum EventType {
   LOAD_LOCATION = "LOAD_LOCATION",
   PAUSE_MUSIC = "PAUSE_MUSIC",
   PLAY_MUSIC = "PLAY_MUSIC",
+  RESTART_MUSIC = "RESTART_MUSIC",
   SHOW_DETAILS = "SHOW_DETAILS",
 }
 
@@ -46,6 +51,12 @@ export function EventsProvider(props: Props) {
       } else {
         await requestService.post({ url: eventApiEndpoint, data });
       }
+
+      FirebaseUtil.addNew(`events/${spotifyUserUri}`, {
+        action: type,
+        value,
+        createdDateTime: new Date().toISOString(),
+      });
     }
   }
 

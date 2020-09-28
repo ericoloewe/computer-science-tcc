@@ -1,13 +1,16 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-import { useAuth } from "./auth";
-import { SpotifyUtil, SpotifyPlayer } from "../utils/spotify";
+import { LoggerUtil } from "../utils/logger";
+import { messageService } from "../services/message";
 import { Music } from "../@types/music";
 import { MusicMapper } from "../mappers/music";
-import { SpotifyPlayerResponse } from "../@types/spotify";
-import { TimerUtil } from "../utils/timer";
 import { PlayerUtil } from "../utils/player";
+import { SpotifyPlayerResponse } from "../@types/spotify";
+import { SpotifyUtil, SpotifyPlayer } from "../utils/spotify";
+import { TimerUtil } from "../utils/timer";
+import { useAuth } from "./auth";
 import { useEvents } from "./event";
+import { useUser } from "./user";
 
 interface Props {}
 
@@ -15,6 +18,7 @@ interface Context {
   isPlayerReady: boolean;
   isPluginPlayerActive: boolean;
   nextTrack: () => Promise<void>;
+  playerHasError: boolean;
   playingMusicInfo?: PlayingMusicInfo;
   previousTrack: () => Promise<void>;
   togglePlay: () => Promise<void>;
@@ -39,7 +43,9 @@ const debounce = TimerUtil.debounce((state: Spotify.PlaybackState, saveEvent: Fu
 
 export function PlayerProvider(props: Props) {
   const { accessToken, isAuthenticated, requestService } = useAuth();
+  const { profile } = useUser();
   const [player, setPlayer] = useState<SpotifyPlayer | null>(null);
+  const [playerHasError, setPlayerHasError] = useState<boolean>(false);
   const [isPluginPlayerActive, setIsPluginPlayerActive] = useState<any>(null);
   const [isPlayerReady, setIsPlayerReady] = useState<any>(null);
   const [playingMusicInfo, setPlayingMusicInfo] = useState<PlayingMusicInfo | undefined>();
@@ -56,28 +62,42 @@ export function PlayerProvider(props: Props) {
 
     if (player != null) {
       player.original.addListener("player_state_changed", (state) => {
-        const {
-          position,
-          duration,
-          paused,
-          track_window: { current_track },
-        } = state;
+        if (state == null) {
+          setIsPluginPlayerActive(false);
+          messageService.alert("Você foi desconectado!");
+        } else {
+          const {
+            position,
+            duration,
+            paused,
+            track_window: { current_track },
+          } = state;
 
-        debounce(state, saveEvent);
-        setPlayingMusicInfo({ currentTrack: MusicMapper.toMusicTrack(current_track), duration, position, paused });
+          debounce(state, saveEvent);
+          setPlayingMusicInfo({ currentTrack: MusicMapper.toMusicTrack(current_track), duration, position, paused });
+        }
       });
     } // eslint-disable-next-line
   }, [player]);
 
   async function createSpotifyPlayerIfNeed(): Promise<void> {
-    const player = await SpotifyUtil.createPlayer(accessToken);
+    if (player == null) {
+      const player = await SpotifyUtil.createPlayer(accessToken);
 
-    setPlayer(player);
+      setPlayer(player);
+    }
   }
 
   async function createSpotifyPlayerIfNeedAndValidatePlayer(): Promise<void> {
-    await createSpotifyPlayerIfNeed();
-    await loadCurrentPlayerInfo();
+    try {
+      await createSpotifyPlayerIfNeed();
+      await loadCurrentPlayerInfo();
+    } catch (ex) {
+      setPlayerHasError(true);
+      messageService.alert("Tivemos um problema ao conectar ao spotify");
+
+      LoggerUtil.error("SPOTIFY_CONNECT_PROBLEM", ex, profile?.id);
+    }
   }
 
   async function getCurrentPlayerInfo(): Promise<SpotifyPlayerResponse | null> {
@@ -119,14 +139,31 @@ export function PlayerProvider(props: Props) {
   async function transferUserPlaybackToPlugin(): Promise<void> {
     const endpoint = `${spotifyUserEndpoint}/player`;
 
-    await requestService.put({
-      url: endpoint,
-      data: {
-        device_ids: [player?.device_id],
-      },
-    });
-    await TimerUtil.wait(500);
-    await loadCurrentPlayerInfo();
+    try {
+      await requestService.put({
+        url: endpoint,
+        data: {
+          device_ids: [player?.device_id],
+        },
+      });
+
+      await TimerUtil.wait(500);
+      await loadCurrentPlayerInfo();
+    } catch (ex) {
+      LoggerUtil.error("transferUserPlaybackToPlugin", ex);
+
+      const { data, status } = ex.response;
+
+      if (status < 200 || status > 299) {
+        if ((data as any)?.error?.reason === "PREMIUM_REQUIRED") {
+          messageService.alert("[USUARIO NÃO PREMIUM] Você precisa ser premium para conectar");
+          LoggerUtil.warn("[USUARIO NÃO PREMIUM] Você precisa ser premium para conectar", profile?.id);
+        } else {
+          messageService.alert("Tivemos um problema ao conectar, tente novamente mais tarde");
+          LoggerUtil.warn("Tivemos um problema ao conectar, tente novamente mais tarde", profile?.id);
+        }
+      }
+    }
   }
 
   return (
@@ -135,6 +172,7 @@ export function PlayerProvider(props: Props) {
         isPlayerReady,
         isPluginPlayerActive,
         nextTrack,
+        playerHasError,
         playingMusicInfo,
         previousTrack,
         togglePlay,

@@ -1,4 +1,6 @@
 class CookieService {
+  public readonly CONTEXT_COOKIE_NAME = "FilledTheContext";
+
   delete(key: string): void {
     document.cookie = key + "=; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
   }

@@ -105,7 +105,7 @@ encontrados no motor de busca da ACM (próprio, 2020) 18](#_Ref40822509)
 
 [Figura 10 Lista de ações que auxiliarão o entendimento do contexto de
 ambiente e comportamento do usuário da aplicação (próprio, 2020)
-37](#_Ref42447458)
+37](#_Toc44538333)
 
 [Figura 11 Etapas do desenvolvimento do sistema de recomendação musical
 (próprio, 2020) 39](#_Ref42452795)
@@ -114,10 +114,10 @@ ambiente e comportamento do usuário da aplicação (próprio, 2020)
 pelo usuário (próprio, 2020) 43](#_Toc44538335)
 
 [Figura 13 Fluxo feito para avaliar se as ações condizem com o contexto
-(próprio, 2020) 44](#_Ref42460243)
+(próprio, 2020) 44](#_Toc44538336)
 
 [Figura 14 Etapas do processo para realizar a recomendação musical
-45](#_Ref42465942)
+45](#_Toc44538337)
 
 Lista de Quadros
 
@@ -155,67 +155,67 @@ Sumário
 
 [2 Trabalhos relacionados 14](#trabalhos-relacionados)
 
-[2.1 O protocolo de revisão 14](#o-protocolo-de-revisão)
+[2.1 Levantamento bibliográfico inicial
+14](#levantamento-bibliográfico-inicial)
 
-[2.2 PROCURA NOS MOTORES DE BUSCA 15](#procura-nos-motores-de-busca)
+[2.2 O protocolo de revisão 15](#o-protocolo-de-revisão)
 
-[2.3 ETAPAS DA REVISÃO DOS TRABALHOS
-17](#etapas-da-revisão-dos-trabalhos)
+[2.3 PROCURA NOS MOTORES DE BUSCA 16](#procura-nos-motores-de-busca)
 
-[2.3.1 Trabalhos selecionados 18](#trabalhos-selecionados)
+[2.4 ETAPAS DA REVISÃO DOS TRABALHOS
+18](#etapas-da-revisão-dos-trabalhos)
 
-[2.4 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
-29](#funcionalidades-dos-trabalhos-investigados)
+[2.4.1 Trabalhos selecionados 19](#trabalhos-selecionados)
 
-[2.5 Conclusões dos trabalhos revisados
-32](#conclusões-dos-trabalhos-revisados)
+[2.5 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
+30](#funcionalidades-dos-trabalhos-investigados)
 
-[3 Modelagem do “Dynamic and Contextual Recommendations of Music”
-34](#modelagem-do-dynamic-and-contextual-recommendations-of-music)
+[2.6 Conclusões dos trabalhos revisados
+33](#conclusões-dos-trabalhos-revisados)
 
-[3.1 Contexto 34](#contexto)
+[3 Modelagem do “*Dynamic and Contextual Recommendations of Music*”
+35](#modelagem-do-dynamic-and-contextual-recommendations-of-music)
+
+[3.1 Contexto 35](#contexto)
 
 [3.1.1 O que é o contexto comportamental?
-35](#o-que-é-o-contexto-comportamental)
+36](#o-que-é-o-contexto-comportamental)
 
-[3.1.2 O que é o contexto ambiente? 36](#o-que-é-o-contexto-ambiente)
+[3.1.2 O que é o contexto de ambiente?
+37](#o-que-é-o-contexto-de-ambiente)
 
-[3.1.3 Como será obtido os contextos?
-36](#como-será-obtido-os-contextos)
+[3.1.3 Como serão obtidos os contextos?
+37](#como-serão-obtidos-os-contextos)
 
 [3.1.4 O que são as ações do usuário?
-37](#o-que-são-as-ações-do-usuário)
+38](#o-que-são-as-ações-do-usuário)
 
-[3.2 Metodologia do sistema 38](#metodologia-do-sistema)
+[3.2 pesquisa com usuários sobre recomendação musical
+38](#pesquisa-com-usuários-sobre-recomendação-musical)
 
-[3.2.1 Como o trabalho vai capturar as ações do usuário e enviá-las ao
+[3.2.1 Pré-teste do questionário 42](#pré-teste-do-questionário)
+
+[3.2.2 Resultados do questionário 42](#resultados-do-questionário)
+
+[*3.3* Modelagem do sistema *DCRM* 43](#modelagem-do-sistema-dcrm)
+
+[3.3.1 Como o trabalho vai capturar as ações do usuário e enviá-las ao
 sistema?
 43](#como-o-trabalho-vai-capturar-as-ações-do-usuário-e-enviá-las-ao-sistema)
 
-[3.2.2 Como o trabalho vai validar se as ações do usuário condizem com o
-contexto?
-43](#como-o-trabalho-vai-validar-se-as-ações-do-usuário-condizem-com-o-contexto)
-
-[3.2.3 Como o trabalho vai relacionar as músicas que o usuário gosta aos
+[3.3.2 Como o trabalho vai relacionar as músicas que o usuário gosta aos
 contextos?
-44](#como-o-trabalho-vai-relacionar-as-músicas-que-o-usuário-gosta-aos-contextos)
+43](#como-o-trabalho-vai-relacionar-as-músicas-que-o-usuário-gosta-aos-contextos)
 
-[3.2.4 Como o trabalho vai classificar o contexto para apresentar para
-usuário?
-44](#como-o-trabalho-vai-classificar-o-contexto-para-apresentar-para-usuário)
-
-[3.2.5 Como o trabalho vai recomendar novas músicas a partir da relação
+[3.3.3 Como o trabalho vai recomendar novas músicas a partir da relação
 de contexto x música?
-45](#como-o-trabalho-vai-recomendar-novas-músicas-a-partir-da-relação-de-contexto-x-música)
+44](#como-o-trabalho-vai-recomendar-novas-músicas-a-partir-da-relação-de-contexto-x-música)
 
-[3.2.6 Como o trabalho vai avaliar as recomendações feitas?
-46](#como-o-trabalho-vai-avaliar-as-recomendações-feitas)
+[3.4 roteiro 44](#roteiro)
 
-[3.3 roteiro 46](#roteiro)
+[4 CONCLUSÃO 45](#conclusão)
 
-[4 CONCLUSÃO 47](#conclusão)
-
-[Referências Bibliográficas 48](#referências-bibliográficas)
+[Referências Bibliográficas 46](#referências-bibliográficas)
 
 # Introdução
 
@@ -370,6 +370,40 @@ muito desde então, ao ponto de que hoje existem diversos trabalhos
 relacionados a esse assunto para área. Nesse capítulo serão abordados
 alguns trabalhos encontrados, a partir de uma revisão bibliográfica
 realizada sobre o assunto.
+
+## Levantamento bibliográfico inicial
+
+Antes do início da revisão, foi encontrado diversos trabalhos
+relacionados através de: (i) busca genérica no Google Scholar; (ii)
+indicação dos avaliadores desse trabalho. Deles, foram selecionados 2
+para serem revisados nesse trabalho.
+
+Realizado a busca genérica no Google Scholar em busca de trabalhos
+relacionados ao tema desse trabalho, na busca, foi priorizado os
+trabalhos em portugues, para dar uma visão clara e rápida do assunto. E
+nessa busca foi encontrado o seguinte trabalho: “Desenvolvimento de um
+Sistema de Recomendação Musical Sensível ao Contexto”.
+
+O trabalho utiliza teve como objetivo desenvolver o modelo de um sistema
+sensível ao contexto, utilizando das técnicas clássicas de recomendação,
+aplicando uma camada de extra de filtragem colaborativa. Nessa camada,
+ele utiliza do algoritmo K-Vizinhos Mais Próximos (KNN) para realiza-la,
+o qual é o mais amplamente utilizado para esse tipo de recomendação
+conforme (ALIAGA, 2018) (fazer apud Bobadilla et al. (2013)), e é um
+algoritmo *lazy*, isso é, não gera um modelo que precisa de treinamento.
+
+No trabalho, foram escolhidos 10 usuários para realizar o teste, tendo
+um contexto comum que era “Estudar” para atividade e “BR” para cultura.
+Foram realizados 240 testes para compilar os dados do experimento, e no
+fim, foi apresentado os resultados do experimento realizado “Com
+contexto” e “Sem contexto”, onde o trabalho obteve uma precisão de 50%
+na taxa de aceitação das recomendações realizadas.
+
+As indicações dos avaliadores foram analisadas e foi verificado que
+apenas uma apresentava o algoritmo utilizado, que é: “Effective
+Nearest-Neighbor Music Recommendations”. A qual apresenta uma técnica
+hibrida de recomendação, que utiliza de uma combinação do KNN, fatoração
+de matriz e um pequeno conjunto heurístico.
 
 ## O protocolo de revisão
 
@@ -942,29 +976,23 @@ Factorization* (*Tensor Decomposition*, *Nonnegative Tensor
 Factorization*, etc.), os quais são os algoritmos utilizados para
 realizar a recomendações nos *RecSys*.
 
-# Modelagem do “Dynamic and Contextual Recommendations of Music”
+# Modelagem do “*Dynamic and Contextual Recommendations of Music*”
 
-A partir da revisão feita, foi possível conhecer diversos tipos de
-sistemas e modelos que utilizam do contexto para realizar as
+A partir da revisão bibliográfica realizada, foi possível conhecer
+alguns sistemas e modelos que utilizam do contexto para realizar as
 recomendações musicais, tornando possível entender certas lacunas que
-não foram analisadas ou compreendidas nessa área de pesquisa. A Figura 8
-abaixo, apresenta o modelo de análise de recomendações dinâmica.
-
-![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-05T02%3A05%3A36.505Z%22%2C%22pageId%22%3A%22c8m2vXLdxm1UY1WbSgt9%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image6.png)
-
-<span id="_Toc44538331" class="anchor"></span>Figura 8 Modelo
-desenvolvido para demonstrar a recomendação dinâmica (próprio, 2020)
+não foram analisadas nessa área de pesquisa.
 
 Com isso, foi possível entender e desenvolver um modelo de sistemas de
 recomendação chamado *DCRM* (*Dynamic and Contextual Recommendations of
 Music*), que utiliza de uma análise recorrente do contexto, para
-realizar as recomendações dinâmicas às mudanças do contexto, esse modelo
-ele será apresentado nessa nas subseções a seguir.
+realizar as recomendações dinâmicas às mudanças do contexto. Esse modelo
+será apresentado com mais detalhes nas subseções a seguir.
 
 ## Contexto
 
 Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
-contexto pode ser tido por:
+contexto pode ser definido por:
 
 > O conjunto de circunstâncias inter-relacionadas de cuja tessitura se
 > depreende determinado fato ou situação; circunstância(s), conjuntura,
@@ -975,15 +1003,12 @@ devido fim, onde geralmente se baseia em dados históricos para
 produzi-las. Observa-se que, com o entendimento do contexto, ou conforme
 a definição das “circunstâncias que levaram a certos fatos ou
 situações”, é possível auxiliar as recomendações, aumentando o
-número de dados disponíveis para realizar a classificação e filtro. É
-apresentado na Figura 9 abaixo, uma visão macro dos contextos que serão
+número de dados disponíveis para realizar uma classificação e/ou
+filtro. A Figura 9 apresenta uma visão macro dos contextos que serão
 considerados neste trabalho.
 
 <span id="_Ref42447869" class="anchor"></span>Figura 9 Apresentação dos
 contextos utilizados no trabalho (próprio, 2020)
-
-Nas próximas subseções será detalhado melhor cada item da Figura 9, além
-de, apresentar o processo desenvolvido para capturar cada contexto.
 
 ### O que é o contexto comportamental?
 
@@ -992,21 +1017,17 @@ comportamento pode ser tido por:
 
 > Qualquer ação ou reação do organismo ou parte dele.
 
-Unindo a definição do contexto com a definição acima, foi realizado um
-estudo das possíveis ações a serem registradas em um sistema, as quais,
-seria realizado um estudo, para gerar uma classificação e no futuro,
-auxiliar na recomendação musical. Esse estudo trouxe a seguinte lista de
-ações:
+A partir da definição de contexto, foi realizado um levantamento das
+possíveis ações a serem registradas em um sistema baseado no *app*
+Spotify, as quais, serão colocadas no questionário, e o seu resultado
+será utilizado como peso para cada ação e no futuro, auxiliar na
+recomendação musical. Esse estudo trouxe a seguinte lista de ações:
 
   - Pausar / Tocar música
 
   - Passar / Voltar \(n\) músicas
 
-  - Aumentar / Abaixar o volume
-
   - Escolher música / artista / gênero
-
-  - Abrir / Fechar o app
 
   - Definir tempo da música
 
@@ -1014,9 +1035,7 @@ ações:
 
   - Definir o humor
 
-  - Quantidade de músicas escutadas no dia (tempo)
-
-### O que é o contexto ambiente?
+### O que é o contexto de ambiente?
 
 Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
 ambiente pode ser tido por:
@@ -1024,25 +1043,21 @@ ambiente pode ser tido por:
 > Conjunto de condições físicas, biológicas e químicas que rodeiam os
 > seres vivos e as coisas.
 
-Com essa definição, foi estudado sensores e informações que pudessem
-representar essas condições. E desse estudo, foi encontrado 3 possíveis
-contextos que podem ser representados na aplicação, que são: (i)
-Localização; (ii) Clima e; (iii) Reprodução musical em grupo /
-individual.
+Com essa definição, foram pesquisados sensores e informações que
+pudessem representar essas condições. A partir da análise dos contextos
+levantados, foi identificado 3 possíveis contextos de ambiente que podem
+ser representados na aplicação, que são: (i) Localização; (ii) Clima e;
+(iii) Reprodução musical em grupo / individual.
 
-### Como será obtido os contextos?
+### Como serão obtidos os contextos?
 
-Os contextos do sistema serão obtidos, a partir da captura de dados de
+Os contextos no *DCRM* serão obtidos a partir da captura de dados de
 sensores, *API’s* (*Application Programming Interface*) e eventos de um
-app. A lista de ações, pode ser obtida através das possíveis ações a
-serem executadas pelo usuário demonstradas as quais são apresentadas na
-Figura 10 abaixo.
-
-![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A38%3A01.600Z%22%2C%22pageId%22%3A%22CdkkQKYaVUET6wdkgj3H%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image7.png)
-
-<span id="_Ref42447458" class="anchor"></span>Figura 10 Lista de ações
-que auxiliarão o entendimento do contexto de ambiente e comportamento do
-usuário da aplicação (próprio, 2020)
+app. Na aplicação, será obtido contexto de duas maneiras: (i)
+explicitamente, onde o usuário irá cadastrar o que está fazendo. Ex.:
+emoções, atividades. (ii) implicitamente, a qual será obtido através das
+ações do usuário realizadas no aplicativo. Ex.: ações sobre os
+componentes do app, localização.
 
 São poucas as ações que auxiliam no entendimento do contexto e que podem
 ser obtidas implicitamente, isso devido as limitações dos sensores e
@@ -1054,7 +1069,7 @@ maneira explicita e implícita, sendo elas:
 
   - localização
 
-  - ações em cima dos componentes do app
+  - ações sobre os componentes do app
 
   - tempo
 
@@ -1074,298 +1089,76 @@ maneira explicita e implícita, sendo elas:
 
 ### O que são as ações do usuário?
 
-As ações do usuário trazem diversas informações, referentes ao contexto
+As ações do usuário trazem diversas informações referentes ao contexto
 que ele está vivendo, elas auxiliam no entendimento do seu contexto e na
-validação da acuracidade das recomendações feitas. São elas que irão
-demonstrar ao sistema, o gosto ou desgosto do usuário, em cima das
-músicas recomendadas. Cada ação terá um nível de importância, a qual
-será obtida através das respostas do questionário. As possíveis ações a
-serem executadas pelo usuário estão listadas abaixo.
+validação da acuracidade das recomendações feitas. São elas que
+demonstrarão ao sistema, o gosto ou não do usuário, em cima das músicas
+recomendadas. Cada ação terá um nível de importância, a qual será obtida
+através das respostas do questionário. As possíveis ações a serem
+executadas pelo usuário estão listadas na seção 3.1.1.
 
-  - Pausar / Tocar música
+## pesquisa com usuários sobre recomendação musical
 
-  - Passar / Voltar \(n\) músicas
-
-  - Aumentar / Abaixar volume
-
-  - Escolher música / artista / gênero
-
-  - Abrir / Fechar o app
-
-  - Definir tempo da música
-
-  - Definir atividade
-
-  - Definir humor
-
-  - Definir / Trocar localização
-
-  - Definir grupo / individual
-
-## Metodologia do sistema
-
-Para validar o modelo de sistema de recomendação, será desenvolvido uma
-aplicação, a qual irá ser distribuída aos usuários, que participarem do
-questionário, feito para obter informações sobre os usuários. As etapas
-do desenvolvimento desse sistema são apresentadas na Figura 11 abaixo.
+Para validar o modelo de sistema de recomendação foi desenvolvida uma
+aplicação, a qual foi distribuída aos usuários que participaram do
+questionário previamente realizado, onde foram obtidas informações sobre
+esses usuários. As etapas do desenvolvimento do *DCRM* são apresentadas
+na Figura 11.
 
 <span id="_Ref42452795" class="anchor"></span>Figura 11 Etapas do
 desenvolvimento do sistema de recomendação musical (próprio, 2020)
 
-As perguntas aplicadas no questionário, serão voltadas a conhecer melhor
-os usuários que utilizarão a aplicação, sendo assim, serão utilizadas
-perguntas que permita entender suas preferencias, atividades, dentre
-outros fatores. Essas perguntas são:
+As perguntas aplicadas no questionário permitiram conhecer melhor os
+usuários que utilizarão a aplicação, sendo assim, foram utilizadas
+perguntas que permitam entender suas preferências, atividades, dentre
+outros fatores. As perguntas do questionário estão listadas no Quadro 2:
 
-1.  ##### Qual o aplicativo / reprodutor de música você utiliza atualmente?
-    
-      - Spotify
-    
-      - Deezer
-    
-      - Youtube Music
-    
-      - TIDAL
-    
-      - Apple Music
-    
-      - Google Play Music
-    
-      - Rádio
-    
-      - Outro, qual?
+Quadro 2 Perguntas e respostas disponibilizadas a um certo público
+através dos formulários do Google. (próprio, 2020)
 
-2.  ##### Você acha que as recomendações musicais realizadas via software poderiam ser melhoradas? 
+| Pergunta                                                                                     | Possíveis respostas                                                                                                                                                                                                                                                       |
+| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1\. Qual o aplicativo / reprodutor de música você utiliza atualmente?                        | Spotify, Deezer, Youtube Music, TIDAL, Apple Music, Google Play Music, Rádio Outro, qual?                                                                                                                                                                                 |
+| 2\. Você acha que as recomendações musicais realizadas via software poderiam ser melhoradas? | Sim, não                                                                                                                                                                                                                                                                  |
+| 3\. Você acredita que o contexto poderia melhorar essas recomendações?                       | Sim, não                                                                                                                                                                                                                                                                  |
+| 4\. Em quais atividades você costuma ouvir música?                                           | Acordando, Assistindo a filmes / séries / novelas, Comendo, Correndo, Dirigindo, Estudando, Jogando, Lazer, Lendo, Indo dormir, Passeando, Praticando exercícios, Trabalhando, Treinando, Outro, qual?                                                                    |
+| 5\. Em quais lugares você costuma ouvir músicas?                                             | Academia, Bar, Biblioteca, Casa, Com os amigos, Escola, Festa, Praia, Restaurante, Trabalho, Outro, qual?                                                                                                                                                                 |
+| 6\. Você costuma ouvir música quando está:                                                   | Aborrecido, Alegre, Amoroso, Ansioso, Apavorado, Assustado, Constrangido, Culpado, Deprimido, Desapontado, Excitado, Envergonhado, Em pânico, Feliz, Frustrado, Furioso, Inseguro, Irado, Irritado, Humilhado, Magoado, Nervoso, Orgulhoso, Triste, Zangado, Outro, qual? |
+| 7\. O que costuma te influenciar na escolha da música?                                       | Atividades, Clima, Grupo / Individual, Horário do dia, Humor, Localização, Outro, Qual?                                                                                                                                                                                   |
+| 8\. O que você faz quando gosta ou não de uma música?                                        | Abrir / Fechar o app, Aumentar / Abaixar volume, Definir tempo da música, Escolher música / artista / gênero, Pausar / Tocar música, Passar / Voltar n músicas, Outra, qual?                                                                                              |
+| 9\. As músicas que você escuta sozinho são diferentes das que escuta com os amigos?          | Sim, não                                                                                                                                                                                                                                                                  |
+| 10\. Quanto tempo por semana você escuta música?                                             | Menos que 5 horas, de 5 a 10 horas, de 11 a 30 horas, de 31 a 50 horas, mais que 50 horas                                                                                                                                                                                 |
+| 11\. Quais são os gêneros musicais que gosta de escutar?                                     | Alternativa, Blues, Clássica, Country, Dance, Eletrônica, Folk, Funk, Hip Hop, Latina, MPB, Jazz, Pop, Reggae, R\&B, Rock, Soundtrack, Vocal                                                                                                                              |
+| 12\. Gostaria de participar de uma pesquisa que visa melhorar a recomendação musical?        | Sim, não                                                                                                                                                                                                                                                                  |
+| 13\. Sua idade                                                                               |                                                                                                                                                                                                                                                                           |
+| 14\. Dicas e sugestões?                                                                      |                                                                                                                                                                                                                                                                           |
 
-3.  ##### Você acredita que o contexto poderia melhorar essas recomendações?
+### Pré-teste do questionário
 
-4.  ##### Em quais atividades você costuma ouvir música?
-    
-      - Acordando
-    
-      - Assistindo a filmes / séries / novelas
-    
-      - Comendo
-    
-      - Correndo
-    
-      - Dirigindo
-    
-      - Estudando
-    
-      - Jogando
-    
-      - Lazer
-    
-      - Lendo
-    
-      - Indo dormir
-    
-      - Passeando
-    
-      - Praticando exercícios
-    
-      - Trabalhando
-    
-      - Treinando
-    
-      - Outro, qual?
+Com as perguntas do questionário definidas, foi realizada uma validação
+para garantir que elas faziam sentido. O pré-teste foi feito enviando o
+questionário para 5 pessoas, as quais tinham a responsabilidade de
+analisar as perguntas e avaliar a dificuldade de entendimento de cada
+uma das perguntas. Isso foi feito para garantir que o público que
+receberia o questionário posteriormente - o qual não está dentro do
+contexto do trabalho - conseguiria responder as perguntas com completa
+compreensão delas.
 
-5.  ##### Em quais lugares você costuma ouvir músicas?
-    
-      - Academia
-    
-      - Bar
-    
-      - Biblioteca
-    
-      - Casa
-    
-      - Com os amigos
-    
-      - Escola
-    
-      - Festa
-    
-      - Praia
-    
-      - Restaurante
-    
-      - Trabalho
-    
-      - Outro, qual?
+### Resultados do questionário
 
-6.  ##### Você costuma ouvir música quando está:
-    
-      - Aborrecido
-    
-      - Alegre
-    
-      - Amoroso
-    
-      - Ansioso
-    
-      - Apavorado
-    
-      - Assustado
-    
-      - Constrangido
-    
-      - Culpado
-    
-      - Deprimido
-    
-      - Desapontado
-    
-      - Excitado
-    
-      - Envergonhado
-    
-      - Em pânico
-    
-      - Feliz
-    
-      - Frustrado
-    
-      - Furioso
-    
-      - Inseguro
-    
-      - Irado
-    
-      - Irritado
-    
-      - Humilhado
-    
-      - Magoado
-    
-      - Nervoso
-    
-      - Orgulhoso
-    
-      - Triste
-    
-      - Zangado
-    
-      - Outro, qual?
-
-7.  ##### O que costuma te influenciar na escolha da música?
-    
-      - Atividades
-    
-      - Clima
-    
-      - Grupo / Individual
-    
-      - Horário do dia
-    
-      - Humor
-    
-      - Localização
-    
-      - Outro, Qual?
-
-8.  ##### O que você faz quando gosta ou não de uma música?
-    
-      - Abrir / Fechar o app
-    
-      - Aumentar / Abaixar volume
-    
-      - Definir tempo da música
-    
-      - Escolher música / artista / gênero
-    
-      - Pausar / Tocar música
-    
-      - Passar / Voltar \(n\) músicas
-    
-      - Outra, qual?
-
-9.  ##### As músicas que você escuta sozinho são diferentes das que escuta com os amigos?
-
-10. ##### Quanto tempo por semana você escuta música?
-    
-      - menos que 5 horas
-    
-      - de 5 a 10 horas
-    
-      - de 11 a 30 horas
-    
-      - de 31 a 50 horas
-    
-      - mais que 50 horas
-
-11. ##### Quais são os gêneros musicais que gosta de escutar?
-    
-      - Alternativa
-    
-      - Blues
-    
-      - Clássica
-    
-      - Country
-    
-      - Dance
-    
-      - Eletrônica
-    
-      - Folk
-    
-      - Funk
-    
-      - Hip Hop
-    
-      - Latina
-    
-      - MPB
-    
-      - Jazz
-    
-      - Pop
-    
-      - Reggae
-    
-      - R\&B
-    
-      - Rock
-    
-      - Soundtrack
-    
-      - Vocal
-
-12. ##### Gostaria de participar de uma pesquisa que visa melhorar a recomendação musical?
-
-13. ##### Sua idade
-
-14. ##### Dicas e sugestões?
+Com um alcance maior do que 1000 pessoas, sendo 800 funcionários da CWI
+que possuem acesso ao Slack, 200 pessoas alcançadas através do Instagram
+e demais divulgações que tiveram, o questionário teve uma adesão de 222
+respostas. O público respondente tinha entre 14 e 71 anos e um gosto
+musical bem diversificado, foram obtidos em torno de 60 estilos
+musicais, sendo o mais votado o Rock, com 181 marcações.
 
 O questionário foi aberto no dia 6 de julho de 2020, nesse dia foi
-realizado uma publicação no Instagram para apresentá-lo ao público, e no
+realizada uma publicação no Instagram para apresentá-lo ao público, e no
 decorrer, foi enviado a outras redes sociais, como WhatsApp, Slack
 (empresarial), Twitter e Facebook. O seu fechamento foi realizado no dia
 18 de julho de 2020, somando o total de 12 dias em que o ele ficou
 aberto.
-
-### Pré-teste do questionário
-
-Com as perguntas do questionário definidas, foi realizado uma validação
-para garantir que elas faziam sentido, e se o público que não está no
-contexto conseguiria realizar ter um entendimento do que está sendo
-perguntado.
-
-A validação foi feita enviando o questionário para 5 pessoas, as quais
-tinham a responsabilidade de analisar as perguntas e avaliar a
-dificuldade de entendimento de cada uma das perguntas. Isso foi feito
-para garantir que o publico que receberia o questionário - o qual não
-está dentro do contexto do trabalho - conseguiria responder as
-perguntas.
-
-### Resultados do questionário
-
-Com um alcance maior do que 1000 pessoas, o questionário teve uma adesão
-de 222 respostas. Resultando em um publico de idades entre 14 e 71 anos
-e um gosto musical bem diversificado, foi obtido em torno de 60 estilos
-musicais, sendo o mais votado o Rock com 181 marcações.
 
 Dos dispositivos ou aplicativos utilizados para realizar a reprodução
 das músicas, com 168 respostas, o Spotify foi o mais escolhido das
@@ -1373,13 +1166,13 @@ opções, em segundo lugar ficou o Youtube com 103 respostas (variadas
 entre 86 no Youtube Music, e 17 tratando sobre o Youtube clássico).
 
 A pergunta “Você acha que as recomendações musicais realizadas via
-software poderiam ser melhoradas?” trouxe uma visão da opinião de um
-certo público se existe espaço para esse trabalho evoluir as técnicas de
-reprodução musical, e a “Você acredita que o contexto poderia melhorar
-essas recomendações?” se existe espaço para o contexto evoluir essas
-técnicas, e com 95% na primeira e 96% na segunda pergunta das respostas
-marcadas como “sim”, foi possível verificar que esse trabalho terá
-espaço para agregar qualidade as recomendações musicais.
+software poderiam ser melhoradas?” trouxe uma visão da opinião se existe
+espaço para esse trabalho evoluir as técnicas de recomendação musical, e
+a “Você acredita que o contexto poderia melhorar essas recomendações?”
+se existe espaço para o contexto do usuário evoluir essas técnicas. Com
+95% para a primeira e 96% para a segunda pergunta de respostas marcadas
+como “sim”, foi possível verificar que esse trabalho tem espaço para
+agregar qualidade às recomendações musicais.
 
 Para aperfeiçoar a visão do trabalho das características possuem maior
 importância, foi realizado as perguntas “Em quais atividades você
@@ -1389,101 +1182,27 @@ conhecer de novas características (a partir do campo “outro”), e foi
 possível obter de características que mais influenciam os usuários na
 escolha de uma música.
 
-## Modelagem do sistema
+## Modelagem do sistema *DCRM*
+
+Contexto =\> sistema =\> knn =\> radio ou top 10 do genero
 
 ### Como o trabalho vai capturar as ações do usuário e enviá-las ao sistema?
 
-A partir do momento que o usuário utilizar a aplicação, será registrado
-suas ações, através de eventos disponíveis em seus componentes, é
-demonstrado na Figura 12 abaixo o processo para realizar esse registro.
-
-![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-07T19%3A48%3A39.750Z%22%2C%22pageId%22%3A%22OW\_eq1zldgSTVgG6IYEs%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image8.png)
-
-<span id="_Toc44538335" class="anchor"></span>Figura 12 Fluxo para
-realizar o registro e análise das ações executadas pelo usuário
-(próprio, 2020)
-
-As ações utilizadas serão as apresentadas na seção 3.1.4, as quais serão
-capturadas através de eventos dos componentes da aplicação, e enviadas
-ao sistema, realizando sua avaliação.
-
-### Como o trabalho vai validar se as ações do usuário condizem com o contexto?
-
-As ações do usuário são o que irão demonstrar o gosto ou desgosto do
-usuário, em cima das músicas recomendadas. A partir do questionário
-realizado, será possível entender melhor os usuários que irão utilizar a
-aplicação desenvolvida. E com isso, desenvolver a avaliação da
-importância de uma ação em cima do contexto. A Figura 13 abaixo
-apresenta o processo do sistema desde o momento que irá receber as ações
-e o contexto atual do usuário, até sua última etapa que é retornar ao
-app com a informação se as ações do usuário estão indicando para o
-sistema que sua interpretação do contexto está correta ou não.
-
-![https://www.draw.io/?open=G1dyaagzgXcSN6kipAXEccoFrPgTvvjhUs\&local-data=%7B%22type%22%3A%22Drive%22%2C%22id%22%3A%221dyaagzgXcSN6kipAXEccoFrPgTvvjhUs%22%2C%22lastModifiedDate%22%3A%222020-06-08T00%3A09%3A10.073Z%22%2C%22pageId%22%3A%22Su-HV9\_zTKp8CvkJRCf5%22%2C%22layers%22%3A%5B0%5D%7D](./pandoc/media/image9.png)
-
-<span id="_Ref42460243" class="anchor"></span>Figura 13 Fluxo feito para
-avaliar se as ações condizem com o contexto (próprio, 2020)
+A partir do momento que o usuário utilizar a aplicação, serão
+registradas suas ações, por meio de eventos disponíveis em seus
+componentes. A Figura 12 ilustra o processo para realizar esse registro.
 
 ### Como o trabalho vai relacionar as músicas que o usuário gosta aos contextos?
 
-Ainda existem estudos a serem aprofundados para responder a esta
-pergunta, pois trata de uma relação estrutural do banco e algoritmo, com
-isso ela será respondida durante à próxima fase de desenvolvimento deste
-trabalho.
-
-### Como o trabalho vai classificar o contexto para apresentar para usuário?
-
-O contexto obtido através da aplicação, será enviado para o sistema,
-gerando seu registro do que o usuário está vivendo no momento. Quando o
-algoritmo entender, que as ações do usuário não condizem com o contexto
-atual, será apresentada uma tela na aplicação perguntando se há
-divergências no contexto da vida real e do entendido pelo algoritmo.
-Essa tela irá confirmar se os seguintes fatores considerados estão
-corretos.
-
-  - Clima
-
-  - Atividade
-
-  - Localização
-
-  - Grupo / Individual
-
-  - Humor
-
-  - Histórico de ações
-
-  - Músicas relacionadas ao contexto
-
-Desse modo o sistema validará com o usuário a sua interpretação do
-contexto atual, identificando certos problemas nos dados obtidos,
-garantindo uma maior precisão na avaliação do contexto.
+A cada 30 minutos será solicitado ao usuário uma atualização de
+contexto, isso é, será aberto um formulário, o qual possibilita o
+preenchimento do humor, atividades e localização atual do usuário. Essas
+informações serão salvas e relacionadas as próximas músicas reproduzidas
+ou salvas pelo usuário.
 
 ### Como o trabalho vai recomendar novas músicas a partir da relação de contexto x música?
 
-Após ser feito a identificação do contexto através da aplicação, será
-realizado sua classificação utilizando os algoritmos estudados nos
-artigos revisados (*SVM*, *RBF*, *Random Forest*, etc.), e somente
-então, será realizada a recomendação musical, através dos algoritmos de
-*Matrix* e *Tensor Factorization.* A Figura 14 abaixo apresenta as
-etapas utilizadas no processo para realizar a recomendação musical.
-
-<span id="_Ref42465942" class="anchor"></span>Figura 14 Etapas do
-processo para realizar a recomendação musical
-
-Com os algoritmos de recomendação, será gerado um score para cada música
-x contexto. A partir dele, será avaliado os n melhores scores e
-inseridos na lista de reprodução atual da aplicação, buscando
-aperfeiçoar, a experiência do usuário ao ouvir suas músicas preferidas
-ao devido contexto.
-
-### Como o trabalho vai avaliar as recomendações feitas?
-
-Ao final, para realizar a avaliação das recomendações, será realizado um
-estudo em cima dos algoritmos de avaliação de resultados encontrados nos
-artigos revisados (*AUC*, *Root Mean Squared Error, Mean Reciprocal
-Rank*, etc.), estudo qual irá validar quais dos algoritmos se adequam
-melhor as necessidades do sistema.
+KNN =\> gênero =\> musicas do genero
 
 ## roteiro
 
@@ -1532,21 +1251,23 @@ fim, será realizado uma comparação do resultado, com os obtidos no
 ACM. **Advanced Search**. Disponível em:
 \<https://dl.acm.org/search/advanced\>. Acesso em: 5 maio. 2020. ACM
 RECSYS COMMUNITY. **RecSys – ACM Recommender Systems**. Disponível em:
-\<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. BHATNAGAR, V.
-Collaborative filtering using data mining and analysis. \[s.l: s.n.\].
-BORJA, K.; DIERINGER, S. Streaming or stealing? The complementary
-features between music streaming and music piracy. **Journal of
-Retailing and Consumer Services**, v. 32, p. 86–95, 2016. DIETMAR, J. et
-al. **Recommendation system -An Introduction**. \[s.l: s.n.\]. v.
-91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário | Michaelis
-On-line**. Disponível em: \<https://michaelis.uol.com.br/\>. Acesso em:
-6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**. \[s.l.\] MIT
-Press, 2019. FALK, K. Practical Recommender Systems. \[s.l: s.n.\].
-IFPI. **IFPI Global Music Report 2019**. Disponível em:
+\<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. ALIAGA, W. K.
+DESENVOLVIMENTO DE UM SISTEMA DE RECOMENDACÃO MUSICAL SENSÍVEL AO
+CONTEXTO. 2018. BHATNAGAR, V. **Collaborative filtering using data
+mining and analysis**. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming
+or stealing? The complementary features between music streaming and
+music piracy. **Journal of Retailing and Consumer Services**, v. 32, p.
+86–95, 2016. DIETMAR, J. et al. **Recommendation system -An
+Introduction**. \[s.l: s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre
+o dicionário | Michaelis On-line**. Disponível em:
+\<https://michaelis.uol.com.br/\>. Acesso em: 6 jun. 2020. ERIKSSON, M.
+et al. **Spotify Teardown**. \[s.l.\] MIT Press, 2019. FALK, K.
+**Practical Recommender Systems**. \[s.l: s.n.\]. IFPI. **IFPI Global
+Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. LUINI, B.
 J. R.; WHITMAN, A. E.; DATE, P. **Streaming Audio: The FezGuys’ Guide**.
-\[s.l: s.n.\]. MURARO, R. M. Os avanços tecnológicos e o futuro da
-humanidadeQuerendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
+\[s.l: s.n.\]. MURARO, R. M. **Os avanços tecnológicos e o futuro da
+humanidade**Querendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
 \[s.l.\] O’Reilly Media, 2018. v. 134RESNICK, PAUL AND VARIAN, H. R.
 Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
 56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems

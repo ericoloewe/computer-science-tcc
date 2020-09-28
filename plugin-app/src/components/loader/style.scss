@@ -1,3 +1,37 @@
 .loader-component {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
 
+  .wave-svg {
+    height: 200px;
+    width: 200px;
+    fill: #000;
+  }
+}
+
+@for $i from 1 through 9 {
+  .wave-svg-line-#{$i} {
+    animation: pulse 1s infinite;
+    animation-delay: $i * 0.15s;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scaleY(1);
+    transform-origin: 50% 50%;
+  }
+
+  50% {
+    transform: scaleY(0.7);
+    transform-origin: 50% 50%;
+  }
+
+  100% {
+    transform: scaleY(1);
+    transform-origin: 50% 50%;
+  }
 }

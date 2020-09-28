@@ -17,6 +17,7 @@ interface Context {
 const apiEndpoint = process.env.REACT_APP_API_HOST || "https://localhost:44301/api";
 const eventApiEndpoint = `${apiEndpoint}/locations`;
 const USE_API = process.env.REACT_APP_USE_API_TO_LOAD_LOCATION === "true";
+const baseHost = process.env.REACT_APP_HOST_URL || "https://ericoloewe.github.io/computer-science-tcc";
 
 const LocationContext = createContext({} as any);
 
@@ -26,7 +27,7 @@ export function LocationProvider(props: Props) {
   }
 
   async function searchFromJson(text?: string): Promise<Location[]> {
-    const { data } = await requestService.get<string[]>("/locations.json");
+    const { data } = await requestService.get<string[]>(`${baseHost}/locations.json`);
 
     return data
       .filter((l) => !text || l.toLowerCase().includes(text?.toLowerCase()))

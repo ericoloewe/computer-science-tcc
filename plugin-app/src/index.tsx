@@ -4,8 +4,10 @@ import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
 import { HashRouter, Switch } from "react-router-dom";
 import { Loader } from "./components/loader";
-import { PrivateRoute, NonAuthRoute } from "./components/router";
+import { PrivateRoute, NonAuthRoute, ContextIntro } from "./components/router";
 import { AppProviders } from "./contexts";
+import { createMuiTheme, ThemeProvider, responsiveFontSizes } from "@material-ui/core/styles";
+import { indigo } from "@material-ui/core/colors";
 
 const Home = React.lazy(() => import("./pages/home"));
 const Welcome = React.lazy(() => import("./pages/welcome"));
@@ -19,47 +21,68 @@ const Activity = React.lazy(() => import("./pages/activity"));
 const Location = React.lazy(() => import("./pages/location"));
 const MusicSearch = React.lazy(() => import("./pages/music-search"));
 
+let theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#282828",
+    },
+    secondary: indigo,
+  },
+});
+
+theme = responsiveFontSizes(theme);
+
 ReactDOM.render(
   <StrictMode>
     <Suspense fallback={<Loader />}>
       <AppProviders>
-        <HashRouter>
-          <Switch>
-            <PrivateRoute path="/new-context/activity">
-              <Activity />
-            </PrivateRoute>
-            <PrivateRoute path="/new-context/feeling">
-              <Feeling />
-            </PrivateRoute>
-            <PrivateRoute path="/new-context/music-search">
-              <MusicSearch />
-            </PrivateRoute>
-            <PrivateRoute path="/new-context/gender">
-              <Gender />
-            </PrivateRoute>
-            <PrivateRoute path="/new-context/artists">
-              <Artists />
-            </PrivateRoute>
-            <PrivateRoute path="/new-context/location">
-              <Location />
-            </PrivateRoute>
-            <NonAuthRoute path="/login">
-              <Login />
-            </NonAuthRoute>
-            <NonAuthRoute path="/login-redirect-spotify">
-              <LoginRedirectSpotify />
-            </NonAuthRoute>
-            <PrivateRoute path="/logout">
-              <Logout />
-            </PrivateRoute>
-            <NonAuthRoute path="/welcome">
-              <Welcome />
-            </NonAuthRoute>
-            <PrivateRoute path="/">
-              <Home />
-            </PrivateRoute>
-          </Switch>
-        </HashRouter>
+        <ThemeProvider theme={theme}>
+          <HashRouter>
+            <Switch>
+              <NonAuthRoute path="/login">
+                <Login />
+              </NonAuthRoute>
+              <NonAuthRoute path="/login-redirect-spotify">
+                <LoginRedirectSpotify />
+              </NonAuthRoute>
+              <NonAuthRoute exact path="/:access_token(access_token=.*)">
+                <LoginRedirectSpotify />
+              </NonAuthRoute>
+              <NonAuthRoute path="/welcome">
+                <Welcome />
+              </NonAuthRoute>
+              <PrivateRoute path="/new-context" exact>
+                <Feeling key="feeling" type="feeling" />
+              </PrivateRoute>
+              <PrivateRoute path="/new-context/want-to-fell-like">
+                <Feeling key="want-to-fell-like" type="want-to-fell-like" />
+              </PrivateRoute>
+              <PrivateRoute path="/new-context/activity">
+                <Activity />
+              </PrivateRoute>
+              <PrivateRoute path="/new-context/location">
+                <Location />
+              </PrivateRoute>
+              <ContextIntro>
+                <PrivateRoute path="/music-search">
+                  <MusicSearch />
+                </PrivateRoute>
+                <PrivateRoute path="/gender">
+                  <Gender />
+                </PrivateRoute>
+                <PrivateRoute path="/artists">
+                  <Artists />
+                </PrivateRoute>
+                <PrivateRoute path="/logout">
+                  <Logout />
+                </PrivateRoute>
+                <PrivateRoute path="/" exact>
+                  <Home />
+                </PrivateRoute>
+              </ContextIntro>
+            </Switch>
+          </HashRouter>
+        </ThemeProvider>
       </AppProviders>
     </Suspense>
   </StrictMode>,

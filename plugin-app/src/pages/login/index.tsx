@@ -1,7 +1,7 @@
 import "./style.scss";
 
 import React from "react";
-import { Button } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 
 import { SpotifyUtil } from "../../utils/spotify";
 
@@ -15,6 +15,9 @@ export default function () {
         src="https://developer.spotify.com/assets/branding-guidelines/icon3@2x.png"
         alt="Spotify logo"
       />
+      <Typography component="p">
+        Entre ou crie sua conta no Spotify para conseguir utilizar o experimento musical
+      </Typography>
       <section className="actions">
         <Button variant="contained" color="primary" href={spotifyLoginUrl}>
           Entrar

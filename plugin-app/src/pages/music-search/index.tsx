@@ -70,12 +70,12 @@ export default function () {
   }, [searchText]);
 
   return (
-    <Layout className="music-search-page" pageTitle="Musicas preferidas" hideDrawerButton={true}>
+    <Layout className="music-search-page" pageTitle="Qual música se encaixa mais nesse momento?" hideDrawerButton={true}>
       <Choose
         items={musics}
         onChangeSearch={(s) => setSearchText(s)}
         onChoose={chooseMusic}
-        searchLabel="Nome da musica"
+        searchLabel="Nome da música"
         searchValue={searchText}
       />
       <Button variant="contained" color="primary" onClick={saveAndGoHome}>

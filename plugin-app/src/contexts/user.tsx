@@ -31,6 +31,7 @@ const spotifyUserEndpoint = `${SpotifyUtil.getApiUrl()}/me`;
 
 const apiEndpoint = process.env.REACT_APP_API_HOST || "https://localhost:44301/api";
 const userApiEndpoint = `${apiEndpoint}/user`;
+const useGTM = process.env.REACT_APP_USE_GTM !== "false";
 
 export function UserProvider(props: Props) {
   const { isAuthenticated, requestService } = useAuth();
@@ -61,10 +62,12 @@ export function UserProvider(props: Props) {
   }
 
   async function tryToSaveAtApi(basicUser: BasicUser): Promise<void> {
-    await requestService.post({
-      url: userApiEndpoint,
-      data: basicUser,
-    });
+    if (!useGTM) { 
+      await requestService.post({
+        url: userApiEndpoint,
+        data: basicUser,
+      });
+    }
   }
 
   useEffect(() => {

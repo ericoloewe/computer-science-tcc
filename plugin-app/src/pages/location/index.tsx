@@ -10,6 +10,9 @@ import { Layout } from "../shared/layout";
 import { LocationUtil } from "../../utils/location";
 import { useEvents, EventType } from "../../contexts/event";
 import { useLocation } from "../../contexts/location";
+import { cookieService } from "../../services/storage";
+
+const THIRTY_MINUTES = 60 * 30;
 
 export default function () {
   const history = useHistory();
@@ -68,15 +71,16 @@ export default function () {
       .join(";");
 
     await saveEvent(EventType.CHOOSE_LOCATION, locationsToSave);
+    cookieService.save(cookieService.CONTEXT_COOKIE_NAME, "true", THIRTY_MINUTES);
     history.push(`/`);
   }
 
   return (
-    <Layout className="playlist-location-page" pageTitle="Onde você esta?" hideDrawerButton={true}>
+    <Layout className="playlist-location-page" pageTitle="Onde você está nesse momento?" hideDrawerButton={true}>
       <AddOptionEvent eventType={EventType.CHOOSE_LOCATION} />
       <Choose items={locations} onChoose={chooseLocation} />
       <Button variant="contained" color="primary" onClick={saveAndGoHome}>
-        Salvar
+        Continuar
       </Button>
     </Layout>
   );

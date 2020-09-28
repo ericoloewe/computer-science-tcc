@@ -10,7 +10,13 @@ import { Layout } from "../shared/layout";
 import { useEvents, EventType } from "../../contexts/event";
 import { useFeeling } from "../../contexts/feeling";
 
-export default function () {
+interface Props {
+  type: "feeling" | "want-to-fell-like";
+}
+
+const isWantToFeelLikeEnabled = process.env.REACT_APP_ENABLE_WANT_TO_FEEL_LIKE === "true";
+
+export default function ({ type }: Props) {
   const history = useHistory();
   const { search } = useFeeling();
   const { save: saveEvent } = useEvents();
@@ -55,16 +61,23 @@ export default function () {
       .map((f) => f.id)
       .join(";");
 
-    await saveEvent(EventType.CHOOSE_FEELING, feelingsToSave);
-    history.push(`/`);
+    const eventType = type === "feeling" ? EventType.CHOOSE_FEELING : EventType.CHOOSE_FEELING_TO_BE_LIKE;
+    const routeToGo = type === "feeling" && isWantToFeelLikeEnabled ? `/new-context/want-to-fell-like` : `/new-context/activity`;
+
+    await saveEvent(eventType, feelingsToSave);
+    history.push(routeToGo);
   }
 
   return (
-    <Layout className="playlist-feeling-page" pageTitle="O que você esta sentindo?" hideDrawerButton={true}>
+    <Layout
+      className="playlist-feeling-page"
+      pageTitle={type === "feeling" ? "Como você está se sentido nesse momento?" : "Como você quer se sentir nesse momento?"}
+      hideDrawerButton={true}
+    >
       <AddOptionEvent eventType={EventType.CHOOSE_FEELING} />
       <Choose items={feelings} onChoose={chooseFeeling} />
       <Button variant="contained" color="primary" onClick={saveAndGoHome}>
-        Salvar
+        Continuar
       </Button>
     </Layout>
   );

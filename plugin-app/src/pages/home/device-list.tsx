@@ -18,7 +18,7 @@ export function DeviceList({ devices, onAccept }: Props) {
         ))}
       </List>
       <Button className="button" color="primary" variant="contained" onClick={onAccept}>
-        Usar plugin para tocar musicas
+        Usar plugin para tocar músicas
       </Button>
     </section>
   );

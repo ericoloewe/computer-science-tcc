@@ -33,7 +33,11 @@
     .content-card-content {
       align-items: center;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+
+      > .title {
+        padding-left: 10px;
+      }
     }
   }
 }
@@ -101,4 +105,8 @@
     width: 100%;
     z-index: 1;
   }
+}
+
+.like-or-not-like {
+  margin-top: 20px;
 }
