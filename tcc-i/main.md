@@ -1224,29 +1224,84 @@ dos eventos gerados pelo usuário. Ela pode ser acessada através do link
 
 A aplicação foi disponibilizada no período do dia 28/09 até o dia 02/10
 através de um e-mail enviado para os usuários, pedindo a eles para
-acessarem a aplicação, para ela salvar os dados que serão utilizados
+utilizarem a aplicação, para ela salvar os dados que serão utilizados
 como teste no modelo de classificação desenvolvido nesse trabalho.
 
 ![](./pandoc/media/image7.png)
 
 Figura Tela introdutória da aplicação (próprio, 2020)
 
+A aplicação foi dividida em 5 telas, e ela inicia com a tela apresentada
+na fig11, a qual apresenta instruções para os usuários de como utilizar
+a aplicação. A segunda tela, é representada na fig12, a qual
+disponibiliza opções de login no Spotify.
+
 ![](./pandoc/media/image8.png)
 
 Figura Tela de login da aplicação (próprio, 2020)
+
+A fig13 apresenta o cadastro do contexto na aplicação. O processo é
+dividido em 3 etapas: (i) “Como você está se sentindo nesse momento?”;
+(ii) “O que você está fazendo nesse momento?”; (iii) “Onde você está
+nesse momento?”. A partir dessas perguntas, é possível entender o
+contexto atual do usuário naquele período. As perguntas são realizadas a
+cada 30min.
 
 ![](./pandoc/media/image9.png)
 
 Figura Tela de preenchimento do contexto (próprio, 2020)
 
+Para realizar a reprodução musical, é necessário exigir do Spotify que
+reproduza as músicas no plugin. Para isso, foi criado a tela apresentada
+na fig14, a qual possui um botão “USAR PLUGIN PARA TOCAR MÚSICAS” que ao
+ser pressionado, habilita a reprodução no plugin.
+
 ![](./pandoc/media/image10.png)
 
 Figura Tela da lista de dispositivos do Spotify (próprio, 2020)
+
+Por fim, foi desenvolvido a tela principal, que é apresentado na fig15.
+Nessa tela, é realizado toda interação do usuário no período em que ele
+está ouvindo as músicas, as possíveis interações estão listadas abaixo.
+
+  - Gostar da música
+
+  - Não gostar da música
+
+  - Passar / Voltar música
+
+  - Buscar música
+
+  - Pausar / Tocar música
 
 ![](./pandoc/media/image11.png)
 
 Figura Tela principal, a qual apresenta a música sendo reproduzida ao
 usuário (próprio, 2020)
+
+Ao clicar no botão “gostei”, é salvo a informação de que o usuário
+gostou da música naquele contexto. Ao clicar no botão “não gostei” é
+salvo a informação que o usuário não gostou e é levado o usuário a tela
+de busca de música fig16, para o usuário apresentar uma música se
+identifique melhor naquele momento.
+
+![](./pandoc/media/image12.png)
+
+Figura Tela de busca de músicas que encaixem melhor no momento (próprio,
+2020)
+
+A ação de buscar música, irá levar para a tela apresentada na fig16, a
+qual possibilita o usuário apresentar uma música que se enquadre melhor
+no contexto que ele está vivendo. Ao selecionar as músicas e clicar em
+próximo, é salvo as informações de sua relação com o contexto vivido.
+
+react
+
+githubpages
+
+firebase
+
+testegtm
 
 ## Modelagem do sistema *DCRM*
 
