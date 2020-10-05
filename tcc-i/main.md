@@ -408,10 +408,17 @@ de matriz e um pequeno conjunto heurístico.
 
 ### O Algoritmo KNN
 
-Discutivelmente o método mais simples de classificação é o *k-Nearest
-Neighbor* (KNN). Ele busca os k pontos dos dados de treino mais pertos
-do ponto de teste, e então, uma classe é atrelada a esse ponto através
-de uma votação majoritária dos k pontos vizinhos. (T.M. COVER, 1967)
+O *k-Nearest Neighbor* (KNN) é um método de classificação que busca os k
+pontos dos dados de treino mais pertos do ponto de teste, e então, uma
+classe é atrelada a esse ponto através de uma votação majoritária dos k
+pontos vizinhos. (T.M. COVER, 1967)
+
+![Image for post](./pandoc/media/image1.png)
+
+Figura – Representação gráfica da classificação do algoritmo KNN sobre
+um plano x1 e x2. No plano, os pontos amarelos são a representação da
+classe A, roxos classe B e vermelho é o ponto de teste ***(JOSÉ,
+2018)***
 
 ## O protocolo de revisão
 
@@ -485,9 +492,9 @@ A quantidade de resultados apresentados na ACM foram 150 trabalhos
 relacionados a *string* de busca.
 
 ![Tela de celular com publicação numa rede social Descrição gerada
-automaticamente](./pandoc/media/image1.png)
+automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
+<span id="_Ref40822595" class="anchor"></span>Figura 2 - Motor avançado
 de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
@@ -499,9 +506,9 @@ trabalho, foram reduzidos os tipos de publicações aceitas para
 de trabalhos encontrados passou para 83.
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
-automaticamente](./pandoc/media/image2.png)
+automaticamente](./pandoc/media/image3.png)
 
-<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
+<span id="_Ref40822631" class="anchor"></span>Figura 3 - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Um dos principais motivos que levou essa revisão ser realizada através
@@ -511,9 +518,9 @@ conferências e eventos relacionados a área. (ACM RECSYS COMMUNITY.,
 2020)
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
-automaticamente](./pandoc/media/image3.png)
+automaticamente](./pandoc/media/image4.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
+<span id="_Ref40822641" class="anchor"></span>Figura 4 - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
 
 ## ETAPAS DA REVISÃO DOS TRABALHOS
@@ -522,7 +529,7 @@ Com a busca realizada no dia 07/05/20, no motor da ACM, a partir da
 *string* de busca foram encontrados 83 trabalhos, sendo eles: 23 do tipo
 *journal* e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
+<span id="_Ref40822414" class="anchor"></span>Figura 5 - Etapas
 realizadas para filtrar os trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
@@ -544,7 +551,7 @@ tipos e a quantidade de artigos encontrados.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
+<span id="_Ref40822493" class="anchor"></span>Figura 6 - Filtro em cima
 dos trabalhos selecionados através do resumo (próprio, 2020)
 
 ###  Trabalhos selecionados
@@ -553,7 +560,7 @@ O resultado do procedimento de filtro apresentado na Figura 6 abaixo,
 resultou em 4 trabalhos relacionados ao objetivo descrito no protocolo
 de revisão desse trabalho.
 
-<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
+<span id="_Ref40822509" class="anchor"></span>Figura 7 - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
@@ -909,7 +916,7 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são apresentados na Figura 7 abaixo.
 
-<span id="_Toc44538330" class="anchor"></span>Figura 7 Fatores da
+<span id="_Toc44538330" class="anchor"></span>Figura 8 Fatores da
 preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
@@ -1120,7 +1127,7 @@ questionário previamente realizado, onde foram obtidas informações sobre
 esses usuários. As etapas do desenvolvimento do *DCRM* são apresentadas
 na Figura 11.
 
-<span id="_Ref42452795" class="anchor"></span>Figura 11 Etapas do
+<span id="_Ref42452795" class="anchor"></span>Figura 10 Etapas do
 desenvolvimento do sistema de recomendação musical (próprio, 2020)
 
 As perguntas aplicadas no questionário permitiram conhecer melhor os
@@ -1279,17 +1286,19 @@ o dicionário | Michaelis On-line**. Disponível em:
 et al. **Spotify Teardown**. \[s.l.\] MIT Press, 2019. FALK, K.
 **Practical Recommender Systems**. \[s.l: s.n.\]. IFPI. **IFPI Global
 Music Report 2019**. Disponível em:
-\<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. LUINI, B.
-J. R.; WHITMAN, A. E.; DATE, P. **Streaming Audio: The FezGuys’ Guide**.
-\[s.l: s.n.\]. MURARO, R. M. **Os avanços tecnológicos e o futuro da
-humanidade**Querendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
-\[s.l.\] O’Reilly Media, 2018. v. 134RÄTSCH, G. A brief introduction
-into machine learning. **21st Chaos Communication Congress**, p. 1–6,
-2004. RESNICK, PAUL AND VARIAN, H. R. Recommender Systems.
-**Communications of the ACM**, v. 40, n. 4, p. 56–58, 1997. RICCI, F.;
-ROKACH, L.; SHAPIRA, B. **Recommender Systems Handbook**. \[s.l: s.n.\].
-T.M. COVER, P. E. H. Nearest Neighbor Pattern Classfication. v. I, p.
-1–28, 1967. UNIVERSIDADE FEDERAL DO CEARA. **A Magnetorresistência
-Gigante**. Disponível em:
+\<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. JOSÉ, I.
+**KNN (K-Nearest Neighbors) \#1**. Disponível em:
+\<https://medium.com/brasil-ai/knn-k-nearest-neighbors-1-e140c82e9c4e\>.
+Acesso em: 4 out. 2020. LUINI, B. J. R.; WHITMAN, A. E.; DATE, P.
+**Streaming Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M.
+**Os avanços tecnológicos e o futuro da humanidade**Querendo ser Deus, ,
+2009. NIWA, H. **Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v.
+134RÄTSCH, G. A brief introduction into machine learning. **21st Chaos
+Communication Congress**, p. 1–6, 2004. RESNICK, PAUL AND VARIAN, H. R.
+Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
+56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
+Handbook**. \[s.l: s.n.\]. T.M. COVER, P. E. H. Nearest Neighbor Pattern
+Classfication. v. I, p. 1–28, 1967. UNIVERSIDADE FEDERAL DO CEARA. **A
+Magnetorresistência Gigante**. Disponível em:
 \<https://seara.ufc.br/tintim-por-tintim/tecnologia/a-magnetorresistencia-gigante/\>.
 Acesso em: 12 mar. 2020.
