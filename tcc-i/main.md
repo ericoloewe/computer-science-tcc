@@ -384,13 +384,14 @@ trabalhos em portugues, para dar uma visão clara e rápida do assunto. E
 nessa busca foi encontrado o seguinte trabalho: “Desenvolvimento de um
 Sistema de Recomendação Musical Sensível ao Contexto”.
 
-O trabalho utiliza teve como objetivo desenvolver o modelo de um sistema
-sensível ao contexto, utilizando das técnicas clássicas de recomendação,
-aplicando uma camada de extra de filtragem colaborativa. Nessa camada,
-ele utiliza do algoritmo K-Vizinhos Mais Próximos (KNN) para realiza-la,
-o qual é o mais amplamente utilizado para esse tipo de recomendação
-conforme (ALIAGA, 2018) (fazer apud Bobadilla et al. (2013)), e é um
-algoritmo *lazy*, isso é, não gera um modelo que precisa de treinamento.
+O trabalho teve como objetivo desenvolver o modelo de um sistema
+sensível ao contexto, utilizando das técnicas clássicas de
+recomendação, aplicando uma camada de extra de filtragem colaborativa.
+Nessa camada, ele utiliza do algoritmo K-Vizinhos Mais Próximos (KNN)
+para realiza-la, o qual é o mais amplamente utilizado para esse tipo de
+recomendação conforme (ALIAGA, 2018) (fazer apud Bobadilla et al.
+(2013)), e é um algoritmo *lazy*, isso é, não gera um modelo que precisa
+de treinamento.
 
 No trabalho, foram escolhidos 10 usuários para realizar o teste, tendo
 um contexto comum que era “Estudar” para atividade e “BR” para cultura.
@@ -404,6 +405,8 @@ apenas uma apresentava o algoritmo utilizado, que é: “Effective
 Nearest-Neighbor Music Recommendations”. A qual apresenta uma técnica
 hibrida de recomendação, que utiliza de uma combinação do KNN, fatoração
 de matriz e um pequeno conjunto heurístico.
+
+### O Algoritmo KNN
 
 ## O protocolo de revisão
 
@@ -976,6 +979,13 @@ Factorization* (*Tensor Decomposition*, *Nonnegative Tensor
 Factorization*, etc.), os quais são os algoritmos utilizados para
 realizar a recomendações nos *RecSys*.
 
+## Uso do SVM
+
+O uso do algoritmo SVM na classificação desse trabalho foi descartado,
+devido a seu algoritmo tradicional, estar mais voltado a uma grande
+divisão das classes dos *datasets*. (geralmente utilizado para a
+classificação de duas classes). (RÄTSCH, 2004)
+
 # Modelagem do “*Dynamic and Contextual Recommendations of Music*”
 
 A partir da revisão bibliográfica realizada, foi possível conhecer
@@ -1113,8 +1123,8 @@ usuários que utilizarão a aplicação, sendo assim, foram utilizadas
 perguntas que permitam entender suas preferências, atividades, dentre
 outros fatores. As perguntas do questionário estão listadas no Quadro 2:
 
-Quadro 2 Perguntas e respostas disponibilizadas a um certo público
-através dos formulários do Google. (próprio, 2020)
+Quadro Perguntas e respostas disponibilizadas a um certo público através
+dos formulários do Google. (próprio, 2020)
 
 | Pergunta                                                                                     | Possíveis respostas                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1268,10 +1278,12 @@ Music Report 2019**. Disponível em:
 J. R.; WHITMAN, A. E.; DATE, P. **Streaming Audio: The FezGuys’ Guide**.
 \[s.l: s.n.\]. MURARO, R. M. **Os avanços tecnológicos e o futuro da
 humanidade**Querendo ser Deus, , 2009. NIWA, H. **Streaming Systems**.
-\[s.l.\] O’Reilly Media, 2018. v. 134RESNICK, PAUL AND VARIAN, H. R.
-Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
-56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
-Handbook**. \[s.l: s.n.\]. UNIVERSIDADE FEDERAL DO CEARA. **A
-Magnetorresistência Gigante**. Disponível em:
+\[s.l.\] O’Reilly Media, 2018. v. 134RÄTSCH, G. A brief introduction
+into machine learning. **21st Chaos Communication Congress**, p. 1–6,
+2004. RESNICK, PAUL AND VARIAN, H. R. Recommender Systems.
+**Communications of the ACM**, v. 40, n. 4, p. 56–58, 1997. RICCI, F.;
+ROKACH, L.; SHAPIRA, B. **Recommender Systems Handbook**. \[s.l: s.n.\].
+UNIVERSIDADE FEDERAL DO CEARA. **A Magnetorresistência Gigante**.
+Disponível em:
 \<https://seara.ufc.br/tintim-por-tintim/tecnologia/a-magnetorresistencia-gigante/\>.
 Acesso em: 12 mar. 2020.
