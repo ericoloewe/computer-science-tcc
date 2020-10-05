@@ -411,7 +411,8 @@ de matriz e um pequeno conjunto heurístico.
 O *k-Nearest Neighbor* (KNN) é um método de classificação que busca os k
 pontos dos dados de treino mais pertos do ponto de teste, e então, uma
 classe é atrelada a esse ponto através de uma votação majoritária dos k
-pontos vizinhos. (T.M. COVER, 1967)
+pontos vizinhos. (T.M. COVER, 1967) Na Figura 1 é exemplificado
+graficamente o funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image1.png)
 
