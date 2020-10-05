@@ -421,6 +421,16 @@ um plano x1 e x2. No plano, os pontos amarelos são a representação da
 classe A, roxos classe B e vermelho é o ponto de teste ***(JOSÉ,
 2018)***
 
+Como é apresentado na Fig1 o algoritmo funciona através da disposição
+das características x1 e x2 sobre um plano, e atribuindo classes a eles
+(no caso: classe A e classe B), então, a partir da predição do ponto de
+teste é encontrado a classe que o representa. (TODO\_REF)
+
+Para rodar o algoritmo de classificação nesse trabalho será utilizado a
+implementação da biblioteca em *python* do *scikit-learn.* A qual se
+encontra na classe *KNeighborsClassifier* do modulo *sklearn.neighbors.*
+(PEDREGOSA et al., 2011)
+
 ## O protocolo de revisão
 
 Essa revisão tem como foco encontrar trabalhos que abordam os sistemas
@@ -1294,7 +1304,9 @@ Acesso em: 4 out. 2020. LUINI, B. J. R.; WHITMAN, A. E.; DATE, P.
 **Streaming Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M.
 **Os avanços tecnológicos e o futuro da humanidade**Querendo ser Deus, ,
 2009. NIWA, H. **Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v.
-134RÄTSCH, G. A brief introduction into machine learning. **21st Chaos
+134PEDREGOSA, F. et al. Scikit-learn: Machine Learning in {P}ython.
+**Journal of Machine Learning Research**, v. 12, p. 2825–2830, 2011.
+RÄTSCH, G. A brief introduction into machine learning. **21st Chaos
 Communication Congress**, p. 1–6, 2004. RESNICK, PAUL AND VARIAN, H. R.
 Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
 56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
