@@ -408,6 +408,11 @@ de matriz e um pequeno conjunto heurístico.
 
 ### O Algoritmo KNN
 
+Discutivelmente o método mais simples de classificação é o *k-Nearest
+Neighbor* (KNN). Ele busca os k pontos dos dados de treino mais pertos
+do ponto de teste, e então, uma classe é atrelada a esse ponto através
+de uma votação majoritária dos k pontos vizinhos. (T.M. COVER, 1967)
+
 ## O protocolo de revisão
 
 Essa revisão tem como foco encontrar trabalhos que abordam os sistemas
@@ -1283,7 +1288,8 @@ into machine learning. **21st Chaos Communication Congress**, p. 1–6,
 2004. RESNICK, PAUL AND VARIAN, H. R. Recommender Systems.
 **Communications of the ACM**, v. 40, n. 4, p. 56–58, 1997. RICCI, F.;
 ROKACH, L.; SHAPIRA, B. **Recommender Systems Handbook**. \[s.l: s.n.\].
-UNIVERSIDADE FEDERAL DO CEARA. **A Magnetorresistência Gigante**.
-Disponível em:
+T.M. COVER, P. E. H. Nearest Neighbor Pattern Classfication. v. I, p.
+1–28, 1967. UNIVERSIDADE FEDERAL DO CEARA. **A Magnetorresistência
+Gigante**. Disponível em:
 \<https://seara.ufc.br/tintim-por-tintim/tecnologia/a-magnetorresistencia-gigante/\>.
 Acesso em: 12 mar. 2020.
