@@ -1215,6 +1215,39 @@ conhecer de novas características (a partir do campo “outro”), e foi
 possível obter de características que mais influenciam os usuários na
 escolha de uma música.
 
+## Desenvolvimento Do plugin
+
+Para obter os dados dos usuários, foi desenvolvido uma aplicação web que
+utilizava do SDK Web do Spotify para reprodução das músicas e captura
+dos eventos gerados pelo usuário. Ela pode ser acessada através do link
+<https://ericoloewe.github.io/computer-science-tcc/>.
+
+A aplicação foi disponibilizada no período do dia 28/09 até o dia 02/10
+através de um e-mail enviado para os usuários, pedindo a eles para
+acessarem a aplicação, para ela salvar os dados que serão utilizados
+como teste no modelo de classificação desenvolvido nesse trabalho.
+
+![](./pandoc/media/image7.png)
+
+Figura Tela introdutória da aplicação (próprio, 2020)
+
+![](./pandoc/media/image8.png)
+
+Figura Tela de login da aplicação (próprio, 2020)
+
+![](./pandoc/media/image9.png)
+
+Figura Tela de preenchimento do contexto (próprio, 2020)
+
+![](./pandoc/media/image10.png)
+
+Figura Tela da lista de dispositivos do Spotify (próprio, 2020)
+
+![](./pandoc/media/image11.png)
+
+Figura Tela principal, a qual apresenta a música sendo reproduzida ao
+usuário (próprio, 2020)
+
 ## Modelagem do sistema *DCRM*
 
 Contexto =\> sistema =\> knn =\> radio ou top 10 do genero
