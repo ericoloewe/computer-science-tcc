@@ -968,7 +968,7 @@ funcionalidades desenvolvidas em cada artigo revisado
 Após a revisão dos 3 trabalhos estudados em relação a proposta deste
 trabalho, foi identificado que nenhum deles apresentou o algoritmo
 utilizado na recomendação. Foram apresentados algoritmos de
-classificação (*SVM*, *RBF*, *Random Forest, etc.*), de avaliação de
+classificação (*KNN, SVM*, *Random Forest, etc.*), de avaliação de
 resultados (*AUC*, *Root Mean Squared Error, Mean Reciprocal Rank*,
 etc.), porem em nenhum momento foi apresentado algoritmos de
 recomendação como algoritmos de *Matrix Factorization* (*SVD*,
@@ -977,12 +977,13 @@ Factorization* (*Tensor Decomposition*, *Nonnegative Tensor
 Factorization*, etc.), os quais são os algoritmos utilizados para
 realizar a recomendações nos *RecSys*.
 
-## Uso do SVM
-
-O uso do algoritmo SVM na classificação desse trabalho foi descartado,
-devido a seu algoritmo tradicional, estar mais voltado a uma grande
-divisão das classes dos *datasets*. (geralmente utilizado para a
-classificação de duas classes). (RÄTSCH, 2004)
+Os algoritmos escolhidos para realizar a classificação foram os mais
+utilizados nos trabalhos, o KNN e SVM, os quais apareceram em 2 artigos.
+Porem o uso do SVM foi descartado, devido a seu algoritmo tradicional,
+estar mais voltado a uma grande divisão das classes dos *datasets*.
+(geralmente utilizado para a classificação de classes binarias).
+(RÄTSCH, 2004) Sobrando somente o algoritmo KNN para ser testado no
+sistema desenvolvido nesse trabalho.
 
 # Modelagem do “*Dynamic and Contextual Recommendations of Music*”
 
