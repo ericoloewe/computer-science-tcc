@@ -416,7 +416,7 @@ graficamente o funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image1.png)
 
-Figura – Representação gráfica da classificação do algoritmo KNN sobre
+Figura 1 – Representação gráfica da classificação do algoritmo KNN sobre
 um plano x1 e x2. No plano, os pontos amarelos são a representação da
 classe A, roxos classe B e vermelho é o ponto de teste ***(JOSÉ,
 2018)***
@@ -969,24 +969,19 @@ temos a seguinte legenda de símbolos: ✔ caso possua, ❌ caso não possua e
 <span id="_Ref42381546" class="anchor"></span>Quadro 1 Relação das
 funcionalidades desenvolvidas em cada artigo revisado
 
-|                                                                           | 3.3.2 Prediction of music pairwise preferences from facial expressions | 3.3.3 Towards Intent-Aware Contextual Music Recommendation: Initial Experiments | 3.3.4 Quantitative Study of Music Listening Behavior in a Smartphone Context | Proposta deste trabalho |
-| ------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------- |
-| Tem foco no entendimento do contexto para recomendações musicais?         | ✔                                                                      | ✔                                                                               | ❌                                                                            | ✔                       |
-| O trabalho foi/será validado em um caso real?                             | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
-| Utiliza do contexto comportamental?                                       | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
-| Utiliza do contexto de ambiente?                                          | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
-| Utiliza do contexto explicito?                                            | ❌                                                                      | ❌                                                                               | ✔                                                                            | ✔                       |
-| Utiliza do contexto implícito?                                            | ✔                                                                      | ✔                                                                               | ✔                                                                            | ✔                       |
-| Realiza recomendações do tipo dinâmicas?                                  | ❌                                                                      | ❌                                                                               | ❌                                                                            | ✔                       |
-| Utiliza da técnica de avaliação *Area Under The Curve* (AUC)?             | ❌                                                                      | ✔                                                                               | ✔                                                                            | ❓                       |
-| Utiliza do *F-measure?*                                                   | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
-| Utiliza do Root Mean Squared Error?                                       |                                                                        | ❌                                                                               | ❌                                                                            | ❓                       |
-| Utiliza a métrica do *Mean Reciprocal Rank?*                              | ❌                                                                      | ✔                                                                               | ❌                                                                            | ❓                       |
-| Utiliza a métrica do coeficiente de correlação de *Kendall*?              | ❌                                                                      | ✔                                                                               | ❌                                                                            | ❓                       |
-| Utiliza do algoritmo *Support Vector Machine* (*SVM*) para classificação? | ❌                                                                      | ✔                                                                               | ✔                                                                            | ❓                       |
-| Utiliza do algoritmo *Radial Basis Function* (*RBF*) para classificação?  | ❌                                                                      | ❌                                                                               | ✔                                                                            | ❓                       |
-| Utiliza o algoritmo *Random Forest* para classificação*?*                 | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
-| Utiliza o algoritmo *Gradient Boosting* para classificação*?*             | ✔                                                                      | ❌                                                                               | ❌                                                                            | ❓                       |
+|                                                                           | (TKALČIČ et al., 2019) | (VOLOKHIN; AGICHTEIN, 2018) | (YANG; TENG, 2015) | (ALIAGA, 2018) | (LUDEWIG et al., 2018) | Proposta deste trabalho |
+| ------------------------------------------------------------------------- | ---------------------- | --------------------------- | ------------------ | -------------- | ---------------------- | ----------------------- |
+| Tem foco no entendimento do contexto para recomendações musicais?         | ✔                      | ✔                           | ❌                  | ✔              | ❌                      | ✔                       |
+| O trabalho foi/será validado em um caso real?                             | ❌                      | ❌                           | ✔                  | ✔              | ✔                      | ✔                       |
+| Utiliza do contexto comportamental?                                       | ✔                      | ✔                           | ✔                  | ✔              | ❌                      | ✔                       |
+| Utiliza do contexto de ambiente?                                          | ❌                      | ❌                           | ✔                  | ✔              | ❌                      | ✔                       |
+| Utiliza do contexto explicito?                                            | ❌                      | ❌                           | ✔                  | ✔              | ❌                      | ✔                       |
+| Utiliza do contexto implícito?                                            | ✔                      | ✔                           | ✔                  | ✔              | ❌                      | ✔                       |
+| Utiliza do algoritmo *K-Nearest Neighbors* (*KNN*) para classificação?    | ❌                      | ❌                           | ❌                  | ✔              | ✔                      | ✔                       |
+| Utiliza do algoritmo *Support Vector Machine* (*SVM*) para classificação? | ❌                      | ✔                           | ✔                  | ❌              | ❌                      | ❌                       |
+| Utiliza do algoritmo *Radial Basis Function* (*RBF*) para classificação?  | ❌                      | ❌                           | ✔                  | ❌              | ❌                      | ❌                       |
+| Utiliza o algoritmo *Random Forest* para classificação*?*                 | ✔                      | ❌                           | ❌                  | ❌              | ❌                      | ❌                       |
+| Utiliza o algoritmo *Gradient Boosting* para classificação*?*             | ✔                      | ❌                           | ❌                  | ❌              | ❌                      | ❌                       |
 
 ## Conclusões dos trabalhos revisados
 
@@ -1146,8 +1141,8 @@ usuários que utilizarão a aplicação, sendo assim, foram utilizadas
 perguntas que permitam entender suas preferências, atividades, dentre
 outros fatores. As perguntas do questionário estão listadas no Quadro 2:
 
-Quadro Perguntas e respostas disponibilizadas a um certo público através
-dos formulários do Google. (próprio, 2020)
+Quadro 2 Perguntas e respostas disponibilizadas a um certo público
+através dos formulários do Google. (próprio, 2020)
 
 | Pergunta                                                                                     | Possíveis respostas                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1229,7 +1224,7 @@ como teste no modelo de classificação desenvolvido nesse trabalho.
 
 ![](./pandoc/media/image7.png)
 
-Figura Tela introdutória da aplicação (próprio, 2020)
+Figura 11 Tela introdutória da aplicação (próprio, 2020)
 
 A aplicação foi dividida em 5 telas, e ela inicia com a tela apresentada
 na fig11, a qual apresenta instruções para os usuários de como utilizar
@@ -1238,7 +1233,7 @@ disponibiliza opções de login no Spotify.
 
 ![](./pandoc/media/image8.png)
 
-Figura Tela de login da aplicação (próprio, 2020)
+Figura 12 Tela de login da aplicação (próprio, 2020)
 
 A fig13 apresenta o cadastro do contexto na aplicação. O processo é
 dividido em 3 etapas: (i) “Como você está se sentindo nesse momento?”;
@@ -1249,7 +1244,7 @@ cada 30min.
 
 ![](./pandoc/media/image9.png)
 
-Figura Tela de preenchimento do contexto (próprio, 2020)
+Figura 13 Tela de preenchimento do contexto (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
 reproduza as músicas no plugin. Para isso, foi criado a tela apresentada
@@ -1258,7 +1253,7 @@ ser pressionado, habilita a reprodução no plugin.
 
 ![](./pandoc/media/image10.png)
 
-Figura Tela da lista de dispositivos do Spotify (próprio, 2020)
+Figura 14 Tela da lista de dispositivos do Spotify (próprio, 2020)
 
 Por fim, foi desenvolvido a tela principal, que é apresentado na fig15.
 Nessa tela, é realizado toda interação do usuário no período em que ele
@@ -1276,7 +1271,7 @@ está ouvindo as músicas, as possíveis interações estão listadas abaixo.
 
 ![](./pandoc/media/image11.png)
 
-Figura Tela principal, a qual apresenta a música sendo reproduzida ao
+Figura 15 Tela principal, a qual apresenta a música sendo reproduzida ao
 usuário (próprio, 2020)
 
 Ao clicar no botão “gostei”, é salvo a informação de que o usuário
@@ -1287,8 +1282,8 @@ identifique melhor naquele momento.
 
 ![](./pandoc/media/image12.png)
 
-Figura Tela de busca de músicas que encaixem melhor no momento (próprio,
-2020)
+Figura 16 Tela de busca de músicas que encaixem melhor no momento
+(próprio, 2020)
 
 A ação de buscar música, irá levar para a tela apresentada na fig16, a
 qual possibilita o usuário apresentar uma música que se enquadre melhor
@@ -1388,10 +1383,12 @@ Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. JOSÉ, I.
 **KNN (K-Nearest Neighbors) \#1**. Disponível em:
 \<https://medium.com/brasil-ai/knn-k-nearest-neighbors-1-e140c82e9c4e\>.
-Acesso em: 4 out. 2020. LUINI, B. J. R.; WHITMAN, A. E.; DATE, P.
-**Streaming Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M.
-**Os avanços tecnológicos e o futuro da humanidade**Querendo ser Deus, ,
-2009. NIWA, H. **Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v.
+Acesso em: 4 out. 2020. LUDEWIG, M. et al. Effective nearest-neighbor
+music recommendations. **ACM International Conference Proceeding
+Series**, 2018. LUINI, B. J. R.; WHITMAN, A. E.; DATE, P. **Streaming
+Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M. **Os avanços
+tecnológicos e o futuro da humanidade**Querendo ser Deus, , 2009. NIWA,
+H. **Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v.
 134PEDREGOSA, F. et al. Scikit-learn: Machine Learning in {P}ython.
 **Journal of Machine Learning Research**, v. 12, p. 2825–2830, 2011.
 RÄTSCH, G. A brief introduction into machine learning. **21st Chaos
@@ -1399,7 +1396,16 @@ Communication Congress**, p. 1–6, 2004. RESNICK, PAUL AND VARIAN, H. R.
 Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
 56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
 Handbook**. \[s.l: s.n.\]. T.M. COVER, P. E. H. Nearest Neighbor Pattern
-Classfication. v. I, p. 1–28, 1967. UNIVERSIDADE FEDERAL DO CEARA. **A
+Classfication. v. I, p. 1–28, 1967. TKALČIČ, M. et al. Prediction of
+music pairwise preferences from facial expressions. **International
+Conference on Intelligent User Interfaces, Proceedings IUI**, v. Part
+F1476, p. 150–159, 2019. UNIVERSIDADE FEDERAL DO CEARA. **A
 Magnetorresistência Gigante**. Disponível em:
 \<https://seara.ufc.br/tintim-por-tintim/tecnologia/a-magnetorresistencia-gigante/\>.
-Acesso em: 12 mar. 2020.
+Acesso em: 12 mar. 2020. VOLOKHIN, S.; AGICHTEIN, E. Towards
+intent-aware contextual music recommendation: Initial experiments.
+**41st International ACM SIGIR Conference on Research and Development in
+Information Retrieval, SIGIR 2018**, p. 1045–1048, 2018. YANG, Y. H.;
+TENG, Y. C. Quantitative study of music listening behavior in a
+smartphone context. **ACM Transactions on Interactive Intelligent
+Systems**, v. 5, n. 3, 2015.
