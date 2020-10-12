@@ -406,31 +406,6 @@ Nearest-Neighbor Music Recommendations”. A qual apresenta uma técnica
 hibrida de recomendação, que utiliza de uma combinação do KNN, fatoração
 de matriz e um pequeno conjunto heurístico.
 
-### O Algoritmo KNN
-
-O *k-Nearest Neighbor* (KNN) é um método de classificação que busca os k
-pontos dos dados de treino mais pertos do ponto de teste, e então, uma
-classe é atrelada a esse ponto através de uma votação majoritária dos k
-pontos vizinhos. (T.M. COVER, 1967) Na Figura 1 é exemplificado
-graficamente o funcionamento do algoritmo.
-
-![Image for post](./pandoc/media/image1.png)
-
-Figura 1 – Representação gráfica da classificação do algoritmo KNN sobre
-um plano x1 e x2. No plano, os pontos amarelos são a representação da
-classe A, roxos classe B e vermelho é o ponto de teste ***(JOSÉ,
-2018)***
-
-Como é apresentado na Fig1 o algoritmo funciona através da disposição
-das características x1 e x2 sobre um plano, e atribuindo classes a eles
-(no caso: classe A e classe B), então, a partir da predição do ponto de
-teste é encontrado a classe que o representa. (TODO\_REF)
-
-Para rodar o algoritmo de classificação nesse trabalho será utilizado a
-implementação da biblioteca em *python* do *scikit-learn.* A qual se
-encontra na classe *KNeighborsClassifier* do modulo *sklearn.neighbors.*
-(PEDREGOSA et al., 2011)
-
 ## O protocolo de revisão
 
 Essa revisão tem como foco encontrar trabalhos que abordam os sistemas
@@ -503,7 +478,7 @@ A quantidade de resultados apresentados na ACM foram 150 trabalhos
 relacionados a *string* de busca.
 
 ![Tela de celular com publicação numa rede social Descrição gerada
-automaticamente](./pandoc/media/image2.png)
+automaticamente](./pandoc/media/image1.png)
 
 <span id="_Ref40822595" class="anchor"></span>Figura 2 - Motor avançado
 de busca da ACM (próprio, 2020)
@@ -517,7 +492,7 @@ trabalho, foram reduzidos os tipos de publicações aceitas para
 de trabalhos encontrados passou para 83.
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
-automaticamente](./pandoc/media/image3.png)
+automaticamente](./pandoc/media/image2.png)
 
 <span id="_Ref40822631" class="anchor"></span>Figura 3 - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
@@ -529,7 +504,7 @@ conferências e eventos relacionados a área. (ACM RECSYS COMMUNITY.,
 2020)
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
-automaticamente](./pandoc/media/image4.png)
+automaticamente](./pandoc/media/image3.png)
 
 <span id="_Ref40822641" class="anchor"></span>Figura 4 - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
@@ -1016,6 +991,31 @@ recomendação chamado *DCRM* (*Dynamic and Contextual Recommendations of
 Music*), que utiliza de uma análise recorrente do contexto, para
 realizar as recomendações dinâmicas às mudanças do contexto. Esse modelo
 será apresentado com mais detalhes nas subseções a seguir.
+
+## O Algoritmo KNN
+
+O *k-Nearest Neighbor* (KNN) é um método de classificação que busca os k
+pontos dos dados de treino mais pertos do ponto de teste, e então, uma
+classe é atrelada a esse ponto através de uma votação majoritária dos k
+pontos vizinhos. (T.M. COVER, 1967) Na Figura 1 é exemplificado
+graficamente o funcionamento do algoritmo.
+
+![Image for post](./pandoc/media/image6.png)
+
+Figura 1 – Representação gráfica da classificação do algoritmo KNN sobre
+um plano x1 e x2. No plano, os pontos amarelos são a representação da
+classe A, roxos classe B e vermelho é o ponto de teste ***(JOSÉ,
+2018)***
+
+Como é apresentado na Fig1 o algoritmo funciona através da disposição
+das características x1 e x2 sobre um plano, e atribuindo classes a eles
+(no caso: classe A e classe B), então, a partir da predição do ponto de
+teste é encontrado a classe que o representa. (TODO\_REF)
+
+Para rodar o algoritmo de classificação nesse trabalho será utilizado a
+implementação da biblioteca em *python* do *scikit-learn.* A qual se
+encontra na classe *KNeighborsClassifier* do modulo *sklearn.neighbors.*
+(PEDREGOSA et al., 2011)
 
 ## Contexto
 
