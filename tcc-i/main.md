@@ -371,6 +371,11 @@ relacionados a esse assunto para área. Nesse capítulo serão abordados
 alguns trabalhos encontrados, a partir de uma revisão bibliográfica
 realizada sobre o assunto.
 
+Após ser realizado a revisão bibliográfica, será analisado os algoritmos
+e estratégias de recomendação de cada artigo. E então, será desenvolvido
+o sistema de recomendação desse trabalho, utilizando apenas um dos
+algoritmos levantados.
+
 ## Levantamento bibliográfico inicial
 
 Antes do início da revisão, foi encontrado diversos trabalhos
