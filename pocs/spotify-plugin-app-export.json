@@ -466,7 +466,7 @@
       "-MHipOd3SzdksJEidjyI" : {
         "action" : "CHOOSE_FEELING",
         "createdDateTime" : "2020-09-21T04:04:27.405Z",
-        "value" : "feliz"
+        "value" : "feliz;alegre"
       },
       "-MHipSu64CP3m07DR_rL" : {
         "action" : "CHOOSE_ACTIVITY",
