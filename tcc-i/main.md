@@ -1223,14 +1223,11 @@ utilizava do SDK Web do Spotify para reprodução das músicas e captura
 dos eventos gerados pelo usuário. Ela pode ser acessada através do link
 <https://ericoloewe.github.io/computer-science-tcc/>.
 
-A aplicação foi disponibilizada no período do dia 28/09 até o dia 02/10
-através de um e-mail enviado para os usuários, pedindo a eles para
-utilizarem a aplicação, para ela salvar os dados que serão utilizados
-como teste no modelo de classificação desenvolvido nesse trabalho.
-
 ![](./pandoc/media/image7.png)
 
 Figura 11 Tela introdutória da aplicação (próprio, 2020)
+
+### Telas da aplicação
 
 A aplicação foi dividida em 5 telas, e ela inicia com a tela apresentada
 na fig11, a qual apresenta instruções para os usuários de como utilizar
@@ -1296,13 +1293,42 @@ qual possibilita o usuário apresentar uma música que se enquadre melhor
 no contexto que ele está vivendo. Ao selecionar as músicas e clicar em
 próximo, é salvo as informações de sua relação com o contexto vivido.
 
+### Tecnologias utilizadas no desenvolvimento
+
 react
 
-githubpages
+material ui
 
-firebase
+firebase e gtm
 
-testegtm
+## Distribuição da aplicação e coleta de dados
+
+A aplicação foi disponibilizada no período do dia 28/09 até o dia 02/10
+através de um e-mail enviado para os usuários, pedindo a eles para a
+utilizarem. Assim, ela irá salvar os dados que serão utilizados como
+teste no modelo de classificação desenvolvido nesse trabalho.
+
+### Hospedagem
+
+Firebase
+
+Githubpages
+
+GTM
+
+### Coleta do firebase
+
+Firebase export
+
+Estudo python
+
+Estudos realizado json firebase
+
+### Preparação dos dados para o KNN
+
+Eventos =\> tabela
+
+Busca dados spotify
 
 ## Modelagem do sistema *DCRM*
 
