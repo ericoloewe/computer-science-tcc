@@ -200,8 +200,7 @@ Sumário
 [*3.3* Modelagem do sistema *DCRM* 43](#modelagem-do-sistema-dcrm)
 
 [3.3.1 Como o trabalho vai capturar as ações do usuário e enviá-las ao
-sistema?
-43](#como-o-trabalho-vai-capturar-as-ações-do-usuário-e-enviá-las-ao-sistema)
+sistema? 43](#_Toc51603091)
 
 [3.3.2 Como o trabalho vai relacionar as músicas que o usuário gosta aos
 contextos?
@@ -1333,12 +1332,6 @@ Busca dados spotify
 ## Modelagem do sistema *DCRM*
 
 Contexto =\> sistema =\> knn =\> radio ou top 10 do genero
-
-### Como o trabalho vai capturar as ações do usuário e enviá-las ao sistema?
-
-A partir do momento que o usuário utilizar a aplicação, serão
-registradas suas ações, por meio de eventos disponíveis em seus
-componentes. A Figura 12 ilustra o processo para realizar esse registro.
 
 ### Como o trabalho vai relacionar as músicas que o usuário gosta aos contextos?
 
