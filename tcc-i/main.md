@@ -484,7 +484,7 @@ relacionados a *string* de busca.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura 2 - Motor avançado
+<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
 de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
@@ -498,7 +498,7 @@ de trabalhos encontrados passou para 83.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822631" class="anchor"></span>Figura 3 - Resultado de
+<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Um dos principais motivos que levou essa revisão ser realizada através
@@ -510,7 +510,7 @@ conferências e eventos relacionados a área. (ACM RECSYS COMMUNITY.,
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura 4 - Resultado de
+<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
 busca dos journals no motor de busca da ACM (próprio, 2020)
 
 ## ETAPAS DA REVISÃO DOS TRABALHOS
@@ -519,7 +519,7 @@ Com a busca realizada no dia 07/05/20, no motor da ACM, a partir da
 *string* de busca foram encontrados 83 trabalhos, sendo eles: 23 do tipo
 *journal* e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura 5 - Etapas
+<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
 realizadas para filtrar os trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
@@ -541,7 +541,7 @@ tipos e a quantidade de artigos encontrados.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura 6 - Filtro em cima
+<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
 dos trabalhos selecionados através do resumo (próprio, 2020)
 
 ###  Trabalhos selecionados
@@ -550,7 +550,7 @@ O resultado do procedimento de filtro apresentado na Figura 6 abaixo,
 resultou em 4 trabalhos relacionados ao objetivo descrito no protocolo
 de revisão desse trabalho.
 
-<span id="_Ref40822509" class="anchor"></span>Figura 7 - Procedimento de
+<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
@@ -906,7 +906,7 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são apresentados na Figura 7 abaixo.
 
-<span id="_Toc44538330" class="anchor"></span>Figura 8 Fatores da
+<span id="_Toc44538330" class="anchor"></span>Figura 7 Fatores da
 preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
@@ -1007,7 +1007,7 @@ graficamente o funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image6.png)
 
-Figura 1 – Representação gráfica da classificação do algoritmo KNN sobre
+Figura 8 – Representação gráfica da classificação do algoritmo KNN sobre
 um plano x1 e x2. No plano, os pontos amarelos são a representação da
 classe A, roxos classe B e vermelho é o ponto de teste ***(JOSÉ,
 2018)***
@@ -1294,11 +1294,22 @@ próximo, é salvo as informações de sua relação com o contexto vivido.
 
 ### Tecnologias utilizadas no desenvolvimento
 
-react
+Para desenvolver a aplicação web, foi utilizado a *library React* que
+auxilia na construção de componentes e interfaces. Para estilizar os
+componentes e páginas do React, foi utilizado o framework Material ui, o
+qual possui estilos prontos baseados no Material (interface do Android).
 
-material ui
+Inicialmente, para persistir os eventos do usuário, foi utilizado o
+*Google Analytics* (uma ferramenta específica para eventos). Porém,
+devido à falta de customização da ferramenta, foi trocado para o
+*Realtime Database* do Firebase, o qual possui uma vasta opção de
+customização, e tornaria possível a adição do *timestamp* a cada evento.
+Com ela foi possível persistir os eventos em um formato NoSQL.
 
-firebase e gtm
+No início, para enviar o evento a plataforma, foi utilizado o GTM
+(Google Tag Manager) para fazer esse intermédio, porém, devido a algumas
+limitações da ferramenta, foi removido essa dependência e enviado os
+eventos diretamente do *Javascript*.
 
 ## Distribuição da aplicação e coleta de dados
 
@@ -1309,11 +1320,16 @@ teste no modelo de classificação desenvolvido nesse trabalho.
 
 ### Hospedagem
 
-Firebase
+A aplicação foi publicada na ferramenta disponível no Github chamada
+*Github Pages*. Essa é uma ferramenta gratuita, que possibilita a
+publicação de páginas estáticas. O link final de acesso a aplicação
+ficou: <https://ericoloewe.github.io/computer-science-tcc/>
 
-Githubpages
-
-GTM
+Os eventos das músicas foram salvos em outra plataforma chamada
+Firebase. Ela é uma ferramenta paga, porém, para o trabalho foi
+utilizado a versão gratuita, que suporta o acesso de até 100 usuários
+simultâneos. Demais eventos como “quantidade de usuários acessando o
+*app*” foram salvos utilizando as aplicações GTM e Google Analytics.
 
 ### Coleta do firebase
 
@@ -1327,11 +1343,51 @@ Estudos realizado json firebase
 
 Eventos =\> tabela
 
-Busca dados spotify
+Busca dados Spotify
+
+![Diagrama Descrição gerada automaticamente](./pandoc/media/image13.jpg)
+
+Figura 17 Visão macro das etapas para transformar os eventos registrados
+no firebase na tabela que sera rodado o KNN (próprio, 2020)
+
+...
+
+![Uma imagem contendo Interface gráfica do usuário Descrição gerada
+automaticamente](./pandoc/media/image14.jpg)
+
+Figura 18 Representação dos eventos salvos no Firebase (próprio, 2020)
+
+...
+
+![Tela de computador com texto preto sobre fundo branco Descrição gerada
+automaticamente](./pandoc/media/image15.jpg)
+
+Figura 19 Representação das listas geradas na etapa “Separa contexto”
+(próprio, 2020)
+
+...
+
+![Diagrama Descrição gerada automaticamente](./pandoc/media/image16.jpg)
+
+Figura 20 Representação das listas geradas na etapa “separa contexto das
+músicas” (próprio, 2020)
+
+...
+
+![Tabela Descrição gerada automaticamente](./pandoc/media/image17.jpg)
+
+Figura 21 Representação da tabela na etapa “separa contexto das músicas”
+(próprio, 2020)
+
+...
 
 ## Modelagem do sistema *LORS*
 
-Contexto =\> sistema =\> knn =\> radio ou top 10 do genero
+Contexto =\> sistema =\> knn =\> radio ou top 10 do gênero
+
+![Diagrama Descrição gerada automaticamente](./pandoc/media/image18.jpg)
+
+Figura 22 Visão macro do sistema LORS (próprio, 2020)
 
 ### Como o trabalho vai relacionar as músicas que o usuário gosta aos contextos?
 
