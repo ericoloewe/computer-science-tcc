@@ -174,7 +174,7 @@ Sumário
 33](#conclusões-dos-trabalhos-revisados)
 
 [3 Modelagem do “*Dynamic and Contextual Recommendations of Music*”
-35](#modelagem-do-dynamic-and-contextual-recommendations-of-music)
+35](#modelagem-do-loewes-recommender-system)
 
 [3.1 Contexto 35](#contexto)
 
@@ -197,7 +197,7 @@ Sumário
 
 [3.2.2 Resultados do questionário 42](#resultados-do-questionário)
 
-[*3.3* Modelagem do sistema *DCRM* 43](#modelagem-do-sistema-dcrm)
+[*3.3* Modelagem do sistema *DCRM* 43](#modelagem-do-sistema-lors)
 
 [3.3.1 Como o trabalho vai capturar as ações do usuário e enviá-las ao
 sistema? 43](#_Toc51603091)
@@ -984,7 +984,7 @@ estar mais voltado a uma grande divisão das classes dos *datasets*.
 (RÄTSCH, 2004) Sobrando somente o algoritmo KNN para ser testado no
 sistema desenvolvido nesse trabalho.
 
-# Modelagem do “*Dynamic and Contextual Recommendations of Music*”
+# Modelagem do “*Loewe’s Recommender system*”
 
 A partir da revisão bibliográfica realizada, foi possível conhecer
 alguns sistemas e modelos que utilizam do contexto para realizar as
@@ -992,10 +992,10 @@ recomendações musicais, tornando possível entender certas lacunas que
 não foram analisadas nessa área de pesquisa.
 
 Com isso, foi possível entender e desenvolver um modelo de sistemas de
-recomendação chamado *DCRM* (*Dynamic and Contextual Recommendations of
-Music*), que utiliza de uma análise recorrente do contexto, para
-realizar as recomendações dinâmicas às mudanças do contexto. Esse modelo
-será apresentado com mais detalhes nas subseções a seguir.
+recomendação chamado *LORS* (*Loewe’s Recommender System*), que utiliza
+de uma análise recorrente do contexto, para realizar as recomendações
+dinâmicas às mudanças do contexto. Esse modelo será apresentado com mais
+detalhes nas subseções a seguir.
 
 ## O Algoritmo KNN
 
@@ -1329,7 +1329,7 @@ Eventos =\> tabela
 
 Busca dados spotify
 
-## Modelagem do sistema *DCRM*
+## Modelagem do sistema *LORS*
 
 Contexto =\> sistema =\> knn =\> radio ou top 10 do genero
 
