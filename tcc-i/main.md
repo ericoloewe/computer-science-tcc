@@ -1007,7 +1007,7 @@ graficamente o funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image6.png)
 
-Figura – Representação gráfica da classificação do algoritmo KNN sobre
+Figura 8 – Representação gráfica da classificação do algoritmo KNN sobre
 um plano x1 e x2. No plano, os pontos amarelos são a representação da
 classe A, roxos classe B e vermelho é o ponto de teste ***(JOSÉ,
 2018)***
@@ -1146,10 +1146,10 @@ usuários que utilizarão a aplicação, sendo assim, foram utilizadas
 perguntas que permitam entender suas preferências, atividades, dentre
 outros fatores. As perguntas do questionário estão listadas no Quadro 2:
 
-Quadro Perguntas e respostas disponibilizadas a um certo público através
-dos formulários do Google. (próprio, 2020)
+Quadro 2 Perguntas e respostas disponibilizadas a um certo público
+através dos formulários do Google. (próprio, 2020)
 
-| Pergunta                                                                                     | Possíveis respostas                                                                                                                                                                                                                                                       |
+| **Pergunta**                                                                                 | **Possíveis respostas**                                                                                                                                                                                                                                                   |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1\. Qual o aplicativo / reprodutor de música você utiliza atualmente?                        | Spotify, Deezer, Youtube Music, TIDAL, Apple Music, Google Play Music, Rádio Outro, qual?                                                                                                                                                                                 |
 | 2\. Você acha que as recomendações musicais realizadas via software poderiam ser melhoradas? | Sim, não                                                                                                                                                                                                                                                                  |
@@ -1224,7 +1224,7 @@ dos eventos gerados pelo usuário. Ela pode ser acessada através do link
 
 ![](./pandoc/media/image7.png)
 
-Figura Tela introdutória da aplicação (próprio, 2020)
+Figura 11 Tela introdutória da aplicação (próprio, 2020)
 
 ### Telas da aplicação
 
@@ -1235,7 +1235,7 @@ disponibiliza opções de login no Spotify.
 
 ![](./pandoc/media/image8.png)
 
-Figura Tela de login da aplicação (próprio, 2020)
+Figura 12 Tela de login da aplicação (próprio, 2020)
 
 A fig13 apresenta o cadastro do contexto na aplicação. O processo é
 dividido em 3 etapas: (i) “Como você está se sentindo nesse momento?”;
@@ -1246,7 +1246,7 @@ cada 30min.
 
 ![](./pandoc/media/image9.png)
 
-Figura Tela de preenchimento do contexto (próprio, 2020)
+Figura 13 Tela de preenchimento do contexto (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
 reproduza as músicas no plugin. Para isso, foi criado a tela apresentada
@@ -1255,7 +1255,7 @@ ser pressionado, habilita a reprodução no plugin.
 
 ![](./pandoc/media/image10.png)
 
-Figura Tela da lista de dispositivos do Spotify (próprio, 2020)
+Figura 14 Tela da lista de dispositivos do Spotify (próprio, 2020)
 
 Por fim, foi desenvolvido a tela principal, que é apresentado na fig15.
 Nessa tela, é realizado toda interação do usuário no período em que ele
@@ -1273,7 +1273,7 @@ está ouvindo as músicas, as possíveis interações estão listadas abaixo.
 
 ![](./pandoc/media/image11.png)
 
-Figura Tela principal, a qual apresenta a música sendo reproduzida ao
+Figura 15 Tela principal, a qual apresenta a música sendo reproduzida ao
 usuário (próprio, 2020)
 
 Ao clicar no botão “gostei”, é salvo a informação de que o usuário
@@ -1284,8 +1284,8 @@ identifique melhor naquele momento.
 
 ![](./pandoc/media/image12.png)
 
-Figura Tela de busca de músicas que encaixem melhor no momento (próprio,
-2020)
+Figura 16 Tela de busca de músicas que encaixem melhor no momento
+(próprio, 2020)
 
 A ação de buscar música, irá levar para a tela apresentada na fig16, a
 qual possibilita o usuário apresentar uma música que se enquadre melhor
@@ -1335,13 +1335,13 @@ simultâneos. Demais eventos como “quantidade de usuários acessando o
 ### Coleta do Firebase
 
 Ao final do experimento, foi exportado os eventos dos usuários em um
-JSON através do console do *Realtime Database* do Firebase. A fig17
+JSON através do console do *Realtime Database* do Firebase. A Figura 17
 apresenta o console, a estrutura de dados dos eventos e o botão de
 exportar do *Realtime DB*.
 
 ![](./pandoc/media/image13.png)
 
-Figura Console do *Realtime Database* do Firebase (próprio, 2020)
+Figura 17 Console do *Realtime Database* do Firebase (próprio, 2020)
 
 Com o JSON e a estrutura de dados pronta, foi realizado alguns estudos
 em *python* para adquirir o conhecimento necessário para obter os dados
@@ -1353,45 +1353,78 @@ base extraída e preparada do JSON.
 
 ### Preparação dos dados para o KNN
 
-Eventos =\> tabela
+Para salvar os eventos da aplicação, foi criado uma lista chamada
+*events*, essa lista é composta pela lista de usuários, onde cada
+usuário possui a lista de eventos dentro. Cada eventos é composto pela
+seguinte estrutura: (i) action, ação realizada pelo usuário,
+apresentadas no quadro3; (ii) createdDateTime, data da execução do
+evento; (iii) value, valores do evento separados por “;”.
 
-Busca dados Spotify
+Quadro 3 Lista de ações possíveis nos eventos (próprio, 2020)
+
+| **Action**                    | **Descrição**                                 |
+| ----------------------------- | --------------------------------------------- |
+| CHANGE\_MUSIC\_TIME           | Altera o tempo da música durante a reprodução |
+| CHANGE\_TO\_NEXT\_MUSIC       |                                               |
+| CHANGE\_TO\_PREVIOUS\_MUSIC   |                                               |
+| CHOOSE\_ACTIVITY              |                                               |
+| CHOOSE\_FEELING               |                                               |
+| CHOOSE\_FEELING\_TO\_BE\_LIKE |                                               |
+| CHOOSE\_LOCATION              |                                               |
+| HATED\_MUSIC                  |                                               |
+| HIDE\_DETAILS                 |                                               |
+| LIKED\_ARTIST                 |                                               |
+| LIKED\_GENRE                  |                                               |
+| LIKED\_MUSIC                  |                                               |
+| LOAD\_LOCATION                |                                               |
+| PAUSE\_MUSIC                  |                                               |
+| PLAY\_MUSIC                   |                                               |
+| RESTART\_MUSIC                |                                               |
+| SHOW\_DETAILS                 |                                               |
+
+Carregamento do arquivo
+
+Falar sobre figuras abaixo
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image14.jpg)
 
-Figura Visão macro das etapas para transformar os eventos registrados no
-firebase na tabela que sera rodado o KNN (próprio, 2020)
+Figura 18 Visão macro das etapas para transformar os eventos registrados
+no firebase na tabela que sera rodado o KNN (próprio, 2020)
 
 ...
 
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
 automaticamente](./pandoc/media/image15.jpg)
 
-Figura Representação dos eventos salvos no Firebase (próprio, 2020)
+Figura 19 Representação dos eventos salvos no Firebase (próprio, 2020)
 
 ...
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image16.jpg)
 
-Figura Representação das listas geradas na etapa “Separa contexto”
+Figura 20 Representação das listas geradas na etapa “Separa contexto”
 (próprio, 2020)
 
 ...
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image17.jpg)
 
-Figura Representação das listas geradas na etapa “separa contexto das
+Figura 21 Representação das listas geradas na etapa “separa contexto das
 músicas” (próprio, 2020)
 
 ...
 
 ![Tabela Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
-Figura Representação da tabela na etapa “separa contexto das músicas”
+Figura 22 Representação da tabela na etapa “separa contexto das músicas”
 (próprio, 2020)
 
-...
+Falar sobre train\_test\_split
+
+Falar sobre KNeighborsClassifier
+
+… model.score(X\_test, y\_test)
 
 ## Modelagem do sistema *LORS*
 
@@ -1399,7 +1432,7 @@ Contexto =\> sistema =\> knn =\> radio ou top 10 do gênero
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image19.jpg)
 
-Figura Visão macro do sistema LORS (próprio, 2020)
+Figura 23 Visão macro do sistema LORS (próprio, 2020)
 
 ### Como o trabalho vai relacionar as músicas que o usuário gosta aos contextos?
 
