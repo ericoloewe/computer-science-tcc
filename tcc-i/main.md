@@ -1356,9 +1356,9 @@ base extraída e preparada do JSON.
 Para salvar os eventos da aplicação, foi criado uma lista chamada
 *events*, essa lista é composta pela lista de usuários, onde cada
 usuário possui a lista de eventos dentro. Cada eventos é composto pela
-seguinte estrutura: (i) action, ação realizada pelo usuário,
-apresentadas no quadro3; (ii) createdDateTime, data da execução do
-evento; (iii) value, valores do evento separados por “;”.
+seguinte estrutura: (i) *action*, ação realizada pelo usuário,
+apresentadas no quadro3; (ii) *createdDateTime*, data da execução do
+evento; (iii) *value*, valores do evento separados por “;”.
 
 Quadro 3 Lista de ações possíveis nos eventos (próprio, 2020)
 
@@ -1382,9 +1382,14 @@ Quadro 3 Lista de ações possíveis nos eventos (próprio, 2020)
 | RESTART\_MUSIC                |                                               |
 | SHOW\_DETAILS                 |                                               |
 
-Carregamento do arquivo
-
-Falar sobre figuras abaixo
+A fig 18 apresenta as etapas de preparação dos dados desde o
+carregamento dos dados do arquivo. Na etapa “Carrega JSON” foi realizado
+o carregamento do arquivo a partir da biblioteca padrão do python
+“open”. Para a interpretação, foi utilizado a biblioteca *json*, que
+possibilita transformar o conteúdo *string* em um dicionário. Do
+dicionário, foi obtido os usuários e seus eventos e transformado em
+outro dicionário *users*, cujo a *key* é o id do usuário e o conteúdo
+sua lista de eventos.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image14.jpg)
 
