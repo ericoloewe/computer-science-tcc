@@ -1523,16 +1523,23 @@ Após a busca dos dados ao Spotify, foi obtido a lista dos gêneros das
 músicas através dos artistas, e então adicionados à lista de músicas
 *musicTable* representada na Figura 22. Foi separado os gêneros um por
 linha e no fim, removido a música, pois ela iria atrapalhar o resultado
-do algoritmo.
+do algoritmo. Com isso, foi criado a lista *genreTable* e deixado de
+usar o *musicTable*.
 
 Com a tabela completa, foi realizado um tratamento dos valores dos
 eventos que eram múltiplos, isso é, continham mais de uma informação nos
 mesmos eventos através do “;”. Nesse tratamento, foi quebrado os valores
 dos eventos um a um.
 
+![](./pandoc/media/image19.png)
+
+Figura 23 *head()* do *dataframe* criado a partir da variável
+*genreTable* (próprio, 2020)
+
 No fim, foi utilizado a lib *preprocessing* do *sklearn* para
 transformar as características e classes de cada evento da tabela em
-números inteiros, isso é necessário para rodar o algoritmo KNN.
+números inteiros, isso é necessário para rodar o algoritmo KNN. O
+resultado da tabela é apresentado na Figura 23.
 
 ### Testes com KNN
 
@@ -1546,9 +1553,9 @@ Falar sobre KNeighborsClassifier
 
 Contexto =\> sistema =\> knn =\> radio ou top 10 do gênero
 
-![Diagrama Descrição gerada automaticamente](./pandoc/media/image19.jpg)
+![Diagrama Descrição gerada automaticamente](./pandoc/media/image20.jpg)
 
-<span id="_Toc53953349" class="anchor"></span>Figura 23 Visão macro do
+<span id="_Toc53953349" class="anchor"></span>Figura 24 Visão macro do
 sistema LORS (próprio, 2020)
 
 ### Como o trabalho vai relacionar as músicas que o usuário gosta aos contextos?
