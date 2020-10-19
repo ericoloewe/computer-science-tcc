@@ -1372,9 +1372,11 @@ eventos diretamente do *Javascript*.
 ## Distribuição da aplicação e coleta de dados
 
 A aplicação foi disponibilizada no período do dia 28/09 até o dia 02/10
-através de um e-mail enviado para os usuários, pedindo a eles para a
-utilizarem. Assim, ela irá salvar os dados que serão utilizados como
-teste no modelo de classificação desenvolvido nesse trabalho.
+através de um e-mail com instruções de como utilizar a aplicação, que
+foi enviado para os 144 usuários que participaram do questionário e
+optaram por participar da pesquisa. Assim, ela irá salvar os dados que
+serão utilizados como teste no modelo de classificação desenvolvido
+nesse trabalho.
 
 ### Pré-teste
 
