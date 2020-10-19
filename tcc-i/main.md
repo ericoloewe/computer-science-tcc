@@ -1512,9 +1512,14 @@ músicas através dos artistas, e então adicionados à lista de músicas
 linha e no fim, removido a música, pois ela iria atrapalhar o resultado
 do algoritmo.
 
-Tratar contextos duplicado
+Com a tabela completa, foi realizado um tratamento dos valores dos
+eventos que eram múltiplos, isso é, continham mais de uma informação nos
+mesmos eventos através do “;”. Nesse tratamento, foi quebrado os valores
+dos eventos um a um.
 
-Preparar classes para o KNN
+No fim, foi utilizado a lib *preprocessing* do *sklearn* para
+transformar as características e classes de cada evento da tabela em
+números inteiros, isso é necessário para rodar o algoritmo KNN.
 
 ### Testes com KNN
 
