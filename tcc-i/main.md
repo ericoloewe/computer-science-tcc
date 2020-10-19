@@ -1396,14 +1396,21 @@ sua lista de eventos.
 Figura 18 Visão macro das etapas para transformar os eventos registrados
 no firebase na tabela que sera rodado o KNN (próprio, 2020)
 
-...
+Na segunda etapa “Separa Contexto”, representada na fig19, é realizado a
+quebra dos eventos de cada usuário por seus contextos. Criando assim,
+uma relação de cada contexto, com as músicas reproduzidas, que é
+representado na fig20.
 
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
 automaticamente](./pandoc/media/image15.jpg)
 
 Figura 19 Representação dos eventos salvos no Firebase (próprio, 2020)
 
-...
+Na fig21 é representada a etapa “Separa contexto das músicas”, pois na
+reprodução das músicas, é gerado os eventos separadamente, e nessa
+etapa, é criado uma relação da música escutada, com os eventos
+registrados, gerando no fim, uma tabela semelhante a fig22 das músicas e
+seus contextos.
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image16.jpg)
@@ -1411,19 +1418,41 @@ automaticamente](./pandoc/media/image16.jpg)
 Figura 20 Representação das listas geradas na etapa “Separa contexto”
 (próprio, 2020)
 
-...
+Para criar essa relação é realizado um loop em cima dos eventos de cada
+contexto, e criado uma lista chamada *musicTable*, a qual é preenchida
+com os seguintes valores: *uri*, *like*, *hate* e *restart* relacionados
+ao contexto da música e *feeling*, *activity* e *location* relacionados
+ao contexto do usuário. Os contextos *like*, *hate* e *restart* são
+representados pelo número de vezes que cada um aconteceu durante a
+reprodução.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image17.jpg)
 
 Figura 21 Representação das listas geradas na etapa “separa contexto das
 músicas” (próprio, 2020)
 
-...
+Nas próximas duas etapas “busca informações das músicas” e “busca
+informações dos artistas (gênero)”, é realizado uma busca nas API’s do
+Spotify, utilizando os uris da música e artistas, para no fim obter os
+gêneros musicais. Devido a uma limitação do Spotify, essa busca é
+realizada de 50 em 50 uris. O resultado dessas buscas é um dicionário
+chamado *artistsMap* que possui a relação dos uris com os dados de cada
+artista.
 
 ![Tabela Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
 Figura 22 Representação da tabela na etapa “separa contexto das músicas”
 (próprio, 2020)
+
+Após a busca dos dados ao Spotify, foi obtido a lista dos gêneros das
+músicas através dos artistas, e então adicionados à lista de músicas
+*musicTable* representada na Figura 22. Foi separado os gêneros um por
+linha e no fim, removido a música, pois ela iria atrapalhar o resultado
+do algoritmo.
+
+Tratar contextos duplicado
+
+Preparar classes para o KNN
 
 Falar sobre train\_test\_split
 
