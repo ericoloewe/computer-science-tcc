@@ -1543,11 +1543,34 @@ resultado da tabela é apresentado na Figura 23.
 
 ### Testes com KNN
 
-Falar sobre train\_test\_split
+No final, o *genreTable* foi transformado em um data frame da lib panda.
+Então foi realizado a separação da coluna gênero da tabela, com isso,
+obtido as variáveis X (características) e y (classes). As duas são
+utilizadas na função *train\_test\_split* para obter as características
+de treino (*X\_train*), características de teste (*X\_test*), classes de
+treino (*y\_train*) e classes de teste (*y\_test*). O tamanho da base de
+teste pode ser informado para o *train\_test\_split* através do
+parâmetro *test\_size*, que nesse caso foi 0,3.
 
-Falar sobre KNeighborsClassifier
+Para rodar o KNN, foi utilizado a classe *KNeighborsClassifier* da lib
+*sklearn.neighbors*, nela, pode ser informado o numero de vizinhos
+levados em consideração a partir do parâmetro *n\_neighbors*, que nesse
+caso foi 3.
 
-… model.score(X\_test, y\_test)
+Iniciando a classe, obtemos a variável *model*, com ela, informamos os
+dados de treino (*X\_train*, *y\_train*) através do método *fit*, o qual
+suporta 2 parâmetros: (i) dados de treino; (ii) valores alvo. Rodando o
+*fit*, já é possível utilizar o modelo criado para predizer os próximos
+alvos, que no *sklearn* é rodado através do método *predict*, passando
+os valores para realizar a predição (*X\_test*), que tem como retorno a
+classe que se adequa melhor ao modelo.
+
+No fim, é realizado um teste através do método *score* na performance da
+predição do algoritmo e modelo informado ao *sklearn*. Esse método,
+recebe por parâmetro as características de teste retiradas do modelo
+(*X\_test*) e as classes de teste retiradas do modelo (*y\_test*) e
+retorna à acurácia do modelo gerado. O qual obteve uma média de 0,15 nos
+testes realizados.
 
 ## Modelagem do sistema *LORS*
 
