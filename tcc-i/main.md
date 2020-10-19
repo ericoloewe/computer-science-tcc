@@ -1376,6 +1376,17 @@ através de um e-mail enviado para os usuários, pedindo a eles para a
 utilizarem. Assim, ela irá salvar os dados que serão utilizados como
 teste no modelo de classificação desenvolvido nesse trabalho.
 
+### Pré-teste
+
+Com a aplicação finalizada e hospedada, foi enviado inicialmente para o
+professor orientador para validar o desenvolvimento feito. Com isso, foi
+encontrado certos ajustes a serem feitos antes de ser divulgado a
+aplicação. Então, foi corrigido a aplicação, enviado para mais 5
+pessoas testarem e novamente foi encontrado alguns pontos a serem
+corrigidos. Por fim, foi enviado o e-mail para um grupo supervisionado
+de 8 pessoas, para validar sua aceitação e entendimento do funcionamento
+da aplicação.
+
 ### Hospedagem
 
 A aplicação foi publicada na ferramenta disponível no Github chamada
