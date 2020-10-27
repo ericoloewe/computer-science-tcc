@@ -2,8 +2,7 @@ UNIVERSIdade FEEVALE
 
 ÉRico De SOUZA loewe
 
-Utilização do KNN para recomendação de generos musicais atraves do
-contexto
+Uso do KNN para recomendação de generos musicais atraves do contexto
 
 Novo Hamburgo
 
@@ -11,8 +10,7 @@ Novo Hamburgo
 
 Érico De SOUZA LOEWE
 
-SISTEMA DE RECOMENDAÇÃO MUSICAL BASEADO EM CONTEXTO COMPORTAMENTAL E DE
-AMBIENTE
+USO DO KNN PARA RECOMENDAÇÃO DE GENEROS MUSICAIS ATRAVES DO CONTEXTO
 
 Trabalho de Conclusão de Curso
 
@@ -77,90 +75,99 @@ Spotify.
 Lista de Figuras
 
 [Figura 1 - Motor avançado de busca da ACM (próprio, 2020)
-17](#_Ref40822595)
+18](#_Ref40822595)
 
 [Figura 2 - Resultado de busca dos proceedings no motor de busca da ACM
-(próprio, 2020) 18](#_Ref40822631)
+(próprio, 2020) 19](#_Ref40822631)
 
 [Figura 3 - Resultado de busca dos journals no motor de busca da ACM
-(próprio, 2020) 19](#_Ref40822641)
+(próprio, 2020) 20](#_Ref40822641)
 
 [Figura 4 - Etapas realizadas para filtrar os trabalhos encontrados no
-motor de busca da ACM (próprio, 2020) 19](#_Ref40822414)
+motor de busca da ACM (próprio, 2020) 20](#_Ref40822414)
 
 [Figura 5 - Filtro em cima dos trabalhos selecionados através do resumo
-(próprio, 2020) 20](#_Ref40822493)
+(próprio, 2020) 21](#_Ref40822493)
 
 [Figura 6 - Procedimento de filtro realizado baseado nos trabalhos
-encontrados no motor de busca da ACM (próprio, 2020) 20](#_Ref40822509)
+encontrados no motor de busca da ACM (próprio, 2020) 21](#_Ref40822509)
 
 [Figura 7 Fatores da preferência musical (próprio, 2020)
-30](#_Toc53953333)
+31](#_Toc54642170)
 
 [Figura 8 – Representação gráfica da classificação do algoritmo KNN
 sobre um plano x1 e x2. No plano, os pontos amarelos são a representação
 da classe A, roxos classe B e vermelho é o ponto de teste ***(JOSÉ,
-2018)*** 35](#_Ref52742150)
+2018)*** 36](#_Ref52742150)
 
 [Figura 9 Apresentação dos contextos utilizados no trabalho (próprio,
-2020) 37](#_Ref42447869)
+2020) 38](#_Ref42447869)
 
 [Figura 10 Etapas do desenvolvimento do sistema de recomendação musical
-(próprio, 2020) 40](#_Ref42452795)
+(próprio, 2020) 41](#_Ref42452795)
 
 [Figura 11 Tela introdutória da aplicação (próprio, 2020)
-45](#_Toc53953337)
+46](#_Toc54642174)
 
-[Figura 12 Tela de login da aplicação (próprio, 2020) 46](#_Toc53953338)
+[Figura 12 Tela de login da aplicação (próprio, 2020) 47](#_Toc54642175)
 
 [Figura 13 Tela de preenchimento do contexto (próprio, 2020)
-47](#_Toc53953339)
+48](#_Toc54642176)
 
 [Figura 14 Tela da lista de dispositivos do Spotify (próprio, 2020)
-48](#_Toc53953340)
+49](#_Toc54642177)
 
 [Figura 15 Tela principal, a qual apresenta a música sendo reproduzida
-ao usuário (próprio, 2020) 49](#_Toc53953341)
+ao usuário (próprio, 2020) 50](#_Toc54642178)
 
 [Figura 16 Tela de busca de músicas que encaixem melhor no momento
-(próprio, 2020) 50](#_Toc53953342)
+(próprio, 2020) 51](#_Toc54642179)
 
 [Figura 17 Console do *Realtime Database* do Firebase (próprio, 2020)
-52](#_Ref53931970)
+53](#_Ref53931970)
 
 [Figura 18 Visão macro das etapas para transformar os eventos
 registrados no firebase na tabela que sera rodado o KNN (próprio, 2020)
-54](#_Toc53953344)
+55](#_Toc54642181)
 
 [Figura 19 Representação dos eventos salvos no Firebase (próprio, 2020)
-54](#_Toc53953345)
+55](#_Toc54642182)
 
 [Figura 20 Representação das listas geradas na etapa “Separa contexto”
-(próprio, 2020) 55](#_Toc53953346)
+(próprio, 2020) 56](#_Toc54642183)
 
 [Figura 21 Representação das listas geradas na etapa “separa contexto
-das músicas” (próprio, 2020) 55](#_Toc53953347)
+das músicas” (próprio, 2020) 56](#_Toc54642184)
 
 [Figura 22 Representação da tabela na etapa “separa contexto das
-músicas” (próprio, 2020) 56](#_Toc53953348)
+músicas” (próprio, 2020) 57](#_Toc54642185)
 
-[Figura 23 Visão macro do sistema LORS (próprio, 2020)
-57](#_Toc53953349)
+[Figura 23 *head()* do *dataframe* criado a partir da variável
+*genreTable* (próprio, 2020) 58](#_Ref53955795)
+
+[Figura 24 Visão macro do sistema LORS (próprio, 2020)
+59](#_Toc54642187)
 
 Lista de Quadros
 
 [Quadro 1 Relação das funcionalidades desenvolvidas em cada artigo
-revisado 32](#_Ref42381546)
+revisado 33](#_Ref42381546)
 
 [Quadro 2 Perguntas e respostas disponibilizadas a um certo público
-através dos formulários do Google. (próprio, 2020) 41](#_Ref48857312)
+através dos formulários do Google. (próprio, 2020) 42](#_Ref48857312)
 
 [Quadro 3 Lista de ações possíveis nos eventos (próprio, 2020)
-53](#_Toc53953293)
+54](#_Toc54642190)
 
 Lista de Abreviaturas e Siglas
 
 <table>
+<thead>
+<tr class="header">
+<th>LORS</th>
+<th>Loewe’s Recommender System</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td><p>RecSys</p>
@@ -180,93 +187,100 @@ Lista de Abreviaturas e Siglas
 <p>Activity-aware Intent Recommendation</p>
 <p>RecSys do Spotify</p></td>
 </tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
 </tbody>
 </table>
 
 Sumário
 
-[1 Introdução 11](#introdução)
+[1 Introdução 12](#introdução)
 
-[2 Trabalhos relacionados 15](#trabalhos-relacionados)
+[2 Trabalhos relacionados 16](#trabalhos-relacionados)
 
 [2.1 Levantamento bibliográfico inicial
-15](#levantamento-bibliográfico-inicial)
+16](#levantamento-bibliográfico-inicial)
 
-[2.2 O protocolo de revisão 16](#o-protocolo-de-revisão)
+[2.2 O protocolo de revisão 17](#o-protocolo-de-revisão)
 
-[2.3 PROCURA NOS MOTORES DE BUSCA 17](#procura-nos-motores-de-busca)
+[2.3 PROCURA NOS MOTORES DE BUSCA 18](#procura-nos-motores-de-busca)
 
 [2.4 ETAPAS DA REVISÃO DOS TRABALHOS
-19](#etapas-da-revisão-dos-trabalhos)
+20](#etapas-da-revisão-dos-trabalhos)
 
-[2.4.1 Trabalhos selecionados 20](#trabalhos-selecionados)
+[2.4.1 Trabalhos selecionados 21](#trabalhos-selecionados)
 
 [2.5 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
-31](#funcionalidades-dos-trabalhos-investigados)
+32](#funcionalidades-dos-trabalhos-investigados)
 
 [2.6 Conclusões dos trabalhos revisados
-34](#conclusões-dos-trabalhos-revisados)
+35](#conclusões-dos-trabalhos-revisados)
 
-[3 Modelagem do “*Loewe’s Recommender system*”
-35](#modelagem-do-loewes-recommender-system)
+[3 Modelagem do “*Loewe’s Recommender system*” 36](#_Toc54642200)
 
-[3.1 O Algoritmo KNN 35](#o-algoritmo-knn)
+[3.1 O Algoritmo KNN 36](#o-algoritmo-knn)
 
-[3.2 Contexto 36](#contexto)
+[3.2 Contexto 37](#contexto)
 
 [3.2.1 O que é o contexto comportamental?
-37](#o-que-é-o-contexto-comportamental)
+38](#o-que-é-o-contexto-comportamental)
 
 [3.2.2 O que é o contexto de ambiente?
-38](#o-que-é-o-contexto-de-ambiente)
+39](#o-que-é-o-contexto-de-ambiente)
 
 [3.2.3 Como serão obtidos os contextos?
-38](#como-serão-obtidos-os-contextos)
+39](#como-serão-obtidos-os-contextos)
 
 [3.2.4 O que são as ações do usuário?
-39](#o-que-são-as-ações-do-usuário)
+40](#o-que-são-as-ações-do-usuário)
 
 [3.3 pesquisa com usuários sobre recomendação musical
-39](#pesquisa-com-usuários-sobre-recomendação-musical)
+40](#pesquisa-com-usuários-sobre-recomendação-musical)
 
-[3.3.1 Pré-teste do questionário 43](#pré-teste-do-questionário)
+[3.3.1 Pré-teste do questionário 44](#pré-teste-do-questionário)
 
-[3.3.2 Resultados do questionário 43](#resultados-do-questionário)
+[3.3.2 Resultados do questionário 44](#resultados-do-questionário)
 
-[3.4 Desenvolvimento Do plugin 44](#desenvolvimento-do-plugin)
+[3.4 Desenvolvimento Do plugin 45](#desenvolvimento-do-plugin)
 
-[3.4.1 Telas da aplicação 45](#telas-da-aplicação)
+[3.4.1 Telas da aplicação 46](#telas-da-aplicação)
 
 [3.4.2 Tecnologias utilizadas no desenvolvimento
-50](#tecnologias-utilizadas-no-desenvolvimento)
+51](#tecnologias-utilizadas-no-desenvolvimento)
 
 [3.5 Distribuição da aplicação e coleta de dados
-51](#distribuição-da-aplicação-e-coleta-de-dados)
+52](#distribuição-da-aplicação-e-coleta-de-dados)
 
-[3.5.1 Hospedagem 51](#hospedagem)
+[3.5.1 Pré-teste 52](#pré-teste)
 
-[3.5.2 Coleta do Firebase 52](#coleta-do-firebase)
+[3.5.2 Hospedagem 52](#hospedagem)
 
-[3.5.3 Preparação dos dados para o KNN
-52](#preparação-dos-dados-para-o-knn)
+[3.5.3 Coleta do Firebase 53](#coleta-do-firebase)
 
-[3.5.4 Testes com KNN 57](#testes-com-knn)
+[4 SISTEMA LORS 54](#sistema-lors)
 
-[*3.6* Modelagem do sistema *LORS* 57](#modelagem-do-sistema-lors)
+[4.1.1 Preparação dos dados para o KNN
+54](#preparação-dos-dados-para-o-knn)
 
-[3.6.1 Como o trabalho vai relacionar as músicas que o usuário gosta aos
+[4.1.2 Testes com KNN 58](#testes-com-knn)
+
+[*4.2* Modelagem do sistema *LORS* 59](#modelagem-do-sistema-lors)
+
+[4.2.1 Como o trabalho vai relacionar as músicas que o usuário gosta aos
 contextos?
-57](#como-o-trabalho-vai-relacionar-as-músicas-que-o-usuário-gosta-aos-contextos)
+59](#como-o-trabalho-vai-relacionar-as-músicas-que-o-usuário-gosta-aos-contextos)
 
-[3.6.2 Como o trabalho vai recomendar novas músicas a partir da relação
+[4.2.2 Como o trabalho vai recomendar novas músicas a partir da relação
 de contexto x música?
-58](#como-o-trabalho-vai-recomendar-novas-músicas-a-partir-da-relação-de-contexto-x-música)
+60](#como-o-trabalho-vai-recomendar-novas-músicas-a-partir-da-relação-de-contexto-x-música)
 
-[3.7 roteiro 58](#roteiro)
+[4.3 roteiro 60](#roteiro)
 
-[4 CONCLUSÃO 59](#conclusão)
+[5 CONCLUSÃO 61](#conclusão)
 
-[Referências Bibliográficas 60](#referências-bibliográficas)
+[Referências Bibliográficas 62](#referências-bibliográficas)
 
 # Introdução
 
@@ -958,7 +972,7 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são apresentados na Figura 7 abaixo.
 
-<span id="_Toc53953333" class="anchor"></span>Figura 7 Fatores da
+<span id="_Toc54642170" class="anchor"></span>Figura 7 Fatores da
 preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
@@ -1036,7 +1050,7 @@ estar mais voltado a uma grande divisão das classes dos *datasets*.
 (RÄTSCH, 2004) Sobrando somente o algoritmo KNN para ser testado no
 sistema desenvolvido nesse trabalho.
 
-# Modelagem do “*Loewe’s Recommender system*”
+# COLETA DO CONTEXTO DOS USUARIOS
 
 A partir da revisão bibliográfica realizada, foi possível conhecer
 alguns sistemas e modelos que utilizam do contexto para realizar as
@@ -1047,32 +1061,7 @@ Com isso, foi possível entender e desenvolver um modelo de sistemas de
 recomendação chamado *LORS* (*Loewe’s Recommender System*), que utiliza
 de uma análise recorrente do contexto, para realizar as recomendações
 dinâmicas às mudanças do contexto. Esse modelo será apresentado com mais
-detalhes nas subseções a seguir.
-
-## O Algoritmo KNN
-
-O *k-Nearest Neighbor* (KNN) é um método de classificação que busca os k
-pontos dos dados de treino mais pertos do ponto de teste, e então, uma
-classe é atrelada a esse ponto através de uma votação majoritária dos k
-pontos vizinhos. (T.M. COVER, 1967) Na Figura 1 é exemplificado
-graficamente o funcionamento do algoritmo.
-
-![Image for post](./pandoc/media/image6.png)
-
-<span id="_Ref52742150" class="anchor"></span>Figura – Representação
-gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
-plano, os pontos amarelos são a representação da classe A, roxos classe
-B e vermelho é o ponto de teste ***(JOSÉ, 2018)***
-
-Como é apresentado na Fig1 o algoritmo funciona através da disposição
-das características x1 e x2 sobre um plano, e atribuindo classes a eles
-(no caso: classe A e classe B), então, a partir da predição do ponto de
-teste é encontrado a classe que o representa. (TODO\_REF)
-
-Para rodar o algoritmo de classificação nesse trabalho será utilizado a
-implementação da biblioteca em *python* do *scikit-learn.* A qual se
-encontra na classe *KNeighborsClassifier* do modulo *sklearn.neighbors.*
-(PEDREGOSA et al., 2011)
+detalhes no capítulo a seguir.
 
 ## Contexto
 
@@ -1136,13 +1125,12 @@ ser representados na aplicação, que são: (i) Localização; (ii) Clima e;
 
 ### Como serão obtidos os contextos?
 
-Os contextos no *DCRM* serão obtidos a partir da captura de dados de
-sensores, *API’s* (*Application Programming Interface*) e eventos de um
-app. Na aplicação, será obtido contexto de duas maneiras: (i)
-explicitamente, onde o usuário irá cadastrar o que está fazendo. Ex.:
-emoções, atividades. (ii) implicitamente, a qual será obtido através das
-ações do usuário realizadas no aplicativo. Ex.: ações sobre os
-componentes do app, localização.
+Os contextos no *LORS* serão obtidos a partir da captura de formularios
+e eventos de um app. Na aplicação, será obtido contexto de duas
+maneiras: (i) explicitamente, onde o usuário irá cadastrar o que está
+fazendo. Ex.: emoções, atividades e localização. (ii) implicitamente, a
+qual será obtido através das ações do usuário realizadas no aplicativo.
+Ex.: ações sobre os componentes do app, localização.
 
 São poucas as ações que auxiliam no entendimento do contexto e que podem
 ser obtidas implicitamente, isso devido as limitações dos sensores e
@@ -1182,12 +1170,12 @@ recomendadas. Cada ação terá um nível de importância, a qual será obtida
 através das respostas do questionário. As possíveis ações a serem
 executadas pelo usuário estão listadas na seção 3.1.1.
 
-## pesquisa com usuários sobre recomendação musical
+## Pesquisa com usuários sobre recomendação musical
 
 Para validar o modelo de sistema de recomendação foi desenvolvida uma
 aplicação, a qual foi distribuída aos usuários que participaram do
 questionário previamente realizado, onde foram obtidas informações sobre
-esses usuários. As etapas do desenvolvimento do *DCRM* são apresentadas
+esses usuários. As etapas do desenvolvimento do *LORS* são apresentadas
 na Figura 11.
 
 <span id="_Ref42452795" class="anchor"></span>Figura 10 Etapas do
@@ -1275,9 +1263,9 @@ utilizava do SDK Web do Spotify para reprodução das músicas e captura
 dos eventos gerados pelo usuário. Ela pode ser acessada através do link
 <https://ericoloewe.github.io/computer-science-tcc/>.
 
-![](./pandoc/media/image7.png)
+![](./pandoc/media/image6.png)
 
-<span id="_Toc53953337" class="anchor"></span>Figura Tela introdutória
+<span id="_Toc54642174" class="anchor"></span>Figura Tela introdutória
 da aplicação (próprio, 2020)
 
 ### Telas da aplicação
@@ -1287,9 +1275,9 @@ na fig11, a qual apresenta instruções para os usuários de como utilizar
 a aplicação. A segunda tela, é representada na fig12, a qual
 disponibiliza opções de login no Spotify.
 
-![](./pandoc/media/image8.png)
+![](./pandoc/media/image7.png)
 
-<span id="_Toc53953338" class="anchor"></span>Figura Tela de login da
+<span id="_Toc54642175" class="anchor"></span>Figura Tela de login da
 aplicação (próprio, 2020)
 
 A fig13 apresenta o cadastro do contexto na aplicação. O processo é
@@ -1299,9 +1287,9 @@ nesse momento?”. A partir dessas perguntas, é possível entender o
 contexto atual do usuário naquele período. As perguntas são realizadas a
 cada 30min.
 
-![](./pandoc/media/image9.png)
+![](./pandoc/media/image8.png)
 
-<span id="_Toc53953339" class="anchor"></span>Figura Tela de
+<span id="_Toc54642176" class="anchor"></span>Figura Tela de
 preenchimento do contexto (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
@@ -1309,9 +1297,9 @@ reproduza as músicas no plugin. Para isso, foi criado a tela apresentada
 na fig14, a qual possui um botão “USAR PLUGIN PARA TOCAR MÚSICAS” que ao
 ser pressionado, habilita a reprodução no plugin.
 
-![](./pandoc/media/image10.png)
+![](./pandoc/media/image9.png)
 
-<span id="_Toc53953340" class="anchor"></span>Figura Tela da lista de
+<span id="_Toc54642177" class="anchor"></span>Figura Tela da lista de
 dispositivos do Spotify (próprio, 2020)
 
 Por fim, foi desenvolvido a tela principal, que é apresentado na fig15.
@@ -1328,9 +1316,9 @@ está ouvindo as músicas, as possíveis interações estão listadas abaixo.
 
   - Pausar / Tocar música
 
-![](./pandoc/media/image11.png)
+![](./pandoc/media/image10.png)
 
-<span id="_Toc53953341" class="anchor"></span>Figura Tela principal, a
+<span id="_Toc54642178" class="anchor"></span>Figura Tela principal, a
 qual apresenta a música sendo reproduzida ao usuário (próprio, 2020)
 
 Ao clicar no botão “gostei”, é salvo a informação de que o usuário
@@ -1339,9 +1327,9 @@ salvo a informação que o usuário não gostou e é levado o usuário a tela
 de busca de música fig16, para o usuário apresentar uma música se
 identifique melhor naquele momento.
 
-![](./pandoc/media/image12.png)
+![](./pandoc/media/image11.png)
 
-<span id="_Toc53953342" class="anchor"></span>Figura Tela de busca de
+<span id="_Toc54642179" class="anchor"></span>Figura Tela de busca de
 músicas que encaixem melhor no momento (próprio, 2020)
 
 A ação de buscar música, irá levar para a tela apresentada na fig16, a
@@ -1409,7 +1397,7 @@ JSON através do console do *Realtime Database* do Firebase. A Figura 17
 apresenta o console, a estrutura de dados dos eventos e o botão de
 exportar do *Realtime DB*.
 
-![](./pandoc/media/image13.png)
+![](./pandoc/media/image12.png)
 
 <span id="_Ref53931970" class="anchor"></span>Figura Console do
 *Realtime Database* do Firebase (próprio, 2020)
@@ -1422,6 +1410,41 @@ disponível no *sklearn*, e então, após obter o conhecimento do
 funcionamento do algoritmo no *python*, foi aplicado o mesmo sobre a
 base extraída e preparada do JSON.
 
+# SISTEMA LORS
+
+Com a estrutura dos dados pronta e o levantamento dos dados dos
+usuários, foi feito um tratamento dos dados e realizado um estudo das
+técnicas de recomendação levantadas nos trabalhos anteriores. Com isso,
+foi modelado o sistema LORS, que utiliza de uma análise recorrente do
+contexto, para realizar as recomendações dinâmicas às mudanças do
+contexto. Serão apresentadas mais informações das etapas de modelagem e
+desenvolvimento do sistema nas seções a seguir.
+
+## O Algoritmo KNN
+
+O *k-Nearest Neighbor* (KNN) é um método de classificação que busca os k
+pontos dos dados de treino mais pertos do ponto de teste, e então, uma
+classe é atrelada a esse ponto através de uma votação majoritária dos k
+pontos vizinhos. (T.M. COVER, 1967) Na Figura 1 é exemplificado
+graficamente o funcionamento do algoritmo.
+
+![Image for post](./pandoc/media/image13.png)
+
+<span id="_Ref52742150" class="anchor"></span>Figura 8 – Representação
+gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
+plano, os pontos amarelos são a representação da classe A, roxos classe
+B e vermelho é o ponto de teste ***(JOSÉ, 2018)***
+
+Como é apresentado na Fig1 o algoritmo funciona através da disposição
+das características x1 e x2 sobre um plano, e atribuindo classes a eles
+(no caso: classe A e classe B), então, a partir da predição do ponto de
+teste é encontrado a classe que o representa. (TODO\_REF)
+
+Para rodar o algoritmo de classificação nesse trabalho será utilizado a
+implementação da biblioteca em *python* do *scikit-learn.* A qual se
+encontra na classe *KNeighborsClassifier* do modulo *sklearn.neighbors.*
+(PEDREGOSA et al., 2011)
+
 ### Preparação dos dados para o KNN
 
 Para salvar os eventos da aplicação, foi criado uma lista chamada
@@ -1431,7 +1454,7 @@ seguinte estrutura: (i) *action*, ação realizada pelo usuário,
 apresentadas no quadro3; (ii) *createdDateTime*, data da execução do
 evento; (iii) *value*, valores do evento separados por “;”.
 
-<span id="_Toc53953293" class="anchor"></span>Quadro Lista de ações
+<span id="_Toc54642190" class="anchor"></span>Quadro Lista de ações
 possíveis nos eventos (próprio, 2020)
 
 | **Action**                    | **Descrição**                                 |
@@ -1465,7 +1488,7 @@ sua lista de eventos.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image14.jpg)
 
-<span id="_Toc53953344" class="anchor"></span>Figura Visão macro das
+<span id="_Toc54642181" class="anchor"></span>Figura Visão macro das
 etapas para transformar os eventos registrados no firebase na tabela que
 sera rodado o KNN (próprio, 2020)
 
@@ -1477,7 +1500,7 @@ representado na fig20.
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
 automaticamente](./pandoc/media/image15.jpg)
 
-<span id="_Toc53953345" class="anchor"></span>Figura Representação dos
+<span id="_Toc54642182" class="anchor"></span>Figura Representação dos
 eventos salvos no Firebase (próprio, 2020)
 
 Na fig21 é representada a etapa “Separa contexto das músicas”, pois na
@@ -1489,7 +1512,7 @@ seus contextos.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image16.jpg)
 
-<span id="_Toc53953346" class="anchor"></span>Figura Representação das
+<span id="_Toc54642183" class="anchor"></span>Figura Representação das
 listas geradas na etapa “Separa contexto” (próprio, 2020)
 
 Para criar essa relação é realizado um loop em cima dos eventos de cada
@@ -1502,7 +1525,7 @@ reprodução.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image17.jpg)
 
-<span id="_Toc53953347" class="anchor"></span>Figura Representação das
+<span id="_Toc54642184" class="anchor"></span>Figura Representação das
 listas geradas na etapa “separa contexto das músicas” (próprio, 2020)
 
 Nas próximas duas etapas “busca informações das músicas” e “busca
@@ -1515,7 +1538,7 @@ artista.
 
 ![Tabela Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
-<span id="_Toc53953348" class="anchor"></span>Figura Representação da
+<span id="_Toc54642185" class="anchor"></span>Figura Representação da
 tabela na etapa “separa contexto das músicas” (próprio, 2020)
 
 Após a busca dos dados ao Spotify, foi obtido a lista dos gêneros das
@@ -1532,8 +1555,8 @@ dos eventos um a um.
 
 ![](./pandoc/media/image19.png)
 
-Figura *head()* do *dataframe* criado a partir da variável *genreTable*
-(próprio, 2020)
+<span id="_Ref53955795" class="anchor"></span>Figura *head()* do
+*dataframe* criado a partir da variável *genreTable* (próprio, 2020)
 
 No fim, foi utilizado a lib *preprocessing* do *sklearn* para
 transformar as características e classes de cada evento da tabela em
@@ -1552,7 +1575,7 @@ teste pode ser informado para o *train\_test\_split* através do
 parâmetro *test\_size*, que nesse caso foi 0,3.
 
 Para rodar o KNN, foi utilizado a classe *KNeighborsClassifier* da lib
-*sklearn.neighbors*, nela, pode ser informado o numero de vizinhos
+*sklearn.neighbors*, nela, pode ser informado o número de vizinhos
 levados em consideração a partir do parâmetro *n\_neighbors*, que nesse
 caso foi 3.
 
@@ -1577,7 +1600,7 @@ Contexto =\> sistema =\> knn =\> radio ou top 10 do gênero
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image20.jpg)
 
-<span id="_Toc53953349" class="anchor"></span>Figura Visão macro do
+<span id="_Toc54642187" class="anchor"></span>Figura Visão macro do
 sistema LORS (próprio, 2020)
 
 ### Como o trabalho vai relacionar as músicas que o usuário gosta aos contextos?
@@ -1592,7 +1615,7 @@ ou salvas pelo usuário.
 
 KNN =\> gênero =\> musicas do genero
 
-## roteiro
+## Roteiro
 
 Para desenvolver o modelo e o sistema de recomendação musical, serão
 realizadas diversas etapas, onde a primeira será obter uma amostra de
@@ -1601,7 +1624,7 @@ questionário com as perguntas listadas na seção 3.2 deste trabalho,
 utilizando o formulário do *Google Drive*; 2) Distribuir o formulário em
 diversos meios de comunicação, onde haverá ao final um campo para o
 usuário preencher seu e-mail caso deseja participar do teste do sistema
-*DCRM*, o qual será utilizado no futuro para o envio de um convite para
+*LORS*, o qual será utilizado no futuro para o envio de um convite para
 utilizar a aplicação desenvolvida e 3) Apurar dados do questionário para
 serem utilizados como base da amostra.
 
