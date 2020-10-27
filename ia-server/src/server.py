@@ -316,7 +316,7 @@ model = getModel(X_train, y_train)
 
 @server.route("/")
 def hello():
-    return score(model, X_test, y_test)
+    return f"your score is: {score(model, X_test, y_test)}"
 
 if __name__ == "__main__":
    server.run(host='0.0.0.0')
