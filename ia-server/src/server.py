@@ -3,7 +3,7 @@
 
 # # Poc utilizando KNN para trabalho de conclusão de Ciência da computação da Feevale
 
-def prepareData():
+def prepareData(uri):
     # ## Carrega JSON
 
     # In[17]:
@@ -41,12 +41,10 @@ def prepareData():
 
     import pandas as pd
 
-    usersContexts = {}
-
     contexts = []
     currentCtx = None
 
-    for event in users['spotify:user:4i3jdhv6vubcjdpwsn38iv8u4']:
+    for event in users[uri]:
         if event['action'] == "CHOOSE_FEELING":
             if currentCtx:
                 contexts.append(currentCtx)
@@ -250,7 +248,7 @@ def prepareData():
 
     return dfg
 
-def getData():
+def getData(uri):
     # ## knn 
 
     # In[31]:
@@ -262,7 +260,7 @@ def getData():
 
     from sklearn.model_selection import train_test_split
 
-    dfg = prepareData()
+    dfg = prepareData(uri)
 
     dfgCopy = dfg.copy()
 
@@ -284,7 +282,7 @@ def getModel(X_train, y_train):
 
     return model
 
-def predict(X_test):
+def predict(model, X_test):
     print(X_test)
 
     result = model.predict(X_test)
@@ -300,23 +298,40 @@ def predict(X_test):
 
 # In[32]:
 
-def score(model, X_test, y_test):
+modelCache = {}
+dataCache = {}
+
+def getScoreOfUri(uri):
+    model = None
+
+    if (uri not in dataCache):
+        dataCache[uri] = getData(uri)
+
+    X_train, X_test, y_train, y_test = dataCache[uri]
+
+    if (uri not in modelCache):
+        modelCache[uri] = getModel(X_train, y_train)
+
+    model = modelCache[uri]
+
     return model.score(X_test, y_test)
 
 # ## Server
 
 # In[ ]:
 
-X_train, X_test, y_train, y_test = getData()
+from flask import Flask, request
 
-from flask import Flask
 server = Flask(__name__)
-
-model = getModel(X_train, y_train)
 
 @server.route("/")
 def hello():
-    return f"your score is: {score(model, X_test, y_test)}"
+    uri = request.args.get("uri", default = '', type = str)
+
+    if uri == "":
+        return "Invalid uri"
+
+    return f"your score is: {getScoreOfUri(uri)}"
 
 if __name__ == "__main__":
    server.run(host='0.0.0.0')
