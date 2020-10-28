@@ -3,7 +3,13 @@
 
 # # Poc utilizando KNN para trabalho de conclusão de Ciência da computação da Feevale
 
+dataframeCache = {}
+
 def prepareData(uri):
+    if uri in dataframeCache:
+        return dataframeCache[uri].copy()
+
+
     # ## Carrega JSON
 
     # In[17]:
@@ -228,6 +234,8 @@ def prepareData(uri):
 
     dfg=pd.DataFrame(genreTable)
 
+    dataframeCache[uri] = dfg
+
     return dfg
 
 def getData(uri):
@@ -246,12 +254,12 @@ def getData(uri):
 
     le = preprocessing.LabelEncoder()
     dfg = prepareData(uri)
-
-    dfg['feeling'] = le.fit_transform(dfg['feeling'])
-    dfg['activity'] = le.fit_transform(dfg['activity'])
-    dfg['location'] = le.fit_transform(dfg['location'])
-
     dfgCopy = dfg.copy()
+
+    dfgCopy['feeling'] = le.fit_transform(dfg['feeling'])
+    dfgCopy['activity'] = le.fit_transform(dfg['activity'])
+    dfgCopy['location'] = le.fit_transform(dfg['location'])
+
 
     del dfgCopy['genre']
 
@@ -296,23 +304,26 @@ def getScoreOfUri(uri):
 
 modelResultCache = {}
 
-def getResultOfUri(uri):
+def getResultOfUri(uri, feeling, activity, location):
     model = None
 
     from sklearn import preprocessing
 
-    le = preprocessing.LabelEncoder()
+    fle = preprocessing.LabelEncoder()
+    ale = preprocessing.LabelEncoder()
+    lle = preprocessing.LabelEncoder()
+    gle = preprocessing.LabelEncoder()
+
     dfg = prepareData(uri)
 
-    dfg['feeling'] = le.fit_transform(dfg['feeling'])
-    dfg['activity'] = le.fit_transform(dfg['activity'])
-    dfg['location'] = le.fit_transform(dfg['location'])
-
     dfgCopy = dfg.copy()
+    dfgCopy['feeling'] = fle.fit_transform(dfg['feeling'])
+    dfgCopy['activity'] = ale.fit_transform(dfg['activity'])
+    dfgCopy['location'] = lle.fit_transform(dfg['location'].tolist())
 
     del dfgCopy['genre']
 
-    labels = le.fit_transform(dfg['genre'])
+    labels = gle.fit_transform(dfg['genre'])
 
     X = dfgCopy[dfgCopy.columns[:]]
     y = labels
@@ -321,9 +332,14 @@ def getResultOfUri(uri):
         modelResultCache[uri] = getModel(X, y)
 
     model = modelResultCache[uri]
-    result = model.predict([[1,  0,  1,  0,  0,  0]])
+    # like  hate  restart  feeling  activity  location
 
-    return le.inverse_transform(result)[0]
+    toPredict = [[1,  0,  1,  fle.transform([feeling])[0], ale.transform([activity])[0], lle.transform([location])[0]]]
+
+    print(f"predicting {toPredict}")
+    result = model.predict(toPredict)
+
+    return gle.inverse_transform(result)[0]
 
 # ## Server
 
@@ -336,11 +352,14 @@ server = Flask(__name__)
 @server.route("/")
 def hello():
     uri = request.args.get("uri", default = '', type = str)
-    response = {'message': "Invalid uri"}
+    feeling = request.args.get("feeling", default = '', type = str)
+    activity = request.args.get("activity", default = '', type = str)
+    location = request.args.get("location", default = '', type = str)
+    response = {'message': "Invalid request (params: uri, feeling, activity, location)"}
 
-    if uri != "":
+    if uri != "" and feeling != "" and activity != "" and location != "":
         response["message"] = f"your score is: {getScoreOfUri(uri)}"
-        response["genre"] = getResultOfUri(uri)
+        response["genre"] = getResultOfUri(uri, feeling, activity, location)
 
     return jsonify(response)
 
