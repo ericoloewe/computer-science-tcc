@@ -302,6 +302,16 @@ def getScoreOfUri(uri):
 
     return model.score(X_test, y_test)
 
+def transformOrDefault(le, key):
+    value = 0
+
+    try:
+        value = le.transform([key])[0]
+    except:
+        print(f"Problem to transform")
+
+    return value
+
 modelResultCache = {}
 
 def getResultOfUri(uri, feeling, activity, location):
@@ -319,7 +329,7 @@ def getResultOfUri(uri, feeling, activity, location):
     dfgCopy = dfg.copy()
     dfgCopy['feeling'] = fle.fit_transform(dfg['feeling'])
     dfgCopy['activity'] = ale.fit_transform(dfg['activity'])
-    dfgCopy['location'] = lle.fit_transform(dfg['location'].tolist())
+    dfgCopy['location'] = lle.fit_transform(dfg['location'])
 
     del dfgCopy['genre']
 
@@ -334,7 +344,7 @@ def getResultOfUri(uri, feeling, activity, location):
     model = modelResultCache[uri]
     # like  hate  restart  feeling  activity  location
 
-    toPredict = [[1,  0,  1,  fle.transform([feeling])[0], ale.transform([activity])[0], lle.transform([location])[0]]]
+    toPredict = [[1,  0,  1,  transformOrDefault(fle, feeling), transformOrDefault(ale, activity), transformOrDefault(lle, location)]]
 
     print(f"predicting {toPredict}")
     result = model.predict(toPredict)
