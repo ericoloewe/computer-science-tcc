@@ -228,24 +228,6 @@ def prepareData(uri):
 
     dfg=pd.DataFrame(genreTable)
 
-    dfg.head()
-
-
-    # ## transformar labels
-
-    # In[25]:
-
-
-    from sklearn import preprocessing
-
-    le = preprocessing.LabelEncoder()
-
-    dfg['feeling'] = le.fit_transform(dfg['feeling'])
-    dfg['activity'] = le.fit_transform(dfg['activity'])
-    dfg['location'] = le.fit_transform(dfg['location'])
-
-    dfg.head()
-
     return dfg
 
 def getData(uri):
@@ -255,12 +237,19 @@ def getData(uri):
 
 
     from sklearn import preprocessing
-
-    le = preprocessing.LabelEncoder()
-
     from sklearn.model_selection import train_test_split
 
+    # ## transformar labels
+
+    # In[25]:
+
+
+    le = preprocessing.LabelEncoder()
     dfg = prepareData(uri)
+
+    dfg['feeling'] = le.fit_transform(dfg['feeling'])
+    dfg['activity'] = le.fit_transform(dfg['activity'])
+    dfg['location'] = le.fit_transform(dfg['location'])
 
     dfgCopy = dfg.copy()
 
@@ -273,25 +262,14 @@ def getData(uri):
 
     return train_test_split(X, y, test_size=.3)
 
-def getModel(X_train, y_train):
+def getModel(X, y):
     from sklearn.neighbors import KNeighborsClassifier
 
     model = KNeighborsClassifier(n_neighbors=3)
 
-    model.fit(X_train, y_train)
+    model.fit(X, y)
 
     return model
-
-def predict(model, X_test):
-    print(X_test)
-
-    result = model.predict(X_test)
-
-    print(result)
-
-    # print(dfg['genre'][result-1])
-
-    return result
 
 
 # ## Score KNN
@@ -316,22 +294,55 @@ def getScoreOfUri(uri):
 
     return model.score(X_test, y_test)
 
+modelResultCache = {}
+
+def getResultOfUri(uri):
+    model = None
+
+    from sklearn import preprocessing
+
+    le = preprocessing.LabelEncoder()
+    dfg = prepareData(uri)
+
+    dfg['feeling'] = le.fit_transform(dfg['feeling'])
+    dfg['activity'] = le.fit_transform(dfg['activity'])
+    dfg['location'] = le.fit_transform(dfg['location'])
+
+    dfgCopy = dfg.copy()
+
+    del dfgCopy['genre']
+
+    labels = le.fit_transform(dfg['genre'])
+
+    X = dfgCopy[dfgCopy.columns[:]]
+    y = labels
+
+    if (uri not in modelResultCache):
+        modelResultCache[uri] = getModel(X, y)
+
+    model = modelResultCache[uri]
+    result = model.predict([[1,  0,  1,  0,  0,  0]])
+
+    return le.inverse_transform(result)[0]
+
 # ## Server
 
 # In[ ]:
 
-from flask import Flask, request
+from flask import Flask, request, jsonify
 
 server = Flask(__name__)
 
 @server.route("/")
 def hello():
     uri = request.args.get("uri", default = '', type = str)
+    response = {'message': "Invalid uri"}
 
-    if uri == "":
-        return "Invalid uri"
+    if uri != "":
+        response["message"] = f"your score is: {getScoreOfUri(uri)}"
+        response["genre"] = getResultOfUri(uri)
 
-    return f"your score is: {getScoreOfUri(uri)}"
+    return jsonify(response)
 
 if __name__ == "__main__":
    server.run(host='0.0.0.0')
