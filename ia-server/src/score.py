@@ -3,7 +3,8 @@
 
 # # Poc utilizando KNN para trabalho de conclusão de Ciência da computação da Feevale
 
-from data import getData, getModel
+from data import getData
+from knn import getModel
 
 # ## Score KNN
 

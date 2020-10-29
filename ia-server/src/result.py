@@ -3,7 +3,8 @@
 
 # # Poc utilizando KNN para trabalho de conclusão de Ciência da computação da Feevale
 
-from data import prepareData, getModel
+from data import prepareData
+from knn import getModel
 
 def transformOrDefault(le, key):
     value = 0

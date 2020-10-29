@@ -348,12 +348,3 @@ def getData(uri):
     y = labels
 
     return train_test_split(X, y, test_size=.3)
-
-def getModel(X, y):
-    from sklearn.neighbors import KNeighborsClassifier
-
-    model = KNeighborsClassifier(n_neighbors=9)
-
-    model.fit(X, y)
-
-    return model
