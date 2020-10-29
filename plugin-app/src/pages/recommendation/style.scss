@@ -1,0 +1,18 @@
+.recommendation-page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5px 10px;
+
+  .tile-image {
+    display: block;
+    width: 100%;
+  }
+
+  .submit-button  {
+    margin: 10px auto;
+    width: 100%;
+  }
+}

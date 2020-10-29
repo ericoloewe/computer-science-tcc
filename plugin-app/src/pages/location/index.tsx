@@ -72,7 +72,7 @@ export default function () {
 
     await saveEvent(EventType.CHOOSE_LOCATION, locationsToSave);
     cookieService.save(cookieService.CONTEXT_COOKIE_NAME, "true", THIRTY_MINUTES);
-    history.push(`/`);
+    history.push(`/recommendation`);
   }
 
   return (

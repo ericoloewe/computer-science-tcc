@@ -20,6 +20,7 @@ const Feeling = React.lazy(() => import("./pages/feeling"));
 const Activity = React.lazy(() => import("./pages/activity"));
 const Location = React.lazy(() => import("./pages/location"));
 const MusicSearch = React.lazy(() => import("./pages/music-search"));
+const Recommendation = React.lazy(() => import("./pages/recommendation"));
 
 let theme = createMuiTheme({
   palette: {
@@ -64,6 +65,9 @@ ReactDOM.render(
                 <Location />
               </PrivateRoute>
               <ContextIntro>
+                <PrivateRoute path="/recommendation">
+                  <Recommendation />
+                </PrivateRoute>
                 <PrivateRoute path="/music-search">
                   <MusicSearch />
                 </PrivateRoute>

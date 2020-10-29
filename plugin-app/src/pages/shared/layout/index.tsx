@@ -7,8 +7,10 @@ import { Menu as MenuIcon } from "@material-ui/icons";
 import { CustomDrawer } from "./custom-drawer";
 import { CustomMenu } from "./custom-menu";
 
+type ElOrNull = React.ReactElement | null
+
 interface Props {
-  children: React.ReactElement | React.ReactElement[];
+  children: ElOrNull | ElOrNull[];
   className?: string;
   hideDrawerButton?: boolean;
   menuItems?: JSX.Element[];
