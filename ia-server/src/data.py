@@ -202,9 +202,51 @@ def prepareData(uri):
 
             genreTable.append(newGenre)
 
-    dfg=pd.DataFrame(genreTable)
+    # https://www.allmusic.com/genres
+    # https://developer.spotify.com/community/showcase/music-popcorn/
 
-    dfg.head()
+    genres = {}
+
+    THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
+    my_file_path = os.path.join(THIS_FOLDER, 'genres.json')
+
+    with open(my_file_path) as json_file:
+        data = json.load(json_file)
+
+        for genre in data:
+            genres[genre['name']] = genre
+
+    genresDF = pd.DataFrame(genres)
+
+    genresDF.head()
+
+    # ## tratar generos
+
+    for item in genreTable:
+        genreName = item['genre']
+
+        if (genreName in genres): # aqui verificamos se existe o genero na lista dos padrões
+            item['genre'] = genres[genreName]['family']
+        
+
+    i = 0
+
+    print(f"before genre len({len(genreTable)})")
+
+    while i < len(genreTable):
+        item = genreTable[i]
+        genrelist = item['genre']
+
+        if isinstance(genrelist, list):
+            genreTable.pop(i)
+
+            for genre in genrelist:
+                copy = item.copy()
+                copy['genre'] = genre
+                genreTable.insert(i, copy)
+        i += 1
+
+    print(f"after genre len({len(genreTable)})")
 
 
     # ## Trata contextos duplicados (;)
@@ -235,6 +277,7 @@ def prepareData(uri):
     trataMultiplosDaColuna("feeling") 
     trataMultiplosDaColuna("activity")
     trataMultiplosDaColuna("location")
+
     # ## Trata contextos musicais (multiplos like, hate, restart)
 
     # In[25]:
@@ -262,6 +305,7 @@ def prepareData(uri):
             i += 1
 
         print(f"after {key} len({len(genreTable)})")
+
 
     trataNumericosDaColuna("like") 
     trataNumericosDaColuna("hate")
@@ -308,7 +352,7 @@ def getData(uri):
 def getModel(X, y):
     from sklearn.neighbors import KNeighborsClassifier
 
-    model = KNeighborsClassifier(n_neighbors=3)
+    model = KNeighborsClassifier(n_neighbors=9)
 
     model.fit(X, y)
 
