@@ -212,10 +212,12 @@ def prepareData(uri):
     # In[24]:
 
 
-    def asd(key):
+    def trataMultiplosDaColuna(key):
         print(f"before {key} len({len(genreTable)})")
 
-        for i in range(len(genreTable)):
+        i = 0
+
+        while i < len(genreTable):
             genre = genreTable[i]
             ctxSplit = genre[key].split(";")
             genreTable.pop(i)
@@ -225,12 +227,45 @@ def prepareData(uri):
                 genreCopy[key] = ctx
                 genreTable.insert(i, genreCopy)
 
+            i += 1
+
         print(f"after {key} len({len(genreTable)})")
 
 
-    asd("feeling")
-    asd("activity")
-    asd("location")
+    trataMultiplosDaColuna("feeling") 
+    trataMultiplosDaColuna("activity")
+    trataMultiplosDaColuna("location")
+    # ## Trata contextos musicais (multiplos like, hate, restart)
+
+    # In[25]:
+
+    def trataNumericosDaColuna(key):
+        print(f"before {key} len({len(genreTable)})")
+
+        i = 0
+
+        while i < len(genreTable):
+            genre = genreTable[i]
+            
+            if genre[key] > 0:
+                genreTable.pop(i)
+
+                j = 0
+
+                while j < genre[key]:
+                    genreCopy = genre.copy()
+                    genreCopy[key] = 1
+                    genreTable.insert(i, genreCopy)
+
+                    j += 1
+
+            i += 1
+
+        print(f"after {key} len({len(genreTable)})")
+
+    trataNumericosDaColuna("like") 
+    trataNumericosDaColuna("hate")
+    trataNumericosDaColuna("restart")
 
     dfg=pd.DataFrame(genreTable)
 
