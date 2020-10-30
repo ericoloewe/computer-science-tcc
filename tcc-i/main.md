@@ -1562,10 +1562,6 @@ transformar as características e classes de cada evento da tabela em
 números inteiros, isso é necessário para rodar o algoritmo KNN. O
 resultado da tabela é apresentado na Figura 23.
 
-### Taxonomia dos gêneros
-
-... \# https://developer.spotify.com/community/showcase/music-popcorn/
-
 ### Testes com KNN
 
 No final, o *genreTable* foi transformado em um *data frame* da *lib*
@@ -1596,6 +1592,25 @@ recebe por parâmetro as características de teste retiradas do modelo
 (*X\_test*) e as classes de teste retiradas do modelo (*y\_test*) e
 retorna à acurácia do modelo gerado. O qual obteve uma média de 0,15 nos
 testes realizados.
+
+### Taxonomia dos gêneros
+
+Visando melhorar o score das recomendações, foi realizado uma busca dos
+principais gêneros musicais e a relação com seus subgêneros, para nas
+classes de predição, manter somente o principal, reduzindo assim as
+possibilidades de resultados para o algoritmo KNN. O principal objetivo
+da busca, era encontrar uma lista que supria a lista de gêneros do
+Spotify, para conseguir fazer a relação com os gêneros já existentes no
+modelo e substituir pelos gêneros base, pois o Spotify não dispõe dessa
+relação.
+
+A lista a relação dos gêneros com seus subgêneros foi encontrada em um
+*showcase* do Spotify chamado Music Popcorn
+(<https://developer.spotify.com/community/showcase/music-popcorn/>). Ele
+possui uma lista de 1107 gêneros, 4 vezes menos do que o Spotify possui
+hoje, porem já auxiliou na taxonomia dos gêneros, trazendo uma redução
+de 70 para 40 classes na base do usuário de teste e melhorando o score
+de 0,15 para uma média de 0,45.
 
 ## Modelagem do sistema *LORS*
 
@@ -1660,14 +1675,14 @@ existir na base.
 Quadro 4 Campos e seus respectivos valores utilizados na recomendação
 (próprio, 2020)
 
-| Campo      | Valor padrão |
-| ---------- | ------------ |
-| *like*     | 1            |
-| *hate*     | 0            |
-| *restart*  | 1            |
-| *feeling*  | 0            |
-| *activity* | 0            |
-| *location* | 0            |
+| Campo    | Valor padrão |
+| -------- | ------------ |
+| like     | 1            |
+| hate     | 0            |
+| restart  | 1            |
+| feeling  | 0            |
+| activity | 0            |
+| location | 0            |
 
 Com o modelo pronto (Seção 4.1.1), e os parâmetros tratados é realizado
 a predição através do método *predict* do modelo do *sklearn* e
@@ -1687,7 +1702,7 @@ nome.
 Figura 25 Tela de recomendações (próprio, 2020)
 
 No fim, é apresentado o gênero recomendado na tela, tratado o retorno do
-Spotify e apresentado as playlists na tela, permitindo assim, que o
+Spotify e apresentado as *playlists* na tela, permitindo assim, que o
 usuário escolha uma das playlists para reproduzir.
 
 ### Resultados do experimento
