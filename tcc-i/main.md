@@ -90,63 +90,65 @@ motor de busca da ACM (próprio, 2020) 20](#_Ref40822414)
 (próprio, 2020) 21](#_Ref40822493)
 
 [Figura 6 - Procedimento de filtro realizado baseado nos trabalhos
-encontrados no motor de busca da ACM (próprio, 2020) 21](#_Ref40822509)
+encontrados no motor de busca da ACM (próprio, 2020) 22](#_Ref40822509)
 
 [Figura 7 Fatores da preferência musical (próprio, 2020)
-31](#_Toc54642170)
+31](#_Toc54931586)
 
-[Figura 8 – Representação gráfica da classificação do algoritmo KNN
+[Figura 8 Apresentação dos contextos utilizados no trabalho (próprio,
+2020) 37](#_Ref42447869)
+
+[Figura 9 Etapas do desenvolvimento do sistema de recomendação musical
+(próprio, 2020) 40](#_Ref42452795)
+
+[Figura 10 Tela introdutória da aplicação (próprio, 2020)
+45](#_Toc54931589)
+
+[Figura 11 Tela de login da aplicação (próprio, 2020) 46](#_Toc54931590)
+
+[Figura 12 Tela de preenchimento do contexto (próprio, 2020)
+47](#_Toc54931591)
+
+[Figura 13 Tela da lista de dispositivos do Spotify (próprio, 2020)
+48](#_Toc54931592)
+
+[Figura 14 Tela principal, a qual apresenta a música sendo reproduzida
+ao usuário (próprio, 2020) 49](#_Toc54931593)
+
+[Figura 15 Tela de busca de músicas que encaixem melhor no momento
+(próprio, 2020) 50](#_Toc54931594)
+
+[Figura 16 Console do *Realtime Database* do Firebase (próprio, 2020)
+52](#_Ref53931970)
+
+[Figura 17 – Representação gráfica da classificação do algoritmo KNN
 sobre um plano x1 e x2. No plano, os pontos amarelos são a representação
 da classe A, roxos classe B e vermelho é o ponto de teste ***(JOSÉ,
-2018)*** 36](#_Ref52742150)
-
-[Figura 9 Apresentação dos contextos utilizados no trabalho (próprio,
-2020) 38](#_Ref42447869)
-
-[Figura 10 Etapas do desenvolvimento do sistema de recomendação musical
-(próprio, 2020) 41](#_Ref42452795)
-
-[Figura 11 Tela introdutória da aplicação (próprio, 2020)
-46](#_Toc54642174)
-
-[Figura 12 Tela de login da aplicação (próprio, 2020) 47](#_Toc54642175)
-
-[Figura 13 Tela de preenchimento do contexto (próprio, 2020)
-48](#_Toc54642176)
-
-[Figura 14 Tela da lista de dispositivos do Spotify (próprio, 2020)
-49](#_Toc54642177)
-
-[Figura 15 Tela principal, a qual apresenta a música sendo reproduzida
-ao usuário (próprio, 2020) 50](#_Toc54642178)
-
-[Figura 16 Tela de busca de músicas que encaixem melhor no momento
-(próprio, 2020) 51](#_Toc54642179)
-
-[Figura 17 Console do *Realtime Database* do Firebase (próprio, 2020)
-53](#_Ref53931970)
+2018)*** 54](#_Ref52742150)
 
 [Figura 18 Visão macro das etapas para transformar os eventos
 registrados no firebase na tabela que sera rodado o KNN (próprio, 2020)
-55](#_Toc54642181)
+57](#_Toc54931597)
 
 [Figura 19 Representação dos eventos salvos no Firebase (próprio, 2020)
-55](#_Toc54642182)
+57](#_Toc54931598)
 
 [Figura 20 Representação das listas geradas na etapa “Separa contexto”
-(próprio, 2020) 56](#_Toc54642183)
+(próprio, 2020) 58](#_Toc54931599)
 
 [Figura 21 Representação das listas geradas na etapa “separa contexto
-das músicas” (próprio, 2020) 56](#_Toc54642184)
+das músicas” (próprio, 2020) 58](#_Toc54931600)
 
 [Figura 22 Representação da tabela na etapa “separa contexto das
-músicas” (próprio, 2020) 57](#_Toc54642185)
+músicas” (próprio, 2020) 59](#_Toc54931601)
 
 [Figura 23 *head()* do *dataframe* criado a partir da variável
-*genreTable* (próprio, 2020) 58](#_Ref53955795)
+*genreTable* (próprio, 2020) 60](#_Ref53955795)
 
 [Figura 24 Visão macro do sistema LORS (próprio, 2020)
-59](#_Toc54642187)
+62](#_Toc54931603)
+
+[Figura 25 Tela de recomendações (próprio, 2020) 65](#_Toc54931604)
 
 Lista de Quadros
 
@@ -154,10 +156,13 @@ Lista de Quadros
 revisado 33](#_Ref42381546)
 
 [Quadro 2 Perguntas e respostas disponibilizadas a um certo público
-através dos formulários do Google. (próprio, 2020) 42](#_Ref48857312)
+através dos formulários do Google. (próprio, 2020) 41](#_Ref48857312)
 
 [Quadro 3 Lista de ações possíveis nos eventos (próprio, 2020)
-54](#_Toc54642190)
+56](#_Toc54931578)
+
+[Quadro 4 Campos e seus respectivos valores utilizados na recomendação
+(próprio, 2020) 64](#_Ref54920412)
 
 Lista de Abreviaturas e Siglas
 
@@ -170,6 +175,10 @@ Lista de Abreviaturas e Siglas
 </thead>
 <tbody>
 <tr class="odd">
+<td>POC</td>
+<td>Proof of concept</td>
+</tr>
+<tr class="even">
 <td><p>RecSys</p>
 <p>SVM</p>
 <p>AUC</p>
@@ -187,7 +196,7 @@ Lista de Abreviaturas e Siglas
 <p>Activity-aware Intent Recommendation</p>
 <p>RecSys do Spotify</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td></td>
 <td></td>
 </tr>
@@ -218,67 +227,76 @@ Sumário
 [2.6 Conclusões dos trabalhos revisados
 35](#conclusões-dos-trabalhos-revisados)
 
-[3 Modelagem do “*Loewe’s Recommender system*” 36](#_Toc54642200)
+[3 COLETA DO CONTEXTO DOS USUARIOS 36](#coleta-do-contexto-dos-usuarios)
 
-[3.1 O Algoritmo KNN 36](#o-algoritmo-knn)
+[3.1 Contexto 36](#contexto)
 
-[3.2 Contexto 37](#contexto)
+[3.1.1 O que é o contexto comportamental?
+37](#o-que-é-o-contexto-comportamental)
 
-[3.2.1 O que é o contexto comportamental?
-38](#o-que-é-o-contexto-comportamental)
+[3.1.2 O que é o contexto de ambiente?
+38](#o-que-é-o-contexto-de-ambiente)
 
-[3.2.2 O que é o contexto de ambiente?
-39](#o-que-é-o-contexto-de-ambiente)
+[3.1.3 Como serão obtidos os contextos?
+38](#como-serão-obtidos-os-contextos)
 
-[3.2.3 Como serão obtidos os contextos?
-39](#como-serão-obtidos-os-contextos)
+[3.1.4 O que são as ações do usuário?
+39](#o-que-são-as-ações-do-usuário)
 
-[3.2.4 O que são as ações do usuário?
-40](#o-que-são-as-ações-do-usuário)
+[3.2 Pesquisa com usuários sobre recomendação musical
+39](#pesquisa-com-usuários-sobre-recomendação-musical)
 
-[3.3 pesquisa com usuários sobre recomendação musical
-40](#pesquisa-com-usuários-sobre-recomendação-musical)
+[3.2.1 Pré-teste do questionário 43](#pré-teste-do-questionário)
 
-[3.3.1 Pré-teste do questionário 44](#pré-teste-do-questionário)
+[3.2.2 Resultados do questionário 43](#resultados-do-questionário)
 
-[3.3.2 Resultados do questionário 44](#resultados-do-questionário)
+[3.3 Desenvolvimento Do plugin 44](#desenvolvimento-do-plugin)
 
-[3.4 Desenvolvimento Do plugin 45](#desenvolvimento-do-plugin)
+[3.3.1 Telas da aplicação 45](#telas-da-aplicação)
 
-[3.4.1 Telas da aplicação 46](#telas-da-aplicação)
-
-[3.4.2 Tecnologias utilizadas no desenvolvimento
+[3.3.2 Tecnologias utilizadas no desenvolvimento
 51](#tecnologias-utilizadas-no-desenvolvimento)
 
-[3.5 Distribuição da aplicação e coleta de dados
-52](#distribuição-da-aplicação-e-coleta-de-dados)
+[3.4 Distribuição da aplicação e coleta de dados
+51](#distribuição-da-aplicação-e-coleta-de-dados)
 
-[3.5.1 Pré-teste 52](#pré-teste)
+[3.4.1 Pré-teste 51](#pré-teste)
 
-[3.5.2 Hospedagem 52](#hospedagem)
+[3.4.2 Hospedagem 52](#hospedagem)
 
-[3.5.3 Coleta do Firebase 53](#coleta-do-firebase)
+[3.4.3 Coleta do Firebase 52](#coleta-do-firebase)
 
 [4 SISTEMA LORS 54](#sistema-lors)
 
+[4.1 O Algoritmo KNN 54](#o-algoritmo-knn)
+
 [4.1.1 Preparação dos dados para o KNN
-54](#preparação-dos-dados-para-o-knn)
+55](#preparação-dos-dados-para-o-knn)
 
-[4.1.2 Testes com KNN 58](#testes-com-knn)
+[4.1.2 Testes com KNN 60](#testes-com-knn)
 
-[*4.2* Modelagem do sistema *LORS* 59](#modelagem-do-sistema-lors)
+[4.1.3 Taxonomia dos gêneros 61](#taxonomia-dos-gêneros)
 
-[4.2.1 Como o trabalho vai relacionar as músicas que o usuário gosta aos
-contextos? 59](#resultados-do-experimento)
+[*4.2* Modelagem do sistema *LORS* 61](#modelagem-do-sistema-lors)
 
-[4.2.2 Como o trabalho vai recomendar novas músicas a partir da relação
-de contexto x música? 60](#_Toc54642222)
+[4.2.1 POC (Proof of Concept) 62](#poc-proof-of-concept)
 
-[4.3 roteiro 60](#_Toc54642223)
+[4.2.2 Servidor 62](#servidor)
 
-[5 CONCLUSÃO 61](#conclusão)
+[4.2.3 Hospedagem 63](#hospedagem-1)
 
-[Referências Bibliográficas 62](#referências-bibliográficas)
+[4.2.4 Recomendação 63](#recomendação)
+
+[4.2.5 Resultado da recomendação (integração app)
+64](#resultado-da-recomendação-integração-app)
+
+[4.2.6 Resultados do experimento 65](#resultados-do-experimento)
+
+[5 CONCLUSÃO 66](#conclusão)
+
+[5.1 Trabalhos futuros 66](#trabalhos-futuros)
+
+[Referências Bibliográficas 67](#referências-bibliográficas)
 
 # Introdução
 
@@ -970,7 +988,7 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são apresentados na Figura 7 abaixo.
 
-<span id="_Toc54642170" class="anchor"></span>Figura 7 Fatores da
+<span id="_Toc54931586" class="anchor"></span>Figura 7 Fatores da
 preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
@@ -1184,7 +1202,7 @@ usuários que utilizarão a aplicação, sendo assim, foram utilizadas
 perguntas que permitam entender suas preferências, atividades, dentre
 outros fatores. As perguntas do questionário estão listadas no Quadro 2:
 
-<span id="_Ref48857312" class="anchor"></span>Quadro 2 Perguntas e
+<span id="_Ref48857312" class="anchor"></span>Quadro Perguntas e
 respostas disponibilizadas a um certo público através dos formulários do
 Google. (próprio, 2020)
 
@@ -1263,8 +1281,8 @@ dos eventos gerados pelo usuário. Ela pode ser acessada através do link
 
 ![](./pandoc/media/image6.png)
 
-<span id="_Toc54642174" class="anchor"></span>Figura 10 Tela
-introdutória da aplicação (próprio, 2020)
+<span id="_Toc54931589" class="anchor"></span>Figura Tela introdutória
+da aplicação (próprio, 2020)
 
 ### Telas da aplicação
 
@@ -1275,7 +1293,7 @@ disponibiliza opções de login no Spotify.
 
 ![](./pandoc/media/image7.png)
 
-<span id="_Toc54642175" class="anchor"></span>Figura 11 Tela de login da
+<span id="_Toc54931590" class="anchor"></span>Figura Tela de login da
 aplicação (próprio, 2020)
 
 A fig13 apresenta o cadastro do contexto na aplicação. O processo é
@@ -1287,7 +1305,7 @@ cada 30min.
 
 ![](./pandoc/media/image8.png)
 
-<span id="_Toc54642176" class="anchor"></span>Figura 12 Tela de
+<span id="_Toc54931591" class="anchor"></span>Figura Tela de
 preenchimento do contexto (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
@@ -1297,7 +1315,7 @@ ser pressionado, habilita a reprodução no plugin.
 
 ![](./pandoc/media/image9.png)
 
-<span id="_Toc54642177" class="anchor"></span>Figura 13 Tela da lista de
+<span id="_Toc54931592" class="anchor"></span>Figura Tela da lista de
 dispositivos do Spotify (próprio, 2020)
 
 Por fim, foi desenvolvido a tela principal, que é apresentado na fig15.
@@ -1316,8 +1334,8 @@ está ouvindo as músicas, as possíveis interações estão listadas abaixo.
 
 ![](./pandoc/media/image10.png)
 
-<span id="_Toc54642178" class="anchor"></span>Figura 14 Tela principal,
-a qual apresenta a música sendo reproduzida ao usuário (próprio, 2020)
+<span id="_Toc54931593" class="anchor"></span>Figura Tela principal, a
+qual apresenta a música sendo reproduzida ao usuário (próprio, 2020)
 
 Ao clicar no botão “gostei”, é salvo a informação de que o usuário
 gostou da música naquele contexto. Ao clicar no botão “não gostei” é
@@ -1327,7 +1345,7 @@ identifique melhor naquele momento.
 
 ![](./pandoc/media/image11.png)
 
-<span id="_Toc54642179" class="anchor"></span>Figura 15 Tela de busca de
+<span id="_Toc54931594" class="anchor"></span>Figura Tela de busca de
 músicas que encaixem melhor no momento (próprio, 2020)
 
 A ação de buscar música, irá levar para a tela apresentada na fig16, a
@@ -1397,7 +1415,7 @@ exportar do *Realtime DB*.
 
 ![](./pandoc/media/image12.png)
 
-<span id="_Ref53931970" class="anchor"></span>Figura 16 Console do
+<span id="_Ref53931970" class="anchor"></span>Figura Console do
 *Realtime Database* do Firebase (próprio, 2020)
 
 Com o JSON e a estrutura de dados pronta, foi realizado alguns estudos
@@ -1428,7 +1446,7 @@ o funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image13.png)
 
-<span id="_Ref52742150" class="anchor"></span>Figura 17 – Representação
+<span id="_Ref52742150" class="anchor"></span>Figura – Representação
 gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
 plano, os pontos amarelos são a representação da classe A, roxos classe
 B e vermelho é o ponto de teste ***(JOSÉ, 2018)***
@@ -1452,7 +1470,7 @@ seguinte estrutura: (i) *action*, ação realizada pelo usuário,
 apresentadas no quadro3; (ii) *createdDateTime*, data da execução do
 evento; (iii) *value*, valores do evento separados por “;”.
 
-<span id="_Toc54642190" class="anchor"></span>Quadro 3 Lista de ações
+<span id="_Toc54931578" class="anchor"></span>Quadro Lista de ações
 possíveis nos eventos (próprio, 2020)
 
 | Action                        | Descrição                                     |
@@ -1486,7 +1504,7 @@ sua lista de eventos.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image14.jpg)
 
-<span id="_Toc54642181" class="anchor"></span>Figura 18 Visão macro das
+<span id="_Toc54931597" class="anchor"></span>Figura Visão macro das
 etapas para transformar os eventos registrados no firebase na tabela que
 sera rodado o KNN (próprio, 2020)
 
@@ -1498,8 +1516,8 @@ representado na fig20.
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
 automaticamente](./pandoc/media/image15.jpg)
 
-<span id="_Toc54642182" class="anchor"></span>Figura 19 Representação
-dos eventos salvos no Firebase (próprio, 2020)
+<span id="_Toc54931598" class="anchor"></span>Figura Representação dos
+eventos salvos no Firebase (próprio, 2020)
 
 Na fig21 é representada a etapa “Separa contexto das músicas”, pois na
 reprodução das músicas, é gerado os eventos separadamente, e nessa
@@ -1510,8 +1528,8 @@ seus contextos.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image16.jpg)
 
-<span id="_Toc54642183" class="anchor"></span>Figura 20 Representação
-das listas geradas na etapa “Separa contexto” (próprio, 2020)
+<span id="_Toc54931599" class="anchor"></span>Figura Representação das
+listas geradas na etapa “Separa contexto” (próprio, 2020)
 
 Para criar essa relação é realizado um loop em cima dos eventos de cada
 contexto, e criado uma lista chamada *musicTable*, a qual é preenchida
@@ -1523,9 +1541,8 @@ reprodução.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image17.jpg)
 
-<span id="_Toc54642184" class="anchor"></span>Figura 21 Representação
-das listas geradas na etapa “separa contexto das músicas” (próprio,
-2020)
+<span id="_Toc54931600" class="anchor"></span>Figura Representação das
+listas geradas na etapa “separa contexto das músicas” (próprio, 2020)
 
 Nas próximas duas etapas “busca informações das músicas” e “busca
 informações dos artistas (gênero)”, é realizado uma busca nas API’s do
@@ -1537,7 +1554,7 @@ artista.
 
 ![Tabela Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
-<span id="_Toc54642185" class="anchor"></span>Figura 22 Representação da
+<span id="_Toc54931601" class="anchor"></span>Figura Representação da
 tabela na etapa “separa contexto das músicas” (próprio, 2020)
 
 Após a busca dos dados ao Spotify, foi obtido a lista dos gêneros das
@@ -1555,7 +1572,7 @@ valores dos eventos um a um.
 
 ![](./pandoc/media/image19.png)
 
-<span id="_Ref53955795" class="anchor"></span>Figura 23 *head()* do
+<span id="_Ref53955795" class="anchor"></span>Figura *head()* do
 *dataframe* criado a partir da variável *genreTable* (próprio, 2020)
 
 No fim, foi utilizado a lib *preprocessing* do *sklearn* para
@@ -1624,7 +1641,7 @@ plugin Web desenvolvido nesse trabalho.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image20.jpg)
 
-<span id="_Toc54642187" class="anchor"></span>Figura 24 Visão macro do
+<span id="_Toc54931603" class="anchor"></span>Figura Visão macro do
 sistema LORS (próprio, 2020)
 
 O plugin (representado na fig24 como o “App”) é responsável por a cada
@@ -1677,8 +1694,8 @@ para repetir (*restart*=1). Os campos *feeling*, *activity*, *location*
 possuem valor padrão somente no caso de a característica enviada não
 existir na base.
 
-Quadro 4 Campos e seus respectivos valores utilizados na recomendação
-(próprio, 2020)
+<span id="_Ref54920412" class="anchor"></span>Quadro Campos e seus
+respectivos valores utilizados na recomendação (próprio, 2020)
 
 | Campo    | Valor padrão |
 | -------- | ------------ |
@@ -1704,7 +1721,8 @@ nome.
 
 ![](./pandoc/media/image21.png)
 
-Figura 25 Tela de recomendações (próprio, 2020)
+<span id="_Toc54931604" class="anchor"></span>Figura Tela de
+recomendações (próprio, 2020)
 
 No fim, é apresentado o gênero recomendado na tela, tratado o retorno do
 Spotify e apresentado as *playlists* na tela, permitindo assim, que o
@@ -1719,13 +1737,28 @@ usuário escolha uma das playlists para reproduzir.
 Nesse trabalho foi realizado uma revisão em cima dos trabalhos da *ACM*,
 de *RecSys* musical que utilizam o contexto do usuário, nela foi
 possível verificar, que poucos trabalhos buscam unir, a recomendação
-musical com o contexto do usuário. Sendo assim, esse trabalho vai buscar
-desenvolver um *RecSys* musical, o qual irá analisar o contexto do
-usuário em tempo real, para realizar novas recomendações a ele. E por
-fim, será realizado uma comparação do resultado, com os obtidos no
-*Spotify*.
+musical com o contexto do usuário. Sendo assim, esse trabalho
+desenvolveu um *RecSys* musical, o qual irá analisar o contexto do
+usuário em tempo real, para realizar novas recomendações a ele.
+
+Problemas com primeiro carregamento de dados
+
+Quantidade de generos grande atrapalha o score knn
 
 ## Trabalhos futuros
+
+Abaixo é apresentado algumas melhorias e continuidade nos estudos
+relativos ao sistema de recomendação apresentado.
+
+##### Desenvolver uma extensão mais simples para conectar ao Spotify, como uma extensão do Google Chrome
+
+##### Encontrar uma base mais completa para realizar a taxonomia dos gêneros
+
+##### Realizar a leitura da emoção através dos batimentos cardíacos de um *wearable*
+
+##### Carregar histórico do Spotify para auxiliar o *Cold Start* do KNN
+
+##### Realizar perguntas sobre gêneros, músicas e artistas para auxiliar no Cold Start do KNN
 
 # Referências Bibliográficas
 
@@ -1734,32 +1767,33 @@ ACM. **Advanced Search**. Disponível em:
 RECSYS COMMUNITY. **RecSys – ACM Recommender Systems**. Disponível em:
 \<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. ALIAGA, W. K.
 DESENVOLVIMENTO DE UM SISTEMA DE RECOMENDACÃO MUSICAL SENSÍVEL AO
-CONTEXTO. 2018. BHATNAGAR, V. Collaborative filtering using data mining
-and analysis. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming or
-stealing? The complementary features between music streaming and music
-piracy. **Journal of Retailing and Consumer Services**, v. 32, p. 86–95,
-2016. DIETMAR, J. et al. **Recommendation system -An Introduction**.
-\[s.l: s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário |
-Michaelis On-line**. Disponível em: \<https://michaelis.uol.com.br/\>.
-Acesso em: 6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**.
-\[s.l.\] MIT Press, 2019. FALK, K. Practical Recommender Systems. \[s.l:
-s.n.\]. IFPI. **IFPI Global Music Report 2019**. Disponível em:
+CONTEXTO. 2018. BHATNAGAR, V. **Collaborative filtering using data
+mining and analysis**. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming
+or stealing? The complementary features between music streaming and
+music piracy. **Journal of Retailing and Consumer Services**, v. 32, p.
+86–95, 2016. DIETMAR, J. et al. **Recommendation system -An
+Introduction**. \[s.l: s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre
+o dicionário | Michaelis On-line**. Disponível em:
+\<https://michaelis.uol.com.br/\>. Acesso em: 6 jun. 2020. ERIKSSON, M.
+et al. **Spotify Teardown**. \[s.l.\] MIT Press, 2019. FALK, K.
+**Practical Recommender Systems**. \[s.l: s.n.\]. IFPI. **IFPI Global
+Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. JOSÉ, I.
 **KNN (K-Nearest Neighbors) \#1**. Disponível em:
 \<https://medium.com/brasil-ai/knn-k-nearest-neighbors-1-e140c82e9c4e\>.
 Acesso em: 4 out. 2020. LUDEWIG, M. et al. Effective nearest-neighbor
 music recommendations. **ACM International Conference Proceeding
 Series**, 2018. LUINI, B. J. R.; WHITMAN, A. E.; DATE, P. **Streaming
-Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M. Os avanços
-tecnológicos e o futuro da humanidadeQuerendo ser Deus, , 2009. NIWA, H.
-**Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v. 134PEDREGOSA,
-F. et al. Scikit-learn: Machine Learning in {P}ython. **Journal of
-Machine Learning Research**, v. 12, p. 2825–2830, 2011. RÄTSCH, G. A
-brief introduction into machine learning. **21st Chaos Communication
-Congress**, p. 1–6, 2004. RESNICK, PAUL AND VARIAN, H. R. Recommender
-Systems. **Communications of the ACM**, v. 40, n. 4, p. 56–58, 1997.
-RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems Handbook**.
-\[s.l: s.n.\]. T.M. COVER, P. E. H. Nearest Neighbor Pattern
+Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M. **Os avanços
+tecnológicos e o futuro da humanidade**Querendo ser Deus, , 2009. NIWA,
+H. **Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v.
+134PEDREGOSA, F. et al. Scikit-learn: Machine Learning in {P}ython.
+**Journal of Machine Learning Research**, v. 12, p. 2825–2830, 2011.
+RÄTSCH, G. A brief introduction into machine learning. **21st Chaos
+Communication Congress**, p. 1–6, 2004. RESNICK, PAUL AND VARIAN, H. R.
+Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
+56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
+Handbook**. \[s.l: s.n.\]. T.M. COVER, P. E. H. Nearest Neighbor Pattern
 Classfication. v. I, p. 1–28, 1967. TKALČIČ, M. et al. Prediction of
 music pairwise preferences from facial expressions. **International
 Conference on Intelligent User Interfaces, Proceedings IUI**, v. Part
