@@ -93,7 +93,7 @@ motor de busca da ACM (próprio, 2020) 20](#_Ref40822414)
 encontrados no motor de busca da ACM (próprio, 2020) 22](#_Ref40822509)
 
 [Figura 7 Fatores da preferência musical (próprio, 2020)
-31](#_Toc54931586)
+31](#_Toc54973564)
 
 [Figura 8 Apresentação dos contextos utilizados no trabalho (próprio,
 2020) 37](#_Ref42447869)
@@ -102,21 +102,21 @@ encontrados no motor de busca da ACM (próprio, 2020) 22](#_Ref40822509)
 (próprio, 2020) 40](#_Ref42452795)
 
 [Figura 10 Tela introdutória da aplicação (próprio, 2020)
-45](#_Toc54931589)
+45](#_Ref54973492)
 
-[Figura 11 Tela de login da aplicação (próprio, 2020) 46](#_Toc54931590)
+[Figura 11 Tela de login da aplicação (próprio, 2020) 46](#_Ref54973486)
 
 [Figura 12 Tela de preenchimento do contexto (próprio, 2020)
-47](#_Toc54931591)
+47](#_Ref54973479)
 
 [Figura 13 Tela da lista de dispositivos do Spotify (próprio, 2020)
-48](#_Toc54931592)
+48](#_Ref54973469)
 
 [Figura 14 Tela principal, a qual apresenta a música sendo reproduzida
-ao usuário (próprio, 2020) 49](#_Toc54931593)
+ao usuário (próprio, 2020) 49](#_Ref54973458)
 
 [Figura 15 Tela de busca de músicas que encaixem melhor no momento
-(próprio, 2020) 50](#_Toc54931594)
+(próprio, 2020) 50](#_Ref54973404)
 
 [Figura 16 Console do *Realtime Database* do Firebase (próprio, 2020)
 52](#_Ref53931970)
@@ -128,27 +128,27 @@ da classe A, roxos classe B e vermelho é o ponto de teste ***(JOSÉ,
 
 [Figura 18 Visão macro das etapas para transformar os eventos
 registrados no firebase na tabela que sera rodado o KNN (próprio, 2020)
-57](#_Toc54931597)
+57](#_Ref54973329)
 
 [Figura 19 Representação dos eventos salvos no Firebase (próprio, 2020)
-57](#_Toc54931598)
+57](#_Ref54973321)
 
 [Figura 20 Representação das listas geradas na etapa “Separa contexto”
-(próprio, 2020) 58](#_Toc54931599)
+(próprio, 2020) 58](#_Ref54973316)
 
 [Figura 21 Representação das listas geradas na etapa “separa contexto
-das músicas” (próprio, 2020) 58](#_Toc54931600)
+das músicas” (próprio, 2020) 58](#_Ref54973306)
 
 [Figura 22 Representação da tabela na etapa “separa contexto das
-músicas” (próprio, 2020) 59](#_Toc54931601)
+músicas” (próprio, 2020) 59](#_Ref54973298)
 
 [Figura 23 *head()* do *dataframe* criado a partir da variável
 *genreTable* (próprio, 2020) 60](#_Ref53955795)
 
 [Figura 24 Visão macro do sistema LORS (próprio, 2020)
-62](#_Toc54931603)
+62](#_Ref54973275)
 
-[Figura 25 Tela de recomendações (próprio, 2020) 65](#_Toc54931604)
+[Figura 25 Tela de recomendações (próprio, 2020) 65](#_Ref54973248)
 
 Lista de Quadros
 
@@ -988,7 +988,7 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são apresentados na Figura 7 abaixo.
 
-<span id="_Toc54931586" class="anchor"></span>Figura 7 Fatores da
+<span id="_Toc54973564" class="anchor"></span>Figura 7 Fatores da
 preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
@@ -1281,7 +1281,7 @@ dos eventos gerados pelo usuário. Ela pode ser acessada através do link
 
 ![](./pandoc/media/image6.png)
 
-<span id="_Toc54931589" class="anchor"></span>Figura 10 Tela
+<span id="_Ref54973492" class="anchor"></span>Figura 10 Tela
 introdutória da aplicação (próprio, 2020)
 
 ### Telas da aplicação
@@ -1293,7 +1293,7 @@ qual disponibiliza opções de login no Spotify.
 
 ![](./pandoc/media/image7.png)
 
-<span id="_Toc54931590" class="anchor"></span>Figura 11 Tela de login da
+<span id="_Ref54973486" class="anchor"></span>Figura 11 Tela de login da
 aplicação (próprio, 2020)
 
 A Figura 12 apresenta o cadastro do contexto na aplicação. O processo é
@@ -1305,7 +1305,7 @@ cada 30min.
 
 ![](./pandoc/media/image8.png)
 
-<span id="_Toc54931591" class="anchor"></span>Figura 12 Tela de
+<span id="_Ref54973479" class="anchor"></span>Figura 12 Tela de
 preenchimento do contexto (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
@@ -1315,7 +1315,7 @@ que ao ser pressionado, habilita a reprodução no plugin.
 
 ![](./pandoc/media/image9.png)
 
-<span id="_Toc54931592" class="anchor"></span>Figura 13 Tela da lista de
+<span id="_Ref54973469" class="anchor"></span>Figura 13 Tela da lista de
 dispositivos do Spotify (próprio, 2020)
 
 Por fim, foi desenvolvido a tela principal, que é apresentado na Figura
@@ -1335,7 +1335,7 @@ abaixo.
 
 ![](./pandoc/media/image10.png)
 
-<span id="_Toc54931593" class="anchor"></span>Figura 14 Tela principal,
+<span id="_Ref54973458" class="anchor"></span>Figura 14 Tela principal,
 a qual apresenta a música sendo reproduzida ao usuário (próprio, 2020)
 
 Ao clicar no botão “gostei”, é salvo a informação de que o usuário
@@ -1346,7 +1346,7 @@ identifique melhor naquele momento.
 
 ![](./pandoc/media/image11.png)
 
-<span id="_Toc54931594" class="anchor"></span>Figura 15 Tela de busca de
+<span id="_Ref54973404" class="anchor"></span>Figura 15 Tela de busca de
 músicas que encaixem melhor no momento (próprio, 2020)
 
 A ação de buscar música, irá levar para a tela apresentada na Figura 15,
@@ -1507,7 +1507,7 @@ sua lista de eventos.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image14.jpg)
 
-<span id="_Toc54931597" class="anchor"></span>Figura 18 Visão macro das
+<span id="_Ref54973329" class="anchor"></span>Figura 18 Visão macro das
 etapas para transformar os eventos registrados no firebase na tabela que
 sera rodado o KNN (próprio, 2020)
 
@@ -1519,7 +1519,7 @@ reproduzidas, que é representado na Figura 20.
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
 automaticamente](./pandoc/media/image15.jpg)
 
-<span id="_Toc54931598" class="anchor"></span>Figura 19 Representação
+<span id="_Ref54973321" class="anchor"></span>Figura 19 Representação
 dos eventos salvos no Firebase (próprio, 2020)
 
 Na Figura 21 é representada a etapa “Separa contexto das músicas”, pois
@@ -1531,7 +1531,7 @@ músicas e seus contextos.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image16.jpg)
 
-<span id="_Toc54931599" class="anchor"></span>Figura 20 Representação
+<span id="_Ref54973316" class="anchor"></span>Figura 20 Representação
 das listas geradas na etapa “Separa contexto” (próprio, 2020)
 
 Para criar essa relação é realizado um loop em cima dos eventos de cada
@@ -1544,7 +1544,7 @@ reprodução.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image17.jpg)
 
-<span id="_Toc54931600" class="anchor"></span>Figura 21 Representação
+<span id="_Ref54973306" class="anchor"></span>Figura 21 Representação
 das listas geradas na etapa “separa contexto das músicas” (próprio,
 2020)
 
@@ -1558,7 +1558,7 @@ artista.
 
 ![Tabela Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
-<span id="_Toc54931601" class="anchor"></span>Figura 22 Representação da
+<span id="_Ref54973298" class="anchor"></span>Figura 22 Representação da
 tabela na etapa “separa contexto das músicas” (próprio, 2020)
 
 Após a busca dos dados ao Spotify, foi obtido a lista dos gêneros das
@@ -1645,7 +1645,7 @@ plugin Web desenvolvido nesse trabalho.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image20.jpg)
 
-<span id="_Toc54931603" class="anchor"></span>Figura 24 Visão macro do
+<span id="_Ref54973275" class="anchor"></span>Figura 24 Visão macro do
 sistema LORS (próprio, 2020)
 
 O plugin (representado na Figura 24 como o “App”) é responsável por a
@@ -1725,7 +1725,7 @@ nome.
 
 ![](./pandoc/media/image21.png)
 
-<span id="_Toc54931604" class="anchor"></span>Figura 25 Tela de
+<span id="_Ref54973248" class="anchor"></span>Figura 25 Tela de
 recomendações (próprio, 2020)
 
 No fim, é apresentado o gênero recomendado na tela, tratando o retorno
