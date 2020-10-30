@@ -1202,7 +1202,7 @@ usuários que utilizarão a aplicação, sendo assim, foram utilizadas
 perguntas que permitam entender suas preferências, atividades, dentre
 outros fatores. As perguntas do questionário estão listadas no Quadro 2:
 
-<span id="_Ref48857312" class="anchor"></span>Quadro Perguntas e
+<span id="_Ref48857312" class="anchor"></span>Quadro 2 Perguntas e
 respostas disponibilizadas a um certo público através dos formulários do
 Google. (próprio, 2020)
 
@@ -1281,8 +1281,8 @@ dos eventos gerados pelo usuário. Ela pode ser acessada através do link
 
 ![](./pandoc/media/image6.png)
 
-<span id="_Toc54931589" class="anchor"></span>Figura Tela introdutória
-da aplicação (próprio, 2020)
+<span id="_Toc54931589" class="anchor"></span>Figura 10 Tela
+introdutória da aplicação (próprio, 2020)
 
 ### Telas da aplicação
 
@@ -1293,7 +1293,7 @@ disponibiliza opções de login no Spotify.
 
 ![](./pandoc/media/image7.png)
 
-<span id="_Toc54931590" class="anchor"></span>Figura Tela de login da
+<span id="_Toc54931590" class="anchor"></span>Figura 11 Tela de login da
 aplicação (próprio, 2020)
 
 A fig13 apresenta o cadastro do contexto na aplicação. O processo é
@@ -1305,7 +1305,7 @@ cada 30min.
 
 ![](./pandoc/media/image8.png)
 
-<span id="_Toc54931591" class="anchor"></span>Figura Tela de
+<span id="_Toc54931591" class="anchor"></span>Figura 12 Tela de
 preenchimento do contexto (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
@@ -1315,7 +1315,7 @@ ser pressionado, habilita a reprodução no plugin.
 
 ![](./pandoc/media/image9.png)
 
-<span id="_Toc54931592" class="anchor"></span>Figura Tela da lista de
+<span id="_Toc54931592" class="anchor"></span>Figura 13 Tela da lista de
 dispositivos do Spotify (próprio, 2020)
 
 Por fim, foi desenvolvido a tela principal, que é apresentado na fig15.
@@ -1334,8 +1334,8 @@ está ouvindo as músicas, as possíveis interações estão listadas abaixo.
 
 ![](./pandoc/media/image10.png)
 
-<span id="_Toc54931593" class="anchor"></span>Figura Tela principal, a
-qual apresenta a música sendo reproduzida ao usuário (próprio, 2020)
+<span id="_Toc54931593" class="anchor"></span>Figura 14 Tela principal,
+a qual apresenta a música sendo reproduzida ao usuário (próprio, 2020)
 
 Ao clicar no botão “gostei”, é salvo a informação de que o usuário
 gostou da música naquele contexto. Ao clicar no botão “não gostei” é
@@ -1345,7 +1345,7 @@ identifique melhor naquele momento.
 
 ![](./pandoc/media/image11.png)
 
-<span id="_Toc54931594" class="anchor"></span>Figura Tela de busca de
+<span id="_Toc54931594" class="anchor"></span>Figura 15 Tela de busca de
 músicas que encaixem melhor no momento (próprio, 2020)
 
 A ação de buscar música, irá levar para a tela apresentada na fig16, a
@@ -1415,7 +1415,7 @@ exportar do *Realtime DB*.
 
 ![](./pandoc/media/image12.png)
 
-<span id="_Ref53931970" class="anchor"></span>Figura Console do
+<span id="_Ref53931970" class="anchor"></span>Figura 16 Console do
 *Realtime Database* do Firebase (próprio, 2020)
 
 Com o JSON e a estrutura de dados pronta, foi realizado alguns estudos
@@ -1446,7 +1446,7 @@ o funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image13.png)
 
-<span id="_Ref52742150" class="anchor"></span>Figura – Representação
+<span id="_Ref52742150" class="anchor"></span>Figura 17 – Representação
 gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
 plano, os pontos amarelos são a representação da classe A, roxos classe
 B e vermelho é o ponto de teste ***(JOSÉ, 2018)***
@@ -1470,7 +1470,7 @@ seguinte estrutura: (i) *action*, ação realizada pelo usuário,
 apresentadas no quadro3; (ii) *createdDateTime*, data da execução do
 evento; (iii) *value*, valores do evento separados por “;”.
 
-<span id="_Toc54931578" class="anchor"></span>Quadro Lista de ações
+<span id="_Toc54931578" class="anchor"></span>Quadro 3 Lista de ações
 possíveis nos eventos (próprio, 2020)
 
 | Action                        | Descrição                                     |
@@ -1504,7 +1504,7 @@ sua lista de eventos.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image14.jpg)
 
-<span id="_Toc54931597" class="anchor"></span>Figura Visão macro das
+<span id="_Toc54931597" class="anchor"></span>Figura 18 Visão macro das
 etapas para transformar os eventos registrados no firebase na tabela que
 sera rodado o KNN (próprio, 2020)
 
@@ -1516,8 +1516,8 @@ representado na fig20.
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
 automaticamente](./pandoc/media/image15.jpg)
 
-<span id="_Toc54931598" class="anchor"></span>Figura Representação dos
-eventos salvos no Firebase (próprio, 2020)
+<span id="_Toc54931598" class="anchor"></span>Figura 19 Representação
+dos eventos salvos no Firebase (próprio, 2020)
 
 Na fig21 é representada a etapa “Separa contexto das músicas”, pois na
 reprodução das músicas, é gerado os eventos separadamente, e nessa
@@ -1528,8 +1528,8 @@ seus contextos.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image16.jpg)
 
-<span id="_Toc54931599" class="anchor"></span>Figura Representação das
-listas geradas na etapa “Separa contexto” (próprio, 2020)
+<span id="_Toc54931599" class="anchor"></span>Figura 20 Representação
+das listas geradas na etapa “Separa contexto” (próprio, 2020)
 
 Para criar essa relação é realizado um loop em cima dos eventos de cada
 contexto, e criado uma lista chamada *musicTable*, a qual é preenchida
@@ -1541,8 +1541,9 @@ reprodução.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image17.jpg)
 
-<span id="_Toc54931600" class="anchor"></span>Figura Representação das
-listas geradas na etapa “separa contexto das músicas” (próprio, 2020)
+<span id="_Toc54931600" class="anchor"></span>Figura 21 Representação
+das listas geradas na etapa “separa contexto das músicas” (próprio,
+2020)
 
 Nas próximas duas etapas “busca informações das músicas” e “busca
 informações dos artistas (gênero)”, é realizado uma busca nas API’s do
@@ -1554,7 +1555,7 @@ artista.
 
 ![Tabela Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
-<span id="_Toc54931601" class="anchor"></span>Figura Representação da
+<span id="_Toc54931601" class="anchor"></span>Figura 22 Representação da
 tabela na etapa “separa contexto das músicas” (próprio, 2020)
 
 Após a busca dos dados ao Spotify, foi obtido a lista dos gêneros das
@@ -1572,7 +1573,7 @@ valores dos eventos um a um.
 
 ![](./pandoc/media/image19.png)
 
-<span id="_Ref53955795" class="anchor"></span>Figura *head()* do
+<span id="_Ref53955795" class="anchor"></span>Figura 23 *head()* do
 *dataframe* criado a partir da variável *genreTable* (próprio, 2020)
 
 No fim, foi utilizado a lib *preprocessing* do *sklearn* para
@@ -1641,7 +1642,7 @@ plugin Web desenvolvido nesse trabalho.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image20.jpg)
 
-<span id="_Toc54931603" class="anchor"></span>Figura Visão macro do
+<span id="_Toc54931603" class="anchor"></span>Figura 24 Visão macro do
 sistema LORS (próprio, 2020)
 
 O plugin (representado na fig24 como o “App”) é responsável por a cada
@@ -1694,7 +1695,7 @@ para repetir (*restart*=1). Os campos *feeling*, *activity*, *location*
 possuem valor padrão somente no caso de a característica enviada não
 existir na base.
 
-<span id="_Ref54920412" class="anchor"></span>Quadro Campos e seus
+<span id="_Ref54920412" class="anchor"></span>Quadro 4 Campos e seus
 respectivos valores utilizados na recomendação (próprio, 2020)
 
 | Campo    | Valor padrão |
@@ -1721,7 +1722,7 @@ nome.
 
 ![](./pandoc/media/image21.png)
 
-<span id="_Toc54931604" class="anchor"></span>Figura Tela de
+<span id="_Toc54931604" class="anchor"></span>Figura 25 Tela de
 recomendações (próprio, 2020)
 
 No fim, é apresentado o gênero recomendado na tela, tratado o retorno do
@@ -1740,6 +1741,27 @@ possível verificar, que poucos trabalhos buscam unir, a recomendação
 musical com o contexto do usuário. Sendo assim, esse trabalho
 desenvolveu um *RecSys* musical, o qual irá analisar o contexto do
 usuário em tempo real, para realizar novas recomendações a ele.
+
+No desenvolvimento desse trabalho, foi encontrado diversas dificuldades
+em lidar com músicas, pois desde o momento que se iniciou o estudo, foi
+visto que a área é muito maior do que aparenta. Com o questionário foi
+possível entender que o gosto de um público é algo inesperado, pois
+nesse caso, foi algo bem diferente do que o autor desse trabalho
+esperava. Outras dificuldades foram encontradas no desenvolvimento de um
+player e no sistema que realiza as recomendações.
+
+No plugin, foram encontradas diversas dificuldades em seu
+desenvolvimento. Inicialmente a aplicação foi desenvolvida em Flutter,
+uma plataforma para desenvolvimento mobile e foi visto que não supriria
+as necessidades desse trabalho, então houve uma migração para a
+plataforma Web. No fim entendido que o mais simples supriria as
+necessidades desse trabalho e que uma tecnologia hype não iria torná-lo
+melhor.
+
+Ao realizar a primeira publicação do plugin, foram encontrados problemas
+como, navegadores diferentes, sistemas operacionais diferentes, contas
+do Spotify com contrato diferente. E tudo isso, levou ao entendimento de
+que o desenvolvimento e manutenção de aplicações Web é complexo.
 
 Problemas com primeiro carregamento de dados
 
