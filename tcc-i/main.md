@@ -1184,7 +1184,7 @@ usuários que utilizarão a aplicação, sendo assim, foram utilizadas
 perguntas que permitam entender suas preferências, atividades, dentre
 outros fatores. As perguntas do questionário estão listadas no Quadro 2:
 
-<span id="_Ref48857312" class="anchor"></span>Quadro Perguntas e
+<span id="_Ref48857312" class="anchor"></span>Quadro 2 Perguntas e
 respostas disponibilizadas a um certo público através dos formulários do
 Google. (próprio, 2020)
 
@@ -1263,8 +1263,8 @@ dos eventos gerados pelo usuário. Ela pode ser acessada através do link
 
 ![](./pandoc/media/image6.png)
 
-<span id="_Toc54642174" class="anchor"></span>Figura Tela introdutória
-da aplicação (próprio, 2020)
+<span id="_Toc54642174" class="anchor"></span>Figura 11 Tela
+introdutória da aplicação (próprio, 2020)
 
 ### Telas da aplicação
 
@@ -1275,7 +1275,7 @@ disponibiliza opções de login no Spotify.
 
 ![](./pandoc/media/image7.png)
 
-<span id="_Toc54642175" class="anchor"></span>Figura Tela de login da
+<span id="_Toc54642175" class="anchor"></span>Figura 12 Tela de login da
 aplicação (próprio, 2020)
 
 A fig13 apresenta o cadastro do contexto na aplicação. O processo é
@@ -1287,7 +1287,7 @@ cada 30min.
 
 ![](./pandoc/media/image8.png)
 
-<span id="_Toc54642176" class="anchor"></span>Figura Tela de
+<span id="_Toc54642176" class="anchor"></span>Figura 13 Tela de
 preenchimento do contexto (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
@@ -1297,7 +1297,7 @@ ser pressionado, habilita a reprodução no plugin.
 
 ![](./pandoc/media/image9.png)
 
-<span id="_Toc54642177" class="anchor"></span>Figura Tela da lista de
+<span id="_Toc54642177" class="anchor"></span>Figura 14 Tela da lista de
 dispositivos do Spotify (próprio, 2020)
 
 Por fim, foi desenvolvido a tela principal, que é apresentado na fig15.
@@ -1316,8 +1316,8 @@ está ouvindo as músicas, as possíveis interações estão listadas abaixo.
 
 ![](./pandoc/media/image10.png)
 
-<span id="_Toc54642178" class="anchor"></span>Figura Tela principal, a
-qual apresenta a música sendo reproduzida ao usuário (próprio, 2020)
+<span id="_Toc54642178" class="anchor"></span>Figura 15 Tela principal,
+a qual apresenta a música sendo reproduzida ao usuário (próprio, 2020)
 
 Ao clicar no botão “gostei”, é salvo a informação de que o usuário
 gostou da música naquele contexto. Ao clicar no botão “não gostei” é
@@ -1327,7 +1327,7 @@ identifique melhor naquele momento.
 
 ![](./pandoc/media/image11.png)
 
-<span id="_Toc54642179" class="anchor"></span>Figura Tela de busca de
+<span id="_Toc54642179" class="anchor"></span>Figura 16 Tela de busca de
 músicas que encaixem melhor no momento (próprio, 2020)
 
 A ação de buscar música, irá levar para a tela apresentada na fig16, a
@@ -1397,7 +1397,7 @@ exportar do *Realtime DB*.
 
 ![](./pandoc/media/image12.png)
 
-<span id="_Ref53931970" class="anchor"></span>Figura Console do
+<span id="_Ref53931970" class="anchor"></span>Figura 17 Console do
 *Realtime Database* do Firebase (próprio, 2020)
 
 Com o JSON e a estrutura de dados pronta, foi realizado alguns estudos
@@ -1428,7 +1428,7 @@ o funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image13.png)
 
-<span id="_Ref52742150" class="anchor"></span>Figura – Representação
+<span id="_Ref52742150" class="anchor"></span>Figura 8 – Representação
 gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
 plano, os pontos amarelos são a representação da classe A, roxos classe
 B e vermelho é o ponto de teste ***(JOSÉ, 2018)***
@@ -1452,7 +1452,7 @@ seguinte estrutura: (i) *action*, ação realizada pelo usuário,
 apresentadas no quadro3; (ii) *createdDateTime*, data da execução do
 evento; (iii) *value*, valores do evento separados por “;”.
 
-<span id="_Toc54642190" class="anchor"></span>Quadro Lista de ações
+<span id="_Toc54642190" class="anchor"></span>Quadro 3 Lista de ações
 possíveis nos eventos (próprio, 2020)
 
 | Action                        | Descrição                                     |
@@ -1477,16 +1477,16 @@ possíveis nos eventos (próprio, 2020)
 
 A fig18 apresenta as etapas de preparação dos dados desde o carregamento
 dos dados do arquivo. Na etapa “Carrega JSON” foi realizado o
-carregamento do arquivo a partir da biblioteca padrão do python “open”.
-Para a interpretação, foi utilizado a biblioteca *json*, que possibilita
-transformar o conteúdo *string* em um dicionário. Do dicionário, foi
-obtido os usuários e seus eventos e transformado em outro dicionário
-*users*, cujo a *key* é o id do usuário e o conteúdo sua lista de
-eventos.
+carregamento do arquivo a partir da biblioteca padrão do *python*
+“open”. Para a interpretação, foi utilizado a biblioteca *json*, que
+possibilita transformar o conteúdo *string* em um dicionário. Do
+dicionário, foi obtido os usuários e seus eventos e transformado em
+outro dicionário *users*, cujo a *key* é o id do usuário e o conteúdo
+sua lista de eventos.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image14.jpg)
 
-<span id="_Toc54642181" class="anchor"></span>Figura Visão macro das
+<span id="_Toc54642181" class="anchor"></span>Figura 18 Visão macro das
 etapas para transformar os eventos registrados no firebase na tabela que
 sera rodado o KNN (próprio, 2020)
 
@@ -1498,8 +1498,8 @@ representado na fig20.
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
 automaticamente](./pandoc/media/image15.jpg)
 
-<span id="_Toc54642182" class="anchor"></span>Figura Representação dos
-eventos salvos no Firebase (próprio, 2020)
+<span id="_Toc54642182" class="anchor"></span>Figura 19 Representação
+dos eventos salvos no Firebase (próprio, 2020)
 
 Na fig21 é representada a etapa “Separa contexto das músicas”, pois na
 reprodução das músicas, é gerado os eventos separadamente, e nessa
@@ -1510,8 +1510,8 @@ seus contextos.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image16.jpg)
 
-<span id="_Toc54642183" class="anchor"></span>Figura Representação das
-listas geradas na etapa “Separa contexto” (próprio, 2020)
+<span id="_Toc54642183" class="anchor"></span>Figura 20 Representação
+das listas geradas na etapa “Separa contexto” (próprio, 2020)
 
 Para criar essa relação é realizado um loop em cima dos eventos de cada
 contexto, e criado uma lista chamada *musicTable*, a qual é preenchida
@@ -1523,8 +1523,9 @@ reprodução.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image17.jpg)
 
-<span id="_Toc54642184" class="anchor"></span>Figura Representação das
-listas geradas na etapa “separa contexto das músicas” (próprio, 2020)
+<span id="_Toc54642184" class="anchor"></span>Figura 21 Representação
+das listas geradas na etapa “separa contexto das músicas” (próprio,
+2020)
 
 Nas próximas duas etapas “busca informações das músicas” e “busca
 informações dos artistas (gênero)”, é realizado uma busca nas API’s do
@@ -1536,7 +1537,7 @@ artista.
 
 ![Tabela Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
-<span id="_Toc54642185" class="anchor"></span>Figura Representação da
+<span id="_Toc54642185" class="anchor"></span>Figura 22 Representação da
 tabela na etapa “separa contexto das músicas” (próprio, 2020)
 
 Após a busca dos dados ao Spotify, foi obtido a lista dos gêneros das
@@ -1553,7 +1554,7 @@ dos eventos um a um.
 
 ![](./pandoc/media/image19.png)
 
-<span id="_Ref53955795" class="anchor"></span>Figura *head()* do
+<span id="_Ref53955795" class="anchor"></span>Figura 23 *head()* do
 *dataframe* criado a partir da variável *genreTable* (próprio, 2020)
 
 No fim, foi utilizado a lib *preprocessing* do *sklearn* para
@@ -1563,7 +1564,7 @@ resultado da tabela é apresentado na Figura 23.
 
 ### Taxonomia dos gêneros
 
-...
+... \# https://developer.spotify.com/community/showcase/music-popcorn/
 
 ### Testes com KNN
 
@@ -1610,6 +1611,13 @@ plugin Web desenvolvido nesse trabalho.
 <span id="_Toc54642187" class="anchor"></span>Figura 24 Visão macro do
 sistema LORS (próprio, 2020)
 
+O plugin (representado na fig24 como o “App”) é responsável por a cada
+30 minutos solicitar ao usuário uma atualização de contexto, isso é,
+abrir um formulário, o qual possibilita o preenchimento do humor,
+atividades e localização atual do usuário. Essas informações serão
+salvas e relacionadas as próximas músicas reproduzidas ou salvas pelo
+usuário.
+
 ### POC (Proof of Concept)
 
 Inicialmente foi desenvolvido uma POC em *python* utilizando o *Jupyter
@@ -1622,17 +1630,13 @@ visavam: (i) escolher o melhor número de vizinhos (*k*) para rodar o
 algoritmo; (ii) avaliar o score do modelo; (iii) analisar a matriz de
 confusão obtida no modelo.
 
-### Recomendação de novas músicas
-
-... KNN =\> gênero =\> musicas do genero
-
 ### Servidor
 
-Com a logica desenvolvida na POC, foi realizado uma exportação do código
+Com a lógica desenvolvida na POC, foi realizado uma exportação do código
 para scripts *python*. Então foi desenvolvido um servidor utilizando a
 lib *Flask* e integrado o algoritmo KNN exportado à rota. Foi criado uma
-rota do tipo GET / que recebe 4 parâmetros: (i) uri, o id do Spotify do
-usuário; (ii) feeling, o sentimento registrado; (iii) *activity*, a
+rota do tipo GET / que recebe 4 parâmetros: (i) *uri*, o *id* do Spotify
+do usuário; (ii) *feeling*, o sentimento registrado; (iii) *activity*, a
 atividade registrada; (iv) *location*, a localização registrada. A rota
 tem como retorno o gênero resultado da predição e o *score* do modelo.
 
@@ -1640,21 +1644,41 @@ tem como retorno o gênero resultado da predição e o *score* do modelo.
 
 Na fig24
 
-### Resultado da recomendação
+### Recomendação
+
+No momento em que o servidor recebe uma requisição, é feito o tratamento
+dos parâmetros, isso é, transforma a *string* em um valor numérico
+através da lib *preprocessing*, e no caso da característica não existir
+anteriormente, é feito um tratamento para valores padrões conforme
+apresenta o Quadro 4. Os campos *like*, *hate* e *restart* estão com
+valores fixos devido a buscarmos músicas que foram curtidas (*like*=1),
+não foram marcadas como “Não gostei” (*hate*=0) e que foram colocadas
+para repetir (*restart*=1). Os campos *feeling*, *activity*, *location*
+possuem valor padrão somente no caso de a característica enviada não
+existir na base.
+
+Quadro 4 Campos e seus respectivos valores utilizados na recomendação
+
+| Campo      | Valor padrão |
+| ---------- | ------------ |
+| *like*     | 1            |
+| *hate*     | 0            |
+| *restart*  | 1            |
+| *feeling*  | 0            |
+| *activity* | 0            |
+| *location* | 0            |
+
+Com o modelo pronto (Seção 4.1.1), e os parâmetros tratados é realizado
+a predição através do método *predict* do modelo do *sklearn* e
+devolvido a classe resultante como resposta a requisição.
+
+### Resultado da recomendação (integração app)
 
 ... tela
 
 ### Resultados do experimento
 
 ... score, matriz confusão
-
-### Como o trabalho vai relacionar as músicas que o usuário gosta aos contextos?
-
-A cada 30 minutos será solicitado ao usuário uma atualização de
-contexto, isso é, será aberto um formulário, o qual possibilita o
-preenchimento do humor, atividades e localização atual do usuário. Essas
-informações serão salvas e relacionadas as próximas músicas reproduzidas
-ou salvas pelo usuário.
 
 # CONCLUSÃO
 
@@ -1666,6 +1690,8 @@ desenvolver um *RecSys* musical, o qual irá analisar o contexto do
 usuário em tempo real, para realizar novas recomendações a ele. E por
 fim, será realizado uma comparação do resultado, com os obtidos no
 *Spotify*.
+
+## Trabalhos futuros
 
 # Referências Bibliográficas
 
