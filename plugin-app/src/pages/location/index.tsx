@@ -9,14 +9,14 @@ import { Choose, ChooseItem } from "../../components/choose";
 import { Layout } from "../shared/layout";
 import { LocationUtil } from "../../utils/location";
 import { useEvents, EventType } from "../../contexts/event";
-import { useLocation } from "../../contexts/location";
+import { useNewContext } from "../../contexts/new-context";
 import { cookieService } from "../../services/storage";
 
 const THIRTY_MINUTES = 60 * 30;
 
 export default function () {
   const history = useHistory();
-  const { search } = useLocation();
+  const { searchFeeling: search } = useNewContext();
   const { save: saveEvent } = useEvents();
   const [locations, setLocations] = useState([] as ChooseItem[]);
   const [selectedLocationsMap, setSelectedLocations] = useState({} as { [key: string]: ChooseItem });

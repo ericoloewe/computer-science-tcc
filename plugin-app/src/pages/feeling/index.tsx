@@ -8,7 +8,7 @@ import { AddOptionEvent } from "../../components/add-option-event";
 import { Choose, ChooseItem } from "../../components/choose";
 import { Layout } from "../shared/layout";
 import { useEvents, EventType } from "../../contexts/event";
-import { useFeeling } from "../../contexts/feeling";
+import { useNewContext } from "../../contexts/new-context";
 
 interface Props {
   type: "feeling" | "want-to-fell-like";
@@ -18,7 +18,7 @@ const isWantToFeelLikeEnabled = process.env.REACT_APP_ENABLE_WANT_TO_FEEL_LIKE =
 
 export default function ({ type }: Props) {
   const history = useHistory();
-  const { search } = useFeeling();
+  const { searchFeeling: search } = useNewContext();
   const { save: saveEvent } = useEvents();
   const [feelings, setFeelings] = useState([] as ChooseItem[]);
   const [selectedFeelingsMap, setSelectedFeelings] = useState({} as { [key: string]: ChooseItem });
@@ -64,6 +64,7 @@ export default function ({ type }: Props) {
     const eventType = type === "feeling" ? EventType.CHOOSE_FEELING : EventType.CHOOSE_FEELING_TO_BE_LIKE;
     const routeToGo = type === "feeling" && isWantToFeelLikeEnabled ? `/new-context/want-to-fell-like` : `/new-context/activity`;
 
+    // savar ctx nos cookies atraves do contexto new-context
     await saveEvent(eventType, feelingsToSave);
     history.push(routeToGo);
   }

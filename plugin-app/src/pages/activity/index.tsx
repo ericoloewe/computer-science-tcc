@@ -7,12 +7,12 @@ import { useHistory } from "react-router-dom";
 import { AddOptionEvent } from "../../components/add-option-event";
 import { Choose, ChooseItem } from "../../components/choose";
 import { Layout } from "../shared/layout";
-import { useActivity } from "../../contexts/activity";
+import { useNewContext } from "../../contexts/new-context";
 import { useEvents, EventType } from "../../contexts/event";
 
 export default function () {
   const history = useHistory();
-  const { search } = useActivity();
+  const { searchFeeling: search } = useNewContext();
   const { save: saveEvent } = useEvents();
   const [activities, setActivities] = useState([] as ChooseItem[]);
   const [selectedActivitiesMap, setSelectedActivities] = useState({} as { [key: string]: ChooseItem });

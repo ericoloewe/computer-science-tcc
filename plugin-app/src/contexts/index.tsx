@@ -1,10 +1,8 @@
 import React from "react";
 
-import { ActivityProvider } from "./activity";
 import { AuthProvider } from "./auth";
 import { EventsProvider } from "./event";
-import { FeelingProvider } from "./feeling";
-import { LocationProvider } from "./location";
+import { NewContextProvider } from "./new-context";
 import { PlayerProvider } from "./player";
 import { PlaylistProvider } from "./playlist";
 import { SearchProvider } from "./search";
@@ -21,13 +19,9 @@ export function AppProviders({ children }: Props) {
         <EventsProvider>
           <PlaylistProvider>
             <PlayerProvider>
-              <FeelingProvider>
-                <ActivityProvider>
-                  <LocationProvider>
-                    <SearchProvider>{children}</SearchProvider>
-                  </LocationProvider>
-                </ActivityProvider>
-              </FeelingProvider>
+              <NewContextProvider>
+                <SearchProvider>{children}</SearchProvider>
+              </NewContextProvider>
             </PlayerProvider>
           </PlaylistProvider>
         </EventsProvider>
