@@ -1287,16 +1287,16 @@ introdutória da aplicação (próprio, 2020)
 ### Telas da aplicação
 
 A aplicação foi dividida em 5 telas, e ela inicia com a tela apresentada
-na fig11, a qual apresenta instruções para os usuários de como utilizar
-a aplicação. A segunda tela, é representada na fig12, a qual
-disponibiliza opções de login no Spotify.
+na Figura 10, a qual apresenta instruções para os usuários de como
+utilizar a aplicação. A segunda tela, é representada na Figura 11, a
+qual disponibiliza opções de login no Spotify.
 
 ![](./pandoc/media/image7.png)
 
 <span id="_Toc54931590" class="anchor"></span>Figura 11 Tela de login da
 aplicação (próprio, 2020)
 
-A fig13 apresenta o cadastro do contexto na aplicação. O processo é
+A Figura 12 apresenta o cadastro do contexto na aplicação. O processo é
 dividido em 3 etapas: (i) “Como você está se sentindo nesse momento?”;
 (ii) “O que você está fazendo nesse momento?”; (iii) “Onde você está
 nesse momento?”. A partir dessas perguntas, é possível entender o
@@ -1310,17 +1310,18 @@ preenchimento do contexto (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
 reproduza as músicas no plugin. Para isso, foi criado a tela apresentada
-na fig14, a qual possui um botão “USAR PLUGIN PARA TOCAR MÚSICAS” que ao
-ser pressionado, habilita a reprodução no plugin.
+na Figura 13, a qual possui um botão “USAR PLUGIN PARA TOCAR MÚSICAS”
+que ao ser pressionado, habilita a reprodução no plugin.
 
 ![](./pandoc/media/image9.png)
 
 <span id="_Toc54931592" class="anchor"></span>Figura 13 Tela da lista de
 dispositivos do Spotify (próprio, 2020)
 
-Por fim, foi desenvolvido a tela principal, que é apresentado na fig15.
-Nessa tela, é realizado toda interação do usuário no período em que ele
-está ouvindo as músicas, as possíveis interações estão listadas abaixo.
+Por fim, foi desenvolvido a tela principal, que é apresentado na Figura
+14. Nessa tela, é realizado toda interação do usuário no período em que
+ele está ouvindo as músicas, as possíveis interações estão listadas
+abaixo.
 
   - Gostar da música
 
@@ -1340,7 +1341,7 @@ a qual apresenta a música sendo reproduzida ao usuário (próprio, 2020)
 Ao clicar no botão “gostei”, é salvo a informação de que o usuário
 gostou da música naquele contexto. Ao clicar no botão “não gostei” é
 salvo a informação que o usuário não gostou e é levado o usuário a tela
-de busca de música fig16, para o usuário apresentar uma música se
+de busca de música Figura 15, para o usuário apresentar uma música se
 identifique melhor naquele momento.
 
 ![](./pandoc/media/image11.png)
@@ -1348,10 +1349,11 @@ identifique melhor naquele momento.
 <span id="_Toc54931594" class="anchor"></span>Figura 15 Tela de busca de
 músicas que encaixem melhor no momento (próprio, 2020)
 
-A ação de buscar música, irá levar para a tela apresentada na fig16, a
-qual possibilita o usuário apresentar uma música que se enquadre melhor
-no contexto que ele está vivendo. Ao selecionar as músicas e clicar em
-próximo, é salvo as informações de sua relação com o contexto vivido.
+A ação de buscar música, irá levar para a tela apresentada na Figura 15,
+a qual possibilita o usuário apresentar uma música que se enquadre
+melhor no contexto que ele está vivendo. Ao selecionar as músicas e
+clicar em próximo, é salvo as informações de sua relação com o contexto
+vivido.
 
 ### Tecnologias utilizadas no desenvolvimento
 
@@ -1441,8 +1443,8 @@ desenvolvimento do sistema nas seções a seguir.
 O *k-Nearest Neighbor* (KNN) é um método de classificação que busca os k
 pontos dos dados de treino mais pertos do ponto de teste, e então, uma
 classe é atrelada a esse ponto através de uma votação majoritária dos k
-pontos vizinhos. (T.M. COVER, 1967) Na fig8 é exemplificado graficamente
-o funcionamento do algoritmo.
+pontos vizinhos. (T.M. COVER, 1967) Na Figura 17 é exemplificado
+graficamente o funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image13.png)
 
@@ -1451,10 +1453,11 @@ gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
 plano, os pontos amarelos são a representação da classe A, roxos classe
 B e vermelho é o ponto de teste ***(JOSÉ, 2018)***
 
-Como é apresentado na Fig8 o algoritmo funciona através da disposição
-das características x1 e x2 sobre um plano, e atribuindo classes a eles
-(no caso: classe A e classe B), então, a partir da predição do ponto de
-teste é encontrado a classe que o representa. (TODO\_REF)
+Como é apresentado na Figura 17 o algoritmo funciona através da
+disposição das características x1 e x2 sobre um plano, e atribuindo
+classes a eles (no caso: classe A e classe B), então, a partir da
+predição do ponto de teste é encontrado a classe que o representa.
+(TODO\_REF)
 
 Para rodar o algoritmo de classificação nesse trabalho será utilizado a
 implementação da biblioteca em *python* do *scikit-learn.* A qual se
@@ -1493,9 +1496,9 @@ possíveis nos eventos (próprio, 2020)
 | RESTART\_MUSIC                |                                               |
 | SHOW\_DETAILS                 |                                               |
 
-A fig18 apresenta as etapas de preparação dos dados desde o carregamento
-dos dados do arquivo. Na etapa “Carrega JSON” foi realizado o
-carregamento do arquivo a partir da biblioteca padrão do *python*
+A Figura 18 apresenta as etapas de preparação dos dados desde o
+carregamento dos dados do arquivo. Na etapa “Carrega JSON” foi realizado
+o carregamento do arquivo a partir da biblioteca padrão do *python*
 “open”. Para a interpretação, foi utilizado a biblioteca *json*, que
 possibilita transformar o conteúdo *string* em um dicionário. Do
 dicionário, foi obtido os usuários e seus eventos e transformado em
@@ -1508,10 +1511,10 @@ sua lista de eventos.
 etapas para transformar os eventos registrados no firebase na tabela que
 sera rodado o KNN (próprio, 2020)
 
-Na segunda etapa “Separa Contexto”, representada na fig19, é realizado a
-quebra dos eventos de cada usuário por seus contextos. Criando assim,
-uma relação de cada contexto, com as músicas reproduzidas, que é
-representado na fig20.
+Na segunda etapa “Separa Contexto”, representada na Figura 19, é
+realizado a quebra dos eventos de cada usuário por seus contextos.
+Criando assim, uma relação de cada contexto, com as músicas
+reproduzidas, que é representado na Figura 20.
 
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
 automaticamente](./pandoc/media/image15.jpg)
@@ -1519,11 +1522,11 @@ automaticamente](./pandoc/media/image15.jpg)
 <span id="_Toc54931598" class="anchor"></span>Figura 19 Representação
 dos eventos salvos no Firebase (próprio, 2020)
 
-Na fig21 é representada a etapa “Separa contexto das músicas”, pois na
-reprodução das músicas, é gerado os eventos separadamente, e nessa
+Na Figura 21 é representada a etapa “Separa contexto das músicas”, pois
+na reprodução das músicas, é gerado os eventos separadamente, e nessa
 etapa, é criado uma relação da música escutada, com os eventos
-registrados, gerando no fim, uma tabela semelhante a fig22 das músicas e
-seus contextos.
+registrados, gerando no fim, uma tabela semelhante a Figura 22 das
+músicas e seus contextos.
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image16.jpg)
@@ -1645,9 +1648,9 @@ plugin Web desenvolvido nesse trabalho.
 <span id="_Toc54931603" class="anchor"></span>Figura 24 Visão macro do
 sistema LORS (próprio, 2020)
 
-O plugin (representado na fig24 como o “App”) é responsável por a cada
-30 minutos solicitar ao usuário uma atualização de contexto, isso é,
-abrir um formulário, o qual possibilita o preenchimento do humor,
+O plugin (representado na Figura 24 como o “App”) é responsável por a
+cada 30 minutos solicitar ao usuário uma atualização de contexto, isso
+é, abrir um formulário, o qual possibilita o preenchimento do humor,
 atividades e localização atual do usuário. Essas informações serão
 salvas e relacionadas as próximas músicas reproduzidas ou salvas pelo
 usuário.
@@ -1725,9 +1728,9 @@ nome.
 <span id="_Toc54931604" class="anchor"></span>Figura 25 Tela de
 recomendações (próprio, 2020)
 
-No fim, é apresentado o gênero recomendado na tela, tratado o retorno do
-Spotify e apresentado as *playlists* na tela, permitindo assim, que o
-usuário escolha uma das playlists para reproduzir.
+No fim, é apresentado o gênero recomendado na tela, tratando o retorno
+do Spotify e apresentado as *playlists* na tela (Figura 25), permitindo
+assim, que o usuário escolha uma das playlists para reproduzir.
 
 ### Resultados do experimento
 
@@ -1739,16 +1742,15 @@ Nesse trabalho foi realizado uma revisão em cima dos trabalhos da *ACM*,
 de *RecSys* musical que utilizam o contexto do usuário, nela foi
 possível verificar, que poucos trabalhos buscam unir, a recomendação
 musical com o contexto do usuário. Sendo assim, esse trabalho
-desenvolveu um *RecSys* musical, o qual irá analisar o contexto do
-usuário em tempo real, para realizar novas recomendações a ele.
+desenvolveu um *RecSys* musical, o qual analisa o contexto do usuário em
+tempo real, para realizar novas recomendações a ele.
 
 No desenvolvimento desse trabalho, foi encontrado diversas dificuldades
 em lidar com músicas, pois desde o momento que se iniciou o estudo, foi
 visto que a área é muito maior do que aparenta. Com o questionário foi
 possível entender que o gosto de um público é algo inesperado, pois
 nesse caso, foi algo bem diferente do que o autor desse trabalho
-esperava. Outras dificuldades foram encontradas no desenvolvimento de um
-player e no sistema que realiza as recomendações.
+esperava.
 
 No plugin, foram encontradas diversas dificuldades em seu
 desenvolvimento. Inicialmente a aplicação foi desenvolvida em Flutter,
@@ -1763,9 +1765,19 @@ como, navegadores diferentes, sistemas operacionais diferentes, contas
 do Spotify com contrato diferente. E tudo isso, levou ao entendimento de
 que o desenvolvimento e manutenção de aplicações Web é complexo.
 
-Problemas com primeiro carregamento de dados
+Com o sistema desenvolvido, foi enviado o e-mail a todos que optaram por
+participar da pesquisa no questionário. Nisso foi visto que os usuários
+não têm uma boa aderência a estudos enviados via e-mail, então, foi
+escolhido os com mais afinidade e solicitado pessoalmente que
+utilizassem a aplicação para auxiliar no trabalho.
 
-Quantidade de generos grande atrapalha o score knn
+Mesmo solicitando pessoalmente, foi obtido um baixo uso na aplicação,
+gerando assim uma base muito pequena para o KNN. Esse problema é
+conhecido como *Cold Start*, que acontece geralmente as aplicações que
+estão iniciando e não tem um histórico de dados muito grande. Para
+tratar esse problema, foi desenvolvido a taxonomia dos gêneros, mantendo
+somente os principais, e com isso, reduzindo o número de resultados
+possíveis auxiliando KNN a predizer um melhor resultado.
 
 ## Trabalhos futuros
 
