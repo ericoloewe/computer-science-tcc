@@ -1079,7 +1079,7 @@ número de dados disponíveis para realizar uma classificação e/ou
 filtro. A Figura 9 apresenta uma visão macro dos contextos que serão
 considerados neste trabalho.
 
-<span id="_Ref42447869" class="anchor"></span>Figura 9 Apresentação dos
+<span id="_Ref42447869" class="anchor"></span>Figura 8 Apresentação dos
 contextos utilizados no trabalho (próprio, 2020)
 
 ### O que é o contexto comportamental?
@@ -1176,7 +1176,7 @@ questionário previamente realizado, onde foram obtidas informações sobre
 esses usuários. As etapas do desenvolvimento do *LORS* são apresentadas
 na Figura 11.
 
-<span id="_Ref42452795" class="anchor"></span>Figura 10 Etapas do
+<span id="_Ref42452795" class="anchor"></span>Figura 9 Etapas do
 desenvolvimento do sistema de recomendação musical (próprio, 2020)
 
 As perguntas aplicadas no questionário permitiram conhecer melhor os
@@ -1263,7 +1263,7 @@ dos eventos gerados pelo usuário. Ela pode ser acessada através do link
 
 ![](./pandoc/media/image6.png)
 
-<span id="_Toc54642174" class="anchor"></span>Figura 11 Tela
+<span id="_Toc54642174" class="anchor"></span>Figura 10 Tela
 introdutória da aplicação (próprio, 2020)
 
 ### Telas da aplicação
@@ -1275,7 +1275,7 @@ disponibiliza opções de login no Spotify.
 
 ![](./pandoc/media/image7.png)
 
-<span id="_Toc54642175" class="anchor"></span>Figura 12 Tela de login da
+<span id="_Toc54642175" class="anchor"></span>Figura 11 Tela de login da
 aplicação (próprio, 2020)
 
 A fig13 apresenta o cadastro do contexto na aplicação. O processo é
@@ -1287,7 +1287,7 @@ cada 30min.
 
 ![](./pandoc/media/image8.png)
 
-<span id="_Toc54642176" class="anchor"></span>Figura 13 Tela de
+<span id="_Toc54642176" class="anchor"></span>Figura 12 Tela de
 preenchimento do contexto (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
@@ -1297,7 +1297,7 @@ ser pressionado, habilita a reprodução no plugin.
 
 ![](./pandoc/media/image9.png)
 
-<span id="_Toc54642177" class="anchor"></span>Figura 14 Tela da lista de
+<span id="_Toc54642177" class="anchor"></span>Figura 13 Tela da lista de
 dispositivos do Spotify (próprio, 2020)
 
 Por fim, foi desenvolvido a tela principal, que é apresentado na fig15.
@@ -1316,7 +1316,7 @@ está ouvindo as músicas, as possíveis interações estão listadas abaixo.
 
 ![](./pandoc/media/image10.png)
 
-<span id="_Toc54642178" class="anchor"></span>Figura 15 Tela principal,
+<span id="_Toc54642178" class="anchor"></span>Figura 14 Tela principal,
 a qual apresenta a música sendo reproduzida ao usuário (próprio, 2020)
 
 Ao clicar no botão “gostei”, é salvo a informação de que o usuário
@@ -1327,7 +1327,7 @@ identifique melhor naquele momento.
 
 ![](./pandoc/media/image11.png)
 
-<span id="_Toc54642179" class="anchor"></span>Figura 16 Tela de busca de
+<span id="_Toc54642179" class="anchor"></span>Figura 15 Tela de busca de
 músicas que encaixem melhor no momento (próprio, 2020)
 
 A ação de buscar música, irá levar para a tela apresentada na fig16, a
@@ -1397,7 +1397,7 @@ exportar do *Realtime DB*.
 
 ![](./pandoc/media/image12.png)
 
-<span id="_Ref53931970" class="anchor"></span>Figura 17 Console do
+<span id="_Ref53931970" class="anchor"></span>Figura 16 Console do
 *Realtime Database* do Firebase (próprio, 2020)
 
 Com o JSON e a estrutura de dados pronta, foi realizado alguns estudos
@@ -1428,7 +1428,7 @@ o funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image13.png)
 
-<span id="_Ref52742150" class="anchor"></span>Figura 8 – Representação
+<span id="_Ref52742150" class="anchor"></span>Figura 17 – Representação
 gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
 plano, os pontos amarelos são a representação da classe A, roxos classe
 B e vermelho é o ponto de teste ***(JOSÉ, 2018)***
@@ -1658,6 +1658,7 @@ possuem valor padrão somente no caso de a característica enviada não
 existir na base.
 
 Quadro 4 Campos e seus respectivos valores utilizados na recomendação
+(próprio, 2020)
 
 | Campo      | Valor padrão |
 | ---------- | ------------ |
@@ -1675,7 +1676,19 @@ a requisição.
 
 ### Resultado da recomendação (integração app)
 
-... tela
+Tendo o servidor pronto e publicado, foi desenvolvido uma integração no
+plugin. Nela, é obtido as informações de contexto e solicitado ao LORS o
+gênero recomendado. Com o retorno do gênero, é feito uma nova requisição
+de busca ao Spotify das principais 20 *playlists* que contenham o ele no
+nome.
+
+![](./pandoc/media/image21.png)
+
+Figura 25 Tela de recomendações (próprio, 2020)
+
+No fim, é apresentado o gênero recomendado na tela, tratado o retorno do
+Spotify e apresentado as playlists na tela, permitindo assim, que o
+usuário escolha uma das playlists para reproduzir.
 
 ### Resultados do experimento
 
