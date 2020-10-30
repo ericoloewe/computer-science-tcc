@@ -1549,8 +1549,9 @@ usar o *musicTable*.
 
 Com a tabela completa, foi realizado um tratamento dos valores dos
 eventos que eram múltiplos, isso é, continham mais de uma informação nos
-mesmos eventos através do “;”. Nesse tratamento, foi quebrado os valores
-dos eventos um a um.
+mesmos eventos através do “;” ou possui uma quantidade maior que 1 nos
+campos *like*, *hate* e *restart*. Nesse tratamento, foi quebrado os
+valores dos eventos um a um.
 
 ![](./pandoc/media/image19.png)
 
@@ -1657,7 +1658,11 @@ tem como retorno o gênero resultado da predição e o *score* do modelo.
 
 ### Hospedagem
 
-Na fig24
+O servidor foi publicado na ferramenta disponível no Azure chamada App
+Service utilizando da conteinerização do Docker. Essa é uma ferramenta
+paga, que possibilita a publicação de servidores de diversas
+tecnologias. O link final de acesso ao servidor ficou:
+<https://lors.azurewebsites.net/>
 
 ### Recomendação
 
