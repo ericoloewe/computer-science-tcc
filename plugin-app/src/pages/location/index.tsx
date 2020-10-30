@@ -16,7 +16,7 @@ const THIRTY_MINUTES = 60 * 30;
 
 export default function () {
   const history = useHistory();
-  const { searchFeeling: search } = useNewContext();
+  const { searchLocation: search } = useNewContext();
   const { save: saveEvent } = useEvents();
   const [locations, setLocations] = useState([] as ChooseItem[]);
   const [selectedLocationsMap, setSelectedLocations] = useState({} as { [key: string]: ChooseItem });

@@ -12,7 +12,7 @@ import { useEvents, EventType } from "../../contexts/event";
 
 export default function () {
   const history = useHistory();
-  const { searchFeeling: search } = useNewContext();
+  const { searchActivity: search } = useNewContext();
   const { save: saveEvent } = useEvents();
   const [activities, setActivities] = useState([] as ChooseItem[]);
   const [selectedActivitiesMap, setSelectedActivities] = useState({} as { [key: string]: ChooseItem });

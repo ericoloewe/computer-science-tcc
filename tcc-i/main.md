@@ -1670,7 +1670,8 @@ Quadro 4 Campos e seus respectivos valores utilizados na recomendação
 
 Com o modelo pronto (Seção 4.1.1), e os parâmetros tratados é realizado
 a predição através do método *predict* do modelo do *sklearn* e
-devolvido a classe resultante como resposta a requisição.
+devolvido a classe resultante, isso é, o gênero resultante como resposta
+a requisição.
 
 ### Resultado da recomendação (integração app)
 
