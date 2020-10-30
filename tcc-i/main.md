@@ -269,14 +269,12 @@ Sumário
 [*4.2* Modelagem do sistema *LORS* 59](#modelagem-do-sistema-lors)
 
 [4.2.1 Como o trabalho vai relacionar as músicas que o usuário gosta aos
-contextos?
-59](#como-o-trabalho-vai-relacionar-as-músicas-que-o-usuário-gosta-aos-contextos)
+contextos? 59](#resultados-do-experimento)
 
 [4.2.2 Como o trabalho vai recomendar novas músicas a partir da relação
-de contexto x música?
-60](#como-o-trabalho-vai-recomendar-novas-músicas-a-partir-da-relação-de-contexto-x-música)
+de contexto x música? 60](#_Toc54642222)
 
-[4.3 roteiro 60](#roteiro)
+[4.3 roteiro 60](#_Toc54642223)
 
 [5 CONCLUSÃO 61](#conclusão)
 
@@ -1190,7 +1188,7 @@ outros fatores. As perguntas do questionário estão listadas no Quadro 2:
 respostas disponibilizadas a um certo público através dos formulários do
 Google. (próprio, 2020)
 
-| **Pergunta**                                                                                 | **Possíveis respostas**                                                                                                                                                                                                                                                   |
+| Pergunta                                                                                     | Possíveis respostas                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1\. Qual o aplicativo / reprodutor de música você utiliza atualmente?                        | Spotify, Deezer, Youtube Music, TIDAL, Apple Music, Google Play Music, Rádio Outro, qual?                                                                                                                                                                                 |
 | 2\. Você acha que as recomendações musicais realizadas via software poderiam ser melhoradas? | Sim, não                                                                                                                                                                                                                                                                  |
@@ -1425,17 +1423,17 @@ desenvolvimento do sistema nas seções a seguir.
 O *k-Nearest Neighbor* (KNN) é um método de classificação que busca os k
 pontos dos dados de treino mais pertos do ponto de teste, e então, uma
 classe é atrelada a esse ponto através de uma votação majoritária dos k
-pontos vizinhos. (T.M. COVER, 1967) Na Figura 1 é exemplificado
-graficamente o funcionamento do algoritmo.
+pontos vizinhos. (T.M. COVER, 1967) Na fig8 é exemplificado graficamente
+o funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image13.png)
 
-<span id="_Ref52742150" class="anchor"></span>Figura 8 – Representação
+<span id="_Ref52742150" class="anchor"></span>Figura – Representação
 gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
 plano, os pontos amarelos são a representação da classe A, roxos classe
 B e vermelho é o ponto de teste ***(JOSÉ, 2018)***
 
-Como é apresentado na Fig1 o algoritmo funciona através da disposição
+Como é apresentado na Fig8 o algoritmo funciona através da disposição
 das características x1 e x2 sobre um plano, e atribuindo classes a eles
 (no caso: classe A e classe B), então, a partir da predição do ponto de
 teste é encontrado a classe que o representa. (TODO\_REF)
@@ -1457,10 +1455,10 @@ evento; (iii) *value*, valores do evento separados por “;”.
 <span id="_Toc54642190" class="anchor"></span>Quadro Lista de ações
 possíveis nos eventos (próprio, 2020)
 
-| **Action**                    | **Descrição**                                 |
+| Action                        | Descrição                                     |
 | ----------------------------- | --------------------------------------------- |
 | CHANGE\_MUSIC\_TIME           | Altera o tempo da música durante a reprodução |
-| CHANGE\_TO\_NEXT\_MUSIC       |                                               |
+| CHANGE\_TO\_NEXT\_MUSIC       | PREENCHER ⬇                                   |
 | CHANGE\_TO\_PREVIOUS\_MUSIC   |                                               |
 | CHOOSE\_ACTIVITY              |                                               |
 | CHOOSE\_FEELING               |                                               |
@@ -1477,14 +1475,14 @@ possíveis nos eventos (próprio, 2020)
 | RESTART\_MUSIC                |                                               |
 | SHOW\_DETAILS                 |                                               |
 
-A fig 18 apresenta as etapas de preparação dos dados desde o
-carregamento dos dados do arquivo. Na etapa “Carrega JSON” foi realizado
-o carregamento do arquivo a partir da biblioteca padrão do python
-“open”. Para a interpretação, foi utilizado a biblioteca *json*, que
-possibilita transformar o conteúdo *string* em um dicionário. Do
-dicionário, foi obtido os usuários e seus eventos e transformado em
-outro dicionário *users*, cujo a *key* é o id do usuário e o conteúdo
-sua lista de eventos.
+A fig18 apresenta as etapas de preparação dos dados desde o carregamento
+dos dados do arquivo. Na etapa “Carrega JSON” foi realizado o
+carregamento do arquivo a partir da biblioteca padrão do python “open”.
+Para a interpretação, foi utilizado a biblioteca *json*, que possibilita
+transformar o conteúdo *string* em um dicionário. Do dicionário, foi
+obtido os usuários e seus eventos e transformado em outro dicionário
+*users*, cujo a *key* é o id do usuário e o conteúdo sua lista de
+eventos.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image14.jpg)
 
@@ -1563,11 +1561,15 @@ transformar as características e classes de cada evento da tabela em
 números inteiros, isso é necessário para rodar o algoritmo KNN. O
 resultado da tabela é apresentado na Figura 23.
 
+### Taxonomia dos gêneros
+
+...
+
 ### Testes com KNN
 
-No final, o *genreTable* foi transformado em um data frame da lib panda.
-Então foi realizado a separação da coluna gênero da tabela, com isso,
-obtido as variáveis X (características) e y (classes). As duas são
+No final, o *genreTable* foi transformado em um *data frame* da *lib*
+pandas. Então foi realizado a separação da coluna gênero da tabela, com
+isso, obtido as variáveis X (características) e y (classes). As duas são
 utilizadas na função *train\_test\_split* para obter as características
 de treino (*X\_train*), características de teste (*X\_test*), classes de
 treino (*y\_train*) e classes de teste (*y\_test*). O tamanho da base de
@@ -1596,12 +1598,55 @@ testes realizados.
 
 ## Modelagem do sistema *LORS*
 
-Contexto =\> sistema =\> knn =\> radio ou top 10 do gênero
+O sistema LORS foi desenvolvido para através do conhecimento do contexto
+dos usuários, aperfeiçoar as recomendações musicais do Spotify. Nele é
+realizado a predição do gênero musical baseando-se no contexto e o
+histórico de músicas reproduzidas, e entregue o resultado através de
+uma API, a qual pode ser consumida por qualquer usuário que utilize o
+plugin Web desenvolvido nesse trabalho.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image20.jpg)
 
-<span id="_Toc54642187" class="anchor"></span>Figura Visão macro do
+<span id="_Toc54642187" class="anchor"></span>Figura 24 Visão macro do
 sistema LORS (próprio, 2020)
+
+### POC (Proof of Concept)
+
+Inicialmente foi desenvolvido uma POC em *python* utilizando o *Jupyter
+Notebook*. Nela foi utilizado somente os dados do usuário que teve mais
+registros salvos na base. Todo tratamento e preparação dos dados
+apresentados na seção 4.1.2 foi realizado nessa POC.
+
+Para aperfeiçoar o uso algoritmo foram realizados testes do KNN, que
+visavam: (i) escolher o melhor número de vizinhos (*k*) para rodar o
+algoritmo; (ii) avaliar o score do modelo; (iii) analisar a matriz de
+confusão obtida no modelo.
+
+### Recomendação de novas músicas
+
+... KNN =\> gênero =\> musicas do genero
+
+### Servidor
+
+Com a logica desenvolvida na POC, foi realizado uma exportação do código
+para scripts *python*. Então foi desenvolvido um servidor utilizando a
+lib *Flask* e integrado o algoritmo KNN exportado à rota. Foi criado uma
+rota do tipo GET / que recebe 4 parâmetros: (i) uri, o id do Spotify do
+usuário; (ii) feeling, o sentimento registrado; (iii) *activity*, a
+atividade registrada; (iv) *location*, a localização registrada. A rota
+tem como retorno o gênero resultado da predição e o *score* do modelo.
+
+### Hospedagem
+
+Na fig24
+
+### Resultado da recomendação
+
+... tela
+
+### Resultados do experimento
+
+... score, matriz confusão
 
 ### Como o trabalho vai relacionar as músicas que o usuário gosta aos contextos?
 
@@ -1610,41 +1655,6 @@ contexto, isso é, será aberto um formulário, o qual possibilita o
 preenchimento do humor, atividades e localização atual do usuário. Essas
 informações serão salvas e relacionadas as próximas músicas reproduzidas
 ou salvas pelo usuário.
-
-### Como o trabalho vai recomendar novas músicas a partir da relação de contexto x música?
-
-KNN =\> gênero =\> musicas do genero
-
-## Roteiro
-
-Para desenvolver o modelo e o sistema de recomendação musical, serão
-realizadas diversas etapas, onde a primeira será obter uma amostra de
-dados a partir de um questionário que será aplicado: 1) Criar
-questionário com as perguntas listadas na seção 3.2 deste trabalho,
-utilizando o formulário do *Google Drive*; 2) Distribuir o formulário em
-diversos meios de comunicação, onde haverá ao final um campo para o
-usuário preencher seu e-mail caso deseja participar do teste do sistema
-*LORS*, o qual será utilizado no futuro para o envio de um convite para
-utilizar a aplicação desenvolvida e 3) Apurar dados do questionário para
-serem utilizados como base da amostra.
-
-A aplicação proposta será capaz de salvar as ações dos usuários no
-aplicativo, e diversas outras informações relacionadas a ele. Desses
-dados, será gerado uma base de teste, a qual será utilizada para um
-estudo dos algoritmos de classificação e recomendação levantados nesse
-trabalho.
-
-Com o conhecimento dos algoritmos que serão utilizados, eles serão
-aplicados ao sistema de recomendação, e será realizado uma integração do
-sistema com a aplicação. Essa integração irá colocar em pratica o modelo
-dinâmico desenvolvido. E aí então, será retornado um e-mail aos usuários
-da base, pedindo para realizarem testes na nova funcionalidade da
-aplicação.
-
-No momento em que for realizada as recomendações, será solicitado um
-score como avaliação da recomendação, e esse score será utilizado no
-futuro para apresentar os resultados neste trabalho com o ganho das
-recomendações dinâmicas.
 
 # CONCLUSÃO
 
@@ -1664,33 +1674,32 @@ ACM. **Advanced Search**. Disponível em:
 RECSYS COMMUNITY. **RecSys – ACM Recommender Systems**. Disponível em:
 \<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. ALIAGA, W. K.
 DESENVOLVIMENTO DE UM SISTEMA DE RECOMENDACÃO MUSICAL SENSÍVEL AO
-CONTEXTO. 2018. BHATNAGAR, V. **Collaborative filtering using data
-mining and analysis**. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming
-or stealing? The complementary features between music streaming and
-music piracy. **Journal of Retailing and Consumer Services**, v. 32, p.
-86–95, 2016. DIETMAR, J. et al. **Recommendation system -An
-Introduction**. \[s.l: s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre
-o dicionário | Michaelis On-line**. Disponível em:
-\<https://michaelis.uol.com.br/\>. Acesso em: 6 jun. 2020. ERIKSSON, M.
-et al. **Spotify Teardown**. \[s.l.\] MIT Press, 2019. FALK, K.
-**Practical Recommender Systems**. \[s.l: s.n.\]. IFPI. **IFPI Global
-Music Report 2019**. Disponível em:
+CONTEXTO. 2018. BHATNAGAR, V. Collaborative filtering using data mining
+and analysis. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming or
+stealing? The complementary features between music streaming and music
+piracy. **Journal of Retailing and Consumer Services**, v. 32, p. 86–95,
+2016. DIETMAR, J. et al. **Recommendation system -An Introduction**.
+\[s.l: s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário |
+Michaelis On-line**. Disponível em: \<https://michaelis.uol.com.br/\>.
+Acesso em: 6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**.
+\[s.l.\] MIT Press, 2019. FALK, K. Practical Recommender Systems. \[s.l:
+s.n.\]. IFPI. **IFPI Global Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. JOSÉ, I.
 **KNN (K-Nearest Neighbors) \#1**. Disponível em:
 \<https://medium.com/brasil-ai/knn-k-nearest-neighbors-1-e140c82e9c4e\>.
 Acesso em: 4 out. 2020. LUDEWIG, M. et al. Effective nearest-neighbor
 music recommendations. **ACM International Conference Proceeding
 Series**, 2018. LUINI, B. J. R.; WHITMAN, A. E.; DATE, P. **Streaming
-Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M. **Os avanços
-tecnológicos e o futuro da humanidade**Querendo ser Deus, , 2009. NIWA,
-H. **Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v.
-134PEDREGOSA, F. et al. Scikit-learn: Machine Learning in {P}ython.
-**Journal of Machine Learning Research**, v. 12, p. 2825–2830, 2011.
-RÄTSCH, G. A brief introduction into machine learning. **21st Chaos
-Communication Congress**, p. 1–6, 2004. RESNICK, PAUL AND VARIAN, H. R.
-Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
-56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
-Handbook**. \[s.l: s.n.\]. T.M. COVER, P. E. H. Nearest Neighbor Pattern
+Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M. Os avanços
+tecnológicos e o futuro da humanidadeQuerendo ser Deus, , 2009. NIWA, H.
+**Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v. 134PEDREGOSA,
+F. et al. Scikit-learn: Machine Learning in {P}ython. **Journal of
+Machine Learning Research**, v. 12, p. 2825–2830, 2011. RÄTSCH, G. A
+brief introduction into machine learning. **21st Chaos Communication
+Congress**, p. 1–6, 2004. RESNICK, PAUL AND VARIAN, H. R. Recommender
+Systems. **Communications of the ACM**, v. 40, n. 4, p. 56–58, 1997.
+RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems Handbook**.
+\[s.l: s.n.\]. T.M. COVER, P. E. H. Nearest Neighbor Pattern
 Classfication. v. I, p. 1–28, 1967. TKALČIČ, M. et al. Prediction of
 music pairwise preferences from facial expressions. **International
 Conference on Intelligent User Interfaces, Proceedings IUI**, v. Part
