@@ -168,7 +168,7 @@ Lista de TABELAS
 
 [Tabela 1 Matrix confusão do usuário
 spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
-67](#_Toc55007937)
+67](#_Ref55011605)
 
 Lista de Abreviaturas e Siglas
 
@@ -1147,7 +1147,7 @@ ser representados na aplicação, que são: (i) Localização; (ii) Clima e;
 
 ### Como serão obtidos os contextos?
 
-Os contextos no *LORS* serão obtidos a partir da captura de formularios
+Os contextos no *LORS* serão obtidos a partir da captura de formulários
 e eventos de um app. Na aplicação, será obtido contexto de duas
 maneiras: (i) explicitamente, onde o usuário irá cadastrar o que está
 fazendo. Ex.: emoções, atividades e localização. (ii) implicitamente, a
@@ -1208,7 +1208,7 @@ usuários que utilizarão a aplicação, sendo assim, foram utilizadas
 perguntas que permitam entender suas preferências, atividades, dentre
 outros fatores. As perguntas do questionário estão listadas no Quadro 2:
 
-<span id="_Ref48857312" class="anchor"></span>Quadro Perguntas e
+<span id="_Ref48857312" class="anchor"></span>Quadro 2 Perguntas e
 respostas disponibilizadas a um certo público através dos formulários do
 Google. (próprio, 2020)
 
@@ -1287,8 +1287,8 @@ dos eventos gerados pelo usuário. Ela pode ser acessada através do link
 
 ![](./pandoc/media/image6.png)
 
-<span id="_Ref54973492" class="anchor"></span>Figura Tela introdutória
-da aplicação (próprio, 2020)
+<span id="_Ref54973492" class="anchor"></span>Figura 10 Tela
+introdutória da aplicação (próprio, 2020)
 
 ### Telas da aplicação
 
@@ -1299,7 +1299,7 @@ qual disponibiliza opções de login no Spotify.
 
 ![](./pandoc/media/image7.png)
 
-<span id="_Ref54973486" class="anchor"></span>Figura Tela de login da
+<span id="_Ref54973486" class="anchor"></span>Figura 11 Tela de login da
 aplicação (próprio, 2020)
 
 A Figura 12 apresenta o cadastro do contexto na aplicação. O processo é
@@ -1311,7 +1311,7 @@ cada 30min.
 
 ![](./pandoc/media/image8.png)
 
-<span id="_Ref54973479" class="anchor"></span>Figura Tela de
+<span id="_Ref54973479" class="anchor"></span>Figura 12 Tela de
 preenchimento do contexto (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
@@ -1321,7 +1321,7 @@ que ao ser pressionado, habilita a reprodução no plugin.
 
 ![](./pandoc/media/image9.png)
 
-<span id="_Ref54973469" class="anchor"></span>Figura Tela da lista de
+<span id="_Ref54973469" class="anchor"></span>Figura 13 Tela da lista de
 dispositivos do Spotify (próprio, 2020)
 
 Por fim, foi desenvolvido a tela principal, que é apresentado na Figura
@@ -1341,8 +1341,8 @@ abaixo.
 
 ![](./pandoc/media/image10.png)
 
-<span id="_Ref54973458" class="anchor"></span>Figura Tela principal, a
-qual apresenta a música sendo reproduzida ao usuário (próprio, 2020)
+<span id="_Ref54973458" class="anchor"></span>Figura 14 Tela principal,
+a qual apresenta a música sendo reproduzida ao usuário (próprio, 2020)
 
 Ao clicar no botão “gostei”, é salvo a informação de que o usuário
 gostou da música naquele contexto. Ao clicar no botão “não gostei” é
@@ -1352,7 +1352,7 @@ identifique melhor naquele momento.
 
 ![](./pandoc/media/image11.png)
 
-<span id="_Ref54973404" class="anchor"></span>Figura Tela de busca de
+<span id="_Ref54973404" class="anchor"></span>Figura 15 Tela de busca de
 músicas que encaixem melhor no momento (próprio, 2020)
 
 A ação de buscar música, irá levar para a tela apresentada na Figura 15,
@@ -1423,7 +1423,7 @@ exportar do *Realtime DB*.
 
 ![](./pandoc/media/image12.png)
 
-<span id="_Ref53931970" class="anchor"></span>Figura Console do
+<span id="_Ref53931970" class="anchor"></span>Figura 16 Console do
 *Realtime Database* do Firebase (próprio, 2020)
 
 Com o JSON e a estrutura de dados pronta, foi realizado alguns estudos
@@ -1454,7 +1454,7 @@ graficamente o funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image13.png)
 
-<span id="_Ref52742150" class="anchor"></span>Figura – Representação
+<span id="_Ref52742150" class="anchor"></span>Figura 17 – Representação
 gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
 plano, os pontos amarelos são a representação da classe A, roxos classe
 B e vermelho é o ponto de teste ***(JOSÉ, 2018)***
@@ -1479,7 +1479,7 @@ seguinte estrutura: (i) *action*, ação realizada pelo usuário,
 apresentadas no quadro3; (ii) *createdDateTime*, data da execução do
 evento; (iii) *value*, valores do evento separados por “;”.
 
-<span id="_Toc54931578" class="anchor"></span>Quadro Lista de ações
+<span id="_Toc54931578" class="anchor"></span>Quadro 3 Lista de ações
 possíveis nos eventos (próprio, 2020)
 
 | Action                        | Descrição                                     |
@@ -1513,7 +1513,7 @@ sua lista de eventos.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image14.jpg)
 
-<span id="_Ref54973329" class="anchor"></span>Figura Visão macro das
+<span id="_Ref54973329" class="anchor"></span>Figura 18 Visão macro das
 etapas para transformar os eventos registrados no firebase na tabela que
 sera rodado o KNN (próprio, 2020)
 
@@ -1525,8 +1525,8 @@ reproduzidas, que é representado na Figura 20.
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
 automaticamente](./pandoc/media/image15.jpg)
 
-<span id="_Ref54973321" class="anchor"></span>Figura Representação dos
-eventos salvos no Firebase (próprio, 2020)
+<span id="_Ref54973321" class="anchor"></span>Figura 19 Representação
+dos eventos salvos no Firebase (próprio, 2020)
 
 Na Figura 21 é representada a etapa “Separa contexto das músicas”, pois
 na reprodução das músicas, é gerado os eventos separadamente, e nessa
@@ -1537,8 +1537,8 @@ músicas e seus contextos.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image16.jpg)
 
-<span id="_Ref54973316" class="anchor"></span>Figura Representação das
-listas geradas na etapa “Separa contexto” (próprio, 2020)
+<span id="_Ref54973316" class="anchor"></span>Figura 20 Representação
+das listas geradas na etapa “Separa contexto” (próprio, 2020)
 
 Para criar essa relação é realizado um loop em cima dos eventos de cada
 contexto, e criado uma lista chamada *musicTable*, a qual é preenchida
@@ -1550,8 +1550,9 @@ reprodução.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image17.jpg)
 
-<span id="_Ref54973306" class="anchor"></span>Figura Representação das
-listas geradas na etapa “separa contexto das músicas” (próprio, 2020)
+<span id="_Ref54973306" class="anchor"></span>Figura 21 Representação
+das listas geradas na etapa “separa contexto das músicas” (próprio,
+2020)
 
 Nas próximas duas etapas “busca informações das músicas” e “busca
 informações dos artistas (gênero)”, é realizado uma busca nas API’s do
@@ -1563,7 +1564,7 @@ artista.
 
 ![Tabela Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
-<span id="_Ref54973298" class="anchor"></span>Figura Representação da
+<span id="_Ref54973298" class="anchor"></span>Figura 22 Representação da
 tabela na etapa “separa contexto das músicas” (próprio, 2020)
 
 Após a busca dos dados ao Spotify, foi obtido a lista dos gêneros das
@@ -1581,7 +1582,7 @@ valores dos eventos um a um.
 
 ![](./pandoc/media/image19.png)
 
-<span id="_Ref53955795" class="anchor"></span>Figura *head()* do
+<span id="_Ref53955795" class="anchor"></span>Figura 23 *head()* do
 *dataframe* criado a partir da variável *genreTable* (próprio, 2020)
 
 No fim, foi utilizado a lib *preprocessing* do *sklearn* para
@@ -1635,7 +1636,7 @@ A lista a relação dos gêneros com seus subgêneros foi encontrada em um
 *showcase* do Spotify chamado Music Popcorn
 (<https://developer.spotify.com/community/showcase/music-popcorn/>). Ele
 possui uma lista de 1107 gêneros, 4 vezes menos do que o Spotify possui
-hoje, porem já auxiliou na taxonomia dos gêneros, trazendo uma redução
+hoje, porém já auxiliou na taxonomia dos gêneros, trazendo uma redução
 de 70 para 40 classes na base do usuário de teste e melhorando o score
 de 0,15 para uma média de 0,45.
 
@@ -1650,7 +1651,7 @@ plugin Web desenvolvido nesse trabalho.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image20.jpg)
 
-<span id="_Ref54973275" class="anchor"></span>Figura Visão macro do
+<span id="_Ref54973275" class="anchor"></span>Figura 24 Visão macro do
 sistema LORS (próprio, 2020)
 
 O plugin (representado na Figura 24 como o “App”) é responsável por a
@@ -1703,7 +1704,7 @@ para repetir (*restart*=1). Os campos *feeling*, *activity*, *location*
 possuem valor padrão somente no caso de a característica enviada não
 existir na base.
 
-<span id="_Ref54920412" class="anchor"></span>Quadro Campos e seus
+<span id="_Ref54920412" class="anchor"></span>Quadro 4 Campos e seus
 respectivos valores utilizados na recomendação (próprio, 2020)
 
 | Campo    | Valor padrão |
@@ -1730,7 +1731,7 @@ nome.
 
 ![](./pandoc/media/image21.png)
 
-<span id="_Ref54973248" class="anchor"></span>Figura Tela de
+<span id="_Ref54973248" class="anchor"></span>Figura 25 Tela de
 recomendações (próprio, 2020)
 
 No fim, é apresentado o gênero recomendado na tela, tratando o retorno
@@ -1792,7 +1793,7 @@ algoritmo passou de 0,15 para 0,46, um acréscimo de 306%.
 | **sertanejo pop**                 | **38**                               |
 | **trap**                          | **39**                               |
 
-Tabela relação dos gêneros e a classe utilizada no KNN (próprio, 2020)
+Tabela 1 relação dos gêneros e a classe utilizada no KNN (próprio, 2020)
 
 A matriz de confusão do usuário utilizado nos testes foi disponibilizada
 na Tabela 2 desse trabalho. Nela, é possível verificar que o modelo
@@ -1802,7 +1803,7 @@ devido ao gosto musical do usuário estar mais voltado aquele estilo
 musical. A categoria de número 12 pode ser encontrada na Tabela 1, que
 apresenta a relação dos gêneros com as classes geradas para o KNN.
 
-| <span id="_Toc55007937" class="anchor"></span> | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12  | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 |
+| <span id="_Ref55011605" class="anchor"></span> | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12  | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 |
 | ---------------------------------------------- | - | - | - | - | - | - | - | - | - | - | -- | -- | --- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
 | 0                                              | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
 | 1                                              | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
@@ -1845,8 +1846,8 @@ apresenta a relação dos gêneros com as classes geradas para o KNN.
 | 38                                             | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 4   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
 | 39                                             | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 2   | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 3  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
 
-Tabela Matrix confusão do usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4
-(próprio, 2020)
+Tabela 2 Matrix confusão do usuário
+spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
 
 # CONCLUSÃO
 
