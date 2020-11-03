@@ -1983,6 +1983,8 @@ relativos ao sistema de recomendação apresentado.
 
 ##### Aplicar uma leitura sequencial ao modelo das recomendações
 
+##### Contabilizar ações apresentadas no Quadro 3 que não estão sendo utilizadas no modelo
+
 # Referências Bibliográficas
 
 ACM. **Advanced Search**. Disponível em:
