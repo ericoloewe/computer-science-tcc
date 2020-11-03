@@ -1300,16 +1300,27 @@ escuta com os amigos?” foi desenvolvida para realizar uma avaliação se a
 *feature* “amigos ou sozinho” seria desenvolvida. Devido ao tempo
 disponível para desenvolvimento, ela acabou não sendo utilizada.
 
-Quanto tempo por semana você escuta música?
+Para obter um conhecimento da intensidade musical do público que
+lidamos, foi feito a pergunta “Quanto tempo por semana você escuta
+música?”. Com ela foi possível entender que não era um público intenso,
+pois nas respostas, mais de 50% ouvia de 0 a 10horas por semana.
 
-Quais são os gêneros musicais que gosta de escutar?
+Visando realizar um Cold Start na aplicação, foi criado a pergunta
+“Quais são os gêneros musicais que gosta de escutar?”, visando colocar
+as principais respostas ao plugin. Porém, devido ao tempo limitado de
+desenvolvimento, a *feature* não foi feita.
 
-Gostaria de participar de uma pesquisa que visa melhorar a recomendação
-musical?
+Respeitando a privacidade do público, foi feito a pergunta “Gostaria de
+participar de uma pesquisa que visa melhorar a recomendação musical?”, a
+qual, foi utilizada para filtrar somente os usuários que aceitaram ela
+para enviar o convite para participar do *plugin*.
 
-Sua idade
-
-Dicas e sugestões?
+A pergunta “Sua idade” foi feita para obter conhecimento do range de
+idade que estávamos lidando na aplicação, e assim, desenvolver as
+facilidades visuais necessárias conforme a idade. Durante o envio do
+questionário, o escopo do trabalho estava em aberto, por isso, foi feito
+a pergunta “Dicas e sugestões?”. Assim, foi possível obter ideias do
+público para aplicar no modelo.
 
 ## Desenvolvimento Do plugin
 
