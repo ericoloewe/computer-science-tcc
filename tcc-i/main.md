@@ -1329,10 +1329,12 @@ utilizava do SDK Web do Spotify para reprodução das músicas e captura
 dos eventos gerados pelo usuário. Ela pode ser acessada através do link
 <https://ericoloewe.github.io/computer-science-tcc/>.
 
-![](./pandoc/media/image6.png)
+![](./pandoc/media/image6.png)![](./pandoc/media/image7.png)
 
-<span id="_Ref54973492" class="anchor"></span>Figura 10 Tela
-introdutória da aplicação (próprio, 2020)
+<span id="_Ref54973492" class="anchor"></span>Figura 10 A esquerda, tela
+introdutória da aplicação (próprio,
+2020)<span id="_Ref54973486" class="anchor"></span> Figura 11 A direita,
+tela de login da aplicação (próprio, 2020)
 
 ### Telas da aplicação
 
@@ -1341,11 +1343,6 @@ na Figura 10, a qual apresenta instruções para os usuários de como
 utilizar a aplicação. A segunda tela, é representada na Figura 11, a
 qual disponibiliza opções de login no Spotify.
 
-![](./pandoc/media/image7.png)
-
-<span id="_Ref54973486" class="anchor"></span>Figura 11 Tela de login da
-aplicação (próprio, 2020)
-
 A Figura 12 apresenta o cadastro do contexto na aplicação. O processo é
 dividido em 3 etapas: (i) “Como você está se sentindo nesse momento?”;
 (ii) “O que você está fazendo nesse momento?”; (iii) “Onde você está
@@ -1353,20 +1350,17 @@ nesse momento?”. A partir dessas perguntas, é possível entender o
 contexto atual do usuário naquele período. As perguntas são realizadas a
 cada 30min.
 
-![](./pandoc/media/image8.png)
+![](./pandoc/media/image8.png)![](./pandoc/media/image9.png)
 
-<span id="_Ref54973479" class="anchor"></span>Figura 12 Tela de
-preenchimento do contexto (próprio, 2020)
+<span id="_Ref54973479" class="anchor"></span>Figura 12 A esquerda, tela
+de preenchimento do contexto (próprio,
+2020)<span id="_Ref54973469" class="anchor"></span> Figura 13 A direita,
+tela da lista de dispositivos do Spotify (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
 reproduza as músicas no plugin. Para isso, foi criado a tela apresentada
 na Figura 13, a qual possui um botão “USAR PLUGIN PARA TOCAR MÚSICAS”
 que ao ser pressionado, habilita a reprodução no plugin.
-
-![](./pandoc/media/image9.png)
-
-<span id="_Ref54973469" class="anchor"></span>Figura 13 Tela da lista de
-dispositivos do Spotify (próprio, 2020)
 
 Por fim, foi desenvolvido a tela principal, que é apresentado na Figura
 14. Nessa tela, é realizado toda interação do usuário no período em que
@@ -1383,21 +1377,19 @@ abaixo.
 
   - Pausar / Tocar música
 
-![](./pandoc/media/image10.png)
-
-<span id="_Ref54973458" class="anchor"></span>Figura 14 Tela principal,
-a qual apresenta a música sendo reproduzida ao usuário (próprio, 2020)
-
 Ao clicar no botão “gostei”, é salvo a informação de que o usuário
 gostou da música naquele contexto. Ao clicar no botão “não gostei” é
 salvo a informação que o usuário não gostou e é levado o usuário a tela
 de busca de música Figura 15, para o usuário apresentar uma música se
 identifique melhor naquele momento.
 
-![](./pandoc/media/image11.png)
+![](./pandoc/media/image10.png)![](./pandoc/media/image11.png)
 
-<span id="_Ref54973404" class="anchor"></span>Figura 15 Tela de busca de
-músicas que encaixem melhor no momento (próprio, 2020)
+<span id="_Ref54973458" class="anchor"></span>Figura 14 A esquerda, tela
+principal, a qual apresenta a música sendo reproduzida ao usuário
+(próprio, 2020)<span id="_Ref54973404" class="anchor"></span> Figura 15
+A direita, tela de busca de músicas que encaixem melhor no momento
+(próprio, 2020)
 
 A ação de buscar música, irá levar para a tela apresentada na Figura 15,
 a qual possibilita o usuário apresentar uma música que se enquadre
