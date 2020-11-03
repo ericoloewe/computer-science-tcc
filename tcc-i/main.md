@@ -1486,31 +1486,41 @@ Para salvar os eventos da aplicação, foi criado uma lista chamada
 *events*, essa lista é composta pela lista de usuários, onde cada
 usuário possui a lista de eventos dentro. Cada eventos é composto pela
 seguinte estrutura: (i) *action*, ação realizada pelo usuário,
-apresentadas no quadro3; (ii) *createdDateTime*, data da execução do
+apresentadas no Quadro 3; (ii) *createdDateTime*, data da execução do
 evento; (iii) *value*, valores do evento separados por “;”.
+
+A ação LOAD\_LOCATION foi ignorada nesse momento no sistema e irá ficar
+como um trabalho futuro. As ações CHANGE\_MUSIC\_TIME,
+CHOOSE\_FEELING\_TO\_BE\_LIKE, LIKED\_ARTIST, LIKED\_GENRE, ficaram nos
+eventos do plugin, mas não serão utilizadas devido a uma limitação no
+tempo de desenvolvimento. As ações HIDE\_DETAILS, PAUSE\_MUSIC,
+PLAY\_MUSIC, SHOW\_DETAILS são contabilizadas como registro do contexto
+musical, porém não foram utilizadas no modelo devido ao tempo de
+desenvolvimento. Demais ações são contabilizadas no modelo e são
+apresentadas a seguir.
 
 <span id="_Toc54931578" class="anchor"></span>Quadro 3 Lista de ações
 possíveis nos eventos (próprio, 2020)
 
-| Action                        | Descrição                                     |
+| Ação (Action)                 | Descrição                                     |
 | ----------------------------- | --------------------------------------------- |
 | CHANGE\_MUSIC\_TIME           | Altera o tempo da música durante a reprodução |
-| CHANGE\_TO\_NEXT\_MUSIC       | PREENCHER ⬇                                   |
-| CHANGE\_TO\_PREVIOUS\_MUSIC   |                                               |
-| CHOOSE\_ACTIVITY              |                                               |
-| CHOOSE\_FEELING               |                                               |
-| CHOOSE\_FEELING\_TO\_BE\_LIKE |                                               |
-| CHOOSE\_LOCATION              |                                               |
-| HATED\_MUSIC                  |                                               |
-| HIDE\_DETAILS                 |                                               |
-| LIKED\_ARTIST                 |                                               |
-| LIKED\_GENRE                  |                                               |
-| LIKED\_MUSIC                  |                                               |
-| LOAD\_LOCATION                |                                               |
-| PAUSE\_MUSIC                  |                                               |
-| PLAY\_MUSIC                   |                                               |
-| RESTART\_MUSIC                |                                               |
-| SHOW\_DETAILS                 |                                               |
+| CHANGE\_TO\_NEXT\_MUSIC       | Passa para próxima música da lista            |
+| CHANGE\_TO\_PREVIOUS\_MUSIC   | Volta para música anterior da lista           |
+| CHOOSE\_ACTIVITY              | Registro da atividade                         |
+| CHOOSE\_FEELING               | Registro do humor atual                       |
+| CHOOSE\_FEELING\_TO\_BE\_LIKE | Registro do humor que gostaria de estar       |
+| CHOOSE\_LOCATION              | Registro da localização                       |
+| HATED\_MUSIC                  | Não gostou da música que está tocando         |
+| HIDE\_DETAILS                 | Escondeu os detalhes da música (plugin)       |
+| LIKED\_ARTIST                 | Gostou do artista                             |
+| LIKED\_GENRE                  | Gostou do gênero                              |
+| LIKED\_MUSIC                  | Gostou da música                              |
+| LOAD\_LOCATION                | Carregou a localização (latitude, longitude)  |
+| PAUSE\_MUSIC                  | Pausou a música                               |
+| PLAY\_MUSIC                   | Tocou a música                                |
+| RESTART\_MUSIC                | Reiniciou a música                            |
+| SHOW\_DETAILS                 | Abriu os detalhes da música                   |
 
 A Figura 18 apresenta as etapas de preparação dos dados desde o
 carregamento dos dados do arquivo. Na etapa “Carrega JSON” foi realizado
