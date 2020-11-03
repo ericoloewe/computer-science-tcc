@@ -1264,7 +1264,8 @@ realizada uma publicação no Instagram para apresentá-lo ao público, e no
 decorrer, foi enviado a outras redes sociais, como WhatsApp, Slack
 (empresarial), Twitter e Facebook. O seu fechamento foi realizado no dia
 18 de julho de 2020, somando o total de 12 dias em que o ele ficou
-aberto.
+aberto. Link para as respostas do questionário:
+<https://forms.gle/FKW5iJBhT7oEa18eA>
 
 Dos dispositivos ou aplicativos utilizados para realizar a reprodução
 das músicas, com 168 respostas, o Spotify foi o mais escolhido das
@@ -1287,6 +1288,28 @@ costuma ouvir música?”, “Em quais lugares você costuma ouvir músicas?” 
 conhecer de novas características (a partir do campo “outro”), e foi
 possível obter de características que mais influenciam os usuários na
 escolha de uma música.
+
+Visando entender o comportamento do público, foi feito as perguntas “O
+que costuma te influenciar na escolha da música?” e “O que você faz
+quando gosta ou não de uma música?”. Dessa maneira, foi possível
+compreender as características mais importantes a serem consideradas no
+modelo e ordem da aplicação.
+
+A pergunta “As músicas que você escuta sozinho são diferentes das que
+escuta com os amigos?” foi desenvolvida para realizar uma avaliação se a
+*feature* “amigos ou sozinho” seria desenvolvida. Devido ao tempo
+disponível para desenvolvimento, ela acabou não sendo utilizada.
+
+Quanto tempo por semana você escuta música?
+
+Quais são os gêneros musicais que gosta de escutar?
+
+Gostaria de participar de uma pesquisa que visa melhorar a recomendação
+musical?
+
+Sua idade
+
+Dicas e sugestões?
 
 ## Desenvolvimento Do plugin
 
@@ -1962,6 +1985,11 @@ tratar esse problema, foi desenvolvido a taxonomia dos gêneros, mantendo
 somente os principais, e com isso, reduzindo o número de resultados
 possíveis auxiliando KNN a predizer um melhor resultado.
 
+Porém, mesmo com a redução das classes, o modelo obteve uma baixa
+acurácia nas recomendações. Apresentando a necessidade de uma melhoria
+nas características do modelo ou da aplicação de outros algoritmos que
+não sejam o KNN ao ele.
+
 ## Trabalhos futuros
 
 Abaixo é apresentado algumas melhorias e continuidade nos estudos
@@ -1984,6 +2012,8 @@ relativos ao sistema de recomendação apresentado.
 ##### Aplicar uma leitura sequencial ao modelo das recomendações
 
 ##### Contabilizar ações apresentadas no Quadro 3 que não estão sendo utilizadas no modelo
+
+##### Inserir *feature* “amigos ou sozinho” ao plugin e utilizar no modelo
 
 # Referências Bibliográficas
 
