@@ -1127,13 +1127,9 @@ Spotify, as quais, serão colocadas no questionário, e o seu resultado
 será utilizado como peso para cada ação e no futuro, auxiliar na
 recomendação musical. Esse estudo trouxe a seguinte lista de ações:
 
-  - Pausar / Tocar música
-
   - Passar / Voltar \(n\) músicas
 
-  - Escolher música / artista / gênero
-
-  - Definir tempo da música
+  - Escolher músicas preferidas
 
   - Definir a atividade
 
@@ -1151,7 +1147,9 @@ Com essa definição, foram pesquisados sensores e informações que
 pudessem representar essas condições. A partir da análise dos contextos
 levantados, foi identificado 3 possíveis contextos de ambiente que podem
 ser representados na aplicação, que são: (i) Localização; (ii) Clima e;
-(iii) Reprodução musical em grupo / individual.
+(iii) Reprodução musical em grupo / individual. Devido a um tempo
+limitado de desenvolvimento da aplicação só será utilizado o contexto
+localização.
 
 ### Como serão obtidos os contextos?
 
@@ -1176,9 +1174,7 @@ maneira explicita e implícita, sendo elas:
 
   - tempo
 
-  - clima
-
-  - músicas / gênero / artistas preferidas(os)
+  - músicas preferidas
 
 ##### Informações adquiridas de maneira explicita: 
 
@@ -1188,7 +1184,13 @@ maneira explicita e implícita, sendo elas:
 
   - atividade
 
-  - músicas / gênero / artistas preferidas(os)
+  - músicas preferidas
+
+Os dados de localização obtidos implicitamente são a latitude e
+longitude do usuário, eles foram salvos na aplicação, porém, devido ao
+tempo limitado para o desenvolvimento, o dado não foi utilizado. O tempo
+do obtido implicitamente é a data e hora do evento, registrado para no
+futuro poder ser aplicado um modelo sequencial junto ao KNN.
 
 ### O que são as ações do usuário?
 
@@ -1966,6 +1968,10 @@ relativos ao sistema de recomendação apresentado.
 ##### Realizar perguntas sobre gêneros, músicas e artistas para auxiliar no *Cold Start* do KNN
 
 ##### Aperfeiçoar atributos do modelo para aumentar a precisão e *recall*
+
+##### Utilizar latitude e longitude para assimilar a localização em *label* e facilitar o seu preenchimento
+
+##### Aplicar uma leitura sequencial ao modelo das recomendações
 
 # Referências Bibliográficas
 
