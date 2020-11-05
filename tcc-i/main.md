@@ -237,7 +237,7 @@ Sumário
 [2.6 Conclusões dos trabalhos revisados
 36](#conclusões-dos-trabalhos-revisados)
 
-[3 COLETA DO CONTEXTO DOS USUARIOS 37](#coleta-do-contexto-dos-usuarios)
+[3 COLETA DO CONTEXTO DOS USUARIOS 37](#coleta-do-contexto-dos-usuários)
 
 [3.1 Contexto 37](#contexto)
 
@@ -1076,22 +1076,22 @@ estar mais voltado a uma grande divisão das classes dos *datasets*.
 (RÄTSCH, 2004) Sobrando somente o algoritmo KNN para ser testado no
 sistema desenvolvido nesse trabalho.
 
-# COLETA DO CONTEXTO DOS USUARIOS
+# COLETA DO CONTEXTO DOS USUáRIOS
 
 A partir da revisão bibliográfica realizada, foi possível conhecer
 alguns sistemas e modelos que utilizam do contexto para realizar as
-recomendações musicais, tornando possível entender certas lacunas que
+recomendações musicais, tornando realizável entender certas lacunas que
 não foram analisadas nessa área de pesquisa.
 
-Com isso, foi possível entender e desenvolver um modelo de sistemas de
-recomendação chamado *LORS* (*Loewe’s Recommender System*), que utiliza
-de uma análise recorrente do contexto, para realizar as recomendações
-dinâmicas às mudanças do contexto. Esse modelo será apresentado com mais
-detalhes no capítulo a seguir.
+Com isso, entender e desenvolver um modelo de sistemas de recomendação
+chamado *LORS* (*Loewe’s Recommender System*), que utiliza de uma
+análise recorrente do contexto, para realizar as recomendações
+dinâmicas às mudanças do contexto, passou a ser primaz e plausível.
+Esse modelo será apresentado com mais detalhes no capítulo a seguir.
 
 ## Contexto
 
-Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
+Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020),
 contexto pode ser definido por:
 
 > O conjunto de circunstâncias inter-relacionadas de cuja tessitura se
@@ -1099,13 +1099,12 @@ contexto pode ser definido por:
 > situação.
 
 Um sistema de recomendação busca encontrar os melhores itens para um
-devido fim, onde geralmente se baseia em dados históricos para
-produzi-las. Observa-se que, com o entendimento do contexto, ou conforme
-a definição das “circunstâncias que levaram a certos fatos ou
-situações”, é possível auxiliar as recomendações, aumentando o
-número de dados disponíveis para realizar uma classificação e/ou
-filtro. A Figura 9 apresenta uma visão macro dos contextos que serão
-considerados neste trabalho.
+devido fim, geralmente, baseado em dados históricos para produzi-las.
+Observa-se que, com o entendimento do contexto, ou conforme a definição
+das “circunstâncias que levaram a certos fatos ou situações”, é possível
+auxiliar as recomendações, aumentando o número de dados disponíveis para
+realizar uma classificação e/ou filtro. A Figura 9 apresenta uma visão
+macro dos contextos que serão considerados neste trabalho.
 
 <span id="_Ref42447869" class="anchor"></span>Figura 8 Apresentação dos
 contextos utilizados no trabalho (próprio, 2020)
