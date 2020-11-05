@@ -1101,26 +1101,27 @@ contexto pode ser definido por:
 Um sistema de recomendação busca encontrar os melhores itens para um
 devido fim, geralmente, baseado em dados históricos para produzi-las.
 Observa-se que, com o entendimento do contexto, ou conforme a definição
-das “circunstâncias que levaram a certos fatos ou situações”, é possível
-auxiliar as recomendações, aumentando o número de dados disponíveis para
-realizar uma classificação e/ou filtro. A Figura 9 apresenta uma visão
-macro dos contextos que serão considerados neste trabalho.
+das “circunstâncias que levaram a certos fatos ou situações”, auxiliar
+as recomendações, aumentando o número de dados disponíveis para realizar
+uma classificação e/ou filtro, já não é mais um problema. A 8Figura
+apresenta uma visão macro dos contextos que serão considerados no
+projeto.
 
 <span id="_Ref42447869" class="anchor"></span>Figura 8 Apresentação dos
 contextos utilizados no trabalho (próprio, 2020)
 
 ### O que é o contexto comportamental?
 
-Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
+Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020),
 comportamento pode ser tido por:
 
 > Qualquer ação ou reação do organismo ou parte dele.
 
-A partir da definição de contexto, foi realizado um levantamento das
-possíveis ações a serem registradas em um sistema baseado no *app*
-Spotify, as quais, serão colocadas no questionário, e o seu resultado
-será utilizado como peso para cada ação e no futuro, auxiliar na
-recomendação musical. Esse estudo trouxe a seguinte lista de ações:
+A partir da definição de contexto, surgiu um levantamento das possíveis
+ações a serem registradas em um sistema baseado no *app* Spotify, a fim
+de as colocar no questionário. Seu resultado será utilizado como peso
+para cada ação e, no futuro, auxiliar na recomendação musical. Esse
+estudo trouxe a seguinte lista de ações:
 
   - Passar / Voltar \(n\) músicas
 
@@ -1132,34 +1133,34 @@ recomendação musical. Esse estudo trouxe a seguinte lista de ações:
 
 ### O que é o contexto de ambiente?
 
-Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
+Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020),
 ambiente pode ser tido por:
 
 > Conjunto de condições físicas, biológicas e químicas que rodeiam os
 > seres vivos e as coisas.
 
-Com essa definição, foram pesquisados sensores e informações que
+Pela citação acima, sucedeu-se pesquisas de sensores e informações que
 pudessem representar essas condições. A partir da análise dos contextos
-levantados, foi identificado 3 possíveis contextos de ambiente que podem
-ser representados na aplicação, que são: (i) Localização; (ii) Clima e;
-(iii) Reprodução musical em grupo / individual. Devido a um tempo
-limitado de desenvolvimento da aplicação só será utilizado o contexto
+levantados, a análise expôs três possíveis contextos de ambiente a ser
+representados na aplicação, determinados por: (i) Localização; (ii)
+Clima e; (iii) Reprodução musical em grupo / individual. Com finalidade
+de explicitar o produto final, o protótipo explorará apenas o serviço de
 localização.
 
 ### Como serão obtidos os contextos?
 
-Os contextos no *LORS* serão obtidos a partir da captura de formulários
-e eventos de um app. Na aplicação, será obtido contexto de duas
-maneiras: (i) explicitamente, onde o usuário irá cadastrar o que está
-fazendo. Ex.: emoções, atividades e localização. (ii) implicitamente, a
-qual será obtido através das ações do usuário realizadas no aplicativo.
-Ex.: ações sobre os componentes do app, localização.
+Obter-se-á os contextos no *LORS* a partir da captura de formulários e
+eventos de um app, aplicados, por conjuntura, de duas maneiras: (i)
+explicitamente, para o usuário cadastrar o que está fazendo. Ex.:
+emoções, atividades e localização. (ii) implicitamente, adquirido
+através das ações do usuário realizadas no aplicativo como os
+componentes do app. Ex.: sua localização.
 
 São poucas as ações que auxiliam no entendimento do contexto e que podem
 ser obtidas implicitamente, isso devido as limitações dos sensores e
-dados disponíveis na aplicação desenvolvida, por isso, o sistema que
-será desenvolvido neste trabalho, contará com informações dispostas de
-maneira explicita e implícita, sendo elas:
+dados disponíveis na aplicação desenvolvida. Por isso, o sistema deste
+trabalho contará com informações dispostas de maneira explícita e
+implícita, sendo elas:
 
 ##### Informações adquiridas de maneira implícita: 
 
@@ -1171,7 +1172,7 @@ maneira explicita e implícita, sendo elas:
 
   - músicas preferidas
 
-##### Informações adquiridas de maneira explicita: 
+##### Informações adquiridas de maneira explícita: 
 
   - localização
 
@@ -1181,41 +1182,40 @@ maneira explicita e implícita, sendo elas:
 
   - músicas preferidas
 
-Os dados de localização obtidos implicitamente são a latitude e
-longitude do usuário, eles foram salvos na aplicação, porém, devido ao
-tempo limitado para o desenvolvimento, o dado não foi utilizado. O tempo
-do obtido implicitamente é a data e hora do evento, registrado para no
-futuro poder ser aplicado um modelo sequencial junto ao KNN.
+Os dados de localização implícitos são os de latitude e longitude do
+usuário; eles foram salvos na aplicação - devido ao tempo limitado para
+o desenvolvimento, o dado não foi utilizado. Logo, o tempo implícito é a
+data e hora do evento, registrado para, no futuro, poder ser aplicado um
+modelo sequencial junto ao KNN.
 
 ### O que são as ações do usuário?
 
-As ações do usuário trazem diversas informações referentes ao contexto
-que ele está vivendo, elas auxiliam no entendimento do seu contexto e na
-validação da acuracidade das recomendações feitas. São elas que
-demonstrarão ao sistema, o gosto ou não do usuário, em cima das músicas
-recomendadas. Cada ação terá um nível de importância, a qual será obtida
-através das respostas do questionário. As possíveis ações a serem
-executadas pelo usuário estão listadas na seção 3.1.1.
+As ações do usuário trazem diversas informações referentes ao que ele
+está vivendo (auxiliando o entendimento do seu ambiente e a validação da
+acuracidade das recomendações feitas, por exemplo). São elas que
+demonstrarão ao sistema, através das músicas recomendadas, o gosto do
+usuário, se são de um determinado estilo musical ou de outro. Cada ação
+terá um nível de importância, a qual será obtida pelas respostas do
+questionário. As possíveis atividades executadas pelo usuário estão
+listadas na seção 3.1.1.
 
 ## Pesquisa com usuários sobre recomendação musical
 
-Para validar o modelo de sistema de recomendação foi desenvolvida uma
-aplicação, a qual foi distribuída aos usuários que participaram do
-questionário previamente realizado, onde foram obtidas informações sobre
-esses usuários. As etapas do desenvolvimento do *LORS* são apresentadas
-na Figura 11.
+Para validar o modelo de sistema de recomendação, criou-se uma
+aplicação, distribuída aos usuários que participaram do questionário
+previamente realizado; reunindo, assim, informações sobre esses
+usuários. As etapas do desenvolvimento do *LORS* são apresentadas na
+Figura 11.
 
 <span id="_Ref42452795" class="anchor"></span>Figura 9 Etapas do
 desenvolvimento do sistema de recomendação musical (próprio, 2020)
 
-As perguntas aplicadas no questionário permitiram conhecer melhor os
-usuários que utilizarão a aplicação, sendo assim, foram utilizadas
-perguntas que permitam entender suas preferências, atividades, dentre
-outros fatores. As perguntas do questionário estão listadas no Quadro 2:
+As perguntas expostas no questionário permitirão conhecer melhor os
+usuários que utilizarão a aplicação. Sendo assim, todas as questões
+permitem entender suas preferências, atividades, dentre outros fatores.
+As perguntas do questionário estão listadas no Quadro 2:
 
-<span id="_Ref48857312" class="anchor"></span>Quadro Perguntas e
-respostas disponibilizadas a um certo público através dos formulários do
-Google. (próprio, 2020)
+<span id="_Ref48857312" class="anchor"></span>
 
 | Pergunta                                                                                     | Possíveis respostas                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1234,95 +1234,98 @@ Google. (próprio, 2020)
 | 13\. Sua idade                                                                               |                                                                                                                                                                                                                                                                           |
 | 14\. Dicas e sugestões?                                                                      |                                                                                                                                                                                                                                                                           |
 
+Quadro 2 Perguntas e respostas disponibilizadas a um certo público
+através dos formulários do Google. (próprio, 2020)
+
 ### Pré-teste do questionário
 
-Com as perguntas do questionário definidas, foi realizada uma validação
-para garantir que elas faziam sentido. O pré-teste foi feito enviando o
-questionário para 5 pessoas, as quais tinham a responsabilidade de
-analisar as perguntas e avaliar a dificuldade de entendimento de cada
-uma das perguntas. Isso foi feito para garantir que o público que
-receberia o questionário posteriormente - o qual não está dentro do
-contexto do trabalho - conseguiria responder as perguntas com completa
-compreensão delas.
+Com as perguntas do questionário definidas, deu-se o início de uma
+validação para garantir que elas fizessem sentido. O pré-teste foi feito
+enviando as indagações para 5 pessoas, responsáveis por analisar as
+inquirições e avaliar a dificuldade de entendimento de cada uma delas. O
+intuito é garantir que o público que recebesse o questionário
+posteriormente - o qual não está dentro do contexto do trabalho - também
+conseguisse responder as perguntas com a completa compreensão delas.
 
 ### Resultados do questionário
 
-Com um alcance maior do que 1000 pessoas, sendo 800 funcionários da CWI
+Com um alcance maior do que 1000 pessoas, sendo 800 funcionários da CWI,
 que possuem acesso ao Slack, 200 pessoas alcançadas através do Instagram
 e demais divulgações que tiveram, o questionário teve uma adesão de 222
 respostas. O público respondente tinha entre 14 e 71 anos e um gosto
 musical bem diversificado, foram obtidos em torno de 60 estilos
 musicais, sendo o mais votado o Rock, com 181 marcações.
 
-O questionário foi aberto no dia 6 de julho de 2020, nesse dia foi
-realizada uma publicação no Instagram para apresentá-lo ao público, e no
-decorrer, foi enviado a outras redes sociais, como WhatsApp, Slack
-(empresarial), Twitter e Facebook. O seu fechamento foi realizado no dia
-18 de julho de 2020, somando o total de 12 dias em que o ele ficou
+O questionário foi aberto no dia 6 de julho de 2020, no mesmo dia que,
+publicado no Instagram, fora demonstrado ao público. No decorrer de duas
+semanas, outras redes sociais participaram da pesquisa, como WhatsApp,
+Slack (empresarial), Twitter e Facebook. O seu fechamento aconteceu no
+dia 18 de julho de 2020, somando o total de 12 dias em que o ele ficou
 aberto. Link para as respostas do questionário:
 <https://forms.gle/FKW5iJBhT7oEa18eA>
 
-Dos dispositivos ou aplicativos utilizados para realizar a reprodução
+Dos dispositivos (ou aplicativos) utilizados para realizar a reprodução
 das músicas, com 168 respostas, o Spotify foi o mais escolhido das
-opções, em segundo lugar ficou o Youtube com 103 respostas (variadas
+opções. Em segundo lugar ficou o Youtube com 103 respostas (variadas
 entre 86 no Youtube Music, e 17 tratando sobre o Youtube clássico).
 
 A pergunta “Você acha que as recomendações musicais realizadas via
-software poderiam ser melhoradas?” trouxe uma visão da opinião se existe
-espaço para esse trabalho evoluir as técnicas de recomendação musical, e
-a “Você acredita que o contexto poderia melhorar essas recomendações?”
-se existe espaço para o contexto do usuário evoluir essas técnicas. Com
-95% para a primeira e 96% para a segunda pergunta de respostas marcadas
-como “sim”, foi possível verificar que esse trabalho tem espaço para
-agregar qualidade às recomendações musicais.
+software poderiam ser melhoradas?” trouxe uma visão clara sobre o espaço
+para esse trabalho evoluir nas técnicas de recomendação musical.
+Enquanto aquela que dizia “Você acredita que o contexto poderia melhorar
+essas recomendações?” mostrou se havia lugar nesse contexto do usuário
+para evoluir tais técnicas. Com 95% para a primeira e 96% para a segunda
+pergunta de respostas marcadas como “sim”, foi possível verificar que
+esse trabalho pode agregar qualidade às recomendações musicais.
 
-Para aperfeiçoar a visão do trabalho das características possuem maior
-importância, foi realizado as perguntas “Em quais atividades você
-costuma ouvir música?”, “Em quais lugares você costuma ouvir músicas?” e
-“Você costuma ouvir música quando está:”. Com elas, foi possível
-conhecer de novas características (a partir do campo “outro”), e foi
-possível obter de características que mais influenciam os usuários na
-escolha de uma música.
+Para aperfeiçoar a visão do trabalho das características de maior
+importância, usou-se três indagações, que são: “Em quais atividades
+você costuma ouvir música?”, “Em quais lugares você costuma ouvir
+músicas?” e “Você costuma ouvir música quando está:”. Com elas,
+apareceram novas características (a partir do campo “outro”), assim como
+aumentou a percepção do que mais influenciam os usuários na escolha de
+uma música.
 
-Visando entender o comportamento do público, foi feito as perguntas “O
-que costuma te influenciar na escolha da música?” e “O que você faz
-quando gosta ou não de uma música?”. Dessa maneira, foi possível
-compreender as características mais importantes a serem consideradas no
-modelo e ordem da aplicação.
+Visando entender o comportamento do público, as questões “O que costuma
+te influenciar na escolha da música?” e “O que você faz quando gosta ou
+não de uma música?” foram importantíssimas. Dessa maneira, não há tanta
+dificuldade em compreender as características mais importantes a serem
+consideradas no modelo e ordem da aplicação.
 
 A pergunta “As músicas que você escuta sozinho são diferentes das que
 escuta com os amigos?” foi desenvolvida para realizar uma avaliação se a
 *feature* “amigos ou sozinho” seria desenvolvida. Devido ao tempo
 disponível para desenvolvimento, ela acabou não sendo utilizada.
 
-Para obter um conhecimento da intensidade musical do público que
-lidamos, foi feito a pergunta “Quanto tempo por semana você escuta
-música?”. Com ela foi possível entender que não era um público intenso,
-pois nas respostas, mais de 50% ouvia de 0 a 10horas por semana.
+Para obter um conhecimento da intensidade musical do público que lidamos
+relacionada ao tempo (estritamente necessário), compôs-se de “Quanto
+tempo por semana você escuta música?”. Deu para entender que não era um
+público intenso; nas respostas, mais de 50% ouvia de 0 a 10horas por
+semana.
 
-Visando realizar um Cold Start na aplicação, foi criado a pergunta
-“Quais são os gêneros musicais que gosta de escutar?”, visando colocar
-as principais respostas ao plugin. Porém, devido ao tempo limitado de
-desenvolvimento, a *feature* não foi feita.
+Um Cold Start precisaria ser construido na aplicação. Então, “Quais são
+os gêneros musicais que gosta de escutar?” seria a melhor opção, caso o
+objetivo seja colocar as principais respostas ao plugin. A *feature*
+será desenrolada no desenvolvimento do projeto.
 
 Respeitando a privacidade do público, foi feito a pergunta “Gostaria de
-participar de uma pesquisa que visa melhorar a recomendação musical?”, a
-qual, foi utilizada para filtrar somente os usuários que aceitaram ela
-para enviar o convite para participar do *plugin*.
+participar de uma pesquisa que visa melhorar a recomendação musical?”,
+filtrando assim, somente os usuários que aceitaram ela para enviar o
+convite para participar do *plugin*.
 
-A pergunta “Sua idade” foi feita para obter conhecimento do range de
-idade que estávamos lidando na aplicação, e assim, desenvolver as
-facilidades visuais necessárias conforme a idade. Durante o envio do
-questionário, o escopo do trabalho estava em aberto, por isso, foi feito
-a pergunta “Dicas e sugestões?”. Assim, foi possível obter ideias do
-público para aplicar no modelo.
+A pergunta “Sua idade” foi feita para obter conhecimento do rank de
+idade da aplicação e, assim, desenvolver as facilidades visuais
+necessárias conforme a idade. Durante o envio do questionário, o escopo
+do trabalho estava em aberto - por isso, a pergunta “Dicas e
+sugestões?”. Assim, foi possível obter ideias do público para aplicar
+no modelo.
 
 ## Desenvolvimento Do plugin
 
-Para obter os dados dos usuários, foi desenvolvido uma aplicação web que
-utilizava do SDK Web do Spotify para reprodução das músicas e captura
-dos eventos gerados pelo usuário. Ela pode ser acessada através do link
-<https://ericoloewe.github.io/computer-science-tcc/>.
+Para obter os dados dos usuários, o projeto apresenta uma aplicação web
+que utilizava do SDK Web do Spotify para reprodução das músicas e
+captura dos eventos gerados pelo usuário. Ela pode ser acessada através
+do link <https://ericoloewe.github.io/computer-science-tcc/>.
 
 ![](./pandoc/media/image6.png)![](./pandoc/media/image7.png)
 
@@ -1332,17 +1335,17 @@ login da aplicação (próprio, 2020)
 
 ### Telas da aplicação
 
-A aplicação foi dividida em 5 telas, e ela inicia com a tela apresentada
-na Figura 10, a qual apresenta instruções para os usuários de como
-utilizar a aplicação. A segunda tela, é representada na Figura 11, a
-qual disponibiliza opções de login no Spotify.
+A aplicação é dividida em 5 telas, iniciada na Figura 10, a qual
+apresenta instruções para os usuários de como utilizar a aplicação e
+terminada na segunda tela, é representada pela Figura 11,
+disponibilizando opções de login no Spotify.
 
 A Figura 12 apresenta o cadastro do contexto na aplicação. O processo é
-dividido em 3 etapas: (i) “Como você está se sentindo nesse momento?”;
-(ii) “O que você está fazendo nesse momento?”; (iii) “Onde você está
-nesse momento?”. A partir dessas perguntas, é possível entender o
-contexto atual do usuário naquele período. As perguntas são realizadas a
-cada 30min.
+dividido em três etapas: (i) “Como você está se sentindo nesse
+momento?”; (ii) “O que você está fazendo nesse momento?”; (iii) “Onde
+você está nesse momento?”. Essas perguntas tornaram realizável entender
+o contexto atual do usuário naquele período por serem divulgadas a cada
+30min.
 
 ![](./pandoc/media/image8.png)![](./pandoc/media/image9.png)
 
@@ -1351,14 +1354,13 @@ preenchimento do contexto (próprio, 2020) Figura A direita, tela da
 lista de dispositivos do Spotify (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
-reproduza as músicas no plugin. Para isso, foi criado a tela apresentada
-na Figura 13, a qual possui um botão “USAR PLUGIN PARA TOCAR MÚSICAS”
-que ao ser pressionado, habilita a reprodução no plugin.
+reproduza as músicas no plugin. Tendo isso em mente, foi criado a tela
+apresentada na Figura 13, contando com um botão “USAR PLUGIN PARA TOCAR
+MÚSICAS” que, ao ser pressionado, habilita a reprodução no plugin.
 
-Por fim, foi desenvolvido a tela principal, que é apresentado na Figura
-14. Nessa tela, é realizado toda interação do usuário no período em que
-ele está ouvindo as músicas, as possíveis interações estão listadas
-abaixo.
+Por fim, a Figura 14 exibi a tela principal suscitada. Nela, é realizado
+toda a interação do usuário no período em que ele está ouvindo as
+músicas; as possíveis interações estão listadas abaixo.
 
   - Gostar da música
 
@@ -1371,10 +1373,11 @@ abaixo.
   - Pausar / Tocar música
 
 Ao clicar no botão “gostei”, é salvo a informação de que o usuário
-gostou da música naquele contexto. Ao clicar no botão “não gostei” é
-salvo a informação que o usuário não gostou e é levado o usuário a tela
-de busca de música Figura 15, para o usuário apresentar uma música se
-identifique melhor naquele momento.
+gostou da música naquele contexto, assim como no oposto. “não gostei”
+faria o programa entender que a pessoa possuidora do produto, a que
+tivesse a conta, não apreciou aquele determinado estilo musical no
+contexto em si. Ele seria levado à tela de busca de música (Figura 15),
+para apresentar uma música que se identifique melhor com o momento.
 
 ![](./pandoc/media/image10.png)![](./pandoc/media/image11.png)
 
@@ -1383,40 +1386,41 @@ principal, a qual apresenta a música sendo reproduzida ao usuário
 (próprio, 2020) Figura A direita, tela de busca de músicas que encaixem
 melhor no momento (próprio, 2020)
 
-A ação de buscar música, irá levar para a tela apresentada na Figura 15,
-a qual possibilita o usuário apresentar uma música que se enquadre
-melhor no contexto que ele está vivendo. Ao selecionar as músicas e
-clicar em próximo, é salvo as informações de sua relação com o contexto
-vivido.
+A ação de buscar música, de ter a opção em relação a um tempo
+específico, o levaria para a tela apresentada na Figura 15,
+possibilitando o cliente a apresentar uma música que se enquadre ao
+melhor conteúdo musical de acordo com seus sentimentos. Ao selecionar as
+composições e clicar em próximo, é salvo as informações de sua relação
+com o contexto vivido.
 
 ### Tecnologias utilizadas no desenvolvimento
 
-Para desenvolver a aplicação web, foi utilizado a *library React* que
-auxilia na construção de componentes e interfaces. Para estilizar os
-componentes e páginas do React, foi utilizado o framework Material ui, o
-qual possui estilos prontos baseados no Material (interface do Android).
+Para desenvolver a aplicação web, utilizou-se a *library React* como
+auxílio na construção de componentes e interfaces. Com o desígnio de
+estilizar os componentes e páginas do React, houve a necessidade do
+framework Material ui, por estilos prontos baseados no Material
+(interface do Android) que possuía.
 
-Inicialmente, para persistir os eventos do usuário, foi utilizado o
-*Google Analytics* (uma ferramenta específica para eventos). Porém,
-devido à falta de customização da ferramenta, foi trocado para o
-*Realtime Database* do Firebase (*Realtime DB*), o qual possui uma vasta
-opção de customização, e tornaria possível a adição do *timestamp* a
-cada evento. Com ela foi possível persistir os eventos em um formato
-NoSQL.
+O *Google Analytics* (uma ferramenta específica para eventos) serviria
+como mecanismo para persistir os eventos do usuário. Devido à falta de
+customização dele, achou-se plausível o substituir pelo *Realtime
+Database* do Firebase (*Realtime DB*), tendo a vantagem de uma vasta
+opção de customização, o que tornaria a adição do *timestamp* a cada
+evento uma opção. Com ela foi possível persistir os eventos em um
+formato NoSQL.
 
-No início, para enviar o evento a plataforma, foi utilizado o GTM
-(Google Tag Manager) para fazer esse intermédio, porém, devido a algumas
-limitações da ferramenta, foi removido essa dependência e enviado os
-eventos diretamente do *Javascript*.
+No início, a fim de enviar o evento à plataforma, o programa contou com
+o GTM (Google Tag Manager) para fazer esse intermédio. Porém, por causa
+de algumas limitações da ferramenta, deixou-se de ter tal dependência.
+Foram enviados enviado os eventos diretamente do *Javascript*.
 
 ## Distribuição da aplicação e coleta de dados
 
-A aplicação foi disponibilizada no período do dia 28/09 até o dia 02/10
-através de um e-mail com instruções de como utilizar a aplicação, que
-foi enviado para os 144 usuários que participaram do questionário e
-optaram por participar da pesquisa. Assim, ela irá salvar os dados que
-serão utilizados como teste no modelo de classificação desenvolvido
-nesse trabalho.
+A aplicação esteve disponibilizada, do dia 28/09 até 02/10, através de
+um e-mail com instruções de como utilizar a aplicação, enviado para os
+144 usuários que participaram do questionário e optaram por participar
+da pesquisa. Assim, ela irá salvar os dados que serão utilizados como
+teste no modelo de classificação desenvolvido nesse trabalho.
 
 ### Pré-teste
 
