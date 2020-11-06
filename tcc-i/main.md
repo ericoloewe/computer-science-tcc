@@ -1497,9 +1497,10 @@ para o professor orientador para validar o desenvolvimento feito. Com
 isso, foi encontrado certos ajustes a serem realizados antes de ser
 divulgada a aplicação. Depois de corrigida, ela foi enviada para mais 5
 pessoas testarem e novamente foram encontrados alguns pontos a serem
-corrigidos. Por fim, foi enviado o e-mail para um grupo supervisionado
-de 8 pessoas, para validar sua aceitação e entendimento do funcionamento
-da aplicação.
+corrigidos. Após, foi enviado o e-mail para um grupo supervisionado de 8
+pessoas, para validar sua aceitação e entendimento do funcionamento da
+aplicação. Por fim, o e-mail foi enviado para a base completa de
+usuários optantes por participar do teste.
 
 ### Hospedagem
 
