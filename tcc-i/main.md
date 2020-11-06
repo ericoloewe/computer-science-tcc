@@ -751,7 +751,7 @@ perguntas:
   - Quais foram as técnicas de avaliação
 usadas?
 
-#### The New Challenges when Modeling Context through Diversity over Time in Recommender Systems
+#### The New Challenges when Modeling Context through Diversity over Time in Recommender Systems (L’HUILLIER, 2016)
 
 Foi realizada a revisão do trabalho e verificado que ele não apresenta
 dados e técnicas suficientes para serem consideradas nessa pesquisa,
@@ -760,7 +760,7 @@ artigos citados por esse. Dada a falta de informações apresentadas nesse
 trabalho, não serão respondidas as questões pré-estabelecidas
 anteriormente.
 
-#### Prediction of music pairwise preferences from facial expressions
+#### Prediction of music pairwise preferences from facial expressions (TKALČIČ et al., 2019)
 
 Essa pesquisa apresenta técnicas de como obter as preferências de um
 usuário através de suas expressões faciais. Para isso, foi desenvolvida
@@ -773,7 +773,7 @@ os dois contextos estudados no artigo revisado, que são: (i) as
 expressões faciais gravadas através de uma câmera; (ii) o tempo
 dedicado a ouvir cada música.
 
-#### Qual o problema que ele resolveu?
+##### Qual o problema que ele resolveu?
 
 Nesse trabalho é apresentada uma abordagem para predizer a preferência
 musical do usuário a partir das expressões faciais. Ela busca responder
@@ -781,7 +781,7 @@ a seguinte questão: É possível inferir (implicitamente), em pares, as
 preferências musicais de um usuário, a partir de suas expressões faciais
 demonstradas, enquanto escuta suas músicas?
 
-#### Quais técnicas foram usadas?
+##### Quais técnicas foram usadas?
 
 A principal técnica utilizada para predição das músicas foi a de gerar
 um *score,* a partir da comparação par a par em cima das escolhas do
@@ -811,13 +811,13 @@ precisão das preferências de predição dos modelos bases, utilizando
 *Root Mean Squared Error* (RMSE), precisão, *recall*, *F-measure* e
 acuracidade.
 
-#### Qual a base de treinamento e teste?
+##### Qual a base de treinamento e teste?
 
 A base dessa pesquisa foi gerada através do uso em um ambiente
 controlado de uma aplicação desenvolvida. Foi utilizado um total de 75
 usuários para utilizar a aplicação, com uma média de idade de 29,8 anos.
 
-#### Quais os contextos utilizados?
+##### Quais os contextos utilizados?
 
 O principal contexto utilizado nesse trabalho foi relacionado às emoções
 dos usuários, obtidas através das expressões faciais dos usuários
@@ -825,7 +825,7 @@ gravadas durante os testes realizados. No fim, foi apresentado um outro
 contexto comportamental, que é o tempo em que os usuários escutaram cada
 música. Não foi apresentado nenhum tipo de contexto de ambiente.
 
-#### Como é obtido o contexto?
+##### Como é obtido o contexto?
 
 Os dois contextos são obtidos enquanto o usuário está utilizando a
 aplicação de teste para reproduzir músicas. As emoções são obtidas a
@@ -840,7 +840,7 @@ segundos de cada música em par apresentada e ao finalizar, poderia
 escolher qual música era mais adequada para se ouvir no ambiente
 pré-estabelecido que era o seu trabalho.
 
-#### A recomendação atingiu as expectativas do usuário?
+##### A recomendação atingiu as expectativas do usuário?
 
 Para obter os resultados, foi realizada a comparação da precisão das
 preferências de predição dos modelos, utilizando *Root Mean Squared
@@ -855,7 +855,7 @@ música que ele ouviu por mais tempo. Outro critério apresentado foi a
 sua avaliação das músicas em
 par.
 
-#### Towards Intent-Aware Contextual Music Recommendation: Initial Experiments
+#### Towards Intent-Aware Contextual Music Recommendation: Initial Experiments (VOLOKHIN; AGICHTEIN, 2018)
 
 O artigo apresenta técnicas e resultados que buscam estudar as intenções
 dos usuários ao buscar uma música para escutar, as quais são obtidas
@@ -873,7 +873,7 @@ são obtidas as *top* 10 músicas com melhores *scores*, as quais são
 incluídas nas recomendações futuras para cada atividade (Dirigir,
 Trabalhar, Cozinhar, ...).
 
-####  Qual o problema que ele resolveu?
+#####  Qual o problema que ele resolveu?
 
 São abordadas 3 contribuições no artigo: (i) é estimada uma distribuição
 empírica das intenções do ouvinte ao reproduzir um vídeo no Youtube;
@@ -884,7 +884,7 @@ recomendações. O modelo apresentado demonstra melhorias promissoras na
 recomendação de músicas através das intenções do usuário, ao invés de
 recomendações que dependem apenas de suas atividades.
 
-#### Quais técnicas foram usadas?
+##### Quais técnicas foram usadas?
 
 Dado o escopo desse trabalho, serão apresentadas somente as técnicas
 utilizadas nas recomendações de áudio. O artigo apresenta a
@@ -899,13 +899,13 @@ Clustering*, mas os melhores resultados foram obtidos utilizando o
 Não foram apresentados os algoritmos utilizados para realizar a
 recomendação musical.
 
-#### Qual a base de treinamento e teste?
+##### Qual a base de treinamento e teste?
 
 A base de intenções é montada a partir de testes realizados utilizando a
 API do Spotify em Python, em cima das *playlists* dispostas do usuário.
 Não é apresentada nenhuma aplicação desenvolvida para obter as bases.
 
-#### Quais os contextos utilizados?
+##### Quais os contextos utilizados?
 
 Esse trabalho não busca entender o contexto em si. Ele apenas busca
 entender uma de suas características, que são as intenções do usuário,
@@ -914,7 +914,7 @@ procura gerar *playlists* relacionadas às atividades que o usuário está
 executando. O principal atributo utilizado para predizer suas intenções
 é a descrição da *playlist* encontrada em sua busca.
 
-#### Como é obtido o contexto?
+##### Como é obtido o contexto?
 
 Para obter o comportamento do usuário foram avaliadas, durante um
 período de teste, as intenções dos usuários nas buscas por *playlists*
@@ -923,7 +923,7 @@ intenções. Esse comportamento é obtido de maneira implícita e o
 usuário não pode ajudar na definição do contexto. Não é apresentado ao
 usuário o contexto atual obtido através do seu comportamento.
 
-#### A recomendação atingiu as expectativas do usuário?
+##### A recomendação atingiu as expectativas do usuário?
 
 Para validar as recomendações do sistema, foi realizada uma comparação
 com o RecSys do Spotify (SPTF) e o criado no artigo revisado (AIR).
@@ -942,7 +942,7 @@ avaliar numericamente a qualidade de cada *playlist* recomendada. Não é
 apresentado o tamanho da base utilizada nesse
 artigo.
 
-#### Quantitative Study of Music Listening Behavior in a Smartphone Context
+#### Quantitative Study of Music Listening Behavior in a Smartphone Context (YANG; TENG, 2015)
 
 O artigo revisado apresentou diversos resultados quantitativos, que
 foram obtidos através da classificação e computação dos dados de um
@@ -970,20 +970,20 @@ a dados diários obtidos pelos 48 usuários durante um período de 3
 semanas. O artigo não apresentou ou desenvolveu sistema de recomendação
 musical, porém, trouxe diversas informações pertinentes a esse trabalho.
 
-####  Qual o problema que ele resolveu?
+#####  Qual o problema que ele resolveu?
 
 Neste trabalho serão apresentadas diversas técnicas que buscam melhorar
 a recomendação personalizada, a partir de diversos dados obtidos por
 meio de sensores (implicitamente), ou através de perguntas realizadas ao
 usuário.
 
-#### Quais técnicas foram usadas?
+##### Quais técnicas foram usadas?
 
 Essa seção está dividida nas 3 questões que o artigo revisado busca
 resolver. Em nenhuma das questões é abordada a filtragem
-colaborativa.
+    colaborativa.
 
-#####  Em que medida podemos prever a música que um usuário prefere ouvir em diferentes contextos de atividade (ou seja, uso de música) da vida real?
+  - ##### Em que medida podemos prever a música que um usuário prefere ouvir em diferentes contextos de atividade (ou seja, uso de música) da vida real?
 
 Essa seção do trabalho teve como principal objetivo classificar
 (utilizando *auto-tagging*) a relação das preferências musicais x
@@ -1015,9 +1015,9 @@ Como a experiência da música é multidimensional, o artigo revisado busca
 extrair os atributos das músicas, e visa auxiliar o processo de
 classificação. Para isso, foram utilizados o *MIRtoolbox* e o *PsySound
 toolbox,* os quais conseguem extrair os atributos
-musicais.
+    musicais.
 
-##### Em que medida podemos prever a atividade de um usuário a partir dos dados do sensor coletados dos *smartphones* em um contexto de um ouvinte musical da vida real?
+  - ##### Em que medida podemos prever a atividade de um usuário a partir dos dados do sensor coletados dos *smartphones* em um contexto de um ouvinte musical da vida real?
 
 O principal objetivo dessa seção do trabalho foi classificar as
 atividades dos usuários (*user-activity*) e relacionar às 8 atividades
@@ -1029,9 +1029,9 @@ sensores utilizando o *Funf Open Sensing Framework*, e semelhante a
 classificação dos dados musicais com o contexto, para classificar as
 atividades dos usuários com os sensores foram utilizadas as técnicas de
 RBF e
-SVM.
+    SVM.
 
-##### Como fatores pessoais se correlacionam com a previsibilidade do uso de músicas e da atividade do usuário para diferentes usuários?
+  - ##### Como fatores pessoais se correlacionam com a previsibilidade do uso de músicas e da atividade do usuário para diferentes usuários?
 
 Com os resultados obtidos nas seções anteriores, essa seção busca
 determinar quais fatores do usuário são fortes indicadores de desempenho
@@ -1044,14 +1044,14 @@ Nessa seção foi utilizado o *Pearson’s linear correlation coefficient* e
 AUC para determinar quais fatores dos usuários são indicadores de
 desempenho das duas tarefas.
 
-#### Qual a base de treinamento e teste?
+##### Qual a base de treinamento e teste?
 
 A partir do aplicativo desenvolvido, foram geradas uma base de
 treinamento e teste. Elas foram divididas em 3 partes, sendo elas: (i)
 relação música x contexto; (ii) relação dos sensores x atividades; (iii)
 e por último, os fatores extraídos dos usuários.
 
-#### Quais os contextos utilizados?
+##### Quais os contextos utilizados?
 
 O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
@@ -1060,14 +1060,14 @@ e classificaram os fatores de uma preferência musical em 3 tipos
 <span id="_Toc55260885" class="anchor"></span>Figura 7 Fatores da
 preferência musical (próprio, 2020)
 
-#### Como é obtido o contexto?
+##### Como é obtido o contexto?
 
 O contexto é obtido a partir do aplicativo desenvolvido, ele trouxe
 diversas informações sobre o dia a dia dos usuários, essas informações
 foram obtidas através de sensores e formulários que o usuário conseguia
 responder. Não é apresentado o contexto atual para o usuário.
 
-#### A recomendação atingiu as expectativas do usuário?
+##### A recomendação atingiu as expectativas do usuário?
 
 O artigo revisado não desenvolveu um sistema de recomendação, apenas
 disponibilizou diversos dados estatísticos que auxiliariam o
@@ -2083,12 +2083,15 @@ Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. JOSÉ, I.
 **KNN (K-Nearest Neighbors) \#1**. Disponível em:
 \<https://medium.com/brasil-ai/knn-k-nearest-neighbors-1-e140c82e9c4e\>.
-Acesso em: 4 out. 2020. LUDEWIG, M. et al. Effective nearest-neighbor
-music recommendations. **ACM International Conference Proceeding
-Series**, 2018. LUINI, B. J. R.; WHITMAN, A. E.; DATE, P. **Streaming
-Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M. **Os avanços
-tecnológicos e o futuro da humanidade**Querendo ser Deus, , 2009. NIWA,
-H. **Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v.
+Acesso em: 4 out. 2020. L’HUILLIER, A. The new challenges when modeling
+context through diversity over time in recommender systems. **UMAP 2016
+- Proceedings of the 2016 Conference on User Modeling Adaptation and
+Personalization**, p. 341–344, 2016. LUDEWIG, M. et al. Effective
+nearest-neighbor music recommendations. **ACM International Conference
+Proceeding Series**, 2018. LUINI, B. J. R.; WHITMAN, A. E.; DATE, P.
+**Streaming Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M.
+**Os avanços tecnológicos e o futuro da humanidade**Querendo ser Deus, ,
+2009. NIWA, H. **Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v.
 134PEDREGOSA, F. et al. Scikit-learn: Machine Learning in {P}ython.
 **Journal of Machine Learning Research**, v. 12, p. 2825–2830, 2011.
 RÄTSCH, G. A brief introduction into machine learning. **21st Chaos
