@@ -158,10 +158,10 @@ revisado 34](#_Ref42381546)
 através dos formulários do Google. (próprio, 2020) 42](#_Ref48857312)
 
 [Quadro 3 Lista de ações possíveis nos eventos (próprio, 2020)
-56](#_Ref55256921)
+55](#_Ref55256921)
 
 [Quadro 4 Campos e seus respectivos valores utilizados na recomendação
-(próprio, 2020) 64](#_Ref54920412)
+(próprio, 2020) 63](#_Ref54920412)
 
 Lista de TABELAS
 
@@ -218,19 +218,25 @@ Sumário
 
 [1 Introdução 13](#introdução)
 
-[2 Trabalhos relacionados 17](#trabalhos-relacionados)
+[1.1 Objetivo Geral 16](#objetivo-geral)
+
+[1.2 Objetivos Específicos 16](#objetivos-específicos)
+
+[1.3 Metodologia 16](#metodologia)
+
+[2 Trabalhos relacionados 18](#trabalhos-relacionados)
 
 [2.1 Levantamento bibliográfico inicial
-17](#levantamento-bibliográfico-inicial)
+18](#levantamento-bibliográfico-inicial)
 
-[2.2 O protocolo de revisão 18](#o-protocolo-de-revisão)
+[2.2 O protocolo de revisão 19](#o-protocolo-de-revisão)
 
-[2.3 PROCURA NOS MOTORES DE BUSCA 19](#procura-nos-motores-de-busca)
+[2.3 PROCURA NOS MOTORES DE BUSCA 20](#procura-nos-motores-de-busca)
 
 [2.4 ETAPAS DA REVISÃO DOS TRABALHOS
 21](#etapas-da-revisão-dos-trabalhos)
 
-[2.4.1 Trabalhos selecionados 22](#trabalhos-selecionados)
+[2.4.1 Trabalhos selecionados 23](#trabalhos-selecionados)
 
 [2.5 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
 33](#funcionalidades-dos-trabalhos-investigados)
@@ -263,51 +269,51 @@ Sumário
 
 [3.3 Desenvolvimento Do plugin 46](#desenvolvimento-do-plugin)
 
-[3.3.1 Telas da aplicação 47](#telas-da-aplicação-plugin)
+[3.3.1 Telas da aplicação (*plugin*) 47](#telas-da-aplicação-plugin)
 
 [3.3.2 Tecnologias utilizadas no desenvolvimento
-51](#tecnologias-utilizadas-no-desenvolvimento)
+50](#tecnologias-utilizadas-no-desenvolvimento)
 
 [3.4 Distribuição da aplicação e coleta de dados
-51](#distribuição-da-aplicação-e-coleta-de-dados)
+50](#distribuição-da-aplicação-e-coleta-de-dados)
 
-[3.4.1 Pré-teste 51](#pré-teste)
+[3.4.1 Pré-teste 50](#pré-teste)
 
-[3.4.2 Hospedagem 52](#hospedagem)
+[3.4.2 Hospedagem 51](#hospedagem)
 
-[3.4.3 Coleta do Firebase 52](#coleta-do-firebase)
+[3.4.3 Coleta do Firebase 51](#coleta-do-firebase)
 
-[4 SISTEMA LORS 54](#sistema-lors)
+[4 SISTEMA LORS 53](#sistema-lors)
 
-[4.1 O Algoritmo KNN 54](#o-algoritmo-knn)
+[4.1 O Algoritmo KNN 53](#o-algoritmo-knn)
 
 [4.1.1 Preparação dos dados para o KNN
-55](#preparação-dos-dados-para-o-knn)
+54](#preparação-dos-dados-para-o-knn)
 
-[4.1.2 Testes com KNN 60](#testes-com-knn)
+[4.1.2 Testes com KNN 59](#testes-com-knn)
 
-[4.1.3 Taxonomia dos gêneros 61](#taxonomia-dos-gêneros)
+[4.1.3 Taxonomia dos gêneros 60](#taxonomia-dos-gêneros)
 
-[*4.2* Modelagem do sistema *LORS* 61](#modelagem-do-sistema-lors)
+[*4.2* Modelagem do sistema *LORS* 60](#modelagem-do-sistema-lors)
 
-[4.2.1 POC (Proof of Concept) 62](#poc-proof-of-concept)
+[4.2.1 POC (Proof of Concept) 61](#poc-proof-of-concept)
 
-[4.2.2 Servidor 62](#servidor)
+[4.2.2 Servidor 61](#servidor)
 
-[4.2.3 Hospedagem 63](#hospedagem-1)
+[4.2.3 Hospedagem 62](#hospedagem-1)
 
-[4.2.4 Recomendação 63](#recomendação)
+[4.2.4 Recomendação 62](#recomendação)
 
 [4.2.5 Resultado da recomendação (integração app)
-64](#resultado-da-recomendação-integração-app)
+63](#resultado-da-recomendação-integração-app)
 
-[4.2.6 Resultados do experimento 65](#resultados-do-experimento)
+[4.2.6 Resultados do experimento 64](#resultados-do-experimento)
 
-[5 CONCLUSÃO 69](#conclusão)
+[5 CONCLUSÃO 68](#conclusão)
 
-[5.1 Trabalhos futuros 70](#trabalhos-futuros)
+[5.1 Trabalhos futuros 69](#trabalhos-futuros)
 
-[Referências Bibliográficas 71](#referências-bibliográficas)
+[Referências Bibliográficas 70](#referências-bibliográficas)
 
 # Introdução
 
@@ -1103,6 +1109,11 @@ revisado
 | Utiliza do algoritmo *Radial Basis Function* (*RBF*) para classificação?  | ❌                      | ❌                           | ✔                  | ❌              | ❌                      | ❌                       |
 | Utiliza o algoritmo *Random Forest* para classificação*?*                 | ✔                      | ❌                           | ❌                  | ❌              | ❌                      | ❌                       |
 | Utiliza o algoritmo *Gradient Boosting* para classificação*?*             | ✔                      | ❌                           | ❌                  | ❌              | ❌                      | ❌                       |
+
+A definição dos algoritmos apresentados no Quadro 1, na coluna da
+proposta desse trabalho, foi atualizada a partir das conclusões
+apresentadas na capitulo 2.6. Onde é apresentado o algoritmo de
+classificação e o motivo da escolha.
 
 ## Conclusões dos trabalhos revisados
 
