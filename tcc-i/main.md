@@ -476,45 +476,38 @@ encontra-se.
 ## Metodologia
 
 Esse trabalho tem como natureza a pesquisa aplicada, pois através dos
-conhecimentos estudados de *RecSys* será desenvolvido um sistema que
-gerará as recomendações musicais personalizadas por usuário, por meio do
+conhecimentos estudados de *RecSys* foi desenvolvido um sistema que gera
+as recomendações musicais personalizadas por usuário, por meio do
 contexto comportamental e ambiental, obtido através do *plugin* de
 reprodução musical.
 
 O método científico utilizado por esse trabalho é do tipo dedutivo, dado
-que primeiro será realizada uma pesquisa bibliográfica relacionada ao
-problema proposto, para então se obter o entendimento de como ele poderá
-ser resolvido. Essa pesquisa buscará estudar o funcionamento dos
-sistemas de recomendação musicais, por meio dos resultados apresentados
-nessa pesquisa, fazendo com que ela tenha como objetivo um estudo
-exploratório.
+que primeiro foi realizado uma pesquisa bibliográfica relacionada ao
+problema proposto, para então obter a solução. Essa pesquisa buscou
+estudar o funcionamento dos sistemas de recomendação musicais, por meio
+dos artigos relacionados, fazendo com que ela tenha como objetivo um
+estudo exploratório.
 
-Serão utilizados 4 tipos de procedimentos técnicos nessa pesquisa.
-Pesquisa bibliográfica, dado que será necessária uma base de
-conhecimentos e estudos sobre os *RecSys*, suas técnicas e algoritmos.
-Como será utilizada a *API* de algum serviço de *streaming* musical para
-consultar as faixas e outras utilidades, utilizaremos o procedimento
-técnico pesquisa documental.
+Utilizou-se 3 tipos de procedimentos técnicos nessa pesquisa. Pesquisa
+bibliográfica, dado que foi necessária uma base de conhecimentos e
+estudos sobre os *RecSys*, suas técnicas e algoritmos. Como foi
+utilizado a *API* do Spotify para consultar as faixas, artistas, gêneros
+e reprodução musical. Utilizou-se o procedimento técnico pesquisa
+documental. Com o estudo realizado e os registros de contextos
+definidos, foi utilizado da pesquisa experimental, para avaliar a base
+disponível através da aplicação liberada aos usuários. Para realizá-lo,
+foi necessário um estudo de técnicas para avaliar os resultados de um
+RecSys.
 
-Com o estudo realizado e os registros de contextos definidos, será
-utilizado da pesquisa experimental, para avaliar a base disponível
-através da aplicação liberada aos usuários. Será realizada uma pesquisa
-de avaliação do usuário ouvinte para estudarmos o seu entendimento em
-relação ao que foi recomendado. Nesse caso será utilizado o procedimento
-técnico do tipo levantamento. Para realizar ambos procedimentos, será
-necessário realizar um estudo de técnicas para avaliar os resultados de
-um RecSys.
-
-Tendo as técnicas de avaliação a serem utilizadas definidas, elas serão
+Tendo as técnicas de avaliação a serem utilizadas definidas, elas foram
 desenvolvidas no sistema, permitindo que os usuários consigam contribuir
-com sua recomendação através de suas avaliações. Essa pesquisa,
-apresentará no final os resultados estatísticos obtidos pelas
-recomendações do sistema e suas avaliações, apresentando, por exemplo,
-a quantidade de acertos e erros (a partir da perspectiva do usuário)
+com sua recomendação através do uso. Essa pesquisa, apresentou no final
+os resultados estatísticos obtidos pelas recomendações do sistema e suas
+avaliações, apresentando, por exemplo, a quantidade de acertos e erros
 obtidos nas recomendações, fazendo com que, essa pesquisa tenha uma
 abordagem do tipo quantitativa.
 
-Ao final, esse trabalho procura responder a seguinte questão: Com base
+Ao final, esse trabalho procurou responder a seguinte questão: Com base
 nas músicas conhecidas pelo usuário, é possível aperfeiçoar as
 recomendações de um sistema, aplicando os conhecimentos de RecSys e
 utilizando dados de contexto comportamental e de ambiente?
@@ -526,8 +519,9 @@ foi obtido através da criação de um *plugin* que permitirá ao usuário
 escutar suas músicas enquanto são registrados os eventos do contexto
 vivido naquele momento.
 
-O trabalho está dividido em X capítulos. O primeiro capítulo aborda... .
-O capítulo dois detalha...
+O trabalho está dividido em 3 capítulos. O primeiro capítulo aborda uma
+pesquisa bibliográfica, onde é apresentado uma revisão bibliográfica e
+os trabalhos relacionados resultantes. O capítulo dois detalha...
 
 # Trabalhos relacionados
 
