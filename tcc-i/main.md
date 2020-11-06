@@ -2,7 +2,7 @@ UNIVERSIdade FEEVALE
 
 ÉRico De SOUZA loewe
 
-Uso do KNN para recomendação de generos musicais atraves do contexto
+recomendação de gÊneros musicais atravÉs dE contexto
 
 Novo Hamburgo
 
@@ -10,7 +10,7 @@ Novo Hamburgo
 
 Érico De SOUZA LOEWE
 
-USO DO KNN PARA RECOMENDAÇÃO DE GENEROS MUSICAIS ATRAVES DO CONTEXTO
+RECOMENDAÇÃO DE GÊNEROS MUSICAIS ATRAVÉS DE CONTEXTO
 
 Trabalho de Conclusão de Curso
 
@@ -46,16 +46,17 @@ evoluírem suas recomendações, surgindo os Sistemas de Recomendações
 (*RecSys*). Esses sistemas são utilizados em diversos tipos de
 aplicações, como por exemplo: vendas, seleção de um filme, na escolha
 de uma música, que é um dos objetivos dessa pesquisa. Neste trabalho foi
-desenvolvido o LORS, um sistema de recomendação de gêneros musicais
-baseado em contexto comportamental e de ambiente. Nele é utilizado o
-algoritmo KNN para a partir do contexto musical (gostou, não gostou,
-repetiu), contexto comportamental (atividade, sentimento) e ambiente
-(lugar) encontrar o gênero musical mais adequado para o momento. É
-apresentado toda pesquisa desenvolvida até o desenvolvimento do sistema,
-a evolução sistema em si e os resultados obtidos com as recomendações.
+desenvolvido o LORS (Loewe’s *Recommender System*), um sistema de
+recomendação de gêneros musicais baseado em contexto comportamental e de
+ambiente. Nele é utilizado o algoritmo KNN para, a partir do contexto
+musical (gostou, não gostou, repetiu), contexto comportamental
+(atividade, sentimento) e de ambiente (lugar), encontrar o gênero
+musical mais adequado para o momento. É apresentada toda pesquisa
+desenvolvida até o desenvolvimento do sistema, a evolução do sistema em
+si e os resultados obtidos com as recomendações.
 
-Palavras-chave: *K-Nearest Neighbors*. *RecSys*. *Machine Learning*.
-Sistemas de recomendação musical. Música. *Spotify*.
+Palavras-chave: *RecSys*. *Machine Learning*. Sistemas de recomendação
+musical. *K-Nearest Neighbors*. Música. *Spotify*.
 
 Abstract
 
@@ -71,8 +72,8 @@ is to collect information about the user’s behavior and environment,
 enabling the improvement of music recommendations according to the
 context experienced by him.
 
-Keywords: K-Nearest Neighbors. RecSys. Machine Learning. Music
-Recommender System. Music. Spotify.
+Keywords: RecSys. Machine Learning. Music Recommender System. K-Nearest
+Neighbors. Music. Spotify.
 
 Lista de Figuras
 
@@ -121,8 +122,8 @@ busca de músicas que encaixem melhor no momento (próprio, 2020)
 
 [Figura 17 – Representação gráfica da classificação do algoritmo KNN
 sobre um plano x1 e x2. No plano, os pontos amarelos são a representação
-da classe A, roxos classe B e vermelho é o ponto de teste ***(JOSÉ,
-2018)*** 54](#_Ref52742150)
+da classe A, roxos classe B e vermelho é o ponto de teste (JOSÉ, 2018)
+54](#_Ref52742150)
 
 [Figura 18 Visão macro das etapas para transformar os eventos
 registrados no firebase na tabela que sera rodado o KNN (próprio, 2020)
@@ -262,7 +263,7 @@ Sumário
 
 [3.3 Desenvolvimento Do plugin 46](#desenvolvimento-do-plugin)
 
-[3.3.1 Telas da aplicação 47](#telas-da-aplicação)
+[3.3.1 Telas da aplicação 47](#telas-da-aplicação-plugin)
 
 [3.3.2 Tecnologias utilizadas no desenvolvimento
 51](#tecnologias-utilizadas-no-desenvolvimento)
@@ -328,7 +329,7 @@ surgem os sistemas de recomendação. Esses sistemas buscam filtrar a
 grande massa de dados disponível, para auxiliar o indivíduo na escolha
 das opções disponíveis.
 
-Sistemas de recomendação (RecSys - Recommender Systems) são
+Sistemas de recomendação (RecSys - *Recommender Systems*) são
 implementações de *softwares* e técnicas, que apresentam sugestões de
 itens que seriam de uso de um usuário. As sugestões são de acordo com
 vários processos de decisão, como, que item comprar, que música escutar
@@ -390,9 +391,9 @@ híbridos (DIETMAR et al., 2010).
 
 Na recomendação baseada em conteúdo, o sistema aprende a recomendar
 itens que são similares ao que o usuário gostou no passado, essa
-similaridade e calculada baseada na relação das características dos
+similaridade é calculada com base na relação das características dos
 itens a serem comparados. Por exemplo, no caso de usuário avaliar
-positivamente um filme do gênero comedia, então, o sistema pode
+positivamente um filme do gênero comédia, então, o sistema pode
 registrar essa ação e futuramente recomendar outros filmes desse mesmo
 gênero. (RICCI; ROKACH; SHAPIRA, 2011)
 
@@ -401,58 +402,132 @@ compartilharam dos mesmos interesses no passado, eles irão continuar
 tendo os mesmos interesses no futuro. Por exemplo, os usuários A e B tem
 um histórico de compras bem semelhante e o usuário A comprou um novo
 livro que o usuário B nem chegou a ver, nesse tipo de recomendação, a
-ideia e que o sistema sugira este livro para o usuário B. (DIETMAR et
-al., 2010)
+ideia é que o sistema sugira este livro para o usuário B (DIETMAR et
+al., 2010).
 
 Diferente da recomendação colaborativa ou baseada em conteúdo, a
 recomendação baseada em aprendizado não consegue depender somente do
-histórico de compra de um usuário, e necessário um conteúdo mais
-estruturado e detalhado para ser gerado uma recomendação, geralmente
-nesse tipo, e utilizado um conteúdo adicional fornecido manualmente
-(conteúdo recente ao produto e usuário). (DIETMAR et al., 2010)
+histórico de compra de um usuário, é necessário um conteúdo mais
+estruturado e detalhado para ser gerada uma recomendação, geralmente
+nesse tipo, é utilizado um conteúdo adicional fornecido manualmente
+(conteúdo recente ao produto e usuário) (DIETMAR et al., 2010).
 
-E por último, e não menos importante, (DIETMAR et al., 2010) traz em sua
-obra o modelo híbrido de recomendação, onde a ideia e combinar as
-diferentes técnicas, buscando gerara uma boa e mais assertiva
-recomendação. (DIETMAR et al., 2010)
+E por último, e não menos importante, DIETMAR et al. (2010) trazem em
+sua obra o modelo híbrido de recomendação, onde a ideia é combinar as
+diferentes técnicas, buscando gerar uma boa e mais assertiva
+recomendação.
 
-Esses sistemas têm ajudado muito na venda de produtos online, porém, um
-dos segmentos de mercado que apresentaram problemas, foram as vendas de
-álbum ou faixas musicais online. Elas possibilitam as pessoas baixarem
-ou receberem as faixas a partir de compras em lojas virtuais, porém o
-preço de cada faixa ainda era muito caro, o que fazia com que muitos
-usuários optassem pela pirataria. Desta forma, surgiu uma nova maneira
-de anunciar os “produtos musicais” online, o streaming musical (BORJA;
-DIERINGER, 2016).
+Esses sistemas têm ajudado muito na venda de produtos online. No
+entanto, um dos segmentos de mercado que apresentaram problemas, foram
+as vendas de álbum ou faixas musicais online. Elas possibilitam às
+pessoas baixarem ou receberem as faixas a partir de compras em lojas
+virtuais, porém o preço de cada faixa ainda era muito caro, o que fazia
+com que muitos usuários optassem pela pirataria. Desta forma, surgiu uma
+nova maneira de anunciar os “produtos musicais” online, o *streaming*
+musical (BORJA; DIERINGER, 2016).
 
 O mercado musical tem evoluído muito desde seu início. No começo, seu
 consumo foi aumentando cada vez mais com a evolução das tecnologias e
-internet. Com o streaming musical, as pessoas passaram a consumir mais
-os sistemas de streaming, diminuindo o consumo de pirataria online
+internet. Com o *streaming* musical, as pessoas passaram a consumir mais
+os sistemas de *streaming*, diminuindo o consumo de pirataria online
 (ERIKSSON et al., 2019). Em 2018 o lucro global da indústria musical
-cresceu 9,7%. Nesse crescimento, o streaming pago possui boa parte dele
-com um 34% do total (IFPI, 2019).
+cresceu 9,7%. Nesse crescimento, o *streaming* pago possui boa parte
+dele com 34% do total (IFPI, 2019).
 
-Os sistemas de streaming são um tipo de mecanismo de processamento de
+Os sistemas de *streaming* são um tipo de mecanismo de processamento de
 dados projetado com um conjunto de dados infinitos em mente (NIWA,
 2018). Esse mecanismo pode ser desenvolvido para processar muitos tipos
 de mídia, tais como vídeos, fotos e áudio. Nesse trabalho será utilizado
-o streaming de áudio, mais especificamente, o streaming disponível nas
-APIs da ferramenta Spotify.
+o *streaming* de áudio, mais especificamente, o *streaming* disponível
+nas APIs da ferramenta Spotify.
 
-Dentro dos sistemas de streaming, existe o streaming de áudio que é
+Dentro dos sistemas de *streaming*, existe o *streaming* de áudio que é
 semelhante a transmissão de rádio tradicional, exceto que é utilizada a
 internet para enviar e receber os áudios, ao invés de utilizar ondas
-aéreas. Assim como o ato de ligar um rádio, o streaming de áudio é
+aéreas. Assim como o ato de ligar um rádio, o *streaming* de áudio é
 reproduzido em tempo real, o que é muito mais conveniente do que baixar
 uma música online e então consumi-la (LUINI; WHITMAN; DATE, 2002).
 
-Portanto, de acordo com esse contexto, este trabalho procura construir
-um sistema de recomendação musical, utilizando o contexto comportamental
-do usuário e o contexto do ambiente onde ele está inserido. Esse
-contexto será obtido através da criação de um *plugin* que permitirá ao
-usuário escutar suas músicas enquanto são registrados os eventos do
-contexto vivido naquele momento.
+## Objetivo Geral 
+
+Desenvolver um sistema de recomendação musical, considerando o contexto
+comportamental do usuário, bem como o contexto do ambiente onde ele
+encontra-se.
+
+## Objetivos Específicos
+
+  - Investigar APIs de Serviços de *Streamings* Musicais.
+
+  - Selecionar a API a ser utilizada no sistema de recomendação.
+
+  - Definir os contextos de ambiente a serem utilizados no sistema.
+
+  - Definir os contextos comportamentais do usuário a serem utilizados
+    no sistema.
+
+  - Criar a infraestrutura necessária para o armazenamento e
+    relacionamento das músicas com os contextos comportamentais e de
+    ambiente do usuário.
+
+  - Criar um protótipo do sistema de recomendação.
+
+  - Avaliar o sistema de recomendação com usuários voluntários.
+
+## Metodologia
+
+Esse trabalho tem como natureza a pesquisa aplicada, pois através dos
+conhecimentos estudados de *RecSys* será desenvolvido um sistema que
+gerará as recomendações musicais personalizadas por usuário, por meio do
+contexto comportamental e ambiental, obtido através do *plugin* de
+reprodução musical.
+
+O método científico utilizado por esse trabalho é do tipo dedutivo, dado
+que primeiro será realizada uma pesquisa bibliográfica relacionada ao
+problema proposto, para então se obter o entendimento de como ele poderá
+ser resolvido. Essa pesquisa buscará estudar o funcionamento dos
+sistemas de recomendação musicais, por meio dos resultados apresentados
+nessa pesquisa, fazendo com que ela tenha como objetivo um estudo
+exploratório.
+
+Serão utilizados 4 tipos de procedimentos técnicos nessa pesquisa.
+Pesquisa bibliográfica, dado que será necessária uma base de
+conhecimentos e estudos sobre os *RecSys*, suas técnicas e algoritmos.
+Como será utilizada a *API* de algum serviço de *streaming* musical para
+consultar as faixas e outras utilidades, utilizaremos o procedimento
+técnico pesquisa documental.
+
+Com o estudo realizado e os registros de contextos definidos, será
+utilizado da pesquisa experimental, para avaliar a base disponível
+através da aplicação liberada aos usuários. Será realizada uma pesquisa
+de avaliação do usuário ouvinte para estudarmos o seu entendimento em
+relação ao que foi recomendado. Nesse caso será utilizado o procedimento
+técnico do tipo levantamento. Para realizar ambos procedimentos, será
+necessário realizar um estudo de técnicas para avaliar os resultados de
+um RecSys.
+
+Tendo as técnicas de avaliação a serem utilizadas definidas, elas serão
+desenvolvidas no sistema, permitindo que os usuários consigam contribuir
+com sua recomendação através de suas avaliações. Essa pesquisa,
+apresentará no final os resultados estatísticos obtidos pelas
+recomendações do sistema e suas avaliações, apresentando, por exemplo,
+a quantidade de acertos e erros (a partir da perspectiva do usuário)
+obtidos nas recomendações, fazendo com que, essa pesquisa tenha uma
+abordagem do tipo quantitativa.
+
+Ao final, esse trabalho procura responder a seguinte questão: Com base
+nas músicas conhecidas pelo usuário, é possível aperfeiçoar as
+recomendações de um sistema, aplicando os conhecimentos de RecSys e
+utilizando dados de contexto comportamental e de ambiente?
+
+Portanto, de acordo com esse contexto, este trabalho construiu um
+sistema de recomendação musical, utilizando o contexto comportamental do
+usuário e o contexto do ambiente onde ele está inserido. Esse contexto
+foi obtido através da criação de um *plugin* que permitirá ao usuário
+escutar suas músicas enquanto são registrados os eventos do contexto
+vivido naquele momento.
+
+O trabalho está dividido em X capítulos. O primeiro capítulo aborda... .
+O capítulo dois detalha...
 
 # Trabalhos relacionados
 
@@ -462,45 +537,45 @@ relacionados a esse assunto para área. Nesse capítulo serão abordados
 alguns trabalhos encontrados, a partir de uma revisão bibliográfica
 realizada sobre o assunto.
 
-Após ser realizado a revisão bibliográfica, será analisado os algoritmos
-e estratégias de recomendação de cada artigo. E então, será desenvolvido
-o sistema de recomendação desse trabalho, utilizando apenas um dos
+Após ser realizada a revisão bibliográfica, foram analisados os
+algoritmos e estratégias de recomendação de cada artigo. E então, será
+desenvolvido o sistema de recomendação desse trabalho, utilizando um dos
 algoritmos levantados.
 
 ## Levantamento bibliográfico inicial
 
-Antes do início da revisão, foi encontrado diversos trabalhos
+Antes do início da revisão, foram encontrados diversos trabalhos
 relacionados através de: (i) busca genérica no Google Scholar; (ii)
-indicação dos avaliadores desse trabalho. Deles, foram selecionados 2
+indicação dos avaliadores desse trabalho. Destes, foram selecionados 2
 para serem revisados nesse trabalho.
 
-Realizado a busca genérica no Google Scholar em busca de trabalhos
-relacionados ao tema desse trabalho, na busca, foi priorizado os
-trabalhos em portugues, para dar uma visão clara e rápida do assunto. E
-nessa busca foi encontrado o seguinte trabalho: “Desenvolvimento de um
-Sistema de Recomendação Musical Sensível ao Contexto”.
+Realizada a busca genérica no Google Scholar em busca de trabalhos
+relacionados ao tema desse trabalho, foram priorizados os trabalhos em
+português, para dar uma visão clara e rápida do assunto. E nessa busca
+foi encontrado o seguinte trabalho: “Desenvolvimento de um Sistema de
+Recomendação Musical Sensível ao Contexto”.
 
-O trabalho teve como objetivo desenvolver o modelo de um sistema
+Esse trabalho teve como objetivo desenvolver o modelo de um sistema
 sensível ao contexto, utilizando das técnicas clássicas de
-recomendação, aplicando uma camada de extra de filtragem colaborativa.
+recomendação, aplicando uma camada extra de filtragem colaborativa.
 Nessa camada, ele utiliza do algoritmo K-Vizinhos Mais Próximos (KNN)
-para realiza-la, o qual é o mais amplamente utilizado para esse tipo de
+para realizá-la, o qual é o mais amplamente utilizado para esse tipo de
 recomendação conforme (ALIAGA, 2018) (fazer apud Bobadilla et al.
-(2013)), e é um algoritmo *lazy*, isso é, não gera um modelo que precisa
-de treinamento.
+(2013)).
 
-No trabalho, foram escolhidos 10 usuários para realizar o teste, tendo
-um contexto comum que era “Estudar” para atividade e “BR” para cultura.
-Foram realizados 240 testes para compilar os dados do experimento, e no
-fim, foi apresentado os resultados do experimento realizado “Com
-contexto” e “Sem contexto”, onde o trabalho obteve uma precisão de 50%
-na taxa de aceitação das recomendações realizadas.
+No trabalho de ALIAGA (2018) foram escolhidos 10 usuários para realizar
+o teste, tendo um contexto comum que era “Estudar” para atividade e “BR”
+para cultura. Foram realizados 240 testes para compilar os dados do
+experimento, e no fim foram apresentados os resultados do experimento
+realizado “Com contexto” e “Sem contexto”, onde o trabalho obteve uma
+precisão de 50% na taxa de aceitação das recomendações realizadas.
 
-As indicações dos avaliadores foram analisadas e foi verificado que
-apenas uma apresentava o algoritmo utilizado, que é: “Effective
-Nearest-Neighbor Music Recommendations”. A qual apresenta uma técnica
-hibrida de recomendação, que utiliza de uma combinação do KNN, fatoração
-de matriz e um pequeno conjunto heurístico.
+As indicações de trabalhos relacionados realizadas pelos avaliadores (na
+revisão do anteprojeto) foram analisadas e foi identificado o algoritmo
+KNN também no trabalho “Effective Nearest-Neighbor Music
+Recommendations”. Esse trabalho apresenta uma técnica hibrida de
+recomendação, que utiliza uma combinação do KNN, fatoração de matriz e
+um pequeno conjunto heurístico.
 
 ## O protocolo de revisão
 
@@ -522,15 +597,15 @@ A partir do escopo de revisão que esse trabalho está inserido, foram
 definidas certas palavras-chaves para auxiliar no desenvolvimento da
 revisão, elas são:
 
-  - RecSys
+  - *RecSys*
 
-  - Machine Learning
+  - *Machine Learning*
 
   - Sistemas de recomendação musical
 
   - *Context-aware* (Cientes de contexto)
 
-Para realizar a busca dos trabalhos relacionados será utilizado o motor
+Para realizar a busca dos trabalhos relacionados foi utilizado o motor
 de busca da ACM (<https://dl.acm.org/>), o qual permite realizar
 pesquisas avançadas a partir da linguagem desenvolvida pela ACM e dos
 filtros disponíveis na busca (ACM, 2020). Esse motor de busca foi
@@ -547,7 +622,7 @@ utilizada a seguinte *string* de busca:
 (“music” OR “musical”) AND (“behavioral context” OR “environmental
 context” OR “context-aware”))
 
-Com os resultados da busca cada trabalho foi analisado, e esta análise
+Com os resultados da busca, cada trabalho foi analisado, e esta análise
 foi dividida em quatro etapas: (i) a leitura inicial foi feita no título
 de cada artigo, e foram mantidos àqueles que indicam uma relação com
 essa pesquisa; (ii) consistiu em realizar uma leitura dos resumos desses
@@ -557,33 +632,32 @@ baseando-se na leitura da introdução e conclusão dos artigos e por fim;
 
 Após a leitura aprofundada em cima dos artigos selecionados, essa
 revisão trouxe informações de cada publicação, onde foi possível
-entender o que já foi desenvolvido e então definir o que esse trabalho
-poderá agregar cientificamente à área de sistemas de recomendação. Ao
-final, foi desenvolvida uma tabela relacionando as funcionalidades
-existentes e o uso delas nos trabalhos encontrados, a qual será
-apresentada nas próximas seções.
+entender o que já foi desenvolvido. Ao final, foi desenvolvida uma
+tabela relacionando as funcionalidades existentes e o uso delas nos
+trabalhos encontrados, a qual será apresentada nas próximas seções.
 
 ## PROCURA NOS MOTORES DE BUSCA
 
 No dia 07/05/2020 foi realizada a pesquisa no motor de busca ACM
 utilizando a *string* de busca pré-definida anteriormente. As Figuras 1,
-2 e 3 ilustram esse processo. A figura 1 apresenta a string de busca
-desenvolvida no motor de busca da ACM, e a figura 2 e 3 apresentam
+2 e 3 ilustram esse processo. A Figura 1 apresenta a string de busca
+desenvolvida no motor da ACM, e as Figuras 2 e 3 apresentam
 respectivamente os resultados das buscas por *proceedings* e *journals*.
-A quantidade de resultados apresentados na ACM foram 150 trabalhos
-relacionados a *string* de busca.
+A quantidade de resultados apresentados na ACM foi de 150 trabalhos.
+
+Figura 1 - Motor avançado de busca da ACM
 
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
-de busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Fonte: Elaborado pelo
+autor (2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
 cima da busca. Procurando trazer somente os trabalhos mais atuais
 relacionados à área, foram mantidos somente os artigos publicados nos
-últimos 5 anos. Visando trazer um conteúdo mais técnico para o
-trabalho, foram reduzidos os tipos de publicações aceitas para
+últimos 5 anos (2015-2020). Visando trazer um conteúdo mais técnico
+para o trabalho, foram reduzidos os tipos de publicações aceitas para
 *proceedings* e *journals*. Após aplicados esses filtros, a quantidade
 de trabalhos encontrados passou para 83.
 
@@ -594,10 +668,9 @@ automaticamente](./pandoc/media/image2.png)
 busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Um dos principais motivos que levou essa revisão ser realizada através
-da ACM ao invés de outras plataformas de busca como IEEE, é devido ela
-possui uma grande comunidade relacionado a área de RecSys, com diversas
-conferências e eventos relacionados a área. (ACM RECSYS COMMUNITY.,
-2020)
+da ACM, ao invés de outras plataformas de busca como IEEE, é que ela
+concentra diversas conferências e eventos relacionados a área de RecSys
+(ACM RECSYS COMMUNITY, 2020).
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
@@ -608,28 +681,25 @@ busca dos journals no motor de busca da ACM (próprio, 2020)
 ## ETAPAS DA REVISÃO DOS TRABALHOS
 
 Com a busca realizada no dia 07/05/20, no motor da ACM, a partir da
-*string* de busca foram encontrados 83 trabalhos, sendo eles: 23 do tipo
-*journal* e 60 do tipo *proceeding*.
+*string* de busca foram encontrados 83 trabalhos, sendo 23 do tipo
+*journal* e 60 do tipo *proceeding*. Em cima deles, foi realizado um
+filtro baseado em 3 etapas (demonstradas na Figura 4), que visam
+direcionar esta pesquisa para a revisão dos trabalhos que condizem com o
+objetivo descrito no protocolo.
 
 <span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
 realizadas para filtrar os trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
-Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado em
-3 etapas (demonstradas na Figura 4), que visam direcionar esta pesquisa
-para a revisão dos trabalhos que condizem com o objetivo descrito no
-protocolo.
-
 Baseado no conhecimento obtido dos trabalhos na segunda etapa, foi
-realizada uma classificação deles em 4 tipos, que são: Trabalhos que
-possuem relação com o foco de pesquisa da revisão; Trabalhos que
+realizada uma classificação deles em 4 tipos, que são: (i) trabalhos que
+possuem relação com o foco de pesquisa da revisão; (ii) trabalhos que
 utilizam dos RecSys e contexto, mas que visam recomendar outros temas
-além da música como notícias, filmes e, produtos; Trabalhos que
+além da música como notícias, filmes e, produtos; (iii) trabalhos que
 utilizam dos RecSys e contexto, mas que não abordam a recomendação
-musical; Trabalhos que utilizam dos RecSys musicais, mas que não
-utilizam o contexto nas recomendações. Foi apresentado na forma de
-gráfico de pizza na A Figura 5 abaixo apresenta a relação entre os
-tipos e a quantidade de artigos encontrados.
+musical; (iv) trabalhos que utilizam dos RecSys musicais, mas que não
+utilizam o contexto nas recomendações. A Figura 5 apresenta a relação
+entre os tipos e a quantidade de artigos encontrados.
 
 <span class="chart">\[CHART\]</span>
 
@@ -638,17 +708,17 @@ dos trabalhos selecionados através do resumo (próprio, 2020)
 
 ###  Trabalhos selecionados
 
-O resultado do procedimento de filtro apresentado na Figura 6 abaixo,
-resultou em 4 trabalhos relacionados ao objetivo descrito no protocolo
-de revisão desse trabalho.
+O resultado do procedimento de filtro apresentado na Figura 6, resultou
+em 4 trabalhos relacionados ao objetivo descrito no protocolo de revisão
+desse trabalho.
 
 <span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM (próprio, 2020)
 
-Foi realizado uma revisão nesses trabalhos a qual foi apresentada nas
-próximas seções. Onde, em cada seção/artigo, foi apresentado um breve
-resumo do que foi desenvolvido e no fim, foi respondido as seguintes
+Foi realizada uma revisão nesses trabalhos, a qual foi apresentada nas
+próximas seções. Em cada seção/artigo, foi apresentado um breve resumo
+do que foi desenvolvido e no fim, foram respondidas as seguintes
 perguntas:
 
 ##### Qual o problema que ele resolveu?
@@ -683,18 +753,17 @@ perguntas:
 
   - Quantidade de usuários utilizada? (tamanho da base)
 
-  - Quais foram as técnicas de avaliação usadas?
-
-##### Tiveram outros resultados apresentados? Quais?
+  - Quais foram as técnicas de avaliação
+usadas?
 
 #### The New Challenges when Modeling Context through Diversity over Time in Recommender Systems
 
-Foi realizada a revisão do trabalho e então verificado que ele não
-apresenta dados e técnicas suficientes para serem consideradas nessa
-pesquisa, pois todas as informações do sistema desenvolvido estão em
-outros artigos citados por esse. Dada a falta de informações
-apresentadas nesse trabalho, não serão respondidas as questões
-pré-estabelecidas anteriormente.
+Foi realizada a revisão do trabalho e verificado que ele não apresenta
+dados e técnicas suficientes para serem consideradas nessa pesquisa,
+pois todas as informações do sistema desenvolvido estão em outros
+artigos citados por esse. Dada a falta de informações apresentadas nesse
+trabalho, não serão respondidas as questões pré-estabelecidas
+anteriormente.
 
 #### Prediction of music pairwise preferences from facial expressions
 
@@ -704,18 +773,18 @@ uma aplicação onde a preferência do usuário é obtida através da
 observação do seu comportamento. Cada usuário devia ouvir ao menos 10
 segundos de cada música em par apresentada e ao finalizar, poderia
 escolher qual música era mais adequada para se ouvir no ambiente
-pré-estabelecido que era seu trabalho. É nesse momento que é obtido os
-dois contextos estudados no artigo revisado, que são: (i) as expressões
-faciais gravadas através de uma câmera; (ii) o tempo dedicado a ouvir
-cada música.
+pré-estabelecido que era seu trabalho. É nesse momento que são obtidos
+os dois contextos estudados no artigo revisado, que são: (i) as
+expressões faciais gravadas através de uma câmera; (ii) o tempo
+dedicado a ouvir cada música.
 
 #### Qual o problema que ele resolveu?
 
 Nesse trabalho é apresentada uma abordagem para predizer a preferência
 musical do usuário a partir das expressões faciais. Ela busca responder
 a seguinte questão: É possível inferir (implicitamente), em pares, as
-preferências musicais de um usuário a partir de suas expressões faciais
-demonstradas enquanto escuta suas músicas?
+preferências musicais de um usuário, a partir de suas expressões faciais
+demonstradas, enquanto escuta suas músicas?
 
 #### Quais técnicas foram usadas?
 
@@ -732,7 +801,7 @@ o modo colaborativo, mas foi demonstrado o interesse nos trabalhos
 futuros em adicionar ao RecSys esse modelo.
 
 Para realizar a predição da música desejada, dada a expressão facial,
-foram experimentados diversos algoritmos, e no fim, foi utilizado os
+foram experimentados diversos algoritmos, e no fim, foram utilizados os
 algoritmos *Random Forest* e *Gradient Boosting* por apresentarem os
 melhores resultados. Eles os escolheram, dado a principal base de
 predição, que foi, o uso do tempo em que os usuários escutaram as
@@ -742,11 +811,10 @@ Para auxiliar no *score* em par, foi utilizado o *Spearman’s Rank
 Correlation Coefficient* entre as diferentes durações (distribuições não
 normais). Isso é, quanto maior a diferença entre as duas músicas, maior
 a probabilidade de o usuário ter gostado da música que ele escutou por
-mais tempo.
-
-Para obter os resultados, foi realizada a comparação da precisão das
-preferências de predição dos modelos bases utilizando *Root Mean Squared
-Error* (RMSE), precisão, *recall*, *F-measure* e acuracidade.
+mais tempo. Para obter os resultados, foi realizada a comparação da
+precisão das preferências de predição dos modelos bases, utilizando
+*Root Mean Squared Error* (RMSE), precisão, *recall*, *F-measure* e
+acuracidade.
 
 #### Qual a base de treinamento e teste?
 
@@ -756,11 +824,11 @@ usuários para utilizar a aplicação, com uma média de idade de 29,8 anos.
 
 #### Quais os contextos utilizados?
 
-O principal contexto utilizado nesse trabalho foi as emoções dos
-usuários, obtidas através das expressões faciais dos usuários gravadas
-durante os testes realizados. No fim, foi apresentado um outro contexto
-comportamental, que é o tempo em que os usuários escutaram cada música.
-Não foi apresentado nenhum tipo de contexto de ambiente.
+O principal contexto utilizado nesse trabalho foi relacionado às emoções
+dos usuários, obtidas através das expressões faciais dos usuários
+gravadas durante os testes realizados. No fim, foi apresentado um outro
+contexto comportamental, que é o tempo em que os usuários escutaram cada
+música. Não foi apresentado nenhum tipo de contexto de ambiente.
 
 #### Como é obtido o contexto?
 
@@ -775,11 +843,11 @@ A preferência do usuário foi obtida através da observação do seu
 comportamento em cima da aplicação. Cada usuário devia ouvir ao menos 10
 segundos de cada música em par apresentada e ao finalizar, poderia
 escolher qual música era mais adequada para se ouvir no ambiente
-pré-estabelecido que era seu trabalho.
+pré-estabelecido que era o seu trabalho.
 
 #### A recomendação atingiu as expectativas do usuário?
 
-Para obter os resultados, foi realizado a comparação da precisão das
+Para obter os resultados, foi realizada a comparação da precisão das
 preferências de predição dos modelos, utilizando *Root Mean Squared
 Error* (RMSE), precisão, *recall*, *F-measure* e acuracidade. A
 precisão, *recall* e *F-measure* foram calculadas, ponderando os
@@ -789,11 +857,8 @@ Para validar a qualidade da recomendação proposta, foi utilizado o tempo
 em que o usuário escutou cada música, pois, quanto maior a diferença
 entre as duas músicas, maior a probabilidade de o usuário ter gostado da
 música que ele ouviu por mais tempo. Outro critério apresentado foi a
-sua avaliação das músicas em par.
-
-#### Tiveram outros resultados apresentados? Quais?
-
-Não tiveram outros resultados apresentados.
+sua avaliação das músicas em
+par.
 
 #### Towards Intent-Aware Contextual Music Recommendation: Initial Experiments
 
@@ -803,22 +868,22 @@ através do título e descrição das *playlists* reproduzidas. Para
 demonstrar as técnicas, foi realizado um estudo em cima da API do
 Spotify e Youtube. A partir desse estudo, são geradas *playlists*
 especificas para cada atividade relacionada às intenções dos usuários. E
-no fim é realizado uma avaliação comparativa dela com a gerada pelo
+no fim é realizada uma avaliação comparativa dela com a gerada pelo
 método do Spotify (SPTF).
 
-Para gerar as *playlists*, foi desenvolvido um método para realizar a
-recomendação chamado *Activity-aware Intent Recommendation* (AIR), que
-usa a API do Spotify para obter suas melhores *playlist* relacionados a
-busca, delas é obtido as top 10 músicas com melhores *scores*, as quais
-são incluídas nas recomendações futuras para cada atividade (Dirigir,
+Para gerar as *playlists*, foi desenvolvido um método de recomendação
+chamado *Activity-aware Intent Recommendation* (AIR), que usa a API do
+Spotify para obter suas melhores *playlist* relacionadas à busca, delas
+são obtidas as *top* 10 músicas com melhores *scores*, as quais são
+incluídas nas recomendações futuras para cada atividade (Dirigir,
 Trabalhar, Cozinhar, ...).
 
 ####  Qual o problema que ele resolveu?
 
-São abordadas 3 contribuições no artigo: (i) é estimado uma distribuição
+São abordadas 3 contribuições no artigo: (i) é estimada uma distribuição
 empírica das intenções do ouvinte ao reproduzir um vídeo no Youtube;
-(ii) é realizado um experimento semelhante ao da primeira, porém
-utilizando o Spotify; (iii) são relatados os resultados iniciais
+(ii) é realizado um experimento semelhante ao da primeira contribuição,
+porém utilizando o Spotify; (iii) são relatados os resultados iniciais
 obtidos, utilizando o modelo de intenções treinados para melhorar as
 recomendações. O modelo apresentado demonstra melhorias promissoras na
 recomendação de músicas através das intenções do usuário, ao invés de
@@ -829,14 +894,14 @@ recomendações que dependem apenas de suas atividades.
 Dado o escopo desse trabalho, serão apresentadas somente as técnicas
 utilizadas nas recomendações de áudio. O artigo apresenta a
 especificação de um algoritmo que busca entender as intenções do
-usuário através dos títulos das *playlists* disponibilizadas por ele. A
-pesquisa não utilizou da recomendação colaborativa.
+usuário através dos títulos das *playlists,* disponibilizadas por ele.
+A pesquisa não utilizou da recomendação colaborativa.
 
 As intenções foram obtidas através de diversos tipos de algoritmos de
-*machine learning* como: *Logistic Regression*, *Both Fuzzy* e H*ard
+*machine learning* como: *Logistic Regression*, *Both Fuzzy* e *Hard
 Clustering*, mas os melhores resultados foram obtidos utilizando o
 *Random Forest Classifier* (utilizando a implementação do *sklearn*).
-Não foi apresentado os algoritmos utilizados para realizar a
+Não foram apresentados os algoritmos utilizados para realizar a
 recomendação musical.
 
 #### Qual a base de treinamento e teste?
@@ -850,18 +915,18 @@ Não é apresentada nenhuma aplicação desenvolvida para obter as bases.
 Esse trabalho não busca entender o contexto em si. Ele apenas busca
 entender uma de suas características, que são as intenções do usuário,
 ao procurar por uma *playlist* e, a partir das intenções obtidas,
-procura gerar *playlists* relacionadas as atividades as quais o usuário
-está executando. O principal atributo utilizado para predizer suas
-intenções, é a descrição da *playlist* encontrada em sua busca.
+procura gerar *playlists* relacionadas às atividades que o usuário está
+executando. O principal atributo utilizado para predizer suas intenções
+é a descrição da *playlist* encontrada em sua busca.
 
 #### Como é obtido o contexto?
 
-Para obter o comportamento do usuário foi avaliado durante um período de
-teste as intenções dos usuários nas buscas por *playlists* e, a partir
-delas, foi gerado uma *playlist* de acordo com suas intenções. Esse
-comportamento é obtido de maneira implícita e o usuário não pode ajudar
-na definição do contexto. Não é apresentado ao usuário o contexto atual
-obtido através do seu comportamento.
+Para obter o comportamento do usuário foram avaliadas, durante um
+período de teste, as intenções dos usuários nas buscas por *playlists*
+e, a partir delas, foi gerada uma *playlist* de acordo com suas
+intenções. Esse comportamento é obtido de maneira implícita e o
+usuário não pode ajudar na definição do contexto. Não é apresentado ao
+usuário o contexto atual obtido através do seu comportamento.
 
 #### A recomendação atingiu as expectativas do usuário?
 
@@ -879,11 +944,8 @@ de correlação, elas são: (i) coeficiente de correlação de Kendallτ; (ii)
 τ-AP para calcular a relevância das recomendações; (iii) uma variação do
 *Mean Reciprocal Rank* (nMMR). Essas métricas são importantes para
 avaliar numericamente a qualidade de cada *playlist* recomendada. Não é
-apresentado o tamanho da base utilizada nesse artigo.
-
-#### Tiveram outros resultados apresentados? Quais?
-
-Não tiveram outros resultados apresentados.
+apresentado o tamanho da base utilizada nesse
+artigo.
 
 #### Quantitative Study of Music Listening Behavior in a Smartphone Context
 
@@ -918,13 +980,13 @@ musical, porém, trouxe diversas informações pertinentes a esse trabalho.
 Neste trabalho serão apresentadas diversas técnicas que buscam melhorar
 a recomendação personalizada, a partir de diversos dados obtidos por
 meio de sensores (implicitamente), ou através de perguntas realizadas ao
-usuário. O artigo revisado tem como principal objetivo responder as
-questões descritas anteriormente.
+usuário.
 
 #### Quais técnicas foram usadas?
 
 Essa seção está dividida nas 3 questões que o artigo revisado busca
-resolver. Em nenhuma das questões é abordado a filtragem colaborativa.
+resolver. Em nenhuma das questões é abordada a filtragem
+colaborativa.
 
 #####  Em que medida podemos prever a música que um usuário prefere ouvir em diferentes contextos de atividade (ou seja, uso de música) da vida real?
 
@@ -956,13 +1018,14 @@ GPR (*Gaussian Process Regression*), mais especificamente o método
 
 Como a experiência da música é multidimensional, o artigo revisado busca
 extrair os atributos das músicas, e visa auxiliar o processo de
-classificação, foram utilizados o *MIRtoolbox* e o *PsySound toolbox,*
-os quais conseguem extrair os atributos musicais.
+classificação. Para isso, foram utilizados o *MIRtoolbox* e o *PsySound
+toolbox,* os quais conseguem extrair os atributos
+musicais.
 
 ##### Em que medida podemos prever a atividade de um usuário a partir dos dados do sensor coletados dos *smartphones* em um contexto de um ouvinte musical da vida real?
 
 O principal objetivo dessa seção do trabalho foi classificar as
-atividades dos usuários (*user-activity*) e relacionar as 8 atividades
+atividades dos usuários (*user-activity*) e relacionar às 8 atividades
 definidas com os dados obtidos dos sensores. Foram considerados os
 mesmos 19 usuários obtidos na filtragem apresentada na seção anterior.
 
@@ -970,7 +1033,8 @@ A partir do aplicativo desenvolvido, foi possível obter os dados dos
 sensores utilizando o *Funf Open Sensing Framework*, e semelhante a
 classificação dos dados musicais com o contexto, para classificar as
 atividades dos usuários com os sensores foram utilizadas as técnicas de
-RBF e SVM.
+RBF e
+SVM.
 
 ##### Como fatores pessoais se correlacionam com a previsibilidade do uso de músicas e da atividade do usuário para diferentes usuários?
 
@@ -1010,35 +1074,26 @@ responder. Não é apresentado o contexto atual para o usuário.
 
 #### A recomendação atingiu as expectativas do usuário?
 
-Como o artigo revisado não desenvolveu um sistema de recomendação.
-Apenas disponibilizou diversos dados estatísticos que auxiliariam o
+O artigo revisado não desenvolveu um sistema de recomendação, apenas
+disponibilizou diversos dados estatísticos que auxiliariam o
 desenvolvimento de um *RecSys*. Por isso, não foi definido nenhum
 critério de qualidade ou técnicas de avaliação das recomendações. A
 base foi obtida através do aplicativo desenvolvido nesse trabalho, ela
 continha 48 usuários, que a partir de uma filtragem dos dados efetuada,
 passou para 19 nas respostas das questões.
 
-#### Tiveram outros resultados apresentados? Quais?
-
-Não tiveram outros resultados apresentados.
-
 ## FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
 
-Para relacionar os trabalhos revisados, foi criada uma tabela contendo
-as funcionalidades encontradas nos artigos revisados nas seções
-anteriores.
-
-O Quadro 1 abaixo apresenta a relação das funcionalidades dos 3 artigos
-revisados e da proposta deste trabalho, focando em comparar apenas as
-funcionalidades utilizadas no desenvolvimento do sistema de
-recomendação, nem todas as funcionalidades puderam ter um comparativo
-completo, devido ao trabalho estar em desenvolvimento, onde só teremos
-esta resposta após avaliação das técnicas que serão utilizadas, onde
-temos a seguinte legenda de símbolos: ✔ caso possua, ❌ caso não possua e
-❓ caso não seja possível concluir o comparativo (próprio, 2020).
+O Quadro 1 apresenta a relação das funcionalidades dos 5 artigos
+revisados (2 indicados pelos avaliadores e 3 resultantes da revisão
+bibliográfica) e da proposta deste trabalho, focando em comparar apenas
+as funcionalidades utilizadas no desenvolvimento do sistema de
+recomendação. O Quadro 1 apresenta a seguinte legenda de símbolos: ✔
+caso possua, ❌ caso não possua.
 
 <span id="_Ref42381546" class="anchor"></span>Quadro 1 Relação das
-funcionalidades desenvolvidas em cada artigo revisado
+funcionalidades desenvolvidas em cada artigo
+revisado
 
 |                                                                           | (TKALČIČ et al., 2019) | (VOLOKHIN; AGICHTEIN, 2018) | (YANG; TENG, 2015) | (ALIAGA, 2018) | (LUDEWIG et al., 2018) | Proposta deste trabalho |
 | ------------------------------------------------------------------------- | ---------------------- | --------------------------- | ------------------ | -------------- | ---------------------- | ----------------------- |
@@ -1056,13 +1111,13 @@ funcionalidades desenvolvidas em cada artigo revisado
 
 ## Conclusões dos trabalhos revisados
 
-Após a revisão dos 3 trabalhos estudados em relação a proposta deste
+Após a revisão dos 5 trabalhos estudados em relação a proposta deste
 trabalho, foi identificado que nenhum deles apresentou o algoritmo
 utilizado na recomendação. Foram apresentados algoritmos de
-classificação (*KNN, SVM*, *Random Forest, etc.*), de avaliação de
-resultados (*AUC*, *Root Mean Squared Error, Mean Reciprocal Rank*,
-etc.), porem em nenhum momento foi apresentado algoritmos de
-recomendação como algoritmos de *Matrix Factorization* (*SVD*,
+classificação (*KNN, SVM*, *Random Forest, etc.*), métricas de
+avaliação de resultados (*AUC*, *Root Mean Squared Error, Mean
+Reciprocal Rank*, etc.), porém em nenhum momento foram apresentados os
+algoritmos de recomendação como *Matrix Factorization* (*SVD*,
 *Neighborhood* *SVD*, *Deep-Learning MF*, etc.) ou algoritmos de *Tensor
 Factorization* (*Tensor Decomposition*, *Nonnegative Tensor
 Factorization*, etc.), os quais são os algoritmos utilizados para
@@ -1070,24 +1125,19 @@ realizar a recomendações nos *RecSys*.
 
 Os algoritmos escolhidos para realizar a classificação foram os mais
 utilizados nos trabalhos, o KNN e SVM, os quais apareceram em 2 artigos.
-Porem o uso do SVM foi descartado, devido a seu algoritmo tradicional,
-estar mais voltado a uma grande divisão das classes dos *datasets*.
-(geralmente utilizado para a classificação de classes binarias).
-(RÄTSCH, 2004) Sobrando somente o algoritmo KNN para ser testado no
-sistema desenvolvido nesse trabalho.
+Porém o uso do SVM foi descartado, devido ao seu algoritmo tradicional
+estar mais voltado para a classificação de classes binárias (RÄTSCH,
+2004). Portanto, nesse trabalho escolheu-se usar o algoritmo KNN.
 
 # COLETA DO CONTEXTO DOS USUARIOS
 
 A partir da revisão bibliográfica realizada, foi possível conhecer
 alguns sistemas e modelos que utilizam do contexto para realizar as
-recomendações musicais, tornando possível entender certas lacunas que
-não foram analisadas nessa área de pesquisa.
-
-Com isso, foi possível entender e desenvolver um modelo de sistemas de
-recomendação chamado *LORS* (*Loewe’s Recommender System*), que utiliza
-de uma análise recorrente do contexto, para realizar as recomendações
-dinâmicas às mudanças do contexto. Esse modelo será apresentado com mais
-detalhes no capítulo a seguir.
+recomendações musicais. Com isso, foi possível entender e desenvolver um
+modelo de sistema de recomendação chamado *LORS* (*Loewe’s Recommender
+System*), que utiliza de uma análise recorrente do contexto, para
+realizar as recomendações dinâmicas às mudanças desse contexto. Esse
+modelo será apresentado e detalhado nas seções a seguir.
 
 ## Contexto
 
@@ -1100,7 +1150,7 @@ contexto pode ser definido por:
 
 Um sistema de recomendação busca encontrar os melhores itens para um
 devido fim, onde geralmente se baseia em dados históricos para
-produzi-las. Observa-se que, com o entendimento do contexto, ou conforme
+produzi-la. Observa-se que, com o entendimento do contexto, ou conforme
 a definição das “circunstâncias que levaram a certos fatos ou
 situações”, é possível auxiliar as recomendações, aumentando o
 número de dados disponíveis para realizar uma classificação e/ou
@@ -1141,23 +1191,23 @@ ambiente pode ser tido por:
 
 Com essa definição, foram pesquisados sensores e informações que
 pudessem representar essas condições. A partir da análise dos contextos
-levantados, foi identificado 3 possíveis contextos de ambiente que podem
-ser representados na aplicação, que são: (i) Localização; (ii) Clima e;
-(iii) Reprodução musical em grupo / individual. Devido a um tempo
-limitado de desenvolvimento da aplicação só será utilizado o contexto
-localização.
+levantados, foram identificados 3 possíveis contextos de ambiente que
+podem ser representados na aplicação, que são: (i) Localização; (ii)
+Clima e; (iii) Reprodução musical em grupo / individual. Devido a um
+tempo limitado de desenvolvimento da aplicação só será utilizado o
+contexto localização.
 
 ### Como serão obtidos os contextos?
 
 Os contextos no *LORS* serão obtidos a partir da captura de formulários
-e eventos de um app. Na aplicação, será obtido contexto de duas
+e eventos de um app. Na aplicação será obtido o contexto de duas
 maneiras: (i) explicitamente, onde o usuário irá cadastrar o que está
-fazendo. Ex.: emoções, atividades e localização. (ii) implicitamente, a
-qual será obtido através das ações do usuário realizadas no aplicativo.
-Ex.: ações sobre os componentes do app, localização.
+fazendo, ex.: emoções, atividades e localização; (ii) implicitamente, o
+qual será obtido através das ações do usuário realizadas no aplicativo,
+ex.: ações sobre os componentes do app, localização.
 
 São poucas as ações que auxiliam no entendimento do contexto e que podem
-ser obtidas implicitamente, isso devido as limitações dos sensores e
+ser obtidas implicitamente, isso devido às limitações dos sensores e
 dados disponíveis na aplicação desenvolvida, por isso, o sistema que
 será desenvolvido neste trabalho, contará com informações dispostas de
 maneira explicita e implícita, sendo elas:
@@ -1185,8 +1235,7 @@ maneira explicita e implícita, sendo elas:
 Os dados de localização obtidos implicitamente são a latitude e
 longitude do usuário, eles foram salvos na aplicação, porém, devido ao
 tempo limitado para o desenvolvimento, o dado não foi utilizado. O tempo
-do obtido implicitamente é a data e hora do evento, registrado para no
-futuro poder ser aplicado um modelo sequencial junto ao KNN.
+do obtido implicitamente é a data e hora do evento.
 
 ### O que são as ações do usuário?
 
@@ -1214,11 +1263,12 @@ usuários que utilizarão a aplicação, sendo assim, foram utilizadas
 perguntas que permitam entender suas preferências, atividades, dentre
 outros fatores. As perguntas do questionário estão listadas no Quadro 2:
 
-<span id="_Ref48857312" class="anchor"></span>Quadro Perguntas e
+<span id="_Ref48857312" class="anchor"></span>Quadro 2 Perguntas e
 respostas disponibilizadas a um certo público através dos formulários do
-Google. (próprio, 2020)
+Google. (próprio,
+2020)
 
-| Pergunta                                                                                     | Possíveis respostas                                                                                                                                                                                                                                                       |
+| **Pergunta**                                                                                 | **Possíveis respostas**                                                                                                                                                                                                                                                   |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1\. Qual o aplicativo / reprodutor de música você utiliza atualmente?                        | Spotify, Deezer, Youtube Music, TIDAL, Apple Music, Google Play Music, Rádio Outro, qual?                                                                                                                                                                                 |
 | 2\. Você acha que as recomendações musicais realizadas via software poderiam ser melhoradas? | Sim, não                                                                                                                                                                                                                                                                  |
@@ -1257,10 +1307,10 @@ musicais, sendo o mais votado o Rock, com 181 marcações.
 
 O questionário foi aberto no dia 6 de julho de 2020, nesse dia foi
 realizada uma publicação no Instagram para apresentá-lo ao público, e no
-decorrer, foi enviado a outras redes sociais, como WhatsApp, Slack
-(empresarial), Twitter e Facebook. O seu fechamento foi realizado no dia
-18 de julho de 2020, somando o total de 12 dias em que o ele ficou
-aberto. Link para as respostas do questionário:
+decorrer dos dias posteriores, foi enviado a outras redes sociais, como
+WhatsApp, Slack (empresarial), Twitter e Facebook. O seu fechamento foi
+realizado no dia 18 de julho de 2020, somando o total de 12 dias em que
+o ele ficou aberto. Link para as respostas do questionário:
 <https://forms.gle/FKW5iJBhT7oEa18eA>
 
 Dos dispositivos ou aplicativos utilizados para realizar a reprodução
@@ -1270,24 +1320,25 @@ entre 86 no Youtube Music, e 17 tratando sobre o Youtube clássico).
 
 A pergunta “Você acha que as recomendações musicais realizadas via
 software poderiam ser melhoradas?” trouxe uma visão da opinião se existe
-espaço para esse trabalho evoluir as técnicas de recomendação musical, e
-a “Você acredita que o contexto poderia melhorar essas recomendações?”
-se existe espaço para o contexto do usuário evoluir essas técnicas. Com
-95% para a primeira e 96% para a segunda pergunta de respostas marcadas
-como “sim”, foi possível verificar que esse trabalho tem espaço para
-agregar qualidade às recomendações musicais.
+espaço para esse trabalho evoluir as técnicas de recomendação musical. A
+pergunta “Você acredita que o contexto poderia melhorar essas
+recomendações?” se existe espaço para o contexto do usuário evoluir
+essas técnicas. Com 95% para a primeira e 96% para a segunda pergunta de
+respostas marcadas como “sim”, foi possível verificar que há espaço para
+agregar qualidade às recomendações musicais, segundo a opinião dos
+respondentes.
 
-Para aperfeiçoar a visão do trabalho das características possuem maior
-importância, foi realizado as perguntas “Em quais atividades você
-costuma ouvir música?”, “Em quais lugares você costuma ouvir músicas?” e
-“Você costuma ouvir música quando está:”. Com elas, foi possível
-conhecer de novas características (a partir do campo “outro”), e foi
-possível obter de características que mais influenciam os usuários na
-escolha de uma música.
+Para aperfeiçoar a visão do trabalho sobre as características que
+possuem maior importância, foram realizadas as perguntas “Em quais
+atividades você costuma ouvir música?”, “Em quais lugares você costuma
+ouvir músicas?” e “Você costuma ouvir música quando está:”. Com elas,
+foi possível conhecer de novas características (a partir do campo
+“outro”), e foi possível obter características que mais influenciam
+os usuários na escolha de uma música.
 
-Visando entender o comportamento do público, foi feito as perguntas “O
-que costuma te influenciar na escolha da música?” e “O que você faz
-quando gosta ou não de uma música?”. Dessa maneira, foi possível
+Visando entender o comportamento do público, foram feitas as perguntas
+“O que costuma te influenciar na escolha da música?”, e “O que você
+faz quando gosta ou não de uma música?”. Dessa maneira, foi possível
 compreender as características mais importantes a serem consideradas no
 modelo e ordem da aplicação.
 
@@ -1298,66 +1349,68 @@ disponível para desenvolvimento, ela acabou não sendo utilizada.
 
 Para obter um conhecimento da intensidade musical do público que
 lidamos, foi feito a pergunta “Quanto tempo por semana você escuta
-música?”. Com ela foi possível entender que não era um público intenso,
-pois nas respostas, mais de 50% ouvia de 0 a 10horas por semana.
+música?”. Com ela foi possível entender que mais de 50% dos
+respondentes ouvia de 0 a 10horas por semana.
 
-Visando realizar um Cold Start na aplicação, foi criado a pergunta
-“Quais são os gêneros musicais que gosta de escutar?”, visando colocar
-as principais respostas ao plugin. Porém, devido ao tempo limitado de
-desenvolvimento, a *feature* não foi feita.
+Visando realizar um *Cold Start* na aplicação, foi criada a pergunta
+“Quais são os gêneros musicais que gosta de escutar?”, e colocar as
+principais respostas no *plugin* a ser criado. Porém, devido ao tempo
+limitado de desenvolvimento, a *feature* não foi feita.
 
-Respeitando a privacidade do público, foi feito a pergunta “Gostaria de
+Respeitando a privacidade do público, foi feita a pergunta “Gostaria de
 participar de uma pesquisa que visa melhorar a recomendação musical?”, a
-qual, foi utilizada para filtrar somente os usuários que aceitaram ela
-para enviar o convite para participar do *plugin*.
+qual foi utilizada para filtrar somente os usuários que aceitaram ela
+para enviar o convite de uso futuro do *plugin*.
 
-A pergunta “Sua idade” foi feita para obter conhecimento do range de
-idade que estávamos lidando na aplicação, e assim, desenvolver as
-facilidades visuais necessárias conforme a idade. Durante o envio do
-questionário, o escopo do trabalho estava em aberto, por isso, foi feito
-a pergunta “Dicas e sugestões?”. Assim, foi possível obter ideias do
-público para aplicar no modelo.
+A pergunta “Sua idade” foi feita para obter conhecimento da faixa de
+idade. Durante o envio do questionário, o escopo do trabalho estava em
+aberto, por isso, foi feita a pergunta “Dicas e sugestões?”. Assim, foi
+possível obter ideias do público para aplicar no modelo.
 
 ## Desenvolvimento Do plugin
 
-Para obter os dados dos usuários, foi desenvolvido uma aplicação web que
+Para obter os dados dos usuários, foi desenvolvida uma aplicação web que
 utilizava do SDK Web do Spotify para reprodução das músicas e captura
 dos eventos gerados pelo usuário. Ela pode ser acessada através do link
 <https://ericoloewe.github.io/computer-science-tcc/>.
 
-![](./pandoc/media/image6.png)![](./pandoc/media/image7.png)
+|                                |                                |
+| ------------------------------ | ------------------------------ |
+| ![](./pandoc/media/image7.png) | ![](./pandoc/media/image8.png) |
 
-<span id="_Ref54973492" class="anchor"></span>Figura A esquerda, tela
-introdutória da aplicação (próprio, 2020) Figura A direita, tela de
+<span id="_Ref54973492" class="anchor"></span>Figura 10 A esquerda, tela
+introdutória da aplicação (próprio, 2020) Figura 11 A direita, tela de
 login da aplicação (próprio, 2020)
 
-### Telas da aplicação
+### Telas da aplicação (*plugin*)
 
 A aplicação foi dividida em 5 telas, e ela inicia com a tela apresentada
 na Figura 10, a qual apresenta instruções para os usuários de como
-utilizar a aplicação. A segunda tela, é representada na Figura 11, a
-qual disponibiliza opções de login no Spotify.
+utilizá-la. A segunda tela, é representada na Figura 11, a qual
+disponibiliza opções de login no Spotify.
 
 A Figura 12 apresenta o cadastro do contexto na aplicação. O processo é
 dividido em 3 etapas: (i) “Como você está se sentindo nesse momento?”;
 (ii) “O que você está fazendo nesse momento?”; (iii) “Onde você está
 nesse momento?”. A partir dessas perguntas, é possível entender o
 contexto atual do usuário naquele período. As perguntas são realizadas a
-cada 30min.
+cada 30min de uso do *plugin*.
 
-![](./pandoc/media/image8.png)![](./pandoc/media/image9.png)
+|                                |                                 |
+| ------------------------------ | ------------------------------- |
+| ![](./pandoc/media/image9.png) | ![](./pandoc/media/image10.png) |
 
-<span id="_Ref54973479" class="anchor"></span>Figura A esquerda, tela de
-preenchimento do contexto (próprio, 2020) Figura A direita, tela da
-lista de dispositivos do Spotify (próprio, 2020)
+<span id="_Ref54973479" class="anchor"></span>Figura 12 A esquerda, tela
+de preenchimento do contexto (próprio, 2020) Figura 13 A direita, tela
+da lista de dispositivos do Spotify (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
-reproduza as músicas no plugin. Para isso, foi criado a tela apresentada
-na Figura 13, a qual possui um botão “USAR PLUGIN PARA TOCAR MÚSICAS”
-que ao ser pressionado, habilita a reprodução no plugin.
+reproduza as músicas no *plugin*. Para isso, foi criado a tela
+apresentada na Figura 13, a qual possui um botão “USAR PLUGIN PARA TOCAR
+MÚSICAS” que ao ser pressionado, habilita a reprodução no *plugin*.
 
-Por fim, foi desenvolvido a tela principal, que é apresentado na Figura
-14. Nessa tela, é realizado toda interação do usuário no período em que
+Por fim, foi desenvolvida a tela principal, que é apresentada na Figura
+14. Nessa tela, é realizada toda interação do usuário no período em que
 ele está ouvindo as músicas, as possíveis interações estão listadas
 abaixo.
 
@@ -1371,97 +1424,97 @@ abaixo.
 
   - Pausar / Tocar música
 
-Ao clicar no botão “gostei”, é salvo a informação de que o usuário
+Ao clicar no botão “gostei”, é salva a informação de que o usuário
 gostou da música naquele contexto. Ao clicar no botão “não gostei” é
-salvo a informação que o usuário não gostou e é levado o usuário a tela
-de busca de música Figura 15, para o usuário apresentar uma música se
-identifique melhor naquele momento.
+salva a informação que o usuário não gostou e é levado ao usuário a tela
+de busca de música, representada na Figura 15, para o usuário apresentar
+uma música que se identifique melhor naquele momento.
 
-![](./pandoc/media/image10.png)![](./pandoc/media/image11.png)
+![](./pandoc/media/image11.png)![](./pandoc/media/image12.png)
 
-<span id="_Ref54973458" class="anchor"></span>Figura A esquerda, tela
+<span id="_Ref54973458" class="anchor"></span>Figura 14 A esquerda, tela
 principal, a qual apresenta a música sendo reproduzida ao usuário
-(próprio, 2020) Figura A direita, tela de busca de músicas que encaixem
-melhor no momento (próprio, 2020)
+(próprio, 2020) Figura 15 A direita, tela de busca de músicas que
+encaixem melhor no momento (próprio, 2020)
 
 A ação de buscar música, irá levar para a tela apresentada na Figura 15,
-a qual possibilita o usuário apresentar uma música que se enquadre
+a qual possibilita ao usuário apresentar uma música que se enquadre
 melhor no contexto que ele está vivendo. Ao selecionar as músicas e
-clicar em próximo, é salvo as informações de sua relação com o contexto
-vivido.
+clicar em próximo, são salvas as informações de sua relação com o
+contexto vivido.
 
 ### Tecnologias utilizadas no desenvolvimento
 
-Para desenvolver a aplicação web, foi utilizado a *library React* que
+Para desenvolver a aplicação web, foi utilizada a *library React* que
 auxilia na construção de componentes e interfaces. Para estilizar os
-componentes e páginas do React, foi utilizado o framework Material ui, o
-qual possui estilos prontos baseados no Material (interface do Android).
+componentes e páginas do *React*, foi utilizado o *framework* Material
+ui, o qual possui estilos prontos baseados no Material (interface do
+Android).
 
 Inicialmente, para persistir os eventos do usuário, foi utilizado o
 *Google Analytics* (uma ferramenta específica para eventos). Porém,
 devido à falta de customização da ferramenta, foi trocado para o
 *Realtime Database* do Firebase (*Realtime DB*), o qual possui uma vasta
-opção de customização, e tornaria possível a adição do *timestamp* a
-cada evento. Com ela foi possível persistir os eventos em um formato
-NoSQL.
+opção de customização, e tornou possível a adição do *timestamp* a cada
+evento. Com ela foi possível persistir os eventos em um formato NoSQL
+(*Not Only SQL*).
 
-No início, para enviar o evento a plataforma, foi utilizado o GTM
-(Google Tag Manager) para fazer esse intermédio, porém, devido a algumas
-limitações da ferramenta, foi removido essa dependência e enviado os
-eventos diretamente do *Javascript*.
+No início, para enviar o evento à plataforma, foi utilizado o GTM
+(*Google Tag Manager*). Porém, devido a algumas limitações da ferramenta
+GTM, foi removida essa dependência e os eventos foram enviados
+diretamente a partir do *Javascript*.
 
 ## Distribuição da aplicação e coleta de dados
 
 A aplicação foi disponibilizada no período do dia 28/09 até o dia 02/10
-através de um e-mail com instruções de como utilizar a aplicação, que
-foi enviado para os 144 usuários que participaram do questionário e
-optaram por participar da pesquisa. Assim, ela irá salvar os dados que
-serão utilizados como teste no modelo de classificação desenvolvido
-nesse trabalho.
+através de um e-mail com instruções de como utilizá-la. Ela foi enviada
+para os 144 usuários que participaram do questionário e optaram por
+participar da pesquisa.
 
 ### Pré-teste
 
-Com a aplicação finalizada e hospedada, foi enviado inicialmente para o
-professor orientador para validar o desenvolvimento feito. Com isso, foi
-encontrado certos ajustes a serem feitos antes de ser divulgado a
-aplicação. Então, foi corrigido a aplicação, enviado para mais 5
-pessoas testarem e novamente foi encontrado alguns pontos a serem
+Com a aplicação finalizada e hospedada, ela foi enviada inicialmente
+para o professor orientador para validar o desenvolvimento feito. Com
+isso, foi encontrado certos ajustes a serem realizados antes de ser
+divulgada a aplicação. Depois de corrigida, ela foi enviada para mais 5
+pessoas testarem e novamente foram encontrados alguns pontos a serem
 corrigidos. Por fim, foi enviado o e-mail para um grupo supervisionado
 de 8 pessoas, para validar sua aceitação e entendimento do funcionamento
 da aplicação.
 
 ### Hospedagem
 
-A aplicação foi publicada na ferramenta disponível no Github chamada
+A aplicação foi publicada na ferramenta, disponível no Github, chamada
 *Github Pages*. Essa é uma ferramenta gratuita, que possibilita a
-publicação de páginas estáticas. O link final de acesso a aplicação
+publicação de páginas estáticas. O link final de acesso para a aplicação
 ficou: <https://ericoloewe.github.io/computer-science-tcc/>
 
 Os eventos das músicas foram salvos em outra plataforma chamada
 Firebase. Ela é uma ferramenta paga, porém, para o trabalho foi
-utilizado a versão gratuita, que suporta o acesso de até 100 usuários
+utilizada a versão gratuita, que suporta o acesso de até 100 usuários
 simultâneos. Demais eventos como “quantidade de usuários acessando o
 *app*” foram salvos utilizando as aplicações GTM e Google Analytics.
 
 ### Coleta do Firebase
 
-Ao final do experimento, foi exportado os eventos dos usuários em um
-JSON através do console do *Realtime Database* do Firebase. A Figura 17
-apresenta o console, a estrutura de dados dos eventos e o botão de
-exportar do *Realtime DB*.
+Ao final do experimento, os eventos dos usuários foram exportados em um
+formato JSON, por meio do console do *Realtime Database* do Firebase. A
+Figura 17 apresenta o console, a estrutura de dados dos eventos e o
+botão de exportar do *Realtime DB*.
 
-![](./pandoc/media/image12.png)
+![](./pandoc/media/image13.png)
 
-<span id="_Ref53931970" class="anchor"></span>Figura Console do
+<span id="_Ref53931970" class="anchor"></span>Figura 16 Console do
 *Realtime Database* do Firebase (próprio, 2020)
 
-Com o JSON e a estrutura de dados pronta, foi realizado alguns estudos
-em *python* para adquirir o conhecimento necessário para obter os dados
-necessários do Spotify e rodar o algoritmo KNN nos dados obtidos. Os
-primeiros testes do algoritmo foram realizados utilizando a base de íris
-disponível no *sklearn*, e então, após obter o conhecimento do
-funcionamento do algoritmo no *python*, foi aplicado o mesmo sobre a
-base extraída e preparada do JSON.
+Com o JSON e a estrutura de dados pronta, foram realizados alguns
+estudos em *python* para adquirir conhecimento e obter os dados
+necessários do Spotify, a fim de rodar o algoritmo KNN nos dados
+obtidos. Os primeiros testes para compreensão do algoritmo KNN foram
+realizados utilizando a base *íris,* disponível no *sklearn*, e então,
+após obter o conhecimento do funcionamento do algoritmo no *python*, ele
+posteriormente foi aplicado a base extraída e preparada, em formato
+JSON.
 
 # SISTEMA LORS
 
@@ -1481,12 +1534,12 @@ classe é atrelada a esse ponto através de uma votação majoritária dos k
 pontos vizinhos. (T.M. COVER, 1967) Na Figura 17 é exemplificado
 graficamente o funcionamento do algoritmo.
 
-![Image for post](./pandoc/media/image13.png)
+![Image for post](./pandoc/media/image14.png)
 
-<span id="_Ref52742150" class="anchor"></span>Figura – Representação
+<span id="_Ref52742150" class="anchor"></span>Figura 17 – Representação
 gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
 plano, os pontos amarelos são a representação da classe A, roxos classe
-B e vermelho é o ponto de teste ***(JOSÉ, 2018)***
+B e vermelho é o ponto de teste (JOSÉ, 2018)
 
 Como é apresentado na Figura 17 o algoritmo funciona através da
 disposição das características x1 e x2 sobre um plano, e atribuindo
@@ -1518,8 +1571,9 @@ musical, porém não foram utilizadas no modelo devido ao tempo de
 desenvolvimento. Demais ações são contabilizadas no modelo e são
 apresentadas a seguir.
 
-<span id="_Ref55256921" class="anchor"></span>Quadro Lista de ações
-possíveis nos eventos (próprio, 2020)
+<span id="_Ref55256921" class="anchor"></span>Quadro 3 Lista de ações
+possíveis nos eventos (próprio,
+2020)
 
 | Ação (Action)                 | Descrição                                     |
 | ----------------------------- | --------------------------------------------- |
@@ -1550,9 +1604,9 @@ dicionário, foi obtido os usuários e seus eventos e transformado em
 outro dicionário *users*, cujo a *key* é o id do usuário e o conteúdo
 sua lista de eventos.
 
-![Diagrama Descrição gerada automaticamente](./pandoc/media/image14.jpg)
+![Diagrama Descrição gerada automaticamente](./pandoc/media/image15.jpg)
 
-<span id="_Ref54973329" class="anchor"></span>Figura Visão macro das
+<span id="_Ref54973329" class="anchor"></span>Figura 18 Visão macro das
 etapas para transformar os eventos registrados no firebase na tabela que
 sera rodado o KNN (próprio, 2020)
 
@@ -1562,10 +1616,10 @@ Criando assim, uma relação de cada contexto, com as músicas
 reproduzidas, que é representado na Figura 20.
 
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
-automaticamente](./pandoc/media/image15.jpg)
+automaticamente](./pandoc/media/image16.jpg)
 
-<span id="_Ref54973321" class="anchor"></span>Figura Representação dos
-eventos salvos no Firebase (próprio, 2020)
+<span id="_Ref54973321" class="anchor"></span>Figura 19 Representação
+dos eventos salvos no Firebase (próprio, 2020)
 
 Na Figura 21 é representada a etapa “Separa contexto das músicas”, pois
 na reprodução das músicas, é gerado os eventos separadamente, e nessa
@@ -1574,10 +1628,10 @@ registrados, gerando no fim, uma tabela semelhante a Figura 22 das
 músicas e seus contextos.
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
-automaticamente](./pandoc/media/image16.jpg)
+automaticamente](./pandoc/media/image17.jpg)
 
-<span id="_Ref54973316" class="anchor"></span>Figura Representação das
-listas geradas na etapa “Separa contexto” (próprio, 2020)
+<span id="_Ref54973316" class="anchor"></span>Figura 20 Representação
+das listas geradas na etapa “Separa contexto” (próprio, 2020)
 
 Para criar essa relação é realizado um loop em cima dos eventos de cada
 contexto, e criado uma lista chamada *musicTable*, a qual é preenchida
@@ -1587,10 +1641,11 @@ ao contexto do usuário. Os contextos *like*, *hate* e *restart* são
 representados pelo número de vezes que cada um aconteceu durante a
 reprodução.
 
-![Diagrama Descrição gerada automaticamente](./pandoc/media/image17.jpg)
+![Diagrama Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
-<span id="_Ref54973306" class="anchor"></span>Figura Representação das
-listas geradas na etapa “separa contexto das músicas” (próprio, 2020)
+<span id="_Ref54973306" class="anchor"></span>Figura 21 Representação
+das listas geradas na etapa “separa contexto das músicas” (próprio,
+2020)
 
 Nas próximas duas etapas “busca informações das músicas” e “busca
 informações dos artistas (gênero)”, é realizado uma busca nas API’s do
@@ -1600,9 +1655,9 @@ realizada de 50 em 50 uris. O resultado dessas buscas é um dicionário
 chamado *artistsMap* que possui a relação dos uris com os dados de cada
 artista.
 
-![Tabela Descrição gerada automaticamente](./pandoc/media/image18.jpg)
+![Tabela Descrição gerada automaticamente](./pandoc/media/image19.jpg)
 
-<span id="_Ref54973298" class="anchor"></span>Figura Representação da
+<span id="_Ref54973298" class="anchor"></span>Figura 22 Representação da
 tabela na etapa “separa contexto das músicas” (próprio, 2020)
 
 Após a busca dos dados ao Spotify, foi obtido a lista dos gêneros das
@@ -1618,9 +1673,9 @@ mesmos eventos através do “;” ou possui uma quantidade maior que 1 nos
 campos *like*, *hate* e *restart*. Nesse tratamento, foi quebrado os
 valores dos eventos um a um.
 
-![](./pandoc/media/image19.png)
+![](./pandoc/media/image20.png)
 
-<span id="_Ref53955795" class="anchor"></span>Figura *head()* do
+<span id="_Ref53955795" class="anchor"></span>Figura 23 *head()* do
 *dataframe* criado a partir da variável *genreTable* (próprio, 2020)
 
 No fim, foi utilizado a lib *preprocessing* do *sklearn* para
@@ -1687,9 +1742,9 @@ histórico de músicas reproduzidas, e entregue o resultado através de
 uma API, a qual pode ser consumida por qualquer usuário que utilize o
 plugin Web desenvolvido nesse trabalho.
 
-![Diagrama Descrição gerada automaticamente](./pandoc/media/image20.jpg)
+![Diagrama Descrição gerada automaticamente](./pandoc/media/image21.jpg)
 
-<span id="_Ref54973275" class="anchor"></span>Figura Visão macro do
+<span id="_Ref54973275" class="anchor"></span>Figura 24 Visão macro do
 sistema LORS (próprio, 2020)
 
 O plugin (representado na Figura 24 como o “App”) é responsável por a
@@ -1742,7 +1797,7 @@ para repetir (*restart*=1). Os campos *feeling*, *activity*, *location*
 possuem valor padrão somente no caso de a característica enviada não
 existir na base.
 
-<span id="_Ref54920412" class="anchor"></span>Quadro Campos e seus
+<span id="_Ref54920412" class="anchor"></span>Quadro 4 Campos e seus
 respectivos valores utilizados na recomendação (próprio, 2020)
 
 | Campo    | Valor padrão |
@@ -1767,9 +1822,9 @@ gênero recomendado. Com o retorno do gênero, é feito uma nova requisição
 de busca ao Spotify das principais 20 *playlists* que contenham o ele no
 nome.
 
-![](./pandoc/media/image21.png)
+![](./pandoc/media/image22.png)
 
-<span id="_Ref54973248" class="anchor"></span>Figura Tela de
+<span id="_Ref54973248" class="anchor"></span>Figura 25 Tela de
 recomendações (próprio, 2020)
 
 No fim, é apresentado o gênero recomendado na tela, tratando o retorno
@@ -1786,7 +1841,8 @@ O modelo inicialmente obteve uma acurácia de 0,15, o que é muito baixo.
 Foi analisado o modelo e visto que poderiam ser diminuídos a quantidade
 de gêneros (classes), então, foi realizado a taxonomia dos gêneros,
 mantendo somente os gêneros principais. Com essa alteração, a acurácia
-do algoritmo passou de 0,15 para 0,46, um acréscimo de 306%.
+do algoritmo passou de 0,15 para 0,46, um acréscimo de
+306%.
 
 | **GENERO**                        | **CLASSE GERADA PELO LABEL ENCODER** |
 | --------------------------------- | ------------------------------------ |
@@ -1831,8 +1887,8 @@ do algoritmo passou de 0,15 para 0,46, um acréscimo de 306%.
 | **sertanejo pop**                 | **38**                               |
 | **trap**                          | **39**                               |
 
-<span id="_Ref55013755" class="anchor"></span>Tabela relação dos gêneros
-e a classe utilizada no KNN (próprio, 2020)
+<span id="_Ref55013755" class="anchor"></span>Tabela 1 relação dos
+gêneros e a classe utilizada no KNN (próprio, 2020)
 
 A matriz de confusão do usuário utilizado nos testes foi disponibilizada
 na Tabela 3 desse trabalho. Nela, é possível verificar que o modelo
@@ -1874,8 +1930,8 @@ apresenta a relação dos gêneros com as classes geradas para o KNN.
 </tbody>
 </table>
 
-<span id="_Ref55253627" class="anchor"></span>Tabela matriz confusão da
-classe 12, gênero musical country (próprio, 2020)
+<span id="_Ref55253627" class="anchor"></span>Tabela 2 matriz confusão
+da classe 12, gênero musical country (próprio, 2020)
 
 Para realizar uma análise mais aprofundada, foi utilizado o gênero com a
 maior quantidade de recomendações (230 itens), isso é o country (classe
@@ -1889,7 +1945,8 @@ mostra ele está colocando pouco da classe 12 em outras.
 Outra métrica interessante é o *f-measure*, que é utilizado para
 analisar o *recall* com a precisão em uma única medida. O gênero country
 ficou 0,62, o que mostra que no geral o modelo conseguiu predizer 62%
-das vezes a classe corretamente.
+das vezes a classe
+corretamente.
 
 |    | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12  | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 |
 | -- | - | - | - | - | - | - | - | - | - | - | -- | -- | --- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
@@ -1934,8 +1991,8 @@ das vezes a classe corretamente.
 | 38 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 4   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
 | 39 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 2   | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 3  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
 
-<span id="_Ref55013706" class="anchor"></span>Tabela Matrix confusão do
-usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
+<span id="_Ref55013706" class="anchor"></span>Tabela 3 Matrix confusão
+do usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
 
 # CONCLUSÃO
 
@@ -1988,7 +2045,8 @@ não sejam o KNN ao ele.
 ## Trabalhos futuros
 
 Abaixo é apresentado algumas melhorias e continuidade nos estudos
-relativos ao sistema de recomendação apresentado.
+relativos ao sistema de recomendação
+apresentado.
 
 ##### Desenvolver uma extensão mais simples para conectar ao Spotify, como uma extensão do Google Chrome
 
