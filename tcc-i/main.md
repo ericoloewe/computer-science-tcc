@@ -180,20 +180,24 @@ Lista de Abreviaturas e Siglas
 <table>
 <thead>
 <tr class="header">
-<th>App</th>
-<th>Application</th>
+<th>SDK</th>
+<th>Software development kit</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td>App</td>
+<td>Application</td>
+</tr>
+<tr class="even">
 <td>LORS</td>
 <td>Loewe’s Recommender System</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>POC</td>
 <td>Proof of concept</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p>RecSys</p>
 <p>SVM</p>
 <p>AUC</p>
@@ -211,7 +215,7 @@ Lista de Abreviaturas e Siglas
 <p>Activity-aware Intent Recommendation</p>
 <p>RecSys do Spotify</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td></td>
 <td></td>
 </tr>
@@ -265,7 +269,7 @@ Sumário
 40](#o-que-são-as-ações-do-usuário)
 
 [3.2 Pesquisa com usuários sobre recomendação musical
-40](#pesquisa-com-usuários-sobre-recomendação-musical)
+40](#pesquisa-com-usuários-sobre-recomendação-musical-questionário)
 
 [3.2.1 Pré-teste do questionário 44](#pré-teste-do-questionário)
 
@@ -1145,9 +1149,15 @@ A partir da revisão bibliográfica realizada, foi possível conhecer
 alguns sistemas e modelos que utilizam do contexto para realizar as
 recomendações musicais. Com isso, foi possível entender e desenvolver um
 modelo de sistema de recomendação chamado *LORS* (*Loewe’s Recommender
-System*), que utiliza de uma análise recorrente do contexto, para
-realizar as recomendações dinâmicas às mudanças desse contexto. Esse
-modelo será apresentado e detalhado nas seções a seguir.
+System*).
+
+<span id="_Ref42452795" class="anchor"></span>Figura 9 Etapas do
+desenvolvimento do sistema de recomendação musical (próprio, 2020)
+
+LORS utiliza de uma análise recorrente do contexto, para realizar as
+recomendações dinâmicas às mudanças desse contexto. Esse modelo será
+apresentado e detalhado nas seções a seguir. Suas etapas de
+desenvolvimento são apresentadas na Figura 11.
 
 ## Contexto
 
@@ -1256,21 +1266,16 @@ recomendadas. Cada ação terá um nível de importância, a qual será obtida
 através das respostas do questionário. As possíveis ações a serem
 executadas pelo usuário estão listadas na seção 3.1.1.
 
-## Pesquisa com usuários sobre recomendação musical
+## Pesquisa com usuários sobre recomendação musical (QUESTIONÁRIO)
 
 Para validar o modelo de sistema de recomendação foi desenvolvido uma
 aplicação, a qual foi distribuída aos usuários que participaram do
 questionário previamente realizado, onde foram obtidas informações sobre
-esses usuários. As etapas do desenvolvimento do *LORS* são apresentadas
-na Figura 11.
-
-<span id="_Ref42452795" class="anchor"></span>Figura 9 Etapas do
-desenvolvimento do sistema de recomendação musical (próprio, 2020)
-
-As perguntas aplicadas no questionário permitiram conhecer melhor os
-usuários que utilizarão a aplicação, sendo assim, foram utilizadas
-perguntas que permitam entender suas preferências, atividades, dentre
-outros fatores. As perguntas do questionário estão listadas no Quadro 2:
+esses usuários. As perguntas aplicadas no questionário permitiram
+conhecer melhor os usuários que utilizarão a aplicação, sendo assim,
+foram utilizadas perguntas que permitam entender suas preferências,
+atividades, dentre outros fatores. As perguntas do questionário estão
+listadas no Quadro 2:
 
 <span id="_Ref48857312" class="anchor"></span>Quadro Perguntas e
 respostas disponibilizadas a um certo público através dos formulários do
@@ -1303,7 +1308,9 @@ analisar as perguntas e avaliar a dificuldade de entendimento de cada
 uma das perguntas. Isso foi feito para garantir que o público que
 receberia o questionário posteriormente - o qual não está dentro do
 contexto do trabalho - conseguiria responder as perguntas com completa
-compreensão delas.
+compreensão delas. As melhorias levantadas foram referentes a utilizar
+uma linguagem mais simples nas perguntas e respostas, explicar o que é
+contexto e melhorar a descrição do questionário.
 
 ### Resultados do questionário
 
@@ -1319,8 +1326,7 @@ realizada uma publicação no Instagram para apresentá-lo ao público, e no
 decorrer dos dias posteriores, foi enviado a outras redes sociais, como
 WhatsApp, Slack (empresarial), Twitter e Facebook. O seu fechamento foi
 realizado no dia 18 de julho de 2020, somando o total de 12 dias em que
-o ele ficou aberto. Link para as respostas do questionário:
-<https://forms.gle/FKW5iJBhT7oEa18eA>
+o ele ficou aberto.\[1\]
 
 Dos dispositivos ou aplicativos utilizados para realizar a reprodução
 das músicas, com 168 respostas, o Spotify foi o mais escolhido das
@@ -1341,15 +1347,17 @@ Para aperfeiçoar a visão do trabalho sobre as características que
 possuem maior importância, foram realizadas as perguntas “Em quais
 atividades você costuma ouvir música?”, “Em quais lugares você costuma
 ouvir músicas?” e “Você costuma ouvir música quando está:”. Com elas,
-foi possível conhecer de novas características (a partir do campo
-“outro”), e foi possível obter características que mais influenciam
-os usuários na escolha de uma música.
+foi possível conhecer novas características (a partir do campo “outro”),
+como “Tomando banho”, e foi possível obter características que mais
+influenciam os usuários na escolha de uma música, como “Trabalhando”, a
+atividade mais votada com 74%.
 
 Visando entender o comportamento do público, foram feitas as perguntas
 “O que costuma te influenciar na escolha da música?”, e “O que você
 faz quando gosta ou não de uma música?”. Dessa maneira, foi possível
 compreender as características mais importantes a serem consideradas no
-modelo e ordem da aplicação.
+modelo e ordem da aplicação, isso é, Humor e Atividades, as quais estão
+presentes no questionário do *plugin*.
 
 A pergunta “As músicas que você escuta sozinho são diferentes das que
 escuta com os amigos?” foi desenvolvida para realizar uma avaliação se a
@@ -1361,10 +1369,10 @@ lidamos, foi feito a pergunta “Quanto tempo por semana você escuta
 música?”. Com ela foi possível entender que mais de 50% dos
 respondentes ouvia de 0 a 10horas por semana.
 
-Visando realizar um *Cold Start* na aplicação, foi criada a pergunta
-“Quais são os gêneros musicais que gosta de escutar?”, e colocar as
-principais respostas no *plugin* a ser criado. Porém, devido ao tempo
-limitado de desenvolvimento, a *feature* não foi feita.
+Visando realizar um *Cold Start*\[2\] na aplicação, foi criada a
+pergunta “Quais são os gêneros musicais que gosta de escutar?”, e
+colocar as principais respostas no *plugin* a ser criado. Porém, devido
+ao tempo limitado de desenvolvimento, a *feature* não foi feita.
 
 Respeitando a privacidade do público, foi feita a pergunta “Gostaria de
 participar de uma pesquisa que visa melhorar a recomendação musical?”, a
@@ -1373,8 +1381,10 @@ para enviar o convite de uso futuro do *plugin*.
 
 A pergunta “Sua idade” foi feita para obter conhecimento da faixa de
 idade. Durante o envio do questionário, o escopo do trabalho estava em
-aberto, por isso, foi feita a pergunta “Dicas e sugestões?”. Assim, foi
-possível obter ideias do público para aplicar no modelo.
+aberto, por isso, foi feita a pergunta “Dicas e sugestões?”. Assim,
+obteve-se ideias do público para auxiliar no trabalho, como a resposta
+“Opções de respostas meio confusas” que ao recebê-la, entrou-se em
+contato para retirar a dúvida e aperfeiçoar o questionário.
 
 ## Desenvolvimento Do plugin
 
@@ -2126,3 +2136,8 @@ Information Retrieval, SIGIR 2018**, p. 1045–1048, 2018. YANG, Y. H.;
 TENG, Y. C. Quantitative study of music listening behavior in a
 smartphone context. **ACM Transactions on Interactive Intelligent
 Systems**, v. 5, n. 3, 2015.
+
+1.  Link para as respostas do questionário:
+    <https://forms.gle/FKW5iJBhT7oEa18eA>
+
+2.  Problema relacionado a falta de dados em um RecSys
