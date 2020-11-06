@@ -180,16 +180,20 @@ Lista de Abreviaturas e Siglas
 <table>
 <thead>
 <tr class="header">
-<th>LORS</th>
-<th>Loewe’s Recommender System</th>
+<th>App</th>
+<th>Application</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td>LORS</td>
+<td>Loewe’s Recommender System</td>
+</tr>
+<tr class="even">
 <td>POC</td>
 <td>Proof of concept</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>RecSys</p>
 <p>SVM</p>
 <p>AUC</p>
@@ -207,7 +211,7 @@ Lista de Abreviaturas e Siglas
 <p>Activity-aware Intent Recommendation</p>
 <p>RecSys do Spotify</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td></td>
 <td></td>
 </tr>
@@ -305,7 +309,7 @@ Sumário
 [4.2.4 Recomendação 62](#recomendação)
 
 [4.2.5 Resultado da recomendação (integração app)
-63](#resultado-da-recomendação-integração-app)
+63](#resultado-da-recomendação-integração-webapp)
 
 [4.2.6 Resultados do experimento 64](#resultados-do-experimento)
 
@@ -1156,12 +1160,12 @@ contexto pode ser definido por:
 
 Um sistema de recomendação busca encontrar os melhores itens para um
 devido fim, onde geralmente se baseia em dados históricos para
-produzi-la. Observa-se que, com o entendimento do contexto, ou conforme
-a definição das “circunstâncias que levaram a certos fatos ou
-situações”, é possível auxiliar as recomendações, aumentando o
-número de dados disponíveis para realizar uma classificação e/ou
-filtro. A Figura 9 apresenta uma visão macro dos contextos que serão
-considerados neste trabalho.
+produzi-la. (DIETMAR et al., 2010) Observa-se que, com o entendimento do
+contexto, ou conforme a definição das “circunstâncias que levaram a
+certos fatos ou situações”, é possível auxiliar as recomendações,
+aumentando o número de dados disponíveis para realizar uma classificação
+e/ou filtro. A Figura 9 apresenta uma visão macro dos contextos que
+serão considerados neste trabalho.
 
 <span id="_Ref42447869" class="anchor"></span>Figura 8 Apresentação dos
 contextos utilizados no trabalho (próprio, 2020)
@@ -1175,9 +1179,8 @@ comportamento pode ser tido por:
 
 A partir da definição de contexto, foi realizado um levantamento das
 possíveis ações a serem registradas em um sistema baseado no *app*
-Spotify, as quais, serão colocadas no questionário, e o seu resultado
-será utilizado como peso para cada ação e no futuro, auxiliar na
-recomendação musical. Esse estudo trouxe a seguinte lista de ações:
+Spotify. Essa lista foi colocada no questionário. Esse estudo trouxe a
+seguinte lista de ações:
 
   - Passar / Voltar \(n\) músicas
 
@@ -1206,11 +1209,11 @@ contexto localização.
 ### Como serão obtidos os contextos?
 
 Os contextos no *LORS* serão obtidos a partir da captura de formulários
-e eventos de um app. Na aplicação será obtido o contexto de duas
+e eventos de um *webapp*. Na aplicação será obtido o contexto de duas
 maneiras: (i) explicitamente, onde o usuário irá cadastrar o que está
 fazendo, ex.: emoções, atividades e localização; (ii) implicitamente, o
 qual será obtido através das ações do usuário realizadas no aplicativo,
-ex.: ações sobre os componentes do app, localização.
+ex.: ações sobre os componentes do *webapp*, localização.
 
 São poucas as ações que auxiliam no entendimento do contexto e que podem
 ser obtidas implicitamente, isso devido às limitações dos sensores e
@@ -1222,7 +1225,7 @@ maneira explicita e implícita, sendo elas:
 
   - localização
 
-  - ações sobre os componentes do app
+  - ações sobre os componentes do *webapp*
 
   - tempo
 
@@ -1255,7 +1258,7 @@ executadas pelo usuário estão listadas na seção 3.1.1.
 
 ## Pesquisa com usuários sobre recomendação musical
 
-Para validar o modelo de sistema de recomendação foi desenvolvida uma
+Para validar o modelo de sistema de recomendação foi desenvolvido uma
 aplicação, a qual foi distribuída aos usuários que participaram do
 questionário previamente realizado, onde foram obtidas informações sobre
 esses usuários. As etapas do desenvolvimento do *LORS* são apresentadas
@@ -1499,7 +1502,7 @@ Os eventos das músicas foram salvos em outra plataforma chamada
 Firebase. Ela é uma ferramenta paga, porém, para o trabalho foi
 utilizada a versão gratuita, que suporta o acesso de até 100 usuários
 simultâneos. Demais eventos como “quantidade de usuários acessando o
-*app*” foram salvos utilizando as aplicações GTM e Google Analytics.
+*webapp*” foram salvos utilizando as aplicações GTM e Google Analytics.
 
 ### Coleta do Firebase
 
@@ -1819,7 +1822,7 @@ a predição através do método *predict* do modelo do *sklearn* e
 devolvido a classe resultante, isso é, o gênero resultante como resposta
 a requisição.
 
-### Resultado da recomendação (integração app)
+### Resultado da recomendação (integração *webapp*)
 
 Tendo o servidor pronto e publicado, foi desenvolvido uma integração no
 plugin. Nela, é obtido as informações de contexto e solicitado ao LORS o
