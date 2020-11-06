@@ -488,16 +488,13 @@ estudar o funcionamento dos sistemas de recomendação musicais, por meio
 dos artigos relacionados, fazendo com que ela tenha como objetivo um
 estudo exploratório.
 
-Utilizou-se 3 tipos de procedimentos técnicos nessa pesquisa. Pesquisa
+Utilizou-se 2 tipos de procedimentos técnicos nessa pesquisa. Pesquisa
 bibliográfica, dado que foi necessária uma base de conhecimentos e
-estudos sobre os *RecSys*, suas técnicas e algoritmos. Como foi
-utilizado a *API* do Spotify para consultar as faixas, artistas, gêneros
-e reprodução musical. Utilizou-se o procedimento técnico pesquisa
-documental. Com o estudo realizado e os registros de contextos
-definidos, foi utilizado da pesquisa experimental, para avaliar a base
-disponível através da aplicação liberada aos usuários. Para realizá-lo,
-foi necessário um estudo de técnicas para avaliar os resultados de um
-RecSys.
+estudos sobre os *RecSys*, suas técnicas e algoritmos. Com o estudo
+realizado e os registros de contextos definidos, foi utilizado da
+pesquisa experimental, para avaliar a base disponível através da
+aplicação liberada aos usuários. Para realizá-lo, foi necessário um
+estudo de técnicas para avaliar os resultados de um RecSys.
 
 Tendo as técnicas de avaliação a serem utilizadas definidas, elas foram
 desenvolvidas no sistema, permitindo que os usuários consigam contribuir
@@ -520,8 +517,13 @@ escutar suas músicas enquanto são registrados os eventos do contexto
 vivido naquele momento.
 
 O trabalho está dividido em 3 capítulos. O primeiro capítulo aborda uma
-pesquisa bibliográfica, onde é apresentado uma revisão bibliográfica e
-os trabalhos relacionados resultantes. O capítulo dois detalha...
+pesquisa bibliográfica, onde é apresentado uma revisão dos sistemas de
+recomendação relacionados e os trabalhos resultantes. O capítulo dois
+detalha a definição do contexto, questionário enviado aos usuários,
+desenvolvimento do plugin e a coleta de dados da aplicação web. O último
+capítulo define o algoritmo utilizado, preparação dos dados coletados do
+plugin, modelagem do sistema desenvolvido e no fim os resultados obtidos
+no experimento.
 
 # Trabalhos relacionados
 
