@@ -780,7 +780,7 @@ Essa pesquisa apresenta técnicas de como obter as preferências de um
 usuário através de suas expressões faciais. Para isso, foi desenvolvida
 uma aplicação onde a preferência do usuário é obtida através da
 observação do seu comportamento. Cada usuário devia ouvir ao menos 10
-segundos de cada uma música das duas músicas apresentadas na tela e ao
+segundos de cada uma das duas músicas apresentadas na tela e ao
 finalizar, poderia escolher qual música era mais adequada para se ouvir
 no ambiente pré-estabelecido que era seu trabalho. É nesse momento que
 são obtidos os dois contextos estudados no artigo revisado, que são:
@@ -850,8 +850,8 @@ explicitamente o contexto.
 
 A preferência do usuário foi obtida através da observação do seu
 comportamento em cima da aplicação. Cada usuário devia ouvir ao menos 10
-segundos de cada música em par apresentada e ao finalizar, poderia
-escolher qual música era mais adequada para se ouvir no ambiente
+segundos de cada uma das duas músicas apresentadas e ao finalizar,
+poderia escolher qual música era mais adequada para se ouvir no ambiente
 pré-estabelecido que era o seu trabalho.
 
 ##### A recomendação atingiu as expectativas do usuário?
