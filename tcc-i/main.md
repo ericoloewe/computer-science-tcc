@@ -1476,12 +1476,12 @@ preparada do JSON.
 
 Com a estrutura dos dados pronta e a pesquisa dos dados dos usuários,
 levantou-se um tratamento específico para cada informação, realizando,
-dessa forma, um estudo das técnicas de recomendação postas nos trabalhos
-anteriores. Com isso, surgiu o modelo do sistema LORS, que utiliza de
-uma análise recorrente do contexto, para realizar as recomendações
-dinâmicas às mudanças do contexto. Serão apresentadas mais informações
-das etapas de modelagem e desenvolvimento do sistema nas seções a
-seguir.
+dessa forma, o estudo da técnica de recomendação escolhida nos trabalhos
+anteriores, o KNN. Com isso, surgiu o modelo do sistema LORS, que
+utiliza de uma análise recorrente do contexto, para realizar as
+recomendações dinâmicas às mudanças do contexto. Serão apresentadas mais
+informações das etapas de modelagem e desenvolvimento do sistema nas
+seções a seguir.
 
 ## O Algoritmo KNN
 
@@ -1519,15 +1519,16 @@ apresentadas no Quadro 3; (ii) *createdDateTime*, data e tempo da
 execução do evento; (iii) *value*, valores do evento separados por
 “;”.
 
-A ação LOAD\_LOCATION foi ignorada nesse momento no sistema e se tornará
-um trabalho futuro. Já as ações CHANGE\_MUSIC\_TIME,
-CHOOSE\_FEELING\_TO\_BE\_LIKE, LIKED\_ARTIST, LIKED\_GENRE, ficaram nos
-eventos do *plugin*, mesmo que não sejam utilizadas devido ao tempo
-limitado de desenvolvimento. As ações HIDE\_DETAILS, PAUSE\_MUSIC,
-PLAY\_MUSIC, SHOW\_DETAILS são contabilizadas como registro do contexto
-musical, contudo não foram utilizadas no modelo devido ao tempo de
-desenvolvimento. Demais ações são contabilizadas no modelo e são
-apresentadas no Quadro 3.
+A ação LOAD\_LOCATION foi ignorada nesse momento, ela se trata de dados
+de geolocalização e nesse momento, devido a falta de recursos, não foi
+preparado esse dado para o KNN abrindo oportunidades para um trabalho
+futuro. Já as ações CHANGE\_MUSIC\_TIME, CHOOSE\_FEELING\_TO\_BE\_LIKE,
+LIKED\_ARTIST, LIKED\_GENRE, ficaram nos eventos do *plugin*, mesmo que
+não sejam utilizadas devido ao tempo limitado de desenvolvimento. As
+ações HIDE\_DETAILS, PAUSE\_MUSIC, PLAY\_MUSIC, SHOW\_DETAILS são
+contabilizadas como registro do contexto musical, contudo não foram
+utilizadas no modelo devido ao tempo de desenvolvimento. Demais ações
+são contabilizadas no modelo e são apresentadas no Quadro 3.
 
 <span id="_Ref55256921" class="anchor"></span>Quadro Lista de ações
 possíveis nos eventos (próprio,
@@ -1554,13 +1555,14 @@ possíveis nos eventos (próprio,
 | SHOW\_DETAILS                 | Abriu os detalhes da música                   |
 
 A Figura 18 apresenta as etapas de preparação dos dados, desde o
-carregamento do arquivo até a separação dele na forma de música. É na
-etapa “Carrega JSON” que se tem o *upload* dos dados a partir da
-biblioteca padrão do *python* “open”. Para a interpretação, existe a
-biblioteca *json*, possibilitando transformar o conteúdo *string* em um
-dicionário, do qual obtém os usuários e seus eventos e os transforma em
-outro dicionário *users*, cuja *key* é o id do usuário e o conteúdo sua
-lista de eventos.
+carregamento do arquivo exportado do Firebase, que contém as informações
+dos eventos, até a separação dele na forma de música. É na etapa
+“Carrega JSON” que se tem o *upload* dos dados a partir da biblioteca
+padrão do *python* “open”. Para a interpretação, existe a biblioteca
+*json*, possibilitando transformar o conteúdo *string* em um dicionário,
+do qual obtém os usuários e seus eventos e os transforma em outro
+dicionário *users*, cuja *key* é o id do usuário e o conteúdo sua lista
+de eventos.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image15.jpg)
 
@@ -1696,12 +1698,10 @@ usuário.
 Inicialmente foi desenvolvido uma POC em *python* utilizando o *Jupyter
 Notebook*. Nela foi utilizado somente os dados do usuário que teve mais
 registros salvos na base. Todo tratamento e preparação dos dados
-apresentados na seção 4.1.2 foi realizado nessa POC.
-
-Para aperfeiçoar o uso algoritmo foram realizados testes do KNN, que
-visavam: (i) escolher o melhor número de vizinhos (*k*) para rodar o
-algoritmo; (ii) avaliar o score do modelo; (iii) analisar a matriz de
-confusão obtida no modelo.
+apresentados na seção 4.1.2 foi realizado nessa POC. Para aperfeiçoar o
+uso algoritmo foram realizados testes do KNN, que visavam: (i) escolher
+o melhor número de vizinhos (*k*) para rodar o algoritmo; (ii) avaliar o
+score do modelo; (iii) analisar a matriz de confusão obtida no modelo.
 
 ### Servidor
 
