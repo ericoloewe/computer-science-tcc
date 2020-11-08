@@ -1597,8 +1597,8 @@ contexto, e criado uma lista chamada *musicTable*, a qual é preenchida
 com os seguintes valores: *uri*, *like*, *hate* e *restart,*
 relacionados ao contexto da música, e *feeling*, *activity* e *location*
 relacionados ao contexto do usuário. Os contextos *like*, *hate* e
-*restart* são representados pelo número de vezes que cada um aconteceu
-durante a reprodução.
+*restart* são representados pelo número de vezes que cada evento desse
+tipo aconteceu durante a reprodução.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
@@ -1629,7 +1629,11 @@ Com a tabela completa, foi realizado um tratamento dos valores dos
 eventos que eram múltiplos, isso é, continham mais de uma informação nos
 mesmos eventos através do “;” ou possui uma quantidade maior que 1 nos
 campos *like*, *hate* e *restart*. Nesse tratamento, foi quebrado os
-valores dos eventos um a um.
+valores dos eventos um a um em mais linhas. Um exemplo do uso do “;” é o
+caso de um *feeling* conter o valor “feliz;triste”, que foi transformado
+em duas linhas, uma para “feliz”, outra para “triste”. Um exemplo do
+campo like, no caso de possuir o valor 3, é quebrado o evento em 3
+linhas e trocado por 1.
 
 ![](./pandoc/media/image20.png)
 
@@ -1651,26 +1655,27 @@ obter as características de treino (*X\_train*), características de
 teste (*X\_test*), classes de treino (*y\_train*) e classes de teste
 (*y\_test*). O tamanho da base de teste pode ser informado para o
 *train\_test\_split* através do parâmetro *test\_size*, que nesse caso
-foi 0,3 (30% de teste e 70% de treinamento).
+foi 0,3 (30% de teste e 70% de treinamento, respectivamente 533 e 1242).
 
 Para rodar o KNN foi utilizada a classe *KNeighborsClassifier* da
 biblioteca *sklearn.neighbors*. Nela, pode ser informado o número de
 vizinhos levados em consideração a partir do parâmetro *n\_neighbors*,
-que nesse caso foi 3.
+que nesse caso foi decidido através de testes para descobrir o melhor
+*k*, resultando em 9, com menor erro de classificação (MSE) de 0.572475.
 
 Iniciando a classe, obtemos a variável *model*, com ela, informamos os
 dados de treino (*X\_train*, *y\_train*) através do método *fit*, o qual
 suporta 2 parâmetros: (i) dados de treino; (ii) valores alvo. Rodando o
-método *fit*, já é possível utilizar o melhor k analisado, para predizer
-os próximos alvos, que no *sklearn* é rodado através do método
+método *fit*, já é possível utilizar o melhor k analisado (9), para
+predizer os próximos alvos, que no *sklearn* é rodado através do método
 *predict*, passando os valores para realizar a predição (*X\_test*), que
 tem como retorno a classe que se adequa melhor aos dados de teste.
 
 No fim, é realizado um teste através do método *score* na performance da
 predição do algoritmo KNN. Esse método, recebe por parâmetro as
 características de teste retiradas de *X\_test* e as classes de teste
-retiradas de (*y\_test*) e retorna a acurácia do algoritmo KNN. Ele
-obteve uma acurácia de 0,15 nos testes realizados.
+retiradas de (*y\_test*) e retorna à acurácia do algoritmo KNN. Os
+resultados do teste são apresentados na seção 4.2.6.
 
 ## Predição no sistema *LORS*
 
@@ -1892,7 +1897,11 @@ gênero *country* ficou com valor de
 Tabela Matrix confusão do usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4
 (próprio, 2020)
 
-TEM QUE FINALIZAR O CAPÍTULO.
+Com sucesso foi desenvolvido o sistema de recomendação e apresentado
+nesse capítulo, iniciou-se apresentado o algoritmo, então a preparação
+dos dados do *plugin*, testes, desenvolvimento do servidor que hospeda
+os scripts *python*, a integração dele no *webapp* e por fim, é
+apresentado os resultados obtidos com as recomendações do algoritmo.
 
 # CONCLUSÃO
 
@@ -1907,13 +1916,14 @@ No desenvolvimento desse trabalho, foram encontradas diversas
 dificuldades em lidar com músicas, pois desde o momento que se iniciou o
 estudo, foi visto que a área é muito maior do que aparenta. Com o
 questionário foi possível entender que o gosto musical de um público é
-algo bastante abrangente, pois nesse caso, foi algo bem diferente do que
-o autor desse trabalho esperava.
+algo bastante abrangente.
 
 No *plugin* foram encontradas dificuldades em seu desenvolvimento.
 Inicialmente a aplicação foi desenvolvida em Flutter, uma plataforma
-para desenvolvimento mobile e foi visto que não supriria as necessidades
-desse trabalho, então houve uma migração para a plataforma Web.
+para desenvolvimento mobile e foi visto que devido a falta de suporte ao
+*streaming* (*Web Playback SDK*) na biblioteca do Spotify para Flutter,
+ela não supriria as necessidades desse trabalho, então houve uma
+migração para a plataforma Web.
 
 Ao realizar a primeira publicação do *plugin*, foram encontrados
 problemas como, navegadores diferentes, sistemas operacionais
@@ -1923,9 +1933,12 @@ Web é bastante complexo.
 
 Com o sistema desenvolvido, foi enviado e-mail a todos que optaram por
 participar da pesquisa no questionário. Nisso foi visto que os usuários
-não têm uma boa aderência a estudos enviados via e-mail. Portanto, foram
-escolhidos respondentes com mais afinidade com o autor e solicitado
-pessoalmente que utilizassem a aplicação para auxiliar no trabalho.
+não têm uma boa aderência a estudos enviados via e-mail, pois dos 144
+optantes, somente 6 deles o receberam e utilizaram da aplicação.
+Portanto, foram escolhidos respondentes com mais afinidade com o autor,
+um total de 8, solicitado pessoalmente que utilizassem a aplicação para
+auxiliar no trabalho. No fim, o sistema obteve um total de 14 usuários
+que utilizaram o sistema naquele período.
 
 Mesmo solicitando pessoalmente, foi obtido um baixo uso na aplicação,
 gerando assim uma base muito pequena para aplicação do algoritmo KNN.
