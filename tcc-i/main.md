@@ -76,96 +76,103 @@ Recommender System. Music. Spotify.
 
 Lista de Figuras
 
-Figura 1 - Motor avançado de busca da ACM (próprio, 2020) 19
+[Figura 1 - Motor avançado de busca da ACM (próprio, 2020)
+19](#_Ref40822595)
 
 [Figura 2 - Resultado de busca dos proceedings no motor de busca da ACM
-(próprio, 2020) 20](\\l)
+(próprio, 2020) 20](#_Ref40822631)
 
 [Figura 3 - Resultado de busca dos journals no motor de busca da ACM
-(próprio, 2020) 21](\\l)
+(próprio, 2020) 21](#_Ref40822641)
 
 [Figura 4 - Etapas realizadas para filtrar os trabalhos encontrados no
-motor de busca da ACM (próprio, 2020) 21](\\l)
+motor de busca da ACM (próprio, 2020) 21](#_Ref40822414)
 
 [Figura 5 - Filtro em cima dos trabalhos selecionados através do resumo
-(próprio, 2020) 22](\\l)
+(próprio, 2020) 22](#_Ref40822493)
 
 [Figura 6 - Procedimento de filtro realizado baseado nos trabalhos
-encontrados no motor de busca da ACM (próprio, 2020) 23](\\l)
+encontrados no motor de busca da ACM (próprio, 2020) 23](#_Ref40822509)
 
-[Figura 7 Fatores da preferência musical (próprio, 2020) 32](\\l)
+[Figura 7 Fatores da preferência musical (próprio, 2020)
+32](#_Toc55260885)
 
 [Figura 8 Apresentação dos contextos utilizados no trabalho (próprio,
-2020) 38](\\l)
+2020) 38](#_Ref42447869)
 
 [Figura 9 Etapas do desenvolvimento do sistema de recomendação musical
-(próprio, 2020) 41](\\l)
+(próprio, 2020) 41](#_Ref42452795)
 
 [Figura 10 A esquerda, tela introdutória da aplicação (próprio, 2020)
-Figura 11 A direita, tela de login da aplicação (próprio, 2020) 47](\\l)
+Figura 11 A direita, tela de login da aplicação (próprio, 2020)
+47](#_Ref54973492)
 
 [Figura 12 A esquerda, tela de preenchimento do contexto (próprio, 2020)
 Figura 13 A direita, tela da lista de dispositivos do Spotify (próprio,
-2020) 48](\\l)
+2020) 48](#_Ref54973479)
 
 [Figura 14 A esquerda, tela principal, a qual apresenta a música sendo
 reproduzida ao usuário (próprio, 2020) Figura 15 A direita, tela de
-busca de músicas que encaixem melhor no momento (próprio, 2020) 50](\\l)
+busca de músicas que encaixem melhor no momento (próprio, 2020)
+50](#_Ref54973458)
 
 [Figura 16 Console do *Realtime Database* do Firebase (próprio, 2020)
-52](\\l)
+52](#_Ref53931970)
 
 [Figura 17 – Representação gráfica da classificação do algoritmo KNN
 sobre um plano x1 e x2. No plano, os pontos amarelos são a representação
 da classe A, roxos classe B e vermelho é o ponto de teste (JOSÉ, 2018)
-54](\\l)
+54](#_Ref52742150)
 
 [Figura 18 Visão macro das etapas para transformar os eventos
 registrados no firebase na tabela que sera rodado o KNN (próprio, 2020)
-57](\\l)
+57](#_Ref54973329)
 
 [Figura 19 Representação dos eventos salvos no Firebase (próprio, 2020)
-57](\\l)
+57](#_Ref54973321)
 
 [Figura 20 Representação das listas geradas na etapa “Separa contexto”
-(próprio, 2020) 58](\\l)
+(próprio, 2020) 58](#_Ref54973316)
 
 [Figura 21 Representação das listas geradas na etapa “separa contexto
-das músicas” (próprio, 2020) 58](\\l)
+das músicas” (próprio, 2020) 58](#_Ref54973306)
 
 [Figura 22 Representação da tabela na etapa “separa contexto das
-músicas” (próprio, 2020) 59](\\l)
+músicas” (próprio, 2020) 59](#_Ref54973298)
 
 [Figura 23 *head()* do *dataframe* criado a partir da variável
-*genreTable* (próprio, 2020) 60](\\l)
+*genreTable* (próprio, 2020) 60](#_Ref53955795)
 
-[Figura 24 Visão macro do sistema LORS (próprio, 2020) 62](\\l)
+[Figura 24 Visão macro do sistema LORS (próprio, 2020)
+62](#_Ref54973275)
 
-[Figura 25 Tela de recomendações (próprio, 2020) 65](\\l)
+[Figura 25 Tela de recomendações (próprio, 2020) 65](#_Ref54973248)
 
 Lista de Quadros
 
-Quadro 1 Relação das funcionalidades desenvolvidas em cada artigo
-revisado 34
+[Quadro 1 Relação das funcionalidades desenvolvidas em cada artigo
+revisado 34](#_Ref42381546)
 
 [Quadro 2 Perguntas e respostas disponibilizadas a um certo público
-através dos formulários do Google. (próprio, 2020) 42](\\l)
+através dos formulários do Google. (próprio, 2020) 42](#_Toc55260909)
 
-[Quadro 3 Lista de ações possíveis nos eventos (próprio, 2020) 56](\\l)
+[Quadro 3 Lista de ações possíveis nos eventos (próprio, 2020)
+56](#_Ref55256921)
 
 [Quadro 4 Campos e seus respectivos valores utilizados na recomendação
-(próprio, 2020) 64](\\l)
+(próprio, 2020) 64](#_Ref54920412)
 
 Lista de TABELAS
 
-Tabela 1 relação dos gêneros e a classe utilizada no KNN (próprio, 2020)
-67
+[Tabela 1 relação dos gêneros e a classe utilizada no KNN (próprio,
+2020) 67](#_Ref55013755)
 
 [Tabela 2 matriz confusão da classe 12, gênero musical country (próprio,
-2020) 67](\\l)
+2020) 67](#_Ref55253627)
 
 [Tabela 3 Matrix confusão do usuário
-spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020) 68](\\l)
+spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
+68](#_Ref55013706)
 
 Lista de Abreviaturas e Siglas
 
@@ -208,85 +215,98 @@ Lista de Abreviaturas e Siglas
 
 Sumário
 
-1 Introdução 13
+[1 Introdução 13](#introdução)
 
-[2 Trabalhos relacionados 17](\\l)
+[2 Trabalhos relacionados 17](#trabalhos-relacionados)
 
-[2.1 Levantamento bibliográfico inicial 17](\\l)
+[2.1 Levantamento bibliográfico inicial
+17](#levantamento-bibliográfico-inicial)
 
-[2.2 O protocolo de revisão 18](\\l)
+[2.2 O protocolo de revisão 18](#o-protocolo-de-revisão)
 
-[2.3 PROCURA NOS MOTORES DE BUSCA 19](\\l)
+[2.3 PROCURA NOS MOTORES DE BUSCA 19](#procura-nos-motores-de-busca)
 
-[2.4 ETAPAS DA REVISÃO DOS TRABALHOS 21](\\l)
+[2.4 ETAPAS DA REVISÃO DOS TRABALHOS
+21](#etapas-da-revisão-dos-trabalhos)
 
-[2.4.1 Trabalhos selecionados 22](\\l)
+[2.4.1 Trabalhos selecionados 22](#trabalhos-selecionados)
 
-[2.5 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS 33](\\l)
+[2.5 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
+33](#funcionalidades-dos-trabalhos-investigados)
 
-[2.6 Conclusões dos trabalhos revisados 36](\\l)
+[2.6 Conclusões dos trabalhos revisados
+36](#conclusões-dos-trabalhos-revisados)
 
-[3 COLETA DO CONTEXTO DOS USUARIOS 37](\\l)
+[3 COLETA DO CONTEXTO DOS USUARIOS 37](#coleta-do-contexto-dos-usuários)
 
-[3.1 Contexto 37](\\l)
+[3.1 Contexto 37](#contexto)
 
-[3.1.1 O que é o contexto comportamental? 38](\\l)
+[3.1.1 O que é o contexto comportamental?
+38](#o-que-é-o-contexto-comportamental)
 
-[3.1.2 O que é o contexto de ambiente? 39](\\l)
+[3.1.2 O que é o contexto de ambiente?
+39](#o-que-é-o-contexto-de-ambiente)
 
-[3.1.3 Como serão obtidos os contextos? 39](\\l)
+[3.1.3 Como serão obtidos os contextos?
+39](#como-serão-obtidos-os-contextos)
 
-[3.1.4 O que são as ações do usuário? 40](\\l)
+[3.1.4 O que são as ações do usuário?
+40](#o-que-são-as-ações-do-usuário)
 
-[3.2 Pesquisa com usuários sobre recomendação musical 40](\\l)
+[3.2 Pesquisa com usuários sobre recomendação musical
+40](#pesquisa-com-usuários-sobre-recomendação-musical)
 
-[3.2.1 Pré-teste do questionário 44](\\l)
+[3.2.1 Pré-teste do questionário 44](#pré-teste-do-questionário)
 
-[3.2.2 Resultados do questionário 44](\\l)
+[3.2.2 Resultados do questionário 44](#resultados-do-questionário)
 
-[3.3 Desenvolvimento Do plugin 46](\\l)
+[3.3 Desenvolvimento Do plugin 46](#desenvolvimento-do-plugin)
 
-[3.3.1 Telas da aplicação 47](\\l)
+[3.3.1 Telas da aplicação 47](#telas-da-aplicação)
 
-[3.3.2 Tecnologias utilizadas no desenvolvimento 51](\\l)
+[3.3.2 Tecnologias utilizadas no desenvolvimento
+51](#tecnologias-utilizadas-no-desenvolvimento)
 
-[3.4 Distribuição da aplicação e coleta de dados 51](\\l)
+[3.4 Distribuição da aplicação e coleta de dados
+51](#distribuição-da-aplicação-e-coleta-de-dados)
 
-[3.4.1 Pré-teste 51](\\l)
+[3.4.1 Pré-teste 51](#pré-teste)
 
-[3.4.2 Hospedagem 52](\\l)
+[3.4.2 Hospedagem 52](#hospedagem)
 
-[3.4.3 Coleta do Firebase 52](\\l)
+[3.4.3 Coleta do Firebase 52](#coleta-do-firebase)
 
-[4 SISTEMA LORS 54](\\l)
+[4 SISTEMA LORS 54](#sistema-lors)
 
-[4.1 O Algoritmo KNN 54](\\l)
+[4.1 O Algoritmo KNN 54](#o-algoritmo-knn)
 
-[4.1.1 Preparação dos dados para o KNN 55](\\l)
+[4.1.1 Preparação dos dados para o KNN
+55](#preparação-dos-dados-para-o-knn)
 
-[4.1.2 Testes com KNN 60](\\l)
+[4.1.2 Testes com KNN 60](#testes-com-knn)
 
-[4.1.3 Taxonomia dos gêneros 61](\\l)
+[4.1.3 Taxonomia dos gêneros 61](#taxonomia-dos-gêneros)
 
-[*4.2* Modelagem do sistema *LORS* 61](\\l)
+[*4.2* Modelagem do sistema *LORS* 61](#modelagem-do-sistema-lors)
 
-[4.2.1 POC (Proof of Concept) 62](\\l)
+[4.2.1 POC (Proof of Concept) 62](#poc-proof-of-concept)
 
-[4.2.2 Servidor 62](\\l)
+[4.2.2 Servidor 62](#servidor)
 
-[4.2.3 Hospedagem 63](\\l)
+[4.2.3 Hospedagem 63](#hospedagem-1)
 
-[4.2.4 Recomendação 63](\\l)
+[4.2.4 Recomendação 63](#recomendação)
 
-[4.2.5 Resultado da recomendação (integração app) 64](\\l)
+[4.2.5 Resultado da recomendação (integração app)
+64](#resultado-da-recomendação-integração-app)
 
-[4.2.6 Resultados do experimento 65](\\l)
+[4.2.6 Resultados do experimento 65](#resultados-do-experimento)
 
-[5 CONCLUSÃO 69](\\l)
+[5 CONCLUSÃO 69](#conclusão)
 
-[5.1 Trabalhos futuros 70](\\l)
+[5.1 Trabalhos futuros 70](#trabalhos-futuros)
 
-[Referências Bibliográficas 71](\\l)
+[Referências Bibliográficas 71](#referências-bibliográficas)
 
 # Introdução
 
@@ -556,7 +576,8 @@ relacionados a *string* de busca.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-Figura 1 - Motor avançado de busca da ACM (próprio, 2020)
+<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
+de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
 cima da busca. Procurando trazer somente os trabalhos mais atuais
@@ -569,8 +590,8 @@ de trabalhos encontrados passou para 83.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-Figura 2 - Resultado de busca dos proceedings no motor de busca da ACM
-(próprio, 2020)
+<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
+busca dos proceedings no motor de busca da ACM (próprio, 2020)
 
 Um dos principais motivos que levou essa revisão ser realizada através
 da ACM ao invés de outras plataformas de busca como IEEE, é devido ela
@@ -581,8 +602,8 @@ conferências e eventos relacionados a área. (ACM RECSYS COMMUNITY.,
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-Figura 3 - Resultado de busca dos journals no motor de busca da ACM
-(próprio, 2020)
+<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
+busca dos journals no motor de busca da ACM (próprio, 2020)
 
 ## ETAPAS DA REVISÃO DOS TRABALHOS
 
@@ -590,8 +611,9 @@ Com a busca realizada no dia 07/05/20, no motor da ACM, a partir da
 *string* de busca foram encontrados 83 trabalhos, sendo eles: 23 do tipo
 *journal* e 60 do tipo *proceeding*.
 
-Figura 4 - Etapas realizadas para filtrar os trabalhos encontrados no
-motor de busca da ACM (próprio, 2020)
+<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
+realizadas para filtrar os trabalhos encontrados no motor de busca da
+ACM (próprio, 2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado em
 3 etapas (demonstradas na Figura 4), que visam direcionar esta pesquisa
@@ -611,8 +633,8 @@ tipos e a quantidade de artigos encontrados.
 
 <span class="chart">\[CHART\]</span>
 
-Figura 5 - Filtro em cima dos trabalhos selecionados através do resumo
-(próprio, 2020)
+<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
+dos trabalhos selecionados através do resumo (próprio, 2020)
 
 ###  Trabalhos selecionados
 
@@ -620,8 +642,9 @@ O resultado do procedimento de filtro apresentado na Figura 6 abaixo,
 resultou em 4 trabalhos relacionados ao objetivo descrito no protocolo
 de revisão desse trabalho.
 
-Figura 6 - Procedimento de filtro realizado baseado nos trabalhos
-encontrados no motor de busca da ACM (próprio, 2020)
+<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
+filtro realizado baseado nos trabalhos encontrados no motor de busca da
+ACM (próprio, 2020)
 
 Foi realizado uma revisão nesses trabalhos a qual foi apresentada nas
 próximas seções. Onde, em cada seção/artigo, foi apresentado um breve
@@ -981,7 +1004,8 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são apresentados na Figura 7 abaixo.
 
-Figura 7 Fatores da preferência musical (próprio, 2020)
+<span id="_Toc55260885" class="anchor"></span>Figura 7 Fatores da
+preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
 
@@ -1019,7 +1043,8 @@ esta resposta após avaliação das técnicas que serão utilizadas, onde
 temos a seguinte legenda de símbolos: ✔ caso possua, ❌ caso não possua e
 ❓ caso não seja possível concluir o comparativo (próprio, 2020).
 
-Quadro 1 Relação das funcionalidades desenvolvidas em cada artigo
+<span id="_Ref42381546" class="anchor"></span>Quadro 1 Relação das
+funcionalidades desenvolvidas em cada artigo
 revisado
 
 |                                                                           | (TKALČIČ et al., 2019) | (VOLOKHIN; AGICHTEIN, 2018) | (YANG; TENG, 2015) | (ALIAGA, 2018) | (LUDEWIG et al., 2018) | Proposta deste trabalho |
@@ -1085,12 +1110,12 @@ devido fim, geralmente, baseado em dados históricos para produzi-las.
 Observa-se que, com o entendimento do contexto, ou conforme a definição
 das “circunstâncias que levaram a certos fatos ou situações”, auxiliar
 as recomendações, aumentando o número de dados disponíveis para realizar
-uma classificação e/ou filtro, já não é mais um problema. A 8Figura
+uma classificação e/ou filtro, já não é mais um problema. A Figura 8
 apresenta uma visão macro dos contextos que serão considerados no
 projeto.
 
-Figura 8 Apresentação dos contextos utilizados no trabalho (próprio,
-2020)
+<span id="_Ref42447869" class="anchor"></span>Figura 8 Apresentação dos
+contextos utilizados no trabalho (próprio, 2020)
 
 ### O que é o contexto comportamental?
 
@@ -1189,8 +1214,8 @@ previamente realizado; reunindo, assim, informações sobre esses
 usuários. As etapas do desenvolvimento do *LORS* são apresentadas na
 Figura 11.
 
-Figura 9 Etapas do desenvolvimento do sistema de recomendação musical
-(próprio, 2020)
+<span id="_Ref42452795" class="anchor"></span>Figura 9 Etapas do
+desenvolvimento do sistema de recomendação musical (próprio, 2020)
 
 As perguntas expostas no questionário permitirão conhecer melhor os
 usuários que utilizarão a aplicação. Sendo assim, todas as questões
@@ -1310,8 +1335,9 @@ do link <https://ericoloewe.github.io/computer-science-tcc/>.
 
 ![](./pandoc/media/image6.png)![](./pandoc/media/image7.png)
 
-Figura 10 A esquerda, tela introdutória da aplicação (próprio, 2020)
-Figura 11 A direita, tela de login da aplicação (próprio, 2020)
+<span id="_Ref54973492" class="anchor"></span>Figura 10 A esquerda, tela
+introdutória da aplicação (próprio, 2020) Figura 11 A direita, tela de
+login da aplicação (próprio, 2020)
 
 ### Telas da aplicação
 
@@ -1329,9 +1355,9 @@ o contexto atual do usuário naquele período por serem divulgadas a cada
 
 ![](./pandoc/media/image8.png)![](./pandoc/media/image9.png)
 
-Figura 12 A esquerda, tela de preenchimento do contexto (próprio, 2020)
-Figura 13 A direita, tela da lista de dispositivos do Spotify (próprio,
-2020)
+<span id="_Ref54973479" class="anchor"></span>Figura 12 A esquerda, tela
+de preenchimento do contexto (próprio, 2020) Figura 13 A direita, tela
+da lista de dispositivos do Spotify (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
 reproduza as músicas no plugin. Tendo isso em mente, foi criado a tela
@@ -1361,9 +1387,10 @@ para apresentar uma música que se identifique melhor com o momento.
 
 ![](./pandoc/media/image10.png)![](./pandoc/media/image11.png)
 
-Figura 14 A esquerda, tela principal, a qual apresenta a música sendo
-reproduzida ao usuário (próprio, 2020) Figura 15 A direita, tela de
-busca de músicas que encaixem melhor no momento (próprio, 2020)
+<span id="_Ref54973458" class="anchor"></span>Figura 14 A esquerda, tela
+principal, a qual apresenta a música sendo reproduzida ao usuário
+(próprio, 2020) Figura 15 A direita, tela de busca de músicas que
+encaixem melhor no momento (próprio, 2020)
 
 A ação de buscar música, de ter a opção em relação a um tempo
 específico, o levaria para a tela apresentada na Figura 15,
@@ -1434,7 +1461,8 @@ exportar do *Realtime DB*.
 
 ![](./pandoc/media/image12.png)
 
-Figura 16 Console do *Realtime Database* do Firebase (próprio, 2020)
+<span id="_Ref53931970" class="anchor"></span>Figura 16 Console do
+*Realtime Database* do Firebase (próprio, 2020)
 
 Com o JSON e a estrutura de dados pronta, datou-se o início de alguns
 estudos em *python* para adquirir o conhecimento necessário e obter os
@@ -1465,9 +1493,10 @@ funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image13.png)
 
-Figura 17 – Representação gráfica da classificação do algoritmo KNN
-sobre um plano x1 e x2. No plano, os pontos amarelos são a representação
-da classe A, roxos classe B e vermelho é o ponto de teste (JOSÉ, 2018)
+<span id="_Ref52742150" class="anchor"></span>Figura 17 – Representação
+gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
+plano, os pontos amarelos são a representação da classe A, roxos classe
+B e vermelho é o ponto de teste (JOSÉ, 2018)
 
 Como apresentado (Figura 17), o algoritmo funciona mediante a disposição
 das características (atributos) X<sub>1</sub> e X<sub>2</sub> sobre um
@@ -1500,7 +1529,8 @@ musical, contudo não foram utilizadas no modelo devido ao tempo de
 desenvolvimento. Demais ações são contabilizadas no modelo e são
 apresentadas no Quadro 3.
 
-Quadro 3 Lista de ações possíveis nos eventos (próprio,
+<span id="_Ref55256921" class="anchor"></span>Quadro 3 Lista de ações
+possíveis nos eventos (próprio,
 2020)
 
 | Ação (Action)                 | Descrição                                     |
@@ -1534,8 +1564,9 @@ lista de eventos.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image14.jpg)
 
-Figura 18 Visão macro das etapas para transformar os eventos registrados
-no firebase na tabela que sera rodado o KNN (próprio, 2020)
+<span id="_Ref54973329" class="anchor"></span>Figura 18 Visão macro das
+etapas para transformar os eventos registrados no firebase na tabela que
+sera rodado o KNN (próprio, 2020)
 
 Na segunda etapa “Separa Contexto”, representada pela Figura 19, é
 realizada a quebra dos eventos de cada usuário por seus contextos,
@@ -1545,7 +1576,8 @@ representado na Figura 20.
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
 automaticamente](./pandoc/media/image15.jpg)
 
-Figura 19 Representação dos eventos salvos no Firebase (próprio, 2020)
+<span id="_Ref54973321" class="anchor"></span>Figura 19 Representação
+dos eventos salvos no Firebase (próprio, 2020)
 
 A Figura 21 traz a etapa “Separa contexto das músicas”. Na reprodução
 das músicas, são gerados tanto os eventos separadamente, quanto uma
@@ -1555,8 +1587,8 @@ fim, uma tabela semelhante à Figura 22 das músicas e seus contextos.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image16.jpg)
 
-Figura 20 Representação das listas geradas na etapa “Separa contexto”
-(próprio, 2020)
+<span id="_Ref54973316" class="anchor"></span>Figura 20 Representação
+das listas geradas na etapa “Separa contexto” (próprio, 2020)
 
 Para criar essa relação, é realizado um loop em cima dos eventos de cada
 contexto, e criado uma lista chamada *musicTable*, a qual é preenchida
@@ -1568,8 +1600,9 @@ durante a reprodução.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image17.jpg)
 
-Figura 21 Representação das listas geradas na etapa “separa contexto das
-músicas” (próprio, 2020)
+<span id="_Ref54973306" class="anchor"></span>Figura 21 Representação
+das listas geradas na etapa “separa contexto das músicas” (próprio,
+2020)
 
 Nas próximas duas etapas “busca informações das músicas” e “busca
 informações dos artistas (gênero)”, é realizada uma busca nas APIs do
@@ -1581,8 +1614,8 @@ artista.
 
 ![Tabela Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
-Figura 22 Representação da tabela na etapa “separa contexto das músicas”
-(próprio, 2020)
+<span id="_Ref54973298" class="anchor"></span>Figura 22 Representação da
+tabela na etapa “separa contexto das músicas” (próprio, 2020)
 
 Após a busca dos dados no Spotify, foi obtida a lista dos gêneros das
 músicas através dos artistas, e então adicionados à lista de músicas
@@ -1599,8 +1632,8 @@ valores dos eventos um a um.
 
 ![](./pandoc/media/image19.png)
 
-Figura 23 *head()* do *dataframe* criado a partir da variável
-*genreTable* (próprio, 2020)
+<span id="_Ref53955795" class="anchor"></span>Figura 23 *head()* do
+*dataframe* criado a partir da variável *genreTable* (próprio, 2020)
 
 No fim, foi utilizada a biblioteca *preprocessing* do *sklearn* para
 transformar as características e classes de cada evento da tabela em
@@ -1668,7 +1701,8 @@ plugin Web desenvolvido nesse trabalho.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image20.jpg)
 
-Figura 24 Visão macro do sistema LORS (próprio, 2020)
+<span id="_Ref54973275" class="anchor"></span>Figura 24 Visão macro do
+sistema LORS (próprio, 2020)
 
 O *plugin* (representado na Figura 24 como o “App”) é responsável por a
 cada 30 minutos solicitar ao usuário uma atualização de contexto, isso
@@ -1720,8 +1754,8 @@ colocadas para repetir (*restart*=1). Os campos *feeling*, *activity*,
 *location* possuem valor padrão somente no caso de a característica
 enviada não existir na base.
 
-Quadro 4 Campos e seus respectivos valores utilizados na recomendação
-(próprio, 2020)
+<span id="_Ref54920412" class="anchor"></span>Quadro 4 Campos e seus
+respectivos valores utilizados na recomendação (próprio, 2020)
 
 | Campo    | Valor padrão |
 | -------- | ------------ |
@@ -1747,7 +1781,8 @@ contenham ele no nome.
 
 ![](./pandoc/media/image21.png)
 
-Figura 25 Tela de recomendações (próprio, 2020)
+<span id="_Ref54973248" class="anchor"></span>Figura 25 Tela de
+recomendações (próprio, 2020)
 
 No fim, é apresentado o gênero recomendado na tela, tratando o retorno
 do Spotify e apresentado as *playlists*, conforme Figura 25, permitindo
@@ -1807,7 +1842,8 @@ acréscimo de 306%, mas ainda um valor de acurácia baixo.
 | sertanejo pop                 | 38                               |
 | trap                          | 39                               |
 
-Tabela 1 relação dos gêneros e a classe utilizada no KNN (próprio, 2020)
+<span id="_Ref55013755" class="anchor"></span>Tabela 1 relação dos
+gêneros e a classe utilizada no KNN (próprio, 2020)
 
 A matriz de confusão do usuário utilizado nos testes foi disponibilizada
 na Tabela 3 desse trabalho. Nela, é possível verificar que o modelo
@@ -1849,8 +1885,8 @@ dos gêneros com as classes geradas para o KNN.
 </tbody>
 </table>
 
-184Tabela 2 matriz confusão da classe 12, gênero musical country
-(próprio, 2020)
+<span id="_Ref55253627" class="anchor"></span>184Tabela 2 matriz
+confusão da classe 12, gênero musical country (próprio, 2020)
 
 Para realizar uma análise mais aprofundada, foi utilizado o gênero com a
 maior quantidade de recomendações (230 itens), isso é o country (classe
@@ -1908,8 +1944,8 @@ gênero *country* ficou com valor de
 | 38 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 4   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
 | 39 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 2   | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 3  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
 
-Tabela 3 Matrix confusão do usuário
-spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
+<span id="_Ref55013706" class="anchor"></span>Tabela 3 Matrix confusão
+do usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
 
 TEM QUE FINALIZAR O CAPÍTULO.
 
@@ -1954,7 +1990,7 @@ muito grande. Para lidar melhor com a acurácia inicial do KNN muito
 baixa, foi desenvolvida a taxonomia dos gêneros, mantendo somente os
 principais gêneros, e com isso, reduzindo o número de resultados
 possíveis, o que melhorou a acurácia do KNN em predizer um melhor
-resultado. 
+resultado.
 
 Porém, mesmo com a redução das classes, o modelo obteve uma baixa
 acurácia nas recomendações. Logo, há a necessidade de uma melhoria nas
