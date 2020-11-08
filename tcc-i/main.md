@@ -1240,8 +1240,8 @@ As perguntas do questionário estão listadas no Quadro
 | 13\. Sua idade                                                                               |                                                                                                                                                                                                                                                                           |
 | 14\. Dicas e sugestões?                                                                      |                                                                                                                                                                                                                                                                           |
 
-Quadro Perguntas e respostas disponibilizadas a um certo público através
-dos formulários do Google. (próprio, 2020)
+Quadro 2 Perguntas e respostas disponibilizadas a um certo público
+através dos formulários do Google. (próprio, 2020)
 
 ### Pré-teste do questionário
 
@@ -1335,8 +1335,8 @@ do link <https://ericoloewe.github.io/computer-science-tcc/>.
 
 ![](./pandoc/media/image7.png)![](./pandoc/media/image8.png)
 
-<span id="_Ref54973492" class="anchor"></span>Figura A esquerda, tela
-introdutória da aplicação (próprio, 2020) Figura A direita, tela de
+<span id="_Ref54973492" class="anchor"></span>Figura 10 A esquerda, tela
+introdutória da aplicação (próprio, 2020) Figura 11 A direita, tela de
 login da aplicação (próprio, 2020)
 
 ### Telas da aplicação
@@ -1355,9 +1355,9 @@ o contexto atual do usuário naquele período por serem divulgadas a cada
 
 ![](./pandoc/media/image9.png)![](./pandoc/media/image10.png)
 
-<span id="_Ref54973479" class="anchor"></span>Figura A esquerda, tela de
-preenchimento do contexto (próprio, 2020) Figura A direita, tela da
-lista de dispositivos do Spotify (próprio, 2020)
+<span id="_Ref54973479" class="anchor"></span>Figura 12 A esquerda, tela
+de preenchimento do contexto (próprio, 2020) Figura 13 A direita, tela
+da lista de dispositivos do Spotify (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
 reproduza as músicas no plugin. Tendo isso em mente, foi criado a tela
@@ -1387,10 +1387,10 @@ para apresentar uma música que se identifique melhor com o momento.
 
 ![](./pandoc/media/image11.png)![](./pandoc/media/image12.png)
 
-<span id="_Ref54973458" class="anchor"></span>Figura A esquerda, tela
+<span id="_Ref54973458" class="anchor"></span>Figura 14 A esquerda, tela
 principal, a qual apresenta a música sendo reproduzida ao usuário
-(próprio, 2020) Figura A direita, tela de busca de músicas que encaixem
-melhor no momento (próprio, 2020)
+(próprio, 2020) Figura 15 A direita, tela de busca de músicas que
+encaixem melhor no momento (próprio, 2020)
 
 A ação de buscar música, de ter a opção em relação a um tempo
 específico, o levaria para a tela apresentada na Figura 15,
@@ -1461,7 +1461,7 @@ exportar do *Realtime DB*.
 
 ![](./pandoc/media/image13.png)
 
-<span id="_Ref53931970" class="anchor"></span>Figura Console do
+<span id="_Ref53931970" class="anchor"></span>Figura 16 Console do
 *Realtime Database* do Firebase (próprio, 2020)
 
 Com o JSON e a estrutura de dados pronta, datou-se o início de alguns
@@ -1485,11 +1485,12 @@ seções a seguir.
 
 ## O Algoritmo KNN
 
-O *k-Nearest Neighbor* (KNN) é um método de classificação que busca os k
-pontos dos dados de treino mais próximos do item de teste. Uma classe é
-atrelada a esse ponto através de uma votação majoritária dos k pontos
-vizinhos (T.M. COVER, 1967). Na Figura 17 é exemplificado graficamente o
-funcionamento do algoritmo.
+O *k-Nearest Neighbor* (KNN) é um método de classificação, seu algoritmo
+de aprendizado supervisionado foi introduzido por AHA; KIBLER; ALBERT,
+1991. Ele busca os k pontos dos dados de treino mais próximos do item de
+teste. Uma classe é atrelada a esse ponto através de uma votação
+majoritária dos k pontos vizinhos. Na Figura 17 é exemplificado
+graficamente o funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image14.png)
 
@@ -1502,12 +1503,11 @@ Como apresentado (Figura 17), o algoritmo funciona mediante a disposição
 das características (atributos) X<sub>1</sub> e X<sub>2</sub> sobre um
 plano, atribuindo classes a eles (no caso: classe A e classe B). Então,
 a partir da predição do ponto de teste, baseado na distância deste para
-os demais k pontos, é encontrado a classe que o representa (TODO\_REF).
-
-Para rodar o algoritmo de classificação KNN nesse trabalho foi utilizada
-a implementação da biblioteca em *python* do *scikit-learn* encontrada
-na classe *KNeighborsClassifier* do módulo *sklearn.neighbors*
-(PEDREGOSA et al., 2011).
+os demais k pontos, é encontrado a classe que o representa. Para rodar o
+algoritmo de classificação KNN nesse trabalho foi utilizada a
+implementação da biblioteca em *python* do *scikit-learn* encontrada na
+classe *KNeighborsClassifier* do módulo *sklearn.neighbors* (PEDREGOSA
+et al., 2011).
 
 ### Preparação dos dados para o KNN
 
@@ -1530,7 +1530,7 @@ contabilizadas como registro do contexto musical, contudo não foram
 utilizadas no modelo devido ao tempo de desenvolvimento. Demais ações
 são contabilizadas no modelo e são apresentadas no Quadro 3.
 
-<span id="_Ref55256921" class="anchor"></span>Quadro Lista de ações
+<span id="_Ref55256921" class="anchor"></span>Quadro 3 Lista de ações
 possíveis nos eventos (próprio,
 2020)
 
@@ -1577,8 +1577,8 @@ representado na Figura 20.
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
 automaticamente](./pandoc/media/image16.jpg)
 
-<span id="_Ref54973321" class="anchor"></span>Figura Representação dos
-eventos salvos no Firebase (próprio, 2020)
+<span id="_Ref54973321" class="anchor"></span>Figura 19 Representação
+dos eventos salvos no Firebase (próprio, 2020)
 
 A Figura 21 traz a etapa “Separa contexto das músicas”. Na reprodução
 das músicas, são gerados tanto os eventos separadamente, quanto uma
@@ -1601,8 +1601,9 @@ tipo aconteceu durante a reprodução.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
-<span id="_Ref54973306" class="anchor"></span>Figura Representação das
-listas geradas na etapa “separa contexto das músicas” (próprio, 2020)
+<span id="_Ref54973306" class="anchor"></span>Figura 21 Representação
+das listas geradas na etapa “separa contexto das músicas” (próprio,
+2020)
 
 Nas próximas duas etapas “busca informações das músicas” e “busca
 informações dos artistas (gênero)”, é realizada uma busca nas APIs do
@@ -1614,7 +1615,7 @@ artista.
 
 ![Tabela Descrição gerada automaticamente](./pandoc/media/image19.jpg)
 
-<span id="_Ref54973298" class="anchor"></span>Figura Representação da
+<span id="_Ref54973298" class="anchor"></span>Figura 22 Representação da
 tabela na etapa “separa contexto das músicas” (próprio, 2020)
 
 Após a busca dos dados no Spotify, foi obtida a lista dos gêneros das
@@ -1687,7 +1688,7 @@ plugin Web desenvolvido nesse trabalho.
 
 ![](./pandoc/media/image21.jpeg)
 
-<span id="_Ref54973275" class="anchor"></span>Figura Visão macro do
+<span id="_Ref54973275" class="anchor"></span>Figura 24 Visão macro do
 sistema LORS (próprio, 2020)
 
 O *plugin* (representado na Figura 24 como o “App”) é responsável por a
@@ -1743,7 +1744,7 @@ apresentando os dados a base e então realizado o *transform*. Ao rodar,
 pelo *fit*. Devido a esse comportamento, os campos possuem um valor
 padrão no caso de a característica enviada não existir na base.
 
-<span id="_Ref54920412" class="anchor"></span>Quadro Campos e seus
+<span id="_Ref54920412" class="anchor"></span>Quadro 4 Campos e seus
 respectivos valores utilizados na recomendação (próprio, 2020)
 
 | Campo    | Valor padrão |
@@ -1770,7 +1771,7 @@ contenham ele no nome.
 
 ![](./pandoc/media/image22.png)
 
-<span id="_Ref54973248" class="anchor"></span>Figura Tela de
+<span id="_Ref54973248" class="anchor"></span>Figura 25 Tela de
 recomendações (próprio, 2020)
 
 No fim, é apresentado o gênero recomendado na tela, tratando o retorno
@@ -1839,8 +1840,8 @@ dos gêneros com as classes geradas para o KNN.
 | CLASSIFICAÇÃO OBTIDA | POSITIVO | 184         | 180      |
 |                      | NEGATIVO | 46          | 38       |
 
-<span id="_Ref55253627" class="anchor"></span>Tabela matriz confusão da
-classe 12, gênero musical country (próprio, 2020)
+<span id="_Ref55253627" class="anchor"></span>Tabela 2 matriz confusão
+da classe 12, gênero musical country (próprio, 2020)
 
 Para realizar uma análise mais aprofundada, foi utilizado o gênero com a
 maior quantidade de recomendações (230 itens), isso é o country (classe
@@ -1893,8 +1894,8 @@ gênero *country* ficou com valor de
 | 38                                             | 0    | 4   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
 | 39                                             | 0    | 2   | 0     | 1  | 0     | 3  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
 
-Tabela Matrix confusão do usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4
-(próprio, 2020)
+Tabela 3 Matrix confusão do usuário
+spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
 
 Com sucesso foi desenvolvido o sistema de recomendação e apresentado
 nesse capítulo, iniciou-se apresentado o algoritmo, então a preparação
@@ -1986,39 +1987,41 @@ apresentado.
 ACM. **Advanced Search**. Disponível em:
 \<https://dl.acm.org/search/advanced\>. Acesso em: 5 maio. 2020. ACM
 RECSYS COMMUNITY. **RecSys – ACM Recommender Systems**. Disponível em:
-\<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. ALIAGA, W. K.
+\<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. AHA, D. W.;
+KIBLER, D.; ALBERT, M. K. Instance-based learning algorithms. **Machine
+Learning**, v. 6, n. 1, p. 37–66, jan. 1991. ALIAGA, W. K.
 DESENVOLVIMENTO DE UM SISTEMA DE RECOMENDACÃO MUSICAL SENSÍVEL AO
-CONTEXTO. 2018. BHATNAGAR, V. Collaborative filtering using data mining
-and analysis. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming or
-stealing? The complementary features between music streaming and music
-piracy. **Journal of Retailing and Consumer Services**, v. 32, p. 86–95,
-2016. DIETMAR, J. et al. **Recommendation system -An Introduction**.
-\[s.l: s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário |
-Michaelis On-line**. Disponível em: \<https://michaelis.uol.com.br/\>.
-Acesso em: 6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**.
-\[s.l.\] MIT Press, 2019. FALK, K. Practical Recommender Systems. \[s.l:
-s.n.\]. IFPI. **IFPI Global Music Report 2019**. Disponível em:
+CONTEXTO. 2018. BHATNAGAR, V. **Collaborative filtering using data
+mining and analysis**. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming
+or stealing? The complementary features between music streaming and
+music piracy. **Journal of Retailing and Consumer Services**, v. 32, p.
+86–95, 2016. DIETMAR, J. et al. **Recommendation system -An
+Introduction**. \[s.l: s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre
+o dicionário | Michaelis On-line**. Disponível em:
+\<https://michaelis.uol.com.br/\>. Acesso em: 6 jun. 2020. ERIKSSON, M.
+et al. **Spotify Teardown**. \[s.l.\] MIT Press, 2019. FALK, K.
+**Practical Recommender Systems**. \[s.l: s.n.\]. IFPI. **IFPI Global
+Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. JOSÉ, I.
 **KNN (K-Nearest Neighbors) \#1**. Disponível em:
 \<https://medium.com/brasil-ai/knn-k-nearest-neighbors-1-e140c82e9c4e\>.
 Acesso em: 4 out. 2020. LUDEWIG, M. et al. Effective nearest-neighbor
 music recommendations. **ACM International Conference Proceeding
 Series**, 2018. LUINI, B. J. R.; WHITMAN, A. E.; DATE, P. **Streaming
-Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M. Os avanços
-tecnológicos e o futuro da humanidadeQuerendo ser Deus, , 2009. NIWA, H.
-**Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v. 134PEDREGOSA,
-F. et al. Scikit-learn: Machine Learning in {P}ython. **Journal of
-Machine Learning Research**, v. 12, p. 2825–2830, 2011. RÄTSCH, G. A
-brief introduction into machine learning. **21st Chaos Communication
-Congress**, p. 1–6, 2004. RESNICK, PAUL AND VARIAN, H. R. Recommender
-Systems. **Communications of the ACM**, v. 40, n. 4, p. 56–58, 1997.
-RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems Handbook**.
-\[s.l: s.n.\]. T.M. COVER, P. E. H. Nearest Neighbor Pattern
-Classfication. v. I, p. 1–28, 1967. TKALČIČ, M. et al. Prediction of
-music pairwise preferences from facial expressions. **International
-Conference on Intelligent User Interfaces, Proceedings IUI**, v. Part
-F1476, p. 150–159, 2019. UNIVERSIDADE FEDERAL DO CEARA. **A
-Magnetorresistência Gigante**. Disponível em:
+Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M. **Os avanços
+tecnológicos e o futuro da humanidade**Querendo ser Deus, , 2009. NIWA,
+H. **Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v.
+134PEDREGOSA, F. et al. Scikit-learn: Machine Learning in {P}ython.
+**Journal of Machine Learning Research**, v. 12, p. 2825–2830, 2011.
+RÄTSCH, G. A brief introduction into machine learning. **21st Chaos
+Communication Congress**, p. 1–6, 2004. RESNICK, PAUL AND VARIAN, H. R.
+Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
+56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
+Handbook**. \[s.l: s.n.\]. TKALČIČ, M. et al. Prediction of music
+pairwise preferences from facial expressions. **International Conference
+on Intelligent User Interfaces, Proceedings IUI**, v. Part F1476, p.
+150–159, 2019. UNIVERSIDADE FEDERAL DO CEARA. **A Magnetorresistência
+Gigante**. Disponível em:
 \<https://seara.ufc.br/tintim-por-tintim/tecnologia/a-magnetorresistencia-gigante/\>.
 Acesso em: 12 mar. 2020. VOLOKHIN, S.; AGICHTEIN, E. Towards
 intent-aware contextual music recommendation: Initial experiments.
