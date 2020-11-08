@@ -172,7 +172,7 @@ Lista de TABELAS
 
 [Tabela 3 Matrix confusão do usuário
 spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
-68](#_Ref55013706)
+68](#_Ref55011605)
 
 Lista de Abreviaturas e Siglas
 
@@ -1240,8 +1240,8 @@ As perguntas do questionário estão listadas no Quadro
 | 13\. Sua idade                                                                               |                                                                                                                                                                                                                                                                           |
 | 14\. Dicas e sugestões?                                                                      |                                                                                                                                                                                                                                                                           |
 
-Quadro 2 Perguntas e respostas disponibilizadas a um certo público
-através dos formulários do Google. (próprio, 2020)
+Quadro Perguntas e respostas disponibilizadas a um certo público através
+dos formulários do Google. (próprio, 2020)
 
 ### Pré-teste do questionário
 
@@ -1333,10 +1333,10 @@ que utilizava do SDK Web do Spotify para reprodução das músicas e
 captura dos eventos gerados pelo usuário. Ela pode ser acessada através
 do link <https://ericoloewe.github.io/computer-science-tcc/>.
 
-![](./pandoc/media/image6.png)![](./pandoc/media/image7.png)
+![](./pandoc/media/image7.png)![](./pandoc/media/image8.png)
 
-<span id="_Ref54973492" class="anchor"></span>Figura 10 A esquerda, tela
-introdutória da aplicação (próprio, 2020) Figura 11 A direita, tela de
+<span id="_Ref54973492" class="anchor"></span>Figura A esquerda, tela
+introdutória da aplicação (próprio, 2020) Figura A direita, tela de
 login da aplicação (próprio, 2020)
 
 ### Telas da aplicação
@@ -1353,11 +1353,11 @@ você está nesse momento?”. Essas perguntas tornaram realizável entender
 o contexto atual do usuário naquele período por serem divulgadas a cada
 30min.
 
-![](./pandoc/media/image8.png)![](./pandoc/media/image9.png)
+![](./pandoc/media/image9.png)![](./pandoc/media/image10.png)
 
-<span id="_Ref54973479" class="anchor"></span>Figura 12 A esquerda, tela
-de preenchimento do contexto (próprio, 2020) Figura 13 A direita, tela
-da lista de dispositivos do Spotify (próprio, 2020)
+<span id="_Ref54973479" class="anchor"></span>Figura A esquerda, tela de
+preenchimento do contexto (próprio, 2020) Figura A direita, tela da
+lista de dispositivos do Spotify (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
 reproduza as músicas no plugin. Tendo isso em mente, foi criado a tela
@@ -1385,12 +1385,12 @@ tivesse a conta, não apreciou aquele determinado estilo musical no
 contexto em si. Ele seria levado à tela de busca de música (Figura 15),
 para apresentar uma música que se identifique melhor com o momento.
 
-![](./pandoc/media/image10.png)![](./pandoc/media/image11.png)
+![](./pandoc/media/image11.png)![](./pandoc/media/image12.png)
 
-<span id="_Ref54973458" class="anchor"></span>Figura 14 A esquerda, tela
+<span id="_Ref54973458" class="anchor"></span>Figura A esquerda, tela
 principal, a qual apresenta a música sendo reproduzida ao usuário
-(próprio, 2020) Figura 15 A direita, tela de busca de músicas que
-encaixem melhor no momento (próprio, 2020)
+(próprio, 2020) Figura A direita, tela de busca de músicas que encaixem
+melhor no momento (próprio, 2020)
 
 A ação de buscar música, de ter a opção em relação a um tempo
 específico, o levaria para a tela apresentada na Figura 15,
@@ -1459,9 +1459,9 @@ JSON através do console do *Realtime Database* do Firebase. A Figura 17
 apresenta o console, a estrutura de dados dos eventos e o botão de
 exportar do *Realtime DB*.
 
-![](./pandoc/media/image12.png)
+![](./pandoc/media/image13.png)
 
-<span id="_Ref53931970" class="anchor"></span>Figura 16 Console do
+<span id="_Ref53931970" class="anchor"></span>Figura Console do
 *Realtime Database* do Firebase (próprio, 2020)
 
 Com o JSON e a estrutura de dados pronta, datou-se o início de alguns
@@ -1491,7 +1491,7 @@ atrelada a esse ponto através de uma votação majoritária dos k pontos
 vizinhos (T.M. COVER, 1967). Na Figura 17 é exemplificado graficamente o
 funcionamento do algoritmo.
 
-![Image for post](./pandoc/media/image13.png)
+![Image for post](./pandoc/media/image14.png)
 
 <span id="_Ref52742150" class="anchor"></span>Figura 17 – Representação
 gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
@@ -1529,7 +1529,7 @@ musical, contudo não foram utilizadas no modelo devido ao tempo de
 desenvolvimento. Demais ações são contabilizadas no modelo e são
 apresentadas no Quadro 3.
 
-<span id="_Ref55256921" class="anchor"></span>Quadro 3 Lista de ações
+<span id="_Ref55256921" class="anchor"></span>Quadro Lista de ações
 possíveis nos eventos (próprio,
 2020)
 
@@ -1562,7 +1562,7 @@ dicionário, do qual obtém os usuários e seus eventos e os transforma em
 outro dicionário *users*, cuja *key* é o id do usuário e o conteúdo sua
 lista de eventos.
 
-![Diagrama Descrição gerada automaticamente](./pandoc/media/image14.jpg)
+![Diagrama Descrição gerada automaticamente](./pandoc/media/image15.jpg)
 
 <span id="_Ref54973329" class="anchor"></span>Figura 18 Visão macro das
 etapas para transformar os eventos registrados no firebase na tabela que
@@ -1574,10 +1574,10 @@ criando assim, uma relação com as músicas reproduzidas. Isso está
 representado na Figura 20.
 
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
-automaticamente](./pandoc/media/image15.jpg)
+automaticamente](./pandoc/media/image16.jpg)
 
-<span id="_Ref54973321" class="anchor"></span>Figura 19 Representação
-dos eventos salvos no Firebase (próprio, 2020)
+<span id="_Ref54973321" class="anchor"></span>Figura Representação dos
+eventos salvos no Firebase (próprio, 2020)
 
 A Figura 21 traz a etapa “Separa contexto das músicas”. Na reprodução
 das músicas, são gerados tanto os eventos separadamente, quanto uma
@@ -1585,7 +1585,7 @@ relação da música escutada, com os eventos registrados - gerando, no
 fim, uma tabela semelhante à Figura 22 das músicas e seus contextos.
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
-automaticamente](./pandoc/media/image16.jpg)
+automaticamente](./pandoc/media/image17.jpg)
 
 <span id="_Ref54973316" class="anchor"></span>Figura 20 Representação
 das listas geradas na etapa “Separa contexto” (próprio, 2020)
@@ -1598,11 +1598,10 @@ relacionados ao contexto do usuário. Os contextos *like*, *hate* e
 *restart* são representados pelo número de vezes que cada um aconteceu
 durante a reprodução.
 
-![Diagrama Descrição gerada automaticamente](./pandoc/media/image17.jpg)
+![Diagrama Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
-<span id="_Ref54973306" class="anchor"></span>Figura 21 Representação
-das listas geradas na etapa “separa contexto das músicas” (próprio,
-2020)
+<span id="_Ref54973306" class="anchor"></span>Figura Representação das
+listas geradas na etapa “separa contexto das músicas” (próprio, 2020)
 
 Nas próximas duas etapas “busca informações das músicas” e “busca
 informações dos artistas (gênero)”, é realizada uma busca nas APIs do
@@ -1612,9 +1611,9 @@ realizada de 50 em 50 *uris*. O resultado dessas buscas é um dicionário
 chamado *artistsMap* que possui a relação dos uris com os dados de cada
 artista.
 
-![Tabela Descrição gerada automaticamente](./pandoc/media/image18.jpg)
+![Tabela Descrição gerada automaticamente](./pandoc/media/image19.jpg)
 
-<span id="_Ref54973298" class="anchor"></span>Figura 22 Representação da
+<span id="_Ref54973298" class="anchor"></span>Figura Representação da
 tabela na etapa “separa contexto das músicas” (próprio, 2020)
 
 Após a busca dos dados no Spotify, foi obtida a lista dos gêneros das
@@ -1630,7 +1629,7 @@ mesmos eventos através do “;” ou possui uma quantidade maior que 1 nos
 campos *like*, *hate* e *restart*. Nesse tratamento, foi quebrado os
 valores dos eventos um a um.
 
-![](./pandoc/media/image19.png)
+![](./pandoc/media/image20.png)
 
 <span id="_Ref53955795" class="anchor"></span>Figura 23 *head()* do
 *dataframe* criado a partir da variável *genreTable* (próprio, 2020)
@@ -1699,9 +1698,9 @@ o histórico de músicas reproduzidas, e entregue o resultado através de
 uma API, a qual pode ser consumida por qualquer usuário que utilize o
 plugin Web desenvolvido nesse trabalho.
 
-![Diagrama Descrição gerada automaticamente](./pandoc/media/image20.jpg)
+![Diagrama Descrição gerada automaticamente](./pandoc/media/image21.jpg)
 
-<span id="_Ref54973275" class="anchor"></span>Figura 24 Visão macro do
+<span id="_Ref54973275" class="anchor"></span>Figura Visão macro do
 sistema LORS (próprio, 2020)
 
 O *plugin* (representado na Figura 24 como o “App”) é responsável por a
@@ -1754,7 +1753,7 @@ colocadas para repetir (*restart*=1). Os campos *feeling*, *activity*,
 *location* possuem valor padrão somente no caso de a característica
 enviada não existir na base.
 
-<span id="_Ref54920412" class="anchor"></span>Quadro 4 Campos e seus
+<span id="_Ref54920412" class="anchor"></span>Quadro Campos e seus
 respectivos valores utilizados na recomendação (próprio, 2020)
 
 | Campo    | Valor padrão |
@@ -1779,9 +1778,9 @@ LORS o gênero recomendado. Com o retorno do gênero, é feita uma nova
 requisição de busca ao Spotify das principais 20 *playlists* que
 contenham ele no nome.
 
-![](./pandoc/media/image21.png)
+![](./pandoc/media/image22.png)
 
-<span id="_Ref54973248" class="anchor"></span>Figura 25 Tela de
+<span id="_Ref54973248" class="anchor"></span>Figura Tela de
 recomendações (próprio, 2020)
 
 No fim, é apresentado o gênero recomendado na tela, tratando o retorno
@@ -1797,50 +1796,31 @@ atributos presentes no conjunto de dados e visto que poderia ser
 reduzida a quantidade de gêneros (classes), então, foi realizada a
 taxonomia dos gêneros, mantendo somente os gêneros principais. Com essa
 alteração, a acurácia do algoritmo passou de 0,15 para 0,46, um
-acréscimo de 306%, mas ainda um valor de acurácia baixo.
+acréscimo de 306%, mas ainda um valor de acurácia
+baixo.
 
-| GENERO                        | CLASSE GERADA PELO LABEL ENCODER |
-| ----------------------------- | -------------------------------- |
-| arkansas country              | 0                                |
-| atl hip hop                   | 1                                |
-| australian country            | 2                                |
-| australian indie folk         | 3                                |
-| australian reggae fusion      | 4                                |
-| bandinhas                     | 5                                |
-| beatlesque                    | 6                                |
-| brazilian rock                | 7                                |
-| canadian pop punk             | 8                                |
-| canadian punk                 | 9                                |
-| canadian rock                 | 10                               |
-| channel pop                   | 11                               |
-| country                       | 12                               |
-| country dawn                  | 13                               |
-| country pop                   | 14                               |
-| country road                  | 15                               |
-| dfw rap                       | 16                               |
-| electro house                 | 17                               |
-| folk                          | 18                               |
-| harlem hip hop                | 19                               |
-| heartland rock                | 20                               |
-| hip hop                       | 21                               |
-| indie cafe pop                | 22                               |
-| melodic rap                   | 23                               |
-| metal                         | 24                               |
-| miami hip hop                 | 25                               |
-| musica gaucha                 | 26                               |
-| musica gaucha tradicionalista | 27                               |
-| musica maranhense             | 28                               |
-| neo mellow                    | 29                               |
-| nyc rap                       | 30                               |
-| oklahoma country              | 31                               |
-| pop                           | 32                               |
-| post-teen pop                 | 33                               |
-| punk                          | 34                               |
-| r\&b                          | 35                               |
-| redneck                       | 36                               |
-| rock                          | 37                               |
-| sertanejo pop                 | 38                               |
-| trap                          | 39                               |
+| GENERO                   | CLASSE GERADA PELO LABEL ENCODER | GENERO                        | CLASSE GERADA PELO LABEL ENCODER |
+| ------------------------ | -------------------------------- | ----------------------------- | -------------------------------- |
+| arkansas country         | 0                                | heartland rock                | 20                               |
+| atl hip hop              | 1                                | hip hop                       | 21                               |
+| australian country       | 2                                | indie cafe pop                | 22                               |
+| australian indie folk    | 3                                | melodic rap                   | 23                               |
+| australian reggae fusion | 4                                | metal                         | 24                               |
+| bandinhas                | 5                                | miami hip hop                 | 25                               |
+| beatlesque               | 6                                | musica gaucha                 | 26                               |
+| brazilian rock           | 7                                | musica gaucha tradicionalista | 27                               |
+| canadian pop punk        | 8                                | musica maranhense             | 28                               |
+| canadian punk            | 9                                | neo mellow                    | 29                               |
+| canadian rock            | 10                               | nyc rap                       | 30                               |
+| channel pop              | 11                               | oklahoma country              | 31                               |
+| country                  | 12                               | pop                           | 32                               |
+| country dawn             | 13                               | post-teen pop                 | 33                               |
+| country pop              | 14                               | punk                          | 34                               |
+| country road             | 15                               | r\&b                          | 35                               |
+| dfw rap                  | 16                               | redneck                       | 36                               |
+| electro house            | 17                               | rock                          | 37                               |
+| folk                     | 18                               | sertanejo pop                 | 38                               |
+| harlem hip hop           | 19                               | trap                          | 39                               |
 
 <span id="_Ref55013755" class="anchor"></span>Tabela 1 relação dos
 gêneros e a classe utilizada no KNN (próprio, 2020)
@@ -1853,40 +1833,14 @@ musical do usuário estar mais voltado aquele estilo musical. A categoria
 de número 12 pode ser encontrada na Tabela 1, que apresenta a relação
 dos gêneros com as classes geradas para o KNN.
 
-<table>
-<thead>
-<tr class="header">
-<th></th>
-<th></th>
-<th>CLASSIFICAÇÃO OBTIDA</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-<td></td>
-<td>POSITIVO</td>
-<td>NEGATIVO</td>
-</tr>
-<tr class="even">
-<td><p>CLASSE</p>
-<p>REAL</p></td>
-<td>POSITIVO</td>
-<td>184</td>
-<td>180</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>NEGATIVO</td>
-<td>46</td>
-<td>38</td>
-</tr>
-</tbody>
-</table>
+|                      |          | CLASSE REAL |          |
+| -------------------- | -------- | ----------- | -------- |
+|                      |          | POSITIVO    | NEGATIVO |
+| CLASSIFICAÇÃO OBTIDA | POSITIVO | 184         | 180      |
+|                      | NEGATIVO | 46          | 38       |
 
-<span id="_Ref55253627" class="anchor"></span>184Tabela 2 matriz
-confusão da classe 12, gênero musical country (próprio, 2020)
+<span id="_Ref55253627" class="anchor"></span>Tabela matriz confusão da
+classe 12, gênero musical country (próprio, 2020)
 
 Para realizar uma análise mais aprofundada, foi utilizado o gênero com a
 maior quantidade de recomendações (230 itens), isso é o country (classe
@@ -1901,51 +1855,46 @@ utilizado para analisar o *recall* com a precisão em uma única medida. O
 gênero *country* ficou com valor de
 0,62.
 
-|    | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12  | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 |
-| -- | - | - | - | - | - | - | - | - | - | - | -- | -- | --- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-| 0  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 1  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 2  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 1   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 3  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 4  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 5  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 9   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 6  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 7  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 8  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 9  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 2  | 0  | 0  |
-| 12 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 184 | 0  | 0  | 24 | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 17 | 0  | 0  | 0  | 0  | 4  | 0  | 0  |
-| 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 64  | 0  | 0  | 5  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 5  | 0  | 0  | 0  | 0  | 1  | 0  | 0  |
-| 16 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 17 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 4  | 0  | 0  | 0  | 0  | 0  | 3  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 2  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 18 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 19 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 21 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 5  | 0  | 0  | 0  | 0  | 0  | 10 | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 8  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 22 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 23 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 2  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 24 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 2   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 25 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 26 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 27 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 11  | 0  | 0  | 3  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 4  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 28 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 29 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 2   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 2  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 30 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 1   | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 31 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 2   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 2  | 0  | 0  |
-| 32 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 24  | 0  | 0  | 9  | 0  | 0  | 0  | 0  | 0  | 4  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 17 | 0  | 0  | 0  | 0  | 1  | 0  | 0  |
-| 33 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 2   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 34 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 35 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 1   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 36 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 37 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 55  | 0  | 0  | 4  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 10 | 0  | 0  | 0  | 0  | 2  | 0  | 0  |
-| 38 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 4   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 39 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 2   | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 3  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
+| <span id="_Ref55011605" class="anchor"></span> | **0-11** | **12** | **13-14** | **15** | **16-20** | **21** | **22-26** | **27** | **28-31** | **32** | **33-36** | **37** | **38-39** |
+| ---------------------------------------------- | -------- | ------ | --------- | ------ | --------- | ------ | --------- | ------ | --------- | ------ | --------- | ------ | --------- |
+| **0**                                          | 0        | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **1**                                          | 0        | 0      | 0         | 0      | 0         | 1      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **2**                                          | 0        | 1      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **3**                                          | 0        | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 1      | 0         | 0      | 0         |
+| **4**                                          | 0        | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **5**                                          | 0        | 9      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **6-10**                                       | 0        | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **11**                                         | 0        | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 2      | 0         |
+| **12**                                         | 0        | 184    | 0         | 24     | 0         | 1      | 0         | 0      | 0         | 17     | 0         | 4      | 0         |
+| **13-14**                                      | 0        | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **15**                                         | 0        | 64     | 0         | 5      | 0         | 1      | 0         | 0      | 0         | 5      | 0         | 1      | 0         |
+| **16**                                         | 0        | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **17**                                         | 0        | 0      | 0         | 4      | 0         | 3      | 0         | 0      | 0         | 2      | 0         | 0      | 0         |
+| **18**                                         | 0        | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **19**                                         | 0        | 0      | 0         | 1      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **20**                                         | 0        | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 1      | 0         | 0      | 0         |
+| **21**                                         | 0        | 0      | 0         | 5      | 0         | 10     | 0         | 0      | 0         | 8      | 0         | 0      | 0         |
+| **22**                                         | 0        | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **23**                                         | 0        | 0      | 0         | 2      | 0         | 1      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **24**                                         | 0        | 2      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **25**                                         | 0        | 0      | 0         | 0      | 0         | 1      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **26**                                         | 0        | 0      | 0         | 0      | 0         | 0      | 0         | 1      | 0         | 0      | 0         | 0      | 0         |
+| **27**                                         | 0        | 11     | 0         | 3      | 0         | 0      | 0         | 4      | 0         | 0      | 0         | 0      | 0         |
+| **28**                                         | 0        | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **29**                                         | 0        | 2      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 2      | 0         | 0      | 0         |
+| **30**                                         | 0        | 1      | 0         | 1      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **31**                                         | 0        | 2      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 1      | 0         | 2      | 0         |
+| **32**                                         | 0        | 24     | 0         | 9      | 0         | 4      | 0         | 0      | 0         | 17     | 0         | 1      | 0         |
+| **33**                                         | 0        | 2      | 0         | 0      | 0         | 1      | 0         | 0      | 0         | 1      | 0         | 0      | 0         |
+| **34**                                         | 0        | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 1      | 0         | 0      | 0         |
+| **35**                                         | 0        | 1      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **36**                                         | 0        | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **37**                                         | 0        | 55     | 0         | 4      | 0         | 1      | 0         | 0      | 0         | 10     | 0         | 2      | 0         |
+| **38**                                         | 0        | 4      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
+| **39**                                         | 0        | 2      | 0         | 1      | 0         | 3      | 0         | 0      | 0         | 0      | 0         | 0      | 0         |
 
-<span id="_Ref55013706" class="anchor"></span>Tabela 3 Matrix confusão
-do usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
+Tabela Matrix confusão do usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4
+(próprio, 2020)
 
 TEM QUE FINALIZAR O CAPÍTULO.
 
