@@ -1581,12 +1581,12 @@ automaticamente](./pandoc/media/image16.jpg)
 <span id="_Ref54973316" class="anchor"></span>Figura 20 Representação
 das listas geradas na etapa “Separa contexto” (próprio, 2020)
 
-Para criar essa relação, é realizado um loop em cima dos eventos de cada
-contexto, e criado uma lista chamada *musicTable*, a qual é preenchida
-com os seguintes valores: *uri*, *like*, *hate* e *restart* relacionados
-ao contexto da música e *feeling*, *activity* e *location* relacionados
-ao contexto do usuário. Os contextos *like*, *hate* e *restart* são
-representados pelo número de vezes que cada um aconteceu durante a
+Visando uma relação, é realizado um loop em cima dos eventos de cada
+contexto, criando uma lista chamada *musicTable*. Tal, preenchida dos
+seguintes valores: *uri*, *like*, *hate* e *restart,* relacionados ao
+contexto da música, e *feeling*, *activity* e *location,* relacionados
+ao contexto do usuário. Ademais, os termos *like*, *hate* e *restart*
+são representados pelo número de vezes que cada um aconteceu durante a
 reprodução.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image17.jpg)
@@ -1595,155 +1595,152 @@ reprodução.
 das listas geradas na etapa “separa contexto das músicas” (próprio,
 2020)
 
-Nas próximas duas etapas “busca informações das músicas” e “busca
-informações dos artistas (gênero)”, é realizado uma busca nas API’s do
-Spotify, utilizando os uris da música e artistas, para no fim obter os
-gêneros musicais. Devido a uma limitação do Spotify, essa busca é
-realizada de 50 em 50 uris. O resultado dessas buscas é um dicionário
-chamado *artistsMap* que possui a relação dos uris com os dados de cada
-artista.
+Nas duas etapas seguintes (“busca informações das músicas” e “busca
+informações dos artistas (gênero)”), direcioná-lo-ia, o cliente, a uma
+busca nas API’s do Spotify, utilizando os *uris* da música e artistas, a
+fim de obter os gêneros musicais. O resultado dela é um dicionário
+chamado *artistsMap* relacionando os *uris* com os dados de cada
+artista. Devido a uma limitação do Spotify, a busca se fará de 50 em 50
+uris.
 
 ![Tabela Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
 <span id="_Ref54973298" class="anchor"></span>Figura 22 Representação da
 tabela na etapa “separa contexto das músicas” (próprio, 2020)
 
-Após a busca dos dados ao Spotify, foi obtido a lista dos gêneros das
-músicas através dos artistas, e então adicionados à lista de músicas
-*musicTable* representada na Figura 22. Foi separado os gêneros um por
-linha e no fim, removido a música, pois ela iria atrapalhar o resultado
-do algoritmo. Com isso, foi criado a lista *genreTable* e deixado de
-usar o *musicTable*.
+Os dados no Spotify, nos seus devidos processos, obtiveram a lista dos
+gêneros das músicas através dos artistas. A posteriori, adiciona-o à
+lista de músicas *musicTable* representada na Figura 22. Foi separado os
+gêneros, um por linha e, no fim, removido a música, pois ela iria
+atrapalhar o resultado do algoritmo. Com isso, surgiu, propositalmente,
+a lista *genreTable*, deixando, assim, o *musicTable* em desuso.
 
-Com a tabela completa, foi realizado um tratamento dos valores dos
-eventos que eram múltiplos, isso é, continham mais de uma informação nos
-mesmos eventos através do “;” ou possui uma quantidade maior que 1 nos
-campos *like*, *hate* e *restart*. Nesse tratamento, foi quebrado os
-valores dos eventos um a um.
+Gozando da completude da tabela, principiou um tratamento dos valores
+dos eventos que eram múltiplos. Tais continham mais de uma informação
+nos mesmos eventos, através do “;” ou possuíam uma quantidade maior do
+que 1 nos campos de *like*, *hate* e *restart*. Nesse tratamento, foi
+quebrado os valores dos eventos um a um.
 
 ![](./pandoc/media/image19.png)
 
 <span id="_Ref53955795" class="anchor"></span>Figura 23 *head()* do
 *dataframe* criado a partir da variável *genreTable* (próprio, 2020)
 
-No fim, foi utilizado a lib *preprocessing* do *sklearn* para
+No fim, era necessário a lib *preprocessing* do *sklearn*, caso quisesse
 transformar as características e classes de cada evento da tabela em
-números inteiros, isso é necessário para rodar o algoritmo KNN. O
+números inteiros; isso é necessário para rodar o algoritmo KNN. O
 resultado da tabela é apresentado na Figura 23.
 
 ### Testes com KNN
 
-No final, o *genreTable* foi transformado em um *data frame* da *lib*
-pandas. Então foi realizado a separação da coluna gênero da tabela, com
-isso, obtido as variáveis X (características) e y (classes). As duas são
-utilizadas na função *train\_test\_split* para obter as características
-de treino (*X\_train*), características de teste (*X\_test*), classes de
-treino (*y\_train*) e classes de teste (*y\_test*). O tamanho da base de
-teste pode ser informado para o *train\_test\_split* através do
-parâmetro *test\_size*, que nesse caso foi 0,3.
+No final, o *genreTable,* convertido em um *data frame* da *lib* pandas,
+sofreu certa separação da coluna gênero da tabela, obtendo variáveis de
+X (características) e y (classes). As duas são utilizadas na função
+*train\_test\_split,* adquirindo, tanto características de treino
+(*X\_train*) e de teste (*X\_test*), quanto classes de treino e teste
+(*y\_train*, *y\_test*). O tamanho da base de teste pode ser informado
+para o *train\_test\_split* através do parâmetro *test\_size* que, nesse
+caso, foi de 0,3.
 
-Para rodar o KNN, foi utilizado a classe *KNeighborsClassifier* da lib
-*sklearn.neighbors*, nela, pode ser informado o número de vizinhos
-levados em consideração a partir do parâmetro *n\_neighbors*, que nesse
-caso foi 3.
+A classe *KNeighborsClassifier* da lib *sklearn.neighbors* serviu de
+base para o êxito no funcionamento do KNN. Nela, pode ser informado o
+número de vizinhos levados em consideração a partir do parâmetro
+*n\_neighbors* que, à vista disso, refere-se ao 3.
 
-Iniciando a classe, obtemos a variável *model*, com ela, informamos os
-dados de treino (*X\_train*, *y\_train*) através do método *fit*, o qual
-suporta 2 parâmetros: (i) dados de treino; (ii) valores alvo. Rodando o
-*fit*, já é possível utilizar o modelo criado para predizer os próximos
-alvos, que no *sklearn* é rodado através do método *predict*, passando
-os valores para realizar a predição (*X\_test*), que tem como retorno a
-classe que se adequa melhor ao modelo.
+Iniciando a classe, obtemos a variável *model*. Com ela, põe-se os dados
+de treino (*X\_train*, *y\_train*) através do método *fit*, de modo que
+suporte dois parâmetros: (i) dados de treino; (ii) valores alvo. Assim
+sendo, já é iminente utilizar o modelo criado em proveito de predizer os
+próximos alvos que, no *sklearn,* é rodado através do método *predict*.
+Ele transfere os valores para realizar a predição (*X\_test*), que tem
+como retorno a classe que se adequa melhor ao modelo.
 
-No fim, é realizado um teste através do método *score* na performance da
-predição do algoritmo e modelo informado ao *sklearn*. Esse método,
-recebe por parâmetro as características de teste retiradas do modelo
-(*X\_test*) e as classes de teste retiradas do modelo (*y\_test*) e
-retorna à acurácia do modelo gerado. O qual obteve uma média de 0,15 nos
-testes realizados.
+Em suma, um teste, efetuado através do método *score* na performance da
+predição do algoritmo e do modelo informado ao *sklearn*, recebeu por
+parâmetro suas constatações, retiradas no modelo (*X\_test*). As classes
+dele, retiradas do modelo (*y\_test*), retornaram à acurácia do modelo
+gerado, obtendo uma média de 0,15 nos testes realizados.
 
 ### Taxonomia dos gêneros
 
-Visando melhorar o score das recomendações, foi realizado uma busca dos
-principais gêneros musicais e a relação com seus subgêneros, para nas
-classes de predição, manter somente o principal, reduzindo assim as
-possibilidades de resultados para o algoritmo KNN. O principal objetivo
-da busca, era encontrar uma lista que supria a lista de gêneros do
-Spotify, para conseguir fazer a relação com os gêneros já existentes no
-modelo e substituir pelos gêneros base, pois o Spotify não dispõe dessa
-relação.
+Intentando manter, nas classes de predição, somente o principal do
+*score* de recomendação na sua melhoria, efetuou-se uma busca dos
+principais gêneros musicais e a relação com seus subgêneros. Isto posto,
+reduz as possibilidades de resultados para o algoritmo KNN. O objetivo
+da busca era conseguir fazer a relação com os gêneros já existentes no
+modelo e substituir pelos gêneros base, em prol de encontrar uma lista
+que suprisse a lista de gêneros do Spotify - algo que ele não dispõe.
 
-A lista a relação dos gêneros com seus subgêneros foi encontrada em um
-*showcase* do Spotify chamado Music Popcorn
-(<https://developer.spotify.com/community/showcase/music-popcorn/>). Ele
-possui uma lista de 1107 gêneros, 4 vezes menos do que o Spotify possui
-hoje, porém já auxiliou na taxonomia dos gêneros, trazendo uma redução
-de 70 para 40 classes na base do usuário de teste e melhorando o score
-de 0,15 para uma média de 0,45.
+A lista (relação dos gêneros com seus subgêneros) pôde ser identificada
+em um *showcase* que faz parte do Spotify denominado de Music Popcorn
+(<https://developer.spotify.com/community/showcase/music-popcorn/>).
+Mesmo que Ele possua uma lista de 1107 gêneros, 4 vezes menos do que o
+Spotify possui hoje, já auxiliou na taxonomia dos gêneros, trazendo uma
+redução de 70 para 40 classes na base do usuário de teste e melhorando o
+score de 0,15 para uma média de 0,45.
 
 ## Modelagem do sistema *LORS*
 
-O sistema LORS foi desenvolvido para através do conhecimento do contexto
-dos usuários, aperfeiçoar as recomendações musicais do Spotify. Nele é
+No sistema LORS, desenvolvido para, através do conhecimento do contexto
+dos usuários, aperfeiçoar as recomendações musicais do Spotify, é
 realizado a predição do gênero musical baseando-se no contexto e o
-histórico de músicas reproduzidas, e entregue o resultado através de
-uma API, a qual pode ser consumida por qualquer usuário que utilize o
-plugin Web desenvolvido nesse trabalho.
+histórico de músicas reproduzidas. O resultado correspondente passa a
+ser entregue através de uma API, podendo ser consumida por qualquer
+usuário que utilize o *plugin Web* desenvolvido nesse trabalho.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image20.jpg)
 
 <span id="_Ref54973275" class="anchor"></span>Figura 24 Visão macro do
 sistema LORS (próprio, 2020)
 
-O plugin (representado na Figura 24 como o “App”) é responsável por a
-cada 30 minutos solicitar ao usuário uma atualização de contexto, isso
-é, abrir um formulário, o qual possibilita o preenchimento do humor,
-atividades e localização atual do usuário. Essas informações serão
+O *plugin* (representado na Figura 24 como o “App”) é responsável por, a
+cada 30 minutos, solicitar ao usuário uma atualização de contexto, isso
+é, abrir um formulário. Dessa forma, ele possibilita o preenchimento do
+humor, atividades e localização atual do usuário. As informações são
 salvas e relacionadas as próximas músicas reproduzidas ou salvas pelo
 usuário.
 
-### POC (Proof of Concept)
+### POC (*Proof of Concept*)
 
-Inicialmente foi desenvolvido uma POC em *python* utilizando o *Jupyter
-Notebook*. Nela foi utilizado somente os dados do usuário que teve mais
-registros salvos na base. Todo tratamento e preparação dos dados
-apresentados na seção 4.1.2 foi realizado nessa POC.
-
-Para aperfeiçoar o uso algoritmo foram realizados testes do KNN, que
-visavam: (i) escolher o melhor número de vizinhos (*k*) para rodar o
-algoritmo; (ii) avaliar o score do modelo; (iii) analisar a matriz de
-confusão obtida no modelo.
+Na elaboração de uma POC em *python* utilizando o *Jupyter Notebook,*
+utilizou-se somente dos dados do usuário que tiveram mais registros
+salvos na base. Todo tratamento e preparação dos dados apresentados na
+seção 4.1.2 foram concebido nessa POC. Os três testes ((i) escolher o
+melhor número de vizinhos (*k*) para rodar o algoritmo; (ii) avaliar o
+score do modelo; (iii) analisar a matriz de confusão obtida no modelo.)
+serviram de apoio para o aperfeiçoamento no uso do algoritmo.
 
 ### Servidor
 
-Com a lógica desenvolvida na POC, foi realizado uma exportação do código
-para scripts *python*. Então foi desenvolvido um servidor utilizando a
-lib *Flask* e integrado o algoritmo KNN exportado à rota. Foi criado uma
-rota do tipo GET / que recebe 4 parâmetros: (i) *uri*, o *id* do Spotify
-do usuário; (ii) *feeling*, o sentimento registrado; (iii) *activity*, a
-atividade registrada; (iv) *location*, a localização registrada. A rota
-tem como retorno o gênero resultado da predição e o *score* do modelo.
+Com a lógica desenvolvida na POC, composto de uma exportação do código
+para scripts *python*, um servidor progrediu em sua criação. Tal,
+utiliza a lib *Flask* e integra o algoritmo KNN exportado à rota. A rota
+do tipo GET / elaborada recebe 4 parâmetros: (i) *uri*, o *id* do
+*Spotify* do usuário; (ii) *feeling*, o sentimento registrado; (iii)
+*activity*, a atividade registrada; (iv) *location*, a localização
+registrada. Ela também detém como retorno o gênero resultado da predição
+e o *score* do modelo.
 
 ### Hospedagem
 
-O servidor foi publicado na ferramenta disponível no Azure chamada App
-Service utilizando da conteinerização do Docker. Essa é uma ferramenta
-paga, que possibilita a publicação de servidores de diversas
-tecnologias. O link final de acesso ao servidor ficou:
+O servidor, publicado na ferramenta disponível no Azure chamada App
+Service, utilizando da conteinerização do Docker, é uma ferramenta paga.
+Esse, possibilita a publicação de servidores de diversas tecnologias. O
+link final de acesso ao servidor ficou:
 <https://lors.azurewebsites.net/>
 
 ### Recomendação
 
 No momento em que o servidor recebe uma requisição, é feito o tratamento
-dos parâmetros, isso é, transforma a *string* em um valor numérico
-através da lib *preprocessing*, e no caso da característica não existir
-anteriormente, é feito um tratamento para valores padrões conforme
-apresenta o Quadro 4. Os campos *like*, *hate* e *restart* estão com
-valores fixos devido a buscarmos músicas que foram curtidas (*like*=1),
-não foram marcadas como “Não gostei” (*hate*=0) e que foram colocadas
-para repetir (*restart*=1). Os campos *feeling*, *activity*, *location*
-possuem valor padrão somente no caso de a característica enviada não
-existir na base.
+dos parâmetros. O mesmo transforma a *string* em um valor numérico
+através da lib *preprocessing*, e, no caso da característica não
+existir anteriormente, é feito um tratamento para valores padrões
+conforme apresenta o Quadro 4. Os campos *like*, *hate* e *restart*
+estão com valores fixos devido a busca de músicas que foram curtidas
+(*like*=1), as não marcadas como “Não gostei” (*hate*=0) junto daquelas
+colocadas para repetir (*restart*=1). Os campos *feeling*, *activity*,
+*location* possuem valor padrão somente no caso de a característica
+enviada não existir na base.
 
 <span id="_Ref54920412" class="anchor"></span>Quadro 4 Campos e seus
 respectivos valores utilizados na recomendação (próprio, 2020)
@@ -1757,39 +1754,40 @@ respectivos valores utilizados na recomendação (próprio, 2020)
 | activity | 0            |
 | location | 0            |
 
-Com o modelo pronto (Seção 4.1.1), e os parâmetros tratados é realizado
-a predição através do método *predict* do modelo do *sklearn* e
-devolvido a classe resultante, isso é, o gênero resultante como resposta
-a requisição.
+Com o modelo pronto (Seção 4.1.1) e os parâmetros tratados, fez-se
+mister a predição através do método *predict* do modelo do *sklearn*,
+devolvido a classe resultante. Isso é, ter o gênero resultante como
+resposta a requisição.
 
 ### Resultado da recomendação (integração app)
 
-Tendo o servidor pronto e publicado, foi desenvolvido uma integração no
-plugin. Nela, é obtido as informações de contexto e solicitado ao LORS o
-gênero recomendado. Com o retorno do gênero, é feito uma nova requisição
-de busca ao Spotify das principais 20 *playlists* que contenham o ele no
-nome.
+Uma integração no plugin se deu como necessário no servidor pronto e
+publicado, obtendo informações de contexto e solicitando ao LORS o
+gênero recomendado. Com o retorno do gênero, é feito uma nova
+requisição de busca ao *Spotify* das principais 20 *playlists* que o
+contenham no nome.
 
 ![](./pandoc/media/image21.png)
 
 <span id="_Ref54973248" class="anchor"></span>Figura 25 Tela de
 recomendações (próprio, 2020)
 
-No fim, é apresentado o gênero recomendado na tela, tratando o retorno
-do Spotify e apresentado as *playlists* na tela (Figura 25), permitindo
-assim, que o usuário escolha uma das playlists para reproduzir.
+No fim, é apresentado o gênero recomendado na tela. Tratasse do retorno
+do *Spotify*, apresentado nas *playlists* da tela (Figura 25),
+permitindo ao usuário escolher uma das playlists para reproduzir.
 
 ### Resultados do experimento
 
-Com o modelo pronto, é importante garantir o seu funcionamento e
-precisão. Para garantir que as recomendações estão funcionando, foi
-avaliado a acurácia e a matriz de confusão do modelo.
+É importante garantir o funcionamento e a precisão do modelo já pronto.
+Para que as recomendações estejam funcionando, foi aferido a acurácia e
+a matriz de confusão do modelo.
 
-O modelo inicialmente obteve uma acurácia de 0,15, o que é muito baixo.
-Foi analisado o modelo e visto que poderiam ser diminuídos a quantidade
-de gêneros (classes), então, foi realizado a taxonomia dos gêneros,
-mantendo somente os gêneros principais. Com essa alteração, a acurácia
-do algoritmo passou de 0,15 para 0,46, um acréscimo de 306%.
+Inicialmente, ele obteve uma acurácia de 0,15, o que é muito baixo. A
+hipótese estaria na quantidade de gêneros (classes); diminuí-los poderia
+aumentar a precisão do experimento. realizar-se-ia uma taxonomia dos
+gêneros, mantendo somente os principais. Com essa alteração, a exatidão
+do algoritmo passou de 0,15 para 0,46, um acréscimo de 206%, tendo em
+vista o 0,15 como um valor total.
 
 | **GENERO**                        | **CLASSE GERADA PELO LABEL ENCODER** |
 | --------------------------------- | ------------------------------------ |
@@ -1837,12 +1835,11 @@ do algoritmo passou de 0,15 para 0,46, um acréscimo de 306%.
 <span id="_Ref55013755" class="anchor"></span>Tabela 1 relação dos
 gêneros e a classe utilizada no KNN (próprio, 2020)
 
-A matriz de confusão do usuário utilizado nos testes foi disponibilizada
-na Tabela 3 desse trabalho. Nela, é possível verificar que o modelo
-somente obteve sucesso na recomendação da categoria de número 12. Isso
-pode ter acontecido, devido ao curto período de uso da aplicação e
-devido ao gosto musical do usuário estar mais voltado aquele estilo
-musical. A categoria de número 12 pode ser encontrada na Tabela 1, que
+A matriz de confusão do usuário, a utilizada nos testes, está disponível
+na Tabela 3. Nela, é possível verificar que o modelo somente obteve
+sucesso na recomendação da categoria de número 12. Acontece devido ao
+curto período de uso da aplicação e ao gosto musical do usuário estar
+mais voltado aquele estilo musical. Encontrada na Tabela 1, ela
 apresenta a relação dos gêneros com as classes geradas para o KNN.
 
 <table>
@@ -1880,14 +1877,14 @@ apresenta a relação dos gêneros com as classes geradas para o KNN.
 <span id="_Ref55253627" class="anchor"></span>Tabela 2 matriz confusão
 da classe 12, gênero musical country (próprio, 2020)
 
-Para realizar uma análise mais aprofundada, foi utilizado o gênero com a
-maior quantidade de recomendações (230 itens), isso é o country (classe
-12). Na análise, foi criado a Tabela 2, para avaliar os dados de
-precisão, *recall* e *f-measure*. A precisão do modelo ao realizar a
-recomendação dessa classe foi de 0,51, isso mostra que o modelo está com
-dificuldades de classificar o gênero country e acaba na maioria das
-vezes interpretando como outro gênero. O recall foi de 0,80, o que
-mostra ele está colocando pouco da classe 12 em outras.
+Para uma análise mais aprofundada, o gênero de maior quantidade de
+recomendações, o de 230 itens, isso é o *country* (classe 12), teve sua
+prioridade. Pela análise, a Tabela 2 contém a avaliação dos dados de
+precisão, o *recall* e o *f-measure*. O modelo acertivo, ao realizar a
+recomendação, dessa classe é de 0,51, ou seja, está com dificuldades de
+classificar o gênero country e acaba na maioria das vezes interpretando
+como outro gênero. O recall foi de 0,80, o que mostra ele está colocando
+pouco da classe 12 em outras.
 
 Outra métrica interessante é o *f-measure*, que é utilizado para
 analisar o *recall* com a precisão em uma única medida. O gênero country
