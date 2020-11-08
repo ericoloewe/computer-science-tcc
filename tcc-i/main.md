@@ -1558,11 +1558,10 @@ A Figura 18 apresenta as etapas de preparação dos dados, desde o
 carregamento do arquivo exportado do Firebase, que contém as informações
 dos eventos, até a separação dele na forma de música. É na etapa
 “Carrega JSON” que se tem o *upload* dos dados a partir da biblioteca
-padrão do *python* “open”. Para a interpretação, existe a biblioteca
-*json*, possibilitando transformar o conteúdo *string* em um dicionário,
-do qual obtém os usuários e seus eventos e os transforma em outro
-dicionário *users*, cuja *key* é o id do usuário e o conteúdo sua lista
-de eventos.
+padrão do *python* “open”. Para a interpretação do arquivo JSON, existe
+a biblioteca *json*, que carrega os dados em um dicionário. Onde é
+obtido os usuários e seus eventos e os transforma em outro dicionário
+*users*, cuja *key* é o id do usuário e o conteúdo sua lista de eventos.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image15.jpg)
 
