@@ -780,11 +780,11 @@ Essa pesquisa apresenta técnicas de como obter as preferências de um
 usuário através de suas expressões faciais. Para isso, foi desenvolvida
 uma aplicação onde a preferência do usuário é obtida através da
 observação do seu comportamento. Cada usuário devia ouvir ao menos 10
-segundos de cada música em par apresentada e ao finalizar, poderia
-escolher qual música era mais adequada para se ouvir no ambiente
-pré-estabelecido que era seu trabalho. É nesse momento que são obtidos
-os dois contextos estudados no artigo revisado, que são: (i) as
-expressões faciais gravadas através de uma câmera; (ii) o tempo
+segundos de cada uma música das duas músicas apresentadas na tela e ao
+finalizar, poderia escolher qual música era mais adequada para se ouvir
+no ambiente pré-estabelecido que era seu trabalho. É nesse momento que
+são obtidos os dois contextos estudados no artigo revisado, que são:
+(i) as expressões faciais gravadas através de uma câmera; (ii) o tempo
 dedicado a ouvir cada música.
 
 ##### Qual o problema que ele resolveu?
@@ -1277,7 +1277,7 @@ foram utilizadas perguntas que permitam entender suas preferências,
 atividades, dentre outros fatores. As perguntas do questionário estão
 listadas no Quadro 2:
 
-<span id="_Ref48857312" class="anchor"></span>Quadro Perguntas e
+<span id="_Ref48857312" class="anchor"></span>Quadro 2 Perguntas e
 respostas disponibilizadas a um certo público através dos formulários do
 Google. (próprio,
 2020)
@@ -1451,10 +1451,10 @@ uma música que se identifique melhor naquele momento.
 
 ![](./pandoc/media/image11.png)![](./pandoc/media/image12.png)
 
-<span id="_Ref54973458" class="anchor"></span>Figura A esquerda, tela
+<span id="_Ref54973458" class="anchor"></span>Figura 14 A esquerda, tela
 principal, a qual apresenta a música sendo reproduzida ao usuário
-(próprio, 2020) Figura A direita, tela de busca de músicas que encaixem
-melhor no momento (próprio, 2020)
+(próprio, 2020) Figura 15 A direita, tela de busca de músicas que
+encaixem melhor no momento (próprio, 2020)
 
 A ação de buscar música, irá levar para a tela apresentada na Figura 15,
 a qual possibilita ao usuário apresentar uma música que se enquadre
@@ -1556,7 +1556,7 @@ graficamente o funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image14.png)
 
-<span id="_Ref52742150" class="anchor"></span>Figura – Representação
+<span id="_Ref52742150" class="anchor"></span>Figura 17 – Representação
 gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
 plano, os pontos amarelos são a representação da classe A, roxos classe
 B e vermelho é o ponto de teste (JOSÉ, 2018)
@@ -1591,7 +1591,7 @@ musical, porém não foram utilizadas no modelo devido ao tempo de
 desenvolvimento. Demais ações são contabilizadas no modelo e são
 apresentadas a seguir.
 
-<span id="_Ref55256921" class="anchor"></span>Quadro Lista de ações
+<span id="_Ref55256921" class="anchor"></span>Quadro 3 Lista de ações
 possíveis nos eventos (próprio,
 2020)
 
@@ -1626,7 +1626,7 @@ sua lista de eventos.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image15.jpg)
 
-<span id="_Ref54973329" class="anchor"></span>Figura Visão macro das
+<span id="_Ref54973329" class="anchor"></span>Figura 18 Visão macro das
 etapas para transformar os eventos registrados no firebase na tabela que
 sera rodado o KNN (próprio, 2020)
 
@@ -1638,8 +1638,8 @@ reproduzidas, que é representado na Figura 20.
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
 automaticamente](./pandoc/media/image16.jpg)
 
-<span id="_Ref54973321" class="anchor"></span>Figura Representação dos
-eventos salvos no Firebase (próprio, 2020)
+<span id="_Ref54973321" class="anchor"></span>Figura 19 Representação
+dos eventos salvos no Firebase (próprio, 2020)
 
 Na Figura 21 é representada a etapa “Separa contexto das músicas”, pois
 na reprodução das músicas, é gerado os eventos separadamente, e nessa
@@ -1650,8 +1650,8 @@ músicas e seus contextos.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image17.jpg)
 
-<span id="_Ref54973316" class="anchor"></span>Figura Representação das
-listas geradas na etapa “Separa contexto” (próprio, 2020)
+<span id="_Ref54973316" class="anchor"></span>Figura 20 Representação
+das listas geradas na etapa “Separa contexto” (próprio, 2020)
 
 Para criar essa relação é realizado um loop em cima dos eventos de cada
 contexto, e criado uma lista chamada *musicTable*, a qual é preenchida
@@ -1663,8 +1663,9 @@ reprodução.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
-<span id="_Ref54973306" class="anchor"></span>Figura Representação das
-listas geradas na etapa “separa contexto das músicas” (próprio, 2020)
+<span id="_Ref54973306" class="anchor"></span>Figura 21 Representação
+das listas geradas na etapa “separa contexto das músicas” (próprio,
+2020)
 
 Nas próximas duas etapas “busca informações das músicas” e “busca
 informações dos artistas (gênero)”, é realizado uma busca nas API’s do
@@ -1676,7 +1677,7 @@ artista.
 
 ![Tabela Descrição gerada automaticamente](./pandoc/media/image19.jpg)
 
-<span id="_Ref54973298" class="anchor"></span>Figura Representação da
+<span id="_Ref54973298" class="anchor"></span>Figura 22 Representação da
 tabela na etapa “separa contexto das músicas” (próprio, 2020)
 
 Após a busca dos dados ao Spotify, foi obtido a lista dos gêneros das
@@ -1694,7 +1695,7 @@ valores dos eventos um a um.
 
 ![](./pandoc/media/image20.png)
 
-<span id="_Ref53955795" class="anchor"></span>Figura *head()* do
+<span id="_Ref53955795" class="anchor"></span>Figura 23 *head()* do
 *dataframe* criado a partir da variável *genreTable* (próprio, 2020)
 
 No fim, foi utilizado a lib *preprocessing* do *sklearn* para
@@ -1763,7 +1764,7 @@ plugin Web desenvolvido nesse trabalho.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image21.jpg)
 
-<span id="_Ref54973275" class="anchor"></span>Figura Visão macro do
+<span id="_Ref54973275" class="anchor"></span>Figura 24 Visão macro do
 sistema LORS (próprio, 2020)
 
 O plugin (representado na Figura 24 como o “App”) é responsável por a
@@ -1816,7 +1817,7 @@ para repetir (*restart*=1). Os campos *feeling*, *activity*, *location*
 possuem valor padrão somente no caso de a característica enviada não
 existir na base.
 
-<span id="_Ref54920412" class="anchor"></span>Quadro Campos e seus
+<span id="_Ref54920412" class="anchor"></span>Quadro 4 Campos e seus
 respectivos valores utilizados na recomendação (próprio, 2020)
 
 | Campo    | Valor padrão |
@@ -1843,7 +1844,7 @@ nome.
 
 ![](./pandoc/media/image22.png)
 
-<span id="_Ref54973248" class="anchor"></span>Figura Tela de
+<span id="_Ref54973248" class="anchor"></span>Figura 25 Tela de
 recomendações (próprio, 2020)
 
 No fim, é apresentado o gênero recomendado na tela, tratando o retorno
@@ -1906,8 +1907,8 @@ do algoritmo passou de 0,15 para 0,46, um acréscimo de
 | **sertanejo pop**                 | **38**                               |
 | **trap**                          | **39**                               |
 
-<span id="_Ref55013755" class="anchor"></span>Tabela relação dos gêneros
-e a classe utilizada no KNN (próprio, 2020)
+<span id="_Ref55013755" class="anchor"></span>Tabela 1 relação dos
+gêneros e a classe utilizada no KNN (próprio, 2020)
 
 A matriz de confusão do usuário utilizado nos testes foi disponibilizada
 na Tabela 3 desse trabalho. Nela, é possível verificar que o modelo
@@ -1949,8 +1950,8 @@ apresenta a relação dos gêneros com as classes geradas para o KNN.
 </tbody>
 </table>
 
-<span id="_Ref55253627" class="anchor"></span>Tabela matriz confusão da
-classe 12, gênero musical country (próprio, 2020)
+<span id="_Ref55253627" class="anchor"></span>Tabela 2 matriz confusão
+da classe 12, gênero musical country (próprio, 2020)
 
 Para realizar uma análise mais aprofundada, foi utilizado o gênero com a
 maior quantidade de recomendações (230 itens), isso é o country (classe
@@ -2010,8 +2011,8 @@ corretamente.
 | 38 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 4   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
 | 39 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 2   | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 3  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
 
-<span id="_Ref55013706" class="anchor"></span>Tabela Matrix confusão do
-usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
+<span id="_Ref55013706" class="anchor"></span>Tabela 3 Matrix confusão
+do usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
 
 # CONCLUSÃO
 
