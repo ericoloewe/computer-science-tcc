@@ -1,4 +1,7 @@
-ÉRICO DE SOUZA LOEWE
+UNIVERSIDADE FEEVALE
+
+ÉRICO DE SOUZA
+LOEWE
 
 ##### SISTEMA DE RECOMENDAÇÃO MUSICAL BASEADO EM CONTEXTO COMPORTAMENTAL E DE AMBIENTE
 
@@ -8,7 +11,8 @@ Novo Hamburgo
 
 2020
 
-ÉRICO DE SOUZA LOEWE
+ÉRICO DE SOUZA
+LOEWE
 
 ##### SISTEMA DE RECOMENDAÇÃO MUSICAL BASEADO EM CONTEXTO COMPORTAMENTAL E DE AMBIENTE
 
@@ -194,8 +198,8 @@ contexto será obtido, através da criação um *plugin* que permitirá ao
 usuário escutar suas músicas enquanto são registrados os eventos do
 contexto vivido naquele momento.
 
-# **  
-**OBJETIVOS
+#   
+OBJETIVOS
 
 Objetivo geral
 
@@ -271,7 +275,8 @@ utilizando dados de contexto comportamental e de ambiente?
 
 # CRONOGRAMA
 
-Trabalho de Conclusão I
+Trabalho de Conclusão
+I
 
 |                                                                                            |       |     |     |     |
 | ------------------------------------------------------------------------------------------ | ----- | --- | --- | --- |

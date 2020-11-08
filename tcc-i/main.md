@@ -76,103 +76,96 @@ Recommender System. Music. Spotify.
 
 Lista de Figuras
 
-[Figura 1 - Motor avançado de busca da ACM (próprio, 2020)
-19](#_Ref40822595)
+Figura 1 - Motor avançado de busca da ACM (próprio, 2020) 19
 
 [Figura 2 - Resultado de busca dos proceedings no motor de busca da ACM
-(próprio, 2020) 20](#_Ref40822631)
+(próprio, 2020) 20](\\l)
 
 [Figura 3 - Resultado de busca dos journals no motor de busca da ACM
-(próprio, 2020) 21](#_Ref40822641)
+(próprio, 2020) 21](\\l)
 
 [Figura 4 - Etapas realizadas para filtrar os trabalhos encontrados no
-motor de busca da ACM (próprio, 2020) 21](#_Ref40822414)
+motor de busca da ACM (próprio, 2020) 21](\\l)
 
 [Figura 5 - Filtro em cima dos trabalhos selecionados através do resumo
-(próprio, 2020) 22](#_Ref40822493)
+(próprio, 2020) 22](\\l)
 
 [Figura 6 - Procedimento de filtro realizado baseado nos trabalhos
-encontrados no motor de busca da ACM (próprio, 2020) 23](#_Ref40822509)
+encontrados no motor de busca da ACM (próprio, 2020) 23](\\l)
 
-[Figura 7 Fatores da preferência musical (próprio, 2020)
-32](#_Toc55260885)
+[Figura 7 Fatores da preferência musical (próprio, 2020) 32](\\l)
 
 [Figura 8 Apresentação dos contextos utilizados no trabalho (próprio,
-2020) 38](#_Ref42447869)
+2020) 38](\\l)
 
 [Figura 9 Etapas do desenvolvimento do sistema de recomendação musical
-(próprio, 2020) 41](#_Ref42452795)
+(próprio, 2020) 41](\\l)
 
 [Figura 10 A esquerda, tela introdutória da aplicação (próprio, 2020)
-Figura 11 A direita, tela de login da aplicação (próprio, 2020)
-47](#_Ref54973492)
+Figura 11 A direita, tela de login da aplicação (próprio, 2020) 47](\\l)
 
 [Figura 12 A esquerda, tela de preenchimento do contexto (próprio, 2020)
 Figura 13 A direita, tela da lista de dispositivos do Spotify (próprio,
-2020) 48](#_Ref54973479)
+2020) 48](\\l)
 
 [Figura 14 A esquerda, tela principal, a qual apresenta a música sendo
 reproduzida ao usuário (próprio, 2020) Figura 15 A direita, tela de
-busca de músicas que encaixem melhor no momento (próprio, 2020)
-50](#_Ref54973458)
+busca de músicas que encaixem melhor no momento (próprio, 2020) 50](\\l)
 
 [Figura 16 Console do *Realtime Database* do Firebase (próprio, 2020)
-52](#_Ref53931970)
+52](\\l)
 
 [Figura 17 – Representação gráfica da classificação do algoritmo KNN
 sobre um plano x1 e x2. No plano, os pontos amarelos são a representação
-da classe A, roxos classe B e vermelho é o ponto de teste ***(JOSÉ,
-2018)*** 54](#_Ref52742150)
+da classe A, roxos classe B e vermelho é o ponto de teste (JOSÉ, 2018)
+54](\\l)
 
 [Figura 18 Visão macro das etapas para transformar os eventos
 registrados no firebase na tabela que sera rodado o KNN (próprio, 2020)
-57](#_Ref54973329)
+57](\\l)
 
 [Figura 19 Representação dos eventos salvos no Firebase (próprio, 2020)
-57](#_Ref54973321)
+57](\\l)
 
 [Figura 20 Representação das listas geradas na etapa “Separa contexto”
-(próprio, 2020) 58](#_Ref54973316)
+(próprio, 2020) 58](\\l)
 
 [Figura 21 Representação das listas geradas na etapa “separa contexto
-das músicas” (próprio, 2020) 58](#_Ref54973306)
+das músicas” (próprio, 2020) 58](\\l)
 
 [Figura 22 Representação da tabela na etapa “separa contexto das
-músicas” (próprio, 2020) 59](#_Ref54973298)
+músicas” (próprio, 2020) 59](\\l)
 
 [Figura 23 *head()* do *dataframe* criado a partir da variável
-*genreTable* (próprio, 2020) 60](#_Ref53955795)
+*genreTable* (próprio, 2020) 60](\\l)
 
-[Figura 24 Visão macro do sistema LORS (próprio, 2020)
-62](#_Ref54973275)
+[Figura 24 Visão macro do sistema LORS (próprio, 2020) 62](\\l)
 
-[Figura 25 Tela de recomendações (próprio, 2020) 65](#_Ref54973248)
+[Figura 25 Tela de recomendações (próprio, 2020) 65](\\l)
 
 Lista de Quadros
 
-[Quadro 1 Relação das funcionalidades desenvolvidas em cada artigo
-revisado 34](#_Ref42381546)
+Quadro 1 Relação das funcionalidades desenvolvidas em cada artigo
+revisado 34
 
 [Quadro 2 Perguntas e respostas disponibilizadas a um certo público
-através dos formulários do Google. (próprio, 2020) 42](#_Ref48857312)
+através dos formulários do Google. (próprio, 2020) 42](\\l)
 
-[Quadro 3 Lista de ações possíveis nos eventos (próprio, 2020)
-56](#_Ref55256921)
+[Quadro 3 Lista de ações possíveis nos eventos (próprio, 2020) 56](\\l)
 
 [Quadro 4 Campos e seus respectivos valores utilizados na recomendação
-(próprio, 2020) 64](#_Ref54920412)
+(próprio, 2020) 64](\\l)
 
 Lista de TABELAS
 
-[Tabela 1 relação dos gêneros e a classe utilizada no KNN (próprio,
-2020) 67](#_Ref55013755)
+Tabela 1 relação dos gêneros e a classe utilizada no KNN (próprio, 2020)
+67
 
 [Tabela 2 matriz confusão da classe 12, gênero musical country (próprio,
-2020) 67](#_Ref55253627)
+2020) 67](\\l)
 
 [Tabela 3 Matrix confusão do usuário
-spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
-68](#_Ref55013706)
+spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020) 68](\\l)
 
 Lista de Abreviaturas e Siglas
 
@@ -215,98 +208,85 @@ Lista de Abreviaturas e Siglas
 
 Sumário
 
-[1 Introdução 13](#introdução)
+1 Introdução 13
 
-[2 Trabalhos relacionados 17](#trabalhos-relacionados)
+[2 Trabalhos relacionados 17](\\l)
 
-[2.1 Levantamento bibliográfico inicial
-17](#levantamento-bibliográfico-inicial)
+[2.1 Levantamento bibliográfico inicial 17](\\l)
 
-[2.2 O protocolo de revisão 18](#o-protocolo-de-revisão)
+[2.2 O protocolo de revisão 18](\\l)
 
-[2.3 PROCURA NOS MOTORES DE BUSCA 19](#procura-nos-motores-de-busca)
+[2.3 PROCURA NOS MOTORES DE BUSCA 19](\\l)
 
-[2.4 ETAPAS DA REVISÃO DOS TRABALHOS
-21](#etapas-da-revisão-dos-trabalhos)
+[2.4 ETAPAS DA REVISÃO DOS TRABALHOS 21](\\l)
 
-[2.4.1 Trabalhos selecionados 22](#trabalhos-selecionados)
+[2.4.1 Trabalhos selecionados 22](\\l)
 
-[2.5 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
-33](#funcionalidades-dos-trabalhos-investigados)
+[2.5 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS 33](\\l)
 
-[2.6 Conclusões dos trabalhos revisados
-36](#conclusões-dos-trabalhos-revisados)
+[2.6 Conclusões dos trabalhos revisados 36](\\l)
 
-[3 COLETA DO CONTEXTO DOS USUARIOS 37](#coleta-do-contexto-dos-usuarios)
+[3 COLETA DO CONTEXTO DOS USUARIOS 37](\\l)
 
-[3.1 Contexto 37](#contexto)
+[3.1 Contexto 37](\\l)
 
-[3.1.1 O que é o contexto comportamental?
-38](#o-que-é-o-contexto-comportamental)
+[3.1.1 O que é o contexto comportamental? 38](\\l)
 
-[3.1.2 O que é o contexto de ambiente?
-39](#o-que-é-o-contexto-de-ambiente)
+[3.1.2 O que é o contexto de ambiente? 39](\\l)
 
-[3.1.3 Como serão obtidos os contextos?
-39](#como-serão-obtidos-os-contextos)
+[3.1.3 Como serão obtidos os contextos? 39](\\l)
 
-[3.1.4 O que são as ações do usuário?
-40](#o-que-são-as-ações-do-usuário)
+[3.1.4 O que são as ações do usuário? 40](\\l)
 
-[3.2 Pesquisa com usuários sobre recomendação musical
-40](#pesquisa-com-usuários-sobre-recomendação-musical)
+[3.2 Pesquisa com usuários sobre recomendação musical 40](\\l)
 
-[3.2.1 Pré-teste do questionário 44](#pré-teste-do-questionário)
+[3.2.1 Pré-teste do questionário 44](\\l)
 
-[3.2.2 Resultados do questionário 44](#resultados-do-questionário)
+[3.2.2 Resultados do questionário 44](\\l)
 
-[3.3 Desenvolvimento Do plugin 46](#desenvolvimento-do-plugin)
+[3.3 Desenvolvimento Do plugin 46](\\l)
 
-[3.3.1 Telas da aplicação 47](#telas-da-aplicação)
+[3.3.1 Telas da aplicação 47](\\l)
 
-[3.3.2 Tecnologias utilizadas no desenvolvimento
-51](#tecnologias-utilizadas-no-desenvolvimento)
+[3.3.2 Tecnologias utilizadas no desenvolvimento 51](\\l)
 
-[3.4 Distribuição da aplicação e coleta de dados
-51](#distribuição-da-aplicação-e-coleta-de-dados)
+[3.4 Distribuição da aplicação e coleta de dados 51](\\l)
 
-[3.4.1 Pré-teste 51](#pré-teste)
+[3.4.1 Pré-teste 51](\\l)
 
-[3.4.2 Hospedagem 52](#hospedagem)
+[3.4.2 Hospedagem 52](\\l)
 
-[3.4.3 Coleta do Firebase 52](#coleta-do-firebase)
+[3.4.3 Coleta do Firebase 52](\\l)
 
-[4 SISTEMA LORS 54](#sistema-lors)
+[4 SISTEMA LORS 54](\\l)
 
-[4.1 O Algoritmo KNN 54](#o-algoritmo-knn)
+[4.1 O Algoritmo KNN 54](\\l)
 
-[4.1.1 Preparação dos dados para o KNN
-55](#preparação-dos-dados-para-o-knn)
+[4.1.1 Preparação dos dados para o KNN 55](\\l)
 
-[4.1.2 Testes com KNN 60](#testes-com-knn)
+[4.1.2 Testes com KNN 60](\\l)
 
-[4.1.3 Taxonomia dos gêneros 61](#taxonomia-dos-gêneros)
+[4.1.3 Taxonomia dos gêneros 61](\\l)
 
-[*4.2* Modelagem do sistema *LORS* 61](#modelagem-do-sistema-lors)
+[*4.2* Modelagem do sistema *LORS* 61](\\l)
 
-[4.2.1 POC (Proof of Concept) 62](#poc-proof-of-concept)
+[4.2.1 POC (Proof of Concept) 62](\\l)
 
-[4.2.2 Servidor 62](#servidor)
+[4.2.2 Servidor 62](\\l)
 
-[4.2.3 Hospedagem 63](#hospedagem-1)
+[4.2.3 Hospedagem 63](\\l)
 
-[4.2.4 Recomendação 63](#recomendação)
+[4.2.4 Recomendação 63](\\l)
 
-[4.2.5 Resultado da recomendação (integração app)
-64](#resultado-da-recomendação-integração-app)
+[4.2.5 Resultado da recomendação (integração app) 64](\\l)
 
-[4.2.6 Resultados do experimento 65](#resultados-do-experimento)
+[4.2.6 Resultados do experimento 65](\\l)
 
-[5 CONCLUSÃO 69](#conclusão)
+[5 CONCLUSÃO 69](\\l)
 
-[5.1 Trabalhos futuros 70](#trabalhos-futuros)
+[5.1 Trabalhos futuros 70](\\l)
 
-[Referências Bibliográficas 71](#referências-bibliográficas)
+[Referências Bibliográficas 71](\\l)
 
 # Introdução
 
@@ -576,8 +556,7 @@ relacionados a *string* de busca.
 ![Tela de celular com publicação numa rede social Descrição gerada
 automaticamente](./pandoc/media/image1.png)
 
-<span id="_Ref40822595" class="anchor"></span>Figura 1 - Motor avançado
-de busca da ACM (próprio, 2020)
+Figura 1 - Motor avançado de busca da ACM (próprio, 2020)
 
 Buscando aumentar o foco da pesquisa, foram aplicados alguns filtros em
 cima da busca. Procurando trazer somente os trabalhos mais atuais
@@ -590,8 +569,8 @@ de trabalhos encontrados passou para 83.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image2.png)
 
-<span id="_Ref40822631" class="anchor"></span>Figura 2 - Resultado de
-busca dos proceedings no motor de busca da ACM (próprio, 2020)
+Figura 2 - Resultado de busca dos proceedings no motor de busca da ACM
+(próprio, 2020)
 
 Um dos principais motivos que levou essa revisão ser realizada através
 da ACM ao invés de outras plataformas de busca como IEEE, é devido ela
@@ -602,8 +581,8 @@ conferências e eventos relacionados a área. (ACM RECSYS COMMUNITY.,
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image3.png)
 
-<span id="_Ref40822641" class="anchor"></span>Figura 3 - Resultado de
-busca dos journals no motor de busca da ACM (próprio, 2020)
+Figura 3 - Resultado de busca dos journals no motor de busca da ACM
+(próprio, 2020)
 
 ## ETAPAS DA REVISÃO DOS TRABALHOS
 
@@ -611,9 +590,8 @@ Com a busca realizada no dia 07/05/20, no motor da ACM, a partir da
 *string* de busca foram encontrados 83 trabalhos, sendo eles: 23 do tipo
 *journal* e 60 do tipo *proceeding*.
 
-<span id="_Ref40822414" class="anchor"></span>Figura 4 - Etapas
-realizadas para filtrar os trabalhos encontrados no motor de busca da
-ACM (próprio, 2020)
+Figura 4 - Etapas realizadas para filtrar os trabalhos encontrados no
+motor de busca da ACM (próprio, 2020)
 
 Em cima dos 83 trabalhos encontrados, foi realizado um filtro baseado em
 3 etapas (demonstradas na Figura 4), que visam direcionar esta pesquisa
@@ -633,8 +611,8 @@ tipos e a quantidade de artigos encontrados.
 
 <span class="chart">\[CHART\]</span>
 
-<span id="_Ref40822493" class="anchor"></span>Figura 5 - Filtro em cima
-dos trabalhos selecionados através do resumo (próprio, 2020)
+Figura 5 - Filtro em cima dos trabalhos selecionados através do resumo
+(próprio, 2020)
 
 ###  Trabalhos selecionados
 
@@ -642,9 +620,8 @@ O resultado do procedimento de filtro apresentado na Figura 6 abaixo,
 resultou em 4 trabalhos relacionados ao objetivo descrito no protocolo
 de revisão desse trabalho.
 
-<span id="_Ref40822509" class="anchor"></span>Figura 6 - Procedimento de
-filtro realizado baseado nos trabalhos encontrados no motor de busca da
-ACM (próprio, 2020)
+Figura 6 - Procedimento de filtro realizado baseado nos trabalhos
+encontrados no motor de busca da ACM (próprio, 2020)
 
 Foi realizado uma revisão nesses trabalhos a qual foi apresentada nas
 próximas seções. Onde, em cada seção/artigo, foi apresentado um breve
@@ -683,7 +660,8 @@ perguntas:
 
   - Quantidade de usuários utilizada? (tamanho da base)
 
-  - Quais foram as técnicas de avaliação usadas?
+  - Quais foram as técnicas de avaliação
+usadas?
 
 ##### Tiveram outros resultados apresentados? Quais?
 
@@ -793,7 +771,8 @@ sua avaliação das músicas em par.
 
 #### Tiveram outros resultados apresentados? Quais?
 
-Não tiveram outros resultados apresentados.
+Não tiveram outros resultados
+apresentados.
 
 #### Towards Intent-Aware Contextual Music Recommendation: Initial Experiments
 
@@ -883,7 +862,8 @@ apresentado o tamanho da base utilizada nesse artigo.
 
 #### Tiveram outros resultados apresentados? Quais?
 
-Não tiveram outros resultados apresentados.
+Não tiveram outros resultados
+apresentados.
 
 #### Quantitative Study of Music Listening Behavior in a Smartphone Context
 
@@ -924,7 +904,8 @@ questões descritas anteriormente.
 #### Quais técnicas foram usadas?
 
 Essa seção está dividida nas 3 questões que o artigo revisado busca
-resolver. Em nenhuma das questões é abordado a filtragem colaborativa.
+resolver. Em nenhuma das questões é abordado a filtragem
+colaborativa.
 
 #####  Em que medida podemos prever a música que um usuário prefere ouvir em diferentes contextos de atividade (ou seja, uso de música) da vida real?
 
@@ -957,7 +938,8 @@ GPR (*Gaussian Process Regression*), mais especificamente o método
 Como a experiência da música é multidimensional, o artigo revisado busca
 extrair os atributos das músicas, e visa auxiliar o processo de
 classificação, foram utilizados o *MIRtoolbox* e o *PsySound toolbox,*
-os quais conseguem extrair os atributos musicais.
+os quais conseguem extrair os atributos
+musicais.
 
 ##### Em que medida podemos prever a atividade de um usuário a partir dos dados do sensor coletados dos *smartphones* em um contexto de um ouvinte musical da vida real?
 
@@ -970,7 +952,8 @@ A partir do aplicativo desenvolvido, foi possível obter os dados dos
 sensores utilizando o *Funf Open Sensing Framework*, e semelhante a
 classificação dos dados musicais com o contexto, para classificar as
 atividades dos usuários com os sensores foram utilizadas as técnicas de
-RBF e SVM.
+RBF e
+SVM.
 
 ##### Como fatores pessoais se correlacionam com a previsibilidade do uso de músicas e da atividade do usuário para diferentes usuários?
 
@@ -998,8 +981,7 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são apresentados na Figura 7 abaixo.
 
-<span id="_Toc55260885" class="anchor"></span>Figura 7 Fatores da
-preferência musical (próprio, 2020)
+Figura 7 Fatores da preferência musical (próprio, 2020)
 
 #### Como é obtido o contexto?
 
@@ -1037,8 +1019,8 @@ esta resposta após avaliação das técnicas que serão utilizadas, onde
 temos a seguinte legenda de símbolos: ✔ caso possua, ❌ caso não possua e
 ❓ caso não seja possível concluir o comparativo (próprio, 2020).
 
-<span id="_Ref42381546" class="anchor"></span>Quadro 1 Relação das
-funcionalidades desenvolvidas em cada artigo revisado
+Quadro 1 Relação das funcionalidades desenvolvidas em cada artigo
+revisado
 
 |                                                                           | (TKALČIČ et al., 2019) | (VOLOKHIN; AGICHTEIN, 2018) | (YANG; TENG, 2015) | (ALIAGA, 2018) | (LUDEWIG et al., 2018) | Proposta deste trabalho |
 | ------------------------------------------------------------------------- | ---------------------- | --------------------------- | ------------------ | -------------- | ---------------------- | ----------------------- |
@@ -1076,22 +1058,22 @@ estar mais voltado a uma grande divisão das classes dos *datasets*.
 (RÄTSCH, 2004) Sobrando somente o algoritmo KNN para ser testado no
 sistema desenvolvido nesse trabalho.
 
-# COLETA DO CONTEXTO DOS USUARIOS
+# COLETA DO CONTEXTO DOS USUáRIOS
 
 A partir da revisão bibliográfica realizada, foi possível conhecer
 alguns sistemas e modelos que utilizam do contexto para realizar as
-recomendações musicais, tornando possível entender certas lacunas que
+recomendações musicais, tornando realizável entender certas lacunas que
 não foram analisadas nessa área de pesquisa.
 
-Com isso, foi possível entender e desenvolver um modelo de sistemas de
-recomendação chamado *LORS* (*Loewe’s Recommender System*), que utiliza
-de uma análise recorrente do contexto, para realizar as recomendações
-dinâmicas às mudanças do contexto. Esse modelo será apresentado com mais
-detalhes no capítulo a seguir.
+Com isso, entender e desenvolver um modelo de sistemas de recomendação
+chamado *LORS* (*Loewe’s Recommender System*), que utiliza de uma
+análise recorrente do contexto, para realizar as recomendações
+dinâmicas às mudanças do contexto, passou a ser primaz e plausível.
+Esse modelo será apresentado com mais detalhes no capítulo a seguir.
 
 ## Contexto
 
-Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
+Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020),
 contexto pode ser definido por:
 
 > O conjunto de circunstâncias inter-relacionadas de cuja tessitura se
@@ -1099,29 +1081,29 @@ contexto pode ser definido por:
 > situação.
 
 Um sistema de recomendação busca encontrar os melhores itens para um
-devido fim, onde geralmente se baseia em dados históricos para
-produzi-las. Observa-se que, com o entendimento do contexto, ou conforme
-a definição das “circunstâncias que levaram a certos fatos ou
-situações”, é possível auxiliar as recomendações, aumentando o
-número de dados disponíveis para realizar uma classificação e/ou
-filtro. A Figura 9 apresenta uma visão macro dos contextos que serão
-considerados neste trabalho.
+devido fim, geralmente, baseado em dados históricos para produzi-las.
+Observa-se que, com o entendimento do contexto, ou conforme a definição
+das “circunstâncias que levaram a certos fatos ou situações”, auxiliar
+as recomendações, aumentando o número de dados disponíveis para realizar
+uma classificação e/ou filtro, já não é mais um problema. A 8Figura
+apresenta uma visão macro dos contextos que serão considerados no
+projeto.
 
-<span id="_Ref42447869" class="anchor"></span>Figura 8 Apresentação dos
-contextos utilizados no trabalho (próprio, 2020)
+Figura 8 Apresentação dos contextos utilizados no trabalho (próprio,
+2020)
 
 ### O que é o contexto comportamental?
 
-Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
+Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020),
 comportamento pode ser tido por:
 
 > Qualquer ação ou reação do organismo ou parte dele.
 
-A partir da definição de contexto, foi realizado um levantamento das
-possíveis ações a serem registradas em um sistema baseado no *app*
-Spotify, as quais, serão colocadas no questionário, e o seu resultado
-será utilizado como peso para cada ação e no futuro, auxiliar na
-recomendação musical. Esse estudo trouxe a seguinte lista de ações:
+A partir da definição de contexto, surgiu um levantamento das possíveis
+ações a serem registradas em um sistema baseado no *app* Spotify, a fim
+de as colocar no questionário. Seu resultado será utilizado como peso
+para cada ação e, no futuro, auxiliar na recomendação musical. Esse
+estudo trouxe a seguinte lista de ações:
 
   - Passar / Voltar \(n\) músicas
 
@@ -1133,34 +1115,34 @@ recomendação musical. Esse estudo trouxe a seguinte lista de ações:
 
 ### O que é o contexto de ambiente?
 
-Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
+Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020),
 ambiente pode ser tido por:
 
 > Conjunto de condições físicas, biológicas e químicas que rodeiam os
 > seres vivos e as coisas.
 
-Com essa definição, foram pesquisados sensores e informações que
+Pela citação acima, sucedeu-se pesquisas de sensores e informações que
 pudessem representar essas condições. A partir da análise dos contextos
-levantados, foi identificado 3 possíveis contextos de ambiente que podem
-ser representados na aplicação, que são: (i) Localização; (ii) Clima e;
-(iii) Reprodução musical em grupo / individual. Devido a um tempo
-limitado de desenvolvimento da aplicação só será utilizado o contexto
+levantados, a análise expôs três possíveis contextos de ambiente a ser
+representados na aplicação, determinados por: (i) Localização; (ii)
+Clima e; (iii) Reprodução musical em grupo / individual. Com finalidade
+de explicitar o produto final, o protótipo explorará apenas o serviço de
 localização.
 
 ### Como serão obtidos os contextos?
 
-Os contextos no *LORS* serão obtidos a partir da captura de formulários
-e eventos de um app. Na aplicação, será obtido contexto de duas
-maneiras: (i) explicitamente, onde o usuário irá cadastrar o que está
-fazendo. Ex.: emoções, atividades e localização. (ii) implicitamente, a
-qual será obtido através das ações do usuário realizadas no aplicativo.
-Ex.: ações sobre os componentes do app, localização.
+Obter-se-á os contextos no *LORS* a partir da captura de formulários e
+eventos de um app, aplicados, por conjuntura, de duas maneiras: (i)
+explicitamente, para o usuário cadastrar o que está fazendo. Ex.:
+emoções, atividades e localização. (ii) implicitamente, adquirido
+através das ações do usuário realizadas no aplicativo como os
+componentes do app. Ex.: sua localização.
 
 São poucas as ações que auxiliam no entendimento do contexto e que podem
 ser obtidas implicitamente, isso devido as limitações dos sensores e
-dados disponíveis na aplicação desenvolvida, por isso, o sistema que
-será desenvolvido neste trabalho, contará com informações dispostas de
-maneira explicita e implícita, sendo elas:
+dados disponíveis na aplicação desenvolvida. Por isso, o sistema deste
+trabalho contará com informações dispostas de maneira explícita e
+implícita, sendo elas:
 
 ##### Informações adquiridas de maneira implícita: 
 
@@ -1172,7 +1154,7 @@ maneira explicita e implícita, sendo elas:
 
   - músicas preferidas
 
-##### Informações adquiridas de maneira explicita: 
+##### Informações adquiridas de maneira explícita: 
 
   - localização
 
@@ -1182,41 +1164,39 @@ maneira explicita e implícita, sendo elas:
 
   - músicas preferidas
 
-Os dados de localização obtidos implicitamente são a latitude e
-longitude do usuário, eles foram salvos na aplicação, porém, devido ao
-tempo limitado para o desenvolvimento, o dado não foi utilizado. O tempo
-do obtido implicitamente é a data e hora do evento, registrado para no
-futuro poder ser aplicado um modelo sequencial junto ao KNN.
+Os dados de localização implícitos são os de latitude e longitude do
+usuário; eles foram salvos na aplicação - devido ao tempo limitado para
+o desenvolvimento, o dado não foi utilizado. Logo, o tempo implícito é a
+data e hora do evento, registrado para, no futuro, poder ser aplicado um
+modelo sequencial junto ao KNN.
 
 ### O que são as ações do usuário?
 
-As ações do usuário trazem diversas informações referentes ao contexto
-que ele está vivendo, elas auxiliam no entendimento do seu contexto e na
-validação da acuracidade das recomendações feitas. São elas que
-demonstrarão ao sistema, o gosto ou não do usuário, em cima das músicas
-recomendadas. Cada ação terá um nível de importância, a qual será obtida
-através das respostas do questionário. As possíveis ações a serem
-executadas pelo usuário estão listadas na seção 3.1.1.
+As ações do usuário trazem diversas informações referentes ao que ele
+está vivendo (auxiliando o entendimento do seu ambiente e a validação da
+acuracidade das recomendações feitas, por exemplo). São elas que
+demonstrarão ao sistema, através das músicas recomendadas, o gosto do
+usuário, se são de um determinado estilo musical ou de outro. Cada ação
+terá um nível de importância, a qual será obtida pelas respostas do
+questionário. As possíveis atividades executadas pelo usuário estão
+listadas na seção 3.1.1.
 
 ## Pesquisa com usuários sobre recomendação musical
 
-Para validar o modelo de sistema de recomendação foi desenvolvida uma
-aplicação, a qual foi distribuída aos usuários que participaram do
-questionário previamente realizado, onde foram obtidas informações sobre
-esses usuários. As etapas do desenvolvimento do *LORS* são apresentadas
-na Figura 11.
+Para validar o modelo de sistema de recomendação, criou-se uma
+aplicação, distribuída aos usuários que participaram do questionário
+previamente realizado; reunindo, assim, informações sobre esses
+usuários. As etapas do desenvolvimento do *LORS* são apresentadas na
+Figura 11.
 
-<span id="_Ref42452795" class="anchor"></span>Figura 9 Etapas do
-desenvolvimento do sistema de recomendação musical (próprio, 2020)
+Figura 9 Etapas do desenvolvimento do sistema de recomendação musical
+(próprio, 2020)
 
-As perguntas aplicadas no questionário permitiram conhecer melhor os
-usuários que utilizarão a aplicação, sendo assim, foram utilizadas
-perguntas que permitam entender suas preferências, atividades, dentre
-outros fatores. As perguntas do questionário estão listadas no Quadro 2:
-
-<span id="_Ref48857312" class="anchor"></span>Quadro Perguntas e
-respostas disponibilizadas a um certo público através dos formulários do
-Google. (próprio, 2020)
+As perguntas expostas no questionário permitirão conhecer melhor os
+usuários que utilizarão a aplicação. Sendo assim, todas as questões
+permitem entender suas preferências, atividades, dentre outros fatores.
+As perguntas do questionário estão listadas no Quadro
+2:
 
 | Pergunta                                                                                     | Possíveis respostas                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1235,131 +1215,132 @@ Google. (próprio, 2020)
 | 13\. Sua idade                                                                               |                                                                                                                                                                                                                                                                           |
 | 14\. Dicas e sugestões?                                                                      |                                                                                                                                                                                                                                                                           |
 
+Quadro 2 Perguntas e respostas disponibilizadas a um certo público
+através dos formulários do Google. (próprio, 2020)
+
 ### Pré-teste do questionário
 
-Com as perguntas do questionário definidas, foi realizada uma validação
-para garantir que elas faziam sentido. O pré-teste foi feito enviando o
-questionário para 5 pessoas, as quais tinham a responsabilidade de
-analisar as perguntas e avaliar a dificuldade de entendimento de cada
-uma das perguntas. Isso foi feito para garantir que o público que
-receberia o questionário posteriormente - o qual não está dentro do
-contexto do trabalho - conseguiria responder as perguntas com completa
-compreensão delas.
+Com as perguntas do questionário definidas, deu-se o início de uma
+validação para garantir que elas fizessem sentido. O pré-teste foi feito
+enviando as indagações para 5 pessoas, responsáveis por analisar as
+inquirições e avaliar a dificuldade de entendimento de cada uma delas. O
+intuito é garantir que o público que recebesse o questionário
+posteriormente - o qual não está dentro do contexto do trabalho - também
+conseguisse responder as perguntas com a completa compreensão delas.
 
 ### Resultados do questionário
 
-Com um alcance maior do que 1000 pessoas, sendo 800 funcionários da CWI
+Com um alcance maior do que 1000 pessoas, sendo 800 funcionários da CWI,
 que possuem acesso ao Slack, 200 pessoas alcançadas através do Instagram
 e demais divulgações que tiveram, o questionário teve uma adesão de 222
 respostas. O público respondente tinha entre 14 e 71 anos e um gosto
 musical bem diversificado, foram obtidos em torno de 60 estilos
 musicais, sendo o mais votado o Rock, com 181 marcações.
 
-O questionário foi aberto no dia 6 de julho de 2020, nesse dia foi
-realizada uma publicação no Instagram para apresentá-lo ao público, e no
-decorrer, foi enviado a outras redes sociais, como WhatsApp, Slack
-(empresarial), Twitter e Facebook. O seu fechamento foi realizado no dia
-18 de julho de 2020, somando o total de 12 dias em que o ele ficou
+O questionário foi aberto no dia 6 de julho de 2020, no mesmo dia que,
+publicado no Instagram, fora demonstrado ao público. No decorrer de duas
+semanas, outras redes sociais participaram da pesquisa, como WhatsApp,
+Slack (empresarial), Twitter e Facebook. O seu fechamento aconteceu no
+dia 18 de julho de 2020, somando o total de 12 dias em que o ele ficou
 aberto. Link para as respostas do questionário:
 <https://forms.gle/FKW5iJBhT7oEa18eA>
 
-Dos dispositivos ou aplicativos utilizados para realizar a reprodução
+Dos dispositivos (ou aplicativos) utilizados para realizar a reprodução
 das músicas, com 168 respostas, o Spotify foi o mais escolhido das
-opções, em segundo lugar ficou o Youtube com 103 respostas (variadas
+opções. Em segundo lugar ficou o Youtube com 103 respostas (variadas
 entre 86 no Youtube Music, e 17 tratando sobre o Youtube clássico).
 
 A pergunta “Você acha que as recomendações musicais realizadas via
-software poderiam ser melhoradas?” trouxe uma visão da opinião se existe
-espaço para esse trabalho evoluir as técnicas de recomendação musical, e
-a “Você acredita que o contexto poderia melhorar essas recomendações?”
-se existe espaço para o contexto do usuário evoluir essas técnicas. Com
-95% para a primeira e 96% para a segunda pergunta de respostas marcadas
-como “sim”, foi possível verificar que esse trabalho tem espaço para
-agregar qualidade às recomendações musicais.
+software poderiam ser melhoradas?” trouxe uma visão clara sobre o espaço
+para esse trabalho evoluir nas técnicas de recomendação musical.
+Enquanto aquela que dizia “Você acredita que o contexto poderia melhorar
+essas recomendações?” mostrou se havia lugar nesse contexto do usuário
+para evoluir tais técnicas. Com 95% para a primeira e 96% para a segunda
+pergunta de respostas marcadas como “sim”, foi possível verificar que
+esse trabalho pode agregar qualidade às recomendações musicais.
 
-Para aperfeiçoar a visão do trabalho das características possuem maior
-importância, foi realizado as perguntas “Em quais atividades você
-costuma ouvir música?”, “Em quais lugares você costuma ouvir músicas?” e
-“Você costuma ouvir música quando está:”. Com elas, foi possível
-conhecer de novas características (a partir do campo “outro”), e foi
-possível obter de características que mais influenciam os usuários na
-escolha de uma música.
+Para aperfeiçoar a visão do trabalho das características de maior
+importância, usou-se três indagações, que são: “Em quais atividades
+você costuma ouvir música?”, “Em quais lugares você costuma ouvir
+músicas?” e “Você costuma ouvir música quando está:”. Com elas,
+apareceram novas características (a partir do campo “outro”), assim como
+aumentou a percepção do que mais influenciam os usuários na escolha de
+uma música.
 
-Visando entender o comportamento do público, foi feito as perguntas “O
-que costuma te influenciar na escolha da música?” e “O que você faz
-quando gosta ou não de uma música?”. Dessa maneira, foi possível
-compreender as características mais importantes a serem consideradas no
-modelo e ordem da aplicação.
+Visando entender o comportamento do público, as questões “O que costuma
+te influenciar na escolha da música?” e “O que você faz quando gosta ou
+não de uma música?” foram importantíssimas. Dessa maneira, não há tanta
+dificuldade em compreender as características mais importantes a serem
+consideradas no modelo e ordem da aplicação.
 
 A pergunta “As músicas que você escuta sozinho são diferentes das que
 escuta com os amigos?” foi desenvolvida para realizar uma avaliação se a
 *feature* “amigos ou sozinho” seria desenvolvida. Devido ao tempo
 disponível para desenvolvimento, ela acabou não sendo utilizada.
 
-Para obter um conhecimento da intensidade musical do público que
-lidamos, foi feito a pergunta “Quanto tempo por semana você escuta
-música?”. Com ela foi possível entender que não era um público intenso,
-pois nas respostas, mais de 50% ouvia de 0 a 10horas por semana.
+Para obter um conhecimento da intensidade musical do público que lidamos
+relacionada ao tempo (estritamente necessário), compôs-se de “Quanto
+tempo por semana você escuta música?”. Deu para entender que não era um
+público intenso; nas respostas, mais de 50% ouvia de 0 a 10horas por
+semana.
 
-Visando realizar um Cold Start na aplicação, foi criado a pergunta
-“Quais são os gêneros musicais que gosta de escutar?”, visando colocar
-as principais respostas ao plugin. Porém, devido ao tempo limitado de
-desenvolvimento, a *feature* não foi feita.
+Um Cold Start precisaria ser construido na aplicação. Então, “Quais são
+os gêneros musicais que gosta de escutar?” seria a melhor opção, caso o
+objetivo seja colocar as principais respostas ao plugin. A *feature*
+será desenrolada no desenvolvimento do projeto.
 
 Respeitando a privacidade do público, foi feito a pergunta “Gostaria de
-participar de uma pesquisa que visa melhorar a recomendação musical?”, a
-qual, foi utilizada para filtrar somente os usuários que aceitaram ela
-para enviar o convite para participar do *plugin*.
+participar de uma pesquisa que visa melhorar a recomendação musical?”,
+filtrando assim, somente os usuários que aceitaram ela para enviar o
+convite para participar do *plugin*.
 
-A pergunta “Sua idade” foi feita para obter conhecimento do range de
-idade que estávamos lidando na aplicação, e assim, desenvolver as
-facilidades visuais necessárias conforme a idade. Durante o envio do
-questionário, o escopo do trabalho estava em aberto, por isso, foi feito
-a pergunta “Dicas e sugestões?”. Assim, foi possível obter ideias do
-público para aplicar no modelo.
+A pergunta “Sua idade” foi feita para obter conhecimento do rank de
+idade da aplicação e, assim, desenvolver as facilidades visuais
+necessárias conforme a idade. Durante o envio do questionário, o escopo
+do trabalho estava em aberto - por isso, a pergunta “Dicas e
+sugestões?”. Assim, foi possível obter ideias do público para aplicar
+no modelo.
 
 ## Desenvolvimento Do plugin
 
-Para obter os dados dos usuários, foi desenvolvido uma aplicação web que
-utilizava do SDK Web do Spotify para reprodução das músicas e captura
-dos eventos gerados pelo usuário. Ela pode ser acessada através do link
-<https://ericoloewe.github.io/computer-science-tcc/>.
+Para obter os dados dos usuários, o projeto apresenta uma aplicação web
+que utilizava do SDK Web do Spotify para reprodução das músicas e
+captura dos eventos gerados pelo usuário. Ela pode ser acessada através
+do link <https://ericoloewe.github.io/computer-science-tcc/>.
 
 ![](./pandoc/media/image6.png)![](./pandoc/media/image7.png)
 
-<span id="_Ref54973492" class="anchor"></span>Figura A esquerda, tela
-introdutória da aplicação (próprio, 2020) Figura A direita, tela de
-login da aplicação (próprio, 2020)
+Figura 10 A esquerda, tela introdutória da aplicação (próprio, 2020)
+Figura 11 A direita, tela de login da aplicação (próprio, 2020)
 
 ### Telas da aplicação
 
-A aplicação foi dividida em 5 telas, e ela inicia com a tela apresentada
-na Figura 10, a qual apresenta instruções para os usuários de como
-utilizar a aplicação. A segunda tela, é representada na Figura 11, a
-qual disponibiliza opções de login no Spotify.
+A aplicação é dividida em 5 telas, iniciada na Figura 10, a qual
+apresenta instruções para os usuários de como utilizar a aplicação e
+terminada na segunda tela, é representada pela Figura 11,
+disponibilizando opções de login no Spotify.
 
 A Figura 12 apresenta o cadastro do contexto na aplicação. O processo é
-dividido em 3 etapas: (i) “Como você está se sentindo nesse momento?”;
-(ii) “O que você está fazendo nesse momento?”; (iii) “Onde você está
-nesse momento?”. A partir dessas perguntas, é possível entender o
-contexto atual do usuário naquele período. As perguntas são realizadas a
-cada 30min.
+dividido em três etapas: (i) “Como você está se sentindo nesse
+momento?”; (ii) “O que você está fazendo nesse momento?”; (iii) “Onde
+você está nesse momento?”. Essas perguntas tornaram realizável entender
+o contexto atual do usuário naquele período por serem divulgadas a cada
+30min.
 
 ![](./pandoc/media/image8.png)![](./pandoc/media/image9.png)
 
-<span id="_Ref54973479" class="anchor"></span>Figura A esquerda, tela de
-preenchimento do contexto (próprio, 2020) Figura A direita, tela da
-lista de dispositivos do Spotify (próprio, 2020)
+Figura 12 A esquerda, tela de preenchimento do contexto (próprio, 2020)
+Figura 13 A direita, tela da lista de dispositivos do Spotify (próprio,
+2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
-reproduza as músicas no plugin. Para isso, foi criado a tela apresentada
-na Figura 13, a qual possui um botão “USAR PLUGIN PARA TOCAR MÚSICAS”
-que ao ser pressionado, habilita a reprodução no plugin.
+reproduza as músicas no plugin. Tendo isso em mente, foi criado a tela
+apresentada na Figura 13, contando com um botão “USAR PLUGIN PARA TOCAR
+MÚSICAS” que, ao ser pressionado, habilita a reprodução no plugin.
 
-Por fim, foi desenvolvido a tela principal, que é apresentado na Figura
-14. Nessa tela, é realizado toda interação do usuário no período em que
-ele está ouvindo as músicas, as possíveis interações estão listadas
-abaixo.
+Por fim, a Figura 14 exibi a tela principal suscitada. Nela, é realizado
+toda a interação do usuário no período em que ele está ouvindo as
+músicas; as possíveis interações estão listadas abaixo.
 
   - Gostar da música
 
@@ -1372,154 +1353,155 @@ abaixo.
   - Pausar / Tocar música
 
 Ao clicar no botão “gostei”, é salvo a informação de que o usuário
-gostou da música naquele contexto. Ao clicar no botão “não gostei” é
-salvo a informação que o usuário não gostou e é levado o usuário a tela
-de busca de música Figura 15, para o usuário apresentar uma música se
-identifique melhor naquele momento.
+gostou da música naquele contexto, assim como no oposto. “não gostei”
+faria o programa entender que a pessoa possuidora do produto, a que
+tivesse a conta, não apreciou aquele determinado estilo musical no
+contexto em si. Ele seria levado à tela de busca de música (Figura 15),
+para apresentar uma música que se identifique melhor com o momento.
 
 ![](./pandoc/media/image10.png)![](./pandoc/media/image11.png)
 
-<span id="_Ref54973458" class="anchor"></span>Figura A esquerda, tela
-principal, a qual apresenta a música sendo reproduzida ao usuário
-(próprio, 2020) Figura A direita, tela de busca de músicas que encaixem
-melhor no momento (próprio, 2020)
+Figura 14 A esquerda, tela principal, a qual apresenta a música sendo
+reproduzida ao usuário (próprio, 2020) Figura 15 A direita, tela de
+busca de músicas que encaixem melhor no momento (próprio, 2020)
 
-A ação de buscar música, irá levar para a tela apresentada na Figura 15,
-a qual possibilita o usuário apresentar uma música que se enquadre
-melhor no contexto que ele está vivendo. Ao selecionar as músicas e
-clicar em próximo, é salvo as informações de sua relação com o contexto
-vivido.
+A ação de buscar música, de ter a opção em relação a um tempo
+específico, o levaria para a tela apresentada na Figura 15,
+possibilitando o cliente a apresentar uma música que se enquadre ao
+melhor conteúdo musical de acordo com seus sentimentos. Ao selecionar as
+composições e clicar em próximo, é salvo as informações de sua relação
+com o contexto vivido.
 
 ### Tecnologias utilizadas no desenvolvimento
 
-Para desenvolver a aplicação web, foi utilizado a *library React* que
-auxilia na construção de componentes e interfaces. Para estilizar os
-componentes e páginas do React, foi utilizado o framework Material ui, o
-qual possui estilos prontos baseados no Material (interface do Android).
+Para desenvolver a aplicação web, utilizou-se a *library React* como
+auxílio na construção de componentes e interfaces. Com o desígnio de
+estilizar os componentes e páginas do React, houve a necessidade do
+framework Material ui, por estilos prontos baseados no Material
+(interface do Android) que possuía.
 
-Inicialmente, para persistir os eventos do usuário, foi utilizado o
-*Google Analytics* (uma ferramenta específica para eventos). Porém,
-devido à falta de customização da ferramenta, foi trocado para o
-*Realtime Database* do Firebase (*Realtime DB*), o qual possui uma vasta
-opção de customização, e tornaria possível a adição do *timestamp* a
-cada evento. Com ela foi possível persistir os eventos em um formato
-NoSQL.
+O *Google Analytics* (uma ferramenta específica para eventos) serviria
+como mecanismo para persistir os eventos do usuário. Devido à falta de
+customização dele, achou-se plausível o substituir pelo *Realtime
+Database* do Firebase (*Realtime DB*), tendo a vantagem de uma vasta
+opção de customização, o que tornaria a adição do *timestamp* a cada
+evento uma opção. Com ela foi possível persistir os eventos em um
+formato NoSQL.
 
-No início, para enviar o evento a plataforma, foi utilizado o GTM
-(Google Tag Manager) para fazer esse intermédio, porém, devido a algumas
-limitações da ferramenta, foi removido essa dependência e enviado os
-eventos diretamente do *Javascript*.
+No início, a fim de enviar o evento à plataforma, o programa contou com
+o GTM (Google Tag Manager) para fazer esse intermédio. Porém, por causa
+de algumas limitações da ferramenta, deixou-se de ter tal dependência.
+Foram enviados enviado os eventos diretamente do *Javascript*.
 
 ## Distribuição da aplicação e coleta de dados
 
-A aplicação foi disponibilizada no período do dia 28/09 até o dia 02/10
-através de um e-mail com instruções de como utilizar a aplicação, que
-foi enviado para os 144 usuários que participaram do questionário e
-optaram por participar da pesquisa. Assim, ela irá salvar os dados que
-serão utilizados como teste no modelo de classificação desenvolvido
-nesse trabalho.
+A aplicação esteve disponibilizada, do dia 28/09 até 02/10, através de
+um e-mail com instruções de como utilizar a aplicação, enviado para os
+144 usuários que participaram do questionário e optaram por participar
+da pesquisa. Assim, ela irá salvar os dados que serão utilizados como
+teste no modelo de classificação desenvolvido nesse trabalho.
 
 ### Pré-teste
 
-Com a aplicação finalizada e hospedada, foi enviado inicialmente para o
-professor orientador para validar o desenvolvimento feito. Com isso, foi
-encontrado certos ajustes a serem feitos antes de ser divulgado a
-aplicação. Então, foi corrigido a aplicação, enviado para mais 5
-pessoas testarem e novamente foi encontrado alguns pontos a serem
-corrigidos. Por fim, foi enviado o e-mail para um grupo supervisionado
-de 8 pessoas, para validar sua aceitação e entendimento do funcionamento
-da aplicação.
+Com a aplicação finalizada e hospedada, o protótipo chegou às mãos do
+professor orientador para validar o desenvolvimento feito. Nos testes
+produzidos, certos ajustes precisaram ser feitos antes de divulgar a
+aplicação. Corrigido a aplicação, cinco pessoas testaram novamente,
+encontrando mais pontos a corrigir. Enviado o e-mail a um grupo
+supervisionado de 8 pessoas, para validar sua aceitação e entendimento
+do funcionamento da aplicação, pôde-se ter uma completa verificação do
+que era e do que poderia ser o dispositivo.
 
 ### Hospedagem
 
-A aplicação foi publicada na ferramenta disponível no Github chamada
-*Github Pages*. Essa é uma ferramenta gratuita, que possibilita a
-publicação de páginas estáticas. O link final de acesso a aplicação
-ficou: <https://ericoloewe.github.io/computer-science-tcc/>
+A aplicação - publicada na ferramenta disponível no Github chamada
+*Github Pages* - é gratuita, e possibilita a divulgação de páginas
+estáticas. O link final de acesso a aplicação ficou:
+<https://ericoloewe.github.io/computer-science-tcc/>
 
 Os eventos das músicas foram salvos em outra plataforma chamada
-Firebase. Ela é uma ferramenta paga, porém, para o trabalho foi
-utilizado a versão gratuita, que suporta o acesso de até 100 usuários
-simultâneos. Demais eventos como “quantidade de usuários acessando o
-*app*” foram salvos utilizando as aplicações GTM e Google Analytics.
+Firebase, que é pago; nesse trabalho, está na versão gratuita, que
+suporta o acesso de até 100 usuários simultâneos. Demais eventos como
+“quantidade de usuários acessando o *app*” foram salvos utilizando as
+aplicações GTM e Google Analytics.
 
 ### Coleta do Firebase
 
-Ao final do experimento, foi exportado os eventos dos usuários em um
+Ao final do experimento, foram exportados os eventos dos usuários em um
 JSON através do console do *Realtime Database* do Firebase. A Figura 17
 apresenta o console, a estrutura de dados dos eventos e o botão de
 exportar do *Realtime DB*.
 
 ![](./pandoc/media/image12.png)
 
-<span id="_Ref53931970" class="anchor"></span>Figura Console do
-*Realtime Database* do Firebase (próprio, 2020)
+Figura 16 Console do *Realtime Database* do Firebase (próprio, 2020)
 
-Com o JSON e a estrutura de dados pronta, foi realizado alguns estudos
-em *python* para adquirir o conhecimento necessário para obter os dados
-necessários do Spotify e rodar o algoritmo KNN nos dados obtidos. Os
-primeiros testes do algoritmo foram realizados utilizando a base de íris
-disponível no *sklearn*, e então, após obter o conhecimento do
-funcionamento do algoritmo no *python*, foi aplicado o mesmo sobre a
-base extraída e preparada do JSON.
+Com o JSON e a estrutura de dados pronta, datou-se o início de alguns
+estudos em *python* para adquirir o conhecimento necessário e obter os
+dados necessários do Spotify, rodando assim, o algoritmo KNN nos dados
+obtidos. Os primeiros testes do algoritmo utilizaram a base de íris
+disponível no *sklearn*. Após obter o conhecimento do funcionamento do
+algoritmo no *python*, foi aplicado o mesmo sobre a base extraída e
+preparada do JSON.
 
 # SISTEMA LORS
 
-Com a estrutura dos dados pronta e o levantamento dos dados dos
-usuários, foi feito um tratamento dos dados e realizado um estudo das
-técnicas de recomendação levantadas nos trabalhos anteriores. Com isso,
-foi modelado o sistema LORS, que utiliza de uma análise recorrente do
-contexto, para realizar as recomendações dinâmicas às mudanças do
-contexto. Serão apresentadas mais informações das etapas de modelagem e
-desenvolvimento do sistema nas seções a seguir.
+Com a estrutura dos dados pronta e a pesquisa dos dados dos usuários,
+levantou-se um tratamento específico para cada informação, realizando,
+dessa forma, um estudo das técnicas de recomendação postas nos trabalhos
+anteriores. Com isso, surgiu o modelo do sistema LORS, que utiliza de
+uma análise recorrente do contexto, para realizar as recomendações
+dinâmicas às mudanças do contexto. Serão apresentadas mais informações
+das etapas de modelagem e desenvolvimento do sistema nas seções a
+seguir.
 
 ## O Algoritmo KNN
 
 O *k-Nearest Neighbor* (KNN) é um método de classificação que busca os k
-pontos dos dados de treino mais pertos do ponto de teste, e então, uma
-classe é atrelada a esse ponto através de uma votação majoritária dos k
-pontos vizinhos. (T.M. COVER, 1967) Na Figura 17 é exemplificado
-graficamente o funcionamento do algoritmo.
+pontos dos dados de treino mais próximos do item de teste. Uma classe é
+atrelada a esse ponto através de uma votação majoritária dos k pontos
+vizinhos (T.M. COVER, 1967). Na Figura 17 é exemplificado graficamente o
+funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image13.png)
 
-<span id="_Ref52742150" class="anchor"></span>Figura – Representação
-gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
-plano, os pontos amarelos são a representação da classe A, roxos classe
-B e vermelho é o ponto de teste ***(JOSÉ, 2018)***
+Figura 17 – Representação gráfica da classificação do algoritmo KNN
+sobre um plano x1 e x2. No plano, os pontos amarelos são a representação
+da classe A, roxos classe B e vermelho é o ponto de teste (JOSÉ, 2018)
 
-Como é apresentado na Figura 17 o algoritmo funciona através da
-disposição das características x1 e x2 sobre um plano, e atribuindo
-classes a eles (no caso: classe A e classe B), então, a partir da
-predição do ponto de teste é encontrado a classe que o representa.
-(TODO\_REF)
+Como apresentado (Figura 17), o algoritmo funciona mediante a disposição
+das características (atributos) X<sub>1</sub> e X<sub>2</sub> sobre um
+plano, atribuindo classes a eles (no caso: classe A e classe B). Então,
+a partir da predição do ponto de teste, baseado na distância deste para
+os demais k pontos, é encontrado a classe que o representa (TODO\_REF).
 
-Para rodar o algoritmo de classificação nesse trabalho será utilizado a
-implementação da biblioteca em *python* do *scikit-learn.* A qual se
-encontra na classe *KNeighborsClassifier* do modulo *sklearn.neighbors.*
-(PEDREGOSA et al., 2011)
+Para rodar o algoritmo de classificação KNN nesse trabalho foi utilizada
+a implementação da biblioteca em *python* do *scikit-learn* encontrada
+na classe *KNeighborsClassifier* do módulo *sklearn.neighbors*
+(PEDREGOSA et al., 2011).
 
 ### Preparação dos dados para o KNN
 
-Para salvar os eventos da aplicação, foi criado uma lista chamada
-*events*, essa lista é composta pela lista de usuários, onde cada
-usuário possui a lista de eventos dentro. Cada eventos é composto pela
+Planejando salvar os eventos da aplicação, uma lista chamada *events*,
+composta pelo catálogo de usuários, onde cada usuário possui uma lista
+de eventos dentro, teve sua concepção. Cada evento é composto pela
 seguinte estrutura: (i) *action*, ação realizada pelo usuário,
-apresentadas no Quadro 3; (ii) *createdDateTime*, data da execução do
-evento; (iii) *value*, valores do evento separados por “;”.
+apresentadas no Quadro 3; (ii) *createdDateTime*, data e tempo da
+execução do evento; (iii) *value*, valores do evento separados por
+“;”.
 
-A ação LOAD\_LOCATION foi ignorada nesse momento no sistema e irá ficar
-como um trabalho futuro. As ações CHANGE\_MUSIC\_TIME,
+A ação LOAD\_LOCATION foi ignorada nesse momento no sistema e se tornará
+um trabalho futuro. Já as ações CHANGE\_MUSIC\_TIME,
 CHOOSE\_FEELING\_TO\_BE\_LIKE, LIKED\_ARTIST, LIKED\_GENRE, ficaram nos
-eventos do plugin, mas não serão utilizadas devido a uma limitação no
-tempo de desenvolvimento. As ações HIDE\_DETAILS, PAUSE\_MUSIC,
+eventos do *plugin*, mesmo que não sejam utilizadas devido ao tempo
+limitado de desenvolvimento. As ações HIDE\_DETAILS, PAUSE\_MUSIC,
 PLAY\_MUSIC, SHOW\_DETAILS são contabilizadas como registro do contexto
-musical, porém não foram utilizadas no modelo devido ao tempo de
+musical, contudo não foram utilizadas no modelo devido ao tempo de
 desenvolvimento. Demais ações são contabilizadas no modelo e são
-apresentadas a seguir.
+apresentadas no Quadro 3.
 
-<span id="_Ref55256921" class="anchor"></span>Quadro Lista de ações
-possíveis nos eventos (próprio, 2020)
+Quadro 3 Lista de ações possíveis nos eventos (próprio,
+2020)
 
 | Ação (Action)                 | Descrição                                     |
 | ----------------------------- | --------------------------------------------- |
@@ -1541,75 +1523,72 @@ possíveis nos eventos (próprio, 2020)
 | RESTART\_MUSIC                | Reiniciou a música                            |
 | SHOW\_DETAILS                 | Abriu os detalhes da música                   |
 
-A Figura 18 apresenta as etapas de preparação dos dados desde o
-carregamento dos dados do arquivo. Na etapa “Carrega JSON” foi realizado
-o carregamento do arquivo a partir da biblioteca padrão do *python*
-“open”. Para a interpretação, foi utilizado a biblioteca *json*, que
-possibilita transformar o conteúdo *string* em um dicionário. Do
-dicionário, foi obtido os usuários e seus eventos e transformado em
-outro dicionário *users*, cujo a *key* é o id do usuário e o conteúdo
-sua lista de eventos.
+A Figura 18 apresenta as etapas de preparação dos dados, desde o
+carregamento do arquivo até a separação dele na forma de música. É na
+etapa “Carrega JSON” que se tem o *upload* dos dados a partir da
+biblioteca padrão do *python* “open”. Para a interpretação, existe a
+biblioteca *json*, possibilitando transformar o conteúdo *string* em um
+dicionário, do qual obtém os usuários e seus eventos e os transforma em
+outro dicionário *users*, cuja *key* é o id do usuário e o conteúdo sua
+lista de eventos.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image14.jpg)
 
-<span id="_Ref54973329" class="anchor"></span>Figura Visão macro das
-etapas para transformar os eventos registrados no firebase na tabela que
-sera rodado o KNN (próprio, 2020)
+Figura 18 Visão macro das etapas para transformar os eventos registrados
+no firebase na tabela que sera rodado o KNN (próprio, 2020)
 
-Na segunda etapa “Separa Contexto”, representada na Figura 19, é
-realizado a quebra dos eventos de cada usuário por seus contextos.
-Criando assim, uma relação de cada contexto, com as músicas
-reproduzidas, que é representado na Figura 20.
+Na segunda etapa “Separa Contexto”, representada pela Figura 19, é
+realizada a quebra dos eventos de cada usuário por seus contextos,
+criando assim, uma relação com as músicas reproduzidas. Isso está
+representado na Figura 20.
 
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
 automaticamente](./pandoc/media/image15.jpg)
 
-<span id="_Ref54973321" class="anchor"></span>Figura Representação dos
-eventos salvos no Firebase (próprio, 2020)
+Figura 19 Representação dos eventos salvos no Firebase (próprio, 2020)
 
-Na Figura 21 é representada a etapa “Separa contexto das músicas”, pois
-na reprodução das músicas, é gerado os eventos separadamente, e nessa
-etapa, é criado uma relação da música escutada, com os eventos
-registrados, gerando no fim, uma tabela semelhante a Figura 22 das
-músicas e seus contextos.
+A Figura 21 traz a etapa “Separa contexto das músicas”. Na reprodução
+das músicas, são gerados tanto os eventos separadamente, quanto uma
+relação da música escutada, com os eventos registrados - gerando, no
+fim, uma tabela semelhante à Figura 22 das músicas e seus contextos.
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image16.jpg)
 
-<span id="_Ref54973316" class="anchor"></span>Figura Representação das
-listas geradas na etapa “Separa contexto” (próprio, 2020)
+Figura 20 Representação das listas geradas na etapa “Separa contexto”
+(próprio, 2020)
 
-Para criar essa relação é realizado um loop em cima dos eventos de cada
+Para criar essa relação, é realizado um loop em cima dos eventos de cada
 contexto, e criado uma lista chamada *musicTable*, a qual é preenchida
-com os seguintes valores: *uri*, *like*, *hate* e *restart* relacionados
-ao contexto da música e *feeling*, *activity* e *location* relacionados
-ao contexto do usuário. Os contextos *like*, *hate* e *restart* são
-representados pelo número de vezes que cada um aconteceu durante a
-reprodução.
+com os seguintes valores: *uri*, *like*, *hate* e *restart,*
+relacionados ao contexto da música, e *feeling*, *activity* e *location*
+relacionados ao contexto do usuário. Os contextos *like*, *hate* e
+*restart* são representados pelo número de vezes que cada um aconteceu
+durante a reprodução.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image17.jpg)
 
-<span id="_Ref54973306" class="anchor"></span>Figura Representação das
-listas geradas na etapa “separa contexto das músicas” (próprio, 2020)
+Figura 21 Representação das listas geradas na etapa “separa contexto das
+músicas” (próprio, 2020)
 
 Nas próximas duas etapas “busca informações das músicas” e “busca
-informações dos artistas (gênero)”, é realizado uma busca nas API’s do
-Spotify, utilizando os uris da música e artistas, para no fim obter os
+informações dos artistas (gênero)”, é realizada uma busca nas APIs do
+Spotify, utilizando os *uris* da música e artistas, para no fim obter os
 gêneros musicais. Devido a uma limitação do Spotify, essa busca é
-realizada de 50 em 50 uris. O resultado dessas buscas é um dicionário
+realizada de 50 em 50 *uris*. O resultado dessas buscas é um dicionário
 chamado *artistsMap* que possui a relação dos uris com os dados de cada
 artista.
 
 ![Tabela Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
-<span id="_Ref54973298" class="anchor"></span>Figura Representação da
-tabela na etapa “separa contexto das músicas” (próprio, 2020)
+Figura 22 Representação da tabela na etapa “separa contexto das músicas”
+(próprio, 2020)
 
-Após a busca dos dados ao Spotify, foi obtido a lista dos gêneros das
+Após a busca dos dados no Spotify, foi obtida a lista dos gêneros das
 músicas através dos artistas, e então adicionados à lista de músicas
-*musicTable* representada na Figura 22. Foi separado os gêneros um por
-linha e no fim, removido a música, pois ela iria atrapalhar o resultado
-do algoritmo. Com isso, foi criado a lista *genreTable* e deixado de
+*musicTable* representada na Figura 22. Foram separados os gêneros por
+linha e no fim, removida a música, pois ela iria atrapalhar o resultado
+do algoritmo. Com isso, foi criada a lista *genreTable* e deixado de
 usar o *musicTable*.
 
 Com a tabela completa, foi realizado um tratamento dos valores dos
@@ -1620,57 +1599,57 @@ valores dos eventos um a um.
 
 ![](./pandoc/media/image19.png)
 
-<span id="_Ref53955795" class="anchor"></span>Figura *head()* do
-*dataframe* criado a partir da variável *genreTable* (próprio, 2020)
+Figura 23 *head()* do *dataframe* criado a partir da variável
+*genreTable* (próprio, 2020)
 
-No fim, foi utilizado a lib *preprocessing* do *sklearn* para
+No fim, foi utilizada a biblioteca *preprocessing* do *sklearn* para
 transformar as características e classes de cada evento da tabela em
 números inteiros, isso é necessário para rodar o algoritmo KNN. O
 resultado da tabela é apresentado na Figura 23.
 
 ### Testes com KNN
 
-No final, o *genreTable* foi transformado em um *data frame* da *lib*
-pandas. Então foi realizado a separação da coluna gênero da tabela, com
-isso, obtido as variáveis X (características) e y (classes). As duas são
-utilizadas na função *train\_test\_split* para obter as características
-de treino (*X\_train*), características de teste (*X\_test*), classes de
-treino (*y\_train*) e classes de teste (*y\_test*). O tamanho da base de
-teste pode ser informado para o *train\_test\_split* através do
-parâmetro *test\_size*, que nesse caso foi 0,3.
+No final, o *genreTable* foi transformado em um *data frame* da
+biblioteca pandas. Então foi realizada a separação da coluna gênero da
+tabela, com isso, obtendo as variáveis X (características) e y
+(classes). As duas são utilizadas na função *train\_test\_split* para
+obter as características de treino (*X\_train*), características de
+teste (*X\_test*), classes de treino (*y\_train*) e classes de teste
+(*y\_test*). O tamanho da base de teste pode ser informado para o
+*train\_test\_split* através do parâmetro *test\_size*, que nesse caso
+foi 0,3 (30% de teste e 70% de treinamento).
 
-Para rodar o KNN, foi utilizado a classe *KNeighborsClassifier* da lib
-*sklearn.neighbors*, nela, pode ser informado o número de vizinhos
-levados em consideração a partir do parâmetro *n\_neighbors*, que nesse
-caso foi 3.
+Para rodar o KNN foi utilizada a classe *KNeighborsClassifier* da
+biblioteca *sklearn.neighbors*. Nela, pode ser informado o número de
+vizinhos levados em consideração a partir do parâmetro *n\_neighbors*,
+que nesse caso foi 3.
 
 Iniciando a classe, obtemos a variável *model*, com ela, informamos os
 dados de treino (*X\_train*, *y\_train*) através do método *fit*, o qual
 suporta 2 parâmetros: (i) dados de treino; (ii) valores alvo. Rodando o
-*fit*, já é possível utilizar o modelo criado para predizer os próximos
-alvos, que no *sklearn* é rodado através do método *predict*, passando
-os valores para realizar a predição (*X\_test*), que tem como retorno a
-classe que se adequa melhor ao modelo.
+método *fit*, já é possível utilizar o melhor k analisado, para predizer
+os próximos alvos, que no *sklearn* é rodado através do método
+*predict*, passando os valores para realizar a predição (*X\_test*), que
+tem como retorno a classe que se adequa melhor aos dados de teste.
 
 No fim, é realizado um teste através do método *score* na performance da
-predição do algoritmo e modelo informado ao *sklearn*. Esse método,
-recebe por parâmetro as características de teste retiradas do modelo
-(*X\_test*) e as classes de teste retiradas do modelo (*y\_test*) e
-retorna à acurácia do modelo gerado. O qual obteve uma média de 0,15 nos
-testes realizados.
+predição do algoritmo KNN. Esse método, recebe por parâmetro as
+características de teste retiradas de *X\_test* e as classes de teste
+retiradas de (*y\_test*) e retorna a acurácia do algoritmo KNN. Ele
+obteve uma acurácia de 0,15 nos testes realizados.
 
 ### Taxonomia dos gêneros
 
-Visando melhorar o score das recomendações, foi realizado uma busca dos
-principais gêneros musicais e a relação com seus subgêneros, para nas
-classes de predição, manter somente o principal, reduzindo assim as
-possibilidades de resultados para o algoritmo KNN. O principal objetivo
-da busca, era encontrar uma lista que supria a lista de gêneros do
-Spotify, para conseguir fazer a relação com os gêneros já existentes no
-modelo e substituir pelos gêneros base, pois o Spotify não dispõe dessa
-relação.
+Visando melhorar a acurácia das recomendações, foi realizada uma busca
+dos principais gêneros musicais e a relação com seus subgêneros, para
+nas classes de predição, manter somente o gênero principal, reduzindo
+assim as possibilidades de resultados para classes no algoritmo KNN. O
+principal objetivo da busca, era encontrar uma lista que supria a lista
+de gêneros do Spotify, para conseguir fazer a relação com os gêneros já
+existentes no modelo e substituir pelos gêneros base, pois o Spotify não
+dispõe dessa relação.
 
-A lista a relação dos gêneros com seus subgêneros foi encontrada em um
+A lista da relação dos gêneros com seus subgêneros foi encontrada em um
 *showcase* do Spotify chamado Music Popcorn
 (<https://developer.spotify.com/community/showcase/music-popcorn/>). Ele
 possui uma lista de 1107 gêneros, 4 vezes menos do que o Spotify possui
@@ -1680,23 +1659,22 @@ de 0,15 para uma média de 0,45.
 
 ## Modelagem do sistema *LORS*
 
-O sistema LORS foi desenvolvido para através do conhecimento do contexto
-dos usuários, aperfeiçoar as recomendações musicais do Spotify. Nele é
-realizado a predição do gênero musical baseando-se no contexto e o
-histórico de músicas reproduzidas, e entregue o resultado através de
+O sistema LORS foi desenvolvido para, através do conhecimento do
+contexto dos usuários, aperfeiçoar as recomendações musicais do Spotify.
+Nele é realizada a predição do gênero musical baseando-se no contexto e
+o histórico de músicas reproduzidas, e entregue o resultado através de
 uma API, a qual pode ser consumida por qualquer usuário que utilize o
 plugin Web desenvolvido nesse trabalho.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image20.jpg)
 
-<span id="_Ref54973275" class="anchor"></span>Figura Visão macro do
-sistema LORS (próprio, 2020)
+Figura 24 Visão macro do sistema LORS (próprio, 2020)
 
-O plugin (representado na Figura 24 como o “App”) é responsável por a
+O *plugin* (representado na Figura 24 como o “App”) é responsável por a
 cada 30 minutos solicitar ao usuário uma atualização de contexto, isso
 é, abrir um formulário, o qual possibilita o preenchimento do humor,
 atividades e localização atual do usuário. Essas informações serão
-salvas e relacionadas as próximas músicas reproduzidas ou salvas pelo
+salvas e relacionadas às próximas músicas reproduzidas ou salvas pelo
 usuário.
 
 ### POC (Proof of Concept)
@@ -1713,37 +1691,37 @@ confusão obtida no modelo.
 
 ### Servidor
 
-Com a lógica desenvolvida na POC, foi realizado uma exportação do código
+Com a lógica desenvolvida na POC, foi realizada uma exportação do código
 para scripts *python*. Então foi desenvolvido um servidor utilizando a
-lib *Flask* e integrado o algoritmo KNN exportado à rota. Foi criado uma
-rota do tipo GET / que recebe 4 parâmetros: (i) *uri*, o *id* do Spotify
-do usuário; (ii) *feeling*, o sentimento registrado; (iii) *activity*, a
-atividade registrada; (iv) *location*, a localização registrada. A rota
-tem como retorno o gênero resultado da predição e o *score* do modelo.
+biblioteca *Flask* e integrado o algoritmo KNN exportado à rota. Foi
+criado uma rota do tipo GET / que recebe 4 parâmetros: (i) *uri*, o *id*
+do Spotify do usuário; (ii) *feeling*, o sentimento registrado; (iii)
+*activity*, a atividade registrada; (iv) *location*, a localização
+registrada. A rota tem como retorno o gênero resultado da predição e a
+acurácia do algoritmo KNN.
 
 ### Hospedagem
 
 O servidor foi publicado na ferramenta disponível no Azure chamada App
-Service utilizando da conteinerização do Docker. Essa é uma ferramenta
-paga, que possibilita a publicação de servidores de diversas
-tecnologias. O link final de acesso ao servidor ficou:
-<https://lors.azurewebsites.net/>
+Service utilizando *container* Docker. Essa é uma ferramenta paga, que
+possibilita a publicação de servidores de diversas tecnologias. O link
+final de acesso ao servidor ficou: <https://lors.azurewebsites.net/>
 
 ### Recomendação
 
 No momento em que o servidor recebe uma requisição, é feito o tratamento
 dos parâmetros, isso é, transforma a *string* em um valor numérico
-através da lib *preprocessing*, e no caso da característica não existir
-anteriormente, é feito um tratamento para valores padrões conforme
-apresenta o Quadro 4. Os campos *like*, *hate* e *restart* estão com
-valores fixos devido a buscarmos músicas que foram curtidas (*like*=1),
-não foram marcadas como “Não gostei” (*hate*=0) e que foram colocadas
-para repetir (*restart*=1). Os campos *feeling*, *activity*, *location*
-possuem valor padrão somente no caso de a característica enviada não
-existir na base.
+através da biblioteca *preprocessing*, e no caso da característica não
+existir anteriormente, é feito um tratamento para valores padrões,
+conforme apresenta o Quadro 4. Os campos *like*, *hate* e *restart*
+estão com valores fixos devido a buscarmos músicas que foram curtidas
+(*like*=1), não foram marcadas como “Não gostei” (*hate*=0) e que foram
+colocadas para repetir (*restart*=1). Os campos *feeling*, *activity*,
+*location* possuem valor padrão somente no caso de a característica
+enviada não existir na base.
 
-<span id="_Ref54920412" class="anchor"></span>Quadro Campos e seus
-respectivos valores utilizados na recomendação (próprio, 2020)
+Quadro 4 Campos e seus respectivos valores utilizados na recomendação
+(próprio, 2020)
 
 | Campo    | Valor padrão |
 | -------- | ------------ |
@@ -1754,93 +1732,90 @@ respectivos valores utilizados na recomendação (próprio, 2020)
 | activity | 0            |
 | location | 0            |
 
-Com o modelo pronto (Seção 4.1.1), e os parâmetros tratados é realizado
+Com o modelo pronto (Seção 4.1.1), e os parâmetros tratados é realizada
 a predição através do método *predict* do modelo do *sklearn* e
-devolvido a classe resultante, isso é, o gênero resultante como resposta
-a requisição.
+devolvida a classe resultante, isso é, o gênero resultante como resposta
+à requisição.
 
 ### Resultado da recomendação (integração app)
 
-Tendo o servidor pronto e publicado, foi desenvolvido uma integração no
-plugin. Nela, é obtido as informações de contexto e solicitado ao LORS o
-gênero recomendado. Com o retorno do gênero, é feito uma nova requisição
-de busca ao Spotify das principais 20 *playlists* que contenham o ele no
-nome.
+Tendo o servidor pronto e publicado, foi desenvolvida uma integração no
+*plugin*. Nela, são obtidas as informações de contexto e solicitado ao
+LORS o gênero recomendado. Com o retorno do gênero, é feita uma nova
+requisição de busca ao Spotify das principais 20 *playlists* que
+contenham ele no nome.
 
 ![](./pandoc/media/image21.png)
 
-<span id="_Ref54973248" class="anchor"></span>Figura Tela de
-recomendações (próprio, 2020)
+Figura 25 Tela de recomendações (próprio, 2020)
 
 No fim, é apresentado o gênero recomendado na tela, tratando o retorno
-do Spotify e apresentado as *playlists* na tela (Figura 25), permitindo
+do Spotify e apresentado as *playlists*, conforme Figura 25, permitindo
 assim, que o usuário escolha uma das playlists para reproduzir.
 
 ### Resultados do experimento
 
-Com o modelo pronto, é importante garantir o seu funcionamento e
-precisão. Para garantir que as recomendações estão funcionando, foi
-avaliado a acurácia e a matriz de confusão do modelo.
+Nessa seção são discutidas a acurácia e matriz de confusão da aplicação
+do KNN sobre o conjunto de testes. O algoritmo inicialmente obteve uma
+acurácia de 0,15, o que é muito baixo. Foi analisada a estrutura de
+atributos presentes no conjunto de dados e visto que poderia ser
+reduzida a quantidade de gêneros (classes), então, foi realizada a
+taxonomia dos gêneros, mantendo somente os gêneros principais. Com essa
+alteração, a acurácia do algoritmo passou de 0,15 para 0,46, um
+acréscimo de 306%, mas ainda um valor de acurácia baixo.
 
-O modelo inicialmente obteve uma acurácia de 0,15, o que é muito baixo.
-Foi analisado o modelo e visto que poderiam ser diminuídos a quantidade
-de gêneros (classes), então, foi realizado a taxonomia dos gêneros,
-mantendo somente os gêneros principais. Com essa alteração, a acurácia
-do algoritmo passou de 0,15 para 0,46, um acréscimo de 306%.
+| GENERO                        | CLASSE GERADA PELO LABEL ENCODER |
+| ----------------------------- | -------------------------------- |
+| arkansas country              | 0                                |
+| atl hip hop                   | 1                                |
+| australian country            | 2                                |
+| australian indie folk         | 3                                |
+| australian reggae fusion      | 4                                |
+| bandinhas                     | 5                                |
+| beatlesque                    | 6                                |
+| brazilian rock                | 7                                |
+| canadian pop punk             | 8                                |
+| canadian punk                 | 9                                |
+| canadian rock                 | 10                               |
+| channel pop                   | 11                               |
+| country                       | 12                               |
+| country dawn                  | 13                               |
+| country pop                   | 14                               |
+| country road                  | 15                               |
+| dfw rap                       | 16                               |
+| electro house                 | 17                               |
+| folk                          | 18                               |
+| harlem hip hop                | 19                               |
+| heartland rock                | 20                               |
+| hip hop                       | 21                               |
+| indie cafe pop                | 22                               |
+| melodic rap                   | 23                               |
+| metal                         | 24                               |
+| miami hip hop                 | 25                               |
+| musica gaucha                 | 26                               |
+| musica gaucha tradicionalista | 27                               |
+| musica maranhense             | 28                               |
+| neo mellow                    | 29                               |
+| nyc rap                       | 30                               |
+| oklahoma country              | 31                               |
+| pop                           | 32                               |
+| post-teen pop                 | 33                               |
+| punk                          | 34                               |
+| r\&b                          | 35                               |
+| redneck                       | 36                               |
+| rock                          | 37                               |
+| sertanejo pop                 | 38                               |
+| trap                          | 39                               |
 
-| **GENERO**                        | **CLASSE GERADA PELO LABEL ENCODER** |
-| --------------------------------- | ------------------------------------ |
-| **arkansas country**              | **0**                                |
-| **atl hip hop**                   | **1**                                |
-| **australian country**            | **2**                                |
-| **australian indie folk**         | **3**                                |
-| **australian reggae fusion**      | **4**                                |
-| **bandinhas**                     | **5**                                |
-| **beatlesque**                    | **6**                                |
-| **brazilian rock**                | **7**                                |
-| **canadian pop punk**             | **8**                                |
-| **canadian punk**                 | **9**                                |
-| **canadian rock**                 | **10**                               |
-| **channel pop**                   | **11**                               |
-| **country**                       | **12**                               |
-| **country dawn**                  | **13**                               |
-| **country pop**                   | **14**                               |
-| **country road**                  | **15**                               |
-| **dfw rap**                       | **16**                               |
-| **electro house**                 | **17**                               |
-| **folk**                          | **18**                               |
-| **harlem hip hop**                | **19**                               |
-| **heartland rock**                | **20**                               |
-| **hip hop**                       | **21**                               |
-| **indie cafe pop**                | **22**                               |
-| **melodic rap**                   | **23**                               |
-| **metal**                         | **24**                               |
-| **miami hip hop**                 | **25**                               |
-| **musica gaucha**                 | **26**                               |
-| **musica gaucha tradicionalista** | **27**                               |
-| **musica maranhense**             | **28**                               |
-| **neo mellow**                    | **29**                               |
-| **nyc rap**                       | **30**                               |
-| **oklahoma country**              | **31**                               |
-| **pop**                           | **32**                               |
-| **post-teen pop**                 | **33**                               |
-| **punk**                          | **34**                               |
-| **r\&b**                          | **35**                               |
-| **redneck**                       | **36**                               |
-| **rock**                          | **37**                               |
-| **sertanejo pop**                 | **38**                               |
-| **trap**                          | **39**                               |
-
-<span id="_Ref55013755" class="anchor"></span>Tabela relação dos gêneros
-e a classe utilizada no KNN (próprio, 2020)
+Tabela 1 relação dos gêneros e a classe utilizada no KNN (próprio, 2020)
 
 A matriz de confusão do usuário utilizado nos testes foi disponibilizada
 na Tabela 3 desse trabalho. Nela, é possível verificar que o modelo
 somente obteve sucesso na recomendação da categoria de número 12. Isso
-pode ter acontecido, devido ao curto período de uso da aplicação e
-devido ao gosto musical do usuário estar mais voltado aquele estilo
-musical. A categoria de número 12 pode ser encontrada na Tabela 1, que
-apresenta a relação dos gêneros com as classes geradas para o KNN.
+ocorreu devido ao curto período de uso da aplicação e devido ao gosto
+musical do usuário estar mais voltado aquele estilo musical. A categoria
+de número 12 pode ser encontrada na Tabela 1, que apresenta a relação
+dos gêneros com as classes geradas para o KNN.
 
 <table>
 <thead>
@@ -1874,22 +1849,21 @@ apresenta a relação dos gêneros com as classes geradas para o KNN.
 </tbody>
 </table>
 
-<span id="_Ref55253627" class="anchor"></span>Tabela matriz confusão da
-classe 12, gênero musical country (próprio, 2020)
+184Tabela 2 matriz confusão da classe 12, gênero musical country
+(próprio, 2020)
 
 Para realizar uma análise mais aprofundada, foi utilizado o gênero com a
 maior quantidade de recomendações (230 itens), isso é o country (classe
-12). Na análise, foi criado a Tabela 2, para avaliar os dados de
-precisão, *recall* e *f-measure*. A precisão do modelo ao realizar a
-recomendação dessa classe foi de 0,51, isso mostra que o modelo está com
-dificuldades de classificar o gênero country e acaba na maioria das
-vezes interpretando como outro gênero. O recall foi de 0,80, o que
-mostra ele está colocando pouco da classe 12 em outras.
-
-Outra métrica interessante é o *f-measure*, que é utilizado para
-analisar o *recall* com a precisão em uma única medida. O gênero country
-ficou 0,62, o que mostra que no geral o modelo conseguiu predizer 62%
-das vezes a classe corretamente.
+12). Na análise, foi criada a Tabela 2, para avaliar os dados de
+precisão, *recall* e *f-measure*. A precisão do KNN ao realizar a
+recomendação dessa classe foi de 0,51, isso mostra que o algoritmo KNN
+está com dificuldades de classificar o gênero country e acaba na maioria
+das vezes interpretando como outro gênero. O recall foi de 0,80, o que
+mostra que ele está classificando instâncias da classe 12 (*country*) em
+outras classes. Outra métrica interessante é o *f-measure*, que é
+utilizado para analisar o *recall* com a precisão em uma única medida. O
+gênero *country* ficou com valor de
+0,62.
 
 |    | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12  | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 |
 | -- | - | - | - | - | - | - | - | - | - | - | -- | -- | --- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
@@ -1934,81 +1908,85 @@ das vezes a classe corretamente.
 | 38 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 4   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
 | 39 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 2   | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 3  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
 
-<span id="_Ref55013706" class="anchor"></span>Tabela Matrix confusão do
-usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
+Tabela 3 Matrix confusão do usuário
+spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
+
+TEM QUE FINALIZAR O CAPÍTULO.
 
 # CONCLUSÃO
 
-Nesse trabalho foi realizado uma revisão em cima dos trabalhos da *ACM*,
-de *RecSys* musical que utilizam o contexto do usuário, nela foi
-possível verificar, que poucos trabalhos buscam unir, a recomendação
+Nesse trabalho foi realizada uma revisão sobre trabalhos da *ACM*, de
+*RecSys* musical, que utilizam o contexto do usuário. Na pesquisa
+realizada apareceram poucos trabalhos que buscam unir a recomendação
 musical com o contexto do usuário. Sendo assim, esse trabalho
 desenvolveu um *RecSys* musical, o qual analisa o contexto do usuário em
 tempo real, para realizar novas recomendações a ele.
 
-No desenvolvimento desse trabalho, foi encontrado diversas dificuldades
-em lidar com músicas, pois desde o momento que se iniciou o estudo, foi
-visto que a área é muito maior do que aparenta. Com o questionário foi
-possível entender que o gosto de um público é algo inesperado, pois
-nesse caso, foi algo bem diferente do que o autor desse trabalho
-esperava.
+No desenvolvimento desse trabalho, foram encontradas diversas
+dificuldades em lidar com músicas, pois desde o momento que se iniciou o
+estudo, foi visto que a área é muito maior do que aparenta. Com o
+questionário foi possível entender que o gosto musical de um público é
+algo bastante abrangente, pois nesse caso, foi algo bem diferente do que
+o autor desse trabalho esperava.
 
-No plugin, foram encontradas diversas dificuldades em seu
-desenvolvimento. Inicialmente a aplicação foi desenvolvida em Flutter,
-uma plataforma para desenvolvimento mobile e foi visto que não supriria
-as necessidades desse trabalho, então houve uma migração para a
-plataforma Web. No fim entendido que o mais simples supriria as
-necessidades desse trabalho e que uma tecnologia hype não iria torná-lo
-melhor.
+No *plugin* foram encontradas dificuldades em seu desenvolvimento.
+Inicialmente a aplicação foi desenvolvida em Flutter, uma plataforma
+para desenvolvimento mobile e foi visto que não supriria as necessidades
+desse trabalho, então houve uma migração para a plataforma Web.
 
-Ao realizar a primeira publicação do plugin, foram encontrados problemas
-como, navegadores diferentes, sistemas operacionais diferentes, contas
-do Spotify com contrato diferente. E tudo isso, levou ao entendimento de
-que o desenvolvimento e manutenção de aplicações Web é complexo.
+Ao realizar a primeira publicação do *plugin*, foram encontrados
+problemas como, navegadores diferentes, sistemas operacionais
+diferentes, contas do Spotify com contrato diferente. E tudo isso, levou
+ao entendimento de que o desenvolvimento e manutenção dessa aplicação
+Web é bastante complexo.
 
-Com o sistema desenvolvido, foi enviado o e-mail a todos que optaram por
+Com o sistema desenvolvido, foi enviado e-mail a todos que optaram por
 participar da pesquisa no questionário. Nisso foi visto que os usuários
-não têm uma boa aderência a estudos enviados via e-mail, então, foi
-escolhido os com mais afinidade e solicitado pessoalmente que
-utilizassem a aplicação para auxiliar no trabalho.
+não têm uma boa aderência a estudos enviados via e-mail. Portanto, foram
+escolhidos respondentes com mais afinidade com o autor e solicitado
+pessoalmente que utilizassem a aplicação para auxiliar no trabalho.
 
 Mesmo solicitando pessoalmente, foi obtido um baixo uso na aplicação,
-gerando assim uma base muito pequena para o KNN. Esse problema é
-conhecido como *Cold Start*, que acontece geralmente as aplicações que
-estão iniciando e não tem um histórico de dados muito grande. Para
-tratar esse problema, foi desenvolvido a taxonomia dos gêneros, mantendo
-somente os principais, e com isso, reduzindo o número de resultados
-possíveis auxiliando KNN a predizer um melhor resultado.
+gerando assim uma base muito pequena para aplicação do algoritmo KNN.
+Esse problema é conhecido como *Cold Start*, que acontece geralmente
+quando as aplicações estão iniciando e não tem um histórico de dados
+muito grande. Para lidar melhor com a acurácia inicial do KNN muito
+baixa, foi desenvolvida a taxonomia dos gêneros, mantendo somente os
+principais gêneros, e com isso, reduzindo o número de resultados
+possíveis, o que melhorou a acurácia do KNN em predizer um melhor
+resultado. 
 
 Porém, mesmo com a redução das classes, o modelo obteve uma baixa
-acurácia nas recomendações. Apresentando a necessidade de uma melhoria
-nas características do modelo ou da aplicação de outros algoritmos que
-não sejam o KNN ao ele.
+acurácia nas recomendações. Logo, há a necessidade de uma melhoria nas
+características coletadas dos usuários, bem como um aumento na base de
+dados. Posterior a isto, será possível também avaliar acurácia do KNN em
+relação a outros algoritmos de *Machine Learning*.
 
 ## Trabalhos futuros
 
-Abaixo é apresentado algumas melhorias e continuidade nos estudos
-relativos ao sistema de recomendação apresentado.
+Abaixo são apresentadas algumas melhorias e continuidade nos estudos
+relativos ao sistema de recomendação
+apresentado.
 
-##### Desenvolver uma extensão mais simples para conectar ao Spotify, como uma extensão do Google Chrome
+##### Desenvolver uma extensão mais simples para conectar ao Spotify, como uma extensão do Google Chrome;
 
-##### Encontrar uma base mais completa para realizar a taxonomia dos gêneros
+##### Encontrar uma base mais completa para realizar a taxonomia dos gêneros;
 
-##### Realizar a leitura da emoção através dos batimentos cardíacos de um *wearable*
+##### Realizar a leitura da emoção através dos batimentos cardíacos de um *wearable;*
 
-##### Carregar histórico do Spotify para auxiliar o *Cold Start* do KNN
+##### Carregar histórico do Spotify para auxiliar o *Cold Start* do KNN;
 
-##### Realizar perguntas sobre gêneros, músicas e artistas para auxiliar no *Cold Start* do KNN
+##### Realizar perguntas sobre gêneros, músicas e artistas para auxiliar no *Cold Start* do KNN;
 
-##### Aperfeiçoar atributos do modelo para aumentar a precisão e *recall*
+##### Aperfeiçoar atributos do modelo para aumentar a acurácia, precisão e *recall;*
 
-##### Utilizar latitude e longitude para assimilar a localização em *label* e facilitar o seu preenchimento
+##### Utilizar latitude e longitude para assimilar a localização em *label* e facilitar o seu preenchimento;
 
-##### Aplicar uma leitura sequencial ao modelo das recomendações
+##### Aplicar uma leitura sequencial ao modelo das recomendações;
 
-##### Contabilizar ações apresentadas no Quadro 3 que não estão sendo utilizadas no modelo
+##### Contabilizar ações apresentadas no Quadro 3 que não estão sendo utilizadas no modelo;
 
-##### Inserir *feature* “amigos ou sozinho” ao plugin e utilizar no modelo
+##### Inserir *feature* “amigos ou sozinho” ao plugin e utilizar no modelo.
 
 # Referências Bibliográficas
 
@@ -2017,33 +1995,32 @@ ACM. **Advanced Search**. Disponível em:
 RECSYS COMMUNITY. **RecSys – ACM Recommender Systems**. Disponível em:
 \<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. ALIAGA, W. K.
 DESENVOLVIMENTO DE UM SISTEMA DE RECOMENDACÃO MUSICAL SENSÍVEL AO
-CONTEXTO. 2018. BHATNAGAR, V. **Collaborative filtering using data
-mining and analysis**. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming
-or stealing? The complementary features between music streaming and
-music piracy. **Journal of Retailing and Consumer Services**, v. 32, p.
-86–95, 2016. DIETMAR, J. et al. **Recommendation system -An
-Introduction**. \[s.l: s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre
-o dicionário | Michaelis On-line**. Disponível em:
-\<https://michaelis.uol.com.br/\>. Acesso em: 6 jun. 2020. ERIKSSON, M.
-et al. **Spotify Teardown**. \[s.l.\] MIT Press, 2019. FALK, K.
-**Practical Recommender Systems**. \[s.l: s.n.\]. IFPI. **IFPI Global
-Music Report 2019**. Disponível em:
+CONTEXTO. 2018. BHATNAGAR, V. Collaborative filtering using data mining
+and analysis. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming or
+stealing? The complementary features between music streaming and music
+piracy. **Journal of Retailing and Consumer Services**, v. 32, p. 86–95,
+2016. DIETMAR, J. et al. **Recommendation system -An Introduction**.
+\[s.l: s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário |
+Michaelis On-line**. Disponível em: \<https://michaelis.uol.com.br/\>.
+Acesso em: 6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**.
+\[s.l.\] MIT Press, 2019. FALK, K. Practical Recommender Systems. \[s.l:
+s.n.\]. IFPI. **IFPI Global Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. JOSÉ, I.
 **KNN (K-Nearest Neighbors) \#1**. Disponível em:
 \<https://medium.com/brasil-ai/knn-k-nearest-neighbors-1-e140c82e9c4e\>.
 Acesso em: 4 out. 2020. LUDEWIG, M. et al. Effective nearest-neighbor
 music recommendations. **ACM International Conference Proceeding
 Series**, 2018. LUINI, B. J. R.; WHITMAN, A. E.; DATE, P. **Streaming
-Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M. **Os avanços
-tecnológicos e o futuro da humanidade**Querendo ser Deus, , 2009. NIWA,
-H. **Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v.
-134PEDREGOSA, F. et al. Scikit-learn: Machine Learning in {P}ython.
-**Journal of Machine Learning Research**, v. 12, p. 2825–2830, 2011.
-RÄTSCH, G. A brief introduction into machine learning. **21st Chaos
-Communication Congress**, p. 1–6, 2004. RESNICK, PAUL AND VARIAN, H. R.
-Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
-56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
-Handbook**. \[s.l: s.n.\]. T.M. COVER, P. E. H. Nearest Neighbor Pattern
+Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M. Os avanços
+tecnológicos e o futuro da humanidadeQuerendo ser Deus, , 2009. NIWA, H.
+**Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v. 134PEDREGOSA,
+F. et al. Scikit-learn: Machine Learning in {P}ython. **Journal of
+Machine Learning Research**, v. 12, p. 2825–2830, 2011. RÄTSCH, G. A
+brief introduction into machine learning. **21st Chaos Communication
+Congress**, p. 1–6, 2004. RESNICK, PAUL AND VARIAN, H. R. Recommender
+Systems. **Communications of the ACM**, v. 40, n. 4, p. 56–58, 1997.
+RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems Handbook**.
+\[s.l: s.n.\]. T.M. COVER, P. E. H. Nearest Neighbor Pattern
 Classfication. v. I, p. 1–28, 1967. TKALČIČ, M. et al. Prediction of
 music pairwise preferences from facial expressions. **International
 Conference on Intelligent User Interfaces, Proceedings IUI**, v. Part
