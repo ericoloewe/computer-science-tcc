@@ -1679,7 +1679,7 @@ o histórico de músicas reproduzidas, e entregue o resultado através de
 uma API, a qual pode ser consumida por qualquer usuário que utilize o
 plugin Web desenvolvido nesse trabalho.
 
-![Diagrama Descrição gerada automaticamente](./pandoc/media/image21.jpg)
+![](./pandoc/media/image21.jpeg)
 
 <span id="_Ref54973275" class="anchor"></span>Figura Visão macro do
 sistema LORS (próprio, 2020)
@@ -1730,9 +1730,14 @@ existir anteriormente, é feito um tratamento para valores padrões,
 conforme apresenta o Quadro 4. Os campos *like*, *hate* e *restart*
 estão com valores fixos devido a buscarmos músicas que foram curtidas
 (*like*=1), não foram marcadas como “Não gostei” (*hate*=0) e que foram
-colocadas para repetir (*restart*=1). Os campos *feeling*, *activity*,
-*location* possuem valor padrão somente no caso de a característica
-enviada não existir na base.
+colocadas para repetir (*restart*=1).
+
+É utilizado o *LabelEncoder* para gerar o valor numérico dos campos
+*feeling*, *activity*, *location*. Para isso, foi rodado o método *fit*
+apresentando os dados a base e então realizado o *transform*. Ao rodar,
+é estourado uma exceção se for passado uma característica desconhecida
+pelo *fit*. Devido a esse comportamento, os campos possuem um valor
+padrão no caso de a característica enviada não existir na base.
 
 <span id="_Ref54920412" class="anchor"></span>Quadro Campos e seus
 respectivos valores utilizados na recomendação (próprio, 2020)
@@ -1746,10 +1751,10 @@ respectivos valores utilizados na recomendação (próprio, 2020)
 | activity | 0            |
 | location | 0            |
 
-Com o modelo pronto (Seção 4.1.1), e os parâmetros tratados é realizada
-a predição através do método *predict* do modelo do *sklearn* e
-devolvida a classe resultante, isso é, o gênero resultante como resposta
-à requisição.
+Com o algoritmo pronto (Seção 4.1.1), e os parâmetros tratados é
+realizada a predição através do método *predict* do modelo do *sklearn*
+e devolvida a classe resultante, isso é, o gênero resultante como
+resposta à requisição.
 
 ### Resultado da recomendação (integração app)
 
