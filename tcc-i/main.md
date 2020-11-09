@@ -731,8 +731,7 @@ perguntas:
 
   - Foi analisado o ambiente? Quais fatores?
 
-#####   
-Como é obtido o contexto?
+  - Como é obtido o contexto?
 
   - O usuário pode auxiliar na definição do contexto?
 
@@ -1831,7 +1830,7 @@ respectivos valores utilizados na recomendação
 
 | Campo    | Valor padrão |
 | -------- | ------------ |
-| like     | 1            |
+| Like     | 1            |
 | hate     | 0            |
 | restart  | 1            |
 | feeling  | 0            |
