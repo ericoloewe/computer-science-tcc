@@ -1,16 +1,16 @@
 UNIVERSIdade FEEVALE
 
-nome do aluno
+Érico de Souza Loewe
 
-título do trabalho
+RECOMENDAÇÃO DE GÊNEROS MUSICAIS ATRAVÉS DE CONTEXTO
 
 Novo Hamburgo
 
-2019
+2020
 
-nome do aluno
+Érico de SOuza Loewe
 
-título do trabalho
+RECOMENDAÇÃO DE GÊNEROS MUSICAIS ATRAVÉS DE CONTEXTO
 
 Trabalho de Conclusão de Curso
 
@@ -22,80 +22,56 @@ Nome do Curso pela
 
 Universidade Feevale
 
-Orientador: nome do professor orientador
+Orientador: Juliano Varella De Carvalho
 
 Novo Hamburgo
 
-2019
+2020
 
 Agradecimentos
 
 Gostaria de agradecer a todos os que, de alguma maneira, contribuíram
 para a realização desse trabalho de conclusão, em especial:
 
-Aos amigos e às pessoas que convivem comigo diariamente, minha gratidão,
-pelo apoio emocional - nos períodos mais difíceis do trabalho.
-
-Enfim, os demais agradecimentos que o aluno desejar fazer.
-
-\* Folha de dedicatória ou de agradecimentos = elemento opcional. O
-texto fica na parte inferior da página, respeitando as margens de 2cm da
-borda direita e 8cm da borda esquerda da página (PRODANOV, 2003, p. 42).
+Ao meu professor orientador, a minha família, aos amigos e às pessoas
+que convivem comigo diariamente, minha gratidão, pelo apoio emocional -
+nos períodos mais difíceis do trabalho.
 
 Resumo
 
-Esse trabalho apresenta o posicionamento de diversos atores sociais e
-grupos de interesse, envolvidos na área da saúde, no Rio Grande do Sul,
-em relação aos princípios norteadores do Sistema Único de Saúde (SUS) e
-o projeto de política de saúde que defendiam no período inicial do
-processo de reforma sanitária e no período de operacionalização e
-institucionalização do SUS. Ao comparar essas duas fases de análise,
-buscou-se verificar se houve mudança nos posicionamentos e nos projetos
-de política de saúde, defendidos pelos atores, procurando examinar as
-possíveis razões para que elas tenham ocorrido. Através de estudo
-qualitativo, foram realizadas dezoito entrevistas, as quais ocorreram
-com representantes dos grupos sociais selecionados para a pesquisa. De
-acordo com os seus posicionamentos, em relação à reforma sanitária
-brasileira, os diferentes atores sociais e grupos de interesse foram
-classificados em dois blocos/posições: os que apoiavam o processo de
-reforma sanitária – compondo, assim, a *policy community* reformista - e
-os opositores a ela. Em ambos os grupos/blocos, foram identificadas
-mudanças nas propostas e posições defendidas, mas as maiores novidades
-ocorreram entre os primeiros.
+Sabe-se que as pessoas têm dificuldades em lidar com um grande volume de
+informações, e com a internet e a evolução da tecnologia houve aumento
+da quantidade disponível, trazendo a necessidade de os sistemas
+evoluírem suas recomendações, surgindo os Sistemas de Recomendações
+(*RecSys*). Esses sistemas são utilizados em diversos tipos de
+aplicações, como por exemplo: vendas, seleção de um filme, na escolha
+de uma música, que é um dos objetivos dessa pesquisa. Neste trabalho foi
+desenvolvido o LORS (Loewe’s *Recommender System*), um sistema de
+recomendação de gêneros musicais baseado em contexto comportamental e de
+ambiente. Nele é utilizado o algoritmo KNN para, a partir do contexto
+musical (gostou, não gostou, repetiu), contexto comportamental
+(atividade, sentimento) e de ambiente (lugar), encontrar o gênero
+musical mais adequado para o momento. É apresentada toda pesquisa
+desenvolvida até o desenvolvimento do sistema, a evolução do sistema em
+si e os resultados obtidos com as recomendações.
 
-Palavras-chave: Políticas de saúde. Grupos de interesse. Reforma
-sanitária brasileira. Sistema Único de Saúde. Projetos de política de
-saúde.
-
-\* O resumo em português e em língua estrangeira é elemento obrigatório
-=\> não pode ultrapassar, segundo o livro do Prof. Prodanov (2003), 500
-palavras. É obrigatório colocar as palavras-chave (no máximo 5). O
-resumo é construído em parágrafo único.
+Palavras-chave: *RecSys*. *Machine Learning*. Sistemas de recomendação
+musical. *K-Nearest Neighbors*. Música. *Spotify*.
 
 Abstract
 
 Tradução do Resumo para a língua inglesa.
 
-Keywords: tradução das palavras-chave para a língua inglesa.
+Keywords: RecSys. Machine Learning. Music Recommender System. K-Nearest
+Neighbors. Music. Spotify.
 
 Lista de Figuras
 
-[Figura 1 – Estrutura de desenvolvimento em duas camadas
-14](#_Toc515473980)
-
-[Figura 2 – Padrão MVC - separação em camadas 15](#_Toc515473981)
-
-\* As listas (de figuras, de tabelas e de abreviaturas e siglas,) devem
-ser apresentadas conforme aparecem no trabalho (na ordem), com cada item
-designado pelo seu nome/título específico e do respectivo número da
-página. Elaborar uma lista própria para cada tipo. Espaço entre linhas
-= 1,5, <span class="underline">sem</span> o espaçamento antes e depois
-(6ptos).
+**Nenhuma entrada de índice de ilustrações foi encontrada.**
 
 Lista de Tabelas
 
-[Tabela 1 – Matrícula dos alunos do Centro de Educação da FURG segundo o
-município. 15](#_Toc515474000)
+**Nenhuma entrada de índice de ilustrações foi encontrada.**
 
 Lista de Abreviaturas e Siglas
 
