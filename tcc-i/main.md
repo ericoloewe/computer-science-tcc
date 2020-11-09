@@ -152,16 +152,16 @@ músicas” (próprio, 2020) 59](#_Ref54973298)
 Lista de Quadros
 
 [Quadro 1 Relação das funcionalidades desenvolvidas em cada artigo
-revisado 34](#_Ref42381546)
+revisado 36](#_Ref42381546)
 
 [Quadro 2 Perguntas e respostas disponibilizadas a um certo público
-através dos formulários do Google. (próprio, 2020) 42](#_Ref48857312)
+através dos formulários do Google. (próprio, 2020) 43](#_Ref48857312)
 
 [Quadro 3 Lista de ações possíveis nos eventos (próprio, 2020)
-55](#_Ref55256921)
+59](#_Ref55256921)
 
 [Quadro 4 Campos e seus respectivos valores utilizados na recomendação
-(próprio, 2020) 63](#_Ref54920412)
+(próprio, 2020) 67](#_Ref54920412)
 
 Lista de TABELAS
 
@@ -224,104 +224,105 @@ Lista de Abreviaturas e Siglas
 
 Sumário
 
-[1 Introdução 13](#introdução)
+[1 Introdução 15](#introdução)
 
-[1.1 Objetivo Geral 16](#objetivo-geral)
+[1.1 Objetivo Geral 18](#objetivo-geral)
 
-[1.2 Objetivos Específicos 16](#objetivos-específicos)
+[1.2 Objetivos Específicos 18](#objetivos-específicos)
 
-[1.3 Metodologia 16](#metodologia)
+[1.3 Metodologia 18](#metodologia)
 
-[2 Trabalhos relacionados 18](#trabalhos-relacionados)
+[2 Trabalhos relacionados 20](#trabalhos-relacionados)
 
 [2.1 Levantamento bibliográfico inicial
-18](#levantamento-bibliográfico-inicial)
+20](#levantamento-bibliográfico-inicial)
 
-[2.2 O protocolo de revisão 19](#o-protocolo-de-revisão)
+[2.2 O protocolo de revisão 21](#o-protocolo-de-revisão)
 
-[2.3 PROCURA NOS MOTORES DE BUSCA 20](#procura-nos-motores-de-busca)
+[2.3 PROCURA NOS MOTORES DE BUSCA 22](#procura-nos-motores-de-busca)
 
 [2.4 ETAPAS DA REVISÃO DOS TRABALHOS
-21](#etapas-da-revisão-dos-trabalhos)
+23](#etapas-da-revisão-dos-trabalhos)
 
-[2.4.1 Trabalhos selecionados 23](#trabalhos-selecionados)
+[2.4.1 Trabalhos selecionados 25](#trabalhos-selecionados)
 
 [2.5 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
-33](#funcionalidades-dos-trabalhos-investigados)
+35](#funcionalidades-dos-trabalhos-investigados)
 
 [2.6 Conclusões dos trabalhos revisados
-36](#conclusões-dos-trabalhos-revisados)
+38](#conclusões-dos-trabalhos-revisados)
 
-[3 COLETA DO CONTEXTO DOS USUARIOS 37](#coleta-do-contexto-dos-usuários)
+[3 COLETA DO CONTEXTO DOS USUáRIOS 39](#coleta-do-contexto-dos-usuários)
 
-[3.1 Contexto 37](#contexto)
+[3.1 Contexto 39](#contexto)
 
 [3.1.1 O que é o contexto comportamental?
-38](#o-que-é-o-contexto-comportamental)
+40](#o-que-é-o-contexto-comportamental)
 
 [3.1.2 O que é o contexto de ambiente?
-39](#o-que-é-o-contexto-de-ambiente)
+40](#o-que-é-o-contexto-de-ambiente)
 
 [3.1.3 Como serão obtidos os contextos?
-39](#como-serão-obtidos-os-contextos)
+41](#como-serão-obtidos-os-contextos)
 
 [3.1.4 O que são as ações do usuário?
-40](#o-que-são-as-ações-do-usuário)
+42](#o-que-são-as-ações-do-usuário)
 
-[3.2 Pesquisa com usuários sobre recomendação musical
-40](#pesquisa-com-usuários-sobre-recomendação-musical-questionário)
+[3.2 Pesquisa com usuários sobre recomendação musical (QUESTIONÁRIO)
+42](#pesquisa-com-usuários-sobre-recomendação-musical-questionário)
 
-[3.2.1 Pré-teste do questionário 44](#pré-teste-do-questionário)
+[3.2.1 Pré-teste do questionário 45](#pré-teste-do-questionário)
 
-[3.2.2 Resultados do questionário 44](#resultados-do-questionário)
+[3.2.2 Resultados do questionário 45](#resultados-do-questionário)
 
-[3.3 Desenvolvimento Do plugin 46](#desenvolvimento-do-plugin)
+[3.3 Desenvolvimento Do plugin 49](#desenvolvimento-do-plugin)
 
-[3.3.1 Telas da aplicação (*plugin*) 47](#telas-da-aplicação-plugin)
+[3.3.1 Telas da aplicação (*plugin*) 51](#telas-da-aplicação-plugin)
 
 [3.3.2 Tecnologias utilizadas no desenvolvimento
-50](#tecnologias-utilizadas-no-desenvolvimento)
+54](#tecnologias-utilizadas-no-desenvolvimento)
 
 [3.4 Distribuição da aplicação e coleta de dados
-50](#distribuição-da-aplicação-e-coleta-de-dados)
+54](#distribuição-da-aplicação-e-coleta-de-dados)
 
-[3.4.1 Pré-teste 50](#pré-teste)
+[3.4.1 Pré-teste 54](#pré-teste)
 
-[3.4.2 Hospedagem 51](#hospedagem)
+[3.4.2 Hospedagem 55](#hospedagem)
 
-[3.4.3 Coleta do Firebase 51](#coleta-do-firebase)
+[3.4.3 Coleta do Firebase 55](#coleta-do-firebase)
 
-[4 SISTEMA LORS 53](#sistema-lors)
+[4 SISTEMA LORS 57](#sistema-lors)
 
-[4.1 O Algoritmo KNN 53](#o-algoritmo-knn)
+[4.1 O Algoritmo KNN 57](#o-algoritmo-knn)
 
 [4.1.1 Preparação dos dados para o KNN
-54](#preparação-dos-dados-para-o-knn)
+58](#preparação-dos-dados-para-o-knn)
 
-[4.1.2 Testes com KNN 59](#testes-com-knn)
+[4.1.2 Testes com KNN 63](#testes-com-knn)
 
-[4.1.3 Taxonomia dos gêneros 60](#taxonomia-dos-gêneros)
+[4.1.3 Predição no sistema *LORS*Taxonomia dos gêneros
+64](#predição-no-sistema-lorstaxonomia-dos-gêneros)
 
-[*4.2* Modelagem do sistema *LORS* 60](#modelagem-do-sistema-lors)
+[*4.2* Modelagem do sistema *LORS* 64](#modelagem-do-sistema-lors)
 
-[4.2.1 POC (Proof of Concept) 61](#poc-proof-of-concept)
+[4.2.1 POC (*Proof of Concept*) 65](#poc-proof-of-concept)
 
-[4.2.2 Servidor 61](#servidor)
+[4.2.2 Servidor 65](#servidor)
 
-[4.2.3 Hospedagem 62](#hospedagem-1)
+[4.2.3 Hospedagem 66](#hospedagem-1)
 
-[4.2.4 Recomendação 62](#recomendação)
+[4.2.4 Recomendação 66](#recomendação)
 
 [4.2.5 Resultado da recomendação (integração app)
-63](#resultado-da-recomendação-integração-app)
+67](#resultado-da-recomendação-integração-app)
 
-[4.2.6 Resultados do experimento 64](#resultados-do-experimento)
+[4.2.6 Resultados do experimento 68](#resultados-do-experimento)
 
-[5 CONCLUSÃO 68](#conclusão)
+[5 CONCLUSÃO 75](#conclusão)
 
-[5.1 Trabalhos futuros 69](#trabalhos-futuros)
+[5.1 Trabalhos futuros 76](#trabalhos-futuros)
 
-[Referências Bibliográficas 70](#referências-bibliográficas)
+[Referências Bibliográficas 77](#referências-bibliográficas)
 
 # Introdução
 
@@ -764,6 +765,8 @@ perguntas:
 
   - Quais foram as técnicas de avaliação usadas?
 
+##### 
+
 #### The New Challenges when Modeling Context through Diversity over Time in Recommender Systems (L’HUILLIER, 2016)
 
 Foi realizada a revisão do trabalho e verificado que ele não apresenta
@@ -867,6 +870,8 @@ entre as duas músicas, maior a probabilidade de o usuário ter gostado da
 música que ele ouviu por mais tempo. Outro critério apresentado foi a
 sua avaliação das músicas em par.
 
+#### 
+
 #### Towards Intent-Aware Contextual Music Recommendation: Initial Experiments (VOLOKHIN; AGICHTEIN, 2018)
 
 O artigo apresenta técnicas e resultados que buscam estudar as intenções
@@ -952,6 +957,8 @@ de correlação, elas são: (i) coeficiente de correlação de Kendallτ; (ii)
 *Mean Reciprocal Rank* (nMMR). Essas métricas são importantes para
 avaliar numericamente a qualidade de cada *playlist* recomendada. Não é
 apresentado o tamanho da base utilizada nesse artigo.
+
+#### 
 
 #### Quantitative Study of Music Listening Behavior in a Smartphone Context (YANG; TENG, 2015)
 
@@ -1084,6 +1091,8 @@ critério de qualidade ou técnicas de avaliação das recomendações. A
 base foi obtida através do aplicativo desenvolvido nesse trabalho, ela
 continha 48 usuários, que a partir de uma filtragem dos dados efetuada,
 passou para 19 nas respostas das questões.
+
+#### 
 
 ## FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
 
@@ -1257,7 +1266,7 @@ acuracidade das recomendações feitas, por exemplo). São elas que
 demonstrarão ao sistema, através das músicas recomendadas, o gosto do
 usuário, se são de um determinado estilo musical ou de outro. Cada ação
 terá um nível de importância, a qual será obtida pelas respostas do
-questionário. As possíveis ações a serem executadas pelo usuário estão
+questionário. As possíveis atividades executadas pelo usuário estão
 listadas na seção 3.1.1.
 
 ## Pesquisa com usuários sobre recomendação musical (QUESTIONÁRIO)
@@ -1443,10 +1452,10 @@ para apresentar uma música que se identifique melhor com o momento.
 
 ![](./pandoc/media/image10.png)![](./pandoc/media/image11.png)
 
-<span id="_Ref54973458" class="anchor"></span>Figura 14 A esquerda, tela
+<span id="_Ref54973458" class="anchor"></span>Figura A esquerda, tela
 principal, a qual apresenta a música sendo reproduzida ao usuário
-(próprio, 2020) Figura 15 A direita, tela de busca de músicas que
-encaixem melhor no momento (próprio, 2020)
+(próprio, 2020) Figura A direita, tela de busca de músicas que encaixem
+melhor no momento (próprio, 2020)
 
 A ação de buscar música, de ter a opção em relação a um tempo
 específico, o levaria para a tela apresentada na Figura 15,
@@ -1506,7 +1515,7 @@ Os eventos das músicas foram salvos em outra plataforma chamada
 Firebase, que é pago; nesse trabalho, está na versão gratuita, que
 suporta o acesso de até 100 usuários simultâneos. Ademais, eventos como
 “quantidade de usuários acessando o *webapp*” foram salvos utilizando
-as aplicações GTM e Google Analytics.
+as aplicações GTM e Google Analytics. 
 
 ### Coleta do Firebase
 
@@ -1532,58 +1541,61 @@ preparada do JSON.
 
 Com a estrutura dos dados pronta e a pesquisa dos dados dos usuários,
 levantou-se um tratamento específico para cada informação, realizando,
-dessa forma, um estudo das técnicas de recomendação postas nos trabalhos
-anteriores. Com isso, surgiu o modelo do sistema LORS, que utiliza de
-uma análise recorrente do contexto, para realizar as recomendações
-dinâmicas às mudanças do contexto. Serão apresentadas mais informações
-das etapas de modelagem e desenvolvimento do sistema nas seções a
-seguir.
+dessa forma, o estudo da técnica de recomendação escolhida nos trabalhos
+anteriores, o KNN. Com isso, surgiu o modelo do sistema LORS, que
+utiliza de uma análise recorrente do contexto, para realizar as
+recomendações dinâmicas às mudanças do contexto. Serão apresentadas mais
+informações das etapas de modelagem e desenvolvimento do sistema nas
+seções a seguir.
 
 ## O Algoritmo KNN
 
-O *k-Nearest Neighbor* (KNN) é um método de classificação que busca os k
-pontos dos dados de treino mais pertos do item de teste. Uma classe é
-atrelada a esse ponto através de uma votação majoritária dos k pontos
-vizinhos. (T.M. COVER, 1967) Na Figura 17 é exemplificado graficamente o
-funcionamento do algoritmo.
+O *k-Nearest Neighbor* (KNN) é um método de classificação, seu algoritmo
+de aprendizado supervisionado foi introduzido por AHA; KIBLER; ALBERT,
+1991. Ele busca os k pontos dos dados de treino mais próximos do item de
+teste. Uma classe é atrelada a esse ponto através de uma votação
+majoritária dos k pontos vizinhos. Na Figura 17 é exemplificado
+graficamente o funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image13.png)
 
-<span id="_Ref52742150" class="anchor"></span>Figura 17 – Representação
+<span id="_Ref52742150" class="anchor"></span>Figura – Representação
 gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
 plano, os pontos amarelos são a representação da classe A, roxos classe
-B e vermelho é o ponto de teste ***(JOSÉ, 2018)***
+B e vermelho é o ponto de teste (JOSÉ, 2018)
 
 Como apresentado (Figura 17), o algoritmo funciona mediante a disposição
-das características x1 e x2 sobre um plano, atribuindo classes a eles
-(no caso: classe A e classe B). Então, a partir da predição do ponto de
-teste, é encontrado a classe que o representa. (TODO\_REF)
-
-Para rodar o algoritmo de classificação nesse trabalho será utilizado a
+das características (atributos) X<sub>1</sub> e X<sub>2</sub> sobre um
+plano, atribuindo classes a eles (no caso: classe A e classe B). Então,
+a partir da predição do ponto de teste, baseado na distância deste para
+os demais k pontos, é encontrado a classe que o representa. Para rodar o
+algoritmo de classificação KNN nesse trabalho foi utilizada a
 implementação da biblioteca em *python* do *scikit-learn* encontrada na
-classe *KNeighborsClassifier* do módulo *sklearn.neighbors.* (PEDREGOSA
-et al., 2011)
+classe *KNeighborsClassifier* do módulo *sklearn.neighbors* (PEDREGOSA
+et al., 2011).
 
 ### Preparação dos dados para o KNN
 
 Planejando salvar os eventos da aplicação, uma lista chamada *events*,
-composta pelo catálogo de usuários, onde cada usuário possui a lista de
-eventos dentro, teve sua concepção. Cada evento é composto pela seguinte
-estrutura: (i) *action*, ação realizada pelo usuário, apresentadas no
-Quadro 3; (ii) *createdDateTime*, data da execução do evento; (iii)
-*value*, valores do evento separados por “;”.
+composta pelo catálogo de usuários, onde cada usuário possui uma lista
+de eventos dentro, teve sua concepção. Cada evento é composto pela
+seguinte estrutura: (i) *action*, ação realizada pelo usuário,
+apresentadas no Quadro 3; (ii) *createdDateTime*, data e tempo da
+execução do evento; (iii) *value*, valores do evento separados por
+“;”.
 
-A ação LOAD\_LOCATION foi ignorada nesse momento no sistema e se tornará
-um trabalho futuro. Já as de CHANGE\_MUSIC\_TIME,
-CHOOSE\_FEELING\_TO\_BE\_LIKE, LIKED\_ARTIST, LIKED\_GENRE, ficaram nos
-eventos do plugin, mesmo que não sejam utilizadas devido ao tempo
-limitado de desenvolvimento. As operações HIDE\_DETAILS, PAUSE\_MUSIC,
-PLAY\_MUSIC, SHOW\_DETAILS são contabilizadas como registro do contexto
-musical, contudo não foram utilizadas no modelo devido ao tempo de
-desenvolvimento. Demais ações são contabilizadas no modelo e são
-apresentadas a seguir.
+A ação LOAD\_LOCATION foi ignorada nesse momento, ela se trata de dados
+de geolocalização e nesse momento, devido à falta de recursos, não foi
+preparado esse dado para o KNN abrindo oportunidades para um trabalho
+futuro. Já as ações CHANGE\_MUSIC\_TIME, CHOOSE\_FEELING\_TO\_BE\_LIKE,
+LIKED\_ARTIST, LIKED\_GENRE, ficaram nos eventos do *plugin*, mesmo que
+não sejam utilizadas devido ao tempo limitado de desenvolvimento. As
+ações HIDE\_DETAILS, PAUSE\_MUSIC, PLAY\_MUSIC, SHOW\_DETAILS são
+contabilizadas como registro do contexto musical, contudo não foram
+utilizadas no modelo devido ao tempo de desenvolvimento. Demais ações
+são contabilizadas no modelo e são apresentadas no Quadro 3.
 
-<span id="_Ref55256921" class="anchor"></span>Quadro 3 Lista de ações
+<span id="_Ref55256921" class="anchor"></span>Quadro Lista de ações
 possíveis nos eventos (próprio, 2020)
 
 | Ação (Action)                 | Descrição                                     |
@@ -1607,73 +1619,72 @@ possíveis nos eventos (próprio, 2020)
 | SHOW\_DETAILS                 | Abriu os detalhes da música                   |
 
 A Figura 18 apresenta as etapas de preparação dos dados, desde o
-carregamento do arquivo até a execução do algoritmo KNN. É na etapa
-“Carrega JSON”, que se tem o upload dos dados a partir da biblioteca
-padrão do *python* “open”. Para a interpretação, existe a biblioteca
-*json*, possibilitando transformar o conteúdo *string* em um dicionário,
-do qual obtém os usuários e seus eventos e os transforma em outro
-dicionário *users*, cuja *key* é o id do usuário e o conteúdo sua lista
-de eventos.
+carregamento do arquivo exportado do Firebase, que contém as informações
+dos eventos, até a execução do algoritmo KNN. É na etapa “Carrega JSON”
+que se tem o *upload* dos dados a partir da biblioteca padrão do
+*python* “open”. Para a interpretação do arquivo JSON, existe a
+biblioteca *json*, que carrega os dados em um dicionário, do qual obtém
+os usuários e seus eventos e os transforma em outro dicionário *users*,
+cuja *key* é o id do usuário e o conteúdo sua lista de eventos.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image14.jpg)
 
-<span id="_Ref54973329" class="anchor"></span>Figura 18 Visão macro das
+<span id="_Ref54973329" class="anchor"></span>Figura Visão macro das
 etapas para transformar os eventos registrados no firebase na tabela que
 sera rodado o KNN (próprio, 2020)
 
 Na segunda etapa “Separa Contexto”, representada pela Figura 19, é
-realizado a quebra dos eventos de cada usuário por seus contextos,
+realizada a quebra dos eventos de cada usuário por seus contextos,
 criando assim, uma relação com as músicas reproduzidas. Isso está
 representado na Figura 20.
 
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
 automaticamente](./pandoc/media/image15.jpg)
 
-<span id="_Ref54973321" class="anchor"></span>Figura 19 Representação
-dos eventos salvos no Firebase (próprio, 2020)
+<span id="_Ref54973321" class="anchor"></span>Figura Representação dos
+eventos salvos no Firebase (próprio, 2020)
 
 A Figura 21 traz a etapa “Separa contexto das músicas”. Na reprodução
-das músicas, é gerado, tanto os eventos separadamente, quanto uma
+das músicas, são gerados tanto os eventos separadamente, quanto uma
 relação da música escutada, com os eventos registrados - gerando, no
-fim, uma tabela semelhante a Figura 22 das músicas e seus contextos.
+fim, uma tabela semelhante à Figura 22 das músicas e seus contextos.
 
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image16.jpg)
 
-<span id="_Ref54973316" class="anchor"></span>Figura 20 Representação
-das listas geradas na etapa “Separa contexto” (próprio, 2020)
+<span id="_Ref54973316" class="anchor"></span>Figura Representação das
+listas geradas na etapa “Separa contexto” (próprio, 2020)
 
 Visando uma relação, é realizado um loop em cima dos eventos de cada
 contexto, criando uma lista chamada *musicTable*. Tal, é preenchida dos
 seguintes valores: *uri*, *like*, *hate* e *restart,* relacionados ao
 contexto da música, e *feeling*, *activity* e *location,* e relacionados
 ao contexto do usuário. Ademais, os termos *like*, *hate* e *restart*
-são representados pelo número de vezes que cada um aconteceu durante a
-reprodução.
+são representados pelo número de vezes que cada evento desse tipo
+aconteceu durante a reprodução.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image17.jpg)
 
-<span id="_Ref54973306" class="anchor"></span>Figura 21 Representação
-das listas geradas na etapa “separa contexto das músicas” (próprio,
-2020)
+<span id="_Ref54973306" class="anchor"></span>Figura Representação das
+listas geradas na etapa “separa contexto das músicas” (próprio, 2020)
 
 Nas duas etapas seguintes (“busca informações das músicas” e “busca
-informações dos artistas (gênero)”), direcioná-lo-ia, o cliente, a uma
-busca nas API’s do Spotify, utilizando os *uris* da música e artistas, a
-fim de obter os gêneros musicais. O resultado dela é um dicionário
-chamado *artistsMap* relacionando os *uris* com os dados de cada
-artista. Devido a uma limitação do Spotify, a busca se fará de 50 em 50
-uris.
+informações dos artistas (gênero)”, é realizada)”), direcioná-lo-ia, o
+cliente, a uma busca nas APIs do Spotify, utilizando os *uris* da música
+e artistas, a fim de obter os gêneros musicais. O resultado dela é um
+dicionário chamado *artistsMap* relacionando os *uris* com os dados de
+cada artista. Devido a uma limitação do Spotify, a busca se fará de 50
+em 50 *uris*.
 
 ![Tabela Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
-<span id="_Ref54973298" class="anchor"></span>Figura 22 Representação da
+<span id="_Ref54973298" class="anchor"></span>Figura Representação da
 tabela na etapa “separa contexto das músicas” (próprio, 2020)
 
 Os dados no Spotify, nos seus devidos processos, obtiveram a lista dos
 gêneros das músicas através dos artistas. A posteriori, adiciona-o à
-lista de músicas *musicTable* representada na Figura 22. Foi separado os
-gêneros, um por linha e, no fim, removido a música, pois ela iria
+lista de músicas *musicTable* representada na Figura 22. Foram separados
+os gêneros, um por linha e, no fim, removida a música, pois ela iria
 atrapalhar o resultado do algoritmo. Com isso, surgiu, propositalmente,
 a lista *genreTable*, deixando, assim, o *musicTable* em desuso.
 
@@ -1681,49 +1692,56 @@ Gozando da completude da tabela, principiou um tratamento dos valores
 dos eventos que eram múltiplos. Tais continham mais de uma informação
 nos mesmos eventos, através do “;” ou possuíam uma quantidade maior do
 que 1 nos campos de *like*, *hate* e *restart*. Nesse tratamento, foi
-quebrado os valores dos eventos um a um.
+quebrado os valores dos eventos um a um em mais linhas. Um exemplo do
+uso do “;” é o caso de um *feeling* conter o valor “feliz;triste”, que
+foi transformado em duas linhas, uma para “feliz”, outra para “triste”.
+Um exemplo do campo like, no caso de possuir o valor 3, é quebrado o
+evento em 3 linhas e trocado por 1.
 
 ![](./pandoc/media/image19.png)
 
-<span id="_Ref53955795" class="anchor"></span>Figura 23 *head()* do
+<span id="_Ref53955795" class="anchor"></span>Figura *head()* do
 *dataframe* criado a partir da variável *genreTable* (próprio, 2020)
 
-No fim, era necessário a lib *preprocessing* do *sklearn*, caso quisesse
-transformar as características e classes de cada evento da tabela em
-números inteiros; isso é necessário para rodar o algoritmo KNN. O
-resultado da tabela é apresentado na Figura 23.
+No fim, era necessário a biblioteca *preprocessing* do *sklearn*, caso
+quisesse transformar as características e classes de cada evento da
+tabela em números inteiros; isso é necessário para rodar o algoritmo
+KNN. O resultado da tabela é apresentado na Figura 23.
 
 ### Testes com KNN
 
-No final, o *genreTable,* convertido em um *data frame* da *lib* pandas,
-sofreu certa separação da coluna gênero da tabela, obtendo variáveis de
-X (características) e y (classes). As duas são utilizadas na função
-*train\_test\_split,* adquirindo, tanto características de treino
-(*X\_train*) e de teste (*X\_test*), quanto classes de treino e teste
-(*y\_train*, *y\_test*). O tamanho da base de teste pode ser informado
-para o *train\_test\_split* através do parâmetro *test\_size* que, nesse
-caso, foi de 0,3.
+No final, o *genreTable,* convertido em um *data frame* da biblioteca
+pandas, sofreu certa separação da coluna gênero da tabela, obtendo
+variáveis de X (características) e y (classes). As duas são utilizadas
+na função *train\_test\_split,* adquirindo, tanto características de
+treino (*X\_train*) e de teste (*X\_test*), quanto classes de treino e
+teste (*y\_train*, *y\_test*). O tamanho da base de teste pode ser
+informado para o *train\_test\_split* através do parâmetro *test\_size*
+que, nesse caso, foi de 0,3 (30% de teste e 70% de treinamento,
+respectivamente 533 e 1242).
 
-A classe *KNeighborsClassifier* da lib *sklearn.neighbors* serviu de
-base para o êxito no funcionamento do KNN. Nela, pode ser informado o
+A classe *KNeighborsClassifier* da biblioteca *sklearn.neighbors* serviu
+de base para o êxito no funcionamento do KNN. Nela, pode ser informado o
 número de vizinhos levados em consideração a partir do parâmetro
-*n\_neighbors* que, à vista disso, refere-se ao 3.
+*n\_neighbors* que nesse caso foi decidido através de testes para
+descobrir o melhor *k*, resultando em 9, com menor erro de classificação
+(MSE) de 0.572475.
 
 Iniciando a classe, obtemos a variável *model*. Com ela, põe-se os dados
 de treino (*X\_train*, *y\_train*) através do método *fit*, de modo que
 suporte dois parâmetros: (i) dados de treino; (ii) valores alvo. Assim
-sendo, já é iminente utilizar o modelo criado em proveito de predizer os
+sendo, já é iminente utilizar o melhor k analisado (9), para predizer os
 próximos alvos que, no *sklearn,* é rodado através do método *predict*.
 Ele transfere os valores para realizar a predição (*X\_test*), que tem
-como retorno a classe que se adequa melhor ao modelo.
+como retorno a classe que se adequa melhor aos dados de teste.
 
 Em suma, um teste, efetuado através do método *score* na performance da
-predição do algoritmo e do modelo informado ao *sklearn*, recebeu por
-parâmetro suas constatações, retiradas no modelo (*X\_test*). As classes
-dele, retiradas do modelo (*y\_test*), retornaram à acurácia do modelo
-gerado, obtendo uma média de 0,15 nos testes realizados.
+predição do algoritmo KNN e da base informada ao *sklearn*, recebeu por
+parâmetro suas caracteristicas, retiradas de *X\_test* e classes,
+retiradas de *y\_test* e retornaram à acurácia do algoritmo KNN. Os
+resultados do teste são apresentados na seção 4.2.6.
 
-### Taxonomia dos gêneros
+### Predição no sistema *LORS*Taxonomia dos gêneros
 
 Intentando manter, nas classes de predição, somente o principal do
 *score* de recomendação na sua melhoria, efetuou-se uma busca dos
@@ -1735,76 +1753,80 @@ que suprisse a lista de gêneros do Spotify - algo que ele não dispõe.
 
 A lista (relação dos gêneros com seus subgêneros) pôde ser identificada
 em um *showcase* que faz parte do Spotify denominado de Music Popcorn
-(<https://developer.spotify.com/community/showcase/music-popcorn/>).
-Mesmo que Ele possua uma lista de 1107 gêneros, 4 vezes menos do que o
-Spotify possui hoje, já auxiliou na taxonomia dos gêneros, trazendo uma
-redução de 70 para 40 classes na base do usuário de teste e melhorando o
-score de 0,15 para uma média de 0,45.
+(https://developer.spotify.com/community/showcase/music-popcorn/). Mesmo
+que Ele possua uma lista de 1107 gêneros, 4 vezes menos do que o Spotify
+possui hoje, já auxiliou na taxonomia dos gêneros, trazendo uma redução
+de 70 para 40 classes na base do usuário de teste e melhorando o score
+de 0,15 para uma média de 0,45.
 
 ## Modelagem do sistema *LORS*
 
 No sistema LORS, desenvolvido para, através do conhecimento do contexto
 dos usuários, aperfeiçoar as recomendações musicais do Spotify, é
-realizado a predição do gênero musical baseando-se no contexto e o
+realizada a predição do gênero musical baseando-se no contexto e o
 histórico de músicas reproduzidas. O resultado correspondente passa a
 ser entregue através de uma API, podendo ser consumida por qualquer
 usuário que utilize o *plugin Web* desenvolvido nesse trabalho.
 
-![Diagrama Descrição gerada automaticamente](./pandoc/media/image20.jpg)
+![](./pandoc/media/image20.jpeg)
 
-<span id="_Ref54973275" class="anchor"></span>Figura 24 Visão macro do
+<span id="_Ref54973275" class="anchor"></span>Figura Visão macro do
 sistema LORS (próprio, 2020)
 
 O *plugin* (representado na Figura 24 como o “App”) é responsável por, a
 cada 30 minutos, solicitar ao usuário uma atualização de contexto, isso
 é, abrir um formulário. Dessa forma, ele possibilita o preenchimento do
 humor, atividades e localização atual do usuário. As informações são
-salvas e relacionadas as próximas músicas reproduzidas ou salvas pelo
+salvas e relacionadas às próximas músicas reproduzidas ou salvas pelo
 usuário.
 
-### POC (*Proof of Concept*)
+### POC (Proof of Concept)
 
 Na elaboração de uma POC em *python* utilizando o *Jupyter Notebook,*
 utilizou-se somente dos dados do usuário que tiveram mais registros
 salvos na base. Todo tratamento e preparação dos dados apresentados na
 seção 4.1.2 foram concebidos nessa POC. Os três testes ((i) escolher o
 melhor número de vizinhos (*k*) para rodar o algoritmo; (ii) avaliar o
-score do modelo; (iii) analisar a matriz de confusão obtida no modelo.)
+score do modelo; (iii) analisar a matriz de confusão obtida no modelo..)
 serviram de apoio para o aperfeiçoamento no uso do algoritmo.
 
 ### Servidor
 
-Com a lógica desenvolvida na POC, composto de uma exportação do código
-para scripts *python*, um servidor progrediu em sua criação. Tal,
-utiliza a lib *Flask* e integra o algoritmo KNN exportado à rota. A rota
-do tipo GET / elaborada recebe 4 parâmetros: (i) *uri*, o *id* do
-*Spotify* do usuário; (ii) *feeling*, o sentimento registrado; (iii)
-*activity*, a atividade registrada; (iv) *location*, a localização
-registrada. Ela também detém como retorno o gênero resultado da predição
-e o *score* do modelo.
+Com a lógica desenvolvida na POC, foi realizadacomposto de uma
+exportação do código para scripts *python*, um servidor progrediu em
+sua criação. Tal, utiliza a biblioteca *Flask* e integra o algoritmo KNN
+exportado à rota. A rota do tipo GET / elaborada recebe 4 parâmetros:
+(i) *uri*, o *id* do *Spotify* do usuário; (ii) *feeling*, o sentimento
+registrado; (iii) *activity*, a atividade registrada; (iv) *location*, a
+localização registrada. Ela também detém como retorno o gênero resultado
+da predição e a acurácia do algoritmo KNN.
 
 ### Hospedagem
 
 O servidor, publicado na ferramenta disponível no Azure chamada App
-Service, utilizando da conteinerização do Docker, é uma ferramenta paga.
-Esse, possibilita a publicação de servidores de diversas tecnologias. O
-link final de acesso ao servidor ficou:
-<https://lors.azurewebsites.net/>
+Service, utilizando *container* Docker, é uma ferramenta paga. Esse,
+possibilita a publicação de servidores de diversas tecnologias. O link
+final de acesso ao servidor ficou: <https://lors.azurewebsites.net/>
 
 ### Recomendação
 
 No momento em que o servidor recebe uma requisição, é feito o tratamento
 dos parâmetros. O mesmo transforma a *string* em um valor numérico
-através da lib *preprocessing*, e, no caso da característica não
-existir anteriormente, é feito um tratamento para valores padrões
+através da biblioteca *preprocessing*, e, no caso da característica não
+existir anteriormente, é feito um tratamento para valores padrões,
 conforme apresenta o Quadro 4. Os campos *like*, *hate* e *restart*
 estão com valores fixos devido a busca de músicas que foram curtidas
 (*like*=1), as não marcadas como “Não gostei” (*hate*=0) junto daquelas
-colocadas para repetir (*restart*=1). Os campos *feeling*, *activity*,
-*location* possuem valor padrão somente no caso de a característica
-enviada não existir na base.
+colocadas para repetir (*restart*=1).
 
-<span id="_Ref54920412" class="anchor"></span>Quadro 4 Campos e seus
+É utilizado o *LabelEncoder* para gerar o valor numérico dos campos
+*feeling*, *activity*, *location*. Para isso, foi rodado o método *fit*
+apresentando os dados a base e então realizado o *transform*. Ao rodar,
+é estourado uma exceção se for passado uma característica desconhecida
+pelo *fit*. Devido a esse comportamento, os campos possuem um valor
+padrão no caso de a característica enviada não existir na base.
+
+<span id="_Ref54920412" class="anchor"></span>Quadro Campos e seus
 respectivos valores utilizados na recomendação (próprio, 2020)
 
 | Campo    | Valor padrão |
@@ -1816,261 +1838,268 @@ respectivos valores utilizados na recomendação (próprio, 2020)
 | activity | 0            |
 | location | 0            |
 
-Com o modelo pronto (Seção 4.1.1) e os parâmetros tratados, fez-se
-mister a predição através do método *predict* do modelo do *sklearn*,
-devolvido a classe resultante. Isso é, ter o gênero resultante como
-resposta a requisição.
+Com o algoritmo pronto (Seção 4.1.1) e os parâmetros tratados é
+realizada, fez-se mister a predição através do método *predict* do
+modelo do *sklearn* e devolvida, devolvido a classe resultante. Isso é,
+ter o gênero resultante como resposta à requisição.
 
 ### Resultado da recomendação (integração app)
 
 Uma integração no plugin se deu como necessário no servidor pronto e
-publicado, obtendo informações de contexto e solicitando ao LORS o
-gênero recomendado. Com o retorno do gênero, é feito uma nova
-requisição de busca ao *Spotify* das principais 20 *playlists* que o
-contenham no nome.
+publicado, foi desenvolvida uma integração no *plugin*. Nela, são
+obtidas asobtendo informações de contexto e solicitando ao LORS o gênero
+recomendado. Com o retorno do gênero, é feita uma nova requisição de
+busca ao *Spotify* das principais 20 *playlists* que o contenham no
+nome.
 
-![](./pandoc/media/image21.png)
+![](./pandoc/media/image22.png)
 
-<span id="_Ref54973248" class="anchor"></span>Figura 25 Tela de
+<span id="_Ref54973248" class="anchor"></span>Figura Tela de
 recomendações (próprio, 2020)
 
 No fim, é apresentado o gênero recomendado na tela. Tratasse do retorno
-do *Spotify*, apresentado nas *playlists* da tela (Figura 25),
+do *Spotify*, apresentado nas *playlists*, conforme da tela (Figura 25,
 permitindo ao usuário escolher uma das playlists para reproduzir.
 
 ### Resultados do experimento
 
-É importante garantir o funcionamento e a precisão do modelo já pronto.
-Para que as recomendações estejam funcionando, foi aferido a acurácia e
-a matriz de confusão do modelo.
+Nessa seção são discutidasÉ importante garantir o funcionamento e a
+precisão do modelo já pronto. Para que as recomendações estejam
+funcionando, foi aferido a acurácia e matriz de confusão da aplicação do
+KNN sobre o conjunto de testes. O algoritmo inicialmentedo modelo.
 
-Inicialmente, ele obteve uma acurácia de 0,15, o que é muito baixo. A
-hipótese estaria na quantidade de gêneros (classes); diminuí-los poderia
-aumentar a precisão do experimento. realizar-se-ia uma taxonomia dos
-gêneros, mantendo somente os principais. Com essa alteração, a acurácia
-do algoritmo passou de 0,15 para 0,46, um acréscimo de 206%, tendo em
-vista o 0,15 como um valor total.
+Inicialmente, ele obteve uma acurácia de 0,15, o que é muito baixo. Foi
+analisada a estrutura de atributos presentes no conjunto de dados e
+visto que poderia ser reduzida aA hipótese estaria na quantidade de
+gêneros (classes), então, foi realizada sua); diminuí-los poderia
+aumentar a precisão do experimento. realizar-se-ia uma taxonomia,
+mantendo somente os principais. Com essa alteração, a acurácia do
+algoritmo passou de 0,15 para 0,46, um acréscimo de 306%, mas ainda206%,
+tendo em vista o 0,15 como um valor de acurácia baixototal.
 
-| GENERO                        | CLASSE GERADA PELO LABEL ENCODER |
-| ----------------------------- | -------------------------------- |
-| arkansas country              | 0                                |
-| atl hip hop                   | 1                                |
-| australian country            | 2                                |
-| australian indie folk         | 3                                |
-| australian reggae fusion      | 4                                |
-| bandinhas                     | 5                                |
-| beatlesque                    | 6                                |
-| brazilian rock                | 7                                |
-| canadian pop punk             | 8                                |
-| canadian punk                 | 9                                |
-| canadian rock                 | 10                               |
-| channel pop                   | 11                               |
-| country                       | 12                               |
-| country dawn                  | 13                               |
-| country pop                   | 14                               |
-| country road                  | 15                               |
-| dfw rap                       | 16                               |
-| electro house                 | 17                               |
-| folk                          | 18                               |
-| harlem hip hop                | 19                               |
-| heartland rock                | 20                               |
-| hip hop                       | 21                               |
-| indie cafe pop                | 22                               |
-| melodic rap                   | 23                               |
-| metal                         | 24                               |
-| miami hip hop                 | 25                               |
-| musica gaucha                 | 26                               |
-| musica gaucha tradicionalista | 27                               |
-| musica maranhense             | 28                               |
-| neo mellow                    | 29                               |
-| nyc rap                       | 30                               |
-| oklahoma country              | 31                               |
-| pop                           | 32                               |
-| post-teen pop                 | 33                               |
-| punk                          | 34                               |
-| r\&b                          | 35                               |
-| redneck                       | 36                               |
-| rock                          | 37                               |
-| sertanejo pop                 | 38                               |
-| trap                          | 39                               |
+O principal problema para realizar a taxonomia foi encontrar uma lista
+que supria a dos gêneros do Spotify ao ponto de conseguir fazer a
+relação com os existentes no algoritmo e substitui-los pelo base, pois
+nele não dispõe dessa relação. A relação dos gêneros com seus subgêneros
+foi encontrada em um *showcase* do Spotify chamado Music Popcorn
+(https://developer.spotify.com/community/showcase/music-popcorn/). Ele
+possui uma lista de 1107 gêneros, 4 vezes menos do que o Spotify possui
+hoje, porém já auxiliou na taxonomia dos gêneros, trazendo uma redução
+de 70 para 40 classes na base do usuário de teste.
+
+| GENERO                   | CLASSE GERADA PELO LABEL ENCODER | GENERO                        | CLASSE GERADA PELO LABEL ENCODER |
+| ------------------------ | -------------------------------- | ----------------------------- | -------------------------------- |
+| arkansas country         | 0                                | heartland rock                | 20                               |
+| atl hip hop              | 1                                | hip hop                       | 21                               |
+| australian country       | 2                                | indie cafe pop                | 22                               |
+| australian indie folk    | 3                                | melodic rap                   | 23                               |
+| australian reggae fusion | 4                                | metal                         | 24                               |
+| bandinhas                | 5                                | miami hip hop                 | 25                               |
+| beatlesque               | 6                                | musica gaucha                 | 26                               |
+| brazilian rock           | 7                                | musica gaucha tradicionalista | 27                               |
+| canadian pop punk        | 8                                | musica maranhense             | 28                               |
+| canadian punk            | 9                                | neo mellow                    | 29                               |
+| canadian rock            | 10                               | nyc rap                       | 30                               |
+| channel pop              | 11                               | oklahoma country              | 31                               |
+| country                  | 12                               | pop                           | 32                               |
+| country dawn             | 13                               | post-teen pop                 | 33                               |
+| country pop              | 14                               | punk                          | 34                               |
+| country road             | 15                               | r\&b                          | 35                               |
+| dfw rap                  | 16                               | redneck                       | 36                               |
+| electro house            | 17                               | rock                          | 37                               |
+| folk                     | 18                               | sertanejo pop                 | 38                               |
+| harlem hip hop           | 19                               | trap                          | 39                               |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
+|                          |                                  |                               |                                  |
 
 <span id="_Ref55013755" class="anchor"></span>Tabela 1 relação dos
 gêneros e a classe utilizada no KNN (próprio, 2020)
 
 A matriz de confusão do usuário, a utilizada nos testes, está disponível
 na Tabela 3. Nela, é possível verificar que o modelo somente obteve
-sucesso na recomendação da categoria de número 12. Acontece devido ao
-curto período de uso da aplicação e ao gosto musical do usuário estar
-mais voltado aquele estilo musical. Encontrada na Tabela 1, ela
-apresenta a relação dos gêneros com as classes geradas para o KNN.
+sucesso na recomendação da categoria de número 12. Isso ocorreuAcontece
+devido ao curto período de uso da aplicação e ao gosto musical do
+usuário estar mais voltado aquele estilo musical. Encontrada na Tabela
+1, ela apresenta a relação dos gêneros com as classes geradas para o
+KNN.
 
-<table>
-<thead>
-<tr class="header">
-<th></th>
-<th></th>
-<th>CLASSIFICAÇÃO OBTIDA</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td></td>
-<td></td>
-<td>POSITIVO</td>
-<td>NEGATIVO</td>
-</tr>
-<tr class="even">
-<td><p>CLASSE</p>
-<p>REAL</p></td>
-<td>POSITIVO</td>
-<td>184</td>
-<td>180</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>NEGATIVO</td>
-<td>46</td>
-<td>38</td>
-</tr>
-</tbody>
-</table>
+|                      |          | CLASSE REAL |          |
+| -------------------- | -------- | ----------- | -------- |
+|                      |          | POSITIVO    | NEGATIVO |
+| CLASSIFICAÇÃO OBTIDA | POSITIVO | 184         | 180      |
+|                      | NEGATIVO | 46          | 38       |
 
-<span id="_Ref55253627" class="anchor"></span>Tabela 2 matriz confusão
-da classe 12, gênero musical country (próprio, 2020)
+<span id="_Ref55253627" class="anchor"></span>Tabela matriz confusão da
+classe 12, gênero musical country (próprio, 2020)
 
 Para uma análise mais aprofundada, o gênero de maior quantidade de
 recomendações, o de 230 itens, isso é o *country* (classe 12), teve sua
-prioridade. Pela análise, a Tabela 2 contém a avaliação dos dados de
-precisão, o *recall* e o *f-measure*. A precisão do modelo, ao realizar
-a recomendação dessa classe, é de 0,51, ou seja, está com dificuldades
-de classificar o gênero *country* e acaba na maioria das vezes
-interpretando como outro gênero. O recall foi de 0,80, o que mostra ele
-está colocando pouco da classe 12 em outras.
+prioridade. Pela análise, foi criada a avaliação dos dados de precisão,
+o *recall* e o *f-measure*. A precisão do KNN ao realizar a recomendação
+dessa classe, é de 0,51, isso mostra que o algoritmo KNN está com
+dificuldades de classificar o gênero *country* e acaba na maioria das
+vezes interpretando como outro gênero. O recall foi de 0,80, o que
+mostra que ele está classificando instâncias da classe 12 (*country*) em
+outras classes. Outra métrica interessante é o *f-measure*, que é
+utilizado para analisar o *recall* com a precisão em uma única medida. O
+gênero *country* ficou com valor de 0,62. 
 
-Outra métrica interessante é o *f-measure*, que é utilizado para
-analisar o *recall* com a precisão em uma única medida. O gênero country
-ficou 0,62, o que mostra que no geral o modelo conseguiu predizer 62%
-das vezes a classe corretamente.
+|   |   |   |   |   |   |   |   |   |   |   |   | 0-11 | 12 | 13-14 |   | 15 | 16-20 |   |   |   |   | 21 | 22-26 |   |   |   |   | 27 | 28-31 |  |  |  | 32 | 33-36 |   |   |  | 37 | 38-39 |  |
+| - | - | - | - | - | - | - | - | - | - | - | - | ---- | -- | ----- | - | -- | ----- | - | - | - | - | -- | ----- | - | - | - | - | -- | ----- |  |  |  | -- | ----- | - | - |  | -- | ----- |  |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0    | 0  |       |   |    |       |   |   |   |   |    |       |   |   |   |   |    |       |  |  |  |    |       |   |   |  |    |       |  |
+| 1 | 0 | 0 | 0 | 0 | 0 |   |   |   |   |   |   |      |    |       |   |    |       |   |   |   |   | 1  | 0     | 0 | 0 | 0 | 0 | 0  | 0     |  |  |  |    |       |   |   |  |    |       |  |
+| 2 | 0 |   |   |   |   |   |   |   |   |   |   |      | 1  | 0     | 0 | 0  | 0     | 0 | 0 | 0 | 0 | 0  | 0     | 0 |   |   |   |    |       |  |  |  |    |       |   |   |  |    |       |  |
+| 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |   |      |    |       |   |    |       |   |   |   |   |    |       |   |   |   |   |    |       |  |  |  | 1  | 0     | 0 | 0 |  |    |       |  |
+| 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0    | 0  |       |   |    |       |   |   |   |   |    |       |   |   |   |   |    |       |  |  |  |    |       |   |   |  |    |       |  |
+| 5 | 0 |   |   |   |   |   |   |   |   |   |   |      | 9  | 0     | 0 | 0  | 0     | 0 | 0 | 0 | 0 | 0  | 0     | 0 |   |   |   |    |       |  |  |  |    |       |   |   |  |    |       |  |
 
-|    | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12  | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 |
-| -- | - | - | - | - | - | - | - | - | - | - | -- | -- | --- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-| 0  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 1  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 2  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 1   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 3  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 4  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 5  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 9   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 6  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 7  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 8  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 9  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 2  | 0  | 0  |
-| 12 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 184 | 0  | 0  | 24 | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 17 | 0  | 0  | 0  | 0  | 4  | 0  | 0  |
-| 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 64  | 0  | 0  | 5  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 5  | 0  | 0  | 0  | 0  | 1  | 0  | 0  |
-| 16 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 17 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 4  | 0  | 0  | 0  | 0  | 0  | 3  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 2  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 18 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 19 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 21 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 5  | 0  | 0  | 0  | 0  | 0  | 10 | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 8  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 22 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 23 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 2  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 24 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 2   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 25 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 26 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 27 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 11  | 0  | 0  | 3  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 4  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 28 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 29 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 2   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 2  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 30 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 1   | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 31 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 2   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 2  | 0  | 0  |
-| 32 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 24  | 0  | 0  | 9  | 0  | 0  | 0  | 0  | 0  | 4  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 17 | 0  | 0  | 0  | 0  | 1  | 0  | 0  |
-| 33 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 2   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 34 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 35 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 1   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 36 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 0   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 37 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 55  | 0  | 0  | 4  | 0  | 0  | 0  | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 10 | 0  | 0  | 0  | 0  | 2  | 0  | 0  |
-| 38 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 4   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
-| 39 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 2   | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 3  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
+| 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-<span id="_Ref55013706" class="anchor"></span>Tabela 3 Matrix confusão
-do usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
+| 6-10  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0   |   |  |    |   |  |  |  |  |   |   |   |   |  |  |  |  |  |  |  |    |   |  |  |  |   |   |  |
+| ----- | - | - | - | - | - | - | - | - | - | - | - | - | --- | - |  | -- | - |  |  |  |  | - | - | - | - |  |  |  |  |  |  |  | -- | - |  |  |  | - | - |  |
+| 11    | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |     |   |  |    |   |  |  |  |  |   |   |   |   |  |  |  |  |  |  |  |    |   |  |  |  | 2 | 0 |  |
+| 12    | 0 |   |   |   |   |   |   |   |   |   |   |   | 184 | 0 |  | 24 | 0 |  |  |  |  | 1 | 0 | 0 | 0 |  |  |  |  |  |  |  | 17 | 0 |  |  |  | 4 | 0 |  |
+| 13-14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0   |   |  |    |   |  |  |  |  |   |   |   |   |  |  |  |  |  |  |  |    |   |  |  |  |   |   |  |
+
+|    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+| -- | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
+| 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+
+| 15 | 0 |   |   |   |   |   |   |   |   |   |   |   | 64 | 0 |   | 5 | 0 |   |   |   |   | 1  | 0 | 0 | 0 |   |   |   |   |   |   |   | 5  | 0 |   |   |  | 1 | 0 |  |
+| -- | - | - | - | - | - | - | - | - | - | - | - | - | -- | - | - | - | - | - | - | - | - | -- | - | - | - | - | - | - | - | - | - | - | -- | - | - | - |  | - | - |  |
+| 16 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  |   |   |   |   |   |   |   |   |    |   |   |   |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
+| 17 | 0 | 0 | 0 |   |   |   |   |   |   |   |   |   |    |   |   | 4 | 0 |   |   |   |   | 3  | 0 | 0 | 0 |   |   |   |   |   |   |   | 2  | 0 | 0 | 0 |  |   |   |  |
+| 18 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  |   |   |   |   |   |   |   |   |    |   |   |   |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
+| 19 | 0 | 0 | 0 |   |   |   |   |   |   |   |   |   |    |   |   | 1 | 0 | 0 | 0 | 0 | 0 | 0  | 0 | 0 | 0 |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
+| 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |   |   |    |   |   |   |   |   |   |   |   |    |   |   |   |   |   |   |   |   |   |   | 1  | 0 | 0 | 0 |  |   |   |  |
+| 21 | 0 | 0 | 0 |   |   |   |   |   |   |   |   |   |    |   |   | 5 | 0 |   |   |   |   | 10 | 0 | 0 | 0 |   |   |   |   |   |   |   | 8  | 0 | 0 | 0 |  |   |   |  |
+| 22 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  |   |   |   |   |   |   |   |   |    |   |   |   |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
+| 23 | 0 | 0 | 0 |   |   |   |   |   |   |   |   |   |    |   |   | 2 | 0 |   |   |   |   | 1  | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |   |   |    |   |   |   |  |   |   |  |
+| 24 | 0 |   |   |   |   |   |   |   |   |   |   |   | 2  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0 | 0 |   |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
+| 25 | 0 | 0 | 0 | 0 | 0 |   |   |   |   |   |   |   |    |   |   |   |   |   |   |   |   | 1  | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |   |   |    |   |   |   |  |   |   |  |
+| 26 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |   |   |   |   |    |   |   |   |   |   |   |   |   |    |   |   |   |   |   | 1 | 0 | 0 | 0 | 0 | 0  |   |   |   |  |   |   |  |
+| 27 | 0 |   |   |   |   |   |   |   |   |   |   |   | 11 | 0 |   | 3 | 0 | 0 | 0 |   |   |    |   |   |   |   |   | 4 | 0 | 0 | 0 | 0 | 0  |   |   |   |  |   |   |  |
+| 28 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  |   |   |   |   |   |   |   |   |    |   |   |   |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
+| 29 | 0 |   |   |   |   |   |   |   |   |   |   |   | 2  | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |    |   |   |   |   |   |   |   |   |   |   | 2  | 0 | 0 | 0 |  |   |   |  |
+| 30 | 0 |   |   |   |   |   |   |   |   |   |   |   | 1  | 0 |   | 1 | 0 | 0 | 0 | 0 | 0 | 0  | 0 | 0 | 0 |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
+| 31 | 0 |   |   |   |   |   |   |   |   |   |   |   | 2  | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |    |   |   |   |   |   |   |   |   |   |   | 1  | 0 |   |   |  | 2 | 0 |  |
+| 32 | 0 |   |   |   |   |   |   |   |   |   |   |   | 24 | 0 |   | 9 | 0 |   |   |   |   | 4  | 0 | 0 | 0 |   |   |   |   |   |   |   | 17 | 0 |   |   |  | 1 | 0 |  |
+| 33 | 0 |   |   |   |   |   |   |   |   |   |   |   | 2  | 0 | 0 | 0 |   |   |   |   |   | 1  | 0 | 0 | 0 |   |   |   |   |   |   |   | 1  | 0 | 0 | 0 |  |   |   |  |
+| 34 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |   |   |    |   |   |   |   |   |   |   |   |    |   |   |   |   |   |   |   |   |   |   | 1  | 0 | 0 | 0 |  |   |   |  |
+| 35 | 0 |   |   |   |   |   |   |   |   |   |   |   | 1  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0 | 0 |   |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
+| 36 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  |   |   |   |   |   |   |   |   |    |   |   |   |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
+| 37 | 0 |   |   |   |   |   |   |   |   |   |   |   | 55 | 0 |   | 4 | 0 | 1 | 0 | 0 | 0 |    |   |   |   |   |   |   |   |   |   |   | 10 | 0 |   |   |  | 2 | 0 |  |
+| 38 | 0 |   |   |   |   |   |   |   |   |   |   |   | 4  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0 | 0 |   |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
+| 39 | 0 |   |   |   |   |   |   |   |   |   |   |   | 2  | 0 | 1 | 0 |   |   |   |   |   | 3  | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |   |   |    |   |   |   |  |   |   |  |
+
+<span id="_Ref55013706" class="anchor"></span>Tabela Matrix confusão do
+usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
+
+Com sucesso foi desenvolvido o sistema de recomendação e apresentado
+nesse capítulo, iniciou-se apresentado o algoritmo, então a preparação
+dos dados do *plugin*, testes, desenvolvimento do servidor que hospeda
+os scripts *python*, a integração dele no *webapp* e por fim, é
+apresentado os resultados obtidos com as recomendações do algoritmo.
 
 # CONCLUSÃO
 
-Nesse trabalho foi realizado uma revisão em cima dos trabalhos da *ACM*,
-de *RecSys* musical que utilizam o contexto do usuário, nela foi
-possível verificar, que poucos trabalhos buscam unir, a recomendação
+Nesse trabalho foi realizada uma revisão sobre trabalhos da *ACM*, de
+*RecSys* musical, que utilizam o contexto do usuário. Na pesquisa
+realizada apareceram poucos trabalhos que buscam unir a recomendação
 musical com o contexto do usuário. Sendo assim, esse trabalho
 desenvolveu um *RecSys* musical, o qual analisa o contexto do usuário em
 tempo real, para realizar novas recomendações a ele.
 
-No desenvolvimento desse trabalho, foi encontrado diversas dificuldades
-em lidar com músicas, pois desde o momento que se iniciou o estudo, foi
-visto que a área é muito maior do que aparenta. Com o questionário foi
-possível entender que o gosto de um público é algo inesperado, pois
-nesse caso, foi algo bem diferente do que o autor desse trabalho
-esperava.
+No desenvolvimento desse trabalho, foram encontradas diversas
+dificuldades em lidar com músicas, pois desde o momento que se iniciou o
+estudo, foi visto que a área é muito maior do que aparenta. Com o
+questionário foi possível entender que o gosto musical de um público é
+algo bastante abrangente.
 
-No plugin, foram encontradas diversas dificuldades em seu
-desenvolvimento. Inicialmente a aplicação foi desenvolvida em Flutter,
-uma plataforma para desenvolvimento mobile e foi visto que não supriria
-as necessidades desse trabalho, então houve uma migração para a
-plataforma Web. No fim entendido que o mais simples supriria as
-necessidades desse trabalho e que uma tecnologia hype não iria torná-lo
-melhor.
+No *plugin* foram encontradas dificuldades em seu desenvolvimento.
+Inicialmente a aplicação foi desenvolvida em Flutter, uma plataforma
+para desenvolvimento mobile e foi visto que devido a falta de suporte ao
+*streaming* (*Web Playback SDK*) na biblioteca do Spotify para Flutter,
+ela não supriria as necessidades desse trabalho, então houve uma
+migração para a plataforma Web.
 
-Ao realizar a primeira publicação do plugin, foram encontrados problemas
-como, navegadores diferentes, sistemas operacionais diferentes, contas
-do Spotify com contrato diferente. E tudo isso, levou ao entendimento de
-que o desenvolvimento e manutenção de aplicações Web é complexo.
+Ao realizar a primeira publicação do *plugin*, foram encontrados
+problemas como, navegadores diferentes, sistemas operacionais
+diferentes, contas do Spotify com contrato diferente. E tudo isso, levou
+ao entendimento de que o desenvolvimento e manutenção dessa aplicação
+Web é bastante complexo.
 
-Com o sistema desenvolvido, foi enviado o e-mail a todos que optaram por
+Com o sistema desenvolvido, foi enviado e-mail a todos que optaram por
 participar da pesquisa no questionário. Nisso foi visto que os usuários
-não têm uma boa aderência a estudos enviados via e-mail, então, foi
-escolhido os com mais afinidade e solicitado pessoalmente que
-utilizassem a aplicação para auxiliar no trabalho.
+não têm uma boa aderência a estudos enviados via e-mail, pois dos 144
+optantes, somente 6 deles o receberam e utilizaram da aplicação.
+Portanto, foram escolhidos respondentes com mais afinidade com o autor,
+um total de 8, solicitado pessoalmente que utilizassem a aplicação para
+auxiliar no trabalho. No fim, o sistema obteve um total de 14 usuários
+que utilizaram o sistema naquele período.
 
 Mesmo solicitando pessoalmente, foi obtido um baixo uso na aplicação,
-gerando assim uma base muito pequena para o KNN. Esse problema é
-conhecido como *Cold Start*, que acontece geralmente as aplicações que
-estão iniciando e não tem um histórico de dados muito grande. Para
-tratar esse problema, foi desenvolvido a taxonomia dos gêneros, mantendo
-somente os principais, e com isso, reduzindo o número de resultados
-possíveis auxiliando KNN a predizer um melhor resultado.
+gerando assim uma base muito pequena para aplicação do algoritmo KNN.
+Esse problema é conhecido como *Cold Start*, que acontece geralmente
+quando as aplicações estão iniciando e não tem um histórico de dados
+muito grande. Para lidar melhor com a acurácia inicial do KNN muito
+baixa, foi desenvolvida a taxonomia dos gêneros, mantendo somente os
+principais gêneros, e com isso, reduzindo o número de resultados
+possíveis, o que melhorou a acurácia do KNN em predizer um melhor
+resultado.
 
 Porém, mesmo com a redução das classes, o modelo obteve uma baixa
-acurácia nas recomendações. Apresentando a necessidade de uma melhoria
-nas características do modelo ou da aplicação de outros algoritmos que
-não sejam o KNN ao ele.
+acurácia nas recomendações. Logo, há a necessidade de uma melhoria nas
+características coletadas dos usuários, bem como um aumento na base de
+dados. Posterior a isto, será possível também avaliar acurácia do KNN em
+relação a outros algoritmos de *Machine Learning*.
 
 ## Trabalhos futuros
 
-Abaixo é apresentado algumas melhorias e continuidade nos estudos
+Abaixo são apresentadas algumas melhorias e continuidade nos estudos
 relativos ao sistema de recomendação apresentado.
 
-##### Desenvolver uma extensão mais simples para conectar ao Spotify, como uma extensão do Google Chrome
+##### Desenvolver uma extensão mais simples para conectar ao Spotify, como uma extensão do Google Chrome;
 
-##### Encontrar uma base mais completa para realizar a taxonomia dos gêneros
+##### Encontrar uma base mais completa para realizar a taxonomia dos gêneros;
 
-##### Realizar a leitura da emoção através dos batimentos cardíacos de um *wearable*
+##### Realizar a leitura da emoção através dos batimentos cardíacos de um *wearable;*
 
-##### Carregar histórico do Spotify para auxiliar o *Cold Start* do KNN
+##### Carregar histórico do Spotify para auxiliar o *Cold Start* do KNN;
 
-##### Realizar perguntas sobre gêneros, músicas e artistas para auxiliar no *Cold Start* do KNN
+##### Realizar perguntas sobre gêneros, músicas e artistas para auxiliar no *Cold Start* do KNN;
 
-##### Aperfeiçoar atributos do modelo para aumentar a precisão e *recall*
+##### Aperfeiçoar atributos do modelo para aumentar a acurácia, precisão e *recall;*
 
-##### Utilizar latitude e longitude para assimilar a localização em *label* e facilitar o seu preenchimento
+##### Utilizar latitude e longitude para assimilar a localização em *label* e facilitar o seu preenchimento;
 
-##### Aplicar uma leitura sequencial ao modelo das recomendações
+##### Aplicar uma leitura sequencial ao modelo das recomendações;
 
-##### Contabilizar ações apresentadas no Quadro 3 que não estão sendo utilizadas no modelo
+##### Contabilizar ações apresentadas no Quadro 3 que não estão sendo utilizadas no modelo;
 
-##### Inserir *feature* “amigos ou sozinho” ao plugin e utilizar no modelo
+##### Inserir *feature* “amigos ou sozinho” ao plugin e utilizar no modelo.
 
 # Referências Bibliográficas
 
@@ -2120,6 +2149,6 @@ smartphone context. **ACM Transactions on Interactive Intelligent
 Systems**, v. 5, n. 3, 2015.
 
 1.  Link para as respostas do questionário:
-    <https://forms.gle/FKW5iJBhT7oEa18eA>
+    https://forms.gle/FKW5iJBhT7oEa18eA
 
 2.  Problema relacionado a falta de dados em um RecSys
