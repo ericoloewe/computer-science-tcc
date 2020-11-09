@@ -1902,11 +1902,11 @@ gêneros e a classe utilizada no KNN
 
 Fonte: Elaborado pelo autor (2020)
 
-A matriz de confusão do usuário utilizado nos testes, está disponível na
-Tabela 3. Nela, é possível verificar que o algoritmo somente obteve
+A matriz de confusão do usuário utilizado nos testes, está disponível no
+Quadro 7. Nela, é possível verificar que o algoritmo somente obteve
 sucesso na recomendação da categoria de número 12. Acontece devido ao
 curto período de uso da aplicação e ao gosto musical do usuário estar
-mais voltado aquele estilo musical. Encontrada na Tabela 1, ela
+mais voltado aquele estilo musical. Encontrada no Quadro 5, ela
 apresenta a relação dos gêneros com as classes geradas para o KNN.
 
 <span id="_Toc55791197" class="anchor"></span>Quadro matriz confusão da
@@ -1922,7 +1922,7 @@ Fonte: Elaborado pelo autor (2020)
 
 Para uma análise mais aprofundada, utilizou-se o gênero de maior
 quantidade de recomendações, o de 230 itens, isso é o *country* (classe
-12). Pela análise, a Tabela 2, para avaliar os dados de precisão,
+12). Pela análise, o Quadro 6, para avaliar os dados de precisão,
 *recall* e *f-measure*. A precisão do KNN ao realizar a recomendação
 dessa classe, é de 0,51, ou seja, está com dificuldades de classificar o
 gênero *country* e acaba na maioria das vezes interpretando como outro
