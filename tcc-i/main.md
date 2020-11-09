@@ -60,7 +60,17 @@ musical. *K-Nearest Neighbors*. Música. *Spotify*.
 
 Abstract
 
-Tradução do Resumo para a língua inglesa.
+Everybody knows people have difficulties in dealing with a large volume
+of information. With the internet and the evolution of technology, there
+was an increase of the available amount of information, bringing the
+need for systems to improve their recommendations, arising the RecSys.
+These systems are used in several types of applications such as sales,
+selecting a movie and choosing a song, which one is one of the goals of
+this research. In this work, a music recommender system based on
+behavior and environmental context will be developed. The system purpose
+is to collect information about the user’s behavior and environment,
+enabling the improvement of music recommendations according to the
+context experienced by him.
 
 Keywords: RecSys. Machine Learning. Music Recommender System. K-Nearest
 Neighbors. Music. Spotify.
