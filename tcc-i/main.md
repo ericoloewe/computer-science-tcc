@@ -173,7 +173,7 @@ Lista de TABELAS
 
 [Tabela 3 Matrix confusão do usuário
 spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
-68](#_Ref55013706)
+68](#_Ref55011605)
 
 Lista de Abreviaturas e Siglas
 
@@ -1905,72 +1905,57 @@ relação dos gêneros com as classes geradas para o KNN.
 <span id="_Ref55253627" class="anchor"></span>Tabela matriz confusão da
 classe 12, gênero musical country (próprio, 2020)
 
-Para uma análise mais aprofundada, o gênero de maior quantidade de
-recomendações, o de 230 itens, isso é o *country* (classe 12), teve sua
-prioridade. Pela análise, foi criada a avaliação dos dados de precisão,
-o *recall* e o *f-measure*. A precisão do KNN ao realizar a recomendação
-dessa classe, é de 0,51, isso mostra que o algoritmo KNN está com
-dificuldades de classificar o gênero *country* e acaba na maioria das
-vezes interpretando como outro gênero. O recall foi de 0,80, o que
-mostra que ele está classificando instâncias da classe 12 (*country*) em
-outras classes. Outra métrica interessante é o *f-measure*, que é
-utilizado para analisar o *recall* com a precisão em uma única medida. O
-gênero *country* ficou com valor de 0,62. 
+Para uma análise mais aprofundada, utilizou-se o gênero de maior
+quantidade de recomendações, o de 230 itens, isso é o *country* (classe
+12). Pela análise, a Tabela 2, para avaliar os dados de precisão,
+*recall* e *f-measure*. A precisão do KNN ao realizar a recomendação
+dessa classe, é de 0,51, ou seja, está com dificuldades de classificar o
+gênero *country* e acaba na maioria das vezes interpretando como outro
+gênero. O recall foi de 0,80, o que mostra ele está classificando
+instâncias da classe 12 (*country*) em outras classes. Outra métrica
+interessante é o *f-measure*, que é utilizado para analisar o *recall*
+com a precisão em uma única medida. O gênero *country* ficou 0,62.
 
-|   |   |   |   |   |   |   |   |   |   |   |   | 0-11 | 12 | 13-14 |   | 15 | 16-20 |   |   |   |   | 21 | 22-26 |   |   |   |   | 27 | 28-31 |  |  |  | 32 | 33-36 |   |   |  | 37 | 38-39 |  |
-| - | - | - | - | - | - | - | - | - | - | - | - | ---- | -- | ----- | - | -- | ----- | - | - | - | - | -- | ----- | - | - | - | - | -- | ----- |  |  |  | -- | ----- | - | - |  | -- | ----- |  |
-| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0    | 0  |       |   |    |       |   |   |   |   |    |       |   |   |   |   |    |       |  |  |  |    |       |   |   |  |    |       |  |
-| 1 | 0 | 0 | 0 | 0 | 0 |   |   |   |   |   |   |      |    |       |   |    |       |   |   |   |   | 1  | 0     | 0 | 0 | 0 | 0 | 0  | 0     |  |  |  |    |       |   |   |  |    |       |  |
-| 2 | 0 |   |   |   |   |   |   |   |   |   |   |      | 1  | 0     | 0 | 0  | 0     | 0 | 0 | 0 | 0 | 0  | 0     | 0 |   |   |   |    |       |  |  |  |    |       |   |   |  |    |       |  |
-| 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |   |      |    |       |   |    |       |   |   |   |   |    |       |   |   |   |   |    |       |  |  |  | 1  | 0     | 0 | 0 |  |    |       |  |
-| 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0    | 0  |       |   |    |       |   |   |   |   |    |       |   |   |   |   |    |       |  |  |  |    |       |   |   |  |    |       |  |
-| 5 | 0 |   |   |   |   |   |   |   |   |   |   |      | 9  | 0     | 0 | 0  | 0     | 0 | 0 | 0 | 0 | 0  | 0     | 0 |   |   |   |    |       |  |  |  |    |       |   |   |  |    |       |  |
+| <span id="_Ref55011605" class="anchor"></span> | 0-11 | 12  | 13-14 | 15 | 16-20 | 21 | 22-26 | 27 | 28-31 | 32 | 33-36 | 37 | 38-39 |
+| ---------------------------------------------- | ---- | --- | ----- | -- | ----- | -- | ----- | -- | ----- | -- | ----- | -- | ----- |
+| 0                                              | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 1                                              | 0    | 0   | 0     | 0  | 0     | 1  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 2                                              | 0    | 1   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 3                                              | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 1  | 0     | 0  | 0     |
+| 4                                              | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 5                                              | 0    | 9   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 6-10                                           | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 11                                             | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 2  | 0     |
+| 12                                             | 0    | 184 | 0     | 24 | 0     | 1  | 0     | 0  | 0     | 17 | 0     | 4  | 0     |
+| 13-14                                          | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 15                                             | 0    | 64  | 0     | 5  | 0     | 1  | 0     | 0  | 0     | 5  | 0     | 1  | 0     |
+| 16                                             | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 17                                             | 0    | 0   | 0     | 4  | 0     | 3  | 0     | 0  | 0     | 2  | 0     | 0  | 0     |
+| 18                                             | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 19                                             | 0    | 0   | 0     | 1  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 20                                             | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 1  | 0     | 0  | 0     |
+| 21                                             | 0    | 0   | 0     | 5  | 0     | 10 | 0     | 0  | 0     | 8  | 0     | 0  | 0     |
+| 22                                             | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 23                                             | 0    | 0   | 0     | 2  | 0     | 1  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 24                                             | 0    | 2   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 25                                             | 0    | 0   | 0     | 0  | 0     | 1  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 26                                             | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 1  | 0     | 0  | 0     | 0  | 0     |
+| 27                                             | 0    | 11  | 0     | 3  | 0     | 0  | 0     | 4  | 0     | 0  | 0     | 0  | 0     |
+| 28                                             | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 29                                             | 0    | 2   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 2  | 0     | 0  | 0     |
+| 30                                             | 0    | 1   | 0     | 1  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 31                                             | 0    | 2   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 1  | 0     | 2  | 0     |
+| 32                                             | 0    | 24  | 0     | 9  | 0     | 4  | 0     | 0  | 0     | 17 | 0     | 1  | 0     |
+| 33                                             | 0    | 2   | 0     | 0  | 0     | 1  | 0     | 0  | 0     | 1  | 0     | 0  | 0     |
+| 34                                             | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 1  | 0     | 0  | 0     |
+| 35                                             | 0    | 1   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 36                                             | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 37                                             | 0    | 55  | 0     | 4  | 0     | 1  | 0     | 0  | 0     | 10 | 0     | 2  | 0     |
+| 38                                             | 0    | 4   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 39                                             | 0    | 2   | 0     | 1  | 0     | 3  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
 
-| 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
-| 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-
-| 6-10  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0   |   |  |    |   |  |  |  |  |   |   |   |   |  |  |  |  |  |  |  |    |   |  |  |  |   |   |  |
-| ----- | - | - | - | - | - | - | - | - | - | - | - | - | --- | - |  | -- | - |  |  |  |  | - | - | - | - |  |  |  |  |  |  |  | -- | - |  |  |  | - | - |  |
-| 11    | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |     |   |  |    |   |  |  |  |  |   |   |   |   |  |  |  |  |  |  |  |    |   |  |  |  | 2 | 0 |  |
-| 12    | 0 |   |   |   |   |   |   |   |   |   |   |   | 184 | 0 |  | 24 | 0 |  |  |  |  | 1 | 0 | 0 | 0 |  |  |  |  |  |  |  | 17 | 0 |  |  |  | 4 | 0 |  |
-| 13-14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0   |   |  |    |   |  |  |  |  |   |   |   |   |  |  |  |  |  |  |  |    |   |  |  |  |   |   |  |
-
-|    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-| -- | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
-| 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-
-| 15 | 0 |   |   |   |   |   |   |   |   |   |   |   | 64 | 0 |   | 5 | 0 |   |   |   |   | 1  | 0 | 0 | 0 |   |   |   |   |   |   |   | 5  | 0 |   |   |  | 1 | 0 |  |
-| -- | - | - | - | - | - | - | - | - | - | - | - | - | -- | - | - | - | - | - | - | - | - | -- | - | - | - | - | - | - | - | - | - | - | -- | - | - | - |  | - | - |  |
-| 16 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  |   |   |   |   |   |   |   |   |    |   |   |   |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
-| 17 | 0 | 0 | 0 |   |   |   |   |   |   |   |   |   |    |   |   | 4 | 0 |   |   |   |   | 3  | 0 | 0 | 0 |   |   |   |   |   |   |   | 2  | 0 | 0 | 0 |  |   |   |  |
-| 18 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  |   |   |   |   |   |   |   |   |    |   |   |   |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
-| 19 | 0 | 0 | 0 |   |   |   |   |   |   |   |   |   |    |   |   | 1 | 0 | 0 | 0 | 0 | 0 | 0  | 0 | 0 | 0 |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
-| 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |   |   |    |   |   |   |   |   |   |   |   |    |   |   |   |   |   |   |   |   |   |   | 1  | 0 | 0 | 0 |  |   |   |  |
-| 21 | 0 | 0 | 0 |   |   |   |   |   |   |   |   |   |    |   |   | 5 | 0 |   |   |   |   | 10 | 0 | 0 | 0 |   |   |   |   |   |   |   | 8  | 0 | 0 | 0 |  |   |   |  |
-| 22 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  |   |   |   |   |   |   |   |   |    |   |   |   |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
-| 23 | 0 | 0 | 0 |   |   |   |   |   |   |   |   |   |    |   |   | 2 | 0 |   |   |   |   | 1  | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |   |   |    |   |   |   |  |   |   |  |
-| 24 | 0 |   |   |   |   |   |   |   |   |   |   |   | 2  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0 | 0 |   |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
-| 25 | 0 | 0 | 0 | 0 | 0 |   |   |   |   |   |   |   |    |   |   |   |   |   |   |   |   | 1  | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |   |   |    |   |   |   |  |   |   |  |
-| 26 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |   |   |   |   |    |   |   |   |   |   |   |   |   |    |   |   |   |   |   | 1 | 0 | 0 | 0 | 0 | 0  |   |   |   |  |   |   |  |
-| 27 | 0 |   |   |   |   |   |   |   |   |   |   |   | 11 | 0 |   | 3 | 0 | 0 | 0 |   |   |    |   |   |   |   |   | 4 | 0 | 0 | 0 | 0 | 0  |   |   |   |  |   |   |  |
-| 28 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  |   |   |   |   |   |   |   |   |    |   |   |   |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
-| 29 | 0 |   |   |   |   |   |   |   |   |   |   |   | 2  | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |    |   |   |   |   |   |   |   |   |   |   | 2  | 0 | 0 | 0 |  |   |   |  |
-| 30 | 0 |   |   |   |   |   |   |   |   |   |   |   | 1  | 0 |   | 1 | 0 | 0 | 0 | 0 | 0 | 0  | 0 | 0 | 0 |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
-| 31 | 0 |   |   |   |   |   |   |   |   |   |   |   | 2  | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |    |   |   |   |   |   |   |   |   |   |   | 1  | 0 |   |   |  | 2 | 0 |  |
-| 32 | 0 |   |   |   |   |   |   |   |   |   |   |   | 24 | 0 |   | 9 | 0 |   |   |   |   | 4  | 0 | 0 | 0 |   |   |   |   |   |   |   | 17 | 0 |   |   |  | 1 | 0 |  |
-| 33 | 0 |   |   |   |   |   |   |   |   |   |   |   | 2  | 0 | 0 | 0 |   |   |   |   |   | 1  | 0 | 0 | 0 |   |   |   |   |   |   |   | 1  | 0 | 0 | 0 |  |   |   |  |
-| 34 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |   |   |    |   |   |   |   |   |   |   |   |    |   |   |   |   |   |   |   |   |   |   | 1  | 0 | 0 | 0 |  |   |   |  |
-| 35 | 0 |   |   |   |   |   |   |   |   |   |   |   | 1  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0 | 0 |   |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
-| 36 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  |   |   |   |   |   |   |   |   |    |   |   |   |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
-| 37 | 0 |   |   |   |   |   |   |   |   |   |   |   | 55 | 0 |   | 4 | 0 | 1 | 0 | 0 | 0 |    |   |   |   |   |   |   |   |   |   |   | 10 | 0 |   |   |  | 2 | 0 |  |
-| 38 | 0 |   |   |   |   |   |   |   |   |   |   |   | 4  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0 | 0 |   |   |   |   |   |   |   |   |    |   |   |   |  |   |   |  |
-| 39 | 0 |   |   |   |   |   |   |   |   |   |   |   | 2  | 0 | 1 | 0 |   |   |   |   |   | 3  | 0 | 0 | 0 | 0 | 0 | 0 | 0 |   |   |   |    |   |   |   |  |   |   |  |
-
-<span id="_Ref55013706" class="anchor"></span>Tabela Matrix confusão do
-usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
+Tabela Matrix confusão do usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4
+(próprio, 2020)
 
 Com sucesso foi desenvolvido o sistema de recomendação e apresentado
 nesse capítulo, iniciou-se apresentado o algoritmo, então a preparação
@@ -1982,10 +1967,10 @@ apresentado os resultados obtidos com as recomendações do algoritmo.
 
 Nesse trabalho foi realizada uma revisão sobre trabalhos da *ACM*, de
 *RecSys* musical, que utilizam o contexto do usuário. Na pesquisa
-realizada apareceram poucos trabalhos que buscam unir a recomendação
-musical com o contexto do usuário. Sendo assim, esse trabalho
-desenvolveu um *RecSys* musical, o qual analisa o contexto do usuário em
-tempo real, para realizar novas recomendações a ele.
+apareceram poucos trabalhos que buscam unir a recomendação musical com o
+contexto do usuário. Sendo assim, esse trabalho desenvolveu um *RecSys*
+musical, o qual analisa o contexto do usuário em tempo real, para
+realizar novas recomendações a ele.
 
 No desenvolvimento desse trabalho, foram encontradas diversas
 dificuldades em lidar com músicas, pois desde o momento que se iniciou o
@@ -1995,7 +1980,7 @@ algo bastante abrangente.
 
 No *plugin* foram encontradas dificuldades em seu desenvolvimento.
 Inicialmente a aplicação foi desenvolvida em Flutter, uma plataforma
-para desenvolvimento mobile e foi visto que devido a falta de suporte ao
+para desenvolvimento mobile e foi visto que devido à falta de suporte ao
 *streaming* (*Web Playback SDK*) na biblioteca do Spotify para Flutter,
 ela não supriria as necessidades desse trabalho, então houve uma
 migração para a plataforma Web.
@@ -2013,7 +1998,7 @@ optantes, somente 6 deles o receberam e utilizaram da aplicação.
 Portanto, foram escolhidos respondentes com mais afinidade com o autor,
 um total de 8, solicitado pessoalmente que utilizassem a aplicação para
 auxiliar no trabalho. No fim, o sistema obteve um total de 14 usuários
-que utilizaram o sistema naquele período.
+que utilizaram o sistema período estipulado.
 
 Mesmo solicitando pessoalmente, foi obtido um baixo uso na aplicação,
 gerando assim uma base muito pequena para aplicação do algoritmo KNN.
