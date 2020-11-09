@@ -301,9 +301,9 @@ Sumário
 [4.1.2 Testes com KNN 63](#testes-com-knn)
 
 [4.1.3 Predição no sistema *LORS*Taxonomia dos gêneros
-64](#predição-no-sistema-lorstaxonomia-dos-gêneros)
+64](#predição-no-sistema-lors)
 
-[*4.2* Modelagem do sistema *LORS* 64](#modelagem-do-sistema-lors)
+[*4.2* Modelagem do sistema *LORS* 64](#_Toc55777269)
 
 [4.2.1 POC (*Proof of Concept*) 65](#poc-proof-of-concept)
 
@@ -314,7 +314,7 @@ Sumário
 [4.2.4 Recomendação 66](#recomendação)
 
 [4.2.5 Resultado da recomendação (integração app)
-67](#resultado-da-recomendação-integração-app)
+67](#resultado-da-recomendação-integração-webapp)
 
 [4.2.6 Resultados do experimento 68](#resultados-do-experimento)
 
@@ -1741,27 +1741,9 @@ parâmetro suas caracteristicas, retiradas de *X\_test* e classes,
 retiradas de *y\_test* e retornaram à acurácia do algoritmo KNN. Os
 resultados do teste são apresentados na seção 4.2.6.
 
-### Predição no sistema *LORS*Taxonomia dos gêneros
+## Predição no sistema *LORS*
 
-Intentando manter, nas classes de predição, somente o principal do
-*score* de recomendação na sua melhoria, efetuou-se uma busca dos
-principais gêneros musicais e a relação com seus subgêneros. Isto posto,
-reduz as possibilidades de resultados para o algoritmo KNN. O objetivo
-da busca era conseguir fazer a relação com os gêneros já existentes no
-modelo e substituir pelos gêneros base, em prol de encontrar uma lista
-que suprisse a lista de gêneros do Spotify - algo que ele não dispõe.
-
-A lista (relação dos gêneros com seus subgêneros) pôde ser identificada
-em um *showcase* que faz parte do Spotify denominado de Music Popcorn
-(https://developer.spotify.com/community/showcase/music-popcorn/). Mesmo
-que Ele possua uma lista de 1107 gêneros, 4 vezes menos do que o Spotify
-possui hoje, já auxiliou na taxonomia dos gêneros, trazendo uma redução
-de 70 para 40 classes na base do usuário de teste e melhorando o score
-de 0,15 para uma média de 0,45.
-
-## Modelagem do sistema *LORS*
-
-No sistema LORS, desenvolvido para, através do conhecimento do contexto
+O sistema LORS, desenvolvido para, através do conhecimento do contexto
 dos usuários, aperfeiçoar as recomendações musicais do Spotify, é
 realizada a predição do gênero musical baseando-se no contexto e o
 histórico de músicas reproduzidas. O resultado correspondente passa a
@@ -1792,19 +1774,19 @@ serviram de apoio para o aperfeiçoamento no uso do algoritmo.
 
 ### Servidor
 
-Com a lógica desenvolvida na POC, foi realizadacomposto de uma
-exportação do código para scripts *python*, um servidor progrediu em
-sua criação. Tal, utiliza a biblioteca *Flask* e integra o algoritmo KNN
-exportado à rota. A rota do tipo GET / elaborada recebe 4 parâmetros:
-(i) *uri*, o *id* do *Spotify* do usuário; (ii) *feeling*, o sentimento
-registrado; (iii) *activity*, a atividade registrada; (iv) *location*, a
-localização registrada. Ela também detém como retorno o gênero resultado
-da predição e a acurácia do algoritmo KNN.
+Com a lógica desenvolvida na POC, composto de uma exportação do código
+para scripts *python*, um servidor progrediu em sua criação. Tal,
+utiliza a biblioteca *Flask* e integra o algoritmo KNN exportado à rota.
+A rota do tipo GET / elaborada recebe 4 parâmetros: (i) *uri*, o *id* do
+Spotify do usuário; (ii) *feeling*, o sentimento registrado; (iii)
+*activity*, a atividade registrada; (iv) *location*, a localização
+registrada. Ela também detém como retorno o gênero resultado da predição
+e a acurácia do algoritmo KNN.
 
 ### Hospedagem
 
 O servidor, publicado na ferramenta disponível no Azure chamada App
-Service, utilizando *container* Docker, é uma ferramenta paga. Esse,
+Service, utilizando *container* Docker, é uma ferramenta paga que
 possibilita a publicação de servidores de diversas tecnologias. O link
 final de acesso ao servidor ficou: <https://lors.azurewebsites.net/>
 
@@ -1838,51 +1820,45 @@ respectivos valores utilizados na recomendação (próprio, 2020)
 | activity | 0            |
 | location | 0            |
 
-Com o algoritmo pronto (Seção 4.1.1) e os parâmetros tratados é
-realizada, fez-se mister a predição através do método *predict* do
-modelo do *sklearn* e devolvida, devolvido a classe resultante. Isso é,
-ter o gênero resultante como resposta à requisição.
+Com o algoritmo pronto (Seção 4.1.1) e os parâmetros tratados, fez-se
+mister a predição através do método *predict* do modelo do *sklearn*,
+devolvido a classe resultante. Isso é, ter o gênero resultante como
+resposta à requisição.
 
-### Resultado da recomendação (integração app)
+### Resultado da recomendação (integração webapp)
 
-Uma integração no plugin se deu como necessário no servidor pronto e
-publicado, foi desenvolvida uma integração no *plugin*. Nela, são
-obtidas asobtendo informações de contexto e solicitando ao LORS o gênero
-recomendado. Com o retorno do gênero, é feita uma nova requisição de
-busca ao *Spotify* das principais 20 *playlists* que o contenham no
-nome.
+Uma integração no *plugin* se deu como necessário no servidor pronto e
+publicado, obtendo informações de contexto e solicitando ao LORS o
+gênero recomendado. Com o retorno do gênero, é feita uma nova
+requisição de busca ao Spotify das principais 20 *playlists* que o
+contenham no nome.
 
-![](./pandoc/media/image22.png)
+![](./pandoc/media/image21.png)
 
 <span id="_Ref54973248" class="anchor"></span>Figura Tela de
 recomendações (próprio, 2020)
 
-No fim, é apresentado o gênero recomendado na tela. Tratasse do retorno
-do *Spotify*, apresentado nas *playlists*, conforme da tela (Figura 25,
-permitindo ao usuário escolher uma das playlists para reproduzir.
+No fim, é apresentado o gênero recomendado na tela, trantando do retorno
+do Spotify, apresentado as *playlists* a tela (Figura 25), permitindo ao
+usuário escolher uma das playlists para reproduzir.
 
 ### Resultados do experimento
 
-Nessa seção são discutidasÉ importante garantir o funcionamento e a
-precisão do modelo já pronto. Para que as recomendações estejam
-funcionando, foi aferido a acurácia e matriz de confusão da aplicação do
-KNN sobre o conjunto de testes. O algoritmo inicialmentedo modelo.
-
-Inicialmente, ele obteve uma acurácia de 0,15, o que é muito baixo. Foi
-analisada a estrutura de atributos presentes no conjunto de dados e
-visto que poderia ser reduzida aA hipótese estaria na quantidade de
-gêneros (classes), então, foi realizada sua); diminuí-los poderia
-aumentar a precisão do experimento. realizar-se-ia uma taxonomia,
-mantendo somente os principais. Com essa alteração, a acurácia do
-algoritmo passou de 0,15 para 0,46, um acréscimo de 306%, mas ainda206%,
-tendo em vista o 0,15 como um valor de acurácia baixototal.
+Nessa seção são discutidas a acurácia e matriz de confusão da aplicação
+do KNN sobre o conjunto de testes. O algoritmo inicialmente obteve uma
+acurácia de 0,15, o que é muito baixo. A hipótese estaria na quantidade
+de gêneros (classes); diminuí-los poderia aumentar a precisão do
+experimento. Foi realizado uma taxonomia dos gêneros, mantendo somente
+os principais. Com essa alteração, a acurácia do algoritmo passou de
+0,15 para 0,46, um acréscimo de 206%, tendo em vista o 0,15 como um
+valor de acurácia baixo.
 
 O principal problema para realizar a taxonomia foi encontrar uma lista
 que supria a dos gêneros do Spotify ao ponto de conseguir fazer a
 relação com os existentes no algoritmo e substitui-los pelo base, pois
 nele não dispõe dessa relação. A relação dos gêneros com seus subgêneros
 foi encontrada em um *showcase* do Spotify chamado Music Popcorn
-(https://developer.spotify.com/community/showcase/music-popcorn/). Ele
+(<https://developer.spotify.com/community/showcase/music-popcorn/>). Ele
 possui uma lista de 1107 gêneros, 4 vezes menos do que o Spotify possui
 hoje, porém já auxiliou na taxonomia dos gêneros, trazendo uma redução
 de 70 para 40 classes na base do usuário de teste.
@@ -1909,37 +1885,16 @@ de 70 para 40 classes na base do usuário de teste.
 | electro house            | 17                               | rock                          | 37                               |
 | folk                     | 18                               | sertanejo pop                 | 38                               |
 | harlem hip hop           | 19                               | trap                          | 39                               |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
-|                          |                                  |                               |                                  |
 
-<span id="_Ref55013755" class="anchor"></span>Tabela 1 relação dos
-gêneros e a classe utilizada no KNN (próprio, 2020)
+<span id="_Ref55013755" class="anchor"></span>Tabela relação dos gêneros
+e a classe utilizada no KNN (próprio, 2020)
 
-A matriz de confusão do usuário, a utilizada nos testes, está disponível
-na Tabela 3. Nela, é possível verificar que o modelo somente obteve
-sucesso na recomendação da categoria de número 12. Isso ocorreuAcontece
-devido ao curto período de uso da aplicação e ao gosto musical do
-usuário estar mais voltado aquele estilo musical. Encontrada na Tabela
-1, ela apresenta a relação dos gêneros com as classes geradas para o
-KNN.
+A matriz de confusão do usuário utilizado nos testes, está disponível na
+Tabela 3. Nela, é possível verificar que o modelo somente obteve sucesso
+na recomendação da categoria de número 12. Acontece devido ao curto
+período de uso da aplicação e ao gosto musical do usuário estar mais
+voltado aquele estilo musical. Encontrada na Tabela 1, ela apresenta a
+relação dos gêneros com as classes geradas para o KNN.
 
 |                      |          | CLASSE REAL |          |
 | -------------------- | -------- | ----------- | -------- |
