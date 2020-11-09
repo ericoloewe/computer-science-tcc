@@ -33,9 +33,10 @@ Agradecimentos
 Gostaria de agradecer a todos os que, de alguma maneira, contribuíram
 para a realização desse trabalho de conclusão, em especial:
 
-Ao meu professor orientador, a minha família, aos amigos e às pessoas
-que convivem comigo diariamente, minha gratidão, pelo apoio emocional -
-nos períodos mais difíceis do trabalho.
+Ao meu professor orientador, meu irmão Lucas minha colega Tatiana, a
+minha família, aos amigos e às pessoas que convivem comigo diariamente,
+minha gratidão, pelo apoio emocional - nos períodos mais difíceis do
+trabalho.
 
 Resumo
 
