@@ -1233,21 +1233,12 @@ Para obter os dados dos usuários, o projeto apresenta uma aplicação
 web\[4\] que utilizava do SDK Web do Spotify para reprodução das músicas
 e captura dos eventos gerados pelo usuário.
 
-Figura 10 - A esquerda, tela introdutória da aplicação. A direita, tela
-de login da aplicação
+Figura - A esquerda, tela introdutória da aplicação. A direita, tela de
+login da aplicação
 
-<table>
-<tbody>
-<tr class="odd">
-<td><blockquote>
-<p><img src="./pandoc/media/image11.png" /></p>
-</blockquote></td>
-<td><blockquote>
-<p><img src="./pandoc/media/image12.png" /></p>
-</blockquote></td>
-</tr>
-</tbody>
-</table>
+|                                 |                                 |
+| ------------------------------- | ------------------------------- |
+| ![](./pandoc/media/image11.png) | ![](./pandoc/media/image12.png) |
 
 Fonte: Elaborado pelo autor (2020)
 
@@ -1392,12 +1383,222 @@ preparada do JSON.
 
 Com a estrutura dos dados pronta e a pesquisa dos dados dos usuários,
 levantou-se um tratamento específico para cada informação, realizando,
-dessa forma, um estudo das técnicas de recomendação postas nos trabalhos
-anteriores. Com isso, surgiu o modelo do sistema LORS, que utiliza de
-uma análise recorrente do contexto, para realizar as recomendações
-dinâmicas às mudanças do contexto. Serão apresentadas mais informações
-das etapas de modelagem e desenvolvimento do sistema nas seções a
-seguir.
+dessa forma, o estudo da técnica de recomendação escolhida nos trabalhos
+anteriores, o KNN. Com isso, surgiu o modelo do sistema LORS, que
+utiliza de uma análise recorrente do contexto, para realizar as
+recomendações dinâmicas às mudanças do contexto. Serão apresentadas mais
+informações das etapas de modelagem e desenvolvimento do sistema nas
+seções a seguir.
+
+## O Algoritmo KNN
+
+O *k-Nearest Neighbor* (KNN) é um método de classificação, seu algoritmo
+de aprendizado supervisionado foi introduzido por AHA; KIBLER; ALBERT,
+1991. Ele busca os k pontos dos dados de treino mais próximos do item de
+teste. Uma classe é atrelada a esse ponto através de uma votação
+majoritária dos k pontos vizinhos. Na Figura 14 é exemplificado
+graficamente o funcionamento do algoritmo.
+
+Figura - Representação gráfica da classificação do algoritmo KNN sobre
+um plano x1 e x2. No plano, os pontos amarelos são a representação da
+classe A, roxos classe B e vermelho é o ponto de teste
+
+![](./pandoc/media/image18.png)
+
+Fonte: (JOSÉ, 2018)
+
+Como apresentado (Figura 14), o algoritmo funciona mediante a disposição
+das características (atributos) X<sub>1</sub> e X<sub>2</sub> sobre um
+plano, atribuindo classes a eles (no caso: classe A e classe B). Então,
+a partir da predição do ponto de teste, baseado na distância deste para
+os demais k pontos, é encontrado a classe que o representa. Para rodar o
+algoritmo de classificação KNN nesse trabalho foi utilizada a
+implementação da biblioteca em *python* do *scikit-learn* encontrada na
+classe *KNeighborsClassifier* do módulo *sklearn.neighbors* (PEDREGOSA
+et al., 2011).
+
+### Preparação dos dados para o KNN
+
+Planejando salvar os eventos da aplicação, uma lista chamada *events*,
+composta pelo catálogo de usuários, onde cada usuário possui uma lista
+de eventos dentro, teve sua concepção. Cada evento é composto pela
+seguinte estrutura: (i) *action*, ação realizada pelo usuário,
+apresentadas no Quadro 3; (ii) *createdDateTime*, data e tempo da
+execução do evento; (iii) *value*, valores do evento separados por
+“;”.
+
+A ação LOAD\_LOCATION foi ignorada nesse momento, ela se trata de dados
+de geolocalização e nesse momento, devido à falta de recursos, não foi
+preparado esse dado para o KNN abrindo oportunidades para um trabalho
+futuro. Já as ações CHANGE\_MUSIC\_TIME, CHOOSE\_FEELING\_TO\_BE\_LIKE,
+LIKED\_ARTIST, LIKED\_GENRE, ficaram nos eventos do *plugin*, mesmo que
+não sejam utilizadas devido ao tempo limitado de desenvolvimento. As
+ações HIDE\_DETAILS, PAUSE\_MUSIC, PLAY\_MUSIC, SHOW\_DETAILS são
+contabilizadas como registro do contexto musical, contudo não foram
+utilizadas no modelo devido ao tempo de desenvolvimento. Demais ações
+são contabilizadas no modelo e são apresentadas no Quadro 3.
+
+Quadro - Lista de ações possíveis nos eventos
+
+| Ação (Action)                 | Descrição                                     |
+| ----------------------------- | --------------------------------------------- |
+| CHANGE\_MUSIC\_TIME           | Altera o tempo da música durante a reprodução |
+| CHANGE\_TO\_NEXT\_MUSIC       | Passa para próxima música da lista            |
+| CHANGE\_TO\_PREVIOUS\_MUSIC   | Volta para música anterior da lista           |
+| CHOOSE\_ACTIVITY              | Registro da atividade                         |
+| CHOOSE\_FEELING               | Registro do humor atual                       |
+| CHOOSE\_FEELING\_TO\_BE\_LIKE | Registro do humor que gostaria de estar       |
+| CHOOSE\_LOCATION              | Registro da localização                       |
+| HATED\_MUSIC                  | Não gostou da música que está tocando         |
+| HIDE\_DETAILS                 | Escondeu os detalhes da música (plugin)       |
+| LIKED\_ARTIST                 | Gostou do artista                             |
+| LIKED\_GENRE                  | Gostou do gênero                              |
+| LIKED\_MUSIC                  | Gostou da música                              |
+| LOAD\_LOCATION                | Carregou a localização (latitude, longitude)  |
+| PAUSE\_MUSIC                  | Pausou a música                               |
+| PLAY\_MUSIC                   | Tocou a música                                |
+| RESTART\_MUSIC                | Reiniciou a música                            |
+| SHOW\_DETAILS                 | Abriu os detalhes da música                   |
+
+Fonte: Elaborado pelo autor (2020)
+
+A Figura 18 apresenta as etapas de preparação dos dados, desde o
+carregamento do arquivo exportado do Firebase, que contém as informações
+dos eventos, até a execução do algoritmo KNN. É na etapa “Carrega JSON”
+que se tem o *upload* dos dados a partir da biblioteca padrão do
+*python* “open”. Para a interpretação do arquivo JSON, existe a
+biblioteca *json*, que carrega os dados em um dicionário, do qual obtém
+os usuários e seus eventos e os transforma em outro dicionário *users*,
+cuja *key* é o id do usuário e o conteúdo sua lista de eventos.
+
+Figura - Visão macro das etapas para transformar os eventos registrados
+no firebase na tabela que sera rodado o KNN
+
+![](./pandoc/media/image19.jpeg)
+
+Fonte: Elaborado pelo autor (2020)
+
+Na segunda etapa “Separa Contexto”, representada pela Figura 19, é
+realizada a quebra dos eventos de cada usuário por seus contextos,
+criando assim, uma relação com as músicas reproduzidas. Isso está
+representado na Figura 20.
+
+Figura - Representação dos eventos salvos no Firebase
+
+![](./pandoc/media/image20.jpeg)
+
+Fonte: Elaborado pelo autor (2020)
+
+A Figura 21 traz a etapa “Separa contexto das músicas”. Na reprodução
+das músicas, são gerados tanto os eventos separadamente, quanto uma
+relação da música escutada, com os eventos registrados - gerando, no
+fim, uma tabela semelhante à Figura 22 das músicas e seus contextos.
+
+Figura - Representação das listas geradas na etapa “Separa contexto”
+
+![](./pandoc/media/image21.jpeg)
+
+Fonte: Elaborado pelo autor (2020)
+
+Visando uma relação, é realizado um loop em cima dos eventos de cada
+contexto, criando uma lista chamada *musicTable*. Tal, é preenchida dos
+seguintes valores: *uri*, *like*, *hate* e *restart,* relacionados ao
+contexto da música, e *feeling*, *activity* e *location,* e relacionados
+ao contexto do usuário. Ademais, os termos *like*, *hate* e *restart*
+são representados pelo número de vezes que cada evento desse tipo
+aconteceu durante a reprodução.
+
+Figura - Representação das listas geradas na etapa “separa contexto das
+músicas”
+
+![](./pandoc/media/image22.jpeg)
+
+Fonte: Elaborado pelo autor (2020)
+
+Nas duas etapas seguintes (“busca informações das músicas” e “busca
+informações dos artistas (gênero)”, direcioná-lo-ia, o cliente, a uma
+busca nas APIs do Spotify, utilizando os *uris* da música e artistas, a
+fim de obter os gêneros musicais. O resultado dela é um dicionário
+chamado *artistsMap* relacionando os *uris* com os dados de cada
+artista. Devido a uma limitação do Spotify, a busca se fará de 50 em 50
+*uris*.
+
+Figura - Representação da tabela na etapa “separa contexto das músicas”
+
+![](./pandoc/media/image23.jpeg)
+
+Fonte: Elaborado pelo autor (2020)
+
+Os dados no Spotify, nos seus devidos processos, obtiveram a lista dos
+gêneros das músicas através dos artistas. A posteriori, adiciona-o à
+lista de músicas *musicTable* representada na Figura 22. Foram separados
+os gêneros, um por linha e, no fim, removida a música, pois ela iria
+atrapalhar o resultado do algoritmo. Com isso, surgiu, propositalmente,
+a lista *genreTable*, deixando, assim, o *musicTable* em desuso.
+
+Gozando da completude da tabela, principiou um tratamento dos valores
+dos eventos que eram múltiplos. Tais continham mais de uma informação
+nos mesmos eventos, através do “;” ou possuíam uma quantidade maior do
+que 1 nos campos de *like*, *hate* e *restart*. Nesse tratamento, foi
+quebrado os valores dos eventos um a um em mais linhas. Um exemplo do
+uso do “;” é o caso de um *feeling* conter o valor “feliz;triste”, que
+foi transformado em duas linhas, uma para “feliz”, outra para “triste”.
+Um exemplo do campo like, no caso de possuir o valor 3, é quebrado o
+evento em 3 linhas e trocado por 1.
+
+Figura - *head()* do *dataframe* criado a partir da variável
+*genreTable*
+
+![](./pandoc/media/image24.png)
+
+Fonte: Elaborado pelo autor (2020)
+
+No fim, era necessário a biblioteca *preprocessing* do *sklearn*, caso
+quisesse transformar as características e classes de cada evento da
+tabela em números inteiros; isso é necessário para rodar o algoritmo
+KNN. O resultado da tabela é apresentado na Figura 23.
+
+### Testes com KNN
+
+No final, o *genreTable,* convertido em um *data frame* da biblioteca
+pandas, sofreu certa separação da coluna gênero da tabela, obtendo
+variáveis de X (características) e y (classes). As duas são utilizadas
+na função *train\_test\_split,* adquirindo, tanto características de
+treino (*X\_train*) e de teste (*X\_test*), quanto classes de treino e
+teste (*y\_train*, *y\_test*). O tamanho da base de teste pode ser
+informado para o *train\_test\_split* através do parâmetro *test\_size*
+que, nesse caso, foi de 0,3 (30% de teste e 70% de treinamento,
+respectivamente 533 e 1242).
+
+A classe *KNeighborsClassifier* da biblioteca *sklearn.neighbors* serviu
+de base para o êxito no funcionamento do KNN. Nela, pode ser informado o
+número de vizinhos levados em consideração a partir do parâmetro
+*n\_neighbors* que nesse caso foi decidido através de testes para
+descobrir o melhor *k*, resultando em 9, com menor erro de classificação
+(MSE) de 0.572475.
+
+Iniciando a classe, obtemos a variável *model*. Com ela, põe-se os dados
+de treino (*X\_train*, *y\_train*) através do método *fit*, de modo que
+suporte dois parâmetros: (i) dados de treino; (ii) valores alvo. Assim
+sendo, já é iminente utilizar o melhor k analisado (9), para predizer os
+próximos alvos que, no *sklearn,* é rodado através do método *predict*.
+Ele transfere os valores para realizar a predição (*X\_test*), que tem
+como retorno a classe que se adequa melhor aos dados de teste.
+
+Em suma, um teste, efetuado através do método *score* na performance da
+predição do algoritmo KNN e da base informada ao *sklearn*, recebeu por
+parâmetro suas caracteristicas, retiradas de *X\_test* e classes,
+retiradas de *y\_test* e retornaram à acurácia do algoritmo KNN. Os
+resultados do teste são apresentados na seção 4.2.6.
+
+## Predição no sistema *LORS*
+
+O sistema LORS, desenvolvido para, através do conhecimento do contexto
+dos usuários, aperfeiçoar as recomendações musicais do Spotify, é
+realizada a predição do gênero musical baseando-se no contexto e o
+histórico de músicas reproduzidas. O resultado correspondente passa a
+ser entregue através de uma API, podendo ser consumida por qualquer
+usuário que utilize o *plugin Web* desenvolvido nesse trabalho.
 
 # CONCLUSÃO
 
