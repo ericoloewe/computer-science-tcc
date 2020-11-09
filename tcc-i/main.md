@@ -154,7 +154,7 @@ Lista de Quadros
 revisado 34](#_Ref42381546)
 
 [Quadro 2 Perguntas e respostas disponibilizadas a um certo público
-através dos formulários do Google. (próprio, 2020) 42](#_Ref48857312)
+através dos formulários do Google. (próprio, 2020) 42](#_Toc55260909)
 
 [Quadro 3 Lista de ações possíveis nos eventos (próprio, 2020)
 56](#_Ref55256921)
@@ -1103,7 +1103,7 @@ devido fim, geralmente, baseado em dados históricos para produzi-las.
 Observa-se que, com o entendimento do contexto, ou conforme a definição
 das “circunstâncias que levaram a certos fatos ou situações”, auxiliar
 as recomendações, aumentando o número de dados disponíveis para realizar
-uma classificação e/ou filtro, já não é mais um problema. A 8Figura
+uma classificação e/ou filtro, já não é mais um problema. A Figura 8
 apresenta uma visão macro dos contextos que serão considerados no
 projeto.
 
@@ -1210,12 +1210,10 @@ Figura 11.
 <span id="_Ref42452795" class="anchor"></span>Figura 9 Etapas do
 desenvolvimento do sistema de recomendação musical (próprio, 2020)
 
-As perguntas expostas no questionário permitirão conhecer melhor os
+As perguntas expostas no questionário permitiram conhecer melhor os
 usuários que utilizarão a aplicação. Sendo assim, todas as questões
 permitem entender suas preferências, atividades, dentre outros fatores.
 As perguntas do questionário estão listadas no Quadro 2:
-
-<span id="_Ref48857312" class="anchor"></span>
 
 | Pergunta                                                                                     | Possíveis respostas                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1234,8 +1232,8 @@ As perguntas do questionário estão listadas no Quadro 2:
 | 13\. Sua idade                                                                               |                                                                                                                                                                                                                                                                           |
 | 14\. Dicas e sugestões?                                                                      |                                                                                                                                                                                                                                                                           |
 
-Quadro 2 Perguntas e respostas disponibilizadas a um certo público
-através dos formulários do Google. (próprio, 2020)
+Quadro Perguntas e respostas disponibilizadas a um certo público através
+dos formulários do Google. (próprio, 2020)
 
 ### Pré-teste do questionário
 
@@ -1303,17 +1301,17 @@ tempo por semana você escuta música?”. Deu para entender que não era um
 público intenso; nas respostas, mais de 50% ouvia de 0 a 10horas por
 semana.
 
-Um Cold Start precisaria ser construido na aplicação. Então, “Quais são
+Um Cold Start precisaria ser construído na aplicação. Então, “Quais são
 os gêneros musicais que gosta de escutar?” seria a melhor opção, caso o
 objetivo seja colocar as principais respostas ao plugin. A *feature*
 será desenrolada no desenvolvimento do projeto.
 
 Respeitando a privacidade do público, foi feito a pergunta “Gostaria de
 participar de uma pesquisa que visa melhorar a recomendação musical?”,
-filtrando assim, somente os usuários que aceitaram ela para enviar o
-convite para participar do *plugin*.
+filtrando assim, somente os usuários que aceitaram enviar o convite para
+participar do *plugin*.
 
-A pergunta “Sua idade” foi feita para obter conhecimento do rank de
+A pergunta “Sua idade” foi feita para obter conhecimento do range de
 idade da aplicação e, assim, desenvolver as facilidades visuais
 necessárias conforme a idade. Durante o envio do questionário, o escopo
 do trabalho estava em aberto - por isso, a pergunta “Dicas e
@@ -1329,29 +1327,29 @@ do link <https://ericoloewe.github.io/computer-science-tcc/>.
 
 ![](./pandoc/media/image6.png)![](./pandoc/media/image7.png)
 
-<span id="_Ref54973492" class="anchor"></span>Figura 10 A esquerda, tela
-introdutória da aplicação (próprio, 2020) Figura 11 A direita, tela de
+<span id="_Ref54973492" class="anchor"></span>Figura A esquerda, tela
+introdutória da aplicação (próprio, 2020) Figura A direita, tela de
 login da aplicação (próprio, 2020)
 
 ### Telas da aplicação
 
 A aplicação é dividida em 5 telas, iniciada na Figura 10, a qual
 apresenta instruções para os usuários de como utilizar a aplicação e
-terminada na segunda tela, é representada pela Figura 11,
+terminada na segunda tela. É representada pela Figura 11,
 disponibilizando opções de login no Spotify.
 
 A Figura 12 apresenta o cadastro do contexto na aplicação. O processo é
 dividido em três etapas: (i) “Como você está se sentindo nesse
 momento?”; (ii) “O que você está fazendo nesse momento?”; (iii) “Onde
 você está nesse momento?”. Essas perguntas tornaram realizável entender
-o contexto atual do usuário naquele período por serem divulgadas a cada
+o contexto atual do usuário naquele período por serem solicitadas a cada
 30min.
 
 ![](./pandoc/media/image8.png)![](./pandoc/media/image9.png)
 
-<span id="_Ref54973479" class="anchor"></span>Figura 12 A esquerda, tela
-de preenchimento do contexto (próprio, 2020) Figura 13 A direita, tela
-da lista de dispositivos do Spotify (próprio, 2020)
+<span id="_Ref54973479" class="anchor"></span>Figura A esquerda, tela de
+preenchimento do contexto (próprio, 2020) Figura A direita, tela da
+lista de dispositivos do Spotify (próprio, 2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
 reproduza as músicas no plugin. Tendo isso em mente, foi criado a tela
@@ -1381,27 +1379,26 @@ para apresentar uma música que se identifique melhor com o momento.
 
 ![](./pandoc/media/image10.png)![](./pandoc/media/image11.png)
 
-<span id="_Ref54973458" class="anchor"></span>Figura 14 A esquerda, tela
+<span id="_Ref54973458" class="anchor"></span>Figura A esquerda, tela
 principal, a qual apresenta a música sendo reproduzida ao usuário
-(próprio, 2020) Figura 15 A direita, tela de busca de músicas que
-encaixem melhor no momento (próprio, 2020)
+(próprio, 2020) Figura A direita, tela de busca de músicas que encaixem
+melhor no momento (próprio, 2020)
 
 A ação de buscar música, de ter a opção em relação a um tempo
 específico, o levaria para a tela apresentada na Figura 15,
 possibilitando o cliente a apresentar uma música que se enquadre ao
-melhor conteúdo musical de acordo com seus sentimentos. Ao selecionar as
-composições e clicar em próximo, é salvo as informações de sua relação
-com o contexto vivido.
+melhor conteúdo musical de acordo com seu contexto. Ao selecionar as
+composições e clicar em próximo, é salvo as informações de sua relação.
 
 ### Tecnologias utilizadas no desenvolvimento
 
-Para desenvolver a aplicação web, utilizou-se a *library React* como
+Para desenvolver a aplicação web, utilizou-se a biblioteca React como
 auxílio na construção de componentes e interfaces. Com o desígnio de
 estilizar os componentes e páginas do React, houve a necessidade do
-framework Material ui, por estilos prontos baseados no Material
+*framework* Material ui, por estilos prontos baseados no Material
 (interface do Android) que possuía.
 
-O *Google Analytics* (uma ferramenta específica para eventos) serviria
+O Google Analytics (uma ferramenta específica para eventos) serviria
 como mecanismo para persistir os eventos do usuário. Devido à falta de
 customização dele, achou-se plausível o substituir pelo *Realtime
 Database* do Firebase (*Realtime DB*), tendo a vantagem de uma vasta
@@ -1412,7 +1409,7 @@ formato NoSQL.
 No início, a fim de enviar o evento à plataforma, o programa contou com
 o GTM (Google Tag Manager) para fazer esse intermédio. Porém, por causa
 de algumas limitações da ferramenta, deixou-se de ter tal dependência.
-Foram enviados enviado os eventos diretamente do *Javascript*.
+Foram enviados os eventos diretamente do Javascript.
 
 ## Distribuição da aplicação e coleta de dados
 
@@ -1431,7 +1428,7 @@ aplicação. Corrigido a aplicação, cinco pessoas testaram novamente,
 encontrando mais pontos a corrigir. Enviado o e-mail a um grupo
 supervisionado de 8 pessoas, para validar sua aceitação e entendimento
 do funcionamento da aplicação, pôde-se ter uma completa verificação do
-que era e do que poderia ser o dispositivo.
+que era e do que poderia ser o *plugin*.
 
 ### Hospedagem
 
@@ -1442,9 +1439,9 @@ estáticas. O link final de acesso a aplicação ficou:
 
 Os eventos das músicas foram salvos em outra plataforma chamada
 Firebase, que é pago; nesse trabalho, está na versão gratuita, que
-suporta o acesso de até 100 usuários simultâneos. Demais eventos como
-“quantidade de usuários acessando o *app*” foram salvos utilizando as
-aplicações GTM e Google Analytics.
+suporta o acesso de até 100 usuários simultâneos. Ademais, eventos como
+“quantidade de usuários acessando o *webapp*” foram salvos utilizando
+as aplicações GTM e Google Analytics.
 
 ### Coleta do Firebase
 
@@ -1455,7 +1452,7 @@ exportar do *Realtime DB*.
 
 ![](./pandoc/media/image12.png)
 
-<span id="_Ref53931970" class="anchor"></span>Figura 16 Console do
+<span id="_Ref53931970" class="anchor"></span>Figura Console do
 *Realtime Database* do Firebase (próprio, 2020)
 
 Com o JSON e a estrutura de dados pronta, datou-se o início de alguns
@@ -1487,7 +1484,7 @@ funcionamento do algoritmo.
 
 ![Image for post](./pandoc/media/image13.png)
 
-<span id="_Ref52742150" class="anchor"></span>Figura 17 – Representação
+<span id="_Ref52742150" class="anchor"></span>Figura – Representação
 gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
 plano, os pontos amarelos são a representação da classe A, roxos classe
 B e vermelho é o ponto de teste ***(JOSÉ, 2018)***
@@ -1504,7 +1501,7 @@ et al., 2011)
 
 ### Preparação dos dados para o KNN
 
-planejando salvar os eventos da aplicação, uma lista chamada *events*,
+Planejando salvar os eventos da aplicação, uma lista chamada *events*,
 composta pelo catálogo de usuários, onde cada usuário possui a lista de
 eventos dentro, teve sua concepção. Cada evento é composto pela seguinte
 estrutura: (i) *action*, ação realizada pelo usuário, apresentadas no
@@ -1521,7 +1518,7 @@ musical, contudo não foram utilizadas no modelo devido ao tempo de
 desenvolvimento. Demais ações são contabilizadas no modelo e são
 apresentadas a seguir.
 
-<span id="_Ref55256921" class="anchor"></span>Quadro 3 Lista de ações
+<span id="_Ref55256921" class="anchor"></span>Quadro Lista de ações
 possíveis nos eventos (próprio, 2020)
 
 | Ação (Action)                 | Descrição                                     |
@@ -1545,17 +1542,17 @@ possíveis nos eventos (próprio, 2020)
 | SHOW\_DETAILS                 | Abriu os detalhes da música                   |
 
 A Figura 18 apresenta as etapas de preparação dos dados, desde o
-carregamento do arquivo até a separação dele na forma de música. É na
-etapa “Carrega JSON”, que se tem o upload dos dados a partir da
-biblioteca padrão do *python* “open”. Para a interpretação, existe a
-biblioteca *json*, possibilitando transformar o conteúdo *string* em um
-dicionário, do qual obtém os usuários e seus eventos e os transforma em
-outro dicionário *users*, cuja *key* é o id do usuário e o conteúdo sua
-lista de eventos.
+carregamento do arquivo até a execução do algoritmo KNN. É na etapa
+“Carrega JSON”, que se tem o upload dos dados a partir da biblioteca
+padrão do *python* “open”. Para a interpretação, existe a biblioteca
+*json*, possibilitando transformar o conteúdo *string* em um dicionário,
+do qual obtém os usuários e seus eventos e os transforma em outro
+dicionário *users*, cuja *key* é o id do usuário e o conteúdo sua lista
+de eventos.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image14.jpg)
 
-<span id="_Ref54973329" class="anchor"></span>Figura 18 Visão macro das
+<span id="_Ref54973329" class="anchor"></span>Figura Visão macro das
 etapas para transformar os eventos registrados no firebase na tabela que
 sera rodado o KNN (próprio, 2020)
 
@@ -1567,8 +1564,8 @@ representado na Figura 20.
 ![Uma imagem contendo Interface gráfica do usuário Descrição gerada
 automaticamente](./pandoc/media/image15.jpg)
 
-<span id="_Ref54973321" class="anchor"></span>Figura 19 Representação
-dos eventos salvos no Firebase (próprio, 2020)
+<span id="_Ref54973321" class="anchor"></span>Figura Representação dos
+eventos salvos no Firebase (próprio, 2020)
 
 A Figura 21 traz a etapa “Separa contexto das músicas”. Na reprodução
 das músicas, é gerado, tanto os eventos separadamente, quanto uma
@@ -1578,22 +1575,21 @@ fim, uma tabela semelhante a Figura 22 das músicas e seus contextos.
 ![Tela de computador com texto preto sobre fundo branco Descrição gerada
 automaticamente](./pandoc/media/image16.jpg)
 
-<span id="_Ref54973316" class="anchor"></span>Figura 20 Representação
-das listas geradas na etapa “Separa contexto” (próprio, 2020)
+<span id="_Ref54973316" class="anchor"></span>Figura Representação das
+listas geradas na etapa “Separa contexto” (próprio, 2020)
 
 Visando uma relação, é realizado um loop em cima dos eventos de cada
-contexto, criando uma lista chamada *musicTable*. Tal, preenchida dos
+contexto, criando uma lista chamada *musicTable*. Tal, é preenchida dos
 seguintes valores: *uri*, *like*, *hate* e *restart,* relacionados ao
-contexto da música, e *feeling*, *activity* e *location,* relacionados
+contexto da música, e *feeling*, *activity* e *location,* e relacionados
 ao contexto do usuário. Ademais, os termos *like*, *hate* e *restart*
 são representados pelo número de vezes que cada um aconteceu durante a
 reprodução.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image17.jpg)
 
-<span id="_Ref54973306" class="anchor"></span>Figura 21 Representação
-das listas geradas na etapa “separa contexto das músicas” (próprio,
-2020)
+<span id="_Ref54973306" class="anchor"></span>Figura Representação das
+listas geradas na etapa “separa contexto das músicas” (próprio, 2020)
 
 Nas duas etapas seguintes (“busca informações das músicas” e “busca
 informações dos artistas (gênero)”), direcioná-lo-ia, o cliente, a uma
@@ -1605,7 +1601,7 @@ uris.
 
 ![Tabela Descrição gerada automaticamente](./pandoc/media/image18.jpg)
 
-<span id="_Ref54973298" class="anchor"></span>Figura 22 Representação da
+<span id="_Ref54973298" class="anchor"></span>Figura Representação da
 tabela na etapa “separa contexto das músicas” (próprio, 2020)
 
 Os dados no Spotify, nos seus devidos processos, obtiveram a lista dos
@@ -1623,7 +1619,7 @@ quebrado os valores dos eventos um a um.
 
 ![](./pandoc/media/image19.png)
 
-<span id="_Ref53955795" class="anchor"></span>Figura 23 *head()* do
+<span id="_Ref53955795" class="anchor"></span>Figura *head()* do
 *dataframe* criado a partir da variável *genreTable* (próprio, 2020)
 
 No fim, era necessário a lib *preprocessing* do *sklearn*, caso quisesse
@@ -1690,7 +1686,7 @@ usuário que utilize o *plugin Web* desenvolvido nesse trabalho.
 
 ![Diagrama Descrição gerada automaticamente](./pandoc/media/image20.jpg)
 
-<span id="_Ref54973275" class="anchor"></span>Figura 24 Visão macro do
+<span id="_Ref54973275" class="anchor"></span>Figura Visão macro do
 sistema LORS (próprio, 2020)
 
 O *plugin* (representado na Figura 24 como o “App”) é responsável por, a
@@ -1705,7 +1701,7 @@ usuário.
 Na elaboração de uma POC em *python* utilizando o *Jupyter Notebook,*
 utilizou-se somente dos dados do usuário que tiveram mais registros
 salvos na base. Todo tratamento e preparação dos dados apresentados na
-seção 4.1.2 foram concebido nessa POC. Os três testes ((i) escolher o
+seção 4.1.2 foram concebidos nessa POC. Os três testes ((i) escolher o
 melhor número de vizinhos (*k*) para rodar o algoritmo; (ii) avaliar o
 score do modelo; (iii) analisar a matriz de confusão obtida no modelo.)
 serviram de apoio para o aperfeiçoamento no uso do algoritmo.
@@ -1742,7 +1738,7 @@ colocadas para repetir (*restart*=1). Os campos *feeling*, *activity*,
 *location* possuem valor padrão somente no caso de a característica
 enviada não existir na base.
 
-<span id="_Ref54920412" class="anchor"></span>Quadro 4 Campos e seus
+<span id="_Ref54920412" class="anchor"></span>Quadro Campos e seus
 respectivos valores utilizados na recomendação (próprio, 2020)
 
 | Campo    | Valor padrão |
@@ -1769,7 +1765,7 @@ contenham no nome.
 
 ![](./pandoc/media/image21.png)
 
-<span id="_Ref54973248" class="anchor"></span>Figura 25 Tela de
+<span id="_Ref54973248" class="anchor"></span>Figura Tela de
 recomendações (próprio, 2020)
 
 No fim, é apresentado o gênero recomendado na tela. Tratasse do retorno
@@ -1785,7 +1781,7 @@ a matriz de confusão do modelo.
 Inicialmente, ele obteve uma acurácia de 0,15, o que é muito baixo. A
 hipótese estaria na quantidade de gêneros (classes); diminuí-los poderia
 aumentar a precisão do experimento. realizar-se-ia uma taxonomia dos
-gêneros, mantendo somente os principais. Com essa alteração, a exatidão
+gêneros, mantendo somente os principais. Com essa alteração, a acurácia
 do algoritmo passou de 0,15 para 0,46, um acréscimo de 206%, tendo em
 vista o 0,15 como um valor total.
 
@@ -1832,8 +1828,8 @@ vista o 0,15 como um valor total.
 | **sertanejo pop**                 | **38**                               |
 | **trap**                          | **39**                               |
 
-<span id="_Ref55013755" class="anchor"></span>Tabela 1 relação dos
-gêneros e a classe utilizada no KNN (próprio, 2020)
+<span id="_Ref55013755" class="anchor"></span>Tabela relação dos gêneros
+e a classe utilizada no KNN (próprio, 2020)
 
 A matriz de confusão do usuário, a utilizada nos testes, está disponível
 na Tabela 3. Nela, é possível verificar que o modelo somente obteve
@@ -1874,17 +1870,17 @@ apresenta a relação dos gêneros com as classes geradas para o KNN.
 </tbody>
 </table>
 
-<span id="_Ref55253627" class="anchor"></span>Tabela 2 matriz confusão
-da classe 12, gênero musical country (próprio, 2020)
+<span id="_Ref55253627" class="anchor"></span>Tabela matriz confusão da
+classe 12, gênero musical country (próprio, 2020)
 
 Para uma análise mais aprofundada, o gênero de maior quantidade de
 recomendações, o de 230 itens, isso é o *country* (classe 12), teve sua
 prioridade. Pela análise, a Tabela 2 contém a avaliação dos dados de
-precisão, o *recall* e o *f-measure*. O modelo acertivo, ao realizar a
-recomendação, dessa classe é de 0,51, ou seja, está com dificuldades de
-classificar o gênero country e acaba na maioria das vezes interpretando
-como outro gênero. O recall foi de 0,80, o que mostra ele está colocando
-pouco da classe 12 em outras.
+precisão, o *recall* e o *f-measure*. A precisão do modelo, ao realizar
+a recomendação dessa classe, é de 0,51, ou seja, está com dificuldades
+de classificar o gênero *country* e acaba na maioria das vezes
+interpretando como outro gênero. O recall foi de 0,80, o que mostra ele
+está colocando pouco da classe 12 em outras.
 
 Outra métrica interessante é o *f-measure*, que é utilizado para
 analisar o *recall* com a precisão em uma única medida. O gênero country
@@ -1934,8 +1930,8 @@ das vezes a classe corretamente.
 | 38 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 4   | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
 | 39 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0  | 0  | 2   | 0  | 0  | 1  | 0  | 0  | 0  | 0  | 0  | 3  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  | 0  |
 
-<span id="_Ref55013706" class="anchor"></span>Tabela 3 Matrix confusão
-do usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
+<span id="_Ref55013706" class="anchor"></span>Tabela Matrix confusão do
+usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 (próprio, 2020)
 
 # CONCLUSÃO
 
