@@ -171,6 +171,7 @@ Lista de Abreviaturas e Siglas
 | SDK    | Software development kit              |
 | SPTF   | RecSys do Spotify                     |
 | SVM    | Support Vector Machine                |
+| URI    | Uniform Resource Identifier           |
 |        |                                       |
 |        |                                       |
 |        |                                       |
@@ -1825,7 +1826,7 @@ mister a predição através do método *predict* do modelo do *sklearn*,
 devolvido a classe resultante. Isso é, ter o gênero resultante como
 resposta à requisição.
 
-### Resultado da recomendação (integração webapp)
+### Resultado da recomendação (integração *webapp*)
 
 Uma integração no *plugin* se deu como necessário no servidor pronto e
 publicado, obtendo informações de contexto e solicitando ao LORS o
