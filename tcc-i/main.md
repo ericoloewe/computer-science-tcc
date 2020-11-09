@@ -1773,31 +1773,132 @@ instâncias da classe 12 (*country*) em outras classes. Outra métrica
 interessante é o *f-measure*, que é utilizado para analisar o *recall*
 com a precisão em uma única medida. O gênero *country* ficou 0,62.
 
+Quadro 7 - Matrix confusão do usuário
+spotify:user:4i3jdhv6vubcjdpwsn38iv8u4
+
+|       | 0-11 | 12  | 13-14 | 15 | 16-20 | 21 | 22-26 | 27 | 28-31 | 32 | 33-36 | 37 | 38-39 |
+| ----- | ---- | --- | ----- | -- | ----- | -- | ----- | -- | ----- | -- | ----- | -- | ----- |
+| 0     | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 1     | 0    | 0   | 0     | 0  | 0     | 1  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 2     | 0    | 1   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 3     | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 1  | 0     | 0  | 0     |
+| 4     | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 5     | 0    | 9   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 6-10  | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 11    | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 2  | 0     |
+| 12    | 0    | 184 | 0     | 24 | 0     | 1  | 0     | 0  | 0     | 17 | 0     | 4  | 0     |
+| 13-14 | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 15    | 0    | 64  | 0     | 5  | 0     | 1  | 0     | 0  | 0     | 5  | 0     | 1  | 0     |
+| 16    | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 17    | 0    | 0   | 0     | 4  | 0     | 3  | 0     | 0  | 0     | 2  | 0     | 0  | 0     |
+| 18    | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 19    | 0    | 0   | 0     | 1  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 20    | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 1  | 0     | 0  | 0     |
+| 21    | 0    | 0   | 0     | 5  | 0     | 10 | 0     | 0  | 0     | 8  | 0     | 0  | 0     |
+| 22    | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 23    | 0    | 0   | 0     | 2  | 0     | 1  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 24    | 0    | 2   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 25    | 0    | 0   | 0     | 0  | 0     | 1  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 26    | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 1  | 0     | 0  | 0     | 0  | 0     |
+| 27    | 0    | 11  | 0     | 3  | 0     | 0  | 0     | 4  | 0     | 0  | 0     | 0  | 0     |
+| 28    | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 29    | 0    | 2   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 2  | 0     | 0  | 0     |
+| 30    | 0    | 1   | 0     | 1  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 31    | 0    | 2   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 1  | 0     | 2  | 0     |
+| 32    | 0    | 24  | 0     | 9  | 0     | 4  | 0     | 0  | 0     | 17 | 0     | 1  | 0     |
+| 33    | 0    | 2   | 0     | 0  | 0     | 1  | 0     | 0  | 0     | 1  | 0     | 0  | 0     |
+| 34    | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 1  | 0     | 0  | 0     |
+| 35    | 0    | 1   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 36    | 0    | 0   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 37    | 0    | 55  | 0     | 4  | 0     | 1  | 0     | 0  | 0     | 10 | 0     | 2  | 0     |
+| 38    | 0    | 4   | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+| 39    | 0    | 2   | 0     | 1  | 0     | 3  | 0     | 0  | 0     | 0  | 0     | 0  | 0     |
+
+Fonte: Elaborado pelo autor (2020)
+
+Com sucesso foi desenvolvido o sistema de recomendação e apresentado
+nesse capítulo, iniciou-se apresentado o algoritmo, então a preparação
+dos dados do *plugin*, testes, desenvolvimento do servidor que hospeda
+os scripts *python*, a integração dele no *webapp* e por fim, é
+apresentado os resultados obtidos com as recomendações do algoritmo.
+
 # CONCLUSÃO
 
-Pode-se afirmar que está havendo em Porto Alegre uma situação paradoxal.
-Ao mesmo tempo em que se percebe um avanço no cumprimento das diretrizes
-norteadoras do Sistema Único de Saúde, tais como, a integralidade da
-atenção à saúde (preventivo e curativo), a universalidade da cobertura e
-do atendimento, a gratuidade e a descentralização das ações e serviços,
-verifica-se também a obstaculização permanente do processo em função da
-insuficiência de recursos. Ao mesmo tempo em que são repassadas novas
-atribuições e poderes ao município de Porto Alegre, não há o repasse de
-recursos financeiros na mesma proporção para fazer frente ao processo de
-municipalização. Além disso, as negociações para se aumentar os recursos
-financeiros sempre ocorrem de maneira conflitiva, principalmente entre o
-Estado e o Município. Desse modo, o melhor andamento do processo de
-municipalização em Porto Alegre fica na dependência da contrapartida de
-recursos do Estado e da União.
+Nesse trabalho foi realizada uma revisão sobre trabalhos da *ACM*, de
+*RecSys* musical, que utilizam o contexto do usuário. Na pesquisa
+apareceram poucos trabalhos que buscam unir a recomendação musical com o
+contexto do usuário. Sendo assim, esse trabalho desenvolveu um *RecSys*
+musical, o qual analisa o contexto do usuário em tempo real, para
+realizar novas recomendações a ele.
 
-...............................................
+No desenvolvimento desse trabalho, foram encontradas diversas
+dificuldades em lidar com músicas, pois desde o momento que se iniciou o
+estudo, foi visto que a área é muito maior do que aparenta. Com o
+questionário foi possível entender que o gosto musical de um público é
+algo bastante abrangente.
 
-PAGINAÇÃO: Segundo o livro do prof. Cléber Prodanov, as folhas do
-trabalho são contadas a partir da folha de rosto (não contamos a capa),
-mas nem todas receberão um número. Contamos, mas não numeramos, então, a
-folha de rosto, o resumo, o abstract, as listas e o sumário. A numeração
-é colocada no canto superior direito da folha, a 2cm da borda superior
-da folha, em algarismos arábicos.
+No *plugin* foram encontradas dificuldades em seu desenvolvimento.
+Inicialmente a aplicação foi desenvolvida em Flutter, uma plataforma
+para desenvolvimento mobile e foi visto que devido à falta de suporte ao
+*streaming* (*Web Playback SDK*) na biblioteca do Spotify para Flutter,
+ela não supriria as necessidades desse trabalho, então houve uma
+migração para a plataforma Web.
+
+Ao realizar a primeira publicação do *plugin*, foram encontrados
+problemas como, navegadores diferentes, sistemas operacionais
+diferentes, contas do Spotify com contrato diferente. E tudo isso, levou
+ao entendimento de que o desenvolvimento e manutenção dessa aplicação
+Web é bastante complexo.
+
+Com o sistema desenvolvido, foi enviado e-mail a todos que optaram por
+participar da pesquisa no questionário. Nisso foi visto que os usuários
+não têm uma boa aderência a estudos enviados via e-mail, pois dos 144
+optantes, somente 6 deles o receberam e utilizaram da aplicação.
+Portanto, foram escolhidos respondentes com mais afinidade com o autor,
+um total de 8, solicitado pessoalmente que utilizassem a aplicação para
+auxiliar no trabalho. No fim, o sistema obteve um total de 14 usuários
+que utilizaram o sistema período estipulado.
+
+Mesmo solicitando pessoalmente, foi obtido um baixo uso na aplicação,
+gerando assim uma base muito pequena para aplicação do algoritmo KNN.
+Esse problema é conhecido como *Cold Start*, que acontece geralmente
+quando as aplicações estão iniciando e não tem um histórico de dados
+muito grande. Para lidar melhor com a acurácia inicial do KNN muito
+baixa, foi desenvolvida a taxonomia dos gêneros, mantendo somente os
+principais gêneros, e com isso, reduzindo o número de resultados
+possíveis, o que melhorou a acurácia do KNN em predizer um melhor
+resultado.
+
+Porém, mesmo com a redução das classes, o modelo obteve uma baixa
+acurácia nas recomendações. Logo, há a necessidade de uma melhoria nas
+características coletadas dos usuários, bem como um aumento na base de
+dados. Posterior a isto, será possível também avaliar acurácia do KNN em
+relação a outros algoritmos de *Machine Learning*.
+
+## Trabalhos futuros
+
+Abaixo são apresentadas algumas melhorias e continuidade nos estudos
+relativos ao sistema de recomendação apresentado.
+
+##### Desenvolver uma extensão mais simples para conectar ao Spotify, como uma extensão do Google Chrome;
+
+##### Encontrar uma base mais completa para realizar a taxonomia dos gêneros;
+
+##### Realizar a leitura da emoção através dos batimentos cardíacos de um *wearable;*
+
+##### Carregar histórico do Spotify para auxiliar o *Cold Start* do KNN;
+
+##### Realizar perguntas sobre gêneros, músicas e artistas para auxiliar no *Cold Start* do KNN;
+
+##### Aperfeiçoar atributos do modelo para aumentar a acurácia, precisão e *recall;*
+
+##### Utilizar latitude e longitude para assimilar a localização em *label* e facilitar o seu preenchimento;
+
+##### Aplicar uma leitura sequencial ao modelo das recomendações;
+
+##### Contabilizar ações apresentadas no Quadro 3 que não estão sendo utilizadas no modelo;
+
+##### Inserir *feature* “amigos ou sozinho” ao plugin e utilizar no modelo.
 
 # Referências Bibliográficas
 
