@@ -103,29 +103,98 @@ Sumário
 
 [1 Introdução 11](#introdução)
 
-[2 Capítulo 2 13](#_Toc515474047)
+[1.1 Objetivo Geral 14](#objetivo-geral)
 
-[2.1 Primeiro subtítulo do capítulo 13](#_Toc515474048)
+[1.2 Objetivos Específicos 14](#objetivos-específicos)
 
-[2.2 Segundo subtítulo do capítulo 14](#_Toc515474049)
+[1.3 Metodologia 14](#metodologia)
 
-[2.2.1 Subtítulo de nível 3 14](#_Toc515474050)
+[2 Trabalhos relacionados 16](#trabalhos-relacionados)
 
-[2.2.2 Outro subtítulo de nível 3 14](#_Toc515474051)
+[2.1 Levantamento bibliográfico inicial
+16](#levantamento-bibliográfico-inicial)
 
-[2.3 Terceiro subtítulo do capítulo 16](#_Toc515474052)
+[2.2 O protocolo de revisão 17](#o-protocolo-de-revisão)
 
-[3 CONCLUSÃO 17](#conclusão)
+[2.3 PROCURA NOS MOTORES DE BUSCA 18](#procura-nos-motores-de-busca)
 
-[Referências Bibliográficas 18](#referências-bibliográficas)
+[2.4 ETAPAS DA REVISÃO DOS TRABALHOS
+20](#etapas-da-revisão-dos-trabalhos)
 
-O sumário é elemento obrigatório, em que se apresentam os títulos e
-subtítulos (ou seções), seguidos de sua paginação. É recomendável
-(PRODANOV, 2003, p.32) que não se ultrapassem cinco níveis de
-subtítulos. Deixar um espaço maior para separar cada título =\> por
-exemplo, espaçamento antes e depois = 6 pts. Este sumário foi elaborado
-automaticamente pelo Word. Para atualizá-lo, basta clicar com o botão
-direito, escolher Atualizar Campo e depois Atualizar o Índice Inteiro.
+[2.4.1 Trabalhos selecionados 21](#trabalhos-selecionados)
+
+[2.5 FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
+30](#funcionalidades-dos-trabalhos-investigados)
+
+[2.6 Conclusões dos trabalhos revisados
+32](#conclusões-dos-trabalhos-revisados)
+
+[3 COLETA DO CONTEXTO DOS USUáRIOS 34](#coleta-do-contexto-dos-usuários)
+
+[3.1 Contexto 34](#contexto)
+
+[3.1.1 O que é o contexto comportamental?
+35](#o-que-é-o-contexto-comportamental)
+
+[3.1.2 O que é o contexto de ambiente?
+35](#o-que-é-o-contexto-de-ambiente)
+
+[3.1.3 Como serão obtidos os contextos?
+36](#como-serão-obtidos-os-contextos)
+
+[3.1.4 O que são as ações do usuário?
+36](#o-que-são-as-ações-do-usuário)
+
+[3.2 Pesquisa com usuários sobre recomendação musical (QUESTIONÁRIO)
+37](#pesquisa-com-usuários-sobre-recomendação-musical-questionário)
+
+[3.2.1 Pré-teste do questionário 38](#pré-teste-do-questionário)
+
+[3.2.2 Resultados do questionário 39](#_Toc55790207)
+
+[3.3 Desenvolvimento Do plugin 41](#desenvolvimento-do-plugin)
+
+[3.3.1 Telas da aplicação (*plugin*) 42](#telas-da-aplicação-plugin)
+
+[3.3.2 Tecnologias utilizadas no desenvolvimento 44](#_Toc55790210)
+
+[3.4 Distribuição da aplicação e coleta de dados
+45](#distribuição-da-aplicação-e-coleta-de-dados)
+
+[3.4.1 Pré-teste 45](#pré-teste)
+
+[3.4.2 Hospedagem 46](#_Toc55790213)
+
+[3.4.3 Coleta do Firebase 46](#_Toc55790214)
+
+[4 SISTEMA LORS 48](#sistema-lors)
+
+[4.1 O Algoritmo KNN 48](#o-algoritmo-knn)
+
+[4.1.1 Preparação dos dados para o KNN
+49](#preparação-dos-dados-para-o-knn)
+
+[4.1.2 Testes com KNN 53](#_Toc55790218)
+
+[*4.2* Predição no sistema *LORS* 54](#predição-no-sistema-lors)
+
+[4.2.1 POC (Proof of Concept) 55](#poc-proof-of-concept)
+
+[4.2.2 Servidor 55](#servidor)
+
+[4.2.3 Hospedagem 56](#_Toc55790222)
+
+[4.2.4 Recomendação 56](#_Toc55790223)
+
+[4.2.5 Resultado da recomendação (integração webapp) 57](#_Toc55790224)
+
+[4.2.6 Resultados do experimento 58](#_Toc55790225)
+
+[5 CONCLUSÃO 62](#conclusão)
+
+[5.1 Trabalhos futuros 63](#trabalhos-futuros)
+
+[Referências Bibliográficas 64](#referências-bibliográficas)
 
 # Introdução
 
