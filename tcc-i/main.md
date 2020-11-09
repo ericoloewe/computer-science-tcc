@@ -1127,9 +1127,9 @@ desenvolvimento do sistema de recomendação musical
 Fonte: Elaborado pelo autor (2020)
 
 LORS utiliza de uma análise recorrente do contexto, para realizar as
-recomendações. Esse modelo será apresentado com mais detalhes nas seções
-a seguir. Suas etapas de desenvolvimento são apresentadas na **Figura
-8**.
+recomendações. Esse algortimo será apresentado com mais detalhes nas
+seções a seguir. Suas etapas de desenvolvimento são apresentadas na
+**Figura 8**.
 
 ## Contexto
 
@@ -1333,8 +1333,8 @@ Visando entender o comportamento do público, as questões “O que costuma
 te influenciar na escolha da música?” e “O que você faz quando gosta ou
 não de uma música?” foram importantíssimas. Dessa maneira, não há tanta
 dificuldade em compreender as características mais importantes a serem
-consideradas no modelo e ordem da aplicação, isso é, Humor e Atividades,
-as quais estão presentes no questionário do *plugin*.
+consideradas no algoritmo e ordem da aplicação, isso é, Humor e
+Atividades, as quais estão presentes no questionário do *plugin*.
 
 A pergunta “As músicas que você escuta sozinho são diferentes das que
 escuta com os amigos?” foi desenvolvida para realizar uma avaliação se a
@@ -1527,7 +1527,7 @@ preparada do JSON.
 Com a estrutura dos dados pronta e a pesquisa dos dados dos usuários,
 levantou-se um tratamento específico para cada informação, realizando,
 dessa forma, o estudo da técnica de recomendação escolhida nos trabalhos
-anteriores, o KNN. Com isso, surgiu o modelo do sistema LORS, que
+anteriores, o KNN. Com isso, surgiu o algoritmo do sistema LORS, que
 utiliza de uma análise recorrente do contexto, para realizar as
 recomendações dinâmicas às mudanças do contexto. Serão apresentadas mais
 informações das etapas de modelagem e desenvolvimento do sistema nas
@@ -1579,8 +1579,8 @@ LIKED\_ARTIST, LIKED\_GENRE, ficaram nos eventos do *plugin*, mesmo que
 não sejam utilizadas devido ao tempo limitado de desenvolvimento. As
 ações HIDE\_DETAILS, PAUSE\_MUSIC, PLAY\_MUSIC, SHOW\_DETAILS são
 contabilizadas como registro do contexto musical, contudo não foram
-utilizadas no modelo devido ao tempo de desenvolvimento. Demais ações
-são contabilizadas no modelo e são apresentadas no Quadro 3.
+utilizadas no algoritmo devido ao tempo de desenvolvimento. Demais ações
+são contabilizadas e apresentadas no Quadro 3.
 
 <span id="_Toc55791194" class="anchor"></span>Quadro - Lista de ações
 possíveis nos eventos
@@ -1775,7 +1775,7 @@ utilizou-se somente dos dados do usuário que tiveram mais registros
 salvos na base. Todo tratamento e preparação dos dados apresentados na
 seção 4.1.2 foram concebidos nessa POC. Os três testes ((i) escolher o
 melhor número de vizinhos (*k*) para rodar o algoritmo; (ii) avaliar o
-score do modelo; (iii) analisar a matriz de confusão obtida no modelo..)
+score do algoritmo; (iii) analisar a matriz de confusão obtida.)
 serviram de apoio para o aperfeiçoamento no uso do algoritmo.
 
 ### Servidor
@@ -1828,9 +1828,9 @@ respectivos valores utilizados na recomendação
 Fonte: Elaborado pelo autor (2020)
 
 Com o algoritmo pronto (Seção 4.1.1) e os parâmetros tratados, fez-se
-mister a predição através do método *predict* do modelo do *sklearn*,
-devolvido a classe resultante. Isso é, ter o gênero resultante como
-resposta à requisição.
+mister a predição através do método *predict* do *sklearn*, devolvido a
+classe resultante. Isso é, ter o gênero resultante como resposta à
+requisição.
 
 ### Resultado da recomendação (integração *webapp*)
 
@@ -1903,11 +1903,11 @@ gêneros e a classe utilizada no KNN
 Fonte: Elaborado pelo autor (2020)
 
 A matriz de confusão do usuário utilizado nos testes, está disponível na
-Tabela 3. Nela, é possível verificar que o modelo somente obteve sucesso
-na recomendação da categoria de número 12. Acontece devido ao curto
-período de uso da aplicação e ao gosto musical do usuário estar mais
-voltado aquele estilo musical. Encontrada na Tabela 1, ela apresenta a
-relação dos gêneros com as classes geradas para o KNN.
+Tabela 3. Nela, é possível verificar que o algoritmo somente obteve
+sucesso na recomendação da categoria de número 12. Acontece devido ao
+curto período de uso da aplicação e ao gosto musical do usuário estar
+mais voltado aquele estilo musical. Encontrada na Tabela 1, ela
+apresenta a relação dos gêneros com as classes geradas para o KNN.
 
 <span id="_Toc55791197" class="anchor"></span>Quadro matriz confusão da
 classe 12, gênero musical country
@@ -2027,7 +2027,7 @@ principais gêneros, e com isso, reduzindo o número de resultados
 possíveis, o que melhorou a acurácia do KNN em predizer um melhor
 resultado.
 
-Porém, mesmo com a redução das classes, o modelo obteve uma baixa
+Porém, mesmo com a redução das classes, o algoritmo obteve uma baixa
 acurácia nas recomendações. Logo, há a necessidade de uma melhoria nas
 características coletadas dos usuários, bem como um aumento na base de
 dados. Posterior a isto, será possível também avaliar acurácia do KNN em
@@ -2048,15 +2048,15 @@ relativos ao sistema de recomendação apresentado.
 
 ##### Realizar perguntas sobre gêneros, músicas e artistas para auxiliar no *Cold Start* do KNN;
 
-##### Aperfeiçoar atributos do modelo para aumentar a acurácia, precisão e *recall;*
+##### Aperfeiçoar atributos do algoritmo para aumentar a acurácia, precisão e *recall;*
 
 ##### Utilizar latitude e longitude para assimilar a localização em *label* e facilitar o seu preenchimento;
 
-##### Aplicar uma leitura sequencial ao modelo das recomendações (uso do *createdDateTime*);
+##### Aplicar uma leitura sequencial ao algoritmo das recomendações (uso do *createdDateTime*);
 
-##### Contabilizar ações apresentadas no Quadro 3 que não estão sendo utilizadas no modelo;
+##### Contabilizar ações apresentadas no Quadro 3 que não estão sendo utilizadas no algoritmo;
 
-##### Inserir *feature* “amigos ou sozinho” ao plugin e utilizar no modelo.
+##### Inserir *feature* “amigos ou sozinho” ao plugin e utilizar no algoritmo.
 
 # Referências Bibliográficas
 
