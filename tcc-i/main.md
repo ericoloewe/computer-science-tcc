@@ -66,11 +66,13 @@ was an increase of the available amount of information, bringing the
 need for systems to improve their recommendations, arising the RecSys.
 These systems are used in several types of applications such as sales,
 selecting a movie and choosing a song, which one is one of the goals of
-this research. In this work, a music recommender system based on
-behavior and environmental context will be developed. The system purpose
-is to collect information about the user’s behavior and environment,
-enabling the improvement of music recommendations according to the
-context experienced by him.
+this research. In this work, a music genre recommender system called
+LORS (Loewe’s *Recommender System*) based on behavior and environmental
+context was developed. The system uses the KNN (K-Nearest Neighbors)
+algorithm, with the musical (like, hate, repeat), behavior (activity,
+feeling) and environmental (location) features to find the best music
+genre for the moment. We show all the research since the development of
+the system until the recommendation results.
 
 Keywords: RecSys. Machine Learning. Music Recommender System. K-Nearest
 Neighbors. Music. Spotify.
