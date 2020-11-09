@@ -75,29 +75,31 @@ Lista de Tabelas
 
 Lista de Abreviaturas e Siglas
 
-| BSC     | Balanced Scorecard                                        |
-| ------- | --------------------------------------------------------- |
-| CAPF    | Custo Anual por Funcionário                               |
-| CAPT    | Custo Anual por Teclado                                   |
-| CAPU    | Custo Anual por Usuário                                   |
-| CEO     | Chief of Executive Office                                 |
-| CIA/FVG | Centro de Informática Aplicada da Fundação Getúlio Vargas |
-| CIO     | Chief of Information Office                               |
-| CO      | Contexto Organizacional                                   |
-| COBIT   | Control Objectives for Information and related Technology |
-| ERP     | Enterprise Resource Planning                              |
-| FCS     | Fatores Críticos de Sucesso                               |
-| FGV     | Fundação Getúlio Vargas                                   |
-| ISACA   | Information Systems Audit and Control Association         |
-| MIT     | Massachusetts Institute of Technology                     |
-| PEE     | Planejamento Estratégico Empresarial                      |
-| PETI    | Panejamento Estratégico da Tecnologia da Informação       |
-| RH      | Recursos Humanos                                          |
-| ROE     | Return On Expectation                                     |
-| ROI     | Return On Investiment                                     |
-| SI      | Sistemas de Informação                                    |
-| SLA     | Service Level Agreements                                  |
-| SLM     | Service Level Managements                                 |
+| AIR    | *Activity-aware Intent Recommendation* |
+| ------ | -------------------------------------- |
+| App    | *Application*                          |
+| AUC    | Operating Characteristic Curve         |
+| GPML   | Gaussian Process for Machine Learning  |
+| GPR    | Gaussian Process Regression            |
+| LORS   | Loewe’s Recommender System             |
+| POC    | Proof of concept                       |
+| RBF    | Radial Basis Function                  |
+| RecSys | Recommender Systems                    |
+| SDK    | Software development kit               |
+| SPTF   | RecSys do Spotify                      |
+| SVM    | Support Vector Machine                 |
+|        |                                        |
+|        |                                        |
+|        |                                        |
+|        |                                        |
+|        |                                        |
+|        |                                        |
+|        |                                        |
+|        |                                        |
+|        |                                        |
+|        |                                        |
+|        |                                        |
+|        |                                        |
 
 Sumário
 
