@@ -252,7 +252,7 @@ Sumário
 [2.6 Conclusões dos trabalhos revisados
 36](#conclusões-dos-trabalhos-revisados)
 
-[3 COLETA DO CONTEXTO DOS USUARIOS 37](#coleta-do-contexto-dos-usuarios)
+[3 COLETA DO CONTEXTO DOS USUARIOS 37](#coleta-do-contexto-dos-usuários)
 
 [3.1 Contexto 37](#contexto)
 
@@ -1136,25 +1136,24 @@ Porém o uso do SVM foi descartado, devido ao seu algoritmo tradicional
 estar mais voltado para a classificação de classes binárias (RÄTSCH,
 2004). Portanto, nesse trabalho escolheu-se usar o algoritmo KNN.
 
-# COLETA DO CONTEXTO DOS USUARIOS
+# COLETA DO CONTEXTO DOS USUáRIOS
 
 A partir da revisão bibliográfica realizada, foi possível conhecer
 alguns sistemas e modelos que utilizam do contexto para realizar as
-recomendações musicais. Com isso, foi possível entender e desenvolver um
-modelo de sistema de recomendação chamado *LORS* (*Loewe’s Recommender
-System*).
+recomendações musicais, tornando realizável entender certas lacunas que
+não foram analisadas nessa área de pesquisa e, no fim, desenvolvendo um
+sistema de recomendação chamado LORS (Loewe’s Recommender System).
 
 <span id="_Ref42452795" class="anchor"></span>Figura 9 Etapas do
 desenvolvimento do sistema de recomendação musical (próprio, 2020)
 
 LORS utiliza de uma análise recorrente do contexto, para realizar as
-recomendações dinâmicas às mudanças desse contexto. Esse modelo será
-apresentado e detalhado nas seções a seguir. Suas etapas de
-desenvolvimento são apresentadas na Figura 11.
+recomendações. Esse modelo será apresentado com mais detalhes nas seções
+a seguir. Suas etapas de desenvolvimento são apresentadas na Figura 9.
 
 ## Contexto
 
-Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
+Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020),
 contexto pode ser definido por:
 
 > O conjunto de circunstâncias inter-relacionadas de cuja tessitura se
@@ -1162,28 +1161,28 @@ contexto pode ser definido por:
 > situação.
 
 Um sistema de recomendação busca encontrar os melhores itens para um
-devido fim, onde geralmente se baseia em dados históricos para
-produzi-la. (DIETMAR et al., 2010) Observa-se que, com o entendimento do
-contexto, ou conforme a definição das “circunstâncias que levaram a
-certos fatos ou situações”, é possível auxiliar as recomendações,
-aumentando o número de dados disponíveis para realizar uma classificação
-e/ou filtro. A 9Figura apresenta uma visão macro dos contextos que serão
-considerados neste trabalho.
+devido fim, geralmente, baseado em dados históricos para a produzir.
+(DIETMAR et al., 2010) Observa-se que, com o entendimento do contexto,
+ou conforme a definição das “circunstâncias que levaram a certos fatos
+ou situações”, auxiliar as recomendações, aumentando o número de dados
+disponíveis para realizar uma classificação e/ou filtro, já não é mais
+um problema. A Figura 8 apresenta uma visão macro dos contextos que
+serão considerados no projeto.
 
 <span id="_Ref42447869" class="anchor"></span>Figura 8 Apresentação dos
 contextos utilizados no trabalho (próprio, 2020)
 
 ### O que é o contexto comportamental?
 
-Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
+Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020),
 comportamento pode ser tido por:
 
 > Qualquer ação ou reação do organismo ou parte dele.
 
-A partir da definição de contexto, foi realizado um levantamento das
-possíveis ações a serem registradas em um sistema baseado no *app*
-Spotify. Essa lista foi colocada no questionário. Esse estudo trouxe a
-seguinte lista de ações:
+A partir da definição de contexto, surgiu um levantamento das possíveis
+ações a serem registradas em um sistema baseado no *app* Spotify, a fim
+de as colocar no questionário. Esse estudo trouxe a seguinte lista de
+ações:
 
   - Passar / Voltar \(n\) músicas
 
@@ -1195,7 +1194,7 @@ seguinte lista de ações:
 
 ### O que é o contexto de ambiente?
 
-Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020)
+Conforme o dicionário Michaelis (EDITORA MELHORAMENTOS LTDA, 2020),
 ambiente pode ser tido por:
 
 > Conjunto de condições físicas, biológicas e químicas que rodeiam os
