@@ -162,10 +162,10 @@ através dos formulários do Google. 37](#_Ref55830494)
 57](#_Ref55798216)
 
 [Quadro 6 - matriz confusão da classe 12, gênero musical country
-58](#_Ref55798182)
+59](#_Ref55798182)
 
 [Quadro 7 - Matrix confusão do usuário
-spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 59](#_Ref55798206)
+spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 60](#_Ref55798206)
 
 Lista de Abreviaturas e Siglas
 
@@ -286,13 +286,13 @@ Sumário
 [4.2.5 Resultado da recomendação (integração *webapp*)
 56](#_Toc55830767)
 
-[4.2.6 Resultados do experimento 57](#_Toc55830768)
+[4.2.6 Resultados do experimento 56](#_Toc55830768)
 
-[5 CONCLUSÃO 61](#conclusão)
+[5 CONCLUSÃO 62](#conclusão)
 
-[5.1 Trabalhos futuros 62](#trabalhos-futuros)
+[5.1 Trabalhos futuros 63](#trabalhos-futuros)
 
-[Referências Bibliográficas 63](#referências-bibliográficas)
+[Referências Bibliográficas 64](#referências-bibliográficas)
 
 # Introdução
 
@@ -619,11 +619,12 @@ trabalhos encontrados, a qual será apresentada nas próximas seções.
 ## PROCURA NOS MOTORES DE BUSCA
 
 No dia 07/05/2020 foi realizada a pesquisa no motor de busca ACM
-utilizando a *string* de busca pré-definida anteriormente. As Figuras 1,
-2 e 3 ilustram esse processo. A Figura 1 apresenta a string de busca
-desenvolvida no motor da ACM, e as Figuras 2 e 3 apresentam
-respectivamente os resultados das buscas por *proceedings* e *journals*.
-A quantidade de resultados apresentados na ACM foi de 150 trabalhos.
+utilizando a *string* de busca pré-definida anteriormente. As Figuras
+Figura 1, Figura 2 e Figura 3 ilustram esse processo. A Figura 1
+apresenta a string de busca desenvolvida no motor da ACM, e as Figuras 2
+e 3 apresentam respectivamente os resultados das buscas por
+*proceedings* e *journals*. A quantidade de resultados apresentados na
+ACM foi de 150 trabalhos.
 
 <span id="_Ref55830291" class="anchor"></span>Figura 1 - Motor avançado
 de busca da ACM
@@ -1915,7 +1916,8 @@ gêneros e a classe utilizada no KNN
 
 Fonte: Elaborado pelo autor (2020)
 
-A matriz de confusão do usuário utilizado nos testes, está disponível no
+A matriz de confusão do usuário utilizado nos testes, está disponível
+no  
 Quadro 7. Nela, é possível verificar que o algoritmo somente obteve
 sucesso na recomendação da categoria de número 12. Acontece devido ao
 curto período de uso da aplicação e ao gosto musical do usuário estar
