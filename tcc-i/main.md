@@ -1600,6 +1600,179 @@ histórico de músicas reproduzidas. O resultado correspondente passa a
 ser entregue através de uma API, podendo ser consumida por qualquer
 usuário que utilize o *plugin Web* desenvolvido nesse trabalho.
 
+Figura - Visão macro do sistema LORS
+
+![](./pandoc/media/image25.jpeg)
+
+Fonte: Elaborado pelo autor (2020)
+
+O *plugin* (representado na Figura 24 como o “App”) é responsável por, a
+cada 30 minutos, solicitar ao usuário uma atualização de contexto, isso
+é, abrir um formulário. Dessa forma, ele possibilita o preenchimento do
+humor, atividades e localização atual do usuário. As informações são
+salvas e relacionadas às próximas músicas reproduzidas ou salvas pelo
+usuário.
+
+### POC (Proof of Concept)
+
+Na elaboração de uma POC em *python* utilizando o *Jupyter Notebook,*
+utilizou-se somente dos dados do usuário que tiveram mais registros
+salvos na base. Todo tratamento e preparação dos dados apresentados na
+seção 4.1.2 foram concebidos nessa POC. Os três testes ((i) escolher o
+melhor número de vizinhos (*k*) para rodar o algoritmo; (ii) avaliar o
+score do modelo; (iii) analisar a matriz de confusão obtida no modelo..)
+serviram de apoio para o aperfeiçoamento no uso do algoritmo.
+
+### Servidor
+
+Com a lógica desenvolvida na POC, composto de uma exportação do código
+para scripts *python*, um servidor progrediu em sua criação. Tal,
+utiliza a biblioteca *Flask* e integra o algoritmo KNN exportado à rota.
+A rota do tipo GET / elaborada recebe 4 parâmetros: (i) *uri*, o *id* do
+Spotify do usuário; (ii) *feeling*, o sentimento registrado; (iii)
+*activity*, a atividade registrada; (iv) *location*, a localização
+registrada. Ela também detém como retorno o gênero resultado da predição
+e a acurácia do algoritmo KNN.
+
+### Hospedagem
+
+O servidor\[6\], publicado na ferramenta disponível no Azure chamada App
+Service, utilizando *container* Docker, é uma ferramenta paga que
+possibilita a publicação de servidores de diversas tecnologias.
+
+### Recomendação
+
+No momento em que o servidor recebe uma requisição, é feito o tratamento
+dos parâmetros. O mesmo transforma a *string* em um valor numérico
+através da biblioteca *preprocessing*, e, no caso da característica não
+existir anteriormente, é feito um tratamento para valores padrões,
+conforme apresenta o Quadro 4. Os campos *like*, *hate* e *restart*
+estão com valores fixos devido a busca de músicas que foram curtidas
+(*like*=1), as não marcadas como “Não gostei” (*hate*=0) junto daquelas
+colocadas para repetir (*restart*=1).
+
+É utilizado o *LabelEncoder* para gerar o valor numérico dos campos
+*feeling*, *activity*, *location*. Para isso, foi rodado o método *fit*
+apresentando os dados a base e então realizado o *transform*. Ao rodar,
+é estourado uma exceção se for passado uma característica desconhecida
+pelo *fit*. Devido a esse comportamento, os campos possuem um valor
+padrão no caso de a característica enviada não existir na base.
+
+Quadro - Campos e seus respectivos valores utilizados na recomendação
+
+| Campo    | Valor padrão |
+| -------- | ------------ |
+| like     | 1            |
+| hate     | 0            |
+| restart  | 1            |
+| feeling  | 0            |
+| activity | 0            |
+| location | 0            |
+
+Fonte: Elaborado pelo autor (2020)
+
+Com o algoritmo pronto (Seção 4.1.1) e os parâmetros tratados, fez-se
+mister a predição através do método *predict* do modelo do *sklearn*,
+devolvido a classe resultante. Isso é, ter o gênero resultante como
+resposta à requisição.
+
+### Resultado da recomendação (integração webapp)
+
+Uma integração no *plugin* se deu como necessário no servidor pronto e
+publicado, obtendo informações de contexto e solicitando ao LORS o
+gênero recomendado. Com o retorno do gênero, é feita uma nova
+requisição de busca ao Spotify das principais 20 *playlists* que o
+contenham no nome.
+
+Figura – A direita, parte superior da tela de recomendações. A esquerda,
+parte inferior da tela de recomendações
+
+|                                 |                                 |
+| ------------------------------- | ------------------------------- |
+| ![](./pandoc/media/image26.png) | ![](./pandoc/media/image26.png) |
+
+Fonte: Elaborado pelo autor (2020)
+
+No fim, é apresentado o gênero recomendado na tela, tratando do retorno
+do Spotify, apresentado as *playlists* a tela (Figura 25), permitindo ao
+usuário escolher uma das playlists para reproduzir.
+
+### Resultados do experimento
+
+Nessa seção são discutidas a acurácia e matriz de confusão da aplicação
+do KNN sobre o conjunto de testes. O algoritmo inicialmente obteve uma
+acurácia de 0,15, o que é muito baixo. A hipótese estaria na quantidade
+de gêneros (classes); diminuí-los poderia aumentar a precisão do
+experimento. Foi realizado uma taxonomia dos gêneros, mantendo somente
+os principais. Com essa alteração, a acurácia do algoritmo passou de
+0,15 para 0,46, um acréscimo de 206%, tendo em vista o 0,15 como um
+valor de acurácia baixo.
+
+O principal problema para realizar a taxonomia foi encontrar uma lista
+que supria a dos gêneros do Spotify ao ponto de conseguir fazer a
+relação com os existentes no algoritmo e substitui-los pelo base, pois
+nele não dispõe dessa relação. A relação dos gêneros com seus subgêneros
+foi encontrada em um *showcase* do Spotify chamado Music Popcorn
+(<https://developer.spotify.com/community/showcase/music-popcorn/>). Ele
+possui uma lista de 1107 gêneros, 4 vezes menos do que o Spotify possui
+hoje, porém já auxiliou na taxonomia dos gêneros, trazendo uma redução
+de 70 para 40 classes na base do usuário de teste.
+
+Quadro - relação dos gêneros e a classe utilizada no KNN
+
+| GENERO                   | CLASSE GERADA PELO LABEL ENCODER | GENERO                        | CLASSE GERADA PELO LABEL ENCODER |
+| ------------------------ | -------------------------------- | ----------------------------- | -------------------------------- |
+| arkansas country         | 0                                | heartland rock                | 20                               |
+| atl hip hop              | 1                                | hip hop                       | 21                               |
+| australian country       | 2                                | indie cafe pop                | 22                               |
+| australian indie folk    | 3                                | melodic rap                   | 23                               |
+| australian reggae fusion | 4                                | metal                         | 24                               |
+| bandinhas                | 5                                | miami hip hop                 | 25                               |
+| beatlesque               | 6                                | musica gaucha                 | 26                               |
+| brazilian rock           | 7                                | musica gaucha tradicionalista | 27                               |
+| canadian pop punk        | 8                                | musica maranhense             | 28                               |
+| canadian punk            | 9                                | neo mellow                    | 29                               |
+| canadian rock            | 10                               | nyc rap                       | 30                               |
+| channel pop              | 11                               | oklahoma country              | 31                               |
+| country                  | 12                               | pop                           | 32                               |
+| country dawn             | 13                               | post-teen pop                 | 33                               |
+| country pop              | 14                               | punk                          | 34                               |
+| country road             | 15                               | r\&b                          | 35                               |
+| dfw rap                  | 16                               | redneck                       | 36                               |
+| electro house            | 17                               | rock                          | 37                               |
+| folk                     | 18                               | sertanejo pop                 | 38                               |
+| harlem hip hop           | 19                               | trap                          | 39                               |
+
+Fonte: Elaborado pelo autor (2020)
+
+A matriz de confusão do usuário utilizado nos testes, está disponível na
+Tabela 3. Nela, é possível verificar que o modelo somente obteve sucesso
+na recomendação da categoria de número 12. Acontece devido ao curto
+período de uso da aplicação e ao gosto musical do usuário estar mais
+voltado aquele estilo musical. Encontrada na Tabela 1, ela apresenta a
+relação dos gêneros com as classes geradas para o KNN.
+
+Quadro matriz confusão da classe 12, gênero musical country
+
+|                      |          | CLASSE REAL |          |
+| -------------------- | -------- | ----------- | -------- |
+|                      |          | POSITIVO    | NEGATIVO |
+| CLASSIFICAÇÃO OBTIDA | POSITIVO | 184         | 180      |
+|                      | NEGATIVO | 46          | 38       |
+
+Fonte: Elaborado pelo autor (2020)
+
+Para uma análise mais aprofundada, utilizou-se o gênero de maior
+quantidade de recomendações, o de 230 itens, isso é o *country* (classe
+12). Pela análise, a Tabela 2, para avaliar os dados de precisão,
+*recall* e *f-measure*. A precisão do KNN ao realizar a recomendação
+dessa classe, é de 0,51, ou seja, está com dificuldades de classificar o
+gênero *country* e acaba na maioria das vezes interpretando como outro
+gênero. O recall foi de 0,80, o que mostra ele está classificando
+instâncias da classe 12 (*country*) em outras classes. Outra métrica
+interessante é o *f-measure*, que é utilizado para analisar o *recall*
+com a precisão em uma única medida. O gênero *country* ficou 0,62.
+
 # CONCLUSÃO
 
 Pode-se afirmar que está havendo em Porto Alegre uma situação paradoxal.
@@ -1673,3 +1846,5 @@ Hamburgo: FEEVALE, 2003. 79p.
 
 5.  Link de acesso a aplicação:
     <https://ericoloewe.github.io/computer-science-tcc/>
+
+6.  O link de acesso ao servidor: <https://lors.azurewebsites.net/>
