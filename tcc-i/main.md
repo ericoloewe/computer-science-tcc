@@ -79,40 +79,40 @@ Neighbors. Music. Spotify.
 
 Lista de Figuras
 
-[Figura 1 - Motor avançado de busca da ACM 19](#_Toc55798119)
+[Figura 1 - Motor avançado de busca da ACM 19](#_Toc55830074)
 
 [Figura 2 - Resultado de busca dos *proceedings* no motor de busca da
-ACM 19](#_Toc55798120)
+ACM 19](#_Toc55830075)
 
 [Figura 3 - Resultado de busca dos *journals* no motor de busca da ACM
-20](#_Toc55798121)
+20](#_Toc55830076)
 
 [Figura 4 - Etapas realizadas para filtrar os trabalhos encontrados no
-motor de busca da ACM 20](#_Toc55798122)
+motor de busca da ACM 21](#_Toc55830077)
 
 [Figura 5 - Filtro em cima dos trabalhos selecionados através do resumo
-21](#_Toc55798123)
+21](#_Toc55830078)
 
 [Figura 6 - Procedimento de filtro realizado baseado nos trabalhos
-encontrados no motor de busca da ACM 22](#_Toc55798124)
+encontrados no motor de busca da ACM 22](#_Toc55830079)
 
-[Figura 7 - Fatores da preferência musical 30](#_Toc55798125)
+[Figura 7 - Fatores da preferência musical 31](#_Toc55830080)
 
 [Figura 8 - Etapas do desenvolvimento do sistema de recomendação musical
-34](#_Ref55785081)
+35](#_Ref55785081)
 
 [Figura 9 - Apresentação dos contextos estudados no trabalho
-35](#_Ref55791879)
+36](#_Ref55791879)
 
 [Figura 10 - A esquerda, tela introdutória da aplicação. A direita, tela
-de login da aplicação 42](#_Toc55798128)
+de login da aplicação 42](#_Toc55830083)
 
 [Figura 11 - A esquerda, tela de preenchimento do contexto. A direita,
 tela da lista de dispositivos do Spotify 43](#_Ref55791972)
 
 [Figura 12 - A esquerda, tela principal, a qual apresenta a música sendo
 reproduzida ao usuário. A direita, tela de busca de músicas que encaixem
-melhor no momento 44](#_Ref55792028)
+melhor no momento 45](#_Ref55792028)
 
 [Figura 13 - Console do Realtime Database do Firebase 47](#_Ref55792113)
 
@@ -148,15 +148,15 @@ esquerda, parte inferior da tela de recomendações 57](#_Ref55792415)
 Lista de Quadros
 
 [Quadro 1 - Relação das funcionalidades desenvolvidas em cada artigo
-revisado 31](#_Toc55798235)
+revisado 32](#_Toc55830096)
 
 [Quadro 2 - Perguntas e respostas disponibilizadas a um certo público
-através dos formulários do Google. 37](#_Toc55798236)
+através dos formulários do Google. 38](#_Toc55830097)
 
-[Quadro 3 - Lista de ações possíveis nos eventos 49](#_Toc55798237)
+[Quadro 3 - Lista de ações possíveis nos eventos 49](#_Toc55830098)
 
 [Quadro 4 - Campos e seus respectivos valores utilizados na recomendação
-56](#_Toc55798238)
+56](#_Toc55830099)
 
 [Quadro 5 - relação dos gêneros e a classe utilizada no KNN
 58](#_Ref55798216)
@@ -224,45 +224,45 @@ Sumário
 31](#funcionalidades-dos-trabalhos-investigados)
 
 [2.6 Conclusões dos trabalhos revisados
-33](#conclusões-dos-trabalhos-revisados)
+34](#conclusões-dos-trabalhos-revisados)
 
-[3 COLETA DO CONTEXTO DOS USUáRIOS 34](#coleta-do-contexto-dos-usuários)
+[3 COLETA DO CONTEXTO DOS USUáRIOS 35](#coleta-do-contexto-dos-usuários)
 
-[3.1 Contexto 34](#contexto)
+[3.1 Contexto 35](#contexto)
 
 [3.1.1 O que é o contexto comportamental?
-35](#o-que-é-o-contexto-comportamental)
+36](#o-que-é-o-contexto-comportamental)
 
 [3.1.2 O que é o contexto de ambiente?
-35](#o-que-é-o-contexto-de-ambiente)
+36](#o-que-é-o-contexto-de-ambiente)
 
 [3.1.3 Como serão obtidos os contextos?
-36](#como-serão-obtidos-os-contextos)
+37](#como-serão-obtidos-os-contextos)
 
 [3.1.4 O que são as ações do usuário?
-37](#o-que-são-as-ações-do-usuário)
+38](#o-que-são-as-ações-do-usuário)
 
 [3.2 Pesquisa com usuários sobre recomendação musical (QUESTIONÁRIO)
-37](#pesquisa-com-usuários-sobre-recomendação-musical-questionário)
+38](#pesquisa-com-usuários-sobre-recomendação-musical-questionário)
 
-[3.2.1 Pré-teste do questionário 38](#pré-teste-do-questionário)
+[3.2.1 Pré-teste do questionário 40](#pré-teste-do-questionário)
 
-[3.2.2 Resultados do questionário 39](#_Toc55798272)
+[3.2.2 Resultados do questionário 40](#_Toc55798272)
 
-[3.3 Desenvolvimento Do plugin 41](#desenvolvimento-do-plugin)
+[3.3 Desenvolvimento Do plugin 42](#desenvolvimento-do-plugin)
 
 [3.3.1 Telas da aplicação (*plugin*) 42](#telas-da-aplicação-plugin)
 
-[3.3.2 Tecnologias utilizadas no desenvolvimento 44](#_Toc55798275)
+[3.3.2 Tecnologias utilizadas no desenvolvimento 45](#_Toc55798275)
 
 [3.4 Distribuição da aplicação e coleta de dados
-45](#distribuição-da-aplicação-e-coleta-de-dados)
+46](#distribuição-da-aplicação-e-coleta-de-dados)
 
-[3.4.1 Pré-teste 45](#pré-teste)
+[3.4.1 Pré-teste 46](#pré-teste)
 
 [3.4.2 Hospedagem 46](#_Toc55798278)
 
-[3.4.3 Coleta do Firebase 46](#_Toc55798279)
+[3.4.3 Coleta do Firebase 47](#_Toc55798279)
 
 [4 SISTEMA LORS 48](#sistema-lors)
 
@@ -292,7 +292,7 @@ Sumário
 
 [5.1 Trabalhos futuros 63](#trabalhos-futuros)
 
-[Referências Bibliográficas 65](#referências-bibliográficas)
+[Referências Bibliográficas 64](#referências-bibliográficas)
 
 # Introdução
 
@@ -625,7 +625,7 @@ desenvolvida no motor da ACM, e as Figuras 2 e 3 apresentam
 respectivamente os resultados das buscas por *proceedings* e *journals*.
 A quantidade de resultados apresentados na ACM foi de 150 trabalhos.
 
-<span id="_Toc55798119" class="anchor"></span>Figura - Motor avançado de
+<span id="_Toc55830074" class="anchor"></span>Figura - Motor avançado de
 busca da ACM
 
 ![](./pandoc/media/image1.png)
@@ -637,7 +637,7 @@ cima da busca. Procurando trazer somente os trabalhos mais atuais
 relacionados à área, foram mantidos somente os artigos publicados nos
 últimos 5 anos (2015-2020).
 
-<span id="_Toc55798120" class="anchor"></span>Figura - Resultado de
+<span id="_Toc55830075" class="anchor"></span>Figura - Resultado de
 busca dos *proceedings* no motor de busca da ACM
 
 ![](./pandoc/media/image2.png)
@@ -649,7 +649,7 @@ os tipos de publicações aceitas para *proceedings* e *journals*. Após
 aplicados esses filtros, a quantidade de trabalhos encontrados passou
 para 83.
 
-<span id="_Toc55798121" class="anchor"></span>Figura - Resultado de
+<span id="_Toc55830076" class="anchor"></span>Figura - Resultado de
 busca dos *journals* no motor de busca da ACM
 
 ![](./pandoc/media/image3.png)
@@ -670,7 +670,7 @@ filtro baseado em 3 etapas (demonstradas na Figura 4), que visam
 direcionar esta pesquisa para a revisão dos trabalhos que condizem com o
 objetivo descrito no protocolo.
 
-<span id="_Toc55798122" class="anchor"></span>Figura - Etapas realizadas
+<span id="_Toc55830077" class="anchor"></span>Figura - Etapas realizadas
 para filtrar os trabalhos encontrados no motor de busca da ACM
 
 ![](./pandoc/media/image4.png)
@@ -687,7 +687,7 @@ musical; (iv) trabalhos que utilizam dos RecSys musicais, mas que não
 utilizam o contexto nas recomendações. A Figura 5 apresenta a relação
 entre os tipos e a quantidade de artigos encontrados.
 
-<span id="_Toc55798123" class="anchor"></span>Figura - Filtro em cima
+<span id="_Toc55830078" class="anchor"></span>Figura - Filtro em cima
 dos trabalhos selecionados através do resumo
 
 Fonte: Elaborado pelo autor (2020)
@@ -698,7 +698,7 @@ O resultado do procedimento de filtro apresentado na Figura 6, resultou
 em 4 trabalhos relacionados ao objetivo descrito no protocolo de revisão
 desse trabalho.
 
-<span id="_Toc55798124" class="anchor"></span>Figura - Procedimento de
+<span id="_Toc55830079" class="anchor"></span>Figura - Procedimento de
 filtro realizado baseado nos trabalhos encontrados no motor de busca da
 ACM
 
@@ -1046,7 +1046,7 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são apresentados na Figura 7 abaixo.
 
-<span id="_Toc55798125" class="anchor"></span>Figura - Fatores da
+<span id="_Toc55830080" class="anchor"></span>Figura - Fatores da
 preferência musical
 
 ![](./pandoc/media/image7.png)
@@ -1079,7 +1079,7 @@ as funcionalidades utilizadas no desenvolvimento do sistema de
 recomendação. O Quadro 1 apresenta a seguinte legenda de símbolos: ✔
 caso possua, ❌ caso não possua.
 
-<span id="_Toc55798235" class="anchor"></span>Quadro - Relação das
+<span id="_Toc55830096" class="anchor"></span>Quadro - Relação das
 funcionalidades desenvolvidas em cada artigo revisado
 
 |                                                                           | (TKALČIČ et al., 2019) | (VOLOKHIN; AGICHTEIN, 2018) | (YANG; TENG, 2015) | (ALIAGA, 2018) | (LUDEWIG et al., 2018) | Proposta deste trabalho |
@@ -1141,7 +1141,7 @@ Fonte: Elaborado pelo autor (2020)
 LORS utiliza de uma análise recorrente do contexto, para realizar as
 recomendações. Esse algortimo será apresentado com mais detalhes nas
 seções a seguir. Suas etapas de desenvolvimento são apresentadas na
-**Figura 8**.
+Figura 8.
 
 ## Contexto
 
@@ -1265,7 +1265,7 @@ melhor os usuários que utilizarão a aplicação. Sendo assim, todas as
 questões permitem entender suas preferências, atividades, dentre outros
 fatores. As perguntas do questionário estão listadas no Quadro 2:
 
-<span id="_Toc55798236" class="anchor"></span>Quadro - Perguntas e
+<span id="_Toc55830097" class="anchor"></span>Quadro - Perguntas e
 respostas disponibilizadas a um certo público através dos formulários do
 Google.
 
@@ -1384,7 +1384,7 @@ Para obter os dados dos usuários, o projeto apresenta uma aplicação
 web\[4\] que utilizava do SDK Web do Spotify para reprodução das músicas
 e captura dos eventos gerados pelo usuário.
 
-<span id="_Toc55798128" class="anchor"></span>Figura - A esquerda, tela
+<span id="_Toc55830083" class="anchor"></span>Figura - A esquerda, tela
 introdutória da aplicação. A direita, tela de login da aplicação
 
 |                                 |                                 |
@@ -1594,7 +1594,7 @@ contabilizadas como registro do contexto musical, contudo não foram
 utilizadas no algoritmo devido ao tempo de desenvolvimento. Demais ações
 são contabilizadas e apresentadas no Quadro 3.
 
-<span id="_Toc55798237" class="anchor"></span>Quadro - Lista de ações
+<span id="_Toc55830098" class="anchor"></span>Quadro - Lista de ações
 possíveis nos eventos
 
 | Ação (Action)                 | Descrição                                     |
@@ -1755,7 +1755,7 @@ Em suma, um teste, efetuado através do método *score* na performance da
 predição do algoritmo KNN e da base informada ao *sklearn*, recebeu por
 parâmetro suas caracteristicas, retiradas de *X\_test* e classes,
 retiradas de *y\_test* e retornaram à acurácia do algoritmo KNN. Os
-resultados do teste são apresentados na seção 4.2.6.
+resultados do teste são apresentados na seção 0.
 
 ## Predição no sistema *LORS*
 
@@ -1785,7 +1785,7 @@ ou salvas pelo usuário.
 Na elaboração de uma POC em *python* utilizando o *Jupyter Notebook,*
 utilizou-se somente dos dados do usuário que tiveram mais registros
 salvos na base. Todo tratamento e preparação dos dados apresentados na
-seção 4.1.2 foram concebidos nessa POC. Os três testes ((i) escolher o
+seção 0 foram concebidos nessa POC. Os três testes ((i) escolher o
 melhor número de vizinhos (*k*) para rodar o algoritmo; (ii) avaliar o
 score do algoritmo; (iii) analisar a matriz de confusão obtida.)
 serviram de apoio para o aperfeiçoamento no uso do algoritmo.
@@ -1811,8 +1811,8 @@ possibilita a publicação de servidores de diversas tecnologias.
 
 No momento em que o servidor recebe uma requisição, é feito o tratamento
 dos parâmetros. O mesmo transforma a *string* em um valor numérico
-através da biblioteca *preprocessing*, e, no caso da característica não
-existir anteriormente, é feito um tratamento para valores padrões,
+através da biblioteca *preprocessing*, e, no caso de a característica
+não existir anteriormente, é feito um tratamento para valores padrões,
 conforme apresenta o Quadro 4. Os campos *like*, *hate* e *restart*
 estão com valores fixos devido a busca de músicas que foram curtidas
 (*like*=1), as não marcadas como “Não gostei” (*hate*=0) junto daquelas
@@ -1825,7 +1825,7 @@ apresentando os dados a base e então realizado o *transform*. Ao rodar,
 pelo *fit*. Devido a esse comportamento, os campos possuem um valor
 padrão no caso de a característica enviada não existir na base.
 
-<span id="_Toc55798238" class="anchor"></span>Quadro - Campos e seus
+<span id="_Toc55830099" class="anchor"></span>Quadro - Campos e seus
 respectivos valores utilizados na recomendação
 
 | Campo    | Valor padrão |
