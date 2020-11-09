@@ -68,11 +68,93 @@ Neighbors. Music. Spotify.
 
 Lista de Figuras
 
-**Nenhuma entrada de índice de ilustrações foi encontrada.**
+[Figura 1 - Motor avançado de busca da ACM 18](#_Toc55791209)
 
-Lista de Tabelas
+[Figura **2** - Resultado de busca dos *proceedings* no motor de busca
+da ACM 19](#_Toc55791210)
 
-**Nenhuma entrada de índice de ilustrações foi encontrada.**
+[Figura **3** - Resultado de busca dos *journals* no motor de busca da
+ACM 19](#_Toc55791211)
+
+[Figura 4 - Etapas realizadas para filtrar os trabalhos encontrados no
+motor de busca da ACM 20](#_Toc55791212)
+
+[Figura 5 - Filtro em cima dos trabalhos selecionados através do resumo
+21](#_Toc55791213)
+
+[Figura 6 - Procedimento de filtro realizado baseado nos trabalhos
+encontrados no motor de busca da ACM 21](#_Toc55791214)
+
+[Figura 7 - Fatores da preferência musical 30](#_Toc55791215)
+
+[Figura 8 - Etapas do desenvolvimento do sistema de recomendação musical
+34](#_Ref55785081)
+
+[Figura 9 - Apresentação dos contextos estudados no trabalho
+35](#_Toc55791217)
+
+[Figura 10 - A esquerda, tela introdutória da aplicação. A direita, tela
+de login da aplicação 42](#_Toc55791218)
+
+[Figura 11 - A esquerda, tela de preenchimento do contexto. A direita,
+tela da lista de dispositivos do Spotify 43](#_Toc55791219)
+
+[Figura 12 - A esquerda, tela principal, a qual apresenta a música sendo
+reproduzida ao usuário. A direita, tela de busca de músicas que encaixem
+melhor no momento 44](#_Toc55791220)
+
+[Figura 13 - Console do Realtime Database do Firebase 47](#_Toc55791221)
+
+[Figura 14 - Representação gráfica da classificação do algoritmo KNN
+sobre um plano x1 e x2. No plano, os pontos amarelos são a representação
+da classe A, roxos classe B e vermelho é o ponto de teste
+48](#_Ref55787798)
+
+[Figura 15 - Visão macro das etapas para transformar os eventos
+registrados no firebase na tabela que sera rodado o KNN
+50](#_Toc55791223)
+
+[Figura 16 - Representação dos eventos salvos no Firebase
+51](#_Toc55791224)
+
+[Figura 17 - Representação das listas geradas na etapa “Separa contexto”
+51](#_Toc55791225)
+
+[Figura 18 - Representação das listas geradas na etapa “separa contexto
+das músicas” 52](#_Toc55791226)
+
+[Figura 19 - Representação da tabela na etapa “separa contexto das
+músicas” 52](#_Toc55791227)
+
+[Figura 20 - *head()* do *dataframe* criado a partir da variável
+*genreTable* 53](#_Toc55791228)
+
+[Figura 21 - Visão macro do sistema LORS 55](#_Toc55791229)
+
+[Figura 22 – A direita, parte superior da tela de recomendações. A
+esquerda, parte inferior da tela de recomendações 57](#_Toc55791230)
+
+Lista de Quadros
+
+[Quadro 1 - Relação das funcionalidades desenvolvidas em cada artigo
+revisado 31](#_Toc55791192)
+
+[Quadro 2 - Perguntas e respostas disponibilizadas a um certo público
+através dos formulários do Google. 37](#_Toc55791193)
+
+[Quadro 3 - Lista de ações possíveis nos eventos 49](#_Toc55791194)
+
+[Quadro 4 - Campos e seus respectivos valores utilizados na recomendação
+56](#_Toc55791195)
+
+[Quadro 5 - relação dos gêneros e a classe utilizada no KNN
+58](#_Toc55791196)
+
+[Quadro 6 matriz confusão da classe 12, gênero musical country
+59](#_Toc55791197)
+
+[Quadro 7 - Matrix confusão do usuário
+spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 60](#_Toc55791198)
 
 Lista de Abreviaturas e Siglas
 
@@ -529,7 +611,8 @@ desenvolvida no motor da ACM, e as Figuras 2 e 3 apresentam
 respectivamente os resultados das buscas por *proceedings* e *journals*.
 A quantidade de resultados apresentados na ACM foi de 150 trabalhos.
 
-Figura - Motor avançado de busca da ACM
+<span id="_Toc55791209" class="anchor"></span>Figura - Motor avançado de
+busca da ACM
 
 ![](./pandoc/media/image1.png)
 
@@ -540,8 +623,8 @@ cima da busca. Procurando trazer somente os trabalhos mais atuais
 relacionados à área, foram mantidos somente os artigos publicados nos
 últimos 5 anos (2015-2020).
 
-Figura **2** - Resultado de busca dos *proceedings* no motor de busca da
-ACM
+<span id="_Toc55791210" class="anchor"></span>Figura **2** - Resultado
+de busca dos *proceedings* no motor de busca da ACM
 
 ![](./pandoc/media/image2.png)
 
@@ -552,8 +635,8 @@ os tipos de publicações aceitas para *proceedings* e *journals*. Após
 aplicados esses filtros, a quantidade de trabalhos encontrados passou
 para 83.
 
-Figura **3** - Resultado de busca dos *journals* no motor de busca da
-ACM
+<span id="_Toc55791211" class="anchor"></span>Figura **3** - Resultado
+de busca dos *journals* no motor de busca da ACM
 
 ![](./pandoc/media/image3.png)
 
@@ -573,8 +656,8 @@ filtro baseado em 3 etapas (demonstradas na Figura 4), que visam
 direcionar esta pesquisa para a revisão dos trabalhos que condizem com o
 objetivo descrito no protocolo.
 
-Figura - Etapas realizadas para filtrar os trabalhos encontrados no
-motor de busca da ACM
+<span id="_Toc55791212" class="anchor"></span>Figura - Etapas realizadas
+para filtrar os trabalhos encontrados no motor de busca da ACM
 
 ![](./pandoc/media/image4.png)
 
@@ -590,7 +673,8 @@ musical; (iv) trabalhos que utilizam dos RecSys musicais, mas que não
 utilizam o contexto nas recomendações. A Figura 5 apresenta a relação
 entre os tipos e a quantidade de artigos encontrados.
 
-Figura - Filtro em cima dos trabalhos selecionados através do resumo
+<span id="_Toc55791213" class="anchor"></span>Figura - Filtro em cima
+dos trabalhos selecionados através do resumo
 
 Fonte: Elaborado pelo autor (2020)
 
@@ -600,8 +684,9 @@ O resultado do procedimento de filtro apresentado na Figura 6, resultou
 em 4 trabalhos relacionados ao objetivo descrito no protocolo de revisão
 desse trabalho.
 
-Figura - Procedimento de filtro realizado baseado nos trabalhos
-encontrados no motor de busca da ACM
+<span id="_Toc55791214" class="anchor"></span>Figura - Procedimento de
+filtro realizado baseado nos trabalhos encontrados no motor de busca da
+ACM
 
 ![](./pandoc/media/image6.png)
 
@@ -947,7 +1032,8 @@ O trabalho revisado utiliza dos contextos comportamentais e de ambiente,
 e classificaram os fatores de uma preferência musical em 3 tipos
 (usuário, música e contexto). Eles são apresentados na Figura 7 abaixo.
 
-Figura - Fatores da preferência musical
+<span id="_Toc55791215" class="anchor"></span>Figura - Fatores da
+preferência musical
 
 ![](./pandoc/media/image7.png)
 
@@ -979,8 +1065,8 @@ as funcionalidades utilizadas no desenvolvimento do sistema de
 recomendação. O Quadro 1 apresenta a seguinte legenda de símbolos: ✔
 caso possua, ❌ caso não possua.
 
-Quadro - Relação das funcionalidades desenvolvidas em cada artigo
-revisado
+<span id="_Toc55791192" class="anchor"></span>Quadro - Relação das
+funcionalidades desenvolvidas em cada artigo revisado
 
 |                                                                           | (TKALČIČ et al., 2019) | (VOLOKHIN; AGICHTEIN, 2018) | (YANG; TENG, 2015) | (ALIAGA, 2018) | (LUDEWIG et al., 2018) | Proposta deste trabalho |
 | ------------------------------------------------------------------------- | ---------------------- | --------------------------- | ------------------ | -------------- | ---------------------- | ----------------------- |
@@ -1031,7 +1117,8 @@ recomendações musicais, tornando realizável entender certas lacunas que
 não foram analisadas nessa área de pesquisa e, no fim, desenvolvendo um
 sistema de recomendação chamado LORS (Loewe’s Recommender System).
 
-Figura - Etapas do desenvolvimento do sistema de recomendação musical
+<span id="_Ref55785081" class="anchor"></span>Figura - Etapas do
+desenvolvimento do sistema de recomendação musical
 
 ![](./pandoc/media/image8.png)
 
@@ -1060,7 +1147,8 @@ disponíveis para realizar uma classificação e/ou filtro, já não é mais
 um problema. A Figura 8 apresenta uma visão macro dos contextos que
 serão considerados no projeto.
 
-Figura - Apresentação dos contextos estudados no trabalho
+<span id="_Toc55791217" class="anchor"></span>Figura - Apresentação dos
+contextos estudados no trabalho
 
 ![](./pandoc/media/image9.png)
 
@@ -1163,8 +1251,9 @@ melhor os usuários que utilizarão a aplicação. Sendo assim, todas as
 questões permitem entender suas preferências, atividades, dentre outros
 fatores. As perguntas do questionário estão listadas no Quadro 2:
 
-Quadro - Perguntas e respostas disponibilizadas a um certo público
-através dos formulários do Google.
+<span id="_Toc55791193" class="anchor"></span>Quadro - Perguntas e
+respostas disponibilizadas a um certo público através dos formulários do
+Google.
 
 | Pergunta                                                                                     | Possíveis respostas                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1281,8 +1370,8 @@ Para obter os dados dos usuários, o projeto apresenta uma aplicação
 web\[4\] que utilizava do SDK Web do Spotify para reprodução das músicas
 e captura dos eventos gerados pelo usuário.
 
-Figura - A esquerda, tela introdutória da aplicação. A direita, tela de
-login da aplicação
+<span id="_Toc55791218" class="anchor"></span>Figura - A esquerda, tela
+introdutória da aplicação. A direita, tela de login da aplicação
 
 |                                 |                                 |
 | ------------------------------- | ------------------------------- |
@@ -1304,8 +1393,9 @@ você está nesse momento?”. Essas perguntas tornaram realizável entender
 o contexto atual do usuário naquele período por serem solicitadas a cada
 30min.
 
-Figura - A esquerda, tela de preenchimento do contexto. A direita, tela
-da lista de dispositivos do Spotify
+<span id="_Toc55791219" class="anchor"></span>Figura - A esquerda, tela
+de preenchimento do contexto. A direita, tela da lista de dispositivos
+do Spotify
 
 |                                 |                                 |
 | ------------------------------- | ------------------------------- |
@@ -1339,9 +1429,9 @@ tivesse a conta, não apreciou aquele determinado estilo musical no
 contexto em si. Ele seria levado à tela de busca de música (Figura 15),
 para apresentar uma música que se identifique melhor com o momento.
 
-Figura - A esquerda, tela principal, a qual apresenta a música sendo
-reproduzida ao usuário. A direita, tela de busca de músicas que encaixem
-melhor no momento
+<span id="_Toc55791220" class="anchor"></span>Figura - A esquerda, tela
+principal, a qual apresenta a música sendo reproduzida ao usuário. A
+direita, tela de busca de músicas que encaixem melhor no momento
 
 |                                 |                                 |
 | ------------------------------- | ------------------------------- |
@@ -1413,7 +1503,8 @@ JSON através do console do *Realtime Database* do Firebase. A Figura 17
 apresenta o console, a estrutura de dados dos eventos e o botão de
 exportar do *Realtime DB*.
 
-Figura - Console do Realtime Database do Firebase
+<span id="_Toc55791221" class="anchor"></span>Figura - Console do
+Realtime Database do Firebase
 
 ![](./pandoc/media/image17.png)
 
@@ -1447,9 +1538,10 @@ teste. Uma classe é atrelada a esse ponto através de uma votação
 majoritária dos k pontos vizinhos. Na Figura 14 é exemplificado
 graficamente o funcionamento do algoritmo.
 
-Figura - Representação gráfica da classificação do algoritmo KNN sobre
-um plano x1 e x2. No plano, os pontos amarelos são a representação da
-classe A, roxos classe B e vermelho é o ponto de teste
+<span id="_Ref55787798" class="anchor"></span>Figura - Representação
+gráfica da classificação do algoritmo KNN sobre um plano x1 e x2. No
+plano, os pontos amarelos são a representação da classe A, roxos classe
+B e vermelho é o ponto de teste
 
 ![](./pandoc/media/image18.png)
 
@@ -1486,7 +1578,8 @@ contabilizadas como registro do contexto musical, contudo não foram
 utilizadas no modelo devido ao tempo de desenvolvimento. Demais ações
 são contabilizadas no modelo e são apresentadas no Quadro 3.
 
-Quadro - Lista de ações possíveis nos eventos
+<span id="_Toc55791194" class="anchor"></span>Quadro - Lista de ações
+possíveis nos eventos
 
 | Ação (Action)                 | Descrição                                     |
 | ----------------------------- | --------------------------------------------- |
@@ -1519,8 +1612,9 @@ biblioteca *json*, que carrega os dados em um dicionário, do qual obtém
 os usuários e seus eventos e os transforma em outro dicionário *users*,
 cuja *key* é o id do usuário e o conteúdo sua lista de eventos.
 
-Figura - Visão macro das etapas para transformar os eventos registrados
-no firebase na tabela que sera rodado o KNN
+<span id="_Toc55791223" class="anchor"></span>Figura - Visão macro das
+etapas para transformar os eventos registrados no firebase na tabela que
+sera rodado o KNN
 
 ![](./pandoc/media/image19.jpeg)
 
@@ -1531,7 +1625,8 @@ realizada a quebra dos eventos de cada usuário por seus contextos,
 criando assim, uma relação com as músicas reproduzidas. Isso está
 representado na Figura 20.
 
-Figura - Representação dos eventos salvos no Firebase
+<span id="_Toc55791224" class="anchor"></span>Figura - Representação dos
+eventos salvos no Firebase
 
 ![](./pandoc/media/image20.jpeg)
 
@@ -1542,7 +1637,8 @@ das músicas, são gerados tanto os eventos separadamente, quanto uma
 relação da música escutada, com os eventos registrados - gerando, no
 fim, uma tabela semelhante à Figura 22 das músicas e seus contextos.
 
-Figura - Representação das listas geradas na etapa “Separa contexto”
+<span id="_Toc55791225" class="anchor"></span>Figura - Representação das
+listas geradas na etapa “Separa contexto”
 
 ![](./pandoc/media/image21.jpeg)
 
@@ -1556,8 +1652,8 @@ ao contexto do usuário. Ademais, os termos *like*, *hate* e *restart*
 são representados pelo número de vezes que cada evento desse tipo
 aconteceu durante a reprodução.
 
-Figura - Representação das listas geradas na etapa “separa contexto das
-músicas”
+<span id="_Toc55791226" class="anchor"></span>Figura - Representação das
+listas geradas na etapa “separa contexto das músicas”
 
 ![](./pandoc/media/image22.jpeg)
 
@@ -1571,7 +1667,8 @@ chamado *artistsMap* relacionando os *uris* com os dados de cada
 artista. Devido a uma limitação do Spotify, a busca se fará de 50 em 50
 *uris*.
 
-Figura - Representação da tabela na etapa “separa contexto das músicas”
+<span id="_Toc55791227" class="anchor"></span>Figura - Representação da
+tabela na etapa “separa contexto das músicas”
 
 ![](./pandoc/media/image23.jpeg)
 
@@ -1594,8 +1691,8 @@ foi transformado em duas linhas, uma para “feliz”, outra para “triste”.
 Um exemplo do campo like, no caso de possuir o valor 3, é quebrado o
 evento em 3 linhas e trocado por 1.
 
-Figura - *head()* do *dataframe* criado a partir da variável
-*genreTable*
+<span id="_Toc55791228" class="anchor"></span>Figura - *head()* do
+*dataframe* criado a partir da variável *genreTable*
 
 ![](./pandoc/media/image24.png)
 
@@ -1648,7 +1745,8 @@ histórico de músicas reproduzidas. O resultado correspondente passa a
 ser entregue através de uma API, podendo ser consumida por qualquer
 usuário que utilize o *plugin Web* desenvolvido nesse trabalho.
 
-Figura - Visão macro do sistema LORS
+<span id="_Toc55791229" class="anchor"></span>Figura - Visão macro do
+sistema LORS
 
 ![](./pandoc/media/image25.jpeg)
 
@@ -1706,7 +1804,8 @@ apresentando os dados a base e então realizado o *transform*. Ao rodar,
 pelo *fit*. Devido a esse comportamento, os campos possuem um valor
 padrão no caso de a característica enviada não existir na base.
 
-Quadro - Campos e seus respectivos valores utilizados na recomendação
+<span id="_Toc55791195" class="anchor"></span>Quadro - Campos e seus
+respectivos valores utilizados na recomendação
 
 | Campo    | Valor padrão |
 | -------- | ------------ |
@@ -1732,8 +1831,9 @@ gênero recomendado. Com o retorno do gênero, é feita uma nova
 requisição de busca ao Spotify das principais 20 *playlists* que o
 contenham no nome.
 
-Figura – A direita, parte superior da tela de recomendações. A esquerda,
-parte inferior da tela de recomendações
+<span id="_Toc55791230" class="anchor"></span>Figura – A direita, parte
+superior da tela de recomendações. A esquerda, parte inferior da tela de
+recomendações
 
 |                                 |                                 |
 | ------------------------------- | ------------------------------- |
@@ -1766,7 +1866,8 @@ possui uma lista de 1107 gêneros, 4 vezes menos do que o Spotify possui
 hoje, porém já auxiliou na taxonomia dos gêneros, trazendo uma redução
 de 70 para 40 classes na base do usuário de teste.
 
-Quadro - relação dos gêneros e a classe utilizada no KNN
+<span id="_Toc55791196" class="anchor"></span>Quadro - relação dos
+gêneros e a classe utilizada no KNN
 
 | GENERO                   | CLASSE GERADA PELO LABEL ENCODER | GENERO                        | CLASSE GERADA PELO LABEL ENCODER |
 | ------------------------ | -------------------------------- | ----------------------------- | -------------------------------- |
@@ -1800,7 +1901,8 @@ período de uso da aplicação e ao gosto musical do usuário estar mais
 voltado aquele estilo musical. Encontrada na Tabela 1, ela apresenta a
 relação dos gêneros com as classes geradas para o KNN.
 
-Quadro matriz confusão da classe 12, gênero musical country
+<span id="_Toc55791197" class="anchor"></span>Quadro matriz confusão da
+classe 12, gênero musical country
 
 |                      |          | CLASSE REAL |          |
 | -------------------- | -------- | ----------- | -------- |
@@ -1821,8 +1923,8 @@ instâncias da classe 12 (*country*) em outras classes. Outra métrica
 interessante é o *f-measure*, que é utilizado para analisar o *recall*
 com a precisão em uma única medida. O gênero *country* ficou 0,62.
 
-Quadro 7 - Matrix confusão do usuário
-spotify:user:4i3jdhv6vubcjdpwsn38iv8u4
+<span id="_Toc55791198" class="anchor"></span>Quadro 7 - Matrix confusão
+do usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4
 
 |       | 0-11 | 12  | 13-14 | 15 | 16-20 | 21 | 22-26 | 27 | 28-31 | 32 | 33-36 | 37 | 38-39 |
 | ----- | ---- | --- | ----- | -- | ----- | -- | ----- | -- | ----- | -- | ----- | -- | ----- |
