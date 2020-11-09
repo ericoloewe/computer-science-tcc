@@ -467,7 +467,7 @@ contexto comportamental e ambiental, obtido através do *plugin* de
 reprodução musical.
 
 O método científico utilizado por esse trabalho é do tipo dedutivo, dado
-que primeiro foi realizado uma pesquisa bibliográfica relacionada ao
+que primeiro foi realizada uma pesquisa bibliográfica relacionada ao
 problema proposto, para então obter a solução. Essa pesquisa buscou
 estudar o funcionamento dos sistemas de recomendação musicais, por meio
 dos artigos relacionados, fazendo com que ela tenha como objetivo um
@@ -481,13 +481,13 @@ pesquisa experimental, para avaliar a base disponível através da
 aplicação liberada aos usuários. Para realizá-lo, foi necessário um
 estudo de técnicas para avaliar os resultados de um RecSys.
 
-Tendo as técnicas de avaliação a serem utilizadas definidas, elas foram
+Com as técnicas de avaliação a serem utilizadas definidas, elas foram
 desenvolvidas no sistema, permitindo que os usuários consigam contribuir
-com sua recomendação através do uso. Essa pesquisa, apresentou no final
+com sua recomendação através do uso. Essa pesquisa apresentou no final
 os resultados estatísticos obtidos pelas recomendações do sistema e suas
-avaliações, apresentando, por exemplo, a quantidade de acertos e erros
-obtidos nas recomendações, fazendo com que, essa pesquisa tenha uma
-abordagem do tipo quantitativa.
+avaliações, exibindo a quantidade de acertos e erros obtidos nas
+recomendações, fazendo com que, essa pesquisa tenha uma abordagem do
+tipo quantitativa.
 
 Ao final, esse trabalho procurou responder a seguinte questão: Com base
 nas músicas conhecidas pelo usuário, é possível aperfeiçoar as
@@ -501,14 +501,15 @@ foi obtido através da criação de um *plugin* que permitirá ao usuário
 escutar suas músicas enquanto são registrados os eventos do contexto
 vivido naquele momento.
 
-O trabalho está dividido em 3 capítulos. O primeiro capítulo aborda uma
-pesquisa bibliográfica, onde é apresentado uma revisão dos sistemas de
-recomendação relacionados e os trabalhos resultantes. O capítulo dois
-detalha a definição do contexto, questionário enviado aos usuários,
-desenvolvimento do plugin e a coleta de dados da aplicação web. O último
-capítulo define o algoritmo utilizado, preparação dos dados coletados do
-plugin, modelagem do sistema desenvolvido e no fim os resultados obtidos
-no experimento.
+O trabalho está dividido em 5 capítulos. O primeiro capítulo é esta
+introdução. No segundo capítulo aborda-se uma pesquisa bibliográfica,
+onde é apresentada uma revisão dos sistemas de recomendação relacionados
+e os trabalhos resultantes. O capítulo três detalha a definição do
+contexto, o questionário enviado aos usuários, o desenvolvimento do
+*plugin* e a coleta de dados da aplicação web. O quarto capítulo define
+o algoritmo utilizado, preparação dos dados coletados do *plugin*,
+modelagem do sistema desenvolvido e no fim os resultados obtidos no
+experimento. O último capítulo é a conclusão sobre a pesquisa.
 
 # Trabalhos relacionados
 
