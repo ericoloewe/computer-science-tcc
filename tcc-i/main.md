@@ -40,21 +40,20 @@ trabalho.
 
 Resumo
 
-Sabe-se que as pessoas têm dificuldades em lidar com um grande volume de
-informações, e com a internet e a evolução da tecnologia houve aumento
-da quantidade disponível, trazendo a necessidade de os sistemas
-evoluírem suas recomendações, surgindo os Sistemas de Recomendações
-(*RecSys*). Esses sistemas são utilizados em diversos tipos de
-aplicações, como por exemplo: vendas, seleção de um filme, na escolha
-de uma música, que é um dos objetivos dessa pesquisa. Neste trabalho foi
-desenvolvido o LORS (Loewe’s *Recommender System*), um sistema de
-recomendação de gêneros musicais baseado em contexto comportamental e de
-ambiente. Nele é utilizado o algoritmo KNN para, a partir do contexto
-musical (gostou, não gostou, repetiu), contexto comportamental
-(atividade, sentimento) e de ambiente (lugar), encontrar o gênero
-musical mais adequado para o momento. É apresentada toda pesquisa
-desenvolvida até o desenvolvimento do sistema, a evolução do sistema em
-si e os resultados obtidos com as recomendações.
+As pessoas têm dificuldades em lidar com um grande volume de informações
+e, com a internet e a evolução da tecnologia, cresceu
+incontestavelmente, trazendo a necessidade de os sistemas evoluírem suas
+recomendações, surgindo os Sistemas de Recomendações (*RecSys*). Eles
+são utilizados em diversos tipos de aplicações. Vendas, seleção de um
+filme, na escolha de uma música, que é um dos objetivos dessa pesquisa,
+são só alguns dos exemplos. O LORS (Loewe’s *Recommender System*) veio
+para melhorar esse sistema, através da recomendação de gêneros musicais
+baseado em contexto comportamental e de ambiente. Nele, é utilizado o
+algoritmo KNN para, a partir do contexto musical (gostou, não gostou,
+repetiu), comportamental (atividade, sentimento) e de ambiente (lugar),
+encontrar o gênero musical mais adequado para o momento. É apresentada
+toda pesquisa, desde o desenvolvimento do sistema, a evolução do sistema
+em si, até os resultados obtidos com as recomendações.
 
 Palavras-chave: *RecSys*. *Machine Learning*. Sistemas de recomendação
 musical. *K-Nearest Neighbors*. Música. *Spotify*.
@@ -1903,11 +1902,11 @@ gêneros e a classe utilizada no KNN
 Fonte: Elaborado pelo autor (2020)
 
 A matriz de confusão do usuário utilizado nos testes, está disponível no
-Quadro 7. Nela, é possível verificar que o algoritmo somente obteve
+Quadro . Nela, é possível verificar que o algoritmo somente obteve
 sucesso na recomendação da categoria de número 12. Acontece devido ao
 curto período de uso da aplicação e ao gosto musical do usuário estar
-mais voltado aquele estilo musical. Encontrada no Quadro 5, ela
-apresenta a relação dos gêneros com as classes geradas para o KNN.
+mais voltado aquele estilo musical. Encontrada no Quadro , ela apresenta
+a relação dos gêneros com as classes geradas para o KNN.
 
 <span id="_Toc55791197" class="anchor"></span>Quadro matriz confusão da
 classe 12, gênero musical country
@@ -1922,7 +1921,7 @@ Fonte: Elaborado pelo autor (2020)
 
 Para uma análise mais aprofundada, utilizou-se o gênero de maior
 quantidade de recomendações, o de 230 itens, isso é o *country* (classe
-12). Pela análise, o Quadro 6, para avaliar os dados de precisão,
+12). Pela análise, o Quadro , para avaliar os dados de precisão,
 *recall* e *f-measure*. A precisão do KNN ao realizar a recomendação
 dessa classe, é de 0,51, ou seja, está com dificuldades de classificar o
 gênero *country* e acaba na maioria das vezes interpretando como outro
@@ -1931,7 +1930,7 @@ instâncias da classe 12 (*country*) em outras classes. Outra métrica
 interessante é o *f-measure*, que é utilizado para analisar o *recall*
 com a precisão em uma única medida. O gênero *country* ficou 0,62.
 
-<span id="_Toc55791198" class="anchor"></span>Quadro 7 - Matrix confusão
+<span id="_Toc55791198" class="anchor"></span>Quadro - Matrix confusão
 do usuário spotify:user:4i3jdhv6vubcjdpwsn38iv8u4
 
 |       | 0-11 | 12  | 13-14 | 15 | 16-20 | 21 | 22-26 | 27 | 28-31 | 32 | 33-36 | 37 | 38-39 |
