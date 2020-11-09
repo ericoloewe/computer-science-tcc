@@ -492,7 +492,8 @@ cima da busca. Procurando trazer somente os trabalhos mais atuais
 relacionados à área, foram mantidos somente os artigos publicados nos
 últimos 5 anos (2015-2020).
 
-Figura - Resultado de busca dos *proceedings* no motor de busca da ACM
+Figura **2** - Resultado de busca dos *proceedings* no motor de busca da
+ACM
 
 ![](./pandoc/media/image2.png)
 
@@ -503,7 +504,8 @@ os tipos de publicações aceitas para *proceedings* e *journals*. Após
 aplicados esses filtros, a quantidade de trabalhos encontrados passou
 para 83.
 
-Figura - Resultado de busca dos *journals* no motor de busca da ACM
+Figura **3** - Resultado de busca dos *journals* no motor de busca da
+ACM
 
 ![](./pandoc/media/image3.png)
 
@@ -1200,6 +1202,203 @@ escuta com os amigos?” foi desenvolvida para realizar uma avaliação se a
 *feature* “amigos ou sozinho” seria desenvolvida. Devido ao tempo
 disponível para desenvolvimento, ela acabou não sendo utilizada.
 
+Para obter um conhecimento da intensidade musical do público que lidamos
+relacionada ao tempo (estritamente necessário), compôs-se de “Quanto
+tempo por semana você escuta música?”. Deu para entender que não era um
+público intenso; nas respostas, mais de 50% ouvia de 0 a 10horas por
+semana.
+
+Um Cold Start\[3\] precisaria ser construído na aplicação. Então, “Quais
+são os gêneros musicais que gosta de escutar?” seria a melhor opção,
+caso o objetivo seja colocar as principais respostas ao plugin. A
+*feature* será desenrolada nos desenvolvimentos futuros do projeto.
+
+Respeitando a privacidade do público, foi feito a pergunta “Gostaria de
+participar de uma pesquisa que visa melhorar a recomendação musical?”,
+filtrando assim, somente os usuários que aceitaram enviar o convite para
+participar do *plugin*.
+
+A pergunta “Sua idade” foi feita para obter conhecimento da faixa de
+idade da aplicação e, assim, desenvolver as facilidades visuais
+necessárias conforme a idade. Durante o envio do questionário, o escopo
+do trabalho estava em aberto - por isso, a pergunta “Dicas e
+sugestões?”. Assim, obteve-se ideias do público para aplicar no
+trabalho, como a resposta “Opções de respostas meio confusas” que ao
+recebê-la, entrou-se em contato para retirar a dúvida e aperfeiçoar o
+questionário.
+
+## Desenvolvimento Do plugin
+
+Para obter os dados dos usuários, o projeto apresenta uma aplicação
+web\[4\] que utilizava do SDK Web do Spotify para reprodução das músicas
+e captura dos eventos gerados pelo usuário.
+
+Figura 10 - A esquerda, tela introdutória da aplicação. A direita, tela
+de login da aplicação
+
+<table>
+<tbody>
+<tr class="odd">
+<td><blockquote>
+<p><img src="./pandoc/media/image11.png" /></p>
+</blockquote></td>
+<td><blockquote>
+<p><img src="./pandoc/media/image12.png" /></p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
+
+Fonte: Elaborado pelo autor (2020)
+
+### Telas da aplicação (*plugin*)
+
+A aplicação é dividida em 5 telas, iniciada na Figura 10, a qual
+apresenta instruções para os usuários de como utilizar a aplicação e
+terminada na segunda tela. É representada pela Figura 11,
+disponibilizando opções de login no Spotify.
+
+A Figura 12 apresenta o cadastro do contexto na aplicação. O processo é
+dividido em três etapas: (i) “Como você está se sentindo nesse
+momento?”; (ii) “O que você está fazendo nesse momento?”; (iii) “Onde
+você está nesse momento?”. Essas perguntas tornaram realizável entender
+o contexto atual do usuário naquele período por serem solicitadas a cada
+30min.
+
+Figura - A esquerda, tela de preenchimento do contexto. A direita, tela
+da lista de dispositivos do Spotify
+
+|                                 |                                 |
+| ------------------------------- | ------------------------------- |
+| ![](./pandoc/media/image13.png) | ![](./pandoc/media/image14.png) |
+
+Fonte: Elaborado pelo autor (2020)
+
+Para realizar a reprodução musical, é necessário exigir do Spotify que
+reproduza as músicas no *plugin*. Tendo isso em mente, foi criado a tela
+apresentada na Figura 13, contando com um botão “USAR PLUGIN PARA TOCAR
+MÚSICAS” que, ao ser pressionado, habilita a reprodução no *plugin*.
+
+Por fim, a Figura 14 exibi a tela principal suscitada. Nela, é realizado
+toda a interação do usuário no período em que ele está ouvindo as
+músicas; as possíveis interações estão listadas abaixo.
+
+  - Gostar da música
+
+  - Não gostar da música
+
+  - Passar / Voltar música
+
+  - Buscar música
+
+  - Pausar / Tocar música
+
+Ao clicar no botão “gostei”, é salvo a informação de que o usuário
+gostou da música naquele contexto, assim como no oposto. “não gostei”
+faria o programa entender que a pessoa possuidora do produto, a que
+tivesse a conta, não apreciou aquele determinado estilo musical no
+contexto em si. Ele seria levado à tela de busca de música (Figura 15),
+para apresentar uma música que se identifique melhor com o momento.
+
+Figura - A esquerda, tela principal, a qual apresenta a música sendo
+reproduzida ao usuário. A direita, tela de busca de músicas que encaixem
+melhor no momento
+
+|                                 |                                 |
+| ------------------------------- | ------------------------------- |
+| ![](./pandoc/media/image15.png) | ![](./pandoc/media/image16.png) |
+
+Fonte: Elaborado pelo autor (2020)
+
+A ação de buscar música, de ter a opção em relação a um tempo
+específico, o levaria para a tela apresentada na Figura 15,
+possibilitando o cliente a apresentar uma música que se enquadre ao
+melhor conteúdo musical de acordo com seu contexto. Ao selecionar as
+composições e clicar em próximo, é salvo as informações de sua relação.
+
+### Tecnologias utilizadas no desenvolvimento
+
+Para desenvolver a aplicação web, utilizou-se a biblioteca *React* como
+auxílio na construção de componentes e interfaces. Com o desígnio de
+estilizar os componentes e páginas do React, houve a necessidade do
+*framework* Material ui, por estilos prontos baseados no Material
+(interface do Android) que possuía.
+
+O Google Analytics (uma ferramenta específica para eventos) serviria
+como mecanismo para persistir os eventos do usuário. Devido à falta de
+customização dele, achou-se plausível o substituir pelo *Realtime
+Database* do Firebase (*Realtime DB*), tendo a vantagem de uma vasta
+opção de customização, o que tornaria a adição do *timestamp* a cada
+evento uma opção. Com ela foi possível persistir os eventos em um
+formato NoSQL (*Not Only SQL*).
+
+No início, a fim de enviar o evento à plataforma, o programa contou com
+o GTM (Google Tag Manager) para fazer esse intermédio. Porém, por causa
+de algumas limitações da ferramenta, deixou-se de ter tal dependência.
+Foram enviados os eventos diretamente do *Javascript*.
+
+## Distribuição da aplicação e coleta de dados
+
+A aplicação esteve disponibilizada, do dia 28/09 até 02/10, através de
+um e-mail com instruções de como utilizar a aplicação, enviado para os
+144 usuários que participaram do questionário e optaram por participar
+da pesquisa. Assim, ela irá salvar os dados que serão utilizados como
+teste na classificação desenvolvida nesse trabalho.
+
+### Pré-teste
+
+Com a aplicação finalizada e hospedada, o protótipo chegou às mãos do
+professor orientador para validar o desenvolvimento feito. Nos testes
+produzidos, certos ajustes precisaram ser feitos antes de divulgar a
+aplicação. Corrigido a aplicação, cinco pessoas testaram novamente,
+encontrando mais pontos a corrigir. Enviado o e-mail a um grupo
+supervisionado de 8 pessoas, para validar sua aceitação e entendimento
+do funcionamento da aplicação, pôde-se ter uma verificação do que era e
+do que poderia ser o *plugin*. Por fim, o e-mail foi enviado para a base
+completa de usuários optantes por participar do teste.
+
+### Hospedagem
+
+A aplicação\[5\] - publicada na ferramenta disponível no Github chamada
+*Github Pages* - é gratuita, e possibilita a publicação de páginas
+estáticas. Os eventos das músicas foram salvos em outra plataforma
+chamada Firebase, que é pago; nesse trabalho, está na versão gratuita,
+que suporta o acesso de até 100 usuários simultâneos. Ademais, eventos
+como “quantidade de usuários acessando o *webapp*” foram salvos
+utilizando as aplicações GTM e Google Analytics.
+
+### Coleta do Firebase
+
+Ao final do experimento, foram exportados os eventos dos usuários em um
+JSON através do console do *Realtime Database* do Firebase. A Figura 17
+apresenta o console, a estrutura de dados dos eventos e o botão de
+exportar do *Realtime DB*.
+
+Figura - Console do Realtime Database do Firebase
+
+![](./pandoc/media/image17.png)
+
+Fonte: Elaborado pelo autor (2020)
+
+Com o JSON e a estrutura de dados pronta, datou-se o início de alguns
+estudos em *python* para adquirir o conhecimento necessário e obter os
+dados necessários do Spotify, rodando assim, o algoritmo KNN nos dados
+obtidos. Os primeiros testes do algoritmo KNN utilizaram a base de íris
+disponível no *sklearn*. Após obter o conhecimento do funcionamento do
+algoritmo no *python*, foi aplicado o mesmo sobre a base extraída e
+preparada do JSON.
+
+# SISTEMA LORS
+
+Com a estrutura dos dados pronta e a pesquisa dos dados dos usuários,
+levantou-se um tratamento específico para cada informação, realizando,
+dessa forma, um estudo das técnicas de recomendação postas nos trabalhos
+anteriores. Com isso, surgiu o modelo do sistema LORS, que utiliza de
+uma análise recorrente do contexto, para realizar as recomendações
+dinâmicas às mudanças do contexto. Serão apresentadas mais informações
+das etapas de modelagem e desenvolvimento do sistema nas seções a
+seguir.
+
 # CONCLUSÃO
 
 Pode-se afirmar que está havendo em Porto Alegre uma situação paradoxal.
@@ -1266,3 +1465,10 @@ Hamburgo: FEEVALE, 2003. 79p.
 
 2.  Link para as respostas do questionário:
     <https://forms.gle/FKW5iJBhT7oEa18eA>
+
+3.  Problema relacionado a falta de dados em um RecSys
+
+4.  Disponível em: <https://ericoloewe.github.io/computer-science-tcc/>
+
+5.  Link de acesso a aplicação:
+    <https://ericoloewe.github.io/computer-science-tcc/>
