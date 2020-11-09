@@ -1950,39 +1950,55 @@ relativos ao sistema de recomendação apresentado.
 
 # Referências Bibliográficas
 
-ALMEIDA, Célia. Médicos e assistência médica: Estado, mercado ou
-regulação? Uma falsa questão. **Cadernos de Saúde Pública,** Rio de
-Janeiro, v.13, n. 4, p.45 -57, out./dez., 1997a.
-
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_. Crise Econômica, Crise do Welfare State
-e Reforma Sanitária. In.: GERSCHMAN, S. & WERNECK VIANNA, M. L. (orgs.).
-**A miragem da pós-modernidade:** democracia e políticas sociais no
-contexto da globalização. Rio de Janeiro: Fiocruz, 1997b. p.78 – 97.
-
-ALMEIDA, Maria Hermínia Tavares de. Federalismo e Políticas Sociais.
-**Projeto Balanço e Perspectivas do Federalismo Fiscal no Brasil,** São
-Paulo, FUNDAP, vol.6, n.1, p.22-27, jan., 1994.
-
-AZEVEDO, Sérgio de. **Federalismo e Reforma do Estado:** resultados
-preliminares de pesquisa. Disponível em:
-\<<http://www.fundaj.gov.br/docs/eg/semi1.rtf>\>. Acesso em: 21 outubro
-2000.
-
-CONSTRUÇÃO do cérebro. **Veja**, São Paulo: v.29, n.12, p.84-89,
-mar.1996.
-
-COSTA, Cristina. **Sociologia:** Introdução à ciência da sociedade. 2
-ed. São Paulo: Moderna, 2000. 257p.
-
-GIANNOTTI, José. Em defesa da Universidade. **Folha de São Paulo**, São
-Paulo, p.3, 13 jun. 2005.
-
-MICROSOFT CORPORATION. Microsoft lança Windows Terminal Server. 1998.
-Disponível em: \<<http://www...........................>\>. Acesso em:
-25 mai. 2006.
-
-PRODANOV, Cleber. **Manual de Metodologia Científica.** 3ª ed. Novo
-Hamburgo: FEEVALE, 2003. 79p.
+ACM. **Advanced Search**. Disponível em:
+\<https://dl.acm.org/search/advanced\>. Acesso em: 5 maio. 2020. ACM
+RECSYS COMMUNITY. **RecSys – ACM Recommender Systems**. Disponível em:
+\<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. AHA, D. W.;
+KIBLER, D.; ALBERT, M. K. Instance-based learning algorithms. **Machine
+Learning**, v. 6, n. 1, p. 37–66, jan. 1991. ALIAGA, W. K.
+DESENVOLVIMENTO DE UM SISTEMA DE RECOMENDACÃO MUSICAL SENSÍVEL AO
+CONTEXTO. 2018. BHATNAGAR, V. **Collaborative filtering using data
+mining and analysis**. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming
+or stealing? The complementary features between music streaming and
+music piracy. **Journal of Retailing and Consumer Services**, v. 32, p.
+86–95, 2016. DIETMAR, J. et al. **Recommendation system -An
+Introduction**. \[s.l: s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre
+o dicionário | Michaelis On-line**. Disponível em:
+\<https://michaelis.uol.com.br/\>. Acesso em: 6 jun. 2020. ERIKSSON, M.
+et al. **Spotify Teardown**. \[s.l.\] MIT Press, 2019. FALK, K.
+**Practical Recommender Systems**. \[s.l: s.n.\]. IFPI. **IFPI Global
+Music Report 2019**. Disponível em:
+\<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. JOSÉ, I.
+**KNN (K-Nearest Neighbors) \#1**. Disponível em:
+\<https://medium.com/brasil-ai/knn-k-nearest-neighbors-1-e140c82e9c4e\>.
+Acesso em: 4 out. 2020. L’HUILLIER, A. The new challenges when modeling
+context through diversity over time in recommender systems. **UMAP 2016
+- Proceedings of the 2016 Conference on User Modeling Adaptation and
+Personalization**, p. 341–344, 2016. LUDEWIG, M. et al. Effective
+nearest-neighbor music recommendations. **ACM International Conference
+Proceeding Series**, 2018. LUINI, B. J. R.; WHITMAN, A. E.; DATE, P.
+**Streaming Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M.
+**Os avanços tecnológicos e o futuro da humanidade**Querendo ser Deus, ,
+2009. NIWA, H. **Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v.
+134PEDREGOSA, F. et al. Scikit-learn: Machine Learning in {P}ython.
+**Journal of Machine Learning Research**, v. 12, p. 2825–2830, 2011.
+RÄTSCH, G. A brief introduction into machine learning. **21st Chaos
+Communication Congress**, p. 1–6, 2004. RESNICK, PAUL AND VARIAN, H. R.
+Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
+56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
+Handbook**. \[s.l: s.n.\]. TKALČIČ, M. et al. Prediction of music
+pairwise preferences from facial expressions. **International Conference
+on Intelligent User Interfaces, Proceedings IUI**, v. Part F1476, p.
+150–159, 2019. UNIVERSIDADE FEDERAL DO CEARA. **A Magnetorresistência
+Gigante**. Disponível em:
+\<https://seara.ufc.br/tintim-por-tintim/tecnologia/a-magnetorresistencia-gigante/\>.
+Acesso em: 12 mar. 2020. VOLOKHIN, S.; AGICHTEIN, E. Towards
+intent-aware contextual music recommendation: Initial experiments.
+**41st International ACM SIGIR Conference on Research and Development in
+Information Retrieval, SIGIR 2018**, p. 1045–1048, 2018. YANG, Y. H.;
+TENG, Y. C. Quantitative study of music listening behavior in a
+smartphone context. **ACM Transactions on Interactive Intelligent
+Systems**, v. 5, n. 3, 2015.
 
 1.  <https://dl.acm.org/>
 
