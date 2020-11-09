@@ -224,7 +224,7 @@ Sumário
 30](#funcionalidades-dos-trabalhos-investigados)
 
 [2.6 Conclusões dos trabalhos revisados
-32](#conclusões-dos-trabalhos-revisados)
+33](#conclusões-dos-trabalhos-revisados)
 
 [3 COLETA DO CONTEXTO DOS USUáRIOS 34](#coleta-do-contexto-dos-usuários)
 
