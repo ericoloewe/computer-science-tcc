@@ -563,7 +563,7 @@ Realizada a busca genérica no Google Scholar em busca de trabalhos
 relacionados ao tema desse trabalho, foram priorizados os trabalhos em
 português, para dar uma visão clara e rápida do assunto. E nessa busca
 foi encontrado o seguinte trabalho: “Desenvolvimento de um Sistema de
-Recomendação Musical Sensível ao Contexto ”. (ALIAGA, 2018)
+Recomendação Musical Sensível ao Contexto”. (ALIAGA, 2018)
 
 Esse trabalho teve como objetivo desenvolver o modelo de um sistema
 sensível ao contexto, utilizando das técnicas clássicas de
@@ -606,9 +606,9 @@ A partir do escopo de revisão que esse trabalho está inserido, foram
 definidas certas palavras-chaves para auxiliar no desenvolvimento da
 revisão, elas são:
 
-  - *RecSys*
+  - RecSys
 
-  - *Machine Learning*
+  - Machine Learning
 
   - Sistemas de recomendação musical
 
@@ -764,10 +764,6 @@ perguntas:
 
   - Quais foram as técnicas de avaliação usadas?
 
-##### 
-
-#### 
-
 #### The New Challenges when Modeling Context through Diversity over Time in Recommender Systems (L’HUILLIER, 2016)
 
 Foi realizada a revisão do trabalho e verificado que ele não apresenta
@@ -776,8 +772,6 @@ pois todas as informações do sistema desenvolvido estão em outros
 artigos citados por esse. Dada a falta de informações apresentadas nesse
 trabalho, não serão respondidas as questões pré-estabelecidas
 anteriormente.
-
-#### 
 
 #### Prediction of music pairwise preferences from facial expressions (TKALČIČ et al., 2019)
 
@@ -873,10 +867,6 @@ entre as duas músicas, maior a probabilidade de o usuário ter gostado da
 música que ele ouviu por mais tempo. Outro critério apresentado foi a
 sua avaliação das músicas em par.
 
-#### 
-
-#### 
-
 #### Towards Intent-Aware Contextual Music Recommendation: Initial Experiments (VOLOKHIN; AGICHTEIN, 2018)
 
 O artigo apresenta técnicas e resultados que buscam estudar as intenções
@@ -963,10 +953,6 @@ de correlação, elas são: (i) coeficiente de correlação de Kendallτ; (ii)
 avaliar numericamente a qualidade de cada *playlist* recomendada. Não é
 apresentado o tamanho da base utilizada nesse artigo.
 
-#### 
-
-#### 
-
 #### Quantitative Study of Music Listening Behavior in a Smartphone Context (YANG; TENG, 2015)
 
 O artigo revisado apresentou diversos resultados quantitativos, que
@@ -1007,7 +993,7 @@ usuário.
 Essa seção está dividida nas 3 questões que o artigo revisado busca
 resolver. Em nenhuma das questões é abordada a filtragem colaborativa.
 
-  - ##### Em que medida podemos prever a música que um usuário prefere ouvir em diferentes contextos de atividade (ou seja, uso de música) da vida real?
+##### Em que medida podemos prever a música que um usuário prefere ouvir em diferentes contextos de atividade (ou seja, uso de música) da vida real?
 
 Essa seção do trabalho teve como principal objetivo classificar
 (utilizando *auto-tagging*) a relação das preferências musicais x
@@ -1040,7 +1026,7 @@ extrair os atributos das músicas, e visa auxiliar o processo de
 classificação. Para isso, foram utilizados o *MIRtoolbox* e o *PsySound
 toolbox,* os quais conseguem extrair os atributos musicais.
 
-  - ##### Em que medida podemos prever a atividade de um usuário a partir dos dados do sensor coletados dos *smartphones* em um contexto de um ouvinte musical da vida real?
+##### Em que medida podemos prever a atividade de um usuário a partir dos dados do sensor coletados dos *smartphones* em um contexto de um ouvinte musical da vida real?
 
 O principal objetivo dessa seção do trabalho foi classificar as
 atividades dos usuários (*user-activity*) e relacionar às 8 atividades
@@ -1053,7 +1039,7 @@ classificação dos dados musicais com o contexto, para classificar as
 atividades dos usuários com os sensores foram utilizadas as técnicas de
 RBF e SVM.
 
-  - ##### Como fatores pessoais se correlacionam com a previsibilidade do uso de músicas e da atividade do usuário para diferentes usuários?
+##### Como fatores pessoais se correlacionam com a previsibilidade do uso de músicas e da atividade do usuário para diferentes usuários?
 
 Com os resultados obtidos nas seções anteriores, essa seção busca
 determinar quais fatores do usuário são fortes indicadores de desempenho
@@ -1098,8 +1084,6 @@ critério de qualidade ou técnicas de avaliação das recomendações. A
 base foi obtida através do aplicativo desenvolvido nesse trabalho, ela
 continha 48 usuários, que a partir de uma filtragem dos dados efetuada,
 passou para 19 nas respostas das questões.
-
-#### 
 
 ## FUNCIONALIDADES DOS TRABALHOS INVESTIGADOS
 
@@ -1290,7 +1274,7 @@ listadas no Quadro 2:
 respostas disponibilizadas a um certo público através dos formulários do
 Google. (próprio, 2020)
 
-| **Pergunta**                                                                                 | **Possíveis respostas**                                                                                                                                                                                                                                                   |
+| Pergunta                                                                                     | Possíveis respostas                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1\. Qual o aplicativo / reprodutor de música você utiliza atualmente?                        | Spotify, Deezer, Youtube Music, TIDAL, Apple Music, Google Play Music, Rádio Outro, qual?                                                                                                                                                                                 |
 | 2\. Você acha que as recomendações musicais realizadas via software poderiam ser melhoradas? | Sim, não                                                                                                                                                                                                                                                                  |
@@ -1870,48 +1854,48 @@ de gêneros (classes), então, foi realizado a taxonomia dos gêneros,
 mantendo somente os gêneros principais. Com essa alteração, a acurácia
 do algoritmo passou de 0,15 para 0,46, um acréscimo de 306%.
 
-| **GENERO**                        | **CLASSE GERADA PELO LABEL ENCODER** |
-| --------------------------------- | ------------------------------------ |
-| **arkansas country**              | **0**                                |
-| **atl hip hop**                   | **1**                                |
-| **australian country**            | **2**                                |
-| **australian indie folk**         | **3**                                |
-| **australian reggae fusion**      | **4**                                |
-| **bandinhas**                     | **5**                                |
-| **beatlesque**                    | **6**                                |
-| **brazilian rock**                | **7**                                |
-| **canadian pop punk**             | **8**                                |
-| **canadian punk**                 | **9**                                |
-| **canadian rock**                 | **10**                               |
-| **channel pop**                   | **11**                               |
-| **country**                       | **12**                               |
-| **country dawn**                  | **13**                               |
-| **country pop**                   | **14**                               |
-| **country road**                  | **15**                               |
-| **dfw rap**                       | **16**                               |
-| **electro house**                 | **17**                               |
-| **folk**                          | **18**                               |
-| **harlem hip hop**                | **19**                               |
-| **heartland rock**                | **20**                               |
-| **hip hop**                       | **21**                               |
-| **indie cafe pop**                | **22**                               |
-| **melodic rap**                   | **23**                               |
-| **metal**                         | **24**                               |
-| **miami hip hop**                 | **25**                               |
-| **musica gaucha**                 | **26**                               |
-| **musica gaucha tradicionalista** | **27**                               |
-| **musica maranhense**             | **28**                               |
-| **neo mellow**                    | **29**                               |
-| **nyc rap**                       | **30**                               |
-| **oklahoma country**              | **31**                               |
-| **pop**                           | **32**                               |
-| **post-teen pop**                 | **33**                               |
-| **punk**                          | **34**                               |
-| **r\&b**                          | **35**                               |
-| **redneck**                       | **36**                               |
-| **rock**                          | **37**                               |
-| **sertanejo pop**                 | **38**                               |
-| **trap**                          | **39**                               |
+| GENERO                        | CLASSE GERADA PELO LABEL ENCODER |
+| ----------------------------- | -------------------------------- |
+| arkansas country              | 0                                |
+| atl hip hop                   | 1                                |
+| australian country            | 2                                |
+| australian indie folk         | 3                                |
+| australian reggae fusion      | 4                                |
+| bandinhas                     | 5                                |
+| beatlesque                    | 6                                |
+| brazilian rock                | 7                                |
+| canadian pop punk             | 8                                |
+| canadian punk                 | 9                                |
+| canadian rock                 | 10                               |
+| channel pop                   | 11                               |
+| country                       | 12                               |
+| country dawn                  | 13                               |
+| country pop                   | 14                               |
+| country road                  | 15                               |
+| dfw rap                       | 16                               |
+| electro house                 | 17                               |
+| folk                          | 18                               |
+| harlem hip hop                | 19                               |
+| heartland rock                | 20                               |
+| hip hop                       | 21                               |
+| indie cafe pop                | 22                               |
+| melodic rap                   | 23                               |
+| metal                         | 24                               |
+| miami hip hop                 | 25                               |
+| musica gaucha                 | 26                               |
+| musica gaucha tradicionalista | 27                               |
+| musica maranhense             | 28                               |
+| neo mellow                    | 29                               |
+| nyc rap                       | 30                               |
+| oklahoma country              | 31                               |
+| pop                           | 32                               |
+| post-teen pop                 | 33                               |
+| punk                          | 34                               |
+| r\&b                          | 35                               |
+| redneck                       | 36                               |
+| rock                          | 37                               |
+| sertanejo pop                 | 38                               |
+| trap                          | 39                               |
 
 <span id="_Ref55013755" class="anchor"></span>Tabela 1 relação dos
 gêneros e a classe utilizada no KNN (próprio, 2020)
@@ -2104,33 +2088,32 @@ ACM. **Advanced Search**. Disponível em:
 RECSYS COMMUNITY. **RecSys – ACM Recommender Systems**. Disponível em:
 \<https://recsys.acm.org/\>. Acesso em: 28 abr. 2020. ALIAGA, W. K.
 DESENVOLVIMENTO DE UM SISTEMA DE RECOMENDACÃO MUSICAL SENSÍVEL AO
-CONTEXTO. 2018. BHATNAGAR, V. **Collaborative filtering using data
-mining and analysis**. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming
-or stealing? The complementary features between music streaming and
-music piracy. **Journal of Retailing and Consumer Services**, v. 32, p.
-86–95, 2016. DIETMAR, J. et al. **Recommendation system -An
-Introduction**. \[s.l: s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre
-o dicionário | Michaelis On-line**. Disponível em:
-\<https://michaelis.uol.com.br/\>. Acesso em: 6 jun. 2020. ERIKSSON, M.
-et al. **Spotify Teardown**. \[s.l.\] MIT Press, 2019. FALK, K.
-**Practical Recommender Systems**. \[s.l: s.n.\]. IFPI. **IFPI Global
-Music Report 2019**. Disponível em:
+CONTEXTO. 2018. BHATNAGAR, V. Collaborative filtering using data mining
+and analysis. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming or
+stealing? The complementary features between music streaming and music
+piracy. **Journal of Retailing and Consumer Services**, v. 32, p. 86–95,
+2016. DIETMAR, J. et al. **Recommendation system -An Introduction**.
+\[s.l: s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário |
+Michaelis On-line**. Disponível em: \<https://michaelis.uol.com.br/\>.
+Acesso em: 6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**.
+\[s.l.\] MIT Press, 2019. FALK, K. Practical Recommender Systems. \[s.l:
+s.n.\]. IFPI. **IFPI Global Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. JOSÉ, I.
 **KNN (K-Nearest Neighbors) \#1**. Disponível em:
 \<https://medium.com/brasil-ai/knn-k-nearest-neighbors-1-e140c82e9c4e\>.
 Acesso em: 4 out. 2020. LUDEWIG, M. et al. Effective nearest-neighbor
 music recommendations. **ACM International Conference Proceeding
 Series**, 2018. LUINI, B. J. R.; WHITMAN, A. E.; DATE, P. **Streaming
-Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M. **Os avanços
-tecnológicos e o futuro da humanidade**Querendo ser Deus, , 2009. NIWA,
-H. **Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v.
-134PEDREGOSA, F. et al. Scikit-learn: Machine Learning in {P}ython.
-**Journal of Machine Learning Research**, v. 12, p. 2825–2830, 2011.
-RÄTSCH, G. A brief introduction into machine learning. **21st Chaos
-Communication Congress**, p. 1–6, 2004. RESNICK, PAUL AND VARIAN, H. R.
-Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
-56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
-Handbook**. \[s.l: s.n.\]. T.M. COVER, P. E. H. Nearest Neighbor Pattern
+Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M. Os avanços
+tecnológicos e o futuro da humanidadeQuerendo ser Deus, , 2009. NIWA, H.
+**Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v. 134PEDREGOSA,
+F. et al. Scikit-learn: Machine Learning in {P}ython. **Journal of
+Machine Learning Research**, v. 12, p. 2825–2830, 2011. RÄTSCH, G. A
+brief introduction into machine learning. **21st Chaos Communication
+Congress**, p. 1–6, 2004. RESNICK, PAUL AND VARIAN, H. R. Recommender
+Systems. **Communications of the ACM**, v. 40, n. 4, p. 56–58, 1997.
+RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems Handbook**.
+\[s.l: s.n.\]. T.M. COVER, P. E. H. Nearest Neighbor Pattern
 Classfication. v. I, p. 1–28, 1967. TKALČIČ, M. et al. Prediction of
 music pairwise preferences from facial expressions. **International
 Conference on Intelligent User Interfaces, Proceedings IUI**, v. Part
