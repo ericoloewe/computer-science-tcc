@@ -1144,7 +1144,7 @@ devido fim, geralmente, baseado em dados históricos para a produzir.
 ou conforme a definição das “circunstâncias que levaram a certos fatos
 ou situações”, auxiliar as recomendações, aumentando o número de dados
 disponíveis para realizar uma classificação e/ou filtro, já não é mais
-um problema. A Figura 8 apresenta uma visão macro dos contextos que
+um problema. A Figura 9 apresenta uma visão macro dos contextos que
 serão considerados no projeto.
 
 <span id="_Toc55791217" class="anchor"></span>Figura - Apresentação dos
@@ -1381,17 +1381,17 @@ Fonte: Elaborado pelo autor (2020)
 
 ### Telas da aplicação (*plugin*)
 
-A aplicação é dividida em 5 telas, iniciada na Figura 10, a qual
-apresenta instruções para os usuários de como utilizar a aplicação e
-terminada na segunda tela. É representada pela Figura 11,
+A aplicação é dividida em 5 telas, iniciada na Figura 10 a esquerda, a
+qual apresenta instruções para os usuários de como utilizar a aplicação
+e terminada na segunda tela. É representada pela Figura 10 a direita,
 disponibilizando opções de login no Spotify.
 
-A Figura 12 apresenta o cadastro do contexto na aplicação. O processo é
-dividido em três etapas: (i) “Como você está se sentindo nesse
-momento?”; (ii) “O que você está fazendo nesse momento?”; (iii) “Onde
-você está nesse momento?”. Essas perguntas tornaram realizável entender
-o contexto atual do usuário naquele período por serem solicitadas a cada
-30min.
+A Figura 11 a esquerda apresenta o cadastro do contexto na aplicação. O
+processo é dividido em três etapas: (i) “Como você está se sentindo
+nesse momento?”; (ii) “O que você está fazendo nesse momento?”; (iii)
+“Onde você está nesse momento?”. Essas perguntas tornaram realizável
+entender o contexto atual do usuário naquele período por serem
+solicitadas a cada 30min.
 
 <span id="_Toc55791219" class="anchor"></span>Figura - A esquerda, tela
 de preenchimento do contexto. A direita, tela da lista de dispositivos
@@ -1405,12 +1405,13 @@ Fonte: Elaborado pelo autor (2020)
 
 Para realizar a reprodução musical, é necessário exigir do Spotify que
 reproduza as músicas no *plugin*. Tendo isso em mente, foi criado a tela
-apresentada na Figura 13, contando com um botão “USAR PLUGIN PARA TOCAR
-MÚSICAS” que, ao ser pressionado, habilita a reprodução no *plugin*.
+apresentada na Figura 11 a direita, contando com um botão “USAR PLUGIN
+PARA TOCAR MÚSICAS” que, ao ser pressionado, habilita a reprodução no
+*plugin*.
 
-Por fim, a Figura 14 exibi a tela principal suscitada. Nela, é realizado
-toda a interação do usuário no período em que ele está ouvindo as
-músicas; as possíveis interações estão listadas abaixo.
+Por fim, a Figura 12 a esquerda exibi a tela principal suscitada. Nela,
+é realizado toda a interação do usuário no período em que ele está
+ouvindo as músicas; as possíveis interações estão listadas abaixo.
 
   - Gostar da música
 
@@ -1426,8 +1427,9 @@ Ao clicar no botão “gostei”, é salvo a informação de que o usuário
 gostou da música naquele contexto, assim como no oposto. “não gostei”
 faria o programa entender que a pessoa possuidora do produto, a que
 tivesse a conta, não apreciou aquele determinado estilo musical no
-contexto em si. Ele seria levado à tela de busca de música (Figura 15),
-para apresentar uma música que se identifique melhor com o momento.
+contexto em si. Ele seria levado à tela de busca de música (Figura 12 a
+direta), para apresentar uma música que se identifique melhor com o
+momento.
 
 <span id="_Toc55791220" class="anchor"></span>Figura - A esquerda, tela
 principal, a qual apresenta a música sendo reproduzida ao usuário. A
@@ -1440,7 +1442,7 @@ direita, tela de busca de músicas que encaixem melhor no momento
 Fonte: Elaborado pelo autor (2020)
 
 A ação de buscar música, de ter a opção em relação a um tempo
-específico, o levaria para a tela apresentada na Figura 15,
+específico, o levaria para a tela apresentada na Figura 12 a direta,
 possibilitando o cliente a apresentar uma música que se enquadre ao
 melhor conteúdo musical de acordo com seu contexto. Ao selecionar as
 composições e clicar em próximo, é salvo as informações de sua relação.
@@ -1499,7 +1501,7 @@ utilizando as aplicações GTM e Google Analytics.
 ### Coleta do Firebase
 
 Ao final do experimento, foram exportados os eventos dos usuários em um
-JSON através do console do *Realtime Database* do Firebase. A Figura 17
+JSON através do console do *Realtime Database* do Firebase. A Figura 13
 apresenta o console, a estrutura de dados dos eventos e o botão de
 exportar do *Realtime DB*.
 
@@ -1603,7 +1605,7 @@ possíveis nos eventos
 
 Fonte: Elaborado pelo autor (2020)
 
-A Figura 18 apresenta as etapas de preparação dos dados, desde o
+A Figura 15 apresenta as etapas de preparação dos dados, desde o
 carregamento do arquivo exportado do Firebase, que contém as informações
 dos eventos, até a execução do algoritmo KNN. É na etapa “Carrega JSON”
 que se tem o *upload* dos dados a partir da biblioteca padrão do
@@ -1620,10 +1622,10 @@ sera rodado o KNN
 
 Fonte: Elaborado pelo autor (2020)
 
-Na segunda etapa “Separa Contexto”, representada pela Figura 19, é
+Na segunda etapa “Separa Contexto”, representada pela Figura 16, é
 realizada a quebra dos eventos de cada usuário por seus contextos,
 criando assim, uma relação com as músicas reproduzidas. Isso está
-representado na Figura 20.
+representado na Figura 17.
 
 <span id="_Toc55791224" class="anchor"></span>Figura - Representação dos
 eventos salvos no Firebase
@@ -1632,10 +1634,10 @@ eventos salvos no Firebase
 
 Fonte: Elaborado pelo autor (2020)
 
-A Figura 21 traz a etapa “Separa contexto das músicas”. Na reprodução
+A Figura 18 traz a etapa “Separa contexto das músicas”. Na reprodução
 das músicas, são gerados tanto os eventos separadamente, quanto uma
 relação da música escutada, com os eventos registrados - gerando, no
-fim, uma tabela semelhante à Figura 22 das músicas e seus contextos.
+fim, uma tabela semelhante à Figura 19 das músicas e seus contextos.
 
 <span id="_Toc55791225" class="anchor"></span>Figura - Representação das
 listas geradas na etapa “Separa contexto”
@@ -1676,7 +1678,7 @@ Fonte: Elaborado pelo autor (2020)
 
 Os dados no Spotify, nos seus devidos processos, obtiveram a lista dos
 gêneros das músicas através dos artistas. A posteriori, adiciona-o à
-lista de músicas *musicTable* representada na Figura 22. Foram separados
+lista de músicas *musicTable* representada na Figura 19. Foram separados
 os gêneros, um por linha e, no fim, removida a música, pois ela iria
 atrapalhar o resultado do algoritmo. Com isso, surgiu, propositalmente,
 a lista *genreTable*, deixando, assim, o *musicTable* em desuso.
@@ -1701,7 +1703,7 @@ Fonte: Elaborado pelo autor (2020)
 No fim, era necessário a biblioteca *preprocessing* do *sklearn*, caso
 quisesse transformar as características e classes de cada evento da
 tabela em números inteiros; isso é necessário para rodar o algoritmo
-KNN. O resultado da tabela é apresentado na Figura 23.
+KNN. O resultado da tabela é apresentado na Figura 20.
 
 ### Testes com KNN
 
@@ -1752,12 +1754,12 @@ sistema LORS
 
 Fonte: Elaborado pelo autor (2020)
 
-O *plugin* (representado na Figura 24 como o “App”) é responsável por, a
-cada 30 minutos, solicitar ao usuário uma atualização de contexto, isso
-é, abrir um formulário. Dessa forma, ele possibilita o preenchimento do
-humor, atividades e localização atual do usuário. As informações são
-salvas e relacionadas às próximas músicas reproduzidas ou salvas pelo
-usuário.
+O *plugin* (representado na Figura 21 como o “WebApp”) é responsável
+por, a cada 30 minutos, solicitar ao usuário uma atualização de
+contexto, isso é, abrir um formulário. Dessa forma, ele possibilita o
+preenchimento do humor, atividades e localização atual do usuário. As
+informações são salvas e relacionadas às próximas músicas reproduzidas
+ou salvas pelo usuário.
 
 ### POC (Proof of Concept)
 
@@ -1842,7 +1844,7 @@ recomendações
 Fonte: Elaborado pelo autor (2020)
 
 No fim, é apresentado o gênero recomendado na tela, tratando do retorno
-do Spotify, apresentado as *playlists* a tela (Figura 25), permitindo ao
+do Spotify, apresentado as *playlists* a tela (Figura 22), permitindo ao
 usuário escolher uma das playlists para reproduzir.
 
 ### Resultados do experimento
