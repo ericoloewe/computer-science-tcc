@@ -1864,10 +1864,9 @@ que supria a dos gêneros do Spotify ao ponto de conseguir fazer a
 relação com os existentes no algoritmo e substitui-los pelo base, pois
 nele não dispõe dessa relação. A relação dos gêneros com seus subgêneros
 foi encontrada em um *showcase* do Spotify chamado Music Popcorn
-(<https://developer.spotify.com/community/showcase/music-popcorn/>). Ele
-possui uma lista de 1107 gêneros, 4 vezes menos do que o Spotify possui
-hoje, porém já auxiliou na taxonomia dos gêneros, trazendo uma redução
-de 70 para 40 classes na base do usuário de teste.
+(SPOTIFY, 2020). Ele possui uma lista de 1107 gêneros, 4 vezes menos do
+que o Spotify possui hoje, porém já auxiliou na taxonomia dos gêneros,
+trazendo uma redução de 70 para 40 classes na base do usuário de teste.
 
 <span id="_Toc55791196" class="anchor"></span>Quadro - relação dos
 gêneros e a classe utilizada no KNN
@@ -2090,9 +2089,12 @@ RÄTSCH, G. A brief introduction into machine learning. **21st Chaos
 Communication Congress**, p. 1–6, 2004. RESNICK, PAUL AND VARIAN, H. R.
 Recommender Systems. **Communications of the ACM**, v. 40, n. 4, p.
 56–58, 1997. RICCI, F.; ROKACH, L.; SHAPIRA, B. **Recommender Systems
-Handbook**. \[s.l: s.n.\]. TKALČIČ, M. et al. Prediction of music
-pairwise preferences from facial expressions. **International Conference
-on Intelligent User Interfaces, Proceedings IUI**, v. Part F1476, p.
+Handbook**. \[s.l: s.n.\]. SPOTIFY. **Music Popcorn | Spotify for
+Developers**. Disponível em:
+\<https://developer.spotify.com/community/showcase/music-popcorn/\>.
+Acesso em: 9 nov. 2020. TKALČIČ, M. et al. Prediction of music pairwise
+preferences from facial expressions. **International Conference on
+Intelligent User Interfaces, Proceedings IUI**, v. Part F1476, p.
 150–159, 2019. UNIVERSIDADE FEDERAL DO CEARA. **A Magnetorresistência
 Gigante**. Disponível em:
 \<https://seara.ufc.br/tintim-por-tintim/tecnologia/a-magnetorresistencia-gigante/\>.
