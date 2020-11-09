@@ -158,31 +158,31 @@ spotify:user:4i3jdhv6vubcjdpwsn38iv8u4 60](#_Toc55791198)
 
 Lista de Abreviaturas e Siglas
 
-| AIR    | *Activity-aware Intent Recommendation* |
-| ------ | -------------------------------------- |
-| App    | *Application*                          |
-| AUC    | Operating Characteristic Curve         |
-| GPML   | Gaussian Process for Machine Learning  |
-| GPR    | Gaussian Process Regression            |
-| LORS   | Loewe’s Recommender System             |
-| POC    | Proof of concept                       |
-| RBF    | Radial Basis Function                  |
-| RecSys | Recommender Systems                    |
-| SDK    | Software development kit               |
-| SPTF   | RecSys do Spotify                      |
-| SVM    | Support Vector Machine                 |
-|        |                                        |
-|        |                                        |
-|        |                                        |
-|        |                                        |
-|        |                                        |
-|        |                                        |
-|        |                                        |
-|        |                                        |
-|        |                                        |
-|        |                                        |
-|        |                                        |
-|        |                                        |
+| AIR    | Activity-aware Intent Recommendation  |
+| ------ | ------------------------------------- |
+| App    | Application                           |
+| AUC    | Operating Characteristic Curve        |
+| GPML   | Gaussian Process for Machine Learning |
+| GPR    | Gaussian Process Regression           |
+| LORS   | Loewe’s Recommender System            |
+| POC    | Proof of concept                      |
+| RBF    | Radial Basis Function                 |
+| RecSys | Recommender Systems                   |
+| SDK    | Software development kit              |
+| SPTF   | RecSys do Spotify                     |
+| SVM    | Support Vector Machine                |
+|        |                                       |
+|        |                                       |
+|        |                                       |
+|        |                                       |
+|        |                                       |
+|        |                                       |
+|        |                                       |
+|        |                                       |
+|        |                                       |
+|        |                                       |
+|        |                                       |
+|        |                                       |
 
 Sumário
 
@@ -534,7 +534,7 @@ No trabalho de ALIAGA (2018) foram escolhidos 10 usuários para realizar
 o teste, tendo um contexto comum que era “Estudar” para atividade e “BR”
 para cultura. Foram realizados 240 testes para compilar os dados do
 experimento, e no fim foram apresentados os resultados do experimento
-realizado “Com contexto” e “Sem contexto”, onde o trabalho obteve uma
+realizado “Com contexto” e “Sem contexto”, em que o trabalho obteve uma
 precisão de 50% na taxa de aceitação das recomendações realizadas.
 
 As indicações de trabalhos relacionados realizadas pelos avaliadores (na
@@ -623,8 +623,8 @@ cima da busca. Procurando trazer somente os trabalhos mais atuais
 relacionados à área, foram mantidos somente os artigos publicados nos
 últimos 5 anos (2015-2020).
 
-<span id="_Toc55791210" class="anchor"></span>Figura **2** - Resultado
-de busca dos *proceedings* no motor de busca da ACM
+<span id="_Toc55791210" class="anchor"></span>Figura - Resultado de
+busca dos *proceedings* no motor de busca da ACM
 
 ![](./pandoc/media/image2.png)
 
@@ -635,8 +635,8 @@ os tipos de publicações aceitas para *proceedings* e *journals*. Após
 aplicados esses filtros, a quantidade de trabalhos encontrados passou
 para 83.
 
-<span id="_Toc55791211" class="anchor"></span>Figura **3** - Resultado
-de busca dos *journals* no motor de busca da ACM
+<span id="_Toc55791211" class="anchor"></span>Figura - Resultado de
+busca dos *journals* no motor de busca da ACM
 
 ![](./pandoc/media/image3.png)
 
@@ -2059,17 +2059,16 @@ RECSYS COMMUNITY. **RecSys – ACM Recommender Systems**. Disponível em:
 KIBLER, D.; ALBERT, M. K. Instance-based learning algorithms. **Machine
 Learning**, v. 6, n. 1, p. 37–66, jan. 1991. ALIAGA, W. K.
 DESENVOLVIMENTO DE UM SISTEMA DE RECOMENDACÃO MUSICAL SENSÍVEL AO
-CONTEXTO. 2018. BHATNAGAR, V. **Collaborative filtering using data
-mining and analysis**. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming
-or stealing? The complementary features between music streaming and
-music piracy. **Journal of Retailing and Consumer Services**, v. 32, p.
-86–95, 2016. DIETMAR, J. et al. **Recommendation system -An
-Introduction**. \[s.l: s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre
-o dicionário | Michaelis On-line**. Disponível em:
-\<https://michaelis.uol.com.br/\>. Acesso em: 6 jun. 2020. ERIKSSON, M.
-et al. **Spotify Teardown**. \[s.l.\] MIT Press, 2019. FALK, K.
-**Practical Recommender Systems**. \[s.l: s.n.\]. IFPI. **IFPI Global
-Music Report 2019**. Disponível em:
+CONTEXTO. 2018. BHATNAGAR, V. Collaborative filtering using data mining
+and analysis. \[s.l: s.n.\]. BORJA, K.; DIERINGER, S. Streaming or
+stealing? The complementary features between music streaming and music
+piracy. **Journal of Retailing and Consumer Services**, v. 32, p. 86–95,
+2016. DIETMAR, J. et al. **Recommendation system -An Introduction**.
+\[s.l: s.n.\]. v. 91EDITORA MELHORAMENTOS LTDA. **Sobre o dicionário |
+Michaelis On-line**. Disponível em: \<https://michaelis.uol.com.br/\>.
+Acesso em: 6 jun. 2020. ERIKSSON, M. et al. **Spotify Teardown**.
+\[s.l.\] MIT Press, 2019. FALK, K. Practical Recommender Systems. \[s.l:
+s.n.\]. IFPI. **IFPI Global Music Report 2019**. Disponível em:
 \<https://www.ifpi.org/news/IFPI-GLOBAL-MUSIC-REPORT-2019\>. JOSÉ, I.
 **KNN (K-Nearest Neighbors) \#1**. Disponível em:
 \<https://medium.com/brasil-ai/knn-k-nearest-neighbors-1-e140c82e9c4e\>.
@@ -2079,9 +2078,9 @@ context through diversity over time in recommender systems. **UMAP 2016
 Personalization**, p. 341–344, 2016. LUDEWIG, M. et al. Effective
 nearest-neighbor music recommendations. **ACM International Conference
 Proceeding Series**, 2018. LUINI, B. J. R.; WHITMAN, A. E.; DATE, P.
-**Streaming Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M.
-**Os avanços tecnológicos e o futuro da humanidade**Querendo ser Deus, ,
-2009. NIWA, H. **Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v.
+**Streaming Audio: The FezGuys’ Guide**. \[s.l: s.n.\]. MURARO, R. M. Os
+avanços tecnológicos e o futuro da humanidadeQuerendo ser Deus, , 2009.
+NIWA, H. **Streaming Systems**. \[s.l.\] O’Reilly Media, 2018. v.
 134PEDREGOSA, F. et al. Scikit-learn: Machine Learning in {P}ython.
 **Journal of Machine Learning Research**, v. 12, p. 2825–2830, 2011.
 RÄTSCH, G. A brief introduction into machine learning. **21st Chaos
