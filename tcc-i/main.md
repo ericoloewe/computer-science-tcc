@@ -52,8 +52,9 @@ baseado em contexto comportamental e de ambiente. Nele, é utilizado o
 algoritmo KNN para, a partir do contexto musical (gostou, não gostou,
 repetiu), comportamental (atividade, sentimento) e de ambiente (lugar),
 encontrar o gênero musical mais adequado para o momento. É apresentada
-toda pesquisa, desde o desenvolvimento do sistema, a evolução do sistema
-em si, até os resultados obtidos com as recomendações.
+toda pesquisa, desde o desenvolvimento e evolução do sistema, até os
+resultados alcançados com as recomendações (onde obteve-se uma acurácia
+de 0,46 nos 1775 registros de um usuário do plugin desenvolvido).
 
 Palavras-chave: *RecSys*. *Machine Learning*. Sistemas de recomendação
 musical. *K-Nearest Neighbors*. Música. *Spotify*.
@@ -72,7 +73,8 @@ context was developed. The system uses the KNN (K-Nearest Neighbors)
 algorithm, with the musical (like, hate, repeat), behavior (activity,
 feeling) and environmental (location) features to find the best music
 genre for the moment. We show all the research since the development of
-the system until the recommendation results.
+the system until the recommendation results (where an accuracy of 0.46
+was obtained by the plugin user 1775 records).
 
 Keywords: RecSys. Machine Learning. Music Recommender System. K-Nearest
 Neighbors. Music. Spotify.
