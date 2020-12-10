@@ -1161,7 +1161,8 @@ ou conforme a definição das “circunstâncias que levaram a certos fatos
 ou situações”, auxiliar as recomendações, aumentando o número de dados
 disponíveis para realizar uma classificação e/ou filtro, já não é mais
 um problema. A Figura 9 apresenta uma visão macro dos contextos que
-serão considerados no projeto.
+serão considerados no projeto, os quais foram escolhidos por obterem
+mais votos no questionário que será apresentado na seção 3.2.
 
 <span id="_Ref55791879" class="anchor"></span>Figura - Apresentação dos
 contextos estudados no trabalho
