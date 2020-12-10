@@ -1540,6 +1540,44 @@ disponível no *sklearn*. Após obter o conhecimento do funcionamento do
 algoritmo no *python*, foi aplicado o mesmo sobre a base extraída e
 preparada do JSON.
 
+Após ser feito a exportação dos dados do Firebase no formato JSON, foi
+realizado um levantamento dos dados obtidos, chegando então no Quadro 3.
+Onde é apresentado uma relação dos usuários com o número de eventos
+registrados no uso da aplicação.
+
+Quadro Número de eventos registrados por usuário
+
+| Spotify Id                   | Número de eventos registrados |
+| ---------------------------- | ----------------------------- |
+| 16nxkn6lmlix2ou2w2rvodu3n    | 9                             |
+| 226rxsqefx3heakyeln7t3unq    | 27                            |
+| 22iwjt6kc4zv74sq7cutkhtwy    | 9                             |
+| 3152wu7mz2aoxfrg5mtqov77lseu | 19                            |
+| 31bfdxg5fe2335adqfcg4xpugpcq | 10                            |
+| 3ka2awymoso1wgdlwuq50uz8h    | 16                            |
+| 4i3jdhv6vubcjdpwsn38iv8u4    | 376                           |
+| 8q3uk0rwypu5r7dsq48476qak    | 5                             |
+| andressltz                   | 162                           |
+| b8r2mhyhep5t0np1keaqmvvi0    | 20                            |
+| gabrielcartelli              | 3                             |
+| ggkonzen                     | 12                            |
+| iisa1999                     | 326                           |
+| iortim                       | 174                           |
+| jyangalonga                  | 229                           |
+| maiconunzer                  | 7                             |
+| o16tnkq56zdt2obwii1vgbs4o    | 5                             |
+| tiagoterme                   | 65                            |
+
+Fonte: Elaborado pelo autor (2020)
+
+Devido a uma restrição do SDK do Spotify para somente usuários premium,
+houve uma baixa aceitação da aplicação. De 144 pessoas que optaram por
+participar da pesquisa do plugin, apenas 18 delas realmente utilizaram a
+aplicação. Devido a um curto período de utilização, obteve-se um número
+de registros relativamente baixo. Onde com 376 eventos, o usuário que
+mais apresentou 4i3jdhv6vubcjdpwsn38iv8u4, foi escolhido para realizar
+os testes do RecSys apresentados no próximo capítulo.
+
 # SISTEMA LORS
 
 Com a estrutura dos dados pronta e a pesquisa dos dados dos usuários,
@@ -1927,7 +1965,7 @@ curto período de uso da aplicação e ao gosto musical do usuário estar
 mais voltado aquele estilo musical. Encontrada no Quadro 5, ela
 apresenta a relação dos gêneros com as classes geradas para o KNN.
 
-<span id="_Ref55798182" class="anchor"></span>Quadro 6 - matriz confusão
+<span id="_Ref55798182" class="anchor"></span>Quadro 7 - matriz confusão
 da classe 12, gênero musical country
 
 |                      |          | CLASSE REAL |          |
