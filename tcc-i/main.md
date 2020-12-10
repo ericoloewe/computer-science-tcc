@@ -1385,7 +1385,10 @@ questionário.
 
 Para obter os dados dos usuários, o projeto apresenta uma aplicação
 web\[4\] que utilizava do SDK Web do Spotify para reprodução das músicas
-e captura dos eventos gerados pelo usuário.
+e captura dos eventos gerados pelo usuário. Para utilizá-la, o usuário
+poderia escolher suas músicas na aplicação do Spotify, adicioná-las a
+lista de reprodução e então ela tocá-las na aplicação. Onde é salvo os
+eventos do *player*, gosto e desgosto da música em reprodução.
 
 <span id="_Ref55830527" class="anchor"></span>Figura - A esquerda, tela
 introdutória da aplicação. A direita, tela de login da aplicação
